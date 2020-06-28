@@ -7,11 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-sass-resources-loader": "0.0.3",
+    "netlify-cms": "^2.10.51",
     "vue": "^2.6.11"
   },
   "devDependencies": {

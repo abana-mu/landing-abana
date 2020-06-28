@@ -4,14 +4,13 @@
 import DefaultLayout from '~/layouts/Default.vue';
 
 import '~/assets/_styles.scss';
+import 'aos/dist/aos.css';
 
 import { NavbarPlugin } from 'bootstrap-vue';
 import { ButtonPlugin } from 'bootstrap-vue';
 import { LayoutPlugin } from 'bootstrap-vue';
 import { SidebarPlugin } from 'bootstrap-vue';
 import { BootstrapVueIcons } from 'bootstrap-vue';
-
-import 'aos/dist/aos.css';
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

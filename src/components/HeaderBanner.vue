@@ -8,11 +8,11 @@
       </div>
       <div class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left">
         <h1 data-aos="fade-up" id="header-title">Africa's Textile & Apparel Industry, at your fingertips</h1>
-        <p id="header-subtitle" class="mb-3 mb-lg-5" data-aos="fade-up">
+        <p id="header-subtitle" class="mb-3 mb-lg-5" data-aos="fade-up" data-aos-delay="100">
           Discover all your sourcing and product needs in a few clicks. ABANA is a unique B2B platform providing comprehensive solutions for small,
           medium and large players in the African textile industry
         </p>
-        <g-link class="py-2 mb-3 mb-lg-0" to="/Plans/" data-aos="fade-up">
+        <g-link class="py-2 mb-3 mb-lg-0" to="/Plans/" data-aos="fade-up" data-aos-delay="200">
           <BButton id="header-cta" size="md" variant="primary">Pre-Register</BButton>
         </g-link>
       </div>
