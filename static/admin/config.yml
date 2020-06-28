@@ -23,6 +23,6 @@ collections:
     files:
       - label: 'Landing Page'
         name: 'landing'
-        file: '_settings/landing.json'
+        file: 'src/_settings/landing.json'
         fields:
           - { label: Title, name: title, widget: string }
