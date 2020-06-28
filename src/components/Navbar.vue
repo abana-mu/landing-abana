@@ -30,7 +30,7 @@
                   >
                     <g-link
                       class="dropdown-item d-flex align-items-center"
-                      to="/matching-marketplace"
+                      to="/matching-marketplace/"
                     >
                       <div class="drop-image">
                         <IMarket />
@@ -47,7 +47,7 @@
                     @mouseover="hover2 = true"
                     @mouseleave="hover2 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce/">
                       <div class="drop-image">
                         <IEcomm />
                       </div>
@@ -63,7 +63,7 @@
                     @mouseover="hover3 = true"
                     @mouseleave="hover3 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain/">
                       <div class="drop-image">
                         <ISupply />
                       </div>
@@ -108,7 +108,7 @@
                     @mouseover="hover1 = true"
                     @mouseleave="hover1 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/sourcing-buyers">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/sourcing-buyers/">
                       <div class="drop-image">
                         <ISource />
                       </div>
@@ -123,7 +123,7 @@
                     @mouseover="hover2 = true"
                     @mouseleave="hover2 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers/">
                       <div class="drop-image">
                         <IProduct />
                       </div>
@@ -139,7 +139,7 @@
                     @mouseover="hover3 = true"
                     @mouseleave="hover3 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers/">
                       <div class="drop-image">
                         <IGM />
                       </div>
@@ -154,7 +154,7 @@
                     @mouseover="hover4 = true"
                     @mouseleave="hover4 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/input-suppliers">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/input-suppliers/">
                       <div class="drop-image">
                         <IIS />
                       </div>
@@ -169,7 +169,7 @@
                     @mouseover="hover5 = true"
                     @mouseleave="hover5 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/service-providers">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/">
                       <div class="drop-image">
                         <ISP />
                       </div>
@@ -301,16 +301,7 @@
 
           <!-- Mobile Navigation -->
           <b-navbar-nav class="d-block d-lg-none ml-auto">
-            <tasty-burger-button
-              :type="buttonType"
-              :active="isActive"
-              :size="size"
-              :color="color"
-              v-on:toggle="onToggle"
-              v-b-toggle.sidebar-level-1
-              class="burger"
-            />
-
+            <Hamburger v-b-toggle.sidebar-level-1 />
             <!-- Main SideBar -->
             <b-sidebar id="sidebar-level-1" title="Sidebar Level 1" no-header bg-variant="white">
               <template v-slot:default="{ hide }">
@@ -469,7 +460,7 @@
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
-                            <g-link class="sidebar-item-level-2" to="/product-buyers/" exact>
+                            <g-link class="sidebar-item-level-2" to="/product-buyers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -532,7 +523,7 @@
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
-                            <g-link class="sidebar-item-level-2" to="/service-providers/">
+                            <g-link class="sidebar-item-level-2" to="/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -649,7 +640,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { TastyBurgerButton } from "vue-tasty-burgers";
+import Hamburger from "@/components/Hamburger";
 import IMarket from "@/components/compIcons/IMarket";
 import IEcomm from "@/components/compIcons/IEcomm";
 import ISupply from "@/components/compIcons/ISupply";
@@ -666,7 +657,7 @@ import IPartnership from "@/components/compIcons/IPartnership";
 
 export default {
   components: {
-    "tasty-burger-button": TastyBurgerButton,
+    Hamburger,
     IMarket,
     IEcomm,
     ISupply,
@@ -728,19 +719,8 @@ export default {
       hover2: false,
       hover3: false,
       hover4: false,
-      hover5: false,
-
-      buttonType: "spin",
-      isActive: false,
-      size: "s",
-      color: "#0d1537"
+      hover5: false
     };
-  },
-
-  methods: {
-    onToggle(active) {
-      // Toggle menu
-    }
   }
 };
 </script>
@@ -756,11 +736,6 @@ export default {
 .nav-item {
   margin-left: 20px;
   padding: 1.2rem 0;
-}
-
-.burger {
-  z-index: 1500;
-  position: relative;
 }
 
 .logo {
