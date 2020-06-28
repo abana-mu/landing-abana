@@ -1,0 +1,57 @@
+$sans-serif: 'SS-font';
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-book.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-bookItalic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-mediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-bold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-boldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-black.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font';
+  src: url('../assets/fonts/lineto-circular-blackItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
