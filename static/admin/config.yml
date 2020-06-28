@@ -5,10 +5,24 @@ backend:
 media_folder: 'static/uploads' # Media files will be stored in the repo under static/images/uploads
 public_folder: '/uploads'
 
+publish_mode: editorial_workflow
+
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Blog' # Used in the UI
-    folder: '_posts/' # The path to the folder where the documents are stored
+    folder: '_blog/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Rating (scale of 1-5)', name: 'rating', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'jobs' # Used in routes, e.g., /admin/collections/blog
+    label: 'Jobs' # Used in the UI
+    folder: '_jobs/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -24,5 +38,10 @@ collections:
       - label: 'Landing Page'
         name: 'landing'
         file: 'src/_settings/landing.json'
+        fields:
+          - { label: Title, name: title, widget: string }
+      - label: 'Second Page'
+        name: 'second'
+        file: 'src/_settings/second.json'
         fields:
           - { label: Title, name: title, widget: string }
