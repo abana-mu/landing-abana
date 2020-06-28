@@ -29,6 +29,8 @@ export default {
 <!-- STYLING -->
 <style lang='scss'>
 .hamburger {
+  display: flex;
+  outline: none;
   z-index: 1500;
   position: relative;
   cursor: pointer;
@@ -48,8 +50,8 @@ export default {
 .hamburger-box {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 24px;
+  width: 30px;
+  height: 19px;
 }
 .hamburger-inner {
   top: 50%;

@@ -2,29 +2,17 @@
 <template>
   <div id="header-banner">
     <div class="row">
-      <div class="col-12 col-lg-4 order-lg-2">
-        <g-image
-          id="header-image"
-          class="d-none d-lg-block"
-          src="~/assets/images/laptop-2x.png"
-          quality="100"
-        />
-        <g-image
-          id="header-image"
-          class="d-block d-lg-none"
-          src="~/assets/images/laptop-1x.png"
-          quality="100"
-        />
+      <div class="col-12 col-lg-4 order-lg-2" data-aos="fade-down">
+        <g-image id="header-image" class="d-none d-lg-block" src="~/assets/images/laptop-2x.png" quality="100" />
+        <g-image id="header-image" class="d-block d-lg-none" src="~/assets/images/laptop-1x.png" quality="100" />
       </div>
-      <div
-        class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left"
-      >
-        <h1 id="header-title">Africa's Textile & Apparel Industry, at your fingertips</h1>
-        <p id="header-subtitle" class="mb-3 mb-lg-5">
+      <div class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left">
+        <h1 data-aos="fade-up" id="header-title">Africa's Textile & Apparel Industry, at your fingertips</h1>
+        <p id="header-subtitle" class="mb-3 mb-lg-5" data-aos="fade-up">
           Discover all your sourcing and product needs in a few clicks. ABANA is a unique B2B platform providing comprehensive solutions for small,
           medium and large players in the African textile industry
         </p>
-        <g-link class="py-2 mb-3 mb-lg-0" to="/Plans/">
+        <g-link class="py-2 mb-3 mb-lg-0" to="/Plans/" data-aos="fade-up">
           <BButton id="header-cta" size="md" variant="primary">Pre-Register</BButton>
         </g-link>
       </div>

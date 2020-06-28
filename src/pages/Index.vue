@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import HeaderBanner from "~/components/HeaderBanner";
+import HeaderBanner from '~/components/HeaderBanner';
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: 'Hello, world!',
   },
   components: {
-    HeaderBanner
-  }
+    HeaderBanner,
+  },
 };
 </script>
 

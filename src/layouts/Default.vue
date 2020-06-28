@@ -9,12 +9,16 @@
 </template>
 
 <script>
-import Navbar from "~/components/Navbar";
+import Navbar from '~/components/Navbar';
+import AOS from 'aos';
 
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+  },
+  mounted() {
+    AOS.init();
+  },
 };
 </script>
 
@@ -56,7 +60,5 @@ query {
   @media (min-width: $break-xxl) {
     padding-top: 12rem;
   }
-
-  
 }
 </style>

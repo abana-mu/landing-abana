@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <b-navbar
-    class="px-4 px-sm-5 px-lg-0 py-3 my-0 py-lg-0 bg-white bbody"
+    class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white bbody"
     toggleable="lg"
     fixed="top"
     tag="header"
@@ -10,7 +10,7 @@
       <div class="row w-100 justify-content-between align-items-center no-gutters">
         <!-- Nav Brand -->
         <div class="col col-auto">
-          <g-link class="logo" to="/">
+          <g-link class="logo d-flex" to="/">
             <img class src="../assets/images/logo.svg" />
           </g-link>
         </div>
@@ -169,7 +169,7 @@
                     @mouseover="hover5 = true"
                     @mouseleave="hover5 = false"
                   >
-                    <g-link class="dropdown-item d-flex align-items-center" to="/">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/service-providers">
                       <div class="drop-image">
                         <ISP />
                       </div>
@@ -523,7 +523,7 @@
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
-                            <g-link class="sidebar-item-level-2" to="/">
+                            <g-link class="sidebar-item-level-2" to="/service-providers">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -884,6 +884,7 @@ export default {
 }
 
 .sidebar-item-level-1 {
+  outline: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -932,6 +933,7 @@ export default {
 .sidebar-item-level-2:active,
 .sidebar-item-level-1.active,
 .sidebar-item-level-2.active {
+  outline: none;
   .drop-title,
   .drop-subtitle,
   .drop-text {

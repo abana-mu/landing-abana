@@ -14,5 +14,6 @@ module.exports = {
         resources: './src/assets/_variables.scss',
       },
     },
+    '~/plugins/aos.js',
   ],
 };
