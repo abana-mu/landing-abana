@@ -12,6 +12,9 @@ import { LayoutPlugin } from 'bootstrap-vue';
 import { SidebarPlugin } from 'bootstrap-vue';
 import { BootstrapVueIcons } from 'bootstrap-vue';
 
+import VueSimpleMarkdown from 'vue-simple-markdown';
+import 'vue-simple-markdown/dist/vue-simple-markdown.css';
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
@@ -20,4 +23,5 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(LayoutPlugin);
   Vue.use(SidebarPlugin);
   Vue.use(BootstrapVueIcons);
+  Vue.use(VueSimpleMarkdown);
 }

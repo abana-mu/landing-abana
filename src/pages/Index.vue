@@ -5,6 +5,12 @@
   </Layout>
 </template>
 
+<!-- QUERIES -->
+<page-query>
+
+
+</page-query>
+
 <script>
 import HeaderBanner from '~/components/HeaderBanner';
 import LandingData from '~/_settings/landing.json';

@@ -42,3 +42,12 @@ thrive: >-
 
   * You want to make a difference.
 ---
+
+- Ensure platform availability and generate traffic statistics in
+  co-ordination with our external managed services provider.
+
+- Generate business relevant user & functionality reports
+
+- Interface with external developers for incident tracking and resolution and minor platform enhancement
+
+- Translate new functional requirements into clear instructions for Product design

@@ -30,8 +30,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: '_jobs/**/*.md',
-        typeName: 'Jobs',
+        path: '_careers/**/*.md',
+        typeName: 'Careers',
         remark: {},
       },
     },
