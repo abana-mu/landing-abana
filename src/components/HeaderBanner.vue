@@ -13,7 +13,7 @@
           medium and large players in the African textile industry
         </p>
         <g-link class="py-2 mb-3 mb-lg-0" to="/Plans/" data-aos="fade-up" data-aos-delay="200">
-          <BButton id="header-cta" size="md" variant="primary">Pre-Register</BButton>
+          <BButton id="header-cta" size="md" variant="primary">Pre-Register!</BButton>
         </g-link>
       </div>
     </div>
