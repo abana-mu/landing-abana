@@ -28,6 +28,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Department',
+          name: 'department',
+          widget: 'select',
+          options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'],
+        }
       - { label: 'Location', name: 'location', widget: 'string' }
       - { label: 'Role', name: 'role', widget: 'markdown' }
       - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
