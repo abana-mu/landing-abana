@@ -4,7 +4,7 @@ title: Apparel Design Assistant
 department: Textile & Apparel Design
 location: Goodlands, Mauritius
 role: ABANA is building a B2B platform which will attract the diverse
-  stakeholders of the Texitle & Apparel eco-system in the Indian Ocean and
+  stakeholders of the Textile & Apparel eco-system in the Indian Ocean and
   Africa. Your role will be to assist our Head Designer in the development of
   our Drops Collections and contribute fresh new influences.
 tasks: >-
