@@ -41,6 +41,8 @@ collections:
         file: 'src/_settings/landing.json'
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: SubText, name: subtext, widget: text }
+          - { label: Call to Action, name: cta, widget: string }
       - label: 'Second Page'
         name: 'second'
         file: 'src/_settings/second.json'
