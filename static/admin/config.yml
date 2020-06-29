@@ -32,7 +32,7 @@ collections:
       - { label: 'Role', name: 'role', widget: 'markdown' }
       - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
       - { label: 'What you bring to the table', name: 'table', widget: 'markdown' }
-      - { label: 'You'll thrive if:', name: 'thrive', widget: 'markdown' }
+      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown' }
   - label: 'Pages'
     name: 'pages'
     files:

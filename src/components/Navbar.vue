@@ -1,16 +1,11 @@
 <!-- HTML -->
 <template>
-  <b-navbar
-    class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white bbody"
-    toggleable="lg"
-    fixed="top"
-    tag="header"
-  >
+  <b-navbar class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white bbody" toggleable="lg" fixed="top" tag="header">
     <b-container fluid>
       <div class="row w-100 justify-content-between align-items-center no-gutters">
         <!-- Nav Brand -->
         <div class="col col-auto">
-          <g-link class="logo d-flex" to="/">
+          <g-link class="logo" to="/">
             <img class src="../assets/images/logo.svg" />
           </g-link>
         </div>
@@ -23,53 +18,38 @@
               <div id="products-drop" class="dropdown-container">
                 <div class="col col-7 left-panel px-5 py-4">
                   <b-dropdown-header id="dropdown-header-1">Products</b-dropdown-header>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover1 = true"
-                    @mouseleave="hover1 = false"
-                  >
-                    <g-link
-                      class="dropdown-item d-flex align-items-center"
-                      to="/matching-marketplace/"
-                    >
+                  <div class="dropdown-link" @mouseover="hover1 = true" @mouseleave="hover1 = false">
+                    <g-link class="dropdown-item d-flex align-items-center" to="/matching-marketplace/">
                       <div class="drop-image">
                         <IMarket />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{market.title}}</p>
-                        <p class="drop-subtitle text-transition">{{market.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ market.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
 
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover2 = true"
-                    @mouseleave="hover2 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover2 = true" @mouseleave="hover2 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce/">
                       <div class="drop-image">
                         <IEcomm />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{ecom.title}}</p>
-                        <p class="drop-subtitle text-transition">{{ecom.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ ecom.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
 
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover3 = true"
-                    @mouseleave="hover3 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover3 = true" @mouseleave="hover3 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain/">
                       <div class="drop-image">
                         <ISupply />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{supply.title}}</p>
-                        <p class="drop-subtitle text-transition">{{supply.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ supply.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
@@ -103,79 +83,59 @@
               <div id="solutions-drop" class="dropdown-container">
                 <div class="col col-7 left-panel px-5 py-4">
                   <b-dropdown-header id="dropdown-header-1">For Buyers</b-dropdown-header>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover1 = true"
-                    @mouseleave="hover1 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover1 = true" @mouseleave="hover1 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/sourcing-buyers/">
                       <div class="drop-image">
                         <ISource />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{source.title}}</p>
-                        <p class="drop-subtitle text-transition">{{source.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ source.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover2 = true"
-                    @mouseleave="hover2 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover2 = true" @mouseleave="hover2 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers/">
                       <div class="drop-image">
                         <IProduct />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{product.title}}</p>
-                        <p class="drop-subtitle text-transition">{{product.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ product.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
                   <b-dropdown-header id="dropdown-header-2">For Makers</b-dropdown-header>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover3 = true"
-                    @mouseleave="hover3 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover3 = true" @mouseleave="hover3 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers/">
                       <div class="drop-image">
                         <IGM />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{gm.title}}</p>
-                        <p class="drop-subtitle text-transition">{{gm.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ gm.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover4 = true"
-                    @mouseleave="hover4 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover4 = true" @mouseleave="hover4 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/input-suppliers/">
                       <div class="drop-image">
                         <IIS />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{ip.title}}</p>
-                        <p class="drop-subtitle text-transition">{{ip.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ ip.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
-                  <div
-                    class="dropdown-link"
-                    @mouseover="hover5 = true"
-                    @mouseleave="hover5 = false"
-                  >
+                  <div class="dropdown-link" @mouseover="hover5 = true" @mouseleave="hover5 = false">
                     <g-link class="dropdown-item d-flex align-items-center" to="/service-providers">
                       <div class="drop-image">
                         <ISP />
                       </div>
                       <div class="drop-text">
-                        <p class="drop-title text-transition">{{sp.title}}</p>
-                        <p class="drop-subtitle text-transition">{{sp.subtitle}}</p>
+                        <p class="drop-title text-transition">{{ sp.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
                       </div>
                     </g-link>
                   </div>
@@ -230,20 +190,14 @@
               <div id="company-drop" class="dropdown-container p-5">
                 <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-3">Company</b-dropdown-header>
-                  <g-link
-                    class="dropdown-item drop-title-singular d-flex align-items-center"
-                    to="/about/"
-                  >
+                  <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/about/">
                     <div class="drop-image-sm">
                       <IAbout />
                     </div>
                     <div class="drop-text">About Us</div>
                   </g-link>
 
-                  <g-link
-                    class="dropdown-item drop-title-singular d-flex align-items-center"
-                    to="/careers/"
-                  >
+                  <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/careers/">
                     <div class="drop-image-sm">
                       <ICareer />
                     </div>
@@ -253,20 +207,14 @@
                 <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-4">Support</b-dropdown-header>
 
-                  <g-link
-                    class="dropdown-item drop-title-singular d-flex align-items-center"
-                    to="/contact/"
-                  >
+                  <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/contact/">
                     <div class="drop-image-sm">
                       <IContact />
                     </div>
                     <div class="drop-text">Contact Us</div>
                   </g-link>
 
-                  <g-link
-                    class="dropdown-item drop-title-singular d-flex align-items-center"
-                    to="/privacy/"
-                  >
+                  <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/privacy/">
                     <div class="drop-image-sm">
                       <IPrivacy />
                     </div>
@@ -276,10 +224,7 @@
                 <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-5">Partnerships</b-dropdown-header>
 
-                  <g-link
-                    class="dropdown-item drop-title-singular d-flex align-items-center"
-                    to="/partnerships/"
-                  >
+                  <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/partnerships/">
                     <div class="drop-image-sm">
                       <IPartnership />
                     </div>
@@ -338,14 +283,7 @@
                   </div>
 
                   <!-- Sidebar for Products -->
-                  <b-sidebar
-                    id="sidebar-level-2-0"
-                    class="w-100"
-                    right
-                    shadow
-                    no-header
-                    bg-variant="white"
-                  >
+                  <b-sidebar id="sidebar-level-2-0" class="w-100" right shadow no-header bg-variant="white">
                     <template v-slot:default="{ hide }">
                       <div class="sidebar-container">
                         <!-- Content -->
@@ -355,65 +293,50 @@
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <IMarket />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{market.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{market.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ market.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in market.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in market.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <b-dropdown-divider></b-dropdown-divider>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/ecommerce/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <IEcomm />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ecom.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{ecom.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ ecom.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in ecom.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in ecom.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/supply-chain/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <ISupply />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{supply.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{supply.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ supply.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in supply.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in supply.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -423,14 +346,7 @@
                   </b-sidebar>
 
                   <!-- Sidebar for Solutions -->
-                  <b-sidebar
-                    id="sidebar-level-2-1"
-                    class="w-100"
-                    right
-                    shadow
-                    no-header
-                    bg-variant="white"
-                  >
+                  <b-sidebar id="sidebar-level-2-1" class="w-100" right shadow no-header bg-variant="white">
                     <template v-slot:default="{ hide }">
                       <div class="sidebar-container">
                         <!-- Content -->
@@ -440,106 +356,81 @@
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/sourcing-buyers/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <ISource />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{source.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{source.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ source.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in source.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in source.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/product-buyers/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <IProduct />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{product.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{product.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ product.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in product.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in product.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/garment-makers/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <IGM />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{gm.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{gm.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ gm.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in gm.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in gm.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/input-suppliers/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <IIS />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ip.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{ip.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ ip.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in ip.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in ip.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 left-panel mb-3">
                             <g-link class="sidebar-item-level-2" to="/service-providers">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
+                              <div class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center">
                                 <div class="drop-image">
                                   <ISP />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{sp.title}}</p>
-                                  <p class="drop-subtitle text-transition">{{sp.subtitle}}</p>
+                                  <p class="drop-title text-transition">{{ sp.title }}</p>
+                                  <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li
-                                  v-for="item in sp.examples"
-                                  :key="item.example"
-                                >{{ item.example }}</li>
+                                <li v-for="item in sp.examples" :key="item.example">{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -549,38 +440,21 @@
                   </b-sidebar>
 
                   <!-- Sidebar for Company -->
-                  <b-sidebar
-                    id="sidebar-level-2-2"
-                    class="w-100"
-                    right
-                    shadow
-                    no-header
-                    bg-variant="white"
-                  >
+                  <b-sidebar id="sidebar-level-2-2" class="w-100" right shadow no-header bg-variant="white">
                     <template v-slot:default="{ hide }">
                       <div class="sidebar-container">
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap mb-2">
-                          <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />Company
-                          </div>
+                          <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide"><b-icon icon="arrow-left-short" class="mr-2" />Company</div>
                           <div class="col col-12 px-5 mb-3">
                             <b-dropdown-header>Company</b-dropdown-header>
-                            <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
-                              to="/about/"
-                              @click="hide"
-                            >
+                            <g-link class="sidebar-item-level-2 drop-title-singular d-flex align-items-center" to="/about/" @click="hide">
                               <div class="drop-image-sm">
                                 <IAbout />
                               </div>
                               <div class="drop-text">About Us</div>
                             </g-link>
-                            <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
-                              to="/careers/"
-                              @click="hide"
-                            >
+                            <g-link class="sidebar-item-level-2 drop-title-singular d-flex align-items-center" to="/careers/" @click="hide">
                               <div class="drop-image-sm">
                                 <ICareer />
                               </div>
@@ -589,22 +463,14 @@
                           </div>
                           <div class="col col-12 px-5 mb-3">
                             <b-dropdown-header>Support</b-dropdown-header>
-                            <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
-                              to="/contact/"
-                              @click="hide"
-                            >
+                            <g-link class="sidebar-item-level-2 drop-title-singular d-flex align-items-center" to="/contact/" @click="hide">
                               <div class="drop-image-sm">
                                 <IContact />
                               </div>
                               <div class="drop-text">Contact Us</div>
                             </g-link>
 
-                            <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
-                              to="/privacy/"
-                              @click="hide"
-                            >
+                            <g-link class="sidebar-item-level-2 drop-title-singular d-flex align-items-center" to="/privacy/" @click="hide">
                               <div class="drop-image-sm">
                                 <IPrivacy />
                               </div>
@@ -613,11 +479,7 @@
                           </div>
                           <div class="col col-12 px-5 mb-3">
                             <b-dropdown-header>Partnerships</b-dropdown-header>
-                            <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
-                              to="/partnerships/"
-                              @click="hide"
-                            >
+                            <g-link class="sidebar-item-level-2 drop-title-singular d-flex align-items-center" to="/partnerships/" @click="hide">
                               <div class="drop-image-sm">
                                 <IPartnership />
                               </div>
@@ -640,20 +502,20 @@
 
 <!-- SCRIPTS -->
 <script>
-import Hamburger from "@/components/Hamburger";
-import IMarket from "@/components/compIcons/IMarket";
-import IEcomm from "@/components/compIcons/IEcomm";
-import ISupply from "@/components/compIcons/ISupply";
-import ISource from "@/components/compIcons/ISource";
-import IProduct from "@/components/compIcons/IProduct";
-import IGM from "@/components/compIcons/IGM";
-import IIS from "@/components/compIcons/IIS";
-import ISP from "@/components/compIcons/ISP";
-import IAbout from "@/components/compIcons/IAbout";
-import IPrivacy from "@/components/compIcons/IPrivacy";
-import IContact from "@/components/compIcons/IContact";
-import ICareer from "@/components/compIcons/ICareer";
-import IPartnership from "@/components/compIcons/IPartnership";
+import Hamburger from '@/components/Hamburger';
+import IMarket from '@/components/compIcons/IMarket';
+import IEcomm from '@/components/compIcons/IEcomm';
+import ISupply from '@/components/compIcons/ISupply';
+import ISource from '@/components/compIcons/ISource';
+import IProduct from '@/components/compIcons/IProduct';
+import IGM from '@/components/compIcons/IGM';
+import IIS from '@/components/compIcons/IIS';
+import ISP from '@/components/compIcons/ISP';
+import IAbout from '@/components/compIcons/IAbout';
+import IPrivacy from '@/components/compIcons/IPrivacy';
+import IContact from '@/components/compIcons/IContact';
+import ICareer from '@/components/compIcons/ICareer';
+import IPartnership from '@/components/compIcons/IPartnership';
 
 export default {
   components: {
@@ -670,58 +532,58 @@ export default {
     IPrivacy,
     IContact,
     ICareer,
-    IPartnership
+    IPartnership,
   },
   data() {
     return {
       market: {
-        title: "Matching Marketplace",
-        subtitle: "some text here1",
-        examples: [{ example: "market1" }, { example: "market2" }]
+        title: 'Matching Marketplace',
+        subtitle: 'some text here1',
+        examples: [{ example: 'market1' }, { example: 'market2' }],
       },
       ecom: {
-        title: "E-commerce",
-        subtitle: "some text here1",
-        examples: [{ example: "Ecom1" }, { example: "Ecom2" }]
+        title: 'E-commerce',
+        subtitle: 'some text here1',
+        examples: [{ example: 'Ecom1' }, { example: 'Ecom2' }],
       },
       supply: {
-        title: "Supply Chain Solutions",
-        subtitle: "some text here1",
-        examples: [{ example: "Supply1" }, { example: "Supply2" }]
+        title: 'Supply Chain Solutions',
+        subtitle: 'some text here1',
+        examples: [{ example: 'Supply1' }, { example: 'Supply2' }],
       },
       source: {
-        title: "Sourcing Buyers",
-        subtitle: "some text here1",
-        examples: [{ example: "Source1" }, { example: "Source2" }]
+        title: 'Sourcing Buyers',
+        subtitle: 'some text here1',
+        examples: [{ example: 'Source1' }, { example: 'Source2' }],
       },
       product: {
-        title: "Product Buyers",
-        subtitle: "some text here1",
-        examples: [{ example: "product1" }, { example: "product2" }]
+        title: 'Product Buyers',
+        subtitle: 'some text here1',
+        examples: [{ example: 'product1' }, { example: 'product2' }],
       },
       gm: {
-        title: "Garment Makers",
-        subtitle: "some text here1",
-        examples: [{ example: "gm1" }, { example: "gm2" }]
+        title: 'Garment Makers',
+        subtitle: 'some text here1',
+        examples: [{ example: 'gm1' }, { example: 'gm2' }],
       },
       ip: {
-        title: "Input Suppliers",
-        subtitle: "some text here1",
-        examples: [{ example: "is1" }, { example: "is2" }]
+        title: 'Input Suppliers',
+        subtitle: 'some text here1',
+        examples: [{ example: 'is1' }, { example: 'is2' }],
       },
       sp: {
-        title: "Service Providers",
-        subtitle: "some text here1",
-        examples: [{ example: "sp1" }, { example: "sp2" }]
+        title: 'Service Providers',
+        subtitle: 'some text here1',
+        examples: [{ example: 'sp1' }, { example: 'sp2' }],
       },
       hover0: false,
       hover1: false,
       hover2: false,
       hover3: false,
       hover4: false,
-      hover5: false
+      hover5: false,
     };
-  }
+  },
 };
 </script>
 
