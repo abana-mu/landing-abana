@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <Navbar />
-    <slot />
+    <b-container fluid>
+      <slot />
+    </b-container>
     <!--  <Footer /> -->
   </div>
 </template>
@@ -41,22 +43,22 @@ query {
 
   //Medium 776-992
   @media (min-width: $break-m) {
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
 
   //Large 992-1200
   @media (min-width: $break-l) {
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
 
   //XLarge 1200-1440
   @media (min-width: $break-xl) {
-    padding-top: 11rem;
+    padding-top: 8rem;
   }
 
   //XXLarge 1440+
   @media (min-width: $break-xxl) {
-    padding-top: 12rem;
+    padding-top: 9rem;
   }
 }
 </style>

@@ -22,7 +22,7 @@
             <div class="nav-item" @mouseover="hoverPro = true" @mouseleave="hoverPro = false">
               <a class="nav-link">Products</a>
               <div id="products-drop" class="dropdown-container" v-show="hoverPro">
-                <div class="col col-7 left-panel pl-5 pr-4 py-4">
+                <div class="col col-7 left-panel px-5 py-4">
                   <b-dropdown-header id="dropdown-header-1">Products</b-dropdown-header>
                   <div
                     class="dropdown-link"
@@ -76,32 +76,23 @@
                   </div>
                 </div>
 
-                <div class="col col-5 grey-panel pl-4 px-4 py-4">
+                <div class="col col-5 right-panel grey-panel pl-5 px-4 py-4">
                   <div v-show="hover1">
                     <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in market.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in market.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover2">
                     <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in ecom.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in ecom.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover3">
                     <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in supply.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in supply.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                 </div>
@@ -112,7 +103,7 @@
             <div class="nav-item" @mouseover="hoverSol = true" @mouseleave="hoverSol = false">
               <a class="nav-link">Solutions</a>
               <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
-                <div class="col col-7 left-panel pl-5 pr-4 py-4">
+                <div class="col col-7 left-panel px-5 py-4">
                   <b-dropdown-header id="dropdown-header-1">For Buyers</b-dropdown-header>
                   <div
                     class="dropdown-link"
@@ -191,50 +182,35 @@
                     </g-link>
                   </div>
                 </div>
-                <div class="col col-5 grey-panel pl-4 px-4 py-4">
+                <div class="col col-5 right-panel grey-panel pl-5 px-4 py-4">
                   <div v-show="hover1">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in source.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in source.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover2">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in product.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in product.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover3">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in gm.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in gm.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover4">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in ip.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in ip.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                   <div v-show="hover5">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
-                      <li v-for="item in sp.examples" :key="item.example">
-                        <span class="feature-title">{{ item.title }}</span>
-                        <span class="feature-details">{{ item.example }}</span>
-                      </li>
+                      <li v-for="item in sp.examples" :key="item.example">{{ item.example }}</li>
                     </ul>
                   </div>
                 </div>
@@ -322,8 +298,8 @@
         <div class="col col-auto">
           <!-- Desktop Navigation -->
           <b-navbar-nav class="d-none d-lg-block ml-auto">
-            <b-button variant="link" class="text-dark">{{ cta.sub }}</b-button>
-            <b-button variant="primary">{{cta.main}}</b-button>
+            <b-button variant="link" color="secondary">Login</b-button>
+            <b-button variant="primary">Sign Up</b-button>
           </b-navbar-nav>
 
           <!-- Mobile Navigation -->
@@ -359,8 +335,8 @@
                     </div>
 
                     <div class="sidebar-buttons d-flex flex-row mt-5 justify-content-center">
-                      <b-button variant="link">{{ cta.sub}}</b-button>
-                      <b-button variant="primary">{{cta.main}}</b-button>
+                      <b-button variant="link">Login</b-button>
+                      <b-button variant="primary">Sign Up</b-button>
                     </div>
                   </div>
 
@@ -394,10 +370,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in market.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in market.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -416,10 +392,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in ecom.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in ecom.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -437,10 +413,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in supply.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in supply.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -479,10 +455,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in source.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in source.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -500,10 +476,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in product.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in product.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -521,10 +497,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in gm.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in gm.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -542,10 +518,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in ip.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in ip.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -563,10 +539,10 @@
                                 </div>
                               </div>
                               <ul class="grey-panel feature-list">
-                                <li v-for="item in sp.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
+                                <li
+                                  v-for="item in sp.examples"
+                                  :key="item.example"
+                                >{{ item.example }}</li>
                               </ul>
                             </g-link>
                           </div>
@@ -703,174 +679,43 @@ export default {
     return {
       market: {
         title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities ",
-        examples: [
-          {
-            title: "DATABASE",
-            example:
-              "Find & build reltationships with the most appropriate partners",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Discover a wealth of targeted information and opportunities",
-          },
-        ],
+        subtitle: "some text here1",
+        examples: [{ example: "market1" }, { example: "market2" }],
       },
       ecom: {
         title: "E-commerce",
-        subtitle: "Low MOQs for immediate or quick deliveries",
-        examples: [
-          {
-            title: "Drops",
-            example: "Bi-monthly collections of ready-to-ship styles",
-          },
-          {
-            title: "Brands",
-            example: "Curated list of the best regional brands. (coming soon)",
-          },
-          {
-            title: "Fast Custom",
-            example:
-              "Products available directly from factories in low MOQs & short lead-times. (coming soon)",
-          },
-        ],
+        subtitle: "some text here1",
+        examples: [{ example: "Ecom1" }, { example: "Ecom2" }],
       },
       supply: {
         title: "Supply Chain Solutions",
-        subtitle: "Tailored services to help you grow in the region",
-        examples: [
-          {
-            title: "QUALITY",
-            example: "Quality Control, Testing",
-          },
-          {
-            title: "SUSTAINABILITY",
-            example: "Social, environmental, ethical Compliance",
-          },
-          {
-            title: "FOLLOW-UP",
-            example:
-              "Sampling to delivery follow-up, logistics & documentation",
-          },
-          {
-            title: "ADVISORY",
-            example: "Customized advice to succeed and grow in the region",
-          },
-        ],
+        subtitle: "some text here1",
+        examples: [{ example: "Supply1" }, { example: "Supply2" }],
       },
       source: {
         title: "Sourcing Buyers",
-        subtitle: "Different Text",
-        examples: [
-          {
-            title: "DATABASE",
-            example:
-              "Find and connect with the most appropriate factories for you",
-          },
-          {
-            title: "RFI/RFQ",
-            example:
-              "Post general or specific needs and get instant responses from qualified factories",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Monitor business opportunities using our tagging and notification tools ",
-          },
-        ],
+        subtitle: "some text here1",
+        examples: [{ example: "Source1" }, { example: "Source2" }],
       },
       product: {
         title: "Product Buyers",
         subtitle: "some text here1",
-        examples: [
-          {
-            title: "DROPS & FAST CUSTOM",
-            example:
-              "Private-label services for small MOQs directly from factories",
-          },
-          {
-            title: "BRANDS",
-            example: "Discover the best regional brands",
-          },
-          {
-            title: "SPECIAL OFFERS",
-            example:
-              "Garment stock and other opportunities directly from factories",
-          },
-        ],
+        examples: [{ example: "product1" }, { example: "product2" }],
       },
       gm: {
         title: "Garment Makers",
         subtitle: "some text here1",
-        examples: [
-          {
-            title: "DATABASE",
-            example:
-              "Find and build relationships with the most appropriate buyers for your products",
-          },
-          {
-            title: "E-SHOWROOM",
-            example: "Showcase your product range",
-          },
-          {
-            title: "RFI/RFQ",
-            example: "Instantly respond to buyer requests",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Post offers and needs to buyers, other factories, input suppliers and service providers",
-          },
-        ],
+        examples: [{ example: "gm1" }, { example: "gm2" }],
       },
       ip: {
         title: "Input Suppliers",
         subtitle: "some text here1",
-        examples: [
-          {
-            title: "DATABASE",
-            example:
-              "Find and build relationships with the most appropriate buyers and factories for your products",
-          },
-          {
-            title: "E-SHOWROOM",
-            example: "Showcase your product range",
-          },
-          {
-            title: "RFI",
-            example:
-              "Instantly respond to buyer and factories’ requests and interests",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Post offers and needs to buyers, factories, other input suppliers and service providers",
-          },
-        ],
+        examples: [{ example: "is1" }, { example: "is2" }],
       },
       sp: {
         title: "Service Providers",
         subtitle: "some text here1",
-        examples: [
-          {
-            title: "DATABASE",
-            example: "Find and build relationships with platform members",
-          },
-          {
-            title: "BULLETIN BOARD",
-            example: "Constantly update your offers to the platform community",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Post listings to highlight and promote new services or offers",
-          },
-        ],
-      },
-      cta: {
-        main: "Sign Up",
-        sub: "Log In",
+        examples: [{ example: "sp1" }, { example: "sp2" }],
       },
       hoverPro: false,
       hoverSol: false,
@@ -905,10 +750,6 @@ export default {
   display: block;
 }
 
-.btn-link {
-  color: $text-dark;
-}
-
 //DROPDOWN
 
 .dropdown-container {
@@ -920,7 +761,7 @@ export default {
   margin-top: 20px;
   left: 50%;
   transform: translateX(-45%);
-  border-radius: 0.25rem;
+  z-index: 100;
 }
 
 #products-drop {
@@ -953,14 +794,16 @@ export default {
 }
 
 .grey-panel {
-  background-color: #fafafa;
+  background-color: #f7f8fc;
+}
+
+.right-panel {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .dropdown-link {
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
 }
 
 .drop-image {
@@ -969,28 +812,14 @@ export default {
   display: block;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item.active {
   .drop-title,
   .drop-subtitle,
   .drop-text {
     color: $light-red;
   }
-  .drop-image,
-  .drop-image-sm {
-    .cls-1 {
-      fill: $lightest-red;
-    }
-    .cls-2 {
-      fill: $primary;
-    }
-    .cls-3 {
-      fill: $light-red;
-    }
-  }
-}
-
-.dropdown-item:active,
-.dropdown-item.active {
   .drop-image,
   .drop-image-sm {
     .cls-1 {
@@ -1026,34 +855,24 @@ export default {
 }
 
 .drop-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: $text-light-on-light;
   margin: 0;
   font-weight: 300;
-  white-space: normal;
 }
 
 .feature-list {
-  list-style: none;
-  padding: 0;
+  list-style: initial;
+  padding: 0 10px;
   margin-top: 1rem;
   li {
     font-weight: 300;
-    margin-bottom: 16px;
-    font-size: 0.875rem;
+    margin-bottom: 5px;
+    color: $text-light-on-light;
+    font-size: 0.75rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
   }
-}
-
-.feature-title {
-  display: block;
-  color: $text-dark;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.feature-details {
-  color: $text-light-on-light;
 }
 
 //SIDEBAR

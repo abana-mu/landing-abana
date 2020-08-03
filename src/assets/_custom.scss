@@ -55,12 +55,70 @@ h1 {
   }
 }
 
+h2 {
+  letter-spacing: 1.4px;
+  font-weight: 500;
+
+  //XSmall -578
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  //Small 578-776
+  @media (min-width: $break-s) {
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+  }
+
+  //Medium 776-992
+  @media (min-width: $break-m) {
+    font-size: 2.3rem;
+    letter-spacing: 1.2px;
+  }
+
+  //Large 992-1200
+  @media (min-width: $break-l) {
+    font-size: 2.6rem;
+    letter-spacing: 1.2px;
+  }
+
+  //XL 1200-1440
+  @media (min-width: $break-xl) {
+    font-size: 2.9rem;
+    letter-spacing: 1.2px;
+  }
+
+  //XL 1440+
+  @media (min-width: $break-xxl) {
+    font-size: 3rem;
+    letter-spacing: 1.2px;
+  }
+}
+
 p {
   color: $text-light-on-light;
+  font-size: 18px;
 }
 
 .btn {
   padding: 0.5rem 1.5rem;
+}
+
+//COLORS
+
+.text-dark {
+  color: $text-dark;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.back-grey {
+  background-color: $grey-light;
+}
+
+.back-beige {
+  background-color: $beige-grey;
 }
 
 // GRID AND LAYOUT
@@ -119,7 +177,7 @@ p {
     display: block;
     width: 0;
     height: 2px;
-    background: $text-dark;
+    background: #dfdfdf;
     transition: width 0.3s;
   }
   &:hover {
@@ -169,4 +227,10 @@ p {
 
 .b-sidebar:not(.b-sidebar-right).slide:not(.show) {
   transform: translateY(-100%);
+}
+
+// One Section Pages
+
+.one-section-header {
+  text-align: center;
 }

@@ -47,6 +47,8 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'SubText', name: 'subtext', widget: 'text' }
           - { label: 'Call to Action', name: 'cta', widget: 'string' }
+          - { label: 'Box Title', name: 'boxTitle', widget: 'string' }
+          - { label: 'Box Text', name: 'boxText', widget: 'markdown' }
       - label: 'Second Page'
         name: 'second'
         file: 'src/_settings/second.json'

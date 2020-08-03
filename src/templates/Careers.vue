@@ -1,6 +1,9 @@
 <!-- HTML -->
 <template>
-  <Layout>
+  <OneSection>
+    <g-link to="/careers/" class="sidebar-item-level-2-title px-5 mb-3">
+      <b-icon icon="arrow-left-short" class="mr-2" />Back
+    </g-link>
     <h1>{{ $page.thisJob.title }}</h1>
     <b-button
       variant="primary"
@@ -9,8 +12,7 @@
           $page.thisJob.title +
           '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
-      >Apply now</b-button
-    >
+    >Apply now</b-button>
     <p>Location: {{ $page.thisJob.location }}</p>
     <h4>The role you’ll play:</h4>
     <p>{{ $page.thisJob.role }}</p>
@@ -27,9 +29,8 @@
           $page.thisJob.title +
           '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
-      >Apply now</b-button
-    >
-  </Layout>
+    >Apply now</b-button>
+  </OneSection>
 </template>
 
 <!-- QUERIES -->
@@ -49,12 +50,18 @@
 
 <!-- SCRIPTS -->
 <script>
+import OneSection from "~/layouts/OneSection";
+
 export default {
+  components: {
+    OneSection
+  },
+
   metaInfo() {
     return {
-      title: this.$page.thisJob.title,
+      title: this.$page.thisJob.title
     };
-  },
+  }
 };
 </script>
 
