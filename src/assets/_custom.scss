@@ -103,6 +103,13 @@ p {
   padding: 0.5rem 1.5rem;
 }
 
+.markdown-body {
+  font-family: $sans-serif !important;
+  color: $text-light-on-light !important;
+  font-size: 18px !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
 //COLORS
 
 .text-dark {
@@ -223,6 +230,7 @@ p {
 .dropdown-item:focus,
 .dropdown-item.active {
   background-color: transparent;
+  color: initial;
 }
 
 .b-sidebar:not(.b-sidebar-right).slide:not(.show) {
