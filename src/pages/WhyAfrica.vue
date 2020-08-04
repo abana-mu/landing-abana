@@ -1,14 +1,14 @@
 <template>
-  <Layout>
-    <h1>Journal</h1>
+  <OneSection>
+    <h1>Why Africa</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
-  </Layout>
+  </OneSection>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "Journal"
-  }
+    title: "Journal",
+  },
 };
 </script>

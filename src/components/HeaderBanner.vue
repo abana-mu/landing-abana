@@ -1,43 +1,45 @@
 <!-- HTML -->
 <template>
-  <div id="header-banner">
-    <div class="row">
-      <div class="col-12 col-lg-4 order-lg-2" data-aos="fade-down">
-        <g-image
-          id="header-image"
-          class="d-none d-lg-block"
-          src="~/assets/images/laptop-2x.png"
-          quality="100"
-        />
-        <g-image
-          id="header-image"
-          class="d-block d-lg-none"
-          src="~/assets/images/laptop-1x.png"
-          quality="100"
-        />
-      </div>
-      <div
-        class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left"
-      >
-        <h1 data-aos="fade-up" id="header-title">{{ title }}</h1>
-        <p
-          id="header-subtitle"
-          class="mb-3 mb-lg-5"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >{{subtext}}</p>
-        <g-link
-          class="py-2 mb-3 mb-lg-0"
-          to="/Plans/"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-once="true"
+  <b-container fluid>
+    <div id="header-banner">
+      <div class="row">
+        <div class="col-12 col-lg-4 order-lg-2" data-aos="fade-down">
+          <g-image
+            id="header-image"
+            class="d-none d-lg-block"
+            src="~/assets/images/laptop-2x.png"
+            quality="100"
+          />
+          <g-image
+            id="header-image"
+            class="d-block d-lg-none"
+            src="~/assets/images/laptop-1x.png"
+            quality="100"
+          />
+        </div>
+        <div
+          class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left"
         >
-          <b-button id="header-cta" size="md" variant="primary">{{cta}}</b-button>
-        </g-link>
+          <h1 data-aos="fade-up" id="header-title">{{ title }}</h1>
+          <p
+            id="header-subtitle"
+            class="mb-3 mb-lg-5"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >{{subtext}}</p>
+          <g-link
+            class="py-2 mb-3 mb-lg-0"
+            to="/Plans/"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <b-button id="header-cta" size="md" variant="primary">{{cta}}</b-button>
+          </g-link>
+        </div>
       </div>
     </div>
-  </div>
+  </b-container>
 </template>
 
 <!-- SCRIPTS -->

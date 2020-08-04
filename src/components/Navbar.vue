@@ -2,6 +2,7 @@
 <template>
   <b-navbar
     class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white bbody"
+    :class="{navShadow: scrollPosition > 50}"
     toggleable="lg"
     fixed="top"
     tag="header"
@@ -241,14 +242,14 @@
               </div>
             </div>
 
+            <!-- Why Africa-->
+            <li class="nav-item">
+              <g-link class="nav-link" to="/why-africa/">Why Africa</g-link>
+            </li>
+
             <!-- Plans-->
             <li class="nav-item">
               <g-link class="nav-link" to="/plans/">Plans</g-link>
-            </li>
-
-            <!-- Journal-->
-            <li class="nav-item">
-              <g-link class="nav-link" to="/journal/">Journal</g-link>
             </li>
 
             <!-- Company-->
@@ -345,14 +346,15 @@
                       Solutions
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
+                    <g-link class="sidebar-item-level-1" to="/why-africa/" @click="hide">
+                      Why Africa
+                      <b-icon icon="arrow-right-short" class="float-right" />
+                    </g-link>
                     <g-link class="sidebar-item-level-1" to="/about/" @click="hide">
                       Plans
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </g-link>
-                    <g-link class="sidebar-item-level-1" to="/journal/" @click="hide">
-                      Journal
-                      <b-icon icon="arrow-right-short" class="float-right" />
-                    </g-link>
+
                     <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-2>
                       Company
                       <b-icon icon="arrow-right-short" class="float-right" />
@@ -701,6 +703,7 @@ export default {
   },
   data() {
     return {
+      scrollPosition: null,
       market: {
         title: "Matching Marketplace",
         subtitle: "Illuminating sourcing opportunities ",
@@ -883,6 +886,14 @@ export default {
       hover5: false,
     };
   },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
+  },
 };
 </script>
 
@@ -893,6 +904,13 @@ export default {
 <!-- STYLING -->
 <style lang="scss">
 // MAIN ELLEMENTS
+
+.navShadow {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
+  box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
 .nav-item {
   cursor: pointer;

@@ -1,18 +1,20 @@
 <template>
   <Layout>
-    <b-container fluid>
-      <HeaderBanner :title="Data.title" :subtext="Data.subtext" :cta="Data.cta" />
-    </b-container>
+    <!-- HEADER -->
+    <HeaderBanner :title="Data.title" :subtext="Data.subtext" :cta="Data.cta" />
     <DiagonalBreaker colorTop="white" colorBottom="beige" direction="right" />
-    <b-container fluid class="back-beige box-container">
-      <div id="box">
-        <h2>{{Data.boxTitle}}</h2>
-        <vue-simple-markdown :source="Data.boxText" class="boxText"></vue-simple-markdown>
-        <g-link to="/about">
-          <b-button variant="outline-primary" href="about-us">About Us</b-button>
-        </g-link>
-      </div>
-    </b-container>
+    <!-- BOX -->
+    <div class="back-beige">
+      <b-container fluid class="box-container">
+        <div id="box">
+          <h2>{{Data.boxTitle}}</h2>
+          <vue-simple-markdown :source="Data.boxText" class="boxText"></vue-simple-markdown>
+          <g-link to="/why-africa">
+            <b-button variant="outline-primary">Why Africa?</b-button>
+          </g-link>
+        </div>
+      </b-container>
+    </div>
     <DiagonalBreaker colorTop="beige" colorBottom="white" direction="right" />
   </Layout>
 </template>
@@ -81,7 +83,10 @@ export default {
   }
 
   @media (min-width: $break-l) {
-    width: 80%;
+    padding: 5rem 7rem;
+  }
+
+  @media (min-width: $break-xl) {
     padding: 5rem 10rem;
   }
 }

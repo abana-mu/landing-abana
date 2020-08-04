@@ -131,8 +131,7 @@ p {
 // GRID AND LAYOUT
 
 .container-fluid {
-  max-width: 90rem;
-
+  max-width: 1400px;
   //XSmall -578
   padding-left: 1.875rem;
   padding-right: 1.875rem;
@@ -155,14 +154,14 @@ p {
     padding-right: 4.95rem;
   }
 
-  //XL 1200+
+  //XL 1200-1400
   @media (min-width: $break-xl) {
     padding-left: 5.975rem;
     padding-right: 5.975rem;
   }
 
   //XL 1440+
-  @media (min-width: $break-xl) {
+  @media (min-width: $break-xxl) {
     padding-left: 7rem;
     padding-right: 7rem;
   }
