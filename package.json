@@ -17,7 +17,8 @@
     "gridsome-plugin-sass-resources-loader": "0.0.3",
     "netlify-cms": "^2.10.55",
     "vue": "^2.6.12",
-    "vue-simple-markdown": "^1.1.4"
+    "vue-simple-markdown": "^1.1.4",
+    "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
