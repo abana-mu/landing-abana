@@ -1,14 +1,14 @@
 <template>
   <Layout>
     <!-- HEADER -->
-    <HeaderBanner :title="Data.title" :subtext="Data.subtext" :cta="Data.cta" />
+    <HeaderBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
     <DiagonalBreaker colorTop="white" colorMiddle="darkblue" colorBottom="blue" />
     <!-- BOX -->
     <div class="back-blue">
       <b-container fluid class="box-container">
         <div class="box">
-          <h2 id="boxTitle">{{Data.boxTitle}}</h2>
-          <p id="boxSub">{{Data.boxSubtitle}}</p>
+          <h2 id="boxTitle">{{Data.boxes.boxTitle}}</h2>
+          <p id="boxSub">{{Data.boxes.boxSubtitle}}</p>
 
           <b-container class="examples">
             <b-row>
@@ -17,8 +17,8 @@
                   <ITransf />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle1}}</p>
-                  <p class="box-item-text">{{Data.boxText1}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle1}}</p>
+                  <p class="box-item-text">{{Data.boxes.boxText1}}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item">
@@ -26,8 +26,8 @@
                   <IExpect />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle2}}</p>
-                  <p class="box-item-text">{{Data.boxText2}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle2}}</p>
+                  <p class="box-item-text">{{Data.boxes.boxText2}}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item">
@@ -35,8 +35,8 @@
                   <INew />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle3}}</p>
-                  <p class="box-item-text">{{Data.boxText3}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle3}}</p>
+                  <p class="box-item-text">{{Data.boxes.boxText3}}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item">
@@ -44,8 +44,8 @@
                   <ITax />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle4}}</p>
-                  <p class="box-item-text">{{Data.boxText4}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle4}}</p>
+                  <p class="box-item-text">{{Data.boxes.boxText4}}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item">
@@ -53,9 +53,9 @@
                   <IGuar />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle5}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle5}}</p>
                   <p class="box-item-text">
-                    {{Data.boxText5}}
+                    {{Data.boxes.boxText5}}
                     <g-link to="/about">About us...</g-link>
                   </p>
                 </div>
@@ -65,8 +65,8 @@
                   <ITarget />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxTextTitle6}}</p>
-                  <p class="box-item-text">{{Data.boxText6}}</p>
+                  <p class="box-item-title">{{Data.boxes.boxTextTitle6}}</p>
+                  <p class="box-item-text">{{Data.boxes.boxText6}}</p>
                 </div>
               </b-col>
             </b-row>
