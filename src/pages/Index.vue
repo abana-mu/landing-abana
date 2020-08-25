@@ -6,42 +6,77 @@
     <!-- BOX -->
     <div class="back-blue">
       <b-container fluid class="box-container">
-        <div id="box">
-          <h2>{{Data.boxTitle}}</h2>
-          <p>{{Data.boxSubtitle}}</p>
+        <div class="box">
+          <h2 id="boxTitle">{{Data.boxTitle}}</h2>
+          <p id="boxSub">{{Data.boxSubtitle}}</p>
 
-          <b-container class="bv-example-row">
+          <b-container class="examples">
             <b-row>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle1}}</p>
-                <p>{{Data.boxText1}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <ITransf />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle1}}</p>
+                  <p class="box-item-text">{{Data.boxText1}}</p>
+                </div>
               </b-col>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle2}}</p>
-                <p>{{Data.boxText2}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <IExpect />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle2}}</p>
+                  <p class="box-item-text">{{Data.boxText2}}</p>
+                </div>
               </b-col>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle3}}</p>
-                <p>{{Data.boxText3}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <INew />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle3}}</p>
+                  <p class="box-item-text">{{Data.boxText3}}</p>
+                </div>
               </b-col>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle4}}</p>
-                <p>{{Data.boxText4}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <ITax />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle4}}</p>
+                  <p class="box-item-text">{{Data.boxText4}}</p>
+                </div>
               </b-col>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle5}}</p>
-                <p>{{Data.boxText5}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <IGuar />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle5}}</p>
+                  <p class="box-item-text">
+                    {{Data.boxText5}}
+                    <g-link to="/about">About us...</g-link>
+                  </p>
+                </div>
               </b-col>
-              <b-col cols="12" md="6">
-                <p>{{Data.boxTextTitle6}}</p>
-                <p>{{Data.boxText6}}</p>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-image">
+                  <ITarget />
+                </div>
+                <div class="box-text">
+                  <p class="box-item-title">{{Data.boxTextTitle6}}</p>
+                  <p class="box-item-text">{{Data.boxText6}}</p>
+                </div>
               </b-col>
             </b-row>
           </b-container>
 
-          <g-link to="/why-africa">
-            <b-button variant="outline-primary">Why Africa?</b-button>
-          </g-link>
+          <div class="box-button">
+            <g-link to="/why-africa">
+              <b-button variant="outline-secondary">Why Africa?</b-button>
+            </g-link>
+          </div>
         </div>
       </b-container>
     </div>
@@ -59,6 +94,12 @@
 import HeaderBanner from "~/components/HeaderBanner";
 import DiagonalBreaker from "~/components/DiagonalBreaker";
 import Data from "~/_settings/landing.json";
+import ITransf from "@/components/compIcons/ITransf";
+import IExpect from "@/components/compIcons/IExpect";
+import IGuar from "@/components/compIcons/IGuar";
+import ITax from "@/components/compIcons/ITax";
+import ITarget from "@/components/compIcons/ITarget";
+import INew from "@/components/compIcons/INew";
 
 export default {
   metaInfo: {
@@ -67,6 +108,12 @@ export default {
   components: {
     DiagonalBreaker,
     HeaderBanner,
+    ITransf,
+    IExpect,
+    IGuar,
+    ITax,
+    ITarget,
+    INew,
   },
   data() {
     return {
@@ -83,30 +130,66 @@ export default {
 .box-container {
 }
 
-#box {
-  padding: 3rem 3rem;
+#boxTitle {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#boxSub {
+  margin: auto auto;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: $text-light-on-dark;
+  text-align: center;
+}
+
+.examples {
+  padding: 3rem 0;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 0;
+  @media (min-width: $break-s) {
+    padding: 0 2rem;
+  }
+}
+
+.box-img {
+  width: 75px;
+  margin-right: 1.5rem;
+}
+
+.box-text {
+}
+
+.box-item-title {
+  color: white;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.box-item-text {
+  color: $text-light-on-dark;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.box {
+  padding: 2rem 0;
   border-radius: 3px;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-  }
-
-  .boxText {
-    margin: auto auto;
-    margin-bottom: 2rem;
-    color: $text-light-on-dark;
+  .box-button {
     text-align: center;
   }
-
-  @media (min-width: $break-m) {
+  a {
+    color: $blue;
   }
-
-  @media (min-width: $break-l) {
-  }
-
-  @media (min-width: $break-xl) {
+  @media (min-width: $break-s) {
+    padding: 3rem 3rem;
   }
 }
 </style>

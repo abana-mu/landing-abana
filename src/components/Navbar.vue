@@ -398,7 +398,7 @@
                           <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
                             <b-icon icon="arrow-left-short" class="mr-2" />Products
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -411,7 +411,7 @@
                                   <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in market.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -420,7 +420,7 @@
                             </g-link>
                           </div>
                           <b-dropdown-divider></b-dropdown-divider>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/ecommerce/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -433,7 +433,7 @@
                                   <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in ecom.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -441,7 +441,7 @@
                               </ul>
                             </g-link>
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/supply-chain/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -454,7 +454,7 @@
                                   <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in supply.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -483,7 +483,7 @@
                           <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
                             <b-icon icon="arrow-left-short" class="mr-2" />Solutions
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/sourcing-buyers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -496,7 +496,7 @@
                                   <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in source.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -504,7 +504,7 @@
                               </ul>
                             </g-link>
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/product-buyers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -517,7 +517,7 @@
                                   <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in product.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -525,7 +525,7 @@
                               </ul>
                             </g-link>
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/garment-makers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -538,7 +538,7 @@
                                   <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in gm.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -546,7 +546,7 @@
                               </ul>
                             </g-link>
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/input-suppliers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -559,7 +559,7 @@
                                   <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in ip.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -567,7 +567,7 @@
                               </ul>
                             </g-link>
                           </div>
-                          <div class="col col-12 left-panel mb-3">
+                          <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/service-providers">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -580,7 +580,7 @@
                                   <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel feature-list">
+                              <ul class="grey-panel-mobile feature-list">
                                 <li v-for="item in sp.examples" :key="item.example">
                                   <span class="feature-title">{{ item.title }}</span>
                                   <span class="feature-details">{{ item.example }}</span>
@@ -926,6 +926,11 @@ export default {
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  .nav-item {
+    padding: 0.75rem 0;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
 }
 
 .nav-item {
@@ -979,6 +984,11 @@ export default {
 .grey-panel {
   background-color: #fafafa;
   padding: 1rem 0rem 3rem 2rem !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+.grey-panel-mobile {
+  background-color: #fafafa;
+  padding: 1.5rem !important;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 

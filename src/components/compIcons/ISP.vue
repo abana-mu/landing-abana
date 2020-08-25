@@ -33,7 +33,7 @@
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss'>
+<style lang='scss' scoped>
 .cls-1 {
   fill: #f4f4f4;
 }

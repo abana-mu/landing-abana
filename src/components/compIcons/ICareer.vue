@@ -31,7 +31,7 @@
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss'>
+<style scoped lang='scss'>
 .cls-1 {
   fill: #f4f4f4;
 }
