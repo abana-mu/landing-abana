@@ -952,7 +952,7 @@ export default {
   padding: 0;
   position: fixed;
   margin-top: 20px;
-  justify-content: end;
+  justify-content: flex-end;
   left: 0;
   width: 100%;
   box-shadow: 0 1px 1px rgba(47, 57, 78, 0.08), 0 4px 4px rgba(47, 57, 78, 0.08);
