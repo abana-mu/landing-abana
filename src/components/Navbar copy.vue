@@ -23,62 +23,61 @@
             <div class="nav-item" @mouseover="hoverPro = true" @mouseleave="hoverPro = false">
               <a class="nav-link">Products</a>
               <div id="products-drop" class="dropdown-container" v-show="hoverPro">
-                <div class="col col-6 left-panel">
-                  <div class="left-link-container">
-                    <b-dropdown-header id="dropdown-header-1">Products</b-dropdown-header>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover1 = true"
-                      @mouseleave="hover1 = false"
+                <div class="col col-7 left-panel pl-5 pr-4 py-4">
+                  <b-dropdown-header id="dropdown-header-1">Products</b-dropdown-header>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover1 = true"
+                    @mouseleave="hover1 = false"
+                  >
+                    <g-link
+                      class="dropdown-item d-flex align-items-center"
+                      to="/matching-marketplace/"
                     >
-                      <g-link
-                        class="dropdown-item d-flex align-items-center"
-                        to="/matching-marketplace/"
-                      >
-                        <div class="drop-image">
-                          <IMarket />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ market.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
+                      <div class="drop-image">
+                        <IMarket />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ market.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
 
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover2 = true"
-                      @mouseleave="hover2 = false"
-                    >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce/">
-                        <div class="drop-image">
-                          <IEcomm />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ ecom.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover2 = true"
+                    @mouseleave="hover2 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce/">
+                      <div class="drop-image">
+                        <IEcomm />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ ecom.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
 
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover3 = true"
-                      @mouseleave="hover3 = false"
-                    >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain/">
-                        <div class="drop-image">
-                          <ISupply />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ supply.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover3 = true"
+                    @mouseleave="hover3 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain/">
+                      <div class="drop-image">
+                        <ISupply />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ supply.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
+                      </div>
+                    </g-link>
                   </div>
                 </div>
-                <div class="col col-6 grey-panel">
+
+                <div class="col col-5 grey-panel pl-4 px-4 py-4">
                   <div v-show="hover1">
                     <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
@@ -114,97 +113,86 @@
             <div class="nav-item" @mouseover="hoverSol = true" @mouseleave="hoverSol = false">
               <a class="nav-link">Solutions</a>
               <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
-                <div class="col col-6 left-panel">
-                  <div class="left-link-container">
-                    <b-dropdown-header id="dropdown-header-1">For Buyers</b-dropdown-header>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover1 = true"
-                      @mouseleave="hover1 = false"
-                    >
-                      <g-link
-                        class="dropdown-item d-flex align-items-center"
-                        to="/sourcing-buyers/"
-                      >
-                        <div class="drop-image">
-                          <ISource />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ source.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover2 = true"
-                      @mouseleave="hover2 = false"
-                    >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers/">
-                        <div class="drop-image">
-                          <IProduct />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ product.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
-                    <b-dropdown-header id="dropdown-header-2">For Makers</b-dropdown-header>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover3 = true"
-                      @mouseleave="hover3 = false"
-                    >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers/">
-                        <div class="drop-image">
-                          <IGM />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ gm.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover4 = true"
-                      @mouseleave="hover4 = false"
-                    >
-                      <g-link
-                        class="dropdown-item d-flex align-items-center"
-                        to="/input-suppliers/"
-                      >
-                        <div class="drop-image">
-                          <IIS />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ ip.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
-                    <div
-                      class="dropdown-link"
-                      @mouseover="hover5 = true"
-                      @mouseleave="hover5 = false"
-                    >
-                      <g-link
-                        class="dropdown-item d-flex align-items-center"
-                        to="/service-providers"
-                      >
-                        <div class="drop-image">
-                          <ISP />
-                        </div>
-                        <div class="drop-text">
-                          <p class="drop-title text-transition">{{ sp.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
-                        </div>
-                      </g-link>
-                    </div>
+                <div class="col col-7 left-panel pl-5 pr-4 py-4">
+                  <b-dropdown-header id="dropdown-header-1">For Buyers</b-dropdown-header>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover1 = true"
+                    @mouseleave="hover1 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/sourcing-buyers/">
+                      <div class="drop-image">
+                        <ISource />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ source.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover2 = true"
+                    @mouseleave="hover2 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers/">
+                      <div class="drop-image">
+                        <IProduct />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ product.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
+                  <b-dropdown-header id="dropdown-header-2">For Makers</b-dropdown-header>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover3 = true"
+                    @mouseleave="hover3 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers/">
+                      <div class="drop-image">
+                        <IGM />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ gm.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover4 = true"
+                    @mouseleave="hover4 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/input-suppliers/">
+                      <div class="drop-image">
+                        <IIS />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ ip.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
+                      </div>
+                    </g-link>
+                  </div>
+                  <div
+                    class="dropdown-link"
+                    @mouseover="hover5 = true"
+                    @mouseleave="hover5 = false"
+                  >
+                    <g-link class="dropdown-item d-flex align-items-center" to="/service-providers">
+                      <div class="drop-image">
+                        <ISP />
+                      </div>
+                      <div class="drop-text">
+                        <p class="drop-title text-transition">{{ sp.title }}</p>
+                        <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
+                      </div>
+                    </g-link>
                   </div>
                 </div>
-                <div class="col col-6 grey-panel">
+                <div class="col col-5 grey-panel pl-4 px-4 py-4">
                   <div v-show="hover1">
                     <b-dropdown-header>Example:</b-dropdown-header>
                     <ul class="feature-list">
@@ -267,12 +255,8 @@
             <!-- Company-->
             <div class="nav-item" @mouseover="hoverCom = true" @mouseleave="hoverCom = false">
               <a class="nav-link">Company</a>
-              <div
-                id="company-drop"
-                class="dropdown-container pt-2 pb-5 justify-content-center"
-                v-show="hoverCom"
-              >
-                <div class="col col-2">
+              <div id="company-drop" class="dropdown-container p-5" v-show="hoverCom">
+                <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-3">Company</b-dropdown-header>
                   <g-link
                     class="dropdown-item drop-title-singular d-flex align-items-center"
@@ -294,7 +278,7 @@
                     <div class="drop-text">Careers</div>
                   </g-link>
                 </div>
-                <div class="col col-2">
+                <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-4">Support</b-dropdown-header>
 
                   <g-link
@@ -317,7 +301,7 @@
                     <div class="drop-text">Privacy & Terms</div>
                   </g-link>
                 </div>
-                <div class="col col-2">
+                <div class="col col-4">
                   <b-dropdown-header id="dropdown-header-5">Partnerships</b-dropdown-header>
 
                   <g-link
@@ -950,16 +934,27 @@ export default {
   background-color: white;
   flex-direction: row;
   padding: 0;
-  position: fixed;
+  position: absolute;
   margin-top: 20px;
-  justify-content: end;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 1px 1px rgba(47, 57, 78, 0.08), 0 4px 4px rgba(47, 57, 78, 0.08);
+  left: 50%;
+  transform: translateX(-45%);
+  border-radius: 0.25rem;
 }
 
-.left-link-container {
-  width: 375px;
+#products-drop {
+  width: 45rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+#solutions-drop {
+  width: 45rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#company-drop {
+  width: 45rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-header {
@@ -971,14 +966,14 @@ export default {
 }
 
 .left-panel {
-  padding: 1rem 2rem 3rem 0 !important;
-  display: flex;
-  justify-content: flex-end;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .grey-panel {
   background-color: #fafafa;
-  padding: 1rem 0rem 3rem 2rem !important;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
