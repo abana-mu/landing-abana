@@ -31,30 +31,33 @@ collections:
       - label: 'Landing Page'
         name: 'landing'
         file: 'src/_settings/landing.json'
+        description: 'General Site Settings'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - { label: 'Call to Action', name: 'cta', widget: 'string' }
-          - { label: 'Box Title', name: 'boxTitle', widget: 'string' }
-          - { label: 'Box Subtitle', name: 'boxSubtitle', widget: 'string' }
-
-          - { label: 'Box Item 1 Title', name: 'boxTextTitle1', widget: 'string' }
-          - { label: 'Box Item 1', name: 'boxText1', widget: 'string' }
-
-          - { label: 'Box Item 2 Title', name: 'boxTextTitle2', widget: 'string' }
-          - { label: 'Box Item 2', name: 'boxText2', widget: 'string' }
-
-          - { label: 'Box Item 3 Title', name: 'boxTextTitle3', widget: 'string' }
-          - { label: 'Box Item 3', name: 'boxText3', widget: 'string' }
-
-          - { label: 'Box Item 4 Title', name: 'boxTextTitle4', widget: 'string' }
-          - { label: 'Box Item 4', name: 'boxText4', widget: 'string' }
-
-          - { label: 'Box Item 5 Title', name: 'boxTextTitle5', widget: 'string' }
-          - { label: 'Box Item 5', name: 'boxText5', widget: 'string' }
-
-          - { label: 'Box Item 6 Title', name: 'boxTextTitle6', widget: 'string' }
-          - { label: 'Box Item 6', name: 'boxText6', widget: 'string' }
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Call to Action', name: 'cta', widget: 'string' }
+          - label: 'Boxes'
+            name: boxes
+            widget: 'object'
+            fields:
+              - { label: 'Box Title', name: 'boxTitle', widget: 'string' }
+              - { label: 'Box Subtitle', name: 'boxSubtitle', widget: 'string' }
+              - { label: 'Box Item 1 Title', name: 'boxTextTitle1', widget: 'string' }
+              - { label: 'Box Item 1', name: 'boxText1', widget: 'string' }
+              - { label: 'Box Item 2 Title', name: 'boxTextTitle2', widget: 'string' }
+              - { label: 'Box Item 2', name: 'boxText2', widget: 'string' }
+              - { label: 'Box Item 3 Title', name: 'boxTextTitle3', widget: 'string' }
+              - { label: 'Box Item 3', name: 'boxText3', widget: 'string' }
+              - { label: 'Box Item 4 Title', name: 'boxTextTitle4', widget: 'string' }
+              - { label: 'Box Item 4', name: 'boxText4', widget: 'string' }
+              - { label: 'Box Item 5 Title', name: 'boxTextTitle5', widget: 'string' }
+              - { label: 'Box Item 5', name: 'boxText5', widget: 'string' }
+              - { label: 'Box Item 6 Title', name: 'boxTextTitle6', widget: 'string' }
+              - { label: 'Box Item 6', name: 'boxText6', widget: 'string' }
 
       - label: 'Second Page'
         name: 'second'

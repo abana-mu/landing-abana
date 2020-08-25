@@ -80,7 +80,11 @@
         </div>
       </b-container>
     </div>
-    <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="white" />
+    <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="beige" />
+    <!-- FLOW -->
+    <div class="back-beige">
+      <FlowGraph />
+    </div>
   </Layout>
 </template>
 
@@ -100,6 +104,7 @@ import IGuar from "@/components/compIcons/IGuar";
 import ITax from "@/components/compIcons/ITax";
 import ITarget from "@/components/compIcons/ITarget";
 import INew from "@/components/compIcons/INew";
+import FlowGraph from "~/components/FlowGraph";
 
 export default {
   metaInfo: {
@@ -114,6 +119,7 @@ export default {
     ITax,
     ITarget,
     INew,
+    FlowGraph,
   },
   data() {
     return {
@@ -145,7 +151,7 @@ export default {
 }
 
 .examples {
-  padding: 3rem 0;
+  padding: 3rem 0 1rem 0;
 }
 
 .box-item {
@@ -188,7 +194,7 @@ export default {
   a {
     color: $blue;
   }
-  @media (min-width: $break-s) {
+  @media (min-width: $break-l) {
     padding: 3rem 3rem;
   }
 }

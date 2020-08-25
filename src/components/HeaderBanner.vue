@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <b-container fluid>
+  <b-container fluid class="overflow-hidden">
     <div id="header-banner">
       <div class="row">
         <div class="col-12 col-lg-4 order-lg-2" data-aos="fade-down">

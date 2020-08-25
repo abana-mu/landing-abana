@@ -94,6 +94,45 @@ h2 {
   }
 }
 
+h3 {
+  letter-spacing: 1.4px;
+  font-weight: 500;
+
+  //XSmall -578
+  font-size: 1rem;
+  line-height: 1.2;
+
+  //Small 578-776
+  @media (min-width: $break-s) {
+    font-size: 1.05rem;
+    letter-spacing: 1.2px;
+  }
+
+  //Medium 776-992
+  @media (min-width: $break-m) {
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+  }
+
+  //Large 992-1200
+  @media (min-width: $break-l) {
+    font-size: 1.15rem;
+    letter-spacing: 1.2px;
+  }
+
+  //XL 1200-1440
+  @media (min-width: $break-xl) {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+  }
+
+  //XL 1440+
+  @media (min-width: $break-xxl) {
+    font-size: 1.25rem;
+    letter-spacing: 1.2px;
+  }
+}
+
 p {
   color: $text-light-on-light;
   font-size: 18px;
