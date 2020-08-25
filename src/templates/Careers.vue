@@ -17,11 +17,11 @@
     <h4>The role you’ll play:</h4>
     <p>{{ $page.thisJob.role }}</p>
     <h4>Your Main Tasks:</h4>
-    <vue-simple-markdown :source="$page.thisJob.tasks"></vue-simple-markdown>
+    <vue-simple-markdown :source="$page.thisJob.tasks" class="md-text"></vue-simple-markdown>
     <h4>What you bring to the table:</h4>
-    <vue-simple-markdown :source="$page.thisJob.table"></vue-simple-markdown>
+    <vue-simple-markdown :source="$page.thisJob.table" class="md-text"></vue-simple-markdown>
     <h4>We are an ambitious start-up and we wish to attract multi-disciplinary and like-minded individuals to the team. You will thrive here if:</h4>
-    <vue-simple-markdown :source="$page.thisJob.thrive"></vue-simple-markdown>
+    <vue-simple-markdown :source="$page.thisJob.thrive" class="md-text"></vue-simple-markdown>
     <b-button
       variant="primary"
       :href="
@@ -54,16 +54,20 @@ import OneSection from "~/layouts/OneSection";
 
 export default {
   components: {
-    OneSection
+    OneSection,
   },
 
   metaInfo() {
     return {
-      title: this.$page.thisJob.title
+      title: this.$page.thisJob.title,
     };
-  }
+  },
 };
 </script>
 
 <!-- STYLING -->
-<style lang="scss"></style>
+<style lang="scss">
+.md-text {
+  color: $text-light-on-light;
+}
+</style>

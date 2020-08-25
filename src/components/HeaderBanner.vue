@@ -56,7 +56,7 @@ export default {
 <!-- STYLING -->
 <style lang="scss">
 #header-banner {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #header-title {

@@ -2,20 +2,50 @@
   <Layout>
     <!-- HEADER -->
     <HeaderBanner :title="Data.title" :subtext="Data.subtext" :cta="Data.cta" />
-    <DiagonalBreaker colorTop="white" colorBottom="beige" direction="right" />
+    <DiagonalBreaker colorTop="white" colorMiddle="darkblue" colorBottom="blue" />
     <!-- BOX -->
-    <div class="back-beige">
+    <div class="back-blue">
       <b-container fluid class="box-container">
         <div id="box">
           <h2>{{Data.boxTitle}}</h2>
-          <vue-simple-markdown :source="Data.boxText" class="boxText"></vue-simple-markdown>
+          <p>{{Data.boxSubtitle}}</p>
+
+          <b-container class="bv-example-row">
+            <b-row>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle1}}</p>
+                <p>{{Data.boxText1}}</p>
+              </b-col>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle2}}</p>
+                <p>{{Data.boxText2}}</p>
+              </b-col>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle3}}</p>
+                <p>{{Data.boxText3}}</p>
+              </b-col>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle4}}</p>
+                <p>{{Data.boxText4}}</p>
+              </b-col>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle5}}</p>
+                <p>{{Data.boxText5}}</p>
+              </b-col>
+              <b-col cols="12" md="6">
+                <p>{{Data.boxTextTitle6}}</p>
+                <p>{{Data.boxText6}}</p>
+              </b-col>
+            </b-row>
+          </b-container>
+
           <g-link to="/why-africa">
             <b-button variant="outline-primary">Why Africa?</b-button>
           </g-link>
         </div>
       </b-container>
     </div>
-    <DiagonalBreaker colorTop="beige" colorBottom="white" direction="right" />
+    <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="white" />
   </Layout>
 </template>
 
@@ -51,43 +81,32 @@ export default {
   margin-right: 1rem;
 }
 .box-container {
-  padding: 2rem 0;
-  @media (min-width: $break-s) {
-    padding: 3rem 0;
-  }
 }
 
 #box {
-  position: relative;
-  background-color: white;
   padding: 3rem 3rem;
   border-radius: 3px;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 22px 25px 0 rgba(0, 0, 0, 0.1);
 
   h2 {
-    margin: auto auto;
-    margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
   }
 
   .boxText {
     margin: auto auto;
     margin-bottom: 2rem;
+    color: $text-light-on-dark;
+    text-align: center;
   }
 
   @media (min-width: $break-m) {
-    width: 80%;
-    padding: 5rem 6rem;
   }
 
   @media (min-width: $break-l) {
-    padding: 5rem 7rem;
   }
 
   @media (min-width: $break-xl) {
-    padding: 5rem 10rem;
   }
 }
 </style>

@@ -105,7 +105,6 @@ p {
 
 .markdown-body {
   font-family: $sans-serif !important;
-  color: $text-light-on-light !important;
   font-size: 18px !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -122,6 +121,10 @@ p {
 
 .back-grey {
   background-color: $grey-light;
+}
+
+.back-blue {
+  background-color: $blue-grey;
 }
 
 .back-beige {
