@@ -2,6 +2,7 @@
 <template>
   <b-container fluid class="pb-5 mobile-fluid">
     <h2 class="py-5 px-4 px-md-0 text-center">Connecting industry players like never before</h2>
+    <h2>{{title}}</h2>
     <div class="flow-graph d-none d-md-flex">
       <div class="sources">
         <g-link class="source-item" to="/sourcing-buyers">
@@ -65,7 +66,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title", "subtext", "cta"],
+  props: ["title"],
 };
 </script>
 

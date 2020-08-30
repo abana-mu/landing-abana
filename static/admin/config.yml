@@ -6,27 +6,10 @@ media_folder: 'static/uploads' # Media files will be stored in the repo under st
 public_folder: '/uploads'
 
 collections:
-  - name: 'careers' # Used in routes, e.g., /admin/collections/blog
-    label: 'Jobs' # Used in the UI
-    folder: '_careers/' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - {
-          label: 'Department',
-          name: 'department',
-          widget: 'select',
-          options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'],
-        }
-      - { label: 'Location', name: 'location', widget: 'string' }
-      - { label: 'Role', name: 'role', widget: 'markdown' }
-      - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
-      - { label: 'What you bring to the table', name: 'table', widget: 'markdown' }
-      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown' }
   - label: 'Pages'
     name: 'pages'
+    editor:
+      preview: false
     files:
       - label: 'Landing Page'
         name: 'landing'
@@ -65,8 +48,112 @@ collections:
               - { label: 'Title', name: 'flowTitle', widget: 'string' }
               - { label: 'SubText', name: 'flowSubtext', widget: 'string' }
 
-      - label: 'Second Page'
-        name: 'second'
-        file: 'src/_settings/second.json'
+      - label: 'Matching Marketplace'
+        name: 'matching'
+        file: 'src/_settings/matching.json'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Title', name: 'matchingTitle', widget: 'string' }
+
+      - label: 'E-Commerce'
+        name: 'ecommerce'
+        file: 'src/_settings/ecommerce.json'
+        fields:
+          - { label: 'Title', name: 'ecommerceTitle', widget: 'string' }
+
+      - label: 'Supply Chain Solutions'
+        name: 'supplychain'
+        file: 'src/_settings/supplychain.json'
+        fields:
+          - { label: 'Title', name: 'supplychainTitle', widget: 'string' }
+
+      - label: 'Sourcing Buyers'
+        name: 'sourcingbuyers'
+        file: 'src/_settings/sourcingbuyers.json'
+        fields:
+          - { label: 'Title', name: 'sourcingbuyersTitle', widget: 'string' }
+
+      - label: 'Product Buyers'
+        name: 'productbuyers'
+        file: 'src/_settings/productbuyers.json'
+        fields:
+          - { label: 'Title', name: 'productbuyersTitle', widget: 'string' }
+
+      - label: 'Garment Makers'
+        name: 'garmentmakers'
+        file: 'src/_settings/garmentmakers.json'
+        fields:
+          - { label: 'Title', name: 'garmentmakersTitle', widget: 'string' }
+
+      - label: 'Input Suppliers'
+        name: 'inputsuppliers'
+        file: 'src/_settings/inputsuppliers.json'
+        fields:
+          - { label: 'Title', name: 'inputsuppliersTitle', widget: 'string' }
+
+      - label: 'Service Providers'
+        name: 'serviceproviders'
+        file: 'src/_settings/serviceproviders.json'
+        fields:
+          - { label: 'Title', name: 'serviceprovidersTitle', widget: 'string' }
+
+      - label: 'Why Africa'
+        name: 'whyafrica'
+        file: 'src/_settings/whyafrica.json'
+        fields:
+          - { label: 'Title', name: 'whyafricaTitle', widget: 'string' }
+
+      - label: 'Plans'
+        name: 'plans'
+        file: 'src/_settings/plans.json'
+        fields:
+          - { label: 'Title', name: 'plansTitle', widget: 'string' }
+
+      - label: 'About Us'
+        name: 'aboutus'
+        file: 'src/_settings/aboutus.json'
+        fields:
+          - { label: 'Title', name: 'aboutusTitle', widget: 'string' }
+
+      - label: 'Careers'
+        name: 'careers'
+        file: 'src/_settings/careers.json'
+        fields:
+          - { label: 'Title', name: 'careersTitle', widget: 'string' }
+
+      - label: 'Contact Us'
+        name: 'contact'
+        file: 'src/_settings/contact.json'
+        fields:
+          - { label: 'Title', name: 'contactTitle', widget: 'string' }
+
+      - label: 'Privacy & Terms'
+        name: 'privacy'
+        file: 'src/_settings/privacy.json'
+        fields:
+          - { label: 'Title', name: 'privacyTitle', widget: 'string' }
+
+      - label: 'Partner'
+        name: 'partner'
+        file: 'src/_settings/partner.json'
+        fields:
+          - { label: 'Title', name: 'partnerTitle', widget: 'string' }
+
+  - name: 'careers' # Used in routes, e.g., /admin/collections/blog
+    label: 'Jobs' # Used in the UI
+    folder: '_careers/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Department',
+          name: 'department',
+          widget: 'select',
+          options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'],
+        }
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Role', name: 'role', widget: 'markdown' }
+      - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
+      - { label: 'What you bring to the table', name: 'table', widget: 'markdown' }
+      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown' }
