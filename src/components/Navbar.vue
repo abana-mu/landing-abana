@@ -931,6 +931,9 @@ export default {
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
+  .dropdown-container {
+    margin-top: 14px;
+  }
 }
 
 .nav-item {

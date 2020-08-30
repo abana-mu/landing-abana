@@ -58,6 +58,12 @@ collections:
               - { label: 'Box Item 5', name: 'boxText5', widget: 'string' }
               - { label: 'Box Item 6 Title', name: 'boxTextTitle6', widget: 'string' }
               - { label: 'Box Item 6', name: 'boxText6', widget: 'string' }
+          - label: 'Flow'
+            name: flow
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'flowTitle', widget: 'string' }
+              - { label: 'SubText', name: 'flowSubtext', widget: 'string' }
 
       - label: 'Second Page'
         name: 'second'
