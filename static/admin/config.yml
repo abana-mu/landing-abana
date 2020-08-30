@@ -45,173 +45,173 @@ collections:
             name: flow
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'flowTitle', widget: 'string' }
-              - { label: 'SubText', name: 'flowSubtext', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtitle', widget: 'string' }
 
       - label: 'Matching Marketplace'
         name: 'matching'
         file: 'src/_settings/matching.json'
         fields:
           - label: 'Header'
-            name: matchingheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'matchingTitle', widget: 'string' }
-              - { label: 'SubText', name: 'matchingSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'E-Commerce'
         name: 'ecommerce'
         file: 'src/_settings/ecommerce.json'
         fields:
           - label: 'Header'
-            name: ecommerceheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'ecommerceTitle', widget: 'string' }
-              - { label: 'SubText', name: 'ecommerceSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
         file: 'src/_settings/supplychain.json'
         fields:
           - label: 'Header'
-            name: supplychainheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'supplychainTitle', widget: 'string' }
-              - { label: 'SubText', name: 'supplychainSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'
         file: 'src/_settings/sourcingbuyers.json'
         fields:
           - label: 'Header'
-            name: sourcingbuyersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'sourcingbuyersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'sourcingbuyersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Product Buyers'
         name: 'productbuyers'
         file: 'src/_settings/productbuyers.json'
         fields:
           - label: 'Header'
-            name: productbuyersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'productbuyersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'productbuyersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Garment Makers'
         name: 'garmentmakers'
         file: 'src/_settings/garmentmakers.json'
         fields:
           - label: 'Header'
-            name: garmentmakersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'garmentmakersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'garmentmakersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Input Suppliers'
         name: 'inputsuppliers'
         file: 'src/_settings/inputsuppliers.json'
         fields:
           - label: 'Header'
-            name: inputsuppliersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'inputsuppliersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'inputsuppliersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Service Providers'
         name: 'serviceproviders'
         file: 'src/_settings/serviceproviders.json'
         fields:
           - label: 'Header'
-            name: serviceprovidersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'serviceprovidersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'serviceprovidersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Why Africa'
         name: 'whyafrica'
         file: 'src/_settings/whyafrica.json'
         fields:
           - label: 'Header'
-            name: whyafricaheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'whyafricaTitle', widget: 'string' }
-              - { label: 'SubText', name: 'whyafricaSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Plans'
         name: 'plans'
         file: 'src/_settings/plans.json'
         fields:
           - label: 'Header'
-            name: plansheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'plansTitle', widget: 'string' }
-              - { label: 'SubText', name: 'plansSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'About Us'
         name: 'aboutus'
         file: 'src/_settings/aboutus.json'
         fields:
           - label: 'Header'
-            name: aboutusheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'aboutusTitle', widget: 'string' }
-              - { label: 'SubText', name: 'aboutusSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Careers'
         name: 'careers'
         file: 'src/_settings/careers.json'
         fields:
           - label: 'Header'
-            name: careersheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'careersTitle', widget: 'string' }
-              - { label: 'SubText', name: 'careersSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Contact Us'
         name: 'contact'
         file: 'src/_settings/contact.json'
         fields:
           - label: 'Header'
-            name: contactheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'contactTitle', widget: 'string' }
-              - { label: 'SubText', name: 'contactSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Privacy & Terms'
         name: 'privacy'
         file: 'src/_settings/privacy.json'
         fields:
           - label: 'Header'
-            name: privacyheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'privacyTitle', widget: 'string' }
-              - { label: 'SubText', name: 'privacySubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
       - label: 'Partner'
         name: 'partner'
         file: 'src/_settings/partner.json'
         fields:
           - label: 'Header'
-            name: partnerheader
+            name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'partnerTitle', widget: 'string' }
-              - { label: 'SubText', name: 'partnerSubtext', widget: 'text' }
+              - { label: 'Title', name: 'Title', widget: 'string' }
+              - { label: 'SubText', name: 'Subtext', widget: 'text' }
 
   - name: 'careers' # Used in routes, e.g., /admin/collections/blog
     label: 'Jobs' # Used in the UI
