@@ -5,8 +5,8 @@
     "cta": "Pre-Register"
   },
   "boxes": {
-    "boxSubtitle": "Helping you navigate the biggest generational disruption in the Global Apparel Industry",
-    "boxTitle": "For Fashion Professionals, by Fashion Professionals",
+    "boxSubtitle": "Build new partnerships for value, speed and purpose.",
+    "boxTitle": "Re-imagining Supply-Chains  ",
     "boxTextTitle1": "Digital Transformations",
     "boxTextTitle2": "New Customer Expectations",
     "boxTextTitle3": "A new - yet old - manufacturing source",
@@ -21,7 +21,7 @@
     "boxText6": "We understand the distinct needs of all buyers and manufacturers, and provide frictionless, innovative solutions to your specific challenges"
   },
   "flow": {
-    "title": "Connecting industry players like never before",
-    "subtitle": "Flow subtitle"
+    "flowTitle": "Connecting industry players like never before",
+    "flowSubtext": "Flow subtitle"
   }
 }
