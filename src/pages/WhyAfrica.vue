@@ -1,14 +1,21 @@
 <template>
   <OneSection>
-    <h1>Why Africa</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <h1 data-aos="fade-up">{{Data.header.title}}</h1>
+    <p data-aos="fade-up" data-aos-delay="100">{{Data.header.subtext}}</p>
   </OneSection>
 </template>
 
 <script>
+import Data from "~/_settings/whyafrica.json";
+
 export default {
   metaInfo: {
-    title: "Journal",
+    title: "Why Africa",
+  },
+  data() {
+    return {
+      Data,
+    };
   },
 };
 </script>

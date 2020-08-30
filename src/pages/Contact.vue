@@ -1,14 +1,21 @@
 <template>
   <OneSection>
-    <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <h1 data-aos="fade-up">{{Data.header.title}}</h1>
+    <p data-aos="fade-up" data-aos-delay="100">{{Data.header.subtext}}</p>
   </OneSection>
 </template>
 
 <script>
+import Data from "~/_settings/contact.json";
+
 export default {
   metaInfo: {
-    title: "Contact",
+    title: "Contact Us",
+  },
+  data() {
+    return {
+      Data,
+    };
   },
 };
 </script>

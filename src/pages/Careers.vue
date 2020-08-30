@@ -1,8 +1,8 @@
 <template>
   <OneSection>
     <div class="one-section-header">
-      <h1>Careers</h1>
-      <p>We're launching soon and are looking for talent to help us grow!</p>
+      <h1>{{Data.header.title}}</h1>
+      <p>{{Data.header.subtext}}</p>
     </div>
     <div class="row">
       <div class="col-12 p-3">
@@ -220,10 +220,17 @@ query{
 </page-query>
 
 <script>
+import Data from "~/_settings/careers.json";
+
 export default {
   components: {},
   metaInfo: {
     title: "Careers",
+  },
+  data() {
+    return {
+      Data,
+    };
   },
 };
 </script>
