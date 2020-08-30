@@ -83,7 +83,7 @@
     <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="beige" />
     <!-- FLOW -->
     <div class="back-beige">
-      <FlowGraph :title="Data.flow.flowTitle" :subtitle="Data.flow.flowSubtext" />
+      <FlowGraph :title="Data.flow.title" :subtitle="Data.flow.subtitle" />
     </div>
   </Layout>
 </template>

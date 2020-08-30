@@ -46,7 +46,7 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtitle', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
 
       - label: 'Matching Marketplace'
         name: 'matching'
@@ -56,8 +56,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'E-Commerce'
         name: 'ecommerce'
@@ -67,8 +67,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
@@ -78,8 +78,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'
@@ -89,8 +89,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Product Buyers'
         name: 'productbuyers'
@@ -100,8 +100,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Garment Makers'
         name: 'garmentmakers'
@@ -111,8 +111,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Input Suppliers'
         name: 'inputsuppliers'
@@ -122,8 +122,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Service Providers'
         name: 'serviceproviders'
@@ -133,8 +133,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Why Africa'
         name: 'whyafrica'
@@ -144,8 +144,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Plans'
         name: 'plans'
@@ -155,8 +155,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'About Us'
         name: 'aboutus'
@@ -166,8 +166,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Careers'
         name: 'careers'
@@ -177,8 +177,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Contact Us'
         name: 'contact'
@@ -188,8 +188,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Privacy & Terms'
         name: 'privacy'
@@ -199,8 +199,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
       - label: 'Partner'
         name: 'partner'
@@ -210,8 +210,8 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'Title', widget: 'string' }
-              - { label: 'SubText', name: 'Subtext', widget: 'text' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
   - name: 'careers' # Used in routes, e.g., /admin/collections/blog
     label: 'Jobs' # Used in the UI
