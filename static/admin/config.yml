@@ -52,91 +52,166 @@ collections:
         name: 'matching'
         file: 'src/_settings/matching.json'
         fields:
-          - { label: 'Title', name: 'matchingTitle', widget: 'string' }
+          - label: 'Header'
+            name: matchingheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'matchingTitle', widget: 'string' }
+              - { label: 'SubText', name: 'matchingSubtext', widget: 'text' }
 
       - label: 'E-Commerce'
         name: 'ecommerce'
         file: 'src/_settings/ecommerce.json'
         fields:
-          - { label: 'Title', name: 'ecommerceTitle', widget: 'string' }
+          - label: 'Header'
+            name: ecommerceheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'ecommerceTitle', widget: 'string' }
+              - { label: 'SubText', name: 'ecommerceSubtext', widget: 'text' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
         file: 'src/_settings/supplychain.json'
         fields:
-          - { label: 'Title', name: 'supplychainTitle', widget: 'string' }
+          - label: 'Header'
+            name: supplychainheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'supplychainTitle', widget: 'string' }
+              - { label: 'SubText', name: 'supplychainSubtext', widget: 'text' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'
         file: 'src/_settings/sourcingbuyers.json'
         fields:
-          - { label: 'Title', name: 'sourcingbuyersTitle', widget: 'string' }
+          - label: 'Header'
+            name: sourcingbuyersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'sourcingbuyersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'sourcingbuyersSubtext', widget: 'text' }
 
       - label: 'Product Buyers'
         name: 'productbuyers'
         file: 'src/_settings/productbuyers.json'
         fields:
-          - { label: 'Title', name: 'productbuyersTitle', widget: 'string' }
+          - label: 'Header'
+            name: productbuyersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'productbuyersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'productbuyersSubtext', widget: 'text' }
 
       - label: 'Garment Makers'
         name: 'garmentmakers'
         file: 'src/_settings/garmentmakers.json'
         fields:
-          - { label: 'Title', name: 'garmentmakersTitle', widget: 'string' }
+          - label: 'Header'
+            name: garmentmakersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'garmentmakersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'garmentmakersSubtext', widget: 'text' }
 
       - label: 'Input Suppliers'
         name: 'inputsuppliers'
         file: 'src/_settings/inputsuppliers.json'
         fields:
-          - { label: 'Title', name: 'inputsuppliersTitle', widget: 'string' }
+          - label: 'Header'
+            name: inputsuppliersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'inputsuppliersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'inputsuppliersSubtext', widget: 'text' }
 
       - label: 'Service Providers'
         name: 'serviceproviders'
         file: 'src/_settings/serviceproviders.json'
         fields:
-          - { label: 'Title', name: 'serviceprovidersTitle', widget: 'string' }
+          - label: 'Header'
+            name: serviceprovidersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'serviceprovidersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'serviceprovidersSubtext', widget: 'text' }
 
       - label: 'Why Africa'
         name: 'whyafrica'
         file: 'src/_settings/whyafrica.json'
         fields:
-          - { label: 'Title', name: 'whyafricaTitle', widget: 'string' }
+          - label: 'Header'
+            name: whyafricaheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'whyafricaTitle', widget: 'string' }
+              - { label: 'SubText', name: 'whyafricaSubtext', widget: 'text' }
 
       - label: 'Plans'
         name: 'plans'
         file: 'src/_settings/plans.json'
         fields:
-          - { label: 'Title', name: 'plansTitle', widget: 'string' }
+          - label: 'Header'
+            name: plansheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'plansTitle', widget: 'string' }
+              - { label: 'SubText', name: 'plansSubtext', widget: 'text' }
 
       - label: 'About Us'
         name: 'aboutus'
         file: 'src/_settings/aboutus.json'
         fields:
-          - { label: 'Title', name: 'aboutusTitle', widget: 'string' }
+          - label: 'Header'
+            name: aboutusheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'aboutusTitle', widget: 'string' }
+              - { label: 'SubText', name: 'aboutusSubtext', widget: 'text' }
 
       - label: 'Careers'
         name: 'careers'
         file: 'src/_settings/careers.json'
         fields:
-          - { label: 'Title', name: 'careersTitle', widget: 'string' }
+          - label: 'Header'
+            name: careersheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'careersTitle', widget: 'string' }
+              - { label: 'SubText', name: 'careersSubtext', widget: 'text' }
 
       - label: 'Contact Us'
         name: 'contact'
         file: 'src/_settings/contact.json'
         fields:
-          - { label: 'Title', name: 'contactTitle', widget: 'string' }
+          - label: 'Header'
+            name: contactheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'contactTitle', widget: 'string' }
+              - { label: 'SubText', name: 'contactSubtext', widget: 'text' }
 
       - label: 'Privacy & Terms'
         name: 'privacy'
         file: 'src/_settings/privacy.json'
         fields:
-          - { label: 'Title', name: 'privacyTitle', widget: 'string' }
+          - label: 'Header'
+            name: privacyheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'privacyTitle', widget: 'string' }
+              - { label: 'SubText', name: 'privacySubtext', widget: 'text' }
 
       - label: 'Partner'
         name: 'partner'
         file: 'src/_settings/partner.json'
         fields:
-          - { label: 'Title', name: 'partnerTitle', widget: 'string' }
+          - label: 'Header'
+            name: partnerheader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'partnerTitle', widget: 'string' }
+              - { label: 'SubText', name: 'partnerSubtext', widget: 'text' }
 
   - name: 'careers' # Used in routes, e.g., /admin/collections/blog
     label: 'Jobs' # Used in the UI

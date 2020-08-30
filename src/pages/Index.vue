@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- HEADER -->
-    <HeaderBanner :subtext="Data.header.subtext" :cta="Data.header.cta" />
+    <HeaderBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
     <DiagonalBreaker colorTop="white" colorMiddle="darkblue" colorBottom="blue" />
     <!-- BOX -->
     <div class="back-blue">
@@ -83,7 +83,7 @@
     <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="beige" />
     <!-- FLOW -->
     <div class="back-beige">
-      <FlowGraph :title="Data.header.title" />
+      <FlowGraph :title="Data.flow.flowTitle" :subtitle="Data.flow.flowSubtext" />
     </div>
   </Layout>
 </template>

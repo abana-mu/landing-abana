@@ -1,8 +1,8 @@
 <!-- HTML -->
 <template>
   <b-container fluid class="pb-5 mobile-fluid">
-    <h2 class="py-5 px-4 px-md-0 text-center">Connecting industry players like never before</h2>
-    <h2>{{title}}</h2>
+    <h2 class="pt-5 pb-2 px-4 px-md-0 text-center">{{title}}</h2>
+    <p class="flow-subtitle pb-5">{{subtitle}}</p>
     <div class="flow-graph d-none d-md-flex">
       <div class="sources">
         <g-link class="source-item" to="/sourcing-buyers">
@@ -66,7 +66,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title"],
+  props: ["title", "subtitle"],
 };
 </script>
 
@@ -84,6 +84,13 @@ export default {
   h3 {
     margin: 0;
   }
+}
+
+.flow-subtitle {
+  margin: auto auto;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .mobile-fluid {
