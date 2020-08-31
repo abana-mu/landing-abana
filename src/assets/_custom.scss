@@ -224,22 +224,6 @@ p {
 
 //NAVIGATION
 
-.nav-item {
-  &:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #dfdfdf;
-    transition: width 0.3s;
-  }
-  &:hover {
-    &:after {
-      width: 100%;
-    }
-  }
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: $text-dark;
 

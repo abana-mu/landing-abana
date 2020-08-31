@@ -898,7 +898,7 @@ export default {
 </static-query>
 
 <!-- STYLING -->
-<style lang="scss">
+<style lang="scss" scoped>
 // MAIN ELLEMENTS
 
 .navShadow {
@@ -920,6 +920,19 @@ export default {
   cursor: pointer;
   margin-left: 20px;
   padding: 1.2rem 0;
+  &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #dfdfdf;
+    transition: width 0.3s;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
 }
 
 .logo {

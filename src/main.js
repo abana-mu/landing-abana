@@ -12,7 +12,9 @@ import { CardPlugin } from 'bootstrap-vue';
 import { ButtonPlugin } from 'bootstrap-vue';
 import { LayoutPlugin } from 'bootstrap-vue';
 import { SidebarPlugin } from 'bootstrap-vue';
+import { TabsPlugin } from 'bootstrap-vue';
 import { BootstrapVueIcons } from 'bootstrap-vue';
+import { FormRadioPlugin } from 'bootstrap-vue';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
 import 'vue-simple-markdown/dist/vue-simple-markdown.css';
@@ -26,6 +28,8 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(ButtonPlugin);
   Vue.use(LayoutPlugin);
   Vue.use(SidebarPlugin);
+  Vue.use(TabsPlugin);
   Vue.use(BootstrapVueIcons);
   Vue.use(VueSimpleMarkdown);
+  Vue.use(FormRadioPlugin);
 }
