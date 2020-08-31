@@ -20,7 +20,11 @@
         <div class="col col-auto d-none d-lg-block">
           <b-navbar-nav class="nav-main">
             <!-- Products-->
-            <div class="nav-item" @mouseover="hoverPro = true" @mouseleave="hoverPro = false">
+            <div
+              class="nav-item nav-only"
+              @mouseover="hoverPro = true"
+              @mouseleave="hoverPro = false"
+            >
               <a class="nav-link">Products</a>
               <div id="products-drop" class="dropdown-container" v-show="hoverPro">
                 <div class="col col-6 left-panel">
@@ -111,7 +115,11 @@
             </div>
 
             <!-- Solutions-->
-            <div class="nav-item" @mouseover="hoverSol = true" @mouseleave="hoverSol = false">
+            <div
+              class="nav-item nav-only"
+              @mouseover="hoverSol = true"
+              @mouseleave="hoverSol = false"
+            >
               <a class="nav-link">Solutions</a>
               <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
                 <div class="col col-6 left-panel">
@@ -255,17 +263,21 @@
             </div>
 
             <!-- Why Africa-->
-            <li class="nav-item">
+            <li class="nav-item nav-only">
               <g-link class="nav-link" to="/why-africa/">Why Africa</g-link>
             </li>
 
             <!-- Plans-->
-            <li class="nav-item">
+            <li class="nav-item nav-only">
               <g-link class="nav-link" to="/plans/">Plans</g-link>
             </li>
 
             <!-- Company-->
-            <div class="nav-item" @mouseover="hoverCom = true" @mouseleave="hoverCom = false">
+            <div
+              class="nav-item nav-only"
+              @mouseover="hoverCom = true"
+              @mouseleave="hoverCom = false"
+            >
               <a class="nav-link">Company</a>
               <div
                 id="company-drop"
@@ -898,7 +910,7 @@ export default {
 </static-query>
 
 <!-- STYLING -->
-<style lang="scss" scoped>
+<style lang="scss" >
 // MAIN ELLEMENTS
 
 .navShadow {
@@ -916,7 +928,7 @@ export default {
   }
 }
 
-.nav-item {
+.nav-item.nav-only {
   cursor: pointer;
   margin-left: 20px;
   padding: 1.2rem 0;
