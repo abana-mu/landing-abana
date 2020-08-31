@@ -4,7 +4,7 @@
     <h2 class="pt-5 pb-2 px-4 px-md-0 text-center">{{title}}</h2>
     <p class="flow-subtitle pb-5">{{subtitle}}</p>
     <div class="flow-graph d-none d-md-flex">
-      <div class="sources">
+      <div class="sources" data-aos="zoom-in-up">
         <g-link class="source-item" to="/sourcing-buyers">
           <h3>Sourcing Buyers</h3>
           <p>One-Liner</p>
@@ -14,9 +14,9 @@
           <p>One-Liner</p>
         </g-link>
       </div>
-      <img class="flow-image" src="../assets/images/abana-flow.svg" />
+      <img class="flow-image" src="../assets/images/abana-flow.svg" data-aos="zoom-in-up" />
       <div class="destinations">
-        <g-link class="dest-item" to="/sourcing-buyers">
+        <g-link class="dest-item" to="/sourcing-buyers" data-aos="zoom-in-up">
           <h3>Makers</h3>
           <p>One-Liner</p>
         </g-link>

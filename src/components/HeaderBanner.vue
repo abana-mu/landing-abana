@@ -28,7 +28,7 @@
             data-aos-delay="100"
           >{{subtext}}</p>
           <g-link
-            class="py-2 mb-3 mb-lg-0"
+            class="py-2 mb-3 mb-lg-0 text-center"
             to="/Plans/"
             data-aos="fade-up"
             data-aos-delay="200"

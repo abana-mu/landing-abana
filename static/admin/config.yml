@@ -180,6 +180,17 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
+      - label: 'Sustainability'
+        name: 'sustainability'
+        file: 'src/_settings/sustainability.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+
       - label: 'Contact Us'
         name: 'contact'
         file: 'src/_settings/contact.json'

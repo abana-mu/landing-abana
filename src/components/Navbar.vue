@@ -206,7 +206,7 @@
                 </div>
                 <div class="col col-6 grey-panel">
                   <div v-show="hover1">
-                    <b-dropdown-header>Example:</b-dropdown-header>
+                    <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
                       <li v-for="item in source.examples" :key="item.example">
                         <span class="feature-title">{{ item.title }}</span>
@@ -215,7 +215,7 @@
                     </ul>
                   </div>
                   <div v-show="hover2">
-                    <b-dropdown-header>Example:</b-dropdown-header>
+                    <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
                       <li v-for="item in product.examples" :key="item.example">
                         <span class="feature-title">{{ item.title }}</span>
@@ -224,7 +224,7 @@
                     </ul>
                   </div>
                   <div v-show="hover3">
-                    <b-dropdown-header>Example:</b-dropdown-header>
+                    <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
                       <li v-for="item in gm.examples" :key="item.example">
                         <span class="feature-title">{{ item.title }}</span>
@@ -233,7 +233,7 @@
                     </ul>
                   </div>
                   <div v-show="hover4">
-                    <b-dropdown-header>Example:</b-dropdown-header>
+                    <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
                       <li v-for="item in ip.examples" :key="item.example">
                         <span class="feature-title">{{ item.title }}</span>
@@ -242,7 +242,7 @@
                     </ul>
                   </div>
                   <div v-show="hover5">
-                    <b-dropdown-header>Example:</b-dropdown-header>
+                    <b-dropdown-header>Features:</b-dropdown-header>
                     <ul class="feature-list">
                       <li v-for="item in sp.examples" :key="item.example">
                         <span class="feature-title">{{ item.title }}</span>
@@ -292,6 +292,16 @@
                       <ICareer />
                     </div>
                     <div class="drop-text">Careers</div>
+                  </g-link>
+
+                  <g-link
+                    class="dropdown-item drop-title-singular d-flex align-items-center"
+                    to="/sustainability/"
+                  >
+                    <div class="drop-image-sm">
+                      <ISustainability />
+                    </div>
+                    <div class="drop-text">Sustainability</div>
                   </g-link>
                 </div>
                 <div class="col col-2">
@@ -631,6 +641,17 @@
                               </div>
                               <div class="drop-text">Careers</div>
                             </g-link>
+
+                            <g-link
+                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              to="/sustainability/"
+                              @click="hide"
+                            >
+                              <div class="drop-image-sm">
+                                <ISustainability />
+                              </div>
+                              <div class="drop-text">Sustainability</div>
+                            </g-link>
                           </div>
                           <div class="col col-12 px-5 mb-3">
                             <b-dropdown-header>Support</b-dropdown-header>
@@ -699,6 +720,7 @@ import IPrivacy from "@/components/compIcons/IPrivacy";
 import IContact from "@/components/compIcons/IContact";
 import ICareer from "@/components/compIcons/ICareer";
 import IPartnership from "@/components/compIcons/IPartnership";
+import ISustainability from "@/components/compIcons/ISustainability";
 
 export default {
   components: {
@@ -716,18 +738,19 @@ export default {
     IContact,
     ICareer,
     IPartnership,
+    ISustainability,
   },
   data() {
     return {
       scrollPosition: null,
       market: {
         title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities ",
+        subtitle: "Illuminating sourcing opportunities",
         examples: [
           {
             title: "DATABASE",
             example:
-              "Find & build reltationships with the most appropriate partners",
+              "Use multiple criteria to find the most appropriate partners",
           },
           {
             title: "MARKETPLACE",
@@ -738,7 +761,8 @@ export default {
       },
       ecom: {
         title: "E-commerce",
-        subtitle: "Low MOQs for immediate or quick deliveries",
+        subtitle:
+          "Sophisticated products in low MOQs for immediate or quick deliveries",
         examples: [
           {
             title: "Drops",
@@ -746,12 +770,12 @@ export default {
           },
           {
             title: "Brands",
-            example: "Curated list of the best regional brands. (coming soon)",
+            example: "Curated list of the best regional brands (coming soon)",
           },
           {
             title: "Fast Custom",
             example:
-              "Products available directly from factories in low MOQs & short lead-times. (coming soon)",
+              "Products available directly from factories in low MOQs & short lead-times (coming soon)",
           },
         ],
       },
@@ -773,6 +797,11 @@ export default {
               "Sampling to delivery follow-up, logistics & documentation",
           },
           {
+            title: "FULL SERVICE",
+            example:
+              "Virtual supplier accessing a network of smaller factories",
+          },
+          {
             title: "ADVISORY",
             example: "Customized advice to succeed and grow in the region",
           },
@@ -780,108 +809,98 @@ export default {
       },
       source: {
         title: "Sourcing Buyers",
-        subtitle: "Different Text",
+        subtitle: "Find new factories, products and input-suppliers",
         examples: [
           {
-            title: "DATABASE",
+            title: "NEW TO THE REGION",
             example:
-              "Find and connect with the most appropriate factories for you",
+              "Search our factory database, post requests for information, quickly & easily request quotes from multiple suppliers",
           },
           {
-            title: "RFI/RFQ",
+            title: "CONSOLIDATE YOUR SOURCING",
             example:
-              "Post general or specific needs and get instant responses from qualified factories",
+              "Find more products and suppliers, make the region significant for your business",
           },
           {
-            title: "MARKETPLACE",
+            title: "EXPLORE NEW POSSIBILITIES",
             example:
-              "Monitor business opportunities using our tagging and notification tools ",
+              "Connect with material and accessory suppliers active in the region",
           },
         ],
       },
       product: {
         title: "Product Buyers",
-        subtitle: "some text here1",
+        subtitle: "Shop on-line for sophisticated products in low MOQs",
         examples: [
           {
-            title: "DROPS & FAST CUSTOM",
+            title: "ON TREND – NOW",
             example:
-              "Private-label services for small MOQs directly from factories",
+              "Order from our ready-to-ship DROP collections, add your private label, start selling within a week. Improve your margins, lower your risk",
           },
           {
-            title: "BRANDS",
-            example: "Discover the best regional brands",
+            title: "YOUR PRIVATE LABEL BASICS – FAST",
+            example:
+              "Build your order directly with our selection of high-quality suppliers. Customize and get delivered within weeks",
           },
           {
-            title: "SPECIAL OFFERS",
+            title: "FIND SPECIAL OFFERS",
             example:
-              "Garment stock and other opportunities directly from factories",
+              "Take advantage of stock garments and other opportunities directly from factories on our marketplace",
           },
         ],
       },
       gm: {
         title: "Garment Makers",
-        subtitle: "some text here1",
+        subtitle: "FOB & CMT Factories, Textile Producers",
         examples: [
           {
-            title: "DATABASE",
+            title: "FIND NEW BUYERS",
             example:
-              "Find and build relationships with the most appropriate buyers for your products",
+              "Find, connect, message and build relationships with the most appropriate buyers for your products",
           },
           {
-            title: "E-SHOWROOM",
-            example: "Showcase your product range",
+            title: "SEIZE ORDER OPPORTUNITIES",
+            example: "View and instantly respond to buyer requests ",
           },
           {
-            title: "RFI/RFQ",
-            example: "Instantly respond to buyer requests",
-          },
-          {
-            title: "MARKETPLACE",
+            title: "SEE WHAT’S THERE",
             example:
-              "Post offers and needs to buyers, other factories, input suppliers and service providers",
+              "Post offers & needs to buyers, other factories, input suppliers and service providers and monitor new business opportunities using our tagging and notification tools",
           },
         ],
       },
       ip: {
         title: "Input Suppliers",
-        subtitle: "some text here1",
+        subtitle: "Accessories, Yarn, Fabric, & Trim Suppliers",
         examples: [
           {
-            title: "DATABASE",
+            title: "EXPLORE A NEW MARKET",
             example:
               "Find and build relationships with the most appropriate buyers and factories for your products",
           },
           {
-            title: "E-SHOWROOM",
-            example: "Showcase your product range",
-          },
-          {
-            title: "RFI",
+            title: "UNDERSTAND NEEDS",
             example:
-              "Instantly respond to buyer and factories’ requests and interests",
-          },
-          {
-            title: "MARKETPLACE",
-            example:
-              "Post offers and needs to buyers, factories, other input suppliers and service providers",
+              "Post offers and needs to buyers, factories, other input suppliers and service providers and monitor new business opportunities using our tagging and notification tools. ",
           },
         ],
       },
       sp: {
         title: "Service Providers",
-        subtitle: "some text here1",
+        subtitle:
+          "Agents, QC & Compliance, Logistics, Finance Services, Industry Associations",
         examples: [
           {
-            title: "DATABASE",
-            example: "Find and build relationships with platform members",
+            title: "RESEARCH",
+            example:
+              "Find, connect and build relationships with platform members",
           },
           {
-            title: "BULLETIN BOARD",
+            title: "COMMUNICATE",
             example: "Constantly update your offers to the platform community",
           },
           {
-            title: "MARKETPLACE",
+            title: "PROMOTE",
             example:
               "Post listings to highlight and promote new services or offers",
           },
@@ -967,7 +986,7 @@ export default {
 }
 
 .left-link-container {
-  width: 375px;
+  width: 425px;
 }
 
 .dropdown-header {
@@ -986,7 +1005,7 @@ export default {
 
 .grey-panel {
   background-color: #fafafa;
-  padding: 1rem 0rem 3rem 2rem !important;
+  padding: 1rem 7rem 3rem 2rem !important;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 .grey-panel-mobile {

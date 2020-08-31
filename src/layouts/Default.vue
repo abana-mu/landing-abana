@@ -15,7 +15,9 @@ export default {
     Navbar,
   },
   mounted() {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   },
 };
 </script>
@@ -28,7 +30,7 @@ query {
 }
 </static-query>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .layout {
   margin: 0 auto;
   //XSmall -578
@@ -46,7 +48,7 @@ query {
 
   //Large 992-1200
   @media (min-width: $break-l) {
-    padding-top: 9rem;
+    padding-top: 10rem;
   }
 
   //XLarge 1200-1440
