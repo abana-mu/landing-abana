@@ -116,7 +116,7 @@
               <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
-                    <b-dropdown-header id="dropdown-header-1">For Buyers</b-dropdown-header>
+                    <b-dropdown-header class="dropdown-header">For Buyers</b-dropdown-header>
                     <div
                       class="dropdown-link"
                       @mouseover="hover1 = true"
@@ -150,7 +150,7 @@
                         </div>
                       </g-link>
                     </div>
-                    <b-dropdown-header id="dropdown-header-2">For Makers</b-dropdown-header>
+                    <b-dropdown-header class="dropdown-header">For Makers</b-dropdown-header>
                     <div
                       class="dropdown-link"
                       @mouseover="hover3 = true"
@@ -273,7 +273,7 @@
                 v-show="hoverCom"
               >
                 <div class="col col-2">
-                  <b-dropdown-header id="dropdown-header-3">Company</b-dropdown-header>
+                  <b-dropdown-header>Company</b-dropdown-header>
                   <g-link
                     class="dropdown-item drop-title-singular d-flex align-items-center"
                     to="/about/"
@@ -305,7 +305,7 @@
                   </g-link>
                 </div>
                 <div class="col col-2">
-                  <b-dropdown-header id="dropdown-header-4">Support</b-dropdown-header>
+                  <b-dropdown-header>Support</b-dropdown-header>
 
                   <g-link
                     class="dropdown-item drop-title-singular d-flex align-items-center"
@@ -328,7 +328,7 @@
                   </g-link>
                 </div>
                 <div class="col col-2">
-                  <b-dropdown-header id="dropdown-header-5">Partnerships</b-dropdown-header>
+                  <b-dropdown-header>Partnerships</b-dropdown-header>
 
                   <g-link
                     class="dropdown-item drop-title-singular d-flex align-items-center"
@@ -372,14 +372,18 @@
                       Solutions
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
-                    <g-link class="sidebar-item-level-1" to="/why-africa/" @click="hide">
-                      Why Africa
-                      <b-icon icon="arrow-right-short" class="float-right" />
-                    </g-link>
-                    <g-link class="sidebar-item-level-1" to="/about/" @click="hide">
-                      Plans
-                      <b-icon icon="arrow-right-short" class="float-right" />
-                    </g-link>
+                    <div @click="hide">
+                      <g-link class="sidebar-item-level-1" to="/why-africa/">
+                        Why Africa
+                        <b-icon icon="arrow-right-short" class="float-right" />
+                      </g-link>
+                    </div>
+                    <div @click="hide">
+                      <g-link class="sidebar-item-level-1" to="/plans/">
+                        Plans
+                        <b-icon icon="arrow-right-short" class="float-right" />
+                      </g-link>
+                    </div>
 
                     <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-2>
                       Company
@@ -409,25 +413,21 @@
                             <b-icon icon="arrow-left-short" class="mr-2" />Products
                           </div>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
-                              <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
-                              >
-                                <div class="drop-image">
-                                  <IMarket />
+                            <div @click="hide">
+                              <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
+                                <div
+                                  class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                >
+                                  <div class="drop-image">
+                                    <IMarket />
+                                  </div>
+                                  <div class="drop-text">
+                                    <p class="drop-title text-transition">{{ market.title }}</p>
+                                    <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                                  </div>
                                 </div>
-                                <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ market.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
-                                </div>
-                              </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in market.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
-                            </g-link>
+                              </g-link>
+                            </div>
                           </div>
                           <b-dropdown-divider></b-dropdown-divider>
                           <div class="col col-12 mb-3">
@@ -443,12 +443,6 @@
                                   <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in ecom.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
@@ -464,12 +458,6 @@
                                   <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in supply.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                         </div>
@@ -493,6 +481,7 @@
                           <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
                             <b-icon icon="arrow-left-short" class="mr-2" />Solutions
                           </div>
+                          <b-dropdown-header class="px-5">For Buyers</b-dropdown-header>
                           <div class="col col-12 mb-3">
                             <g-link class="sidebar-item-level-2" to="/sourcing-buyers/">
                               <div
@@ -506,12 +495,6 @@
                                   <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in source.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
@@ -527,15 +510,11 @@
                                   <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in product.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
+
                           <div class="col col-12 mb-3">
+                            <b-dropdown-header class="px-5">For Makers</b-dropdown-header>
                             <g-link class="sidebar-item-level-2" to="/garment-makers/">
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
@@ -548,12 +527,6 @@
                                   <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in gm.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
@@ -569,12 +542,6 @@
                                   <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in ip.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
@@ -590,12 +557,6 @@
                                   <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
                                 </div>
                               </div>
-                              <ul class="grey-panel-mobile feature-list">
-                                <li v-for="item in sp.examples" :key="item.example">
-                                  <span class="feature-title">{{ item.title }}</span>
-                                  <span class="feature-details">{{ item.example }}</span>
-                                </li>
-                              </ul>
                             </g-link>
                           </div>
                         </div>
@@ -1008,11 +969,6 @@ export default {
   padding: 1rem 7rem 3rem 2rem !important;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
-.grey-panel-mobile {
-  background-color: #fafafa;
-  padding: 1.5rem !important;
-  border-left: 1px solid rgba(0, 0, 0, 0.125);
-}
 
 .dropdown-link {
   padding: 0.75rem 0;
@@ -1145,6 +1101,12 @@ export default {
   font-size: 1.25rem;
 
   &:hover {
+    color: $primary;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  &.active {
     color: $primary;
     text-decoration: none;
     font-weight: 600;

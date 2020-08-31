@@ -4,7 +4,7 @@
     <HeaderBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
     <DiagonalBreaker colorTop="white" colorMiddle="darkblue" colorBottom="blue" class="mt-4" />
     <!-- BOX -->
-    <div class="back-blue">
+    <div class="back-blue overflow-hidden">
       <b-container fluid class="box-container">
         <div class="box">
           <h2 id="boxTitle">{{Data.boxes.boxTitle}}</h2>
