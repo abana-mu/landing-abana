@@ -25,7 +25,7 @@
               @mouseover="hoverPro = true"
               @mouseleave="hoverPro = false"
             >
-              <a class="nav-link">Products</a>
+              <a class="nav-link">Solutions</a>
               <div id="products-drop" class="dropdown-container" v-show="hoverPro">
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
@@ -120,7 +120,7 @@
               @mouseover="hoverSol = true"
               @mouseleave="hoverSol = false"
             >
-              <a class="nav-link">Solutions</a>
+              <a class="nav-link">For Business</a>
               <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
@@ -422,7 +422,7 @@
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
                           <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />Products
+                            <b-icon icon="arrow-left-short" class="mr-2" />Solutions
                           </div>
                           <div class="col col-12 mb-3">
                             <div @click="hide">
@@ -491,7 +491,7 @@
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
                           <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />Solutions
+                            <b-icon icon="arrow-left-short" class="mr-2" />For Business
                           </div>
                           <b-dropdown-header class="px-5">For Buyers</b-dropdown-header>
                           <div class="col col-12 mb-3">
@@ -1144,12 +1144,11 @@ export default {
   padding: 0.5rem 3rem;
   color: $text-dark;
   font-size: 1.25rem;
-
+  cursor: pointer;
   &:hover {
     color: $primary;
     text-decoration: none;
     font-weight: 600;
-    cursor: pointer;
   }
 }
 

@@ -15,8 +15,8 @@
         </g-link>
       </div>
       <img class="flow-image" src="../assets/images/abana-flow.svg" data-aos="zoom-in-up" />
-      <div class="destinations">
-        <g-link class="dest-item" to="/sourcing-buyers" data-aos="zoom-in-up">
+      <div class="destinations" data-aos="zoom-in-up">
+        <g-link class="dest-item" to="/sourcing-buyers">
           <h3>Makers</h3>
           <p>One-Liner</p>
         </g-link>

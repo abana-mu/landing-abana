@@ -277,20 +277,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .duration {
   display: flex;
   flex-direction: row;
 }
 
-.custom-switch .custom-control-label {
+.custom-control-label {
   cursor: pointer;
-  &:after {
-    background-color: white;
-  }
-  &:before {
-    background-color: #adb5bd;
-  }
 }
 
 .nav-tabs .nav-item {
@@ -327,6 +321,7 @@ export default {
 .desc {
   font-size: 0.9rem;
 }
+
 .features {
   margin-top: 1rem;
   padding-left: 0;
