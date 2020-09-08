@@ -2,7 +2,6 @@
 <template>
   <div>
     <div class="topLayer" v-bind:class="[colorTop]">
-      <div class="middleLayer" v-bind:class="colorMiddle"></div>
       <div class="bottomLayer" v-bind:class="colorBottom"></div>
     </div>
   </div>
@@ -11,12 +10,12 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["colorTop", "colorMiddle", "colorBottom"],
+  props: ["colorTop", "colorBottom"],
 };
 </script>
 
 <!-- STYLING -->
-<style lang='scss'>
+<style lang='scss' scoped>
 //Blue Container
 .topLayer {
   height: 50px;
@@ -51,19 +50,6 @@ export default {
   @media (min-width: $break-s) {
     border-bottom: 100px solid;
     border-right: 100vw solid transparent;
-  }
-}
-
-.middleLayer {
-  width: 0;
-  height: 0;
-  top: 0px;
-  position: absolute;
-  border-bottom: 50px solid;
-  border-right: 200vw solid transparent;
-  @media (min-width: $break-s) {
-    border-bottom: 100px solid;
-    border-right: 200vw solid transparent;
   }
 }
 

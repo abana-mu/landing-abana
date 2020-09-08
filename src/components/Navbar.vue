@@ -26,10 +26,14 @@
               @mouseleave="hoverPro = false"
             >
               <a class="nav-link">Solutions</a>
-              <div id="products-drop" class="dropdown-container" v-show="hoverPro">
+              <div
+                id="products-drop"
+                class="dropdown-container"
+                v-bind:class="{ dropActive: hoverPro }"
+              >
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
-                    <b-dropdown-header id="dropdown-header-1">Products</b-dropdown-header>
+                    <b-dropdown-header id="dropdown-header-1">Our Solutions</b-dropdown-header>
                     <div
                       class="dropdown-link"
                       @mouseover="hover1 = true"
@@ -121,7 +125,11 @@
               @mouseleave="hoverSol = false"
             >
               <a class="nav-link">For Business</a>
-              <div id="solutions-drop" class="dropdown-container" v-show="hoverSol">
+              <div
+                id="solutions-drop"
+                class="dropdown-container"
+                v-bind:class="{ dropActive: hoverSol }"
+              >
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
                     <b-dropdown-header class="dropdown-header">For Buyers</b-dropdown-header>
@@ -282,7 +290,7 @@
               <div
                 id="company-drop"
                 class="dropdown-container pt-2 pb-5 justify-content-center"
-                v-show="hoverCom"
+                v-bind:class="{ dropActive: hoverCom }"
               >
                 <div class="col col-2">
                   <b-dropdown-header>Company</b-dropdown-header>
@@ -803,7 +811,7 @@ export default {
       },
       product: {
         title: "Product Buyers",
-        subtitle: "Shop on-line for sophisticated products in low MOQs",
+        subtitle: "Shop online for sophisticated products in low MOQs",
         examples: [
           {
             title: "ON TREND – NOW",
@@ -918,7 +926,7 @@ export default {
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  .nav-item {
+  .nav-item.nav-only {
     padding: 0.75rem 0;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
@@ -960,6 +968,16 @@ export default {
 
 .dropdown-container {
   display: flex;
+  opacity: 0;
+
+  pointer-events: none;
+  -webkit-transform: translateY(-0.8em);
+  transform: translateY(-0.8em);
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 10ms;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 10ms;
+
   background-color: white;
   flex-direction: row;
   padding: 0;
@@ -969,6 +987,15 @@ export default {
   left: 0;
   width: 100%;
   box-shadow: 0 1px 1px rgba(47, 57, 78, 0.08), 0 4px 4px rgba(47, 57, 78, 0.08);
+}
+
+.dropActive {
+  opacity: 1;
+  pointer-events: all !important;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .left-link-container {

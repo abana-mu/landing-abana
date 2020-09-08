@@ -2,7 +2,7 @@
   <Layout>
     <!-- HEADER -->
     <HeaderBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
-    <DiagonalBreaker colorTop="white" colorMiddle="darkblue" colorBottom="blue" class="mt-4" />
+    <DiagonalBreaker colorTop="white" colorBottom="blue" class="mt-4" />
     <!-- BOX -->
     <div class="back-blue overflow-hidden">
       <b-container fluid class="box-container">
@@ -80,9 +80,9 @@
         </div>
       </b-container>
     </div>
-    <DiagonalBreaker colorTop="blue" colorMiddle="darkblue" colorBottom="beige" />
+    <DiagonalBreaker colorTop="blue" colorBottom="white" />
     <!-- FLOW -->
-    <div class="back-beige">
+    <div class>
       <FlowGraph :title="Data.flow.title" :subtitle="Data.flow.subtitle" />
     </div>
   </Layout>

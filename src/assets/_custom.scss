@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -167,8 +168,20 @@ p {
   background-color: $grey-light;
 }
 
+.back-light-red {
+  background-color: $lightest-red;
+}
+
 .back-blue {
   background-color: $blue-grey;
+}
+
+.back-light-blue {
+  background-color: $light-blue;
+}
+
+.btn-outline-dark {
+  border-color: $grey-light;
 }
 
 .back-beige {
@@ -178,7 +191,7 @@ p {
 // GRID AND LAYOUT
 
 .container-fluid {
-  //max-width: 1400px;
+  max-width: 1440px;
   //XSmall -578
   padding-left: 1.875rem;
   padding-right: 1.875rem;
@@ -197,8 +210,8 @@ p {
 
   //Large 992-1200
   @media (min-width: $break-l) {
-    padding-left: 4.95rem;
-    padding-right: 4.95rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   //XL 1200-1400

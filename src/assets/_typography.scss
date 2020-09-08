@@ -1,57 +1,103 @@
-$sans-serif: 'SS-font';
+$sans-serif: 'SS-font1';
+
+//FONT 1
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-book.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-bookItalic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-medium.ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-mediumItalic.ttf');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-bold.ttf');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-boldItalic.ttf');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-black.ttf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SS-font';
+  font-family: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-blackItalic.ttf');
   font-weight: 700;
+  font-style: italic;
+}
+
+//FONT 2
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-Book.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-BookItalic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-LightItalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-Medium.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SS-font2';
+  src: url('../assets/fonts/GillSansMTPro-MediumItalic.otf');
+  font-weight: 400;
   font-style: italic;
 }

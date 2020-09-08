@@ -2,16 +2,16 @@
   <OneSection>
     <h1 data-aos="fade-down" class="text-center">{{Data.header.title}}</h1>
     <p data-aos="fade-down" data-aos-delay="100" class="text-center">{{Data.header.subtext}}</p>
-    <div class="mt-5" data-aos="fade-up">
-      <b-tabs align="center" content-class="mt-4">
+    <div class="my-5" data-aos="fade-up">
+      <b-tabs align="center" content-class>
         <!-- BUYERS -->
         <b-tab title="Buyers" active>
           <!-- RADIO -->
-          <div class="justify-content-center d-flex">
-            <p class="mr-4">Billed:</p>
+          <div class="billed justify-content-center d-flex">
+            <p class="mr-1 mr-sm-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-buyers"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3">
+          <b-card-group deck class="mt-3 mb-5">
             <!-- CARD 1 -->
             <b-card title="Member" class="card-top box-shadow1 grey">
               <b-card-text class="desc">This describes the member plan</b-card-text>
@@ -33,7 +33,7 @@
               </ul>
             </b-card>
             <!-- CARD 2 -->
-            <b-card title="Basic" class="card-top box-shadow1 yellow">
+            <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price2.month }}</h4>
               <h4
@@ -53,7 +53,7 @@
               </ul>
             </b-card>
             <!-- CARD 3 -->
-            <b-card title="Pro" class="card-top box-shadow1 red">
+            <b-card title="Pro" class="card-top box-shadow1 plan-col2">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price3.month }}</h4>
               <h4
@@ -73,17 +73,23 @@
               </ul>
             </b-card>
           </b-card-group>
+          <div class="text-center">
+            <b-button href="#" variant="outline-dark">
+              See all features
+              <b-icon icon="arrow-down-short" />
+            </b-button>
+          </div>
         </b-tab>
         <!-- SUPPLIERS -->
         <b-tab title="Suppliers">
           <!-- RADIO -->
-          <div class="justify-content-center d-flex">
+          <div class="billed justify-content-center d-flex">
             <p class="mr-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-suppliers"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3">
+          <b-card-group deck class="mt-3 mb-5">
             <!-- CARD 1 -->
-            <b-card title="Basic" class="card-top box-shadow1 yellow">
+            <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price1.month }}</h4>
 
@@ -104,7 +110,7 @@
               </ul>
             </b-card>
             <!-- CARD 2 -->
-            <b-card title="Team" class="card-top box-shadow1 red">
+            <b-card title="Team" class="card-top box-shadow1 plan-col2">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price2.month }}</h4>
               <h4
@@ -124,7 +130,7 @@
               </ul>
             </b-card>
             <!-- CARD 3 -->
-            <b-card title="Pro" class="card-top box-shadow1 blue">
+            <b-card title="Pro" class="card-top box-shadow1 plan-col3">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price3.month }}</h4>
               <h4
@@ -144,17 +150,29 @@
               </ul>
             </b-card>
           </b-card-group>
+          <div class="text-center">
+            <b-button href="#" variant="outline-dark">
+              See all features
+              <b-icon icon="arrow-down-short" />
+            </b-button>
+          </div>
+
+          <b-card class="back-light-red border-0 my-5">
+            <b-card-title>We support independant creators</b-card-title>
+            <b-card-text>If you are a designer, QA or special service provider, become part of the ABANA network.</b-card-text>
+            <b-button href="#" variant="outline-primary">More Information Here</b-button>
+          </b-card>
         </b-tab>
         <!-- SERVICE PROVIDERS -->
         <b-tab title="Service Providers">
           <!-- RADIO -->
-          <div class="justify-content-center d-flex">
+          <div class="billed justify-content-center d-flex">
             <p class="mr-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-service"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3">
+          <b-card-group deck class="mt-3 mb-5">
             <!-- CARD 1 -->
-            <b-card title="Basic" class="card-top box-shadow1 yellow">
+            <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price1.month }}</h4>
               <h4
@@ -174,7 +192,7 @@
               </ul>
             </b-card>
             <!-- CARD 2 -->
-            <b-card title="Team" class="card-top box-shadow1 red">
+            <b-card title="Team" class="card-top box-shadow1 plan-col2">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price2.month }}</h4>
               <h4
@@ -194,7 +212,7 @@
               </ul>
             </b-card>
             <!-- CARD 3 -->
-            <b-card title="Pro" class="card-top box-shadow1 blue">
+            <b-card title="Pro" class="card-top box-shadow1 plan-col3">
               <b-card-text class="desc">This describes the member plan</b-card-text>
               <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price3.month }}</h4>
               <h4
@@ -214,6 +232,18 @@
               </ul>
             </b-card>
           </b-card-group>
+          <div class="text-center">
+            <b-button href="#" variant="outline-dark">
+              See all features
+              <b-icon icon="arrow-down-short" />
+            </b-button>
+          </div>
+
+          <b-card class="back-light-red border-0 my-5">
+            <b-card-title>We support independant creators</b-card-title>
+            <b-card-text>If you are a designer, QA or special service provider, become part of the ABANA network.</b-card-text>
+            <b-button href="#" variant="outline-primary">More Information Here</b-button>
+          </b-card>
         </b-tab>
       </b-tabs>
     </div>
@@ -287,15 +317,79 @@ export default {
   cursor: pointer;
 }
 
+.nav-tabs {
+  @media (max-width: $break-s) {
+    padding-bottom: 0.5rem;
+  }
+}
+
 .nav-tabs .nav-item {
-  min-width: 150px;
   text-align: center;
+
+  @media (min-width: $break-s) {
+    min-width: 150px;
+  }
+  .nav-link:focus {
+    outline: none;
+  }
+
+  a.active {
+    @media (max-width: $break-s) {
+      border-color: #dee2e6;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.tabs > :first-child {
+  //
+  position: sticky;
+  top: 72px;
+  padding-top: 10px;
+  background-color: white;
+  z-index: 10;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @media (min-width: $break-s) {
+    top: 65px;
+    padding-top: 20px;
+  }
+}
+
+.billed {
+  position: sticky;
+  font-size: 14px;
+  top: 173px;
+  background-color: white;
+  z-index: 10;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-bottom: 1px solid #dee2e6;
+  @media (min-width: 382px) {
+    top: 132px;
+  }
+  @media (min-width: $break-s) {
+    top: 127px;
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.custom-control-inline {
+  @media (max-width: $break-s) {
+    margin-right: 0.5rem;
+  }
 }
 
 .card-top {
   &:before {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     content: "";
     height: 10px;
     left: 0;
@@ -342,17 +436,17 @@ export default {
     background-color: #dbdbdb;
   }
 }
-.yellow {
+.plan-col1 {
   &:before {
     background-color: #ffc552;
   }
 }
-.red {
+.plan-col2 {
   &:before {
     background-color: #fd5d60;
   }
 }
-.blue {
+.plan-col3 {
   &:before {
     background-color: #607aff;
   }
