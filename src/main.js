@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import OneSection from '~/layouts/OneSection';
+import OneSectionTight from '~/layouts/OneSectionTight';
 
 import '~/assets/_styles.scss';
 import 'aos/dist/aos.css';
@@ -23,6 +24,7 @@ export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
   Vue.component('OneSection', OneSection);
+  Vue.component('OneSectionTight', OneSectionTight);
   Vue.use(NavbarPlugin);
   Vue.use(CardPlugin);
   Vue.use(ButtonPlugin);

@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <b-navbar
-    class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white bbody"
+    class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody"
     :class="{navShadow: scrollPosition > 50}"
     toggleable="lg"
     fixed="top"
@@ -924,6 +924,7 @@ export default {
 .navShadow {
   -webkit-box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
+  background-color: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   .nav-item.nav-only {

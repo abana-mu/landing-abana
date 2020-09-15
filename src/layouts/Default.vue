@@ -1,8 +1,10 @@
 <template>
-  <div class="layout">
+  <div class="main">
     <Navbar />
-    <slot />
-    <!--  <Footer /> -->
+    <div class="layout">
+      <slot />
+      <!--  <Footer /> -->
+    </div>
   </div>
 </template>
 

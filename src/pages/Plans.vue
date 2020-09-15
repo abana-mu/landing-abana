@@ -1,17 +1,17 @@
 <template>
-  <OneSection>
+  <OneSectionTight>
     <h1 data-aos="fade-down" class="text-center">{{Data.header.title}}</h1>
     <p data-aos="fade-down" data-aos-delay="100" class="text-center">{{Data.header.subtext}}</p>
-    <div class="my-5" data-aos="fade-up">
-      <b-tabs align="center" content-class>
+    <div class="my-3" data-aos="fade-up">
+      <b-tabs align="center" content-class="pb-5 back-beige">
         <!-- BUYERS -->
-        <b-tab title="Buyers" active>
+        <b-tab title="Buyers" active >
           <!-- RADIO -->
-          <div class="billed justify-content-center d-flex">
-            <p class="mr-1 mr-sm-4">Billed:</p>
+          <div class="billed justify-content-center d-flex back-blue">
+            <p class="mx-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-buyers"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3 mb-5">
+          <b-card-group deck class="mt-4 mb-5  container mx-auto">
             <!-- CARD 1 -->
             <b-card title="Member" class="card-top box-shadow1 grey">
               <b-card-text class="desc">This describes the member plan</b-card-text>
@@ -83,11 +83,11 @@
         <!-- SUPPLIERS -->
         <b-tab title="Suppliers">
           <!-- RADIO -->
-          <div class="billed justify-content-center d-flex">
-            <p class="mr-4">Billed:</p>
+          <div class="billed justify-content-center d-flex back-blue">
+            <p class="mx-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-suppliers"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3 mb-5">
+          <b-card-group deck class="mt-3 mb-5  container mx-auto">
             <!-- CARD 1 -->
             <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
@@ -157,7 +157,7 @@
             </b-button>
           </div>
 
-          <b-card class="back-light-red border-0 my-5">
+          <b-card class="back-white border-0 my-5  container">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>If you are a designer, QA or special service provider, become part of the ABANA network.</b-card-text>
             <b-button href="#" variant="outline-primary">More Information Here</b-button>
@@ -166,11 +166,11 @@
         <!-- SERVICE PROVIDERS -->
         <b-tab title="Service Providers">
           <!-- RADIO -->
-          <div class="billed justify-content-center d-flex">
-            <p class="mr-4">Billed:</p>
+          <div class="billed justify-content-center d-flex back-blue">
+            <p class="mx-4">Billed:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-service"></b-form-radio-group>
           </div>
-          <b-card-group deck class="mt-3 mb-5">
+          <b-card-group deck class="mt-3 mb-5 container mx-auto">
             <!-- CARD 1 -->
             <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
@@ -232,14 +232,14 @@
               </ul>
             </b-card>
           </b-card-group>
-          <div class="text-center">
+          <div class="text-center ">
             <b-button href="#" variant="outline-dark">
               See all features
               <b-icon icon="arrow-down-short" />
             </b-button>
           </div>
 
-          <b-card class="back-light-red border-0 my-5">
+          <b-card class="back-white border-0 my-5 container">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>If you are a designer, QA or special service provider, become part of the ABANA network.</b-card-text>
             <b-button href="#" variant="outline-primary">More Information Here</b-button>
@@ -247,7 +247,7 @@
         </b-tab>
       </b-tabs>
     </div>
-  </OneSection>
+  </OneSectionTight>
 </template>
 
 <script>
@@ -274,30 +274,30 @@ export default {
             annual: "$0",
           },
           price2: {
-            month: "$129/mo",
-            semester: "$119/mo",
+            month: "$119/mo",
+            semester: "$109/mo",
             annual: "$99/mo",
           },
           price3: {
-            month: "$379/mo",
-            semester: "$349/mo",
-            annual: "$299/mo",
+            month: "$239/mo",
+            semester: "$219/mo",
+            annual: "$199/mo",
           },
         },
         supplier: {
           price1: {
-            month: "$99/mo",
-            semester: "$199/mo",
-            annual: "$299/mo",
+            month: "$119/mo",
+            semester: "$109/mo",
+            annual: "$99/mo",
           },
           price2: {
-            month: "$99/mo",
-            semester: "$199/mo",
-            annual: "$299/mo",
+            month: "$239/mo",
+            semester: "$219/mo",
+            annual: "$199/mo",
           },
           price3: {
-            month: "$99/mo",
-            semester: "$199/mo",
+            month: "$349/mo",
+            semester: "$329/mo",
             annual: "$299/mo",
           },
         },
@@ -318,10 +318,29 @@ export default {
 }
 
 .nav-tabs {
+  background-color: $blue-grey;
+  border: none;
+  padding: 20px 0 10px 0;
   @media (max-width: $break-s) {
     padding-bottom: 0.5rem;
   }
 }
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+  background-color: transparent;
+  color: $text-light-on-dark;
+}
+
+.nav-tabs .nav-link{
+  border:none;
+  text-transform: uppercase;
+  color: $text-light-on-dark;
+  &.active{
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}
+
 
 .nav-tabs .nav-item {
   text-align: center;
@@ -344,15 +363,18 @@ export default {
 .tabs > :first-child {
   //
   position: sticky;
-  top: 72px;
   padding-top: 10px;
   background-color: white;
   z-index: 10;
-  margin-left: -10px;
-  margin-right: -10px;
+  top: 62px;
 
-  @media (min-width: $break-s) {
-    top: 65px;
+  @media (min-width: $break-m) {
+    top: 52px;
+    padding-top: 20px;
+  }
+
+   @media (min-width: $break-l) {
+    top: 46px;
     padding-top: 20px;
   }
 }
@@ -360,30 +382,47 @@ export default {
 .billed {
   position: sticky;
   font-size: 14px;
-  top: 173px;
-  background-color: white;
+  top: 178px;
+  color: $text-light-on-dark;
   z-index: 10;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: -10px;
-  margin-right: -10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #dee2e6;
-  @media (min-width: 382px) {
-    top: 132px;
+  
+  @media (min-width: 394px) {
+    top: 139px;
   }
-  @media (min-width: $break-s) {
-    top: 127px;
+  @media (min-width: $break-m) {
+    top: 141px;
+  }
+
+  @media (min-width: $break-l) {
+    top: 135px;
   }
   p {
     font-size: 14px;
+    color: $text-light-on-dark;
     margin-bottom: 0;
   }
+}
+
+// Style Radio Buttons
+.custom-control-label::after{
+  display: none!important;
+}
+
+.custom-control-input:checked ~ .custom-control-label {
+color: $light-red;
+}
+.custom-control-label::before {
+  border:none!important;
 }
 
 .custom-control-inline {
   @media (max-width: $break-s) {
     margin-right: 0.5rem;
   }
+  margin-right: 2rem;
 }
 
 .card-top {

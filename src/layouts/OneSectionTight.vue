@@ -2,9 +2,9 @@
   <div class="main">
     <Navbar />
     <div class="layout">
-      <b-container fluid>
+
         <slot />
-      </b-container>
+
       <!--  <Footer /> -->
     </div>
   </div>
@@ -36,16 +36,16 @@ query {
 .layout {
   margin: 0 auto;
   //XSmall -578
-  padding-top: 7rem;
+  padding-top: 6rem;
 
   //XLarge 1200-1440
   @media (min-width: $break-xl) {
-    padding-top: 8rem;
+    padding-top: 7rem;
   }
 
   //XXLarge 1440+
   @media (min-width: $break-xxl) {
-    padding-top: 9rem;
+    padding-top: 8rem;
   }
 }
 </style>
