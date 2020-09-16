@@ -1,14 +1,18 @@
 <template>
   <Layout>
     <!-- HEADER -->
-    <HeaderBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
+    <HeaderBanner
+      :title="Data.header.title"
+      :subtext="Data.header.subtext"
+      :cta="Data.header.cta"
+    />
     <DiagonalBreaker colorTop="white" colorBottom="blue" class="mt-4" />
     <!-- BOX -->
     <div class="back-blue overflow-hidden">
       <b-container fluid class="box-container">
         <div class="box">
-          <h2 id="boxTitle">{{Data.boxes.boxTitle}}</h2>
-          <p id="boxSub">{{Data.boxes.boxSubtitle}}</p>
+          <h2 id="boxTitle">{{ Data.boxes.boxTitle }}</h2>
+          <p id="boxSub">{{ Data.boxes.boxSubtitle }}</p>
 
           <b-container class="examples">
             <b-row>
@@ -17,8 +21,8 @@
                   <ITransf />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle1}}</p>
-                  <p class="box-item-text">{{Data.boxes.boxText1}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle1 }}</p>
+                  <p class="box-item-text">{{ Data.boxes.boxText1 }}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item" data-aos="fade-left">
@@ -26,8 +30,8 @@
                   <IExpect />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle2}}</p>
-                  <p class="box-item-text">{{Data.boxes.boxText2}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle2 }}</p>
+                  <p class="box-item-text">{{ Data.boxes.boxText2 }}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item" data-aos="fade-right">
@@ -35,8 +39,8 @@
                   <INew />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle3}}</p>
-                  <p class="box-item-text">{{Data.boxes.boxText3}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle3 }}</p>
+                  <p class="box-item-text">{{ Data.boxes.boxText3 }}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item" data-aos="fade-left">
@@ -44,8 +48,8 @@
                   <ITax />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle4}}</p>
-                  <p class="box-item-text">{{Data.boxes.boxText4}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle4 }}</p>
+                  <p class="box-item-text">{{ Data.boxes.boxText4 }}</p>
                 </div>
               </b-col>
               <b-col cols="12" md="6" class="box-item" data-aos="fade-right">
@@ -53,9 +57,9 @@
                   <IGuar />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle5}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle5 }}</p>
                   <p class="box-item-text">
-                    {{Data.boxes.boxText5}}
+                    {{ Data.boxes.boxText5 }}
                     <g-link to="/about">About us...</g-link>
                   </p>
                 </div>
@@ -65,8 +69,8 @@
                   <ITarget />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{Data.boxes.boxTextTitle6}}</p>
-                  <p class="box-item-text">{{Data.boxes.boxText6}}</p>
+                  <p class="box-item-title">{{ Data.boxes.boxTextTitle6 }}</p>
+                  <p class="box-item-text">{{ Data.boxes.boxText6 }}</p>
                 </div>
               </b-col>
             </b-row>
@@ -95,20 +99,20 @@
 </page-query>
 
 <script>
-import HeaderBanner from "~/components/HeaderBanner";
-import DiagonalBreaker from "~/components/DiagonalBreaker";
-import Data from "~/_settings/landing.json";
-import ITransf from "@/components/compIcons/ITransf";
-import IExpect from "@/components/compIcons/IExpect";
-import IGuar from "@/components/compIcons/IGuar";
-import ITax from "@/components/compIcons/ITax";
-import ITarget from "@/components/compIcons/ITarget";
-import INew from "@/components/compIcons/INew";
-import FlowGraph from "~/components/FlowGraph";
+import HeaderBanner from '~/components/HeaderBanner';
+import DiagonalBreaker from '~/components/DiagonalBreaker';
+import Data from '~/_settings/landing.json';
+import ITransf from '@/components/compIcons/ITransf';
+import IExpect from '@/components/compIcons/IExpect';
+import IGuar from '@/components/compIcons/IGuar';
+import ITax from '@/components/compIcons/ITax';
+import ITarget from '@/components/compIcons/ITarget';
+import INew from '@/components/compIcons/INew';
+import FlowGraph from '~/components/FlowGraph';
 
 export default {
   metaInfo: {
-    title: "ABANA | African Textile & Apparel Marketplace",
+    title: 'ABANA | African Textile & Apparel Marketplace',
   },
   components: {
     DiagonalBreaker,
@@ -132,8 +136,6 @@ export default {
 <style lang="scss">
 .home-links a {
   margin-right: 1rem;
-}
-.box-container {
 }
 
 #boxTitle {
@@ -168,9 +170,6 @@ export default {
 .box-img {
   width: 75px;
   margin-right: 1.5rem;
-}
-
-.box-text {
 }
 
 .box-item-title {
