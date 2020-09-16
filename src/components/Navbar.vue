@@ -385,11 +385,11 @@
                 <div class="sidebar-container">
                   <div class="sidebar-container-1">
                     <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-0>
-                      Products
+                      Solutions
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
                     <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-1>
-                      Solutions
+                      For Business
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
                     <div @click="hide">

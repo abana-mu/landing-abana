@@ -8,7 +8,7 @@
         <b-tab title="Buyers" active >
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="mx-4">Billed:</p>
+            <p class="px-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-buyers"></b-form-radio-group>
           </div>
           <b-card-group deck class="mt-4 mb-5  container mx-auto">
@@ -84,20 +84,20 @@
         <b-tab title="Suppliers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="mx-4">Billed:</p>
+            <p class="px-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-suppliers"></b-form-radio-group>
           </div>
           <b-card-group deck class="mt-3 mb-5  container mx-auto">
             <!-- CARD 1 -->
             <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price1.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price1.month }}</h4>
 
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price1.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price1.annual }}</h4>
+              >{{ prices.supplier.price1.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price1.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -112,12 +112,12 @@
             <!-- CARD 2 -->
             <b-card title="Team" class="card-top box-shadow1 plan-col2">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price2.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price2.month }}</h4>
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price2.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price2.annual }}</h4>
+              >{{ prices.supplier.price2.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price2.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -132,12 +132,12 @@
             <!-- CARD 3 -->
             <b-card title="Pro" class="card-top box-shadow1 plan-col3">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price3.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price3.month }}</h4>
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price3.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price3.annual }}</h4>
+              >{{ prices.supplier.price3.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price3.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -167,19 +167,19 @@
         <b-tab title="Service Providers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="mx-4">Billed:</p>
+            <p class="px-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group v-model="selected" :options="options" name="radio-service"></b-form-radio-group>
           </div>
           <b-card-group deck class="mt-3 mb-5 container mx-auto">
             <!-- CARD 1 -->
             <b-card title="Basic" class="card-top box-shadow1 plan-col1">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price1.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price1.month }}</h4>
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price1.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price1.annual }}</h4>
+              >{{ prices.supplier.price1.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price1.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -194,12 +194,12 @@
             <!-- CARD 2 -->
             <b-card title="Team" class="card-top box-shadow1 plan-col2">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price2.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price2.month }}</h4>
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price2.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price2.annual }}</h4>
+              >{{ prices.supplier.price2.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price2.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -214,12 +214,12 @@
             <!-- CARD 3 -->
             <b-card title="Pro" class="card-top box-shadow1 plan-col3">
               <b-card-text class="desc">This describes the member plan</b-card-text>
-              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.buyer.price3.month }}</h4>
+              <h4 class="pricetag" v-if="selected === 'month'">{{ prices.supplier.price3.month }}</h4>
               <h4
                 class="pricetag"
                 v-else-if="selected === 'semester'"
-              >{{ prices.buyer.price3.semester }}</h4>
-              <h4 class="pricetag" v-else>{{ prices.buyer.price3.annual }}</h4>
+              >{{ prices.supplier.price3.semester }}</h4>
+              <h4 class="pricetag" v-else>{{ prices.supplier.price3.annual }}</h4>
               <ul class="features">
                 <li>
                   <b-icon icon="check-circle" class="float-left mr-2" />
@@ -262,9 +262,9 @@ export default {
       Data,
       selected: "annual",
       options: [
-        { text: "Annually", value: "annual" },
-        { text: "Semesterly", value: "semester" },
-        { text: "Monthly", value: "month" },
+        { text: "12 months", value: "annual" },
+        { text: "6 months", value: "semester" },
+        { text: "3 months", value: "month" },
       ],
       prices: {
         buyer: {
