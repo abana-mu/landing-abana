@@ -1,8 +1,10 @@
 <!-- HTML -->
 <template>
   <b-container fluid class="pb-5 mobile-fluid">
-    <h2 class="pt-5 pb-2 px-4 px-md-0 text-center">{{title}}</h2>
-    <p class="flow-subtitle pb-5">{{subtitle}}</p>
+    <h2 class="pt-5 pb-2 px-4 px-md-0 text-center">{{ title }}</h2>
+    <p class="flow-subtitle pb-5">{{ subtitle }}</p>
+
+    <!--DESKTOP VERSION -->
     <div class="flow-graph d-none d-md-flex">
       <div class="sources" data-aos="zoom-in-up">
         <g-link class="source-item" to="/sourcing-buyers">
@@ -14,7 +16,11 @@
           <p>One-Liner</p>
         </g-link>
       </div>
-      <img class="flow-image" src="../assets/images/abana-flow.svg" data-aos="zoom-in-up" />
+      <img
+        class="flow-image"
+        src="../assets/images/abana-flow.svg"
+        data-aos="zoom-in-up"
+      />
       <div class="destinations" data-aos="zoom-in-up">
         <g-link class="dest-item" to="/sourcing-buyers">
           <h3>Makers</h3>
@@ -24,39 +30,42 @@
           <h3>Input Suppliers</h3>
           <p>One-Liner</p>
         </g-link>
-        <g-link class="dest-item" to="/sourcing-buyers">
+        <g-link class="dest-item" to="/service-providers">
           <h3>Service Providers</h3>
           <p>One-Liner</p>
         </g-link>
       </div>
     </div>
+
+    <!--MOBILE VERSION -->
     <div class="flow-graph d-flex d-md-none">
       <div class="sources-mobile">
         <g-link class="source-item" to="/sourcing-buyers">
           <h3>Sourcing Buyers</h3>
-          <p>One-Liner</p>
         </g-link>
         <g-link class="source-item" to="/product-buyers">
           <h3>Product Buyers</h3>
-          <p>One-Liner</p>
         </g-link>
       </div>
-      <img class="flow-image-mobile" src="../assets/images/abana-flow-source.svg" />
+      <img
+        class="flow-image-mobile"
+        src="../assets/images/abana-flow-source.svg"
+      />
     </div>
     <div class="flow-graph d-flex d-md-none">
-      <img class="flow-image-mobile" src="../assets/images/abana-flow-dest.svg" />
+      <img
+        class="flow-image-mobile"
+        src="../assets/images/abana-flow-dest.svg"
+      />
       <div class="destinations-mobile">
         <g-link class="dest-item" to="/sourcing-buyers">
           <h3>Makers</h3>
-          <p>One-Liner</p>
         </g-link>
         <g-link class="dest-item" to="/product-buyers">
           <h3>Input Suppliers</h3>
-          <p>One-Liner</p>
         </g-link>
-        <g-link class="dest-item" to="/sourcing-buyers">
+        <g-link class="dest-item" to="/service-providers">
           <h3>Service Providers</h3>
-          <p>One-Liner</p>
         </g-link>
       </div>
     </div>
@@ -66,7 +75,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title", "subtitle"],
+  props: ['title', 'subtitle'],
 };
 </script>
 

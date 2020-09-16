@@ -2,13 +2,15 @@
 <template>
   <b-navbar
     class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody"
-    :class="{navShadow: scrollPosition > 50}"
+    :class="{ navShadow: scrollPosition > 50 }"
     toggleable="lg"
     fixed="top"
     tag="header"
   >
     <b-container fluid>
-      <div class="row w-100 justify-content-between align-items-center no-gutters">
+      <div
+        class="row w-100 justify-content-between align-items-center no-gutters"
+      >
         <!-- Nav Brand -->
         <div class="col col-auto">
           <g-link class="logo" to="/">
@@ -25,7 +27,9 @@
               @mouseover="hoverPro = true"
               @mouseleave="hoverPro = false"
             >
-              <a class="nav-link">Solutions</a>
+              <a class="nav-link"
+                >Solutions<b-icon icon="chevron-down" scale=".6"
+              /></a>
               <div
                 id="products-drop"
                 class="dropdown-container"
@@ -33,7 +37,9 @@
               >
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
-                    <b-dropdown-header id="dropdown-header-1">Our Solutions</b-dropdown-header>
+                    <b-dropdown-header id="dropdown-header-1"
+                      >Our Solutions</b-dropdown-header
+                    >
                     <div
                       class="dropdown-link"
                       @mouseover="hover1 = true"
@@ -47,8 +53,12 @@
                           <IMarket />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ market.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ market.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ market.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -58,13 +68,20 @@
                       @mouseover="hover2 = true"
                       @mouseleave="hover2 = false"
                     >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/ecommerce/">
+                      <g-link
+                        class="dropdown-item d-flex align-items-center"
+                        to="/ecommerce/"
+                      >
                         <div class="drop-image">
                           <IEcomm />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ ecom.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ ecom.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ ecom.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -74,13 +91,20 @@
                       @mouseover="hover3 = true"
                       @mouseleave="hover3 = false"
                     >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/supply-chain/">
+                      <g-link
+                        class="dropdown-item d-flex align-items-center"
+                        to="/supply-chain/"
+                      >
                         <div class="drop-image">
                           <ISupply />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ supply.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ supply.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ supply.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -124,7 +148,9 @@
               @mouseover="hoverSol = true"
               @mouseleave="hoverSol = false"
             >
-              <a class="nav-link">For Business</a>
+              <a class="nav-link"
+                >For Business<b-icon icon="chevron-down" scale=".6"
+              /></a>
               <div
                 id="solutions-drop"
                 class="dropdown-container"
@@ -132,7 +158,9 @@
               >
                 <div class="col col-6 left-panel">
                   <div class="left-link-container">
-                    <b-dropdown-header class="dropdown-header">For Buyers</b-dropdown-header>
+                    <b-dropdown-header class="dropdown-header"
+                      >For Buyers</b-dropdown-header
+                    >
                     <div
                       class="dropdown-link"
                       @mouseover="hover1 = true"
@@ -146,8 +174,12 @@
                           <ISource />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ source.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ source.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ source.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -156,29 +188,45 @@
                       @mouseover="hover2 = true"
                       @mouseleave="hover2 = false"
                     >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/product-buyers/">
+                      <g-link
+                        class="dropdown-item d-flex align-items-center"
+                        to="/product-buyers/"
+                      >
                         <div class="drop-image">
                           <IProduct />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ product.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ product.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ product.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
-                    <b-dropdown-header class="dropdown-header">For Makers</b-dropdown-header>
+                    <b-dropdown-header class="dropdown-header"
+                      >For Makers</b-dropdown-header
+                    >
                     <div
                       class="dropdown-link"
                       @mouseover="hover3 = true"
                       @mouseleave="hover3 = false"
                     >
-                      <g-link class="dropdown-item d-flex align-items-center" to="/garment-makers/">
+                      <g-link
+                        class="dropdown-item d-flex align-items-center"
+                        to="/garment-makers/"
+                      >
                         <div class="drop-image">
                           <IGM />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ gm.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ gm.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ gm.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -195,8 +243,12 @@
                           <IIS />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ ip.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ ip.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ ip.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -213,8 +265,12 @@
                           <ISP />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ sp.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ sp.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ sp.subtitle }}
+                          </p>
                         </div>
                       </g-link>
                     </div>
@@ -286,7 +342,9 @@
               @mouseover="hoverCom = true"
               @mouseleave="hoverCom = false"
             >
-              <a class="nav-link">Company</a>
+              <a class="nav-link"
+                >Company<b-icon icon="chevron-down" scale=".6"
+              /></a>
               <div
                 id="company-drop"
                 class="dropdown-container pt-2 pb-5 justify-content-center"
@@ -370,25 +428,36 @@
           <!-- Desktop Navigation -->
           <b-navbar-nav class="d-none d-lg-block ml-auto">
             <b-button variant="link" class="text-dark">{{ cta.sub }}</b-button>
-            <b-button variant="primary">{{cta.main}}</b-button>
+            <b-button variant="primary">{{ cta.main }}</b-button>
           </b-navbar-nav>
 
           <!-- Mobile Navigation -->
           <b-navbar-nav class="d-block d-lg-none ml-auto">
             <Hamburger v-b-toggle.sidebar-level-1 />
             <!-- Main SideBar -->
-            <b-sidebar id="sidebar-level-1" title="Sidebar Level 1" no-header bg-variant="white">
+            <b-sidebar
+              id="sidebar-level-1"
+              title="Sidebar Level 1"
+              no-header
+              bg-variant="white"
+            >
               <template v-slot:default="{ hide }">
                 <g-link class="logo" to="/">
                   <img src="../assets/images/logo.svg" />
                 </g-link>
                 <div class="sidebar-container">
                   <div class="sidebar-container-1">
-                    <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-0>
+                    <div
+                      class="sidebar-item-level-1"
+                      v-b-toggle.sidebar-level-2-0
+                    >
                       Solutions
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
-                    <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-1>
+                    <div
+                      class="sidebar-item-level-1"
+                      v-b-toggle.sidebar-level-2-1
+                    >
                       For Business
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
@@ -405,14 +474,19 @@
                       </g-link>
                     </div>
 
-                    <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-2>
+                    <div
+                      class="sidebar-item-level-1"
+                      v-b-toggle.sidebar-level-2-2
+                    >
                       Company
                       <b-icon icon="arrow-right-short" class="float-right" />
                     </div>
 
-                    <div class="sidebar-buttons d-flex flex-row mt-5 justify-content-center">
-                      <b-button variant="link">{{ cta.sub}}</b-button>
-                      <b-button variant="primary">{{cta.main}}</b-button>
+                    <div
+                      class="sidebar-buttons d-flex flex-row mt-5 justify-content-center"
+                    >
+                      <b-button variant="link">{{ cta.sub }}</b-button>
+                      <b-button variant="primary">{{ cta.main }}</b-button>
                     </div>
                   </div>
 
@@ -429,12 +503,21 @@
                       <div class="sidebar-container">
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
-                          <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />Solutions
+                          <div
+                            class="sidebar-item-level-2-title px-5 mb-3"
+                            @click="hide"
+                          >
+                            <b-icon
+                              icon="arrow-left-short"
+                              class="mr-2"
+                            />Solutions
                           </div>
                           <div class="col col-12 mb-3">
                             <div @click="hide">
-                              <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
+                              <g-link
+                                class="sidebar-item-level-2"
+                                to="/matching-marketplace/"
+                              >
                                 <div
                                   class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                                 >
@@ -442,8 +525,12 @@
                                     <IMarket />
                                   </div>
                                   <div class="drop-text">
-                                    <p class="drop-title text-transition">{{ market.title }}</p>
-                                    <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                                    <p class="drop-title text-transition">
+                                      {{ market.title }}
+                                    </p>
+                                    <p class="drop-subtitle text-transition">
+                                      {{ market.subtitle }}
+                                    </p>
                                   </div>
                                 </div>
                               </g-link>
@@ -451,7 +538,10 @@
                           </div>
                           <b-dropdown-divider></b-dropdown-divider>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/ecommerce/">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/ecommerce/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -459,14 +549,21 @@
                                   <IEcomm />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ ecom.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ ecom.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ ecom.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ ecom.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/supply-chain/">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/supply-chain/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -474,8 +571,12 @@
                                   <ISupply />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ supply.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ supply.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ supply.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
@@ -498,12 +599,21 @@
                       <div class="sidebar-container">
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
-                          <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />For Business
+                          <div
+                            class="sidebar-item-level-2-title px-5 mb-3"
+                            @click="hide"
+                          >
+                            <b-icon icon="arrow-left-short" class="mr-2" />For
+                            Business
                           </div>
-                          <b-dropdown-header class="px-5">For Buyers</b-dropdown-header>
+                          <b-dropdown-header class="px-5"
+                            >For Buyers</b-dropdown-header
+                          >
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/sourcing-buyers/">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/sourcing-buyers/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -511,14 +621,21 @@
                                   <ISource />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ source.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ source.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ source.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ source.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/product-buyers/">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/product-buyers/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -526,16 +643,25 @@
                                   <IProduct />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ product.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ product.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ product.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ product.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
                           </div>
 
                           <div class="col col-12 mb-3">
-                            <b-dropdown-header class="px-5">For Makers</b-dropdown-header>
-                            <g-link class="sidebar-item-level-2" to="/garment-makers/">
+                            <b-dropdown-header class="px-5"
+                              >For Makers</b-dropdown-header
+                            >
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/garment-makers/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -543,14 +669,21 @@
                                   <IGM />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ gm.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ gm.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ gm.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ gm.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/input-suppliers/">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/input-suppliers/"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -558,14 +691,21 @@
                                   <IIS />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ ip.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ ip.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ ip.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ ip.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
                           </div>
                           <div class="col col-12 mb-3">
-                            <g-link class="sidebar-item-level-2" to="/service-providers">
+                            <g-link
+                              class="sidebar-item-level-2"
+                              to="/service-providers"
+                            >
                               <div
                                 class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
                               >
@@ -573,8 +713,12 @@
                                   <ISP />
                                 </div>
                                 <div class="drop-text">
-                                  <p class="drop-title text-transition">{{ sp.title }}</p>
-                                  <p class="drop-subtitle text-transition">{{ sp.subtitle }}</p>
+                                  <p class="drop-title text-transition">
+                                    {{ sp.title }}
+                                  </p>
+                                  <p class="drop-subtitle text-transition">
+                                    {{ sp.subtitle }}
+                                  </p>
                                 </div>
                               </div>
                             </g-link>
@@ -596,9 +740,17 @@
                     <template v-slot:default="{ hide }">
                       <div class="sidebar-container">
                         <!-- Content -->
-                        <div class="row no-gutters align-items-stretch nowrap mb-2">
-                          <div class="sidebar-item-level-2-title px-5 mb-3" @click="hide">
-                            <b-icon icon="arrow-left-short" class="mr-2" />Company
+                        <div
+                          class="row no-gutters align-items-stretch nowrap mb-2"
+                        >
+                          <div
+                            class="sidebar-item-level-2-title px-5 mb-3"
+                            @click="hide"
+                          >
+                            <b-icon
+                              icon="arrow-left-short"
+                              class="mr-2"
+                            />Company
                           </div>
                           <div class="col col-12 px-5 mb-3">
                             <b-dropdown-header>Company</b-dropdown-header>
@@ -687,21 +839,21 @@
 
 <!-- SCRIPTS -->
 <script>
-import Hamburger from "@/components/Hamburger";
-import IMarket from "@/components/compIcons/IMarket";
-import IEcomm from "@/components/compIcons/IEcomm";
-import ISupply from "@/components/compIcons/ISupply";
-import ISource from "@/components/compIcons/ISource";
-import IProduct from "@/components/compIcons/IProduct";
-import IGM from "@/components/compIcons/IGM";
-import IIS from "@/components/compIcons/IIS";
-import ISP from "@/components/compIcons/ISP";
-import IAbout from "@/components/compIcons/IAbout";
-import IPrivacy from "@/components/compIcons/IPrivacy";
-import IContact from "@/components/compIcons/IContact";
-import ICareer from "@/components/compIcons/ICareer";
-import IPartnership from "@/components/compIcons/IPartnership";
-import ISustainability from "@/components/compIcons/ISustainability";
+import Hamburger from '@/components/Hamburger';
+import IMarket from '@/components/compIcons/IMarket';
+import IEcomm from '@/components/compIcons/IEcomm';
+import ISupply from '@/components/compIcons/ISupply';
+import ISource from '@/components/compIcons/ISource';
+import IProduct from '@/components/compIcons/IProduct';
+import IGM from '@/components/compIcons/IGM';
+import IIS from '@/components/compIcons/IIS';
+import ISP from '@/components/compIcons/ISP';
+import IAbout from '@/components/compIcons/IAbout';
+import IPrivacy from '@/components/compIcons/IPrivacy';
+import IContact from '@/components/compIcons/IContact';
+import ICareer from '@/components/compIcons/ICareer';
+import IPartnership from '@/components/compIcons/IPartnership';
+import ISustainability from '@/components/compIcons/ISustainability';
 
 export default {
   components: {
@@ -725,171 +877,171 @@ export default {
     return {
       scrollPosition: null,
       market: {
-        title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities",
+        title: 'Matching Marketplace',
+        subtitle: 'Illuminating sourcing opportunities',
         examples: [
           {
-            title: "DATABASE",
+            title: 'DATABASE',
             example:
-              "Use multiple criteria to find the most appropriate partners",
+              'Use multiple criteria to find the most appropriate partners',
           },
           {
-            title: "MARKETPLACE",
+            title: 'MARKETPLACE',
             example:
-              "Discover a wealth of targeted information and opportunities",
+              'Discover a wealth of targeted information and opportunities',
           },
         ],
       },
       ecom: {
-        title: "E-commerce",
+        title: 'E-commerce',
         subtitle:
-          "Sophisticated products in low MOQs for immediate or quick deliveries",
+          'Sophisticated products in low MOQs for immediate or quick deliveries',
         examples: [
           {
-            title: "Drops",
-            example: "Bi-monthly collections of ready-to-ship styles",
+            title: 'Drops',
+            example: 'Bi-monthly collections of ready-to-ship styles',
           },
           {
-            title: "Brands",
-            example: "Curated list of the best regional brands (coming soon)",
+            title: 'Brands',
+            example: 'Curated list of the best regional brands (coming soon)',
           },
           {
-            title: "Fast Custom",
+            title: 'Fast Custom',
             example:
-              "Products available directly from factories in low MOQs & short lead-times (coming soon)",
+              'Products available directly from factories in low MOQs & short lead-times (coming soon)',
           },
         ],
       },
       supply: {
-        title: "Supply Chain Solutions",
-        subtitle: "Tailored services to help you grow in the region",
+        title: 'Supply Chain Solutions',
+        subtitle: 'Tailored services to help you grow in the region',
         examples: [
           {
-            title: "QUALITY",
-            example: "Quality Control, Testing",
+            title: 'QUALITY',
+            example: 'Quality Control, Testing',
           },
           {
-            title: "SUSTAINABILITY",
-            example: "Social, environmental, ethical Compliance",
+            title: 'SUSTAINABILITY',
+            example: 'Social, environmental, ethical Compliance',
           },
           {
-            title: "FOLLOW-UP",
+            title: 'FOLLOW-UP',
             example:
-              "Sampling to delivery follow-up, logistics & documentation",
+              'Sampling to delivery follow-up, logistics & documentation',
           },
           {
-            title: "FULL SERVICE",
+            title: 'FULL SERVICE',
             example:
-              "Virtual supplier accessing a network of smaller factories",
+              'Virtual supplier accessing a network of smaller factories',
           },
           {
-            title: "ADVISORY",
-            example: "Customized advice to succeed and grow in the region",
+            title: 'ADVISORY',
+            example: 'Customized advice to succeed and grow in the region',
           },
         ],
       },
       source: {
-        title: "Sourcing Buyers",
-        subtitle: "Find new factories, products and input-suppliers",
+        title: 'Sourcing Buyers',
+        subtitle: 'Find new factories, products and input-suppliers',
         examples: [
           {
-            title: "NEW TO THE REGION",
+            title: 'NEW TO THE REGION',
             example:
-              "Search our factory database, post requests for information, quickly & easily request quotes from multiple suppliers",
+              'Search our factory database, post requests for information, quickly & easily request quotes from multiple suppliers',
           },
           {
-            title: "CONSOLIDATE YOUR SOURCING",
+            title: 'CONSOLIDATE YOUR SOURCING',
             example:
-              "Find more products and suppliers, make the region significant for your business",
+              'Find more products and suppliers, make the region significant for your business',
           },
           {
-            title: "EXPLORE NEW POSSIBILITIES",
+            title: 'EXPLORE NEW POSSIBILITIES',
             example:
-              "Connect with material and accessory suppliers active in the region",
+              'Connect with material and accessory suppliers active in the region',
           },
         ],
       },
       product: {
-        title: "Product Buyers",
-        subtitle: "Shop online for sophisticated products in low MOQs",
+        title: 'Product Buyers',
+        subtitle: 'Shop online for sophisticated products in low MOQs',
         examples: [
           {
-            title: "ON TREND – NOW",
+            title: 'ON TREND – NOW',
             example:
-              "Order from our ready-to-ship DROP collections, add your private label, start selling within a week. Improve your margins, lower your risk",
+              'Order from our ready-to-ship DROP collections, add your private label, start selling within a week. Improve your margins, lower your risk',
           },
           {
-            title: "YOUR PRIVATE LABEL BASICS – FAST",
+            title: 'YOUR PRIVATE LABEL BASICS – FAST',
             example:
-              "Build your order directly with our selection of high-quality suppliers. Customize and get delivered within weeks",
+              'Build your order directly with our selection of high-quality suppliers. Customize and get delivered within weeks',
           },
           {
-            title: "FIND SPECIAL OFFERS",
+            title: 'FIND SPECIAL OFFERS',
             example:
-              "Take advantage of stock garments and other opportunities directly from factories on our marketplace",
+              'Take advantage of stock garments and other opportunities directly from factories on our marketplace',
           },
         ],
       },
       gm: {
-        title: "Garment Makers",
-        subtitle: "FOB & CMT Factories, Textile Producers",
+        title: 'Garment Makers',
+        subtitle: 'FOB & CMT Factories, Textile Producers',
         examples: [
           {
-            title: "FIND NEW BUYERS",
+            title: 'FIND NEW BUYERS',
             example:
-              "Find, connect, message and build relationships with the most appropriate buyers for your products",
+              'Find, connect, message and build relationships with the most appropriate buyers for your products',
           },
           {
-            title: "SEIZE ORDER OPPORTUNITIES",
-            example: "View and instantly respond to buyer requests ",
+            title: 'SEIZE ORDER OPPORTUNITIES',
+            example: 'View and instantly respond to buyer requests ',
           },
           {
-            title: "SEE WHAT’S THERE",
+            title: 'SEE WHAT’S THERE',
             example:
-              "Post offers & needs to buyers, other factories, input suppliers and service providers and monitor new business opportunities using our tagging and notification tools",
+              'Post offers & needs to buyers, other factories, input suppliers and service providers and monitor new business opportunities using our tagging and notification tools',
           },
         ],
       },
       ip: {
-        title: "Input Suppliers",
-        subtitle: "Accessories, Yarn, Fabric, & Trim Suppliers",
+        title: 'Input Suppliers',
+        subtitle: 'Accessories, Yarn, Fabric, & Trim Suppliers',
         examples: [
           {
-            title: "EXPLORE A NEW MARKET",
+            title: 'EXPLORE A NEW MARKET',
             example:
-              "Find and build relationships with the most appropriate buyers and factories for your products",
+              'Find and build relationships with the most appropriate buyers and factories for your products',
           },
           {
-            title: "UNDERSTAND NEEDS",
+            title: 'UNDERSTAND NEEDS',
             example:
-              "Post offers and needs to buyers, factories, other input suppliers and service providers and monitor new business opportunities using our tagging and notification tools. ",
+              'Post offers and needs to buyers, factories, other input suppliers and service providers and monitor new business opportunities using our tagging and notification tools. ',
           },
         ],
       },
       sp: {
-        title: "Service Providers",
+        title: 'Service Providers',
         subtitle:
-          "Agents, QC & Compliance, Logistics, Finance Services, Industry Associations",
+          'Agents, QC & Compliance, Logistics, Finance Services, Industry Associations',
         examples: [
           {
-            title: "RESEARCH",
+            title: 'RESEARCH',
             example:
-              "Find, connect and build relationships with platform members",
+              'Find, connect and build relationships with platform members',
           },
           {
-            title: "COMMUNICATE",
-            example: "Constantly update your offers to the platform community",
+            title: 'COMMUNICATE',
+            example: 'Constantly update your offers to the platform community',
           },
           {
-            title: "PROMOTE",
+            title: 'PROMOTE',
             example:
-              "Post listings to highlight and promote new services or offers",
+              'Post listings to highlight and promote new services or offers',
           },
         ],
       },
       cta: {
-        main: "Sign Up",
-        sub: "Log In",
+        main: 'Sign Up',
+        sub: 'Log In',
       },
       hoverPro: false,
       hoverSol: false,
@@ -908,7 +1060,7 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener('scroll', this.updateScroll);
   },
 };
 </script>
@@ -918,7 +1070,7 @@ export default {
 </static-query>
 
 <!-- STYLING -->
-<style lang="scss" >
+<style lang="scss">
 // MAIN ELLEMENTS
 
 .navShadow {
@@ -942,7 +1094,7 @@ export default {
   margin-left: 20px;
   padding: 1.2rem 0;
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 0;
     height: 2px;
@@ -953,6 +1105,9 @@ export default {
     &:after {
       width: 100%;
     }
+  }
+  @media (min-width: $break-l) and (max-width: $break-xl) {
+    margin-left: 15px;
   }
 }
 

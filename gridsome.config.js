@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'ABANA',
+  siteUrl: 'https://www.abana.mu',
+  siteDescription: "Discover Africa's textile and apparel resources in just a few clicks.",
 
   transformers: {
     remark: {
@@ -18,16 +20,7 @@ module.exports = {
     },
   },
 
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: '_blog/**/*.md',
-        typeName: 'Blog',
-        remark: {},
-      },
-    },
-    {
+  plugins: [{
       use: '@gridsome/source-filesystem',
       options: {
         path: '_careers/**/*.md',

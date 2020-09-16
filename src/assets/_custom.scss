@@ -25,7 +25,7 @@ h6 {
 
 h1 {
   letter-spacing: 1.4px;
-  font-weight: 600;
+  font-weight: 500;
 
   //XSmall -578
   font-size: 2rem;
@@ -211,8 +211,8 @@ p {
 
   //Large 992-1200
   @media (min-width: $break-l) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   //XL 1200-1400
