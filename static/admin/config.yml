@@ -147,9 +147,9 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: 'Plans'
-        name: 'plans'
-        file: 'src/_settings/plans.json'
+      - label: 'Pricing'
+        name: 'pricing'
+        file: 'src/_settings/pricing.json'
         fields:
           - label: 'Header'
             name: header

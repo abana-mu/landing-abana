@@ -331,9 +331,9 @@
               <g-link class="nav-link" to="/why-africa/">Why Africa</g-link>
             </li>
 
-            <!-- Plans-->
+            <!-- Pricing-->
             <li class="nav-item nav-only">
-              <g-link class="nav-link" to="/plans/">Plans</g-link>
+              <g-link class="nav-link" to="/pricing/">Pricing</g-link>
             </li>
 
             <!-- Company-->
@@ -468,8 +468,8 @@
                       </g-link>
                     </div>
                     <div @click="hide">
-                      <g-link class="sidebar-item-level-1" to="/plans/">
-                        Plans
+                      <g-link class="sidebar-item-level-1" to="/pricing/">
+                        Pricing
                         <b-icon icon="arrow-right-short" class="float-right" />
                       </g-link>
                     </div>

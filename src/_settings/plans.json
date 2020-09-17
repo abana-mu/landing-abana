@@ -1,6 +1,481 @@
 {
-  "header": {
-    "title": "Plans",
-    "subtext": "Choose the plan that is right for you and your organisation"
-  }
+    "buyer": {
+        "subs": [
+            {
+                "name": "Member",
+                "desc": "This describes the member plan",
+                "price3": "$0",
+                "price6": "$0",
+                "price12": "$0",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Basic",
+                "desc": "This describes the member plan",
+                "price3": "$119/mo",
+                "price6": "$109/mo",
+                "price12": "$99/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Team",
+                "desc": "This describes the member plan",
+                "price3": "$239/mo",
+                "price6": "$219/mo",
+                "price12": "$199/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Pro",
+                "desc": "This describes the member plan",
+                "price3": "$349/mo",
+                "price6": "$329/mo",
+                "price12": "$299/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "title": "General",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "member": "1",
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "member": false,
+                            "basic": false,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Database",
+                "features": [
+                    {
+                        "title": "Basic Profile",
+                        "plans": {
+                            "member": "1",
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": "Detailed Profile",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Search Supplier by Basic Criteria",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advanced Search",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Marketplace",
+                "features": [
+                    {
+                        "title": "Post Listing",
+                        "plans": {
+                            "member": "1",
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": "Request Quotation",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "See Listing",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Access Drops",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Access Brands Store",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Fast Custom",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Support",
+                "features": [
+                    {
+                        "title": "Basic Services (QC, Logistics",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Value Added Services (Compliance, Technical",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Agency & Trading Intermediation",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advisory & HR",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Joint Purchasing & Fast Custom Discount",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "supplier": {
+        "subs": [
+            {
+                "name": "Basic",
+                "desc": "This describes the member plan",
+                "price3": "$119/mo",
+                "price6": "$109/mo",
+                "price12": "$99/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Team",
+                "desc": "This describes the member plan",
+                "price3": "$239/mo",
+                "price6": "$219/mo",
+                "price12": "$199/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Pro",
+                "desc": "This describes the member plan",
+                "price3": "$349/mo",
+                "price6": "$329/mo",
+                "price12": "$299/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "title": "General",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Database",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Marketplace",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Support",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "service": {
+        "subs": [
+            {
+                "name": "Basic",
+                "desc": "This describes the member plan",
+                "price3": "$119/mo",
+                "price6": "$109/mo",
+                "price12": "$99/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Team",
+                "desc": "This describes the member plan",
+                "price3": "$239/mo",
+                "price6": "$219/mo",
+                "price12": "$199/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Pro",
+                "desc": "This describes the member plan",
+                "price3": "$349/mo",
+                "price6": "$329/mo",
+                "price12": "$299/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            }
+        ],
+        "categories": [
+            {
+                "title": "General",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Database",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Marketplace",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Support",
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "team": "1",
+                            "pro": "5"
+                        }
+                    },
+                    {
+                        "title": " Macro Country Data & Key Information ",
+                        "plans": {
+                            "basic": true,
+                            "team": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
 }
