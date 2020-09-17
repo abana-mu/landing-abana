@@ -882,8 +882,7 @@ export default {
         examples: [
           {
             title: 'DATABASE',
-            example:
-              'Use multiple criteria to find the most appropriate partners',
+            example: 'Use multiple criteria to find new partners',
           },
           {
             title: 'MARKETPLACE',
@@ -908,7 +907,7 @@ export default {
           {
             title: 'Fast Custom',
             example:
-              'Products available directly from factories in low MOQs & short lead-times (coming soon)',
+              'Order directly from factories in low MOQs & short lead-times (coming soon)',
           },
         ],
       },
@@ -946,18 +945,16 @@ export default {
         examples: [
           {
             title: 'NEW TO THE REGION',
-            example:
-              'Search our factory database, post requests for information, quickly & easily request quotes from multiple suppliers',
+            example: 'Discover what the region has to offer',
           },
           {
             title: 'CONSOLIDATE YOUR SOURCING',
-            example:
-              'Find more products and suppliers, make the region significant for your business',
+            example: 'Find more products and suppliers',
           },
           {
             title: 'EXPLORE NEW POSSIBILITIES',
             example:
-              'Connect with material and accessory suppliers active in the region',
+              'Connect with material and accessory suppliers in the region',
           },
         ],
       },
@@ -968,17 +965,17 @@ export default {
           {
             title: 'ON TREND – NOW',
             example:
-              'Order from our ready-to-ship DROP collections, add your private label, start selling within a week. Improve your margins, lower your risk',
+              'Ready-to-ship DROP collections, add your private label, start selling within a week',
           },
           {
             title: 'YOUR PRIVATE LABEL BASICS – FAST',
             example:
-              'Build your order directly with our selection of high-quality suppliers. Customize and get delivered within weeks',
+              'Build your order directly with our selection of high-quality suppliers',
           },
           {
             title: 'FIND SPECIAL OFFERS',
             example:
-              'Take advantage of stock garments and other opportunities directly from factories on our marketplace',
+              'Stock garments and other opportunities directly from factories',
           },
         ],
       },
@@ -989,7 +986,7 @@ export default {
           {
             title: 'FIND NEW BUYERS',
             example:
-              'Find, connect, message and build relationships with the most appropriate buyers for your products',
+              'Find, connect, message and build relationships with new buyers',
           },
           {
             title: 'SEIZE ORDER OPPORTUNITIES',
@@ -998,7 +995,7 @@ export default {
           {
             title: 'SEE WHAT’S THERE',
             example:
-              'Post offers & needs to buyers, other factories, input suppliers and service providers and monitor new business opportunities using our tagging and notification tools',
+              'Post offers & needs to buyers, other factories, input suppliers and service providers',
           },
         ],
       },
@@ -1009,12 +1006,12 @@ export default {
           {
             title: 'EXPLORE A NEW MARKET',
             example:
-              'Find and build relationships with the most appropriate buyers and factories for your products',
+              'Find and build relationships with a whole new set of buyers',
           },
           {
             title: 'UNDERSTAND NEEDS',
             example:
-              'Post offers and needs to buyers, factories, other input suppliers and service providers and monitor new business opportunities using our tagging and notification tools. ',
+              'Post offers and needs to buyers, factories, other input suppliers and service providers',
           },
         ],
       },
@@ -1078,7 +1075,7 @@ export default {
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   background-color: white;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.25s;
   .nav-item.nav-only {
     padding: 0.75rem 0;
     -webkit-transition: all 0.25s;

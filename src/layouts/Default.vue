@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Navbar from "~/components/Navbar";
-import AOS from "aos";
+import Navbar from '~/components/Navbar';
+import AOS from 'aos';
 
 export default {
   components: {
@@ -36,7 +36,7 @@ query {
 .layout {
   margin: 0 auto;
   //XSmall -578
-  padding-top: 4rem;
+  padding-top: 6.5rem;
 
   //Small 578-776
   @media (min-width: $break-s) {
@@ -55,12 +55,12 @@ query {
 
   //XLarge 1200-1440
   @media (min-width: $break-xl) {
-    padding-top: 11rem;
+    padding-top: 9rem;
   }
 
   //XXLarge 1440+
   @media (min-width: $break-xxl) {
-    padding-top: 12rem;
+    padding-top: 9rem;
   }
 }
 </style>

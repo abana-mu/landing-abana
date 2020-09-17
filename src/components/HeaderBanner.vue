@@ -3,39 +3,32 @@
   <b-container fluid class="overflow-hidden">
     <div id="header-banner">
       <div class="row">
-        <div class="col-12 col-lg-4 order-lg-2" data-aos="fade-down">
+        <div class="col" data-aos="fade-down">
+          <div data-aos="fade-up">
+            <h1 id="header-title">
+              {{ title }}
+            </h1>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            <p id="header-subtitle" class="mb-2 text-center">
+              {{ subtext }}
+            </p>
+          </div>
+          <div id="header-cta">
+            <g-link
+              to="/Plans/"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-once="true"
+            >
+              <b-button size="md" variant="primary">{{ cta }} </b-button>
+            </g-link>
+          </div>
           <g-image
             id="header-image"
-            class="d-none d-lg-block"
-            src="~/assets/images/laptop-2x.png"
-            quality="100"
-          />
-          <g-image
-            id="header-image"
-            class="d-block d-lg-none"
             src="~/assets/images/laptop-1x.png"
             quality="100"
           />
-        </div>
-        <div
-          class="header-container col-12 col-lg-8 pr-lg-5 d-flex flex-column text-center text-lg-left"
-        >
-          <h1 data-aos="fade-up" id="header-title">{{ title }}</h1>
-          <p
-            id="header-subtitle"
-            class="mb-3 mb-lg-5"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >{{subtext}}</p>
-          <g-link
-            class="py-2 mb-3 mb-lg-0 text-center"
-            to="/Plans/"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-once="true"
-          >
-            <b-button id="header-cta" size="md" variant="primary">{{cta}}</b-button>
-          </g-link>
         </div>
       </div>
     </div>
@@ -45,7 +38,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title", "subtext", "cta"],
+  props: ['title', 'subtext', 'cta'],
 };
 </script>
 
@@ -60,40 +53,65 @@ export default {
 }
 
 #header-title {
-  margin-bottom: 35px;
-  z-index: 2;
-}
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
 
-#header-subtitle {
-  //XSmall -578
-  font-size: 1rem;
-  //Small 578-776
-  @media (min-width: $break-s) {
-    font-size: 1.075rem;
-  }
-
-  //Medium 776-992
+  //Medium 767-992
   @media (min-width: $break-m) {
-    font-size: 1.15rem;
+    max-width: 780px;
   }
 
   //Large 992-1200
   @media (min-width: $break-l) {
-    font-size: 1.225rem;
+    max-width: 860px;
   }
 
-  //XLarge 1200-1440
+  //XLarge 1200-1440+
   @media (min-width: $break-xl) {
-    font-size: 1.3rem;
+    max-width: 930px;
+  }
+  @media (min-width: $break-xxl) {
+    max-width: 975px;
+  }
+}
+
+#header-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+  //XSmall -578
+  font-size: 1rem;
+
+  //Small 578-776
+  @media (min-width: $break-s) {
+    font-size: 1.05rem;
+    max-width: 500px;
   }
 
-  //XXLarge 1440+
-  @media (min-width: $break-xxl) {
-    font-size: 1.375rem;
+  //Medium 776-992
+  @media (min-width: $break-m) {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+
+  //Large 992-1200
+  @media (min-width: $break-l) {
+    font-size: 1.15rem;
+    max-width: 780px;
+  }
+
+  //XLarge 1200-1440+
+  @media (min-width: $break-xl) {
+    font-size: 1.25rem;
+    max-width: 870px;
   }
 }
 
 #header-cta {
+  text-align: center;
+  margin: 20px 0 40px 0;
 }
 
 #header-image {
