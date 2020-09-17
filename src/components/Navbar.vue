@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <b-navbar
-    class="p-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody"
+    class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody"
     :class="{ navShadow: scrollPosition > 50 }"
     toggleable="lg"
     fixed="top"
@@ -1290,7 +1290,7 @@ export default {
 
 .b-sidebar-body {
   .logo {
-    margin: 1.25rem 3rem;
+    margin: 1rem 2rem;
     position: absolute;
   }
 }
@@ -1301,7 +1301,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   color: $text-dark;
   font-size: 1.25rem;
 
