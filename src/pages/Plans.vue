@@ -5,12 +5,12 @@
       {{ Data.header.subtext }}
     </p>
     <div class="my-3" data-aos="fade-up">
-      <b-tabs align="center" content-class="pb-5 back-beige">
+      <b-tabs align="center" content-class="pb-5 back-grey">
         <!-- BUYERS -->
         <b-tab title="Buyers" active>
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="px-5 pr-sm-4">Billed every:</p>
+            <p class="pr-5 pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
               :options="options"
@@ -99,7 +99,7 @@
         <b-tab title="Suppliers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="px-5 pr-sm-4">Billed every:</p>
+            <p class="pr-5 pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
               :options="options"
@@ -206,7 +206,7 @@
         <b-tab title="Service Providers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
-            <p class="px-5 pr-sm-4">Billed every:</p>
+            <p class="pr-5 pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
               :options="options"
@@ -397,10 +397,11 @@ export default {
 
 .nav-tabs .nav-link {
   border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #dee2e63d;
   text-transform: uppercase;
   color: $text-light-on-dark;
   &.active {
-    text-decoration: underline;
     font-weight: 600;
   }
 }
@@ -417,8 +418,8 @@ export default {
 
   a.active {
     @media (max-width: $break-s) {
-      border-color: #dee2e6;
-      border-radius: 0.25rem;
+      border-color: $text-light-on-dark;
+      border-radius: 0rem;
     }
   }
 }
@@ -466,6 +467,16 @@ export default {
     font-size: 14px;
     color: $text-light-on-dark;
     margin-bottom: 0;
+  }
+}
+
+.billed > div {
+  @media (max-width: $break-s) {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      margin-bottom: 5px;
+    }
   }
 }
 

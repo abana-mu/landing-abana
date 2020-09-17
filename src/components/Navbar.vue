@@ -1173,7 +1173,7 @@ export default {
 }
 
 .grey-panel {
-  background-color: #fafafa;
+  background-color: $grey-light;
   padding: 1rem 7rem 3rem 2rem !important;
   border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
