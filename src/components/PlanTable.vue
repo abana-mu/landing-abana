@@ -3,7 +3,9 @@
   <div class="pricing-container">
     <div class="sub-feature">
       <div class="sub-feature-title"></div>
-      <h4 v-for="subs in data.subscriptions" class="sub-plans-options col">{{subs.name}}</h4>
+      <template v-for="subs in data.subs">
+        <h4 class="sub-plans-options col">{{subs.name}}</h4>
+      </template>
     </div>
 
     <div v-for="categories in data.categories" class="category-container">
