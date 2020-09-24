@@ -63,25 +63,25 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
           - label: 'Marketplace'
             name: marketplace
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
           - label: 'Marketplace - For Buyers'
             name: marketbuyers
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
           - label: 'Marketplace - For Suppliers'
             name: marketsuppliers
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
 
       - label: 'E-Commerce'
         name: 'ecommerce'
