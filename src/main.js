@@ -7,7 +7,6 @@ import OneSectionTight from '~/layouts/OneSectionTight';
 
 import '~/assets/_styles.scss';
 import 'aos/dist/aos.css';
-import AOS from 'aos';
 
 import {
   NavbarPlugin
@@ -55,7 +54,4 @@ export default function (Vue, {
   Vue.use(BootstrapVueIcons);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
-  Vue.use(AOS.init({
-    once: true
-  }));
 }

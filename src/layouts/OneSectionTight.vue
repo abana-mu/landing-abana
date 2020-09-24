@@ -18,9 +18,9 @@ export default {
     Navbar,
   },
   mounted() {
-    /* AOS.init({
+    AOS.init({
       once: true,
-    }); */
+    });
   },
 };
 </script>
