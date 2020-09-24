@@ -99,20 +99,20 @@
 </page-query>
 
 <script>
-import HeaderBanner from '~/components/HeaderBanner';
-import DiagonalBreaker from '~/components/DiagonalBreaker';
-import Data from '~/_settings/landing.json';
-import ITransf from '@/components/compIcons/ITransf';
-import IExpect from '@/components/compIcons/IExpect';
-import IGuar from '@/components/compIcons/IGuar';
-import ITax from '@/components/compIcons/ITax';
-import ITarget from '@/components/compIcons/ITarget';
-import INew from '@/components/compIcons/INew';
-import FlowGraph from '~/components/FlowGraph';
+import HeaderBanner from "~/components/HeaderBanner";
+import DiagonalBreaker from "~/components/DiagonalBreaker";
+import Data from "~/_settings/landing.json";
+import ITransf from "@/components/compIcons/ITransf";
+import IExpect from "@/components/compIcons/IExpect";
+import IGuar from "@/components/compIcons/IGuar";
+import ITax from "@/components/compIcons/ITax";
+import ITarget from "@/components/compIcons/ITarget";
+import INew from "@/components/compIcons/INew";
+import FlowGraph from "~/components/FlowGraph";
 
 export default {
   metaInfo: {
-    title: 'ABANA | African Textile & Apparel Marketplace',
+    title: "ABANA | African Textile & Apparel Marketplace",
   },
   components: {
     DiagonalBreaker,
@@ -148,7 +148,7 @@ export default {
   margin: auto auto;
   margin-bottom: 2rem;
   font-weight: 500;
-  color: $text-light-on-dark;
+  color: $subtitle-light;
   text-align: center;
 }
 
@@ -179,7 +179,7 @@ export default {
   font-size: 1.3rem;
 }
 .box-item-text {
-  color: $text-light-on-dark;
+  color: $subtitle-light;
   margin: 0;
   font-size: 1rem;
 }

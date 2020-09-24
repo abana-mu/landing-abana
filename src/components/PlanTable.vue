@@ -88,8 +88,8 @@ export default {
 .plan-category-title {
   padding-bottom: 4px;
   margin-bottom: 8px;
-  color: $text-light-on-light;
-  border-bottom: 1px solid $text-light-on-dark;
+  color: $subtitle-dark;
+  border-bottom: 1px solid $subtitle-light;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;

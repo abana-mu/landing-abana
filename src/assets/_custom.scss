@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $text-dark;
+  color: $title-dark;
 }
 
 h1 {
@@ -144,7 +144,8 @@ h3 {
 }
 
 p {
-  color: $text-light-on-light;
+  //color: $subtitle-dark;
+  color: $text-body;
   font-size: 18px;
 }
 
@@ -160,8 +161,8 @@ p {
 
 //COLORS
 
-.text-dark {
-  color: $text-dark;
+.title-dark {
+  color: $title-dark;
 }
 
 .text-primary {
@@ -239,10 +240,12 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
+
+
 //NAVIGATION
 
 .navbar-light .navbar-nav .nav-link {
-  color: $text-dark;
+  color: $title-dark;
 
   &:hover {
     color: #494f5c;
@@ -286,10 +289,70 @@ p {
 
 // One Section Pages
 
-.one-section-header {
-  text-align: center;
+.one-section-layout{
+
+  .section-content{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
+  .header{
+    text-align: center;
+    
+    .title {
+      margin: 0 auto;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    
+    .subtitle {
+      color: $subtitle-dark;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 75px;
+    
+      //XSmall -578
+      font-size: 1rem;
+    
+      //Small 578-776
+      @media (min-width: $break-s) {
+        font-size: 1.05rem;
+        max-width: 500px;
+      }
+    
+      //Medium 776-992
+      @media (min-width: $break-m) {
+        font-size: 1.1rem;
+        max-width: 500px;
+      }
+    
+      //Large 992-1200
+      @media (min-width: $break-l) {
+        font-size: 1.15rem;
+        max-width: 780px;
+      }
+    
+      //XLarge 1200-1440+
+      @media (min-width: $break-xl) {
+        font-size: 1.25rem;
+        max-width: 870px;
+      }
+    }
+    
+  }
+  .image-banner{
+    img{
+      border-radius: 4px;
+      width: 100%;
+      @media (min-width: $break-m) {
+        width: 75%;
+      }
+    }
+  }
+
+  
 }
 
-.box-shadow1 {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-}

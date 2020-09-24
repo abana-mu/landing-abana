@@ -75,7 +75,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ['title', 'subtitle'],
+  props: ["title", "subtitle"],
 };
 </script>
 
@@ -100,6 +100,7 @@ export default {
   margin-bottom: 2rem;
   font-weight: 500;
   text-align: center;
+  color: $subtitle-dark;
 }
 
 .mobile-fluid {
@@ -144,6 +145,9 @@ export default {
   display: block;
   padding: 10px 30px 10px 0px;
   border-right: 2.5px solid #d4009a;
+  p {
+    color: $subtitle-dark;
+  }
   &:hover {
     text-decoration: none;
   }
@@ -153,7 +157,9 @@ export default {
   display: block;
   padding: 10px 0 10px 30px;
   border-left: 2.5px solid #ffcf15;
-
+  p {
+    color: $subtitle-dark;
+  }
   &:hover {
     text-decoration: none;
   }

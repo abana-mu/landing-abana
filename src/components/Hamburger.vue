@@ -16,9 +16,9 @@
 export default {
   data() {
     return {
-      isActive: false
+      isActive: false,
     };
-  }
+  },
 };
 </script>
 
@@ -45,7 +45,7 @@ export default {
 .hamburger.active .hamburger-inner,
 .hamburger.active .hamburger-inner:after,
 .hamburger.active .hamburger-inner:before {
-  background-color: $text-dark;
+  background-color: $title-dark;
 }
 .hamburger-box {
   position: relative;
@@ -68,7 +68,7 @@ export default {
   transition-duration: 0.15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: $text-dark;
+  background-color: $title-dark;
 }
 .hamburger-inner:after,
 .hamburger-inner:before {

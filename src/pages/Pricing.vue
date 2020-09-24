@@ -104,7 +104,7 @@
             </template>
           </b-card-group>
           <!-- SUPPORT -->
-          <b-card class="back-white border-0 mt-3 mb-5  support-creators">
+          <b-card class="back-white border-0 mt-3 mb-5 support-creators">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
               If you are a designer, QA or special service provider, become part
@@ -210,26 +210,26 @@
 </template>
 
 <script>
-import Data from '~/_settings/pricing.json';
-import Plans from '~/_settings/plans.json';
-import Table from '~/components/PlanTable';
+import Data from "~/_settings/pricing.json";
+import Plans from "~/_settings/plans.json";
+import Table from "~/components/PlanTable";
 
 export default {
   components: {
     Table,
   },
   metaInfo: {
-    title: 'Pricing',
+    title: "Pricing",
   },
   data() {
     return {
       Data,
       Plans,
-      selected: 'price12',
+      selected: "price12",
       periods: [
-        { text: '12 months', value: 'price12' },
-        { text: '6 months', value: 'price6' },
-        { text: '3 months', value: 'price3' },
+        { text: "12 months", value: "price12" },
+        { text: "6 months", value: "price6" },
+        { text: "3 months", value: "price3" },
       ],
     };
   },
@@ -258,7 +258,7 @@ export default {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   background-color: transparent;
-  color: $text-light-on-dark;
+  color: $subtitle-light;
 }
 
 .nav-tabs .nav-link {
@@ -266,7 +266,7 @@ export default {
   border-radius: 0;
   border-bottom: 1px solid #dee2e63d;
   text-transform: uppercase;
-  color: $text-light-on-dark;
+  color: $subtitle-light;
   padding: 0.5rem 0.75rem;
 
   @media (min-width: 400px) {
@@ -290,7 +290,7 @@ export default {
 
   a.active {
     @media (max-width: $break-s) {
-      border-color: $text-light-on-dark;
+      border-color: $subtitle-light;
       border-radius: 0rem;
     }
   }
@@ -322,7 +322,7 @@ export default {
 
 .billed {
   font-size: 14px;
-  color: $text-light-on-dark;
+  color: $subtitle-light;
   z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -344,7 +344,7 @@ export default {
 
   p {
     font-size: 14px;
-    color: $text-light-on-dark;
+    color: $subtitle-light;
     margin-bottom: 0;
   }
 }
@@ -395,7 +395,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: '';
+    content: "";
     height: 10px;
     left: 0;
     position: absolute;
@@ -435,7 +435,7 @@ export default {
   li {
     display: flex;
     align-items: center;
-    color: $text-light-on-light;
+    color: $subtitle-dark;
     font-size: 0.85rem;
   }
 }
@@ -491,8 +491,8 @@ export default {
 .plan-category-title {
   padding-bottom: 4px;
   margin-bottom: 8px;
-  color: $text-light-on-light;
-  border-bottom: 1px solid $text-light-on-dark;
+  color: $subtitle-dark;
+  border-bottom: 1px solid $subtitle-light;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -512,7 +512,7 @@ export default {
   top: 126px;
   padding: 5px 20px;
   background-color: $grey-light;
-  border-bottom: 2px solid $text-light-on-dark;
+  border-bottom: 2px solid $subtitle-light;
   z-index: 10;
   @media (min-width: $break-s) {
     top: 100px;

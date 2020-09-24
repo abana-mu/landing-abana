@@ -40,7 +40,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ['title', 'subtext', 'cta'],
+  props: ["title", "subtext", "cta"],
 };
 </script>
 
@@ -82,6 +82,7 @@ export default {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  color: $subtitle-dark;
 
   //XSmall -578
   font-size: 1rem;

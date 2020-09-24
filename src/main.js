@@ -7,28 +7,7 @@ import '~/assets/_styles.scss';
 import 'aos/dist/aos.css';
 
 import {
-  NavbarPlugin
-} from 'bootstrap-vue';
-import {
-  CardPlugin
-} from 'bootstrap-vue';
-import {
-  ButtonPlugin
-} from 'bootstrap-vue';
-import {
-  LayoutPlugin
-} from 'bootstrap-vue';
-import {
-  SidebarPlugin
-} from 'bootstrap-vue';
-import {
-  TabsPlugin
-} from 'bootstrap-vue';
-import {
-  BootstrapVueIcons
-} from 'bootstrap-vue';
-import {
-  FormRadioPlugin
+  NavbarPlugin, CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, BootstrapVueIcons, FormRadioPlugin
 } from 'bootstrap-vue';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';

@@ -9,8 +9,8 @@
       variant="primary"
       :href="
         'mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application - ' +
-          $page.thisJob.title +
-          '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
+        $page.thisJob.title +
+        '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
       >Apply now</b-button
     >
@@ -39,8 +39,8 @@
       variant="primary"
       :href="
         'mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application - ' +
-          $page.thisJob.title +
-          '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
+        $page.thisJob.title +
+        '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
       >Apply now</b-button
     >
@@ -76,6 +76,6 @@ export default {
 <!-- STYLING -->
 <style lang="scss">
 .md-text {
-  color: $text-light-on-light;
+  color: $subtitle-dark;
 }
 </style>
