@@ -1,8 +1,8 @@
 <template>
-  <OneSection>
+  <Layout>
     <div class="one-section-header">
-      <h1>{{Data.header.title}}</h1>
-      <p>{{Data.header.subtext}}</p>
+      <h1>{{ Data.header.title }}</h1>
+      <p>{{ Data.header.subtext }}</p>
     </div>
     <div class="row">
       <div class="col-12 p-3">
@@ -17,11 +17,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.products.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.products.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -41,11 +48,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.growth.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.growth.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -66,11 +80,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.textile.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.textile.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -91,11 +112,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.marketing.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.marketing.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -116,11 +144,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.operations.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.operations.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -141,11 +176,18 @@
           class="card-link"
         >
           <b-card>
-            <b-card-text>There is nothing here. Get in touch if you think you can help us!</b-card-text>
+            <b-card-text
+              >There is nothing here. Get in touch if you think you can help
+              us!</b-card-text
+            >
           </b-card>
         </a>
       </div>
-      <div class="col-12 col-lg-6 p-3" v-for="job in $page.engineering.edges" :key="job.id">
+      <div
+        class="col-12 col-lg-6 p-3"
+        v-for="job in $page.engineering.edges"
+        :key="job.id"
+      >
         <g-link :to="job.node.path" class="card-link">
           <b-card :title="job.node.title" footer-class="footer">
             <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
@@ -157,7 +199,7 @@
         </g-link>
       </div>
     </div>
-  </OneSection>
+  </Layout>
 </template>
 
 <page-query>
@@ -220,12 +262,12 @@ query{
 </page-query>
 
 <script>
-import Data from "~/_settings/careers.json";
+import Data from '~/_settings/careers.json';
 
 export default {
   components: {},
   metaInfo: {
-    title: "Careers",
+    title: 'Careers',
   },
   data() {
     return {

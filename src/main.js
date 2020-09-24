@@ -2,8 +2,6 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue';
-import OneSection from '~/layouts/OneSection';
-import OneSectionTight from '~/layouts/OneSectionTight';
 
 import '~/assets/_styles.scss';
 import 'aos/dist/aos.css';
@@ -43,8 +41,6 @@ export default function (Vue, {
 }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  Vue.component('OneSection', OneSection);
-  Vue.component('OneSectionTight', OneSectionTight);
   Vue.use(NavbarPlugin);
   Vue.use(CardPlugin);
   Vue.use(ButtonPlugin);

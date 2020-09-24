@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <OneSection>
+  <Layout>
     <g-link to="/careers/" class="sidebar-item-level-2-title px-5 mb-3">
       <b-icon icon="arrow-left-short" class="mr-2" />Back
     </g-link>
@@ -12,16 +12,29 @@
           $page.thisJob.title +
           '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
-    >Apply now</b-button>
+      >Apply now</b-button
+    >
     <p>Location: {{ $page.thisJob.location }}</p>
     <h4>The role you’ll play:</h4>
     <p>{{ $page.thisJob.role }}</p>
     <h4>Your Main Tasks:</h4>
-    <vue-simple-markdown :source="$page.thisJob.tasks" class="md-text"></vue-simple-markdown>
+    <vue-simple-markdown
+      :source="$page.thisJob.tasks"
+      class="md-text"
+    ></vue-simple-markdown>
     <h4>What you bring to the table:</h4>
-    <vue-simple-markdown :source="$page.thisJob.table" class="md-text"></vue-simple-markdown>
-    <h4>We are an ambitious start-up and we wish to attract multi-disciplinary and like-minded individuals to the team. You will thrive here if:</h4>
-    <vue-simple-markdown :source="$page.thisJob.thrive" class="md-text"></vue-simple-markdown>
+    <vue-simple-markdown
+      :source="$page.thisJob.table"
+      class="md-text"
+    ></vue-simple-markdown>
+    <h4>
+      We are an ambitious start-up and we wish to attract multi-disciplinary and
+      like-minded individuals to the team. You will thrive here if:
+    </h4>
+    <vue-simple-markdown
+      :source="$page.thisJob.thrive"
+      class="md-text"
+    ></vue-simple-markdown>
     <b-button
       variant="primary"
       :href="
@@ -29,8 +42,9 @@
           $page.thisJob.title +
           '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
       "
-    >Apply now</b-button>
-  </OneSection>
+      >Apply now</b-button
+    >
+  </Layout>
 </template>
 
 <!-- QUERIES -->
@@ -50,13 +64,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import OneSection from "~/layouts/OneSection";
-
 export default {
-  components: {
-    OneSection,
-  },
-
   metaInfo() {
     return {
       title: this.$page.thisJob.title,

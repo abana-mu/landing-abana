@@ -34,20 +34,4 @@ query {
 }
 </static-query>
 
-<style lang="scss" scoped>
-.layout {
-  margin: 0 auto;
-  //XSmall -578
-  padding-top: 7rem;
-
-  //XLarge 1200-1440
-  @media (min-width: $break-xl) {
-    padding-top: 8rem;
-  }
-
-  //XXLarge 1440+
-  @media (min-width: $break-xxl) {
-    padding-top: 9rem;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
