@@ -1,7 +1,6 @@
 {
     "buyer": {
-        "subs": [
-            {
+        "subs": [{
                 "name": "Member",
                 "desc": "This describes the member plan",
                 "price3": "$0",
@@ -16,21 +15,9 @@
             {
                 "name": "Basic",
                 "desc": "This describes the member plan",
-                "price3": "$119/mo",
-                "price6": "$109/mo",
-                "price12": "$99/mo",
-                "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
-                ]
-            },
-            {
-                "name": "Team",
-                "desc": "This describes the member plan",
-                "price3": "$239/mo",
-                "price6": "$219/mo",
-                "price12": "$199/mo",
+                "price3": "$65/mo",
+                "price6": "$59/mo",
+                "price12": "$49/mo",
                 "features": [
                     "feature1",
                     "feature2",
@@ -50,66 +37,48 @@
                 ]
             }
         ],
-        "categories": [
-            {
+        "categories": [{
                 "title": "General",
-                "features": [
-                    {
-                        "title": "Users",
-                        "plans": {
-                            "member": "1",
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
-                        }
-                    },
-                    {
-                        "title": " Macro Country Data & Key Information ",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "team": true,
-                            "pro": true
-                        }
+                "features": [{
+                    "title": "Users",
+                    "plans": {
+                        "member": "1",
+                        "basic": "1",
+                        "pro": "5"
                     }
-                ]
+                }]
             },
             {
                 "title": "Database",
-                "features": [
-                    {
+                "features": [{
                         "title": "Basic Profile",
-                        "plans": {
-                            "member": "1",
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
-                        }
-                    },
-                    {
-                        "title": "Detailed Profile",
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
+                        }
+                    },
+                    {
+                        "title": "Showroom",
+                        "plans": {
+                            "member": false,
+                            "basic": "8",
+                            "pro": "24"
                         }
                     },
                     {
                         "title": "Search Supplier by Basic Criteria",
                         "plans": {
-                            "member": true,
+                            "member": false,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Advanced Search",
                         "plans": {
-                            "member": true,
-                            "basic": true,
-                            "team": true,
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     }
@@ -117,14 +86,12 @@
             },
             {
                 "title": "Marketplace",
-                "features": [
-                    {
-                        "title": "Post Listing",
+                "features": [{
+                        "title": "Post RFIs (monthly)",
                         "plans": {
-                            "member": "1",
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
+                            "member": false,
+                            "basic": "30",
+                            "pro": "Unlimited"
                         }
                     },
                     {
@@ -132,7 +99,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -141,7 +107,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -150,7 +115,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -159,7 +123,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -168,7 +131,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     }
@@ -176,13 +138,11 @@
             },
             {
                 "title": "Support",
-                "features": [
-                    {
+                "features": [{
                         "title": "Basic Services (QC, Logistics",
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -191,7 +151,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -200,7 +159,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -209,7 +167,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     },
@@ -218,7 +175,6 @@
                         "plans": {
                             "member": true,
                             "basic": true,
-                            "team": true,
                             "pro": true
                         }
                     }
@@ -227,8 +183,7 @@
         ]
     },
     "supplier": {
-        "subs": [
-            {
+        "subs": [{
                 "name": "Basic",
                 "desc": "This describes the member plan",
                 "price3": "$119/mo",
@@ -265,11 +220,9 @@
                 ]
             }
         ],
-        "categories": [
-            {
+        "categories": [{
                 "title": "General",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -289,8 +242,7 @@
             },
             {
                 "title": "Database",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -310,8 +262,7 @@
             },
             {
                 "title": "Marketplace",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -331,8 +282,7 @@
             },
             {
                 "title": "Support",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -353,8 +303,7 @@
         ]
     },
     "service": {
-        "subs": [
-            {
+        "subs": [{
                 "name": "Basic",
                 "desc": "This describes the member plan",
                 "price3": "$119/mo",
@@ -391,11 +340,9 @@
                 ]
             }
         ],
-        "categories": [
-            {
+        "categories": [{
                 "title": "General",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -415,8 +362,7 @@
             },
             {
                 "title": "Database",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -436,8 +382,7 @@
             },
             {
                 "title": "Marketplace",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
@@ -457,8 +402,7 @@
             },
             {
                 "title": "Support",
-                "features": [
-                    {
+                "features": [{
                         "title": "Users",
                         "plans": {
                             "basic": "1",
