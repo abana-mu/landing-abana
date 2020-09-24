@@ -1233,7 +1233,7 @@ export default {
 
 .drop-title {
   color: #0d1537;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 

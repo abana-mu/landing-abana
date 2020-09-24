@@ -1,9 +1,11 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <h1 class="text-center">{{ Data.header.title }}</h1>
-    <p class="text-center">
-      {{ Data.header.subtext }}
-    </p>
+    <div class="mobile-gutter">
+      <h1 class="text-center">{{ Data.header.title }}</h1>
+      <p class="text-center">
+        {{ Data.header.subtext }}
+      </p>
+    </div>
     <div class="my-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
         <!--------- BUYERS --------->
@@ -12,6 +14,7 @@
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
+              class="periods"
               v-model="selected"
               :options="periods"
               name="radio-buyers"
@@ -60,7 +63,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.buyer" />
+            <Table :data="Plans.buyer" class="mt-4" />
           </div>
         </b-tab>
         <!--------- SUPPLIERS --------->
@@ -101,7 +104,7 @@
             </template>
           </b-card-group>
           <!-- SUPPORT -->
-          <b-card class="back-white border-0 mt-3 mb-5 mx-5">
+          <b-card class="back-white border-0 mt-3 mb-5  support-creators">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
               If you are a designer, QA or special service provider, become part
@@ -128,7 +131,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.supplier" />
+            <Table :data="Plans.supplier" class="mt-4" />
           </div>
         </b-tab>
         <!--------- SERVICE PROVIDERS --------->
@@ -170,7 +173,7 @@
           </b-card-group>
 
           <!-- SUPPORT -->
-          <b-card class="back-white border-0 mt-3 mb-5 mx-5">
+          <b-card class="back-white border-0 mt-3 mb-5 support-creators">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
               If you are a designer, QA or special service provider, become part
@@ -198,7 +201,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.service" />
+            <Table :data="Plans.service" class="mt-4" />
           </div>
         </b-tab>
       </b-tabs>
@@ -246,12 +249,9 @@ export default {
 .nav-tabs {
   background-color: $blue-grey;
   border: none;
-  padding: 15px 0 10px 0;
+  padding: 15px 0 1px 0;
   @media (min-width: $break-s) {
     padding: 20px 0 10px 0;
-  }
-  @media (max-width: $break-s) {
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -326,9 +326,13 @@ export default {
   z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
-
   position: sticky;
   top: 56px;
+
+  @media (min-width: $break-s) {
+    padding-top: 10px;
+  }
+
   @media (max-width: $break-s) {
     text-align: center;
     display: flex;
@@ -338,32 +342,19 @@ export default {
     top: 66px;
   }
 
-  /*
-   padding-top: 5px;
-   padding-bottom: 15px;
-   @media (min-width: 370px) {
-    position: sticky;
-    top: 100px;
-  }
-
-  @media (max-width: $break-s) {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  @media (min-width: $break-m) {
-    top: 105px;
-  }
-
-  @media (min-width: $break-l) {
-    top: 115px;
-  }
-  */
-
   p {
     font-size: 14px;
     color: $text-light-on-dark;
     margin-bottom: 0;
+  }
+}
+
+.periods {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  @media (min-width: $break-s) {
+    padding-top: 0px;
   }
 }
 
@@ -418,11 +409,12 @@ export default {
 }
 
 .card-deck {
-  @media (max-width: $break-m) {
-    flex-direction: column;
-    .card {
-      margin-bottom: 1rem;
-    }
+  flex-direction: column;
+  .card {
+    margin-bottom: 1rem;
+  }
+  @media (min-width: $break-m) {
+    flex-direction: row;
   }
 }
 
@@ -474,16 +466,25 @@ export default {
 }
 
 .pricing-container {
-  margin: 0 2rem;
+  display: none;
 
   @media (min-width: $break-m) {
-    margin: 0 4rem;
+    display: block;
   }
-  @media (min-width: $break-l) {
-    margin: 0 7rem;
-  }
+}
+
+.pricing-container,
+.support-creators {
+  width: 85%;
+  margin: 0 auto;
+
   @media (min-width: $break-xl) {
-    margin: 0 10rem;
+    width: 75%;
+    margin: 0 auto;
+  }
+  @media (min-width: $break-xxl) {
+    width: 55%;
+    margin: 0 auto;
   }
 }
 
@@ -508,10 +509,17 @@ export default {
 .sub-feature {
   display: flex;
   position: sticky;
-  top: 100px;
+  top: 126px;
   padding: 5px 20px;
   background-color: $grey-light;
+  border-bottom: 2px solid $text-light-on-dark;
   z-index: 10;
+  @media (min-width: $break-s) {
+    top: 100px;
+  }
+  @media (min-width: $break-l) {
+    top: 110px;
+  }
 }
 
 .sub-plans-options {

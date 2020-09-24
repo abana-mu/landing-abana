@@ -26,6 +26,7 @@
           </div>
           <g-image
             id="header-image"
+            immediate
             data-aos="fade-up"
             src="~/assets/images/laptop-1x.png"
             quality="100"

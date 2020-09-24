@@ -35,7 +35,7 @@
                 font-scale="1.2"
               ></b-icon>
             </div>
-            <div v-else>{{ plans }}</div>
+            <div v-else class="text-success">{{ plans }}</div>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default {
   border-radius: 5px;
   align-items: center;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: #f1f1f9;
   }
 }
 

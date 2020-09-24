@@ -227,38 +227,45 @@
         "categories": [{
                 "title": "General",
                 "features": [{
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
-                        }
-                    },
-                    {
-                        "title": " Macro Country Data & Key Information ",
-                        "plans": {
-                            "basic": true,
-                            "team": true,
-                            "pro": true
-                        }
+                    "title": "Users",
+                    "plans": {
+                        "basic": "1",
+                        "growth": "3",
+                        "pro": "5"
                     }
-                ]
+                }]
             },
             {
                 "title": "Database",
                 "features": [{
-                        "title": "Users",
+                        "title": "Basic Profile",
                         "plans": {
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
+                            "member": true,
+                            "basic": true,
+                            "pro": true
                         }
                     },
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Showroom",
                         "plans": {
+                            "member": false,
+                            "basic": "8",
+                            "pro": "24"
+                        }
+                    },
+                    {
+                        "title": "Search Supplier by Basic Criteria",
+                        "plans": {
+                            "member": false,
                             "basic": true,
-                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advanced Search",
+                        "plans": {
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     }
@@ -267,18 +274,62 @@
             {
                 "title": "Marketplace",
                 "features": [{
-                        "title": "Users",
+                        "title": "Post RFIs (monthly)",
                         "plans": {
-                            "basic": "1",
-                            "team": "1",
-                            "pro": "5"
+                            "member": false,
+                            "basic": "30",
+                            "pro": "Unlimited"
                         }
                     },
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Post RFQs (monthly)",
                         "plans": {
+                            "member": false,
+                            "basic": "10",
+                            "pro": "Unlimited"
+                        }
+                    },
+                    {
+                        "title": "See Listing",
+                        "plans": {
+                            "member": false,
                             "basic": true,
-                            "team": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Be Notified",
+                        "plans": {
+                            "member": false,
+                            "basic": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Ecommerce",
+                "features": [{
+                        "title": "Access Drops",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Access Brands Store",
+                        "plans": {
+                            "member": true,
+                            "basic": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Fast Custom",
+                        "plans": {
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     }
@@ -290,7 +341,7 @@
                         "title": "Users",
                         "plans": {
                             "basic": "1",
-                            "team": "1",
+                            "growth": "1",
                             "pro": "5"
                         }
                     },
@@ -298,7 +349,7 @@
                         "title": " Macro Country Data & Key Information ",
                         "plans": {
                             "basic": true,
-                            "team": true,
+                            "growth": true,
                             "pro": true
                         }
                     }
@@ -350,7 +401,7 @@
                         "title": "Users",
                         "plans": {
                             "basic": "1",
-                            "team": "1",
+                            "growth": "1",
                             "pro": "5"
                         }
                     },
@@ -358,7 +409,7 @@
                         "title": " Macro Country Data & Key Information ",
                         "plans": {
                             "basic": true,
-                            "team": true,
+                            "growth": true,
                             "pro": true
                         }
                     }
@@ -370,7 +421,7 @@
                         "title": "Users",
                         "plans": {
                             "basic": "1",
-                            "team": "1",
+                            "growth": "1",
                             "pro": "5"
                         }
                     },
@@ -378,7 +429,7 @@
                         "title": " Macro Country Data & Key Information ",
                         "plans": {
                             "basic": true,
-                            "team": true,
+                            "growth": true,
                             "pro": true
                         }
                     }
@@ -390,7 +441,7 @@
                         "title": "Users",
                         "plans": {
                             "basic": "1",
-                            "team": "1",
+                            "growth": "1",
                             "pro": "5"
                         }
                     },
@@ -398,7 +449,7 @@
                         "title": " Macro Country Data & Key Information ",
                         "plans": {
                             "basic": true,
-                            "team": true,
+                            "growth": true,
                             "pro": true
                         }
                     }
@@ -410,7 +461,7 @@
                         "title": "Users",
                         "plans": {
                             "basic": "1",
-                            "team": "1",
+                            "growth": "1",
                             "pro": "5"
                         }
                     },
@@ -418,7 +469,7 @@
                         "title": " Macro Country Data & Key Information ",
                         "plans": {
                             "basic": true,
-                            "team": true,
+                            "growth": true,
                             "pro": true
                         }
                     }
