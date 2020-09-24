@@ -48,10 +48,14 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.buyer.subs">
-                <div class="sub-plans-options col">
-                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                <div class="sub-plans-options col" :key="subs">
+                  <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">
+                    {{ subs.price3 }}
+                  </h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">
+                    {{ subs.price6 }}
+                  </h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
@@ -112,10 +116,14 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.supplier.subs">
-                <div class="sub-plans-options col">
-                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                <div class="sub-plans-options col" :key="subs">
+                  <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">
+                    {{ subs.price3 }}
+                  </h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">
+                    {{ subs.price6 }}
+                  </h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
@@ -178,10 +186,14 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.service.subs">
-                <div class="sub-plans-options col">
-                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                <div class="sub-plans-options col" :key="subs">
+                  <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">
+                    {{ subs.price3 }}
+                  </h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">
+                    {{ subs.price6 }}
+                  </h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
