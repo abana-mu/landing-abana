@@ -11,15 +11,17 @@
 </template>
 
 <script>
-import Navbar from "~/components/Navbar";
-import AOS from "aos";
+import Navbar from '~/components/Navbar';
+import AOS from 'aos';
 
 export default {
   components: {
     Navbar,
   },
   mounted() {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   },
 };
 </script>
