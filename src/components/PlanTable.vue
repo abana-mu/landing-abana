@@ -1,13 +1,6 @@
 <!-- HTML -->
 <template>
-  <div class="pricing-container">
-    <div class="sub-feature">
-      <div class="sub-feature-title"></div>
-      <template v-for="subs in data.subs">
-        <h4 class="sub-plans-options col">{{subs.name}}</h4>
-      </template>
-    </div>
-
+  <div>
     <div v-for="categories in data.categories" class="category-container">
       <div class="plan-category-title">{{categories.title}}</div>
       <div v-for="features in categories.features" :key="features.title" class="plan-feature">
@@ -52,8 +45,15 @@ export default {
 
 .pricing-container {
   margin: 0 2rem;
-  @media (min-width: $break-l) {
+
+  @media (min-width: $break-m) {
     margin: 0 4rem;
+  }
+  @media (min-width: $break-l) {
+    margin: 0 7rem;
+  }
+  @media (min-width: $break-xl) {
+    margin: 0 10rem;
   }
 }
 
@@ -83,24 +83,6 @@ export default {
   &:hover {
     background-color: rgba(0, 0, 0, 0.03);
   }
-}
-
-//sub title
-.sub-feature-title {
-  width: 30%;
-  margin: 0;
-}
-
-//sub Row
-.sub-feature {
-  display: flex;
-
-  padding: 5px 20px;
-}
-
-.sub-plans-options {
-  text-align: center;
-  margin: 0;
 }
 
 //Features title
