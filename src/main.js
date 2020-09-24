@@ -7,20 +7,41 @@ import OneSectionTight from '~/layouts/OneSectionTight';
 
 import '~/assets/_styles.scss';
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-import { NavbarPlugin } from 'bootstrap-vue';
-import { CardPlugin } from 'bootstrap-vue';
-import { ButtonPlugin } from 'bootstrap-vue';
-import { LayoutPlugin } from 'bootstrap-vue';
-import { SidebarPlugin } from 'bootstrap-vue';
-import { TabsPlugin } from 'bootstrap-vue';
-import { BootstrapVueIcons } from 'bootstrap-vue';
-import { FormRadioPlugin } from 'bootstrap-vue';
+import {
+  NavbarPlugin
+} from 'bootstrap-vue';
+import {
+  CardPlugin
+} from 'bootstrap-vue';
+import {
+  ButtonPlugin
+} from 'bootstrap-vue';
+import {
+  LayoutPlugin
+} from 'bootstrap-vue';
+import {
+  SidebarPlugin
+} from 'bootstrap-vue';
+import {
+  TabsPlugin
+} from 'bootstrap-vue';
+import {
+  BootstrapVueIcons
+} from 'bootstrap-vue';
+import {
+  FormRadioPlugin
+} from 'bootstrap-vue';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
 import 'vue-simple-markdown/dist/vue-simple-markdown.css';
 
-export default function(Vue, { router, head, isClient }) {
+export default function (Vue, {
+  router,
+  head,
+  isClient
+}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
   Vue.component('OneSection', OneSection);
@@ -34,4 +55,7 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(BootstrapVueIcons);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
+  Vue.use(AOS.init({
+    once: true
+  }));
 }
