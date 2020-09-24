@@ -2,5 +2,21 @@
   "header": {
     "title": "Matching Marketplace",
     "subtext": "Search, connect and build partnerships at speeds never seen before"
+  },
+  "database": {
+    "title": "Database",
+    "subtext": "No matter your size and activity, set up your tailor-made company profile to find your best match! \n\n\nWe believe for fashion to grow in transparency and fair partnerships. Digitalising supply chains with our detailed industry-related profile templates transforms networking.\n\n\n Suppliers and makers can provide instant information about MOQs, lead time, product range and sustainability standards to facilitate a filtered search for buyers to find their match."
+  },
+  "marketplace": {
+    "title": "Marketplace ",
+    "subtext": "Optimize on the speed, accessibility and efficiency of our digital platform to connect with worldwide partners and grow your business."
+  },
+  "marketsuppliers": {
+    "title": "For Suppliers ",
+    "subtext": "* Post listings and virtual catalogues to promote production capabilities\n* Showcase expertise by highlighting sustainability standards and quality credentials"
+  },
+  "marketbuyers": {
+    "title": "For Buyers",
+    "subtext": "* Browse through a range of garments, fabrics, yarns and services proposed by our list of trusted suppliers\n* Send RFQs and RFIs to compare and identify the right partner to meet your company needs"
   }
 }
