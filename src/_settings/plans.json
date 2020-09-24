@@ -95,22 +95,34 @@
                         }
                     },
                     {
-                        "title": "Request Quotation",
+                        "title": "Post RFQs (monthly)",
                         "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
+                            "member": false,
+                            "basic": "10",
+                            "pro": "Unlimited"
                         }
                     },
                     {
                         "title": "See Listing",
                         "plans": {
-                            "member": true,
+                            "member": false,
                             "basic": true,
                             "pro": true
                         }
                     },
                     {
+                        "title": "Be Notified",
+                        "plans": {
+                            "member": false,
+                            "basic": true,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Ecommerce",
+                "features": [{
                         "title": "Access Drops",
                         "plans": {
                             "member": true,
@@ -129,17 +141,17 @@
                     {
                         "title": "Fast Custom",
                         "plans": {
-                            "member": true,
-                            "basic": true,
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     }
                 ]
             },
             {
-                "title": "Support",
+                "title": "Support Services",
                 "features": [{
-                        "title": "Basic Services (QC, Logistics",
+                        "title": "Basic Services (QC, Compliance, Order Follow-up)",
                         "plans": {
                             "member": true,
                             "basic": true,
@@ -147,34 +159,26 @@
                         }
                     },
                     {
-                        "title": "Value Added Services (Compliance, Technical",
+                        "title": "Online Order Follow-up - Critical path (coming soon)",
                         "plans": {
-                            "member": true,
-                            "basic": true,
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     },
                     {
-                        "title": "Agency & Trading Intermediation",
+                        "title": "Advisory",
                         "plans": {
-                            "member": true,
-                            "basic": true,
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     },
                     {
-                        "title": "Advisory & HR",
+                        "title": "Joint Purchasing & E-commerce Discount",
                         "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Joint Purchasing & Fast Custom Discount",
-                        "plans": {
-                            "member": true,
-                            "basic": true,
+                            "member": false,
+                            "basic": false,
                             "pro": true
                         }
                     }

@@ -4,23 +4,45 @@
     <div class="sub-feature">
       <div class="sub-feature-title"></div>
       <template v-for="subs in data.subs">
-        <h4 class="sub-plans-options col">{{subs.name}}</h4>
+        <h4 class="sub-plans-options col" :key="subs.name">{{ subs.name }}</h4>
       </template>
     </div>
 
-    <div v-for="categories in data.categories" class="category-container">
-      <div class="plan-category-title">{{categories.title}}</div>
-      <div v-for="features in categories.features" :key="features.title" class="plan-feature">
-        <div class="plan-feature-title">{{features.title}}</div>
+    <div
+      v-for="categories in data.categories"
+      :key="categories"
+      class="category-container"
+    >
+      <div class="plan-category-title">{{ categories.title }}</div>
+      <div
+        v-for="features in categories.features"
+        :key="features.title"
+        class="plan-feature"
+      >
+        <div class="plan-feature-title">{{ features.title }}</div>
         <div class="plan-feature-plans d-flex flex-row">
-          <div v-for="plans in features.plans" class="feature-plans-options col">
+          <div
+            v-for="plans in features.plans"
+            :key="plans"
+            class="feature-plans-options col"
+          >
             <div v-if="plans === true">
-              <b-icon icon="check-circle" aria-hidden="true" variant="success" font-scale="1.2"></b-icon>
+              <b-icon
+                icon="check-circle"
+                aria-hidden="true"
+                variant="success"
+                font-scale="1.2"
+              ></b-icon>
             </div>
             <div v-else-if="plans === false">
-              <b-icon icon="dash" aria-hidden="true" variant="info"></b-icon>
+              <b-icon
+                icon="x-circle"
+                aria-hidden="true"
+                class="icon-no"
+                font-scale="1.2"
+              ></b-icon>
             </div>
-            <div v-else>{{plans}}</div>
+            <div v-else>{{ plans }}</div>
           </div>
         </div>
       </div>
@@ -42,7 +64,7 @@ export default {
 </page-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .feature {
   &:hover {
     background-color: $primary;
@@ -116,5 +138,9 @@ export default {
 
 .feature-plans-options {
   text-align: center;
+}
+
+.icon-no {
+  color: #c7c7c7;
 }
 </style>
