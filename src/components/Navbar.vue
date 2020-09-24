@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <b-navbar
-    class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody"
+    class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bbody bg-white"
     :class="{ navShadow: scrollPosition > 50 }"
     toggleable="lg"
     fixed="top"

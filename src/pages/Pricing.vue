@@ -1,28 +1,43 @@
 <template>
-  <OneSectionTight>
-    <h1 data-aos="fade-down" class="text-center">{{ Data.header.title }}</h1>
-    <p data-aos="fade-down" data-aos-delay="100" class="text-center">{{ Data.header.subtext }}</p>
-    <div class="my-3" data-aos="fade-up">
+  <Layout class="one-section-tight-layout">
+    <h1 class="text-center">{{ Data.header.title }}</h1>
+    <p class="text-center">
+      {{ Data.header.subtext }}
+    </p>
+    <div class="my-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
         <!--------- BUYERS --------->
         <b-tab title="Buyers" active>
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group v-model="selected" :options="options" name="radio-buyers"></b-form-radio-group>
+            <b-form-radio-group
+              v-model="selected"
+              :options="periods"
+              name="radio-buyers"
+            ></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.buyer.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
-                <b-card-text class="desc">{{card.desc}}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
+                <b-card-text class="desc">{{ card.desc }}</b-card-text>
+                <h4 class="pricetag" v-if="selected === 'price3'">
+                  {{ card.price3 }}
+                </h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">
+                  {{ card.price6 }}
+                </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
-                    <span>{{feature}}</span>
+                    <span>{{ feature }}</span>
                   </li>
                 </ul>
               </b-card>
@@ -49,20 +64,33 @@
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group v-model="selected" :options="options" name="radio-suppliers"></b-form-radio-group>
+            <b-form-radio-group
+              v-model="selected"
+              :options="periods"
+              name="radio-suppliers"
+            ></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.supplier.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
-                <b-card-text class="desc">{{card.desc}}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
+                <b-card-text class="desc">{{ card.desc }}</b-card-text>
+                <h4 class="pricetag" v-if="selected === 'price3'">
+                  {{ card.price3 }}
+                </h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">
+                  {{ card.price6 }}
+                </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
-                    <span>{{feature}}</span>
+                    <span>{{ feature }}</span>
                   </li>
                 </ul>
               </b-card>
@@ -72,10 +100,12 @@
           <b-card class="back-white border-0 mt-3 mb-5 mx-5">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
-              If you are a designer, QA or special service provider, become
-              part of the ABANA network.
+              If you are a designer, QA or special service provider, become part
+              of the ABANA network.
             </b-card-text>
-            <b-button href="#" variant="outline-primary">More Information Here</b-button>
+            <b-button href="#" variant="outline-primary"
+              >More Information Here</b-button
+            >
           </b-card>
           <!-- TABLE -->
           <div class="pricing-container mt-5">
@@ -98,20 +128,33 @@
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group v-model="selected" :options="options" name="radio-service"></b-form-radio-group>
+            <b-form-radio-group
+              v-model="selected"
+              :options="periods"
+              name="radio-service"
+            ></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.service.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
-                <b-card-text class="desc">{{card.desc}}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
+                <b-card-text class="desc">{{ card.desc }}</b-card-text>
+                <h4 class="pricetag" v-if="selected === 'price3'">
+                  {{ card.price3 }}
+                </h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">
+                  {{ card.price6 }}
+                </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
-                    <span>{{feature}}</span>
+                    <span>{{ feature }}</span>
                   </li>
                 </ul>
               </b-card>
@@ -122,10 +165,12 @@
           <b-card class="back-white border-0 mt-3 mb-5 mx-5">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
-              If you are a designer, QA or special service provider, become
-              part of the ABANA network.
+              If you are a designer, QA or special service provider, become part
+              of the ABANA network.
             </b-card-text>
-            <b-button href="#" variant="outline-primary">More Information Here</b-button>
+            <b-button href="#" variant="outline-primary"
+              >More Information Here</b-button
+            >
           </b-card>
 
           <!-- Table -->
@@ -146,30 +191,30 @@
         </b-tab>
       </b-tabs>
     </div>
-  </OneSectionTight>
+  </Layout>
 </template>
 
 <script>
-import Data from "~/_settings/pricing.json";
-import Plans from "~/_settings/plans.json";
-import Table from "~/components/PlanTable";
+import Data from '~/_settings/pricing.json';
+import Plans from '~/_settings/plans.json';
+import Table from '~/components/PlanTable';
 
 export default {
   components: {
     Table,
   },
   metaInfo: {
-    title: "Pricing",
+    title: 'Pricing',
   },
   data() {
     return {
       Data,
       Plans,
-      selected: "price12",
-      options: [
-        { text: "12 months", value: "price12" },
-        { text: "6 months", value: "price6" },
-        { text: "3 months", value: "price3" },
+      selected: 'price12',
+      periods: [
+        { text: '12 months', value: 'price12' },
+        { text: '6 months', value: 'price6' },
+        { text: '3 months', value: 'price3' },
       ],
     };
   },
@@ -347,7 +392,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: "";
+    content: '';
     height: 10px;
     left: 0;
     position: absolute;

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="index-layout">
     <!-- HEADER -->
     <HeaderBanner
       :title="Data.header.title"

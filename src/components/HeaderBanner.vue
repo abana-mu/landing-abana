@@ -3,13 +3,13 @@
   <b-container fluid class="overflow-hidden">
     <div id="header-banner">
       <div class="row">
-        <div class="col" data-aos="fade-down">
-          <div data-aos="fade-up">
+        <div class="col">
+          <div data-aos="fade-down">
             <h1 id="header-title">
               {{ title }}
             </h1>
           </div>
-          <div data-aos="fade-up" data-aos-delay="100">
+          <div data-aos="fade-down" data-aos-delay="100">
             <p id="header-subtitle" class="mb-2 text-center">
               {{ subtext }}
             </p>
@@ -17,7 +17,7 @@
           <div id="header-cta">
             <g-link
               to="/Plans/"
-              data-aos="fade-up"
+              data-aos="fade-down"
               data-aos-delay="200"
               data-aos-once="true"
             >
@@ -26,6 +26,7 @@
           </div>
           <g-image
             id="header-image"
+            data-aos="fade-up"
             src="~/assets/images/laptop-1x.png"
             quality="100"
           />
