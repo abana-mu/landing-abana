@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="one-section-tight-layout">
     <h1 data-aos="fade-down" class="text-center">{{ Data.header.title }}</h1>
     <p data-aos="fade-down" data-aos-delay="100" class="text-center">
       {{ Data.header.subtext }}

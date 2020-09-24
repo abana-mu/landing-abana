@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <Layout>
+  <Layout class="one-section-layout container">
     <g-link to="/careers/" class="sidebar-item-level-2-title px-5 mb-3">
       <b-icon icon="arrow-left-short" class="mr-2" />Back
     </g-link>
