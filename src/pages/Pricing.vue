@@ -1,10 +1,10 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <h1 data-aos="fade-down" class="text-center">{{ Data.header.title }}</h1>
-    <p data-aos="fade-down" data-aos-delay="100" class="text-center">
+    <h1 class="text-center">{{ Data.header.title }}</h1>
+    <p class="text-center">
       {{ Data.header.subtext }}
     </p>
-    <div class="my-3" data-aos="fade-up " data-aos-once="true">
+    <div class="my-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
         <!-- BUYERS -->
         <b-tab title="Buyers" active>
@@ -20,7 +20,12 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.buyer.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
                 <h4 class="pricetag" v-if="selected === 'price3'">
                   {{ card.price3 }}
@@ -30,7 +35,7 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
                   </li>
@@ -61,7 +66,12 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.supplier.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
                 <h4 class="pricetag" v-if="selected === 'price3'">
                   {{ card.price3 }}
@@ -71,7 +81,7 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
                   </li>
@@ -112,7 +122,12 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.service.subs">
-              <b-card :title="card.name" class="card-top" :class="card.name">
+              <b-card
+                :title="card.name"
+                class="card-top"
+                :class="card.name"
+                :key="card.name"
+              >
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
                 <h4 class="pricetag" v-if="selected === 'price3'">
                   {{ card.price3 }}
@@ -122,7 +137,7 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <li v-for="feature in card.features">
+                  <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
                   </li>
