@@ -4,7 +4,7 @@
     <p data-aos="fade-down" data-aos-delay="100" class="text-center">
       {{ Data.header.subtext }}
     </p>
-    <div class="my-3" data-aos="fade-up">
+    <div class="my-3" data-aos="fade-up " data-aos-once="true">
       <b-tabs align="center" content-class="pb-5 back-grey">
         <!-- BUYERS -->
         <b-tab title="Buyers" active>
@@ -13,7 +13,7 @@
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
-              :options="options"
+              :options="periods"
               name="radio-buyers"
             ></b-form-radio-group>
           </div>
@@ -54,7 +54,7 @@
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
-              :options="options"
+              :options="periods"
               name="radio-suppliers"
             ></b-form-radio-group>
           </div>
@@ -105,7 +105,7 @@
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
               v-model="selected"
-              :options="options"
+              :options="periods"
               name="radio-service"
             ></b-form-radio-group>
           </div>
@@ -170,7 +170,7 @@ export default {
       Data,
       Plans,
       selected: 'price12',
-      options: [
+      periods: [
         { text: '12 months', value: 'price12' },
         { text: '6 months', value: 'price6' },
         { text: '3 months', value: 'price3' },
