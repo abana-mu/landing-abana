@@ -15,9 +15,27 @@
             {
                 "name": "Basic",
                 "desc": "This describes the member plan",
+<<<<<<< HEAD
+                "price3": "$119/mo",
+                "price6": "$109/mo",
+                "price12": "$99/mo",
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
+            },
+            {
+                "name": "Growth",
+                "desc": "This describes the member plan",
+                "price3": "$239/mo",
+                "price6": "$219/mo",
+                "price12": "$199/mo",
+=======
                 "price3": "$65/mo",
                 "price6": "$59/mo",
                 "price12": "$49/mo",
+>>>>>>> 9cdc11a8c59cbb4125e299e0a5bda5e53e07a0dc
                 "features": [
                     "feature1",
                     "feature2",
@@ -200,7 +218,7 @@
                 ]
             },
             {
-                "name": "Team",
+                "name": "Growth",
                 "desc": "This describes the member plan",
                 "price3": "$239/mo",
                 "price6": "$219/mo",
@@ -320,7 +338,7 @@
                 ]
             },
             {
-                "name": "Team",
+                "name": "Growth",
                 "desc": "This describes the member plan",
                 "price3": "$239/mo",
                 "price6": "$219/mo",

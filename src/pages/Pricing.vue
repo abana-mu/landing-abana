@@ -6,7 +6,7 @@
     </p>
     <div class="my-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
-        <!-- BUYERS -->
+        <!--------- BUYERS --------->
         <b-tab title="Buyers" active>
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
@@ -43,16 +43,23 @@
               </b-card>
             </template>
           </b-card-group>
-
-          <div class="text-center">
-            <b-button href="#" variant="outline-dark">
-              See all features
-              <b-icon icon="arrow-down-short" />
-            </b-button>
+          <!-- TABLE -->
+          <div class="pricing-container mt-5">
+            <div class="sub-feature">
+              <div class="sub-feature-title"></div>
+              <template v-for="subs in Plans.buyer.subs">
+                <div class="sub-plans-options col">
+                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                  <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
+                </div>
+              </template>
+            </div>
+            <Table :data="Plans.buyer" />
           </div>
-          <Table :data="Plans.buyer" class="mt-5" />
         </b-tab>
-        <!-- SUPPLIERS -->
+        <!--------- SUPPLIERS --------->
         <b-tab title="Suppliers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
@@ -89,15 +96,8 @@
               </b-card>
             </template>
           </b-card-group>
-
-          <div class="text-center">
-            <b-button href="#" variant="outline-dark">
-              See all features
-              <b-icon icon="arrow-down-short" />
-            </b-button>
-          </div>
-
-          <b-card class="back-white border-0 my-5 mx-4">
+          <!-- SUPPORT -->
+          <b-card class="back-white border-0 mt-3 mb-5 mx-5">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
               If you are a designer, QA or special service provider, become part
@@ -107,8 +107,23 @@
               >More Information Here</b-button
             >
           </b-card>
+          <!-- TABLE -->
+          <div class="pricing-container mt-5">
+            <div class="sub-feature">
+              <div class="sub-feature-title"></div>
+              <template v-for="subs in Plans.supplier.subs">
+                <div class="sub-plans-options col">
+                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                  <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
+                </div>
+              </template>
+            </div>
+            <Table :data="Plans.supplier" />
+          </div>
         </b-tab>
-        <!-- SERVICE PROVIDERS -->
+        <!--------- SERVICE PROVIDERS --------->
         <b-tab title="Service Providers">
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
@@ -145,14 +160,9 @@
               </b-card>
             </template>
           </b-card-group>
-          <div class="text-center">
-            <b-button href="#" variant="outline-dark">
-              See all features
-              <b-icon icon="arrow-down-short" />
-            </b-button>
-          </div>
 
-          <b-card class="back-white border-0 my-5 card-container">
+          <!-- SUPPORT -->
+          <b-card class="back-white border-0 mt-3 mb-5 mx-5">
             <b-card-title>We support independant creators</b-card-title>
             <b-card-text>
               If you are a designer, QA or special service provider, become part
@@ -162,6 +172,22 @@
               >More Information Here</b-button
             >
           </b-card>
+
+          <!-- Table -->
+          <div class="pricing-container mt-5">
+            <div class="sub-feature">
+              <div class="sub-feature-title"></div>
+              <template v-for="subs in Plans.service.subs">
+                <div class="sub-plans-options col">
+                  <h5 class="plan-category-title border-0">{{subs.name}}</h5>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
+                  <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
+                </div>
+              </template>
+            </div>
+            <Table :data="Plans.service" />
+          </div>
         </b-tab>
       </b-tabs>
     </div>
@@ -414,24 +440,70 @@ export default {
   font-size: 2rem;
 }
 
-.Member {
+.card.Member {
   &:before {
     background-color: #dbdbdb;
   }
 }
-.Basic {
+.card.Basic {
   &:before {
     background-color: #ffc552;
   }
 }
-.Team {
+.card.Growth {
   &:before {
     background-color: #fd5d60;
   }
 }
-.Pro {
+.card.Pro {
   &:before {
     background-color: #607aff;
   }
+}
+
+.pricing-container {
+  margin: 0 2rem;
+
+  @media (min-width: $break-m) {
+    margin: 0 4rem;
+  }
+  @media (min-width: $break-l) {
+    margin: 0 7rem;
+  }
+  @media (min-width: $break-xl) {
+    margin: 0 10rem;
+  }
+}
+
+.plan-category-title {
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  color: $text-light-on-light;
+  border-bottom: 1px solid $text-light-on-dark;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+//sub title
+.sub-feature-title {
+  width: 30%;
+  margin: 0;
+}
+
+//sub Row
+.sub-feature {
+  display: flex;
+  position: sticky;
+  top: 100px;
+  padding: 5px 20px;
+  background-color: $grey-light;
+  z-index: 10;
+}
+
+.sub-plans-options {
+  text-align: center;
+  margin: 0;
 }
 </style>
