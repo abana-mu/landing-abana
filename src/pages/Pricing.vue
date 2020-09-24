@@ -1,7 +1,7 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <h1 class="text-center">{{ Data.header.title }}</h1>
-    <p class="text-center">
+    <h1 class="text-center" data-aos="fade-down">{{ Data.header.title }}</h1>
+    <p class="text-center" data-aos="fade-down">
       {{ Data.header.subtext }}
     </p>
     <div class="my-3">
