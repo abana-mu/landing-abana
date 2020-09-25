@@ -1,16 +1,47 @@
 <template>
-  <Layout class="one-section-layout container">
-    <h1 data-aos="fade-up">{{ Data.header.title }}</h1>
-    <p data-aos="fade-up" data-aos-delay="100">{{ Data.header.subtext }}</p>
+  <Layout class="one-section-layout">
+    <div class="header">
+      <h1 class="title" data-aos="fade-up">{{ Data.header.title }}</h1>
+      <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+        {{ Data.header.subtext }}
+      </p>
+      <div class="image-banner">
+        <g-image
+          immediate
+          data-aos="fade-up"
+          src="~/assets/images/matching.jpg"
+          quality="100"
+        />
+      </div>
+    </div>
+    <div class="content">
+      <section class="section-content">
+        <OneCol :title="Data.drops.title" :text="Data.drops.subtext" image />
+      </section>
+      <section class="section-content">
+        <TwoCol :title="Data.brands.title" :text="Data.brands.subtext" />
+        <TwoCol
+          :title="Data.fastcustom.title"
+          :text="Data.fastcustom.subtext"
+          reverse
+        />
+      </section>
+    </div>
   </Layout>
 </template>
 
 <script>
-import Data from '~/_settings/ecommerce.json';
+import Data from "~/_settings/ecommerce.json";
+import OneCol from "~/components/PageElementOneCol";
+import TwoCol from "~/components/PageElementTwoCol";
 
 export default {
+  components: {
+    OneCol,
+    TwoCol,
+  },
   metaInfo: {
-    title: 'Matching & Marketplace',
+    title: "Matching & Marketplace",
   },
   data() {
     return {
