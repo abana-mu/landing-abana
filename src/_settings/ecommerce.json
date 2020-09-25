@@ -1,6 +1,18 @@
 {
   "header": {
     "title": "E-Commerce",
-    "subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. "
+    "subtext": "Buying and selling re-imagined with more informed buying decisions, reduced lead times and faster delivery!"
+  },
+  "drops": {
+    "title": "Drops",
+    "subtext": "Transparency and sustainability are core values of our Drops - we believe this responsibility can be shared by both buyers and suppliers to collaboratively uplift the fashion industry.\n\n No matter your company size, our Ready-To-Ship Drops is a stress-free e-commerce service to purchase latest trends at a minimum quantity of one box, and delivered to your door step within in a week.\n\nWe ensure highest quality by developing the collection with trusted partners in the African continent. To reduce environmental impact, deadstocks and natural fibres are carefully chosen as primary materials, and information about where the garment is made is made accessible to promote traceability.\n\n**Use this in your brand story to highlight your commitment to a transparent and sustainable supply chain!**"
+  },
+  "brands": {
+    "title": "Brands (Coming soon...)",
+    "subtext": "Text coming soon"
+  },
+  "fastcustom": {
+    "title": "Fast Custom (Coming soon...)",
+    "subtext": "Text coming soon"
   }
 }
