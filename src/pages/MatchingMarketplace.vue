@@ -1,6 +1,6 @@
 <template>
   <Layout class="one-section-layout">
-    <div class="header section-content">
+    <div class="header">
       <h1 class="title" data-aos="fade-up">{{ Data.header.title }}</h1>
       <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
         {{ Data.header.subtext }}
@@ -16,10 +16,26 @@
     </div>
     <div class="content">
       <section class="section-content">
-        <OneCol />
+        <OneCol
+          :title="Data.database.title"
+          :text="Data.database.subtext"
+          image
+        />
       </section>
       <section class="section-content">
-        <TwoCol />
+        <OneCol
+          :title="Data.marketplace.title"
+          :text="Data.marketplace.subtext"
+        />
+        <TwoCol
+          :title="Data.marketsuppliers.title"
+          :text="Data.marketsuppliers.subtext"
+        />
+        <TwoCol
+          :title="Data.marketbuyers.title"
+          :text="Data.marketbuyers.subtext"
+          reverse
+        />
       </section>
     </div>
   </Layout>

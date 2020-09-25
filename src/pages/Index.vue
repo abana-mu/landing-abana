@@ -21,7 +21,7 @@
                   <ITransf />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle1 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle1 }}</h4>
                   <p class="box-item-text">{{ Data.boxes.boxText1 }}</p>
                 </div>
               </b-col>
@@ -30,7 +30,7 @@
                   <IExpect />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle2 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle2 }}</h4>
                   <p class="box-item-text">{{ Data.boxes.boxText2 }}</p>
                 </div>
               </b-col>
@@ -39,7 +39,7 @@
                   <INew />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle3 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle3 }}</h4>
                   <p class="box-item-text">{{ Data.boxes.boxText3 }}</p>
                 </div>
               </b-col>
@@ -48,7 +48,7 @@
                   <ITax />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle4 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle4 }}</h4>
                   <p class="box-item-text">{{ Data.boxes.boxText4 }}</p>
                 </div>
               </b-col>
@@ -57,7 +57,7 @@
                   <IGuar />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle5 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle5 }}</h4>
                   <p class="box-item-text">
                     {{ Data.boxes.boxText5 }}
                     <g-link to="/about">About us...</g-link>
@@ -69,7 +69,7 @@
                   <ITarget />
                 </div>
                 <div class="box-text">
-                  <p class="box-item-title">{{ Data.boxes.boxTextTitle6 }}</p>
+                  <h4 class="box-item-title">{{ Data.boxes.boxTextTitle6 }}</h4>
                   <p class="box-item-text">{{ Data.boxes.boxText6 }}</p>
                 </div>
               </b-col>
@@ -176,7 +176,7 @@ export default {
   color: white;
   margin-bottom: 0.25rem;
   font-weight: 500;
-  font-size: 1.3rem;
+  //font-size: 1.3rem;
 }
 .box-item-text {
   color: $subtitle-light;

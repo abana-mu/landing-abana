@@ -503,10 +503,7 @@
                       <div class="sidebar-container">
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
-                          <div
-                            class="sidebar-item-level-2-title px-5 mb-3"
-                            @click="hide"
-                          >
+                          <div class="sidebar-item-level-2-title" @click="hide">
                             <b-icon
                               icon="arrow-left-short"
                               class="mr-2"
@@ -519,7 +516,7 @@
                                 to="/matching-marketplace/"
                               >
                                 <div
-                                  class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                  class="sidebar-item-level-2-container d-flex align-items-center"
                                 >
                                   <div class="drop-image">
                                     <IMarket />
@@ -543,7 +540,7 @@
                               to="/ecommerce/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <IEcomm />
@@ -565,7 +562,7 @@
                               to="/supply-chain/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <ISupply />
@@ -599,14 +596,12 @@
                       <div class="sidebar-container">
                         <!-- Content -->
                         <div class="row no-gutters align-items-stretch nowrap">
-                          <div
-                            class="sidebar-item-level-2-title px-5 mb-3"
-                            @click="hide"
-                          >
+                          <div class="sidebar-item-level-2-title" @click="hide">
                             <b-icon icon="arrow-left-short" class="mr-2" />For
                             Business
                           </div>
-                          <b-dropdown-header class="px-5"
+                          <b-dropdown-header
+                            class="sidebar-item-level-2-subtitle"
                             >For Buyers</b-dropdown-header
                           >
                           <div class="col col-12 mb-3">
@@ -615,7 +610,7 @@
                               to="/sourcing-buyers/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <ISource />
@@ -637,7 +632,7 @@
                               to="/product-buyers/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <IProduct />
@@ -655,7 +650,8 @@
                           </div>
 
                           <div class="col col-12 mb-3">
-                            <b-dropdown-header class="px-5"
+                            <b-dropdown-header
+                              class="sidebar-item-level-2-subtitle"
                               >For Makers</b-dropdown-header
                             >
                             <g-link
@@ -663,7 +659,7 @@
                               to="/garment-makers/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <IGM />
@@ -685,7 +681,7 @@
                               to="/input-suppliers/"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <IIS />
@@ -707,7 +703,7 @@
                               to="/service-providers"
                             >
                               <div
-                                class="sidebar-item-level-2-container px-5 mb-2 d-flex align-items-center"
+                                class="sidebar-item-level-2-container d-flex align-items-center"
                               >
                                 <div class="drop-image">
                                   <ISP />
@@ -743,19 +739,19 @@
                         <div
                           class="row no-gutters align-items-stretch nowrap mb-2"
                         >
-                          <div
-                            class="sidebar-item-level-2-title px-5 mb-3"
-                            @click="hide"
-                          >
+                          <div class="sidebar-item-level-2-title" @click="hide">
                             <b-icon
                               icon="arrow-left-short"
                               class="mr-2"
                             />Company
                           </div>
-                          <div class="col col-12 px-5 mb-3">
-                            <b-dropdown-header>Company</b-dropdown-header>
+                          <div class="col col-12 mb-3">
+                            <b-dropdown-header
+                              class="sidebar-item-level-2-subtitle"
+                              >Company</b-dropdown-header
+                            >
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/about/"
                               @click="hide"
                             >
@@ -765,7 +761,7 @@
                               <div class="drop-text">About Us</div>
                             </g-link>
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/careers/"
                               @click="hide"
                             >
@@ -776,7 +772,7 @@
                             </g-link>
 
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/sustainability/"
                               @click="hide"
                             >
@@ -786,10 +782,13 @@
                               <div class="drop-text">Sustainability</div>
                             </g-link>
                           </div>
-                          <div class="col col-12 px-5 mb-3">
-                            <b-dropdown-header>Support</b-dropdown-header>
+                          <div class="col col-12 mb-3">
+                            <b-dropdown-header
+                              class="sidebar-item-level-2-subtitle"
+                              >Support</b-dropdown-header
+                            >
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/contact/"
                               @click="hide"
                             >
@@ -800,7 +799,7 @@
                             </g-link>
 
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/privacy/"
                               @click="hide"
                             >
@@ -810,10 +809,13 @@
                               <div class="drop-text">Privacy & Terms</div>
                             </g-link>
                           </div>
-                          <div class="col col-12 px-5 mb-3">
-                            <b-dropdown-header>Partnerships</b-dropdown-header>
+                          <div class="col col-12 mb-3">
+                            <b-dropdown-header
+                              class="sidebar-item-level-2-subtitle"
+                              >Partnerships</b-dropdown-header
+                            >
                             <g-link
-                              class="sidebar-item-level-2 drop-title-singular d-flex align-items-center"
+                              class="sidebar-item-level-2 d-flex align-items-center"
                               to="/partnerships/"
                               @click="hide"
                             >
@@ -1070,6 +1072,8 @@ export default {
 <style lang="scss">
 // MAIN ELLEMENTS
 
+
+
 .navShadow {
   -webkit-box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
@@ -1109,8 +1113,11 @@ export default {
 }
 
 .logo {
-  width: 8rem;
+  width: 7rem;
   display: block;
+  @media (min-width: $break-collapse) {
+    width: 8rem;
+  }
 }
 
 .btn-link {
@@ -1282,7 +1289,7 @@ export default {
 }
 
 .sidebar-container {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .sidebar-container-1 {
   padding: 4rem 0;
@@ -1321,7 +1328,8 @@ export default {
 .sidebar-item-level-2-title {
   display: block;
   width: 100%;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
   color: $title-dark;
   font-size: 1.25rem;
   cursor: pointer;
@@ -1332,10 +1340,14 @@ export default {
   }
 }
 
+.sidebar-item-level-2-subtitle {
+  padding: 0rem 1.5rem;
+}
+
 .sidebar-item-level-2 {
   display: block;
   width: 100%;
-  padding: 0.25rem 0rem;
+  padding: 0.5rem 1.5rem;
   color: $title-dark;
   &:hover {
     text-decoration: none;

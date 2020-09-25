@@ -1,14 +1,14 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import DefaultLayout from '~/layouts/Default.vue';
-
-import '~/assets/_styles.scss';
-import 'aos/dist/aos.css';
-
 import {
   NavbarPlugin, CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, BootstrapVueIcons, FormRadioPlugin
 } from 'bootstrap-vue';
+
+import DefaultLayout from '~/layouts/Default.vue';
+
+import 'aos/dist/aos.css';
+import '~/assets/_styles.scss';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
 import 'vue-simple-markdown/dist/vue-simple-markdown.css';

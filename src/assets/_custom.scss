@@ -1,6 +1,7 @@
 // MAIN ELEMENTS
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -9,7 +10,11 @@ body {
   scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  //background-color: #f7f2ec;
+  color: $text-body;
+
+  @media (min-width: $break-s) {
+    font-size: $f18;
+  }
 }
 
 ::selection {
@@ -24,129 +29,93 @@ h4,
 h5,
 h6 {
   color: $title-dark;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h1 {
+  // -576
+  font-size: $f42;
+  letter-spacing: 1.2px;
 
-  font-weight: 600;
-
-  //XSmall -578
-  font-size: 2rem;
-  line-height: 1.05;
-
-  //Small 578-776
-  @media (min-width: $break-s) {
-    font-size: 2.3rem;
-    letter-spacing: 1.2px;
-  }
-
-  //Medium 776-992
+  // 768-1440
   @media (min-width: $break-m) {
-    font-size: 2.6rem;
-    letter-spacing: 1.2px;
+    font-size: $f48;
   }
 
-  //Large 992-1200
-  @media (min-width: $break-l) {
-    font-size: 2.9rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1200-1440
-  @media (min-width: $break-xl) {
-    font-size: 3.2rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1440+
+  // 1440+
   @media (min-width: $break-xxl) {
-    font-size: 3.5rem;
-    letter-spacing: 1.2px;
+    font-size: $f60;
   }
 }
 
 h2 {
-  letter-spacing: 1.4px;
-  font-weight: 500;
+  letter-spacing: 1px;
 
-  //XSmall -578
-  font-size: 1.6rem;
-  line-height: 1.2;
+  // -578
+  font-size: $f28;
 
-  //Small 578-776
-  @media (min-width: $break-s) {
-    font-size: 2rem;
-    letter-spacing: 1.2px;
-  }
-
-  //Medium 776-992
+  // 768 - 1440
   @media (min-width: $break-m) {
-    font-size: 2.3rem;
-    letter-spacing: 1.2px;
+    font-size: $f32;
   }
 
-  //Large 992-1200
-  @media (min-width: $break-l) {
-    font-size: 2.6rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1200-1440
-  @media (min-width: $break-xl) {
-    font-size: 2.9rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1440+
+  // 1440+
   @media (min-width: $break-xxl) {
-    font-size: 3rem;
-    letter-spacing: 1.2px;
+    font-size: $f38;
   }
+
 }
 
 h3 {
-  letter-spacing: 1.4px;
-  font-weight: 500;
+  letter-spacing: 1px;
 
-  //XSmall -578
-  font-size: 1rem;
-  line-height: 1.2;
+  //-578
+  font-size: $f20;
 
-  //Small 578-776
-  @media (min-width: $break-s) {
-    font-size: 1.05rem;
-    letter-spacing: 1.2px;
-  }
-
-  //Medium 776-992
+  //Medium 776-1440
   @media (min-width: $break-m) {
-    font-size: 1.1rem;
-    letter-spacing: 1.2px;
+    font-size: $f22;
   }
 
-  //Large 992-1200
-  @media (min-width: $break-l) {
-    font-size: 1.15rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1200-1440
-  @media (min-width: $break-xl) {
-    font-size: 1.2rem;
-    letter-spacing: 1.2px;
-  }
-
-  //XL 1440+
+  // 1440+
   @media (min-width: $break-xxl) {
-    font-size: 1.25rem;
-    letter-spacing: 1.2px;
+    font-size: $f24;
   }
 }
 
+h4 {
+
+  //-578
+  font-size: $f20;
+
+  //Medium 776-1440
+  @media (min-width: $break-m) {
+    font-size: $f20;
+  }
+
+  // 1440+
+  @media (min-width: $break-xxl) {
+    font-size: $f20;
+  }
+}
+
+.spaced{
+  letter-spacing: 8px;
+    //Medium 776-1440
+    @media (min-width: $break-m) {
+      letter-spacing: 9px;
+    }
+  
+    // 1440+
+    @media (min-width: $break-xxl) {
+      letter-spacing: 10px;
+    }
+}
+
+
 p {
-  //color: $subtitle-dark;
   color: $text-body;
-  font-size: 18px;
 }
 
 .btn {
@@ -155,8 +124,13 @@ p {
 
 .markdown-body {
   font-family: $sans-serif !important;
-  font-size: 18px !important;
   -moz-osx-font-smoothing: grayscale !important;
+  color: $text-body!important;
+  font-size: inherit!important;
+}
+
+.vue-simple-markdown{
+  white-space: pre-line!important;
 }
 
 //COLORS
@@ -193,45 +167,6 @@ p {
   background-color: $beige-grey;
 }
 
-// GRID AND LAYOUT
-
-.container-fluid {
-  max-width: 1440px;
-  //XSmall -578
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
-
-  //Small 578-776
-  @media (min-width: $break-s) {
-    padding-left: 2.9rem;
-    padding-right: 2.9rem;
-  }
-
-  //Medium 776-992
-  @media (min-width: $break-m) {
-    padding-left: 3.925rem;
-    padding-right: 3.925rem;
-  }
-
-  //Large 992-1200
-  @media (min-width: $break-l) {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-
-  //XL 1200-1400
-  @media (min-width: $break-xl) {
-    padding-left: 5.975rem;
-    padding-right: 5.975rem;
-  }
-
-  //XL 1440+
-  @media (min-width: $break-xxl) {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-}
-
 // CUSTOM ALL PAGES
 
 .text-transition {
@@ -240,15 +175,14 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-
-
 //NAVIGATION
 
 .navbar-light .navbar-nav .nav-link {
   color: $title-dark;
+  font-size: $f16;
 
   &:hover {
-    color: #494f5c;
+    color: $subtitle-dark;
   }
 }
 
@@ -296,10 +230,16 @@ p {
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
+    margin-top: 150px;
   }
 
   .header{
     text-align: center;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+
     
     .title {
       margin: 0 auto;
@@ -343,6 +283,7 @@ p {
     }
     
   }
+
   .image-banner{
     img{
       border-radius: 4px;

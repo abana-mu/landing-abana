@@ -93,6 +93,24 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Drops'
+            name: drops
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Brands'
+            name: brands
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Fast Custom'
+            name: fastcustom
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
@@ -104,6 +122,36 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Quality'
+            name: quality
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Sustainability'
+            name: sustainability
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Follow-up'
+            name: followup
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Full Service'
+            name: fullservice
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+          - label: 'Advisory'
+            name: advisory
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'

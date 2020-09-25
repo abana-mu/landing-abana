@@ -1,6 +1,8 @@
 $coral: #ff6158;
 
 $antracide: #222;
+$dark-antra: #111;
+$very-dark-blue-text: #132046;
 $very-dark-blue: #0d183a;
 $blue-grey: #41415a;
 $blue-grey-dark: #2f2f45;
@@ -19,8 +21,9 @@ $green: #0ad19f;
 $primary: $coral;
 $secondary: $blue;
 $info: $grey-dark;
+
 $title-dark: $very-dark-blue;
-$text-body: $antracide;
+$text-body: $very-dark-blue-text;
 
 $subtitle-dark: $grey-dark;
 $subtitle-light: $grey-light-blue;
@@ -35,5 +38,27 @@ $break-xl: 1200px;
 $break-xxl: 1440px;
 
 $break-collapse: $break-l;
+
+
+$f12: 0.75rem;
+$f14: 0.875rem;
+$f16: 1rem;
+$f17: 1.063rem;
+$f18: 1.125rem;
+$f20: 1.25rem;
+$f22: 1.375rem;
+$f24: 1.5rem;
+$f28: 1.75rem;
+$f30: 1.875rem;
+$f32: 2rem;
+$f36: 2.25rem;
+$f38: 2.375rem;
+$f42: 2.625rem; 
+$f46: 2.875rem;
+$f48: 3rem;
+$f52: 3.25rem;
+$f56: 3.5rem;
+$f60: 3.75rem;
+
 
 // Box Shadows
