@@ -64,7 +64,13 @@
 
 <!-- SCRIPTS -->
 <script>
+import { BIcon, BIconArrowLeftShort } from "bootstrap-vue";
+
 export default {
+  components: {
+    BIcon,
+    BIconArrowLeftShort,
+  },
   metaInfo() {
     return {
       title: this.$page.thisJob.title,

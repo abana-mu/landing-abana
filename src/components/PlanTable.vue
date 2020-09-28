@@ -45,7 +45,14 @@
 
 <!-- SCRIPTS -->
 <script>
+import { BIcon, BIconCheckCircle, BIconXCircle } from "bootstrap-vue";
+
 export default {
+  components: {
+    BIcon,
+    BIconCheckCircle,
+    BIconXCircle,
+  },
   props: {
     data: Object,
   },

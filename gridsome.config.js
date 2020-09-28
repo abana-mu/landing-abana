@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
   siteName: 'ABANA',
   siteUrl: 'https://www.abana.mu',
@@ -20,27 +22,36 @@ module.exports = {
     },
   },
 
-  plugins: [{
-    use: '@gridsome/source-filesystem',
-    options: {
-      path: '_careers/**/*.md',
-      typeName: 'Careers',
-      remark: {},
-    },
+  chainWebpack: config => {
+    config
+      .plugin('BundleAnalyzerPlugin')
+      .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
   },
 
-  {
-    use: `gridsome-plugin-netlify-cms`,
-    options: {
-      publicPath: `/admin`,
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_careers/**/*.md',
+        typeName: 'Careers',
+        remark: {},
+      },
     },
-  },
-  {
-    use: 'gridsome-plugin-sass-resources-loader',
-    options: {
-      // provide path to the file with resources
-      resources: './src/assets/_variables.scss',
+
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+      },
     },
-  },
+    {
+      use: 'gridsome-plugin-sass-resources-loader',
+      options: {
+        // provide path to the file with resources
+        resources: './src/assets/_variables.scss',
+      },
+    },
+
+
   ],
 };

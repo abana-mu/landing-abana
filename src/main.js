@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import {
-  CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, BootstrapVueIcons, FormRadioPlugin
+  CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, FormRadioPlugin
 } from 'bootstrap-vue';
 
 import DefaultLayout from '~/layouts/Default.vue';
@@ -24,7 +24,6 @@ export default function (Vue, {
   Vue.use(LayoutPlugin);
   Vue.use(SidebarPlugin);
   Vue.use(TabsPlugin);
-  Vue.use(BootstrapVueIcons);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
 }

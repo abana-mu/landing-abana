@@ -213,9 +213,12 @@
 import Data from "~/_settings/pricing.json";
 import Plans from "~/_settings/plans.json";
 import Table from "~/components/PlanTable";
+import { BIcon, BIconCheckCircle } from "bootstrap-vue";
 
 export default {
   components: {
+    BIcon,
+    BIconCheckCircle,
     Table,
   },
   metaInfo: {
