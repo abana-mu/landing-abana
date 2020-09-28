@@ -16,7 +16,7 @@
 
           <b-container class="examples">
             <b-row>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-right">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <ITransf />
                 </div>
@@ -25,7 +25,7 @@
                   <p class="box-item-text">{{ Data.boxes.boxText1 }}</p>
                 </div>
               </b-col>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-left">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <IExpect />
                 </div>
@@ -34,7 +34,7 @@
                   <p class="box-item-text">{{ Data.boxes.boxText2 }}</p>
                 </div>
               </b-col>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-right">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <INew />
                 </div>
@@ -43,7 +43,7 @@
                   <p class="box-item-text">{{ Data.boxes.boxText3 }}</p>
                 </div>
               </b-col>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-left">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <ITax />
                 </div>
@@ -52,7 +52,7 @@
                   <p class="box-item-text">{{ Data.boxes.boxText4 }}</p>
                 </div>
               </b-col>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-right">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <IGuar />
                 </div>
@@ -64,7 +64,7 @@
                   </p>
                 </div>
               </b-col>
-              <b-col cols="12" md="6" class="box-item" data-aos="fade-left">
+              <b-col cols="12" md="6" class="box-item">
                 <div class="box-image">
                   <ITarget />
                 </div>

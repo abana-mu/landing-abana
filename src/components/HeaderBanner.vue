@@ -4,30 +4,24 @@
     <div id="header-banner">
       <div class="row">
         <div class="col">
-          <div data-aos="fade-down">
+          <div>
             <h1 id="header-title">
               {{ title }}
             </h1>
           </div>
-          <div data-aos="fade-down" data-aos-delay="100">
+          <div>
             <p id="header-subtitle" class="mb-2 text-center">
               {{ subtext }}
             </p>
           </div>
           <div id="header-cta">
-            <g-link
-              to="/Plans/"
-              data-aos="fade-down"
-              data-aos-delay="200"
-              data-aos-once="true"
-            >
+            <g-link to="/Plans/">
               <b-button size="md" variant="primary">{{ cta }} </b-button>
             </g-link>
           </div>
           <g-image
             id="header-image"
             immediate
-            data-aos="fade-up"
             src="~/assets/images/laptop-1x.png"
             quality="100"
           />

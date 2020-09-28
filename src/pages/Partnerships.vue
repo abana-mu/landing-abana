@@ -1,16 +1,16 @@
 <template>
   <Layout class="one-section-layout container">
-    <h1 data-aos="fade-up">{{ Data.header.title }}</h1>
-    <p data-aos="fade-up" data-aos-delay="100">{{ Data.header.subtext }}</p>
+    <h1>{{ Data.header.title }}</h1>
+    <p>{{ Data.header.subtext }}</p>
   </Layout>
 </template>
 
 <script>
-import Data from '~/_settings/partner.json';
+import Data from "~/_settings/partner.json";
 
 export default {
   metaInfo: {
-    title: 'Partnerships',
+    title: "Partnerships",
   },
   data() {
     return {

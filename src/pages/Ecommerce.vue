@@ -1,17 +1,12 @@
 <template>
   <Layout class="one-section-layout">
     <div class="header">
-      <h1 class="title" data-aos="fade-up">{{ Data.header.title }}</h1>
-      <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="title">{{ Data.header.title }}</h1>
+      <p class="subtitle">
         {{ Data.header.subtext }}
       </p>
       <div class="image-banner">
-        <g-image
-          immediate
-          data-aos="fade-up"
-          src="~/assets/images/matching.jpg"
-          quality="100"
-        />
+        <g-image immediate src="~/assets/images/matching.jpg" quality="100" />
       </div>
     </div>
     <div class="content">

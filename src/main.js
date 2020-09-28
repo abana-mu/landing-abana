@@ -7,7 +7,6 @@ import {
 
 import DefaultLayout from '~/layouts/Default.vue';
 
-//import 'aos/dist/aos.css';
 import '~/assets/_styles.scss';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';

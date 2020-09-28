@@ -10,17 +10,10 @@
 
 <script>
 import Navbar from "~/components/Navbar";
-//import AOS from 'aos';
 
 export default {
   components: {
     Navbar,
-  },
-  mounted() {
-    /*
-    AOS.init({
-      once: true,
-    });*/
   },
 };
 </script>

@@ -21,27 +21,26 @@ module.exports = {
   },
 
   plugins: [{
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: '_careers/**/*.md',
-        typeName: 'Careers',
-        remark: {},
-      },
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: '_careers/**/*.md',
+      typeName: 'Careers',
+      remark: {},
     },
+  },
 
-    {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/admin`,
-      },
+  {
+    use: `gridsome-plugin-netlify-cms`,
+    options: {
+      publicPath: `/admin`,
     },
-    {
-      use: 'gridsome-plugin-sass-resources-loader',
-      options: {
-        // provide path to the file with resources
-        resources: './src/assets/_variables.scss',
-      },
+  },
+  {
+    use: 'gridsome-plugin-sass-resources-loader',
+    options: {
+      // provide path to the file with resources
+      resources: './src/assets/_variables.scss',
     },
-    '~/plugins/aos.js',
+  },
   ],
 };

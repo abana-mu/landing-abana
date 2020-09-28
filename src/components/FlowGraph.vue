@@ -6,7 +6,7 @@
 
     <!--DESKTOP VERSION -->
     <div class="flow-graph d-none d-md-flex">
-      <div class="sources" data-aos="zoom-in-up">
+      <div class="sources">
         <g-link class="source-item" to="/sourcing-buyers">
           <h3>Sourcing Buyers</h3>
           <p>One-Liner</p>
@@ -16,12 +16,8 @@
           <p>One-Liner</p>
         </g-link>
       </div>
-      <img
-        class="flow-image"
-        src="../assets/images/abana-flow.svg"
-        data-aos="zoom-in-up"
-      />
-      <div class="destinations" data-aos="zoom-in-up">
+      <img class="flow-image" src="../assets/images/abana-flow.svg" />
+      <div class="destinations">
         <g-link class="dest-item" to="/sourcing-buyers">
           <h3>Makers</h3>
           <p>One-Liner</p>

@@ -9,7 +9,6 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.2",
-    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",
     "gridsome": "^0.7.20",
