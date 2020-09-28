@@ -230,7 +230,6 @@ p {
     margin-right: auto;
     margin-left: auto;
     max-width: 1200px;
-    margin-top: 150px;
   }
 
   .header{
@@ -293,7 +292,16 @@ p {
       }
     }
   }
+}
 
-  
+.string {
+  width: 50px;
+  @media (min-width: $break-m) {
+    width: 55px;
+  }
+  @media (min-width: $break-l) {
+    width: 60px;
+  }
+  margin: 50px auto;
 }
 

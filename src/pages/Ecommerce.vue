@@ -34,11 +34,15 @@
 import Data from "~/_settings/ecommerce.json";
 import OneCol from "~/components/PageElementOneCol";
 import TwoCol from "~/components/PageElementTwoCol";
+import String1 from "~/components/compIcons/String1";
+import String2 from "~/components/compIcons/String2";
 
 export default {
   components: {
     OneCol,
     TwoCol,
+    String1,
+    String2,
   },
   metaInfo: {
     title: "Matching & Marketplace",

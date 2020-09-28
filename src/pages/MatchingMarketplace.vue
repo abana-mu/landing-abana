@@ -15,6 +15,7 @@
       </div>
     </div>
     <div class="content">
+      <String2 />
       <section class="section-content">
         <OneCol
           :title="Data.database.title"
@@ -22,6 +23,7 @@
           image
         />
       </section>
+      <String1 />
       <section class="section-content">
         <OneCol
           :title="Data.marketplace.title"
@@ -45,11 +47,15 @@
 import Data from "~/_settings/matching.json";
 import OneCol from "~/components/PageElementOneCol";
 import TwoCol from "~/components/PageElementTwoCol";
+import String1 from "~/components/compIcons/String1";
+import String2 from "~/components/compIcons/String2";
 
 export default {
   components: {
     OneCol,
     TwoCol,
+    String1,
+    String2,
   },
   metaInfo: {
     title: "Matching & Marketplace",
