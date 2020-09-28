@@ -46,7 +46,7 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtext', widget: 'string' }
 
       - label: 'Matching Marketplace'
         name: 'matching'
@@ -58,24 +58,53 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Database'
-            name: database
+          - label: 'Content'
+            name: content
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'markdown' }
-              - { label: 'For Buyers', name: 'buyers', widget: 'markdown' }
-              - { label: 'For Garment Makers', name: 'gm', widget: 'markdown' }
-              - { label: 'For Input Suppliers & Service Providers', name: 'issp', widget: 'markdown' }
-              - { label: 'Intuitive & Useful Functionalities', name: 'functionalities', widget: 'markdown' }  
-          - label: 'Marketplace'
-            name: marketplace
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-              
+              - label: 'Database'
+                name: database
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Content'
+                    name: content
+                    widget: 'object'
+                    fields:
+                      - label: 'For Buyers'
+                        name: buyers
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                      - label: 'For Garment Makers'
+                        name: gm
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                      - label: 'For Input Suppliers & Service Providers'
+                        name: issp
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                      - label: 'Intuitive & Useful Functionalities'
+                        name: functionalities
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+              - label: 'Marketplace'
+                name: marketplace
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+
+
       - label: 'E-Commerce'
         name: 'ecommerce'
         file: 'src/_settings/ecommerce.json'
@@ -86,27 +115,31 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Drops'
-            name: drops
+          - label: 'Content'
+            name: content
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Fast Custom'
-            name: fastcustom
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Brands'
-            name: brands
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Drops'
+                name: drops
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Fast Custom'
+                name: fastcustom
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Brands'
+                name: brands
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
@@ -118,41 +151,45 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Support Services'
-            name: support
+          - label: 'Content'
+            name: content
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Virtual Supplier'
-            name: virtual
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Advisory'
-            name: advisory
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Online Order Tracking'
-            name: onlinetracking
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
-          - label: 'Corporate Discount'
-            name: discounts
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Sub Title', name: 'subtitle', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Support Services'
+                name: support
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Virtual Supplier'
+                name: virtual
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Advisory'
+                name: advisory
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Online Order Tracking'
+                name: onlinetracking
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+              - label: 'Corporate Discount'
+                name: discounts
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'
