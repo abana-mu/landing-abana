@@ -841,6 +841,7 @@
 
 <!-- SCRIPTS -->
 <script>
+import { BNavbar, BNavbarNav } from "bootstrap-vue";
 import Hamburger from "@/components/Hamburger";
 import IMarket from "@/components/compIcons/IMarket";
 import IEcomm from "@/components/compIcons/IEcomm";
@@ -859,6 +860,8 @@ import ISustainability from "@/components/compIcons/ISustainability";
 
 export default {
   components: {
+    BNavbar,
+    BNavbarNav,
     Hamburger,
     IMarket,
     IEcomm,
@@ -1071,8 +1074,6 @@ export default {
 <!-- STYLING -->
 <style lang="scss">
 // MAIN ELLEMENTS
-
-
 
 .navShadow {
   -webkit-box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);

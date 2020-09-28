@@ -2,12 +2,12 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import {
-  NavbarPlugin, CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, BootstrapVueIcons, FormRadioPlugin
+  CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, BootstrapVueIcons, FormRadioPlugin
 } from 'bootstrap-vue';
 
 import DefaultLayout from '~/layouts/Default.vue';
 
-import 'aos/dist/aos.css';
+//import 'aos/dist/aos.css';
 import '~/assets/_styles.scss';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
@@ -20,7 +20,6 @@ export default function (Vue, {
 }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  Vue.use(NavbarPlugin);
   Vue.use(CardPlugin);
   Vue.use(ButtonPlugin);
   Vue.use(LayoutPlugin);
