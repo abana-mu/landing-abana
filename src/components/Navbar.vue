@@ -843,7 +843,13 @@
 <script>
 import { BNavbar, BNavbarNav } from "bootstrap-vue";
 
-import { BIcon, BIconChevronDown, BIconArrowRightShort } from "bootstrap-vue";
+import {
+  BIcon,
+  BIconChevronDown,
+  BIconArrowRightShort,
+  BDropdownHeader,
+  BDropdownDivider,
+} from "bootstrap-vue";
 
 import Hamburger from "@/components/Hamburger";
 import IMarket from "@/components/compIcons/IMarket";
@@ -865,6 +871,8 @@ export default {
   components: {
     BNavbar,
     BNavbarNav,
+    BDropdownHeader,
+    BDropdownDivider,
     BIcon,
     BIconChevronDown,
     BIconArrowRightShort,

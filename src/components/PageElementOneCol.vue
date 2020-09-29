@@ -2,9 +2,10 @@
 <template>
   <b-row no-gutter class="one-col">
     <b-col cols="12" class="offset text-center">
-      <h2 class="spaced">{{ title }}</h2>
+      <h2 class="spaced">{{ data.title }}</h2>
+      <p>{{ data.subtext }}</p>
       <vue-simple-markdown
-        :source="text"
+        :source="data.content"
         class="text mt-4"
       ></vue-simple-markdown>
     </b-col>
@@ -20,8 +21,7 @@
 <script>
 export default {
   props: {
-    title: String,
-    text: Object,
+    data: Object,
     image: Boolean,
   },
 };

@@ -12,27 +12,11 @@
     <div class="content">
       <String2 />
       <section class="section-content">
-        <OneCol
-          :title="Data.database.title"
-          :text="Data.database.subtext"
-          image
-        />
+        <OneCol :data="Data.content.marketplace" image />
       </section>
       <String1 />
       <section class="section-content">
-        <OneCol
-          :title="Data.marketplace.title"
-          :text="Data.marketplace.subtext"
-        />
-        <TwoCol
-          :title="Data.marketsuppliers.title"
-          :text="Data.marketsuppliers.subtext"
-        />
-        <TwoCol
-          :title="Data.marketbuyers.title"
-          :text="Data.marketbuyers.subtext"
-          reverse
-        />
+        <TwoCol :data="Data.content.database" />
       </section>
     </div>
   </Layout>
