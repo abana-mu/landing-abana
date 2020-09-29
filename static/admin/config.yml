@@ -27,20 +27,41 @@ collections:
             name: boxes
             widget: 'object'
             fields:
-              - { label: 'Box Title', name: 'boxTitle', widget: 'string' }
-              - { label: 'Box Subtitle', name: 'boxSubtitle', widget: 'string' }
-              - { label: 'Box Item 1 Title', name: 'boxTextTitle1', widget: 'string' }
-              - { label: 'Box Item 1', name: 'boxText1', widget: 'string' }
-              - { label: 'Box Item 2 Title', name: 'boxTextTitle2', widget: 'string' }
-              - { label: 'Box Item 2', name: 'boxText2', widget: 'string' }
-              - { label: 'Box Item 3 Title', name: 'boxTextTitle3', widget: 'string' }
-              - { label: 'Box Item 3', name: 'boxText3', widget: 'string' }
-              - { label: 'Box Item 4 Title', name: 'boxTextTitle4', widget: 'string' }
-              - { label: 'Box Item 4', name: 'boxText4', widget: 'string' }
-              - { label: 'Box Item 5 Title', name: 'boxTextTitle5', widget: 'string' }
-              - { label: 'Box Item 5', name: 'boxText5', widget: 'string' }
-              - { label: 'Box Item 6 Title', name: 'boxTextTitle6', widget: 'string' }
-              - { label: 'Box Item 6', name: 'boxText6', widget: 'string' }
+              - label: 'Header'
+                name: header
+                widget: 'object'
+                fields:
+                  - { label: 'Box Title', name: 'title', widget: 'string' }
+                  - { label: 'Box Sub Text', name: 'subtext', widget: 'string' }
+              - label: 'Boxes'
+                name: boxes
+                widget: 'object'
+                fields:
+                  - label: 'Box 1'
+                    name: box1
+                    widget: 'object'
+                    fields:
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 2'
+                    name: box2
+                    widget: 'object'
+                    fields:
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 3'
+                    name: box3
+                    widget: 'object'
+                    fields:
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 4'
+                    name: box4
+                    widget: 'object'
+                    fields:
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  
           - label: 'Flow'
             name: flow
             widget: 'object'

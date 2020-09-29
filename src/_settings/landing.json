@@ -5,16 +5,28 @@
     "cta": "Start your journey with us"
   },
   "boxes": {
-    "boxSubtitle": "Re-Imagining Supply-Chains",
-    "boxTitle": "Build new partnerships for value, speed and purpose.",
-    "boxTextTitle1": "The end of China-centricism",
-    "boxTextTitle2": "New Sourcing Partners",
-    "boxTextTitle3": "Go Beyond the Environment",
-    "boxTextTitle4": "Re-wiring the Fashion Calendar",
-    "boxText1": "Fashion’s sourcing chains are changing forever. The challenge to find sustainable and long-term alternatives to China is an imperative.",
-    "boxText2": "The greatest hidden value in sourcing chains is in the ‘first mile’ closest to factories, materials and workers. Developing partnerships with factories can radically improve speed-to-market, significantly reduce risk and improve profitability.",
-    "boxText3": "Earning and keeping the trust of customers will require addressing the environmental, social and economic dimensions of sourcing chains. Purpose and profit must be synchronized.",
-    "boxText4": "The ‘’worn out ritual of seasonalities’’ needs to be replaced by a new system where value is created by fresh, frequent and fast design in season-less product flows "
+    "header": {
+      "title": "Re-Imagining Supply-Chains",
+      "subtext": "Build new partnerships for value, speed and purpose"
+    },
+    "boxes": {
+      "box1": {
+        "title": "The end of China-centricism",
+        "content": "Fashion’s sourcing chains are changing forever. The challenge to find sustainable and long-term alternatives to China is an imperative."
+      },
+      "box2": {
+        "title": "New Sourcing Partners",
+        "content": "The greatest hidden value in sourcing chains is in the ‘first mile’ closest to factories, materials and workers. Developing partnerships with factories can radically improve speed-to-market, significantly reduce risk and improve profitability."
+      },
+      "box3": {
+        "title": "Go Beyond the Environment",
+        "content": "Earning and keeping the trust of customers will require addressing the environmental, social and economic dimensions of sourcing chains. Purpose and profit must be synchronized."
+      },
+      "box4": {
+        "title": "Re-wiring the Fashion Calendar",
+        "content": "The ‘’worn out ritual of seasonalities’’ needs to be replaced by a new system where value is created by fresh, frequent and fast design in season-less product flows "
+      }
+    }
   },
   "flow": {
     "title": "Connecting industry players like never before",

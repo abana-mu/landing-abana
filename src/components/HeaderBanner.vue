@@ -107,8 +107,13 @@ export default {
 }
 
 #header-cta {
-  text-align: center;
   margin: 20px 0 40px 0;
+  text-align: center;
+  .btn {
+    @media (max-width: $break-s) {
+      width: 100%;
+    }
+  }
 }
 
 #header-image {
