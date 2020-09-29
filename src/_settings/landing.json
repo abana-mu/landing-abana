@@ -1,1 +1,23 @@
-{}
+{
+  "header": {
+    "title": "Africa's Textile & Apparel Industry, at your fingertips",
+    "subtext": "Meet the sourcing & product platform that connects you to small, medium and large players in the African textile industry",
+    "cta": "Start your journey with us"
+  },
+  "boxes": {
+    "boxSubtitle": "Re-Imagining Supply-Chains",
+    "boxTitle": "Build new partnerships for value, speed and purpose.",
+    "boxTextTitle1": "The end of China-centricism",
+    "boxTextTitle2": "New Sourcing Partners",
+    "boxTextTitle3": "Go Beyond the Environment",
+    "boxTextTitle4": "Re-wiring the Fashion Calendar",
+    "boxText1": "Fashion’s sourcing chains are changing forever. The challenge to find sustainable and long-term alternatives to China is an imperative for the whole industry.",
+    "boxText2": "The greatest hidden value in sourcing chains is in the ‘first mile’ closest to factories, materials and workers. Developing a partnership with factories can radically improve speed-to-market, significantly reducing risk and improving profitability.",
+    "boxText3": "Earning and keeping the trust of customer will require addressing the environmental, social and economic dimensions of sourcing chains. Purpose and profit must be synchronized.",
+    "boxText4": "The ‘’worn out ritual of seasonalities’’ needs to be replaced by a new system where value is created by fresh, frequent and fast design in season-less product flows "
+  },
+  "flow": {
+    "title": "Connecting industry players like never before",
+    "subtext": "Flow subtitle"
+  }
+}
