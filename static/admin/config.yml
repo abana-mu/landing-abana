@@ -89,8 +89,8 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'SubText', name: 'subtext', widget: 'text' }
-                  - label: 'Content'
-                    name: content
+                  - label: 'Elements'
+                    name: elements
                     widget: 'object'
                     fields:
                       - label: 'For Buyers'

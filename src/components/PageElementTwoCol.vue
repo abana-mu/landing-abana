@@ -1,27 +1,17 @@
 <!-- HTML -->
 <template>
   <div>
-    <b-row no-gutter class="one-col">
-      <b-col cols="12" class="offset text-center">
-        <h2 class="spaced">{{ data.title }}</h2>
-        <p>{{ data.subtext }}</p>
-      </b-col>
-    </b-row>
     <div class="col-container">
-      <b-row
-        v-for="row in data.content"
-        :key="row.title"
-        no-gutters
-        class="two-col"
-      >
+      <b-row v-for="row in data" :key="row.title" no-gutters class="two-col">
         <b-col md class="column-text">
           <b-col cols="11" lg="10" class="p-0">
             <h3>{{ row.title }}</h3>
+            <p v-if="row.subtext">{{ row.subtext }}</p>
             <vue-simple-markdown
-              :source="row.subtext"
+              :source="row.content"
               class="md-text"
-            ></vue-simple-markdown
-          ></b-col>
+            ></vue-simple-markdown>
+          </b-col>
         </b-col>
         <b-col md class="column-image">
           <div>

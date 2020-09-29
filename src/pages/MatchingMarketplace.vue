@@ -16,7 +16,8 @@
       </section>
       <String1 />
       <section class="section-content">
-        <TwoCol :data="Data.content.database" />
+        <OneCol :data="Data.content.database" />
+        <TwoCol :data="Data.content.database.elements" />
       </section>
     </div>
   </Layout>

@@ -7,22 +7,22 @@
     "database": {
       "title": "Database",
       "subtext": "Use multiple criteria to find the right partners",
-      "content": {
+      "elements": {
         "buyers": {
           "title": "For Buyers",
-          "subtext": "Access profiles for compliant factories across Africa & the Indian Ocean including product descriptions, special capabilities & sustainability attributes\n\nFind Service Providers across the region to support your business"
+          "content": "Access profiles for compliant factories across Africa & the Indian Ocean including product descriptions, special capabilities & sustainability attributes\n\nFind Service Providers across the region to support your business"
         },
         "gm": {
           "title": "For Garment Makers",
-          "subtext": "Connect to large & small buyers across the US, Europe, South Africa, Australia and Africa\n\nDiscover input suppliers from Africa & beyond – including, India, China, Europe –to broaden your sourcing horizons\n"
+          "content": "Connect to large & small buyers across the US, Europe, South Africa, Australia and Africa\n\nDiscover input suppliers from Africa & beyond – including, India, China, Europe –to broaden your sourcing horizons\n"
         },
         "issp": {
           "title": "For Input Suppliers & Service Providers",
-          "subtext": "Access a unique targeted list of buyers and garment makers to expand your markets"
+          "content": "Access a unique targeted list of buyers and garment makers to expand your markets"
         },
         "functionalities": {
           "title": "Intuitive & Useful Functionalities",
-          "subtext": "Search detailed & relevant buyer and supplier profiles using our simple & powerful filter engine to find your best match \n\nQuickly connect to partners with our chat messaging system to initiate new relationships & manage existing ones\n\nUse our detailed buyers’ Request for Quote (RFQ) function to easily request & compare quotes across suppliers to ensure you are paying the right price"
+          "content": "Search detailed & relevant buyer and supplier profiles using our simple & powerful filter engine to find your best match \n\nQuickly connect to partners with our chat messaging system to initiate new relationships & manage existing ones\n\nUse our detailed buyers’ Request for Quote (RFQ) function to easily request & compare quotes across suppliers to ensure you are paying the right price"
         }
       }
     },

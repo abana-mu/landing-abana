@@ -10,16 +10,9 @@
       </div>
     </div>
     <div class="content">
+      <String2 />
       <section class="section-content">
-        <OneCol :title="Data.drops.title" :text="Data.drops.subtext" image />
-      </section>
-      <section class="section-content">
-        <TwoCol :title="Data.brands.title" :text="Data.brands.subtext" />
-        <TwoCol
-          :title="Data.fastcustom.title"
-          :text="Data.fastcustom.subtext"
-          reverse
-        />
+        <TwoCol :data="Data.elements" />
       </section>
     </div>
   </Layout>

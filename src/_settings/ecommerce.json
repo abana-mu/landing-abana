@@ -3,7 +3,7 @@
     "title": "E-Commerce",
     "subtext": "Buying and selling re-imagined with more informed buying decisions, reduced lead times and faster delivery!"
   },
-  "content": {
+  "elements": {
     "drops": {
       "title": "Drops",
       "subtext": "Monthly Collections of Ready-To-Ship styles",

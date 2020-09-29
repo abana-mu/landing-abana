@@ -5,6 +5,7 @@
       <h2 class="spaced">{{ data.title }}</h2>
       <p>{{ data.subtext }}</p>
       <vue-simple-markdown
+        v-if="data.content"
         :source="data.content"
         class="text mt-4"
       ></vue-simple-markdown>
@@ -37,6 +38,11 @@ export default {
   //margin-top: 150px;
 
   .text {
+    text-align: left;
+    @media (min-width: $break-collapse) {
+      text-align: center;
+    }
+
     @media (min-width: $break-s) and (max-width: $break-l) {
       margin: 0 auto;
       width: 90%;

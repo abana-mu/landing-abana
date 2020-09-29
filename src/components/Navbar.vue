@@ -1079,7 +1079,7 @@ export default {
     transition: all 0.25s;
   }
   .dropdown-container {
-    margin-top: 14px;
+    margin-top: 12px;
   }
 }
 
