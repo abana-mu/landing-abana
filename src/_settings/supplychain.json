@@ -1,33 +1,39 @@
 {
   "header": {
-    "subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. ",
-    "title": "Supply Chain Solutions"
+    "subtext": "Tailored services to help you grow in the region",
+    "title": "Supply Chain Solutions",
+    "image": "/uploads/back1.jpg"
   },
   "elements": {
     "support": {
       "title": "Support Services",
       "subtext": "A complete range of services in the Region ",
-      "content": "We offer **Quality Assurance, Compliance & Logistics** in the main producing countries:\n\nMauritius\nMadagascar\nSouth Africa\nKenya & Uganda\nEthiopia \nEgypt\nTunisia\nMorocco (coming soon)"
+      "content": "We offer **Quality Assurance, Compliance & Logistics** in the main producing countries:\n\nMauritius\nMadagascar\nSouth Africa\nKenya & Uganda\nEthiopia \nEgypt\nTunisia\nMorocco (coming soon)",
+      "image": "/uploads/back10.jpg"
     },
     "virtual": {
       "title": "Virtual Supplier",
       "subtext": "Complete solution accessing a network of smaller factories",
-      "content": "Complete service including sample development, merchandising, production follow-up, quality assurance & logistics support\n\nFinancing of raw materials for supplier"
+      "content": "Complete service including sample development, merchandising, production follow-up, quality assurance & logistics support\n\nFinancing of raw materials for supplier",
+      "image": "/uploads/back6.jpg"
     },
     "advisory": {
       "title": "Advisory",
       "subtext": "Tap into our experience for custom advice on how to grow your regional business",
-      "content": "Strategic advice on optimal solution in the Indian Ocean \n\nLink with solution providers for financial advice\n\nSpecialist HR & Freelance resource database"
+      "content": "Strategic advice on optimal solution in the Indian Ocean \n\nLink with solution providers for financial advice\n\nSpecialist HR & Freelance resource database",
+      "image": "/uploads/back2.jpg"
     },
     "onlinetracking": {
       "title": "On-Line order tracking (coming soon...)",
       "subtext": "A simple & intuitive critical-path & order-tracking functionality to improve your supply-chain visibility\n",
-      "content": "Set up critical path date responsibilities for seller & buyer\n\nManage changes to CP through a simple messaging interface\n\nFollow production progress & proactively manage variances\n\nOn-Time-In-Full report analysis \n\nCustomised order reports\n"
+      "content": "Set up critical path date responsibilities for seller & buyer\n\nManage changes to CP through a simple messaging interface\n\nFollow production progress & proactively manage variances\n\nOn-Time-In-Full report analysis \n\nCustomised order reports\n",
+      "image": "/uploads/back8.jpg"
     },
     "discounts": {
       "title": "Corporate Discounts",
       "subtext": "Preferential prices & discounts on key services ",
-      "content": "As an *ABANA PROFESSIONAL* member, take advantage of special corporate discounts on key services from partner service providers\n\nWe shall be updating our list of partners and discounts as we negotiate new deals"
+      "content": "As an *ABANA PROFESSIONAL* member, take advantage of special corporate discounts on key services from partner service providers\n\nWe shall be updating our list of partners and discounts as we negotiate new deals",
+      "image": "/uploads/back1.jpg"
     }
   }
 }
