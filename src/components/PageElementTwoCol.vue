@@ -2,7 +2,12 @@
 <template>
   <div>
     <div class="col-container">
-      <b-row v-for="row in data" :key="row.title" no-gutters class="two-col">
+      <b-row
+        v-for="(row, index) in data"
+        :key="index"
+        no-gutters
+        class="two-col"
+      >
         <b-col md class="column-text">
           <b-col cols="11" lg="10" class="p-0">
             <div class="col-headers">

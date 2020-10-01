@@ -16,7 +16,7 @@
     </b-col>
     <b-col md class="column-image">
       <div>
-        <g-image src="~/assets/images/matching.jpg" quality="100" />
+        <!-- <g-image src="~/assets/images/matching.jpg" quality="100" /> -->
       </div>
     </b-col>
   </b-row>
@@ -29,7 +29,6 @@ export default {
     title: String,
     text: Object,
     image: Boolean,
-    reverse: Boolean,
   },
 };
 </script>
