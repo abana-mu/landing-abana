@@ -1,5 +1,5 @@
 <template>
-  <Layout class="one-section-layout container">
+  <Layout class="container">
     <h1>{{ Data.header.title }}</h1>
     <p>{{ Data.header.subtext }}</p>
   </Layout>

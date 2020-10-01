@@ -4,7 +4,7 @@
     id="eez6qwynwqbf1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 450 250"
+    viewBox="25 0 400 250"
     shape-rendering="geometricPrecision"
     text-rendering="geometricPrecision"
   >

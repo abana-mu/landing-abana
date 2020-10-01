@@ -22,7 +22,7 @@
         </b-col>
         <b-col md class="column-image">
           <div>
-            <g-image src="~/assets/images/matching.jpg" quality="100" />
+            <g-image :src="row.image" quality="100" />
           </div>
         </b-col>
       </b-row>

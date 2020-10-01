@@ -269,36 +269,33 @@ p {
   transform: translateY(-100%);
 }
 
-// One Section Pages
 
-.one-section-layout{
+.section-content{
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
 
-  .section-content{
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
-  }
+.header{
+  text-align: center;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  
+}
 
-  .header{
-    text-align: center;
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px;
-    
-  }
-
-  .image-banner{
-    img{
-      border-radius: 4px;
-      width: 100%;
-      @media (min-width: $break-m) {
-        width: 75%;
-      }
+.image-banner{
+  img{
+    border-radius: 4px;
+    width: 100%;
+    @media (min-width: $break-m) {
+      width: 75%;
     }
   }
 }
+
 
 .string {
   width: 50px;

@@ -79,6 +79,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Content'
             name: content
             widget: 'object'
@@ -99,24 +100,28 @@ collections:
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                       - label: 'For Garment Makers'
                         name: gm
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                       - label: 'For Input Suppliers & Service Providers'
                         name: issp
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                       - label: 'Intuitive & Useful Functionalities'
                         name: functionalities
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Marketplace'
                 name: marketplace
                 widget: 'object'
@@ -124,6 +129,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'SubText', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
 
 
       - label: 'E-Commerce'
@@ -136,6 +142,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Elements'
             name: elements
             widget: 'object'
@@ -147,6 +154,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Fast Custom'
                 name: fastcustom
                 widget: 'object'
@@ -154,6 +162,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Brands'
                 name: brands
                 widget: 'object'
@@ -161,6 +170,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
@@ -172,6 +182,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Elements'
             name: elements
             widget: 'object'
@@ -183,6 +194,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Virtual Supplier'
                 name: virtual
                 widget: 'object'
@@ -190,6 +202,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Advisory'
                 name: advisory
                 widget: 'object'
@@ -197,6 +210,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Online Order Tracking'
                 name: onlinetracking
                 widget: 'object'
@@ -204,6 +218,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
               - label: 'Corporate Discount'
                 name: discounts
                 widget: 'object'
@@ -211,6 +226,7 @@ collections:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'

@@ -35,7 +35,7 @@ chainWebpack: config => {
       .plugin('BundleAnalyzerPlugin')
       .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
   },
-  */
+*/
 
   plugins: [
     {

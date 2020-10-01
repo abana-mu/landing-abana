@@ -1,5 +1,5 @@
 <template>
-  <Layout class="one-section-layout container">
+  <Layout class="container">
     <div class="one-section-header">
       <h1>{{ Data.header.title }}</h1>
       <p>{{ Data.header.subtext }}</p>
@@ -262,12 +262,12 @@ query{
 </page-query>
 
 <script>
-import Data from '~/_settings/careers.json';
+import Data from "~/_settings/careers.json";
 
 export default {
   components: {},
   metaInfo: {
-    title: 'Careers',
+    title: "Careers",
   },
   data() {
     return {

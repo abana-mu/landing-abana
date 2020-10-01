@@ -18,10 +18,13 @@ export default {
 <style lang='scss' scoped>
 //Blue Container
 .topLayer {
-  height: 50px;
+  height: 40px;
   position: relative;
   overflow: hidden;
-  @media (min-width: $break-s) {
+  @media (min-width: $break-m) {
+    height: 75px;
+  }
+  @media (min-width: $break-l) {
     height: 100px;
   }
 }
@@ -45,11 +48,14 @@ export default {
   height: 0;
   top: 0px;
   position: absolute;
-  border-bottom: 50px solid;
+  border-bottom: 40px solid;
   border-right: 100vw solid transparent;
-  @media (min-width: $break-s) {
+
+  @media (min-width: $break-m) {
+    border-bottom: 75px solid;
+  }
+  @media (min-width: $break-l) {
     border-bottom: 100px solid;
-    border-right: 100vw solid transparent;
   }
 }
 
