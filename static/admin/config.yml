@@ -98,25 +98,25 @@ collections:
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
-                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
                       - label: 'For Garment Makers'
                         name: gm
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
-                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
                       - label: 'For Input Suppliers & Service Providers'
                         name: issp
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
-                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
                       - label: 'Intuitive & Useful Functionalities'
                         name: functionalities
                         widget: 'object'
                         fields:
                           - { label: 'Title', name: 'title', widget: 'string' }
-                          - { label: 'SubText', name: 'subtext', widget: 'markdown' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
               - label: 'Marketplace'
                 name: marketplace
                 widget: 'object'
