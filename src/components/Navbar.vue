@@ -934,7 +934,7 @@ export default {
       },
       source: {
         title: "Sourcing Buyers",
-        subtitle: "Find new factories, products and input-suppliers",
+        subtitle: "Looking for factories to partner with",
         examples: [
           {
             title: "NEW TO THE REGION",
@@ -953,7 +953,7 @@ export default {
       },
       product: {
         title: "Product Buyers",
-        subtitle: "Shop online for sophisticated products in low MOQs",
+        subtitle: "Looking for high-quality, ready-to-ship styles",
         examples: [
           {
             title: "ON TREND – NOW",

@@ -10,14 +10,14 @@
       </div>
     </div>
     <div class="content">
-      <String2 />
-      <section class="section-content">
-        <OneCol :data="Data.content.marketplace" image />
-      </section>
       <String1 />
       <section class="section-content">
         <OneCol :data="Data.content.database" />
         <TwoCol :data="Data.content.database.elements" />
+      </section>
+      <String2 />
+      <section class="section-content">
+        <OneCol :data="Data.content.marketplace" image />
       </section>
     </div>
   </Layout>

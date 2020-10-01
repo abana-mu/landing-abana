@@ -3,7 +3,7 @@
   <b-row no-gutter class="one-col">
     <b-col cols="12" class="offset text-center">
       <h2 class="spaced">{{ data.title }}</h2>
-      <p>{{ data.subtext }}</p>
+      <p class="subtitle">{{ data.subtext }}</p>
       <vue-simple-markdown
         v-if="data.content"
         :source="data.content"
