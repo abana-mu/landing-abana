@@ -1,23 +1,27 @@
 {
   "header": {
     "title": "E-Commerce",
-    "subtext": "Buying and selling re-imagined with more informed buying decisions, reduced lead times and faster delivery!"
+    "subtext": "Buying and selling re-imagined with more informed buying decisions, reduced lead times and faster delivery!",
+    "image": "/uploads/picture1.png"
   },
   "elements": {
     "drops": {
       "title": "Drops",
       "subtext": "Monthly Collections of Ready-To-Ship styles",
-      "content": "Explore a unique offer of sophisticated styles with an emphasis on material quality, fit & details\nNew collections offered every month with trend-relevant styles for the North & the South to go beyond seasons and reduce your product risk\n\n\nMake the most of your finances & increase your inventory-turn by buying low MOQs of 10pcs / style and receiving your delivery to your door within a week\n\n\nTransparency & sustainability are at the core of our Drops – producers are individually identified and sustainability qualities highlighted for each style"
+      "content": "Explore a unique offer of sophisticated styles with an emphasis on material quality, fit & details\nNew collections offered every month with trend-relevant styles for the North & the South to go beyond seasons and reduce your product risk\n\n\nMake the most of your finances & increase your inventory-turn by buying low MOQs of 10pcs / style and receiving your delivery to your door within a week\n\n\nTransparency & sustainability are at the core of our Drops – producers are individually identified and sustainability qualities highlighted for each style",
+      "image": "/uploads/back4.jpg"
     },
     "fastcustom": {
       "title": "Fast Custom (Coming Soon)",
       "subtext": "Order essential styles directly from factories with short lead-times and low MOQs",
-      "content": "Our partner factories offer pre-developed essentials & a choice of colours in high-quality fabrics across a wide range of products\n\nBuild a low-MOQ order on-line using your size-curves and adding labelling and customization\n\nDeal directly with factories off-line and receive your delivery within 4 weeks"
+      "content": "Our partner factories offer pre-developed essentials & a choice of colours in high-quality fabrics across a wide range of products\n\nBuild a low-MOQ order on-line using your size-curves and adding labelling and customization\n\nDeal directly with factories off-line and receive your delivery within 4 weeks",
+      "image": "/uploads/picture2.png"
     },
     "brands": {
       "title": "Brands (Coming Soon)",
       "subtext": "Curated list of the best regional brands",
-      "content": "Discover the most innovative brands across Africa\n\nSelect on-line from ready-to-ship styles and receive your delivery within a week"
+      "content": "Discover the most innovative brands across Africa\n\nSelect on-line from ready-to-ship styles and receive your delivery within a week",
+      "image": "/uploads/back7.jpg"
     }
   }
 }
