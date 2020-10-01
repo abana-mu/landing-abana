@@ -5,8 +5,10 @@
       <b-row v-for="row in data" :key="row.title" no-gutters class="two-col">
         <b-col md class="column-text">
           <b-col cols="11" lg="10" class="p-0">
-            <h3>{{ row.title }}</h3>
-            <p v-if="row.subtext">{{ row.subtext }}</p>
+            <div class="col-headers">
+              <h3>{{ row.title }}</h3>
+              <p v-if="row.subtext">{{ row.subtext }}</p>
+            </div>
             <vue-simple-markdown
               :source="row.content"
               class="md-text"
@@ -69,8 +71,15 @@ export default {
       width: 100%;
     }
   }
-  h3 {
+  .col-headers {
     margin-bottom: 20px;
+    h3 {
+      margin: 0;
+    }
+    p {
+      font-style: italic;
+      color: $subtitle-dark;
+    }
   }
 }
 

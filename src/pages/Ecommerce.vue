@@ -33,7 +33,7 @@ export default {
     String2,
   },
   metaInfo: {
-    title: "Matching & Marketplace",
+    title: "E-commerce",
   },
   data() {
     return {

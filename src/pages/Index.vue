@@ -11,8 +11,8 @@
     <div class="back-grey overflow-hidden">
       <b-container fluid class="box-container">
         <div class="box">
-          <h2 id="boxTitle">{{ Data.boxes.header.title }}</h2>
-          <p id="boxSub">{{ Data.boxes.header.subtext }}</p>
+          <h2 class="title">{{ Data.boxes.header.title }}</h2>
+          <p class="subtitle">{{ Data.boxes.header.subtext }}</p>
 
           <b-container class="examples">
             <b-row>
@@ -25,7 +25,7 @@
               >
                 <component :is="index" class="box-image"></component>
                 <div class="box-text">
-                  <h4 class="box-item-title">{{ box.title }}</h4>
+                  <h4>{{ box.title }}</h4>
                   <p class="box-item-text">{{ box.content }}</p>
                 </div>
               </b-col>
@@ -124,16 +124,18 @@ export default {
   }
 }
 
+.box-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .box-img {
   width: 60px;
   margin-bottom: 1.5rem;
 }
 
-.box-item-title {
-  margin-bottom: 0.25rem;
-  font-weight: 500;
-  //font-size: 1.3rem;
-}
 .box-item-text {
   max-width: 400px;
   margin: 0;
@@ -152,12 +154,5 @@ export default {
   @media (min-width: $break-l) {
     padding: 3rem 3rem;
   }
-}
-
-.box-text {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 </style>
