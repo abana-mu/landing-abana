@@ -909,26 +909,24 @@ export default {
         subtitle: "Tailored services to help you grow in the region",
         examples: [
           {
-            title: "QUALITY",
-            example: "Quality Control, Testing",
+            title: "Support Services",
+            example: "Quality Assurance, Compliance & Testing",
           },
           {
-            title: "SUSTAINABILITY",
-            example: "Social, environmental, ethical Compliance",
+            title: "Virtual Supplier",
+            example: "Sample development, merchandising and more...",
           },
           {
-            title: "FOLLOW-UP",
-            example:
-              "Sampling to delivery follow-up, logistics & documentation",
+            title: "Advisory",
+            example: "Strategic advice on sourcing from the Indian Ocean",
           },
           {
-            title: "FULL SERVICE",
-            example:
-              "Virtual supplier accessing a network of smaller factories",
+            title: "Online order Tracking",
+            example: "Set up Critical Path dates",
           },
           {
-            title: "ADVISORY",
-            example: "Customized advice to succeed and grow in the region",
+            title: "Corporate Discounts",
+            example: "Key partners in the region",
           },
         ],
       },

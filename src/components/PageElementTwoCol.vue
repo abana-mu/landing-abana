@@ -18,6 +18,9 @@
               :source="row.content"
               class="md-text"
             ></vue-simple-markdown>
+            <g-link class="col-link" v-if="row.page" :to="row.page"
+              >{{ row.link }}<b-icon-arrow-right-short class="arrow-anim"
+            /></g-link>
           </b-col>
         </b-col>
         <b-col md class="column-image">
@@ -32,7 +35,13 @@
 
 <!-- SCRIPTS -->
 <script>
+import { BIcon, BIconArrowRightShort } from "bootstrap-vue";
+
 export default {
+  components: {
+    BIcon,
+    BIconArrowRightShort,
+  },
   props: {
     data: Object,
   },
@@ -72,7 +81,7 @@ export default {
   }
   .column-image {
     img {
-      border-radius: 4px;
+      border-radius: 10px;
       width: 100%;
     }
   }
@@ -88,9 +97,25 @@ export default {
   }
 }
 
+.md-text {
+  margin-bottom: 1rem;
+}
+
 .offset {
   margin: 0 auto 50px auto;
   max-width: 900px;
+}
+
+.col-link {
+  &:hover {
+    .b-icon {
+      transition: ease-out 0.2s;
+      margin-left: 1rem;
+    }
+  }
+  .b-icon {
+    margin-left: 0.5rem;
+  }
 }
 </style>
 

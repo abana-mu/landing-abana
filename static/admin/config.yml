@@ -101,6 +101,13 @@ collections:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
                           - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
                       - label: 'For Garment Makers'
                         name: gm
                         widget: 'object'
@@ -108,6 +115,13 @@ collections:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
                           - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
                       - label: 'For Input Suppliers & Service Providers'
                         name: issp
                         widget: 'object'
@@ -115,6 +129,13 @@ collections:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
                           - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
                       - label: 'Intuitive & Useful Functionalities'
                         name: functionalities
                         widget: 'object'
@@ -122,6 +143,13 @@ collections:
                           - { label: 'Title', name: 'title', widget: 'string' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }
                           - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
               - label: 'Marketplace'
                 name: marketplace
                 widget: 'object'
@@ -130,7 +158,13 @@ collections:
                   - { label: 'SubText', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
-
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
 
       - label: 'E-Commerce'
         name: 'ecommerce'
@@ -143,6 +177,13 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link', name: 'link', required: false, widget: 'string' }
+              - label: "Page link"
+                name: page
+                required: false
+                widget: "select"
+                options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                hint: "Index is the home page"
           - label: 'Elements'
             name: elements
             widget: 'object'
@@ -155,6 +196,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Fast Custom'
                 name: fastcustom
                 widget: 'object'
@@ -163,6 +211,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Brands'
                 name: brands
                 widget: 'object'
@@ -171,6 +226,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
 
       - label: 'Supply Chain Solutions'
         name: 'supplychain'
@@ -183,6 +245,13 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
               - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link', name: 'link', required: false, widget: 'string' }
+              - label: "Page link"
+                name: page
+                required: false
+                widget: "select"
+                options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                hint: "Index is the home page"
           - label: 'Elements'
             name: elements
             widget: 'object'
@@ -195,6 +264,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Virtual Supplier'
                 name: virtual
                 widget: 'object'
@@ -203,6 +279,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Advisory'
                 name: advisory
                 widget: 'object'
@@ -211,6 +294,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Online Order Tracking'
                 name: onlinetracking
                 widget: 'object'
@@ -219,6 +309,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
               - label: 'Corporate Discount'
                 name: discounts
                 widget: 'object'
@@ -227,6 +324,13 @@ collections:
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
                   - { label: 'Content', name: 'content', widget: 'markdown' }
                   - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
 
       - label: 'Sourcing Buyers'
         name: 'sourcingbuyers'

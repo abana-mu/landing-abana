@@ -6,7 +6,7 @@
         {{ Data.header.subtext }}
       </p>
       <div class="image-banner">
-        <g-image immediate src="~/assets/images/matching.jpg" quality="100" />
+        <g-image :src="Data.header.image" quality="100" />
       </div>
     </div>
     <div class="content">

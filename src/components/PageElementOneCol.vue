@@ -12,7 +12,7 @@
     </b-col>
     <b-col v-if="image" cols="12" class="text-center">
       <div class="image-banner">
-        <g-image src="~/assets/images/matching.jpg" quality="100" />
+        <g-image :src="data.image" quality="100" />
       </div>
     </b-col>
   </b-row>
