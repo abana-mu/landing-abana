@@ -110,7 +110,7 @@ export default {
   border: 1px solid #d7d7f58f;
   border-top: none;
   &:hover {
-    background-color: #f1f1f9;
+    background-color: $grey-light;
   }
 }
 

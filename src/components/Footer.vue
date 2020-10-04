@@ -10,7 +10,7 @@
       <b-col class="d-flex flex-row footer-links no-gutters">
         <b-col>
           <div class="footer-title">Product</div>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column text-small">
             <g-link to="/pricing">Pricing</g-link>
             <g-link to="/why-africa">Why Africa</g-link>
             <g-link to="/sustainability">Sustainability</g-link>
@@ -18,7 +18,7 @@
         </b-col>
         <b-col
           ><div class="footer-title">Company</div>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column text-small">
             <g-link to="/about">About</g-link>
             <g-link to="/contact">Contact</g-link>
             <g-link to="/careers">Jobs</g-link>
@@ -26,7 +26,7 @@
         >
         <b-col
           ><div class="footer-title">Resources</div>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column text-small">
             <g-link to="/privacy">Privacy & Terms</g-link>
           </div></b-col
         >

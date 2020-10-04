@@ -95,7 +95,7 @@ export default {
       margin-right: 0px;
     }
     img {
-      border-radius: 10px;
+      border-radius: 6px;
       width: 100%;
     }
   }

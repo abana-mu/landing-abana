@@ -38,6 +38,7 @@ h1 {
   // -576
   font-size: $f32;
   letter-spacing: 1.2px;
+  font-weight: 500;
 
   // 768-1440
   @media (min-width: $break-m) {
@@ -309,7 +310,7 @@ p {
 
 .image-banner{
   img{
-    border-radius: 10px;
+    border-radius: 6px;
     width: 100%;
     @media (min-width: $break-m) {
       width: 85%;

@@ -1,8 +1,8 @@
 <template>
   <Layout class="one-section-tight-layout">
     <div class="mobile-gutter">
-      <h1 class="text-center">{{ Data.header.title }}</h1>
-      <p class="text-center">
+      <h1 class="title">{{ Data.header.title }}</h1>
+      <p class="subtitle">
         {{ Data.header.subtext }}
       </p>
     </div>
@@ -38,6 +38,12 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
+                  <span v-if="card.name === 'Basic'" class="mb-1"
+                    >All features in Member and...</span
+                  >
+                  <span v-else-if="card.name === 'Pro'" class="mb-1"
+                    >All features in Basic and...</span
+                  >
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
@@ -97,6 +103,12 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
+                  <span v-if="card.name === 'Growth'" class="mb-1"
+                    >All features in Basic and...</span
+                  >
+                  <span v-else-if="card.name === 'Pro'" class="mb-1"
+                    >All features in Growth and...</span
+                  >
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
@@ -165,6 +177,12 @@
                 </h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
+                  <span v-if="card.name === 'Growth'" class="mb-1"
+                    >All features in Basic and...</span
+                  >
+                  <span v-else-if="card.name === 'Pro'" class="mb-1"
+                    >All features in Growth and...</span
+                  >
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2" />
                     <span>{{ feature }}</span>
@@ -292,6 +310,7 @@ export default {
   &.active {
     border: solid 1px rgba(255, 97, 88, 0.7);
     background-color: rgba(255, 97, 88, 0.2);
+    color: white;
   }
 }
 
@@ -426,6 +445,7 @@ export default {
 .features {
   margin-top: 1rem;
   padding-left: 0;
+  span,
   li {
     display: flex;
     align-items: center;

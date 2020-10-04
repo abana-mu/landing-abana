@@ -20,7 +20,7 @@
 
       <section class="mt-5 section-content why-links">
         <p class="text-center semi-spaced mb-5 text-small">
-          EXPLORE OUR AMBITIONS
+          EXPLORE OUR VALUES
         </p>
         <ul>
           <li><a href="#economic">Economic</a></li>

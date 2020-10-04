@@ -150,6 +150,7 @@
               </div>
 
               <!-- Solutions-->
+              <!--
               <div
                 class="nav-item nav-only"
                 @mouseover="hoverSol = true"
@@ -345,6 +346,7 @@
                   </div>
                 </div>
               </div>
+              -->
 
               <!-- Why Africa-->
               <li class="nav-item nav-only">
@@ -425,6 +427,7 @@
                       <div class="drop-text">Privacy & Terms</div>
                     </g-link>
                   </div>
+                  <!--
                   <div class="col col-2">
                     <b-dropdown-header>Partnerships</b-dropdown-header>
 
@@ -438,6 +441,7 @@
                       <div class="drop-text">Partner with us</div>
                     </g-link>
                   </div>
+                  -->
                 </div>
               </div>
             </b-navbar-nav>
@@ -469,10 +473,12 @@
               Solutions
               <b-icon icon="arrow-right-short" class="float-right" />
             </div>
+            <!--
             <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-1>
               For Business
               <b-icon icon="arrow-right-short" class="float-right" />
             </div>
+            -->
             <div @click="hide">
               <g-link class="sidebar-item-level-1" to="/why-africa/">
                 Why Africa
@@ -786,6 +792,7 @@
                       <div class="drop-text">Privacy & Terms</div>
                     </g-link>
                   </div>
+                  <!--
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle"
                       >Partnerships</b-dropdown-header
@@ -801,6 +808,7 @@
                       <div class="drop-text">Partner with us</div>
                     </g-link>
                   </div>
+                  -->
                 </div>
               </div>
             </template>

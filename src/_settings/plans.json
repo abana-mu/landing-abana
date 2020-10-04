@@ -3,38 +3,37 @@
         "subs": [
             {
                 "name": "Member",
-                "desc": "This describes the member plan",
+                "desc": "Users only interested in E-Commerce",
                 "price3": "$0",
                 "price6": "$0",
                 "price12": "$0",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Access Bi-monthly Drop Collections",
+                    "QC & Compliance on purchases"
                 ]
             },
             {
                 "name": "Basic",
-                "desc": "This describes the member plan",
+                "desc": "Users interested in trying the Database Search",
                 "price3": "$65/mo",
                 "price6": "$59/mo",
                 "price12": "$49/mo",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Basic Profile",
+                    "Basic Search",
+                    "Post RFIs & RFQs"
                 ]
             },
             {
                 "name": "Pro",
-                "desc": "This describes the member plan",
+                "desc": "Users who want access to all features",
                 "price3": "$349/mo",
                 "price6": "$329/mo",
                 "price12": "$299/mo",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Advanced Profile & Search",
+                    "Fast Custom",
+                    "Advanced Services"
                 ]
             }
         ],
@@ -202,11 +201,7 @@
                 "price3": "$119/mo",
                 "price6": "$109/mo",
                 "price12": "$99/mo",
-                "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
-                ]
+                "features": []
             },
             {
                 "name": "Growth",
