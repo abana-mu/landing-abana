@@ -19,19 +19,23 @@
         "gm": {
           "title": "For Garment Makers",
           "content": "Connect to large & small buyers across the US, Europe, South Africa, Australia and Africa\n\nDiscover input suppliers from Africa & beyond – including, India, China, Europe –to broaden your sourcing horizons\n",
-          "image": "/uploads/back2.jpg"
+          "image": "/uploads/back2.jpg",
+          "link": "See how our solutions can support your goals",
+          "page": "supply-chain"
         },
         "issp": {
           "title": "For Input Suppliers & Service Providers",
           "content": "Access a unique targeted list of buyers and garment makers to expand your markets",
-          "image": "/uploads/back8.jpg"
+          "image": "/uploads/back8.jpg",
+          "link": "See how our solutions can support your goals",
+          "page": "supply-chain"
         },
         "functionalities": {
           "title": "Intuitive & Useful Functionalities",
           "content": "Search detailed & relevant buyer and supplier profiles using our simple & powerful filter engine to find your best match \n\nQuickly connect to partners with our chat messaging system to initiate new relationships & manage existing ones\n\nUse our detailed buyers’ Request for Quote (RFQ) function to easily request & compare quotes across suppliers to ensure you are paying the right price",
           "image": "/uploads/newsteofthenew-copy.jpg",
-          "page": "matching-marketplace",
-          "link": "Something something"
+          "page": null,
+          "link": ""
         }
       }
     },
