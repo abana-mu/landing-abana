@@ -26,4 +26,7 @@ export default function (Vue, {
   Vue.use(TabsPlugin);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
+
+
+
 }

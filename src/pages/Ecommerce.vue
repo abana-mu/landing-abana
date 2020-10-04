@@ -9,6 +9,7 @@
         <g-image :src="Data.header.image" quality="100" />
       </div>
     </div>
+
     <div class="content">
       <String2 />
       <section class="section-content">

@@ -57,7 +57,7 @@ export default {
 <!-- STYLING -->
 <style lang='scss'>
 footer {
-  padding: 35px 0 24px;
+  padding: 3rem 0;
   overflow: hidden;
 }
 
