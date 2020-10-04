@@ -57,9 +57,11 @@ export default {
 .two-col {
   display: flex;
   align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 60px;
+  margin-top: 35px;
   @media (min-width: $break-m) {
-    margin-bottom: 150px;
+    margin-bottom: 75px;
+    margin-top: 75px;
   }
 
   &:nth-child(2n) {

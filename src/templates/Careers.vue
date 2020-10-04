@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <Layout>
-    <div class="container">
+    <div class="mb-5 container">
       <g-link to="/careers/" class="sidebar-item-level-2-title mb-3">
         <b-icon icon="arrow-left-short" class="mr-2" />Back
       </g-link>

@@ -38,7 +38,7 @@
         no-gutters
       >
         <div class="mt-5">
-          <OneCol :data="row" class="why-col" />
+          <OneCol :data="row" class="why-col section-content" />
           <div class="image"></div>
         </div>
       </section>
@@ -134,6 +134,7 @@ export default {
 }
 
 .image {
+  margin-top: 3rem;
   height: 250px;
   width: 100%;
 

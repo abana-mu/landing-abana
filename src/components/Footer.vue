@@ -2,12 +2,11 @@
 <template>
   <footer class="back-blue container-fluid">
     <b-row>
-      <b-col lg order="1" order-lg="0" class="mt-5 mt-lg-0">
+      <b-col lg>
         <Logo class="footer-logo" />
-        <p class="text-white small-text">{{ Data.header.title }}</p>
-        <p class="text-lighter small-text">© 2020 ABANA</p>
+        <p class="small-text">{{ Data.header.title }}</p>
       </b-col>
-      <b-col class="d-flex flex-row footer-links no-gutters">
+      <b-col class="mt-3 mb-4 my-md-0 d-flex flex-row footer-links no-gutters">
         <b-col>
           <div class="footer-title">Product</div>
           <div class="d-flex flex-column text-small">
@@ -31,6 +30,9 @@
           </div></b-col
         >
       </b-col>
+      <b-col cols="12" class="text-center mt-5"
+        ><p class="text-lighter small-text">© 2020 ABANA</p></b-col
+      >
     </b-row>
   </footer>
 </template>
@@ -57,14 +59,17 @@ export default {
 <!-- STYLING -->
 <style lang='scss'>
 footer {
-  padding: 3rem 0;
+  padding: 3rem 0 1rem 0;
   overflow: hidden;
+  p {
+    color: $text-light;
+  }
 }
 
 .footer-logo {
   max-width: 125px;
   margin-bottom: 1rem;
-  fill: $primary;
+  fill: $white;
 }
 
 .small-text {

@@ -9,7 +9,7 @@
         order-lg="0"
         class="flow-section section-container"
       >
-        <h3 class="title">{{ data.title }}</h3>
+        <h3 class="title mb-3">{{ data.title }}</h3>
         <p>{{ data.subtext }}</p>
         <g-link class="col-link" v-if="data.page" :to="data.page">
           {{ data.link }}
