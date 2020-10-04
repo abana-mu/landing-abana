@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <b-row no-gutter class="one-col">
-    <b-col cols="12" class="offset text-center">
+    <b-col cols="12" class="offset">
       <h2 class="spaced">{{ data.title }}</h2>
       <p class="subtitle">{{ data.subtext }}</p>
       <vue-simple-markdown
@@ -51,7 +51,11 @@ export default {
 }
 
 .offset {
+  text-align: center;
   margin: 0 auto 50px auto;
   max-width: 900px;
+  .subtitle {
+    margin-bottom: 1rem;
+  }
 }
 </style>

@@ -33,7 +33,6 @@ query {
   margin: 56px auto 0 auto;
   //XSmall -578
   padding-top: 2rem;
-  padding-bottom: 100px;
 
   //Small 578-776
   @media (min-width: $break-s) {

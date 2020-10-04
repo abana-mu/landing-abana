@@ -52,10 +52,12 @@ export default {
   margin: 0 auto;
   margin-bottom: 20px;
   text-align: center;
+  font-size: $f38;
 
   //Medium 767-992
   @media (min-width: $break-m) {
     max-width: 780px;
+    font-size: $f48;
   }
 
   //Large 992-1200
@@ -69,6 +71,7 @@ export default {
   }
   @media (min-width: $break-xxl) {
     max-width: 975px;
+    font-size: $f56;
   }
 }
 

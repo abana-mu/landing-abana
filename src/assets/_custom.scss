@@ -36,17 +36,17 @@ h6 {
 
 h1 {
   // -576
-  font-size: $f42;
+  font-size: $f32;
   letter-spacing: 1.2px;
 
   // 768-1440
   @media (min-width: $break-m) {
-    font-size: $f48;
+    font-size: $f38;
   }
 
   // 1440+
   @media (min-width: $break-xxl) {
-    font-size: $f60;
+    font-size: $f42;
   }
 }
 
@@ -114,9 +114,26 @@ h4 {
     }
 }
 
+.semi-spaced{
+  letter-spacing: 3px;
+    //Medium 776-1440
+    @media (min-width: $break-m) {
+      letter-spacing: 4px;
+    }
+  
+    // 1440+
+    @media (min-width: $break-xxl) {
+      letter-spacing: 5px;
+    }
+}
+
 
 p {
   color: $text-body;
+}
+
+.text-small{
+  font-size: 1rem;;
 }
 
 .btn {
@@ -150,7 +167,7 @@ p {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom:3rem;
 
   //XSmall -578
   font-size: 1rem;

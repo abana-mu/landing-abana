@@ -9,7 +9,7 @@
         <g-image :src="Data.header.image" quality="100" />
       </div>
     </div>
-    <div class="content">
+    <div class="content mb-5">
       <String2 />
       <section class="section-content">
         <TwoCol :data="Data.elements" />

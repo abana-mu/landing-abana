@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content mb-5">
       <String2 />
       <section class="section-content">
         <TwoCol :data="Data.elements" />

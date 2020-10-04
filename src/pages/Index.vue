@@ -6,9 +6,9 @@
       :subtext="Data.header.subtext"
       :cta="Data.header.cta"
     />
-    <DiagonalBreaker colorTop="white" colorBottom="grey" class="mt-4" />
+    <DiagonalBreaker colorTop="white" colorBottom="beige" class="mt-4" />
     <!-- BOX -->
-    <div class="back-grey overflow-hidden">
+    <div class="back-beige overflow-hidden">
       <b-container fluid class="box-container">
         <div class="box">
           <h2 class="title">{{ Data.boxes.header.title }}</h2>
@@ -40,7 +40,7 @@
         </div>
       </b-container>
     </div>
-    <DiagonalBreaker colorTop="grey" colorBottom="white" />
+    <DiagonalBreaker colorTop="beige" colorBottom="white" />
     <!-- FLOW -->
     <div class>
       <FlowGraph :title="Data.flow.title" :subtitle="Data.flow.subtitle" />
@@ -110,7 +110,7 @@ export default {
 }
 
 .examples {
-  padding: 3rem 0 1rem 0;
+  padding: 1rem 0;
 }
 
 .box-item {

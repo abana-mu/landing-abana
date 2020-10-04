@@ -7,7 +7,7 @@
         <p class="text-white small-text">{{ Data.header.title }}</p>
         <p class="text-lighter small-text">© 2020 ABANA</p>
       </b-col>
-      <b-col class="d-flex flex-row footer-links">
+      <b-col class="d-flex flex-row footer-links no-gutters">
         <b-col>
           <div class="footer-title">Product</div>
           <div class="d-flex flex-column">

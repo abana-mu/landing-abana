@@ -397,6 +397,55 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Elements'
+            name: elements
+            widget: 'object'
+            fields:
+              - label: 'Economic'
+                name: economic
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
+              - label: 'Social'
+                name: social
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
+              - label: 'Environmental'
+                name: environmental
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
 
       - label: 'Pricing'
         name: 'pricing'
