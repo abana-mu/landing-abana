@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Apparel Design Assistant
 department: Textile & Apparel Design
 location: Goodlands, Mauritius
