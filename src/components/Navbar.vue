@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <div class="navigation-container">
+  <nav>
     <b-navbar
       class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white"
       :class="{ navShadow: scrollPosition > 50 }"
@@ -15,7 +15,7 @@
           <!-- Nav Brand -->
           <div class="col col-auto">
             <g-link class="logo" to="/">
-              <img class src="../assets/images/logo.svg" />
+              <Logo />
             </g-link>
           </div>
 
@@ -808,7 +808,7 @@
         </div>
       </template>
     </b-sidebar>
-  </div>
+  </nav>
 </template>
 
 <!-- SCRIPTS -->
@@ -824,8 +824,10 @@ import {
   BIconArrowLeftShort,
 } from "bootstrap-vue";
 
+import Logo from "@/components/compIcons/Logo";
 import Hamburger from "@/components/Hamburger";
 import IMarket from "@/components/compIcons/IMarket";
+
 import IEcomm from "@/components/compIcons/IEcomm";
 import ISupply from "@/components/compIcons/ISupply";
 import ISource from "@/components/compIcons/ISource";
@@ -843,6 +845,7 @@ import ISustainability from "@/components/compIcons/ISustainability";
 export default {
   components: {
     BNavbar,
+    Logo,
     BNavbarNav,
     BDropdownHeader,
     BDropdownDivider,
@@ -1096,6 +1099,7 @@ export default {
 }
 
 .logo {
+  fill: $primary;
   width: 7rem;
   display: block;
   @media (min-width: $break-collapse) {
@@ -1225,6 +1229,7 @@ export default {
   color: #0d1537;
   font-weight: 500;
   margin: 0;
+  letter-spacing: 0.75px;
 }
 
 .drop-title-singular {
@@ -1237,6 +1242,7 @@ export default {
   margin: 0;
   font-weight: 300;
   white-space: normal;
+  letter-spacing: 0.5px;
 }
 
 .feature-list {

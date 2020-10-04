@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Platform Administration Executive
 department: Product
 location: Goodlands, Mauritius

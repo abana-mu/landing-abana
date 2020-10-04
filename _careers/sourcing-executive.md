@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Sourcing Executive
 department: Textile & Apparel Design
 location: Goodlands, Mauritius

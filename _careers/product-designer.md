@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Product Designer
 department: Product
 location: Goodlands, Mauritius

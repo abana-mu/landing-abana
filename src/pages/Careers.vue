@@ -1,202 +1,216 @@
 <template>
-  <Layout class="container">
-    <div class="one-section-header">
-      <h1>{{ Data.header.title }}</h1>
-      <p>{{ Data.header.subtext }}</p>
-    </div>
-    <div class="row">
-      <div class="col-12 p-3">
-        <h4>Open Positions:</h4>
+  <Layout>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">{{ Data.header.title }}</h1>
+        <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
-      <div class="col-12 mt-3">
-        <h4 class="job-dep">Product</h4>
-      </div>
-      <div v-if="!$page.products.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
-          class="card-link"
+      <div class="row">
+        <div class="col-12 p-3">
+          <h4>Open Positions:</h4>
+        </div>
+        <div class="col-12 mt-3">
+          <h4 class="job-dep">Product</h4>
+        </div>
+        <div v-if="!$page.products.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.products.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.products.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
-      </div>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
 
-      <div class="col-12 mt-4">
-        <h4 class="job-dep">Growth & Sales</h4>
-      </div>
-      <div v-if="!$page.growth.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
-          class="card-link"
+        <div class="col-12 mt-4">
+          <h4 class="job-dep">Growth & Sales</h4>
+        </div>
+        <div v-if="!$page.growth.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.growth.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.growth.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
 
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
-      </div>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
 
-      <div class="col-12 mt-4">
-        <h4 class="job-dep">Textile & Apparel</h4>
-      </div>
-      <div v-if="!$page.textile.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-          class="card-link"
+        <div class="col-12 mt-4">
+          <h4 class="job-dep">Textile & Apparel</h4>
+        </div>
+        <div v-if="!$page.textile.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.textile.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.textile.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
 
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
-      </div>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
 
-      <div class="col-12 mt-4">
-        <h4 class="job-dep">Marketing</h4>
-      </div>
-      <div v-if="!$page.marketing.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-          class="card-link"
+        <div class="col-12 mt-4">
+          <h4 class="job-dep">Marketing</h4>
+        </div>
+        <div v-if="!$page.marketing.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.marketing.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.marketing.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
 
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
-      </div>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
 
-      <div class="col-12 mt-4">
-        <h4 class="job-dep">Operations</h4>
-      </div>
-      <div v-if="!$page.operations.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-          class="card-link"
+        <div class="col-12 mt-4">
+          <h4 class="job-dep">Operations</h4>
+        </div>
+        <div v-if="!$page.operations.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.operations.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.operations.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
 
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
-      </div>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
 
-      <div class="col-12 mt-4">
-        <h4 class="job-dep">Engineering</h4>
-      </div>
-      <div v-if="!$page.engineering.edges.length" class="col-12 p-3">
-        <a
-          href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-          class="card-link"
+        <div class="col-12 mt-4">
+          <h4 class="job-dep">Engineering</h4>
+        </div>
+        <div v-if="!$page.engineering.edges.length" class="col-12 p-3">
+          <a
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
+            class="card-link"
+          >
+            <b-card>
+              <b-card-text
+                >There is nothing here. Get in touch if you think you can help
+                us!</b-card-text
+              >
+            </b-card>
+          </a>
+        </div>
+        <div
+          class="col-12 col-lg-6 p-3"
+          v-for="job in $page.engineering.edges"
+          :key="job.id"
+          v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <b-card>
-            <b-card-text
-              >There is nothing here. Get in touch if you think you can help
-              us!</b-card-text
-            >
-          </b-card>
-        </a>
-      </div>
-      <div
-        class="col-12 col-lg-6 p-3"
-        v-for="job in $page.engineering.edges"
-        :key="job.id"
-      >
-        <g-link :to="job.node.path" class="card-link">
-          <b-card :title="job.node.title" footer-class="footer">
-            <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
+          <g-link :to="job.node.path" class="card-link">
+            <b-card :title="job.node.title" footer-class="footer">
+              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
 
-            <template v-slot:footer>
-              <p>See more</p>
-            </template>
-          </b-card>
-        </g-link>
+              <template v-slot:footer>
+                <p v-if="job.node.filled === 'open'">See more</p>
+                <p v-else>Position Filled</p>
+              </template>
+            </b-card>
+          </g-link>
+        </div>
       </div>
     </div>
   </Layout>
@@ -207,6 +221,7 @@ query{
   products: allCareers(filter:{department:{eq:"Product"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -216,6 +231,7 @@ query{
   growth: allCareers(filter:{department:{eq:"Growth & Sales"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -225,6 +241,7 @@ query{
   textile: allCareers(filter:{department:{eq:"Textile & Apparel Design"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -234,6 +251,7 @@ query{
   marketing: allCareers(filter:{department:{eq:"Marketing & Visuals"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -243,6 +261,7 @@ query{
   operations: allCareers(filter:{department:{eq:"Operations"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -252,6 +271,7 @@ query{
   engineering: allCareers(filter:{department:{eq:"Engineering"}} sortBy: "title" order:ASC){
     edges{
       node{
+        filled
         title
         location
         path
@@ -296,6 +316,17 @@ export default {
 .job-dep {
   color: $primary;
   text-transform: uppercase;
+}
+
+.disabled {
+  h4,
+  p,
+  .footer p {
+    color: $text-disabled;
+  }
+  .footer {
+    background-color: white;
+  }
 }
 
 .footer {

@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Head of Collections
 department: Textile & Apparel Design
 location: "Location: Goodlands, Mauritius"

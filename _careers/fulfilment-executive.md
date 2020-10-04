@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Fulfilment Executive
 department: Operations
 location: Goodlands, Mauritius

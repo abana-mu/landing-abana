@@ -48,6 +48,8 @@
           </b-card-group>
           <!-- TABLE -->
           <div class="pricing-container mt-5">
+            <h4 class="allfeatures">All Features</h4>
+
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.buyer.subs">
@@ -63,7 +65,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.buyer" class="mt-4" />
+            <Table :data="Plans.buyer" />
           </div>
         </b-tab>
         <!--------- SUPPLIERS --------->
@@ -131,7 +133,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.supplier" class="mt-4" />
+            <Table :data="Plans.supplier" />
           </div>
         </b-tab>
         <!--------- SERVICE PROVIDERS --------->
@@ -201,7 +203,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.service" class="mt-4" />
+            <Table :data="Plans.service" />
           </div>
         </b-tab>
       </b-tabs>
@@ -265,19 +267,31 @@ export default {
 }
 
 .nav-tabs .nav-link {
-  border: none;
+  /*border: none;
   border-radius: 0;
-  border-bottom: 1px solid #dee2e63d;
+  border-bottom: 1px solid #dee2e63d;*/
+
+  border: solid 1px rgba(255, 218, 216, 0.164);
+  border-radius: 10px;
+  margin: 5px;
+
   text-transform: uppercase;
   color: $subtitle-light;
   padding: 0.5rem 0.75rem;
 
-  @media (min-width: 400px) {
+  @media (min-width: $break-collapse) {
     padding: 0.5rem 1rem;
+    margin: 0 10px;
+  }
+
+  &:hover {
+    border: solid 1px rgba(255, 97, 88, 0.5);
+    background-color: rgba(255, 97, 88, 0.05);
   }
 
   &.active {
-    font-weight: 600;
+    border: solid 1px rgba(255, 97, 88, 0.7);
+    background-color: rgba(255, 97, 88, 0.2);
   }
 }
 
@@ -290,13 +304,6 @@ export default {
   .nav-link:focus {
     outline: none;
   }
-
-  a.active {
-    @media (max-width: $break-s) {
-      border-color: $subtitle-light;
-      border-radius: 0rem;
-    }
-  }
 }
 
 .tabs > :first-child {
@@ -305,22 +312,6 @@ export default {
   padding-top: 10px;
   background-color: white;
   z-index: 10;
-  /*
-  @media (min-width: 370px) {
-    position: sticky;
-    top: 33px;
-  }
-
-  @media (min-width: $break-m) {
-    top: 20px;
-    padding-top: 20px;
-  }
-
-  @media (min-width: $break-l) {
-    top: 30px;
-    padding-top: 20px;
-  }
-  */
 }
 
 .billed {
@@ -342,7 +333,7 @@ export default {
     flex-direction: column;
   }
   @media (min-width: $break-l) {
-    top: 66px;
+    top: 64px;
   }
 
   p {
@@ -470,7 +461,10 @@ export default {
 
 .pricing-container {
   display: none;
-
+  border: 1px solid #d7d7f58f;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: white;
   @media (min-width: $break-m) {
     display: block;
   }
@@ -478,7 +472,7 @@ export default {
 
 .pricing-container,
 .support-creators {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 
   @media (min-width: $break-xl) {
@@ -486,25 +480,19 @@ export default {
     margin: 0 auto;
   }
   @media (min-width: $break-xxl) {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
   }
 }
 
-.plan-category-title {
-  padding-bottom: 4px;
-  margin-bottom: 8px;
-  color: $subtitle-dark;
-  border-bottom: 1px solid $subtitle-light;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 //sub title
+
+.allfeatures {
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .sub-feature-title {
-  width: 30%;
+  width: 40%;
   margin: 0;
 }
 
@@ -512,21 +500,27 @@ export default {
 .sub-feature {
   display: flex;
   position: sticky;
-  top: 126px;
-  padding: 5px 20px;
+  padding: 0 20px;
   background-color: $grey-light;
-  border-bottom: 2px solid $subtitle-light;
+  border: 1px solid #d7d7f58f;
   z-index: 10;
-  @media (min-width: $break-s) {
-    top: 100px;
-  }
+  top: 100px;
+
   @media (min-width: $break-l) {
-    top: 110px;
+    top: 108px;
+  }
+  .plan-category-title {
+    color: $subtitle-dark;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
   }
 }
 
 .sub-plans-options {
   text-align: center;
   margin: 0;
+  padding: 1rem 0;
+  border-left: 1px solid #d7d7f58f;
 }
 </style>

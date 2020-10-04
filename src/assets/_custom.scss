@@ -191,6 +191,10 @@ p {
   color: $primary;
 }
 
+.text-lighter{
+  color: $text-light;
+}
+
 .back-grey {
   background-color: $grey-light;
 }
@@ -201,6 +205,7 @@ p {
 
 .back-blue {
   background-color: $blue-grey;
+  color: $white;
 }
 
 .back-light-blue {
@@ -291,7 +296,7 @@ p {
     border-radius: 10px;
     width: 100%;
     @media (min-width: $break-m) {
-      width: 75%;
+      width: 85%;
     }
   }
 }

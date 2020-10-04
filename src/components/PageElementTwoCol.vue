@@ -59,7 +59,7 @@ export default {
   align-items: center;
   margin-bottom: 75px;
   @media (min-width: $break-m) {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   &:nth-child(2n) {
@@ -71,6 +71,14 @@ export default {
         justify-content: flex-end;
       }
     }
+    .column-image {
+      margin-left: 0px;
+      margin-right: 0px;
+      @media (min-width: $break-collapse) {
+        margin-left: 0;
+        margin-right: 50px;
+      }
+    }
   }
 
   .column-text {
@@ -80,6 +88,12 @@ export default {
     }
   }
   .column-image {
+    margin-left: 0px;
+    margin-right: 0px;
+    @media (min-width: $break-collapse) {
+      margin-left: 50px;
+      margin-right: 0px;
+    }
     img {
       border-radius: 10px;
       width: 100%;

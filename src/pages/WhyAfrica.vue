@@ -1,10 +1,11 @@
 <template>
-  <Layout class="container">
-    <h1>{{ Data.header.title }}</h1>
-    <p>{{ Data.header.subtext }}</p>
+  <Layout>
+    <div class="header">
+      <h1>{{ Data.header.title }}</h1>
+      <p>{{ Data.header.subtext }}</p>
+    </div>
   </Layout>
 </template>
-
 <script>
 import Data from "~/_settings/whyafrica.json";
 

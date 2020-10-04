@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Database Research & Activation Executive
 department: Growth & Sales
 location: Goodlands, Mauritius

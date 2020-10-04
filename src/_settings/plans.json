@@ -1,6 +1,7 @@
 {
     "buyer": {
-        "subs": [{
+        "subs": [
+            {
                 "name": "Member",
                 "desc": "This describes the member plan",
                 "price3": "$0",
@@ -37,20 +38,24 @@
                 ]
             }
         ],
-        "categories": [{
+        "categories": [
+            {
                 "title": "General",
-                "features": [{
-                    "title": "Users",
-                    "plans": {
-                        "member": "1",
-                        "basic": "1",
-                        "pro": "5"
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "member": "1",
+                            "basic": "1",
+                            "pro": "5"
+                        }
                     }
-                }]
+                ]
             },
             {
                 "title": "Database",
-                "features": [{
+                "features": [
+                    {
                         "title": "Basic Profile",
                         "plans": {
                             "member": true,
@@ -86,7 +91,8 @@
             },
             {
                 "title": "Marketplace",
-                "features": [{
+                "features": [
+                    {
                         "title": "Post RFIs (monthly)",
                         "plans": {
                             "member": false,
@@ -122,7 +128,8 @@
             },
             {
                 "title": "Ecommerce",
-                "features": [{
+                "features": [
+                    {
                         "title": "Access Drops",
                         "plans": {
                             "member": true,
@@ -150,7 +157,8 @@
             },
             {
                 "title": "Support Services",
-                "features": [{
+                "features": [
+                    {
                         "title": "Basic Services (QC, Compliance, Order Follow-up)",
                         "plans": {
                             "member": true,
@@ -187,7 +195,8 @@
         ]
     },
     "supplier": {
-        "subs": [{
+        "subs": [
+            {
                 "name": "Basic",
                 "desc": "This describes the member plan",
                 "price3": "$119/mo",
@@ -224,48 +233,52 @@
                 ]
             }
         ],
-        "categories": [{
+        "categories": [
+            {
                 "title": "General",
-                "features": [{
-                    "title": "Users",
-                    "plans": {
-                        "basic": "1",
-                        "growth": "3",
-                        "pro": "5"
+                "features": [
+                    {
+                        "title": "Users",
+                        "plans": {
+                            "basic": "1",
+                            "growth": "3",
+                            "pro": "5"
+                        }
                     }
-                }]
+                ]
             },
             {
                 "title": "Database",
-                "features": [{
+                "features": [
+                    {
                         "title": "Basic Profile",
                         "plans": {
-                            "member": true,
                             "basic": true,
+                            "growth": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Showroom",
                         "plans": {
-                            "member": false,
-                            "basic": "8",
+                            "basic": false,
+                            "growth": "8",
                             "pro": "24"
                         }
                     },
                     {
                         "title": "Search Supplier by Basic Criteria",
                         "plans": {
-                            "member": false,
-                            "basic": true,
+                            "basic": false,
+                            "growth": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Advanced Search",
                         "plans": {
-                            "member": false,
                             "basic": false,
+                            "growth": false,
                             "pro": true
                         }
                     }
@@ -273,35 +286,36 @@
             },
             {
                 "title": "Marketplace",
-                "features": [{
+                "features": [
+                    {
                         "title": "Post RFIs (monthly)",
                         "plans": {
-                            "member": false,
-                            "basic": "30",
+                            "basic": false,
+                            "growth": "30",
                             "pro": "Unlimited"
                         }
                     },
                     {
                         "title": "Post RFQs (monthly)",
                         "plans": {
-                            "member": false,
-                            "basic": "10",
+                            "basic": false,
+                            "growth": "10",
                             "pro": "Unlimited"
                         }
                     },
                     {
                         "title": "See Listing",
                         "plans": {
-                            "member": false,
-                            "basic": true,
+                            "basic": false,
+                            "growth": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Be Notified",
                         "plans": {
-                            "member": false,
-                            "basic": true,
+                            "basic": false,
+                            "growth": true,
                             "pro": true
                         }
                     }
@@ -309,47 +323,73 @@
             },
             {
                 "title": "Ecommerce",
-                "features": [{
+                "features": [
+                    {
                         "title": "Access Drops",
                         "plans": {
-                            "member": true,
                             "basic": true,
+                            "growth": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Access Brands Store",
                         "plans": {
-                            "member": true,
                             "basic": true,
+                            "growth": true,
                             "pro": true
                         }
                     },
                     {
                         "title": "Fast Custom",
                         "plans": {
-                            "member": false,
                             "basic": false,
+                            "growth": false,
                             "pro": true
                         }
                     }
                 ]
             },
             {
-                "title": "Support",
-                "features": [{
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "growth": "1",
-                            "pro": "5"
-                        }
-                    },
+                "title": "Support Services",
+                "features": [
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Marketing Services ",
                         "plans": {
                             "basic": true,
                             "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Online Order Follow-Up - Critical path (coming soon)",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Financial Services",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advisory",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Joint Purchasing Discounts",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
                             "pro": true
                         }
                     }
@@ -358,9 +398,10 @@
         ]
     },
     "service": {
-        "subs": [{
+        "subs": [
+            {
                 "name": "Basic",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$119/mo",
                 "price6": "$109/mo",
                 "price12": "$99/mo",
@@ -372,7 +413,7 @@
             },
             {
                 "name": "Growth",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$239/mo",
                 "price6": "$219/mo",
                 "price12": "$199/mo",
@@ -384,7 +425,7 @@
             },
             {
                 "name": "Pro",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$349/mo",
                 "price6": "$329/mo",
                 "price12": "$299/mo",
@@ -395,41 +436,52 @@
                 ]
             }
         ],
-        "categories": [{
+        "categories": [
+            {
                 "title": "General",
-                "features": [{
+                "features": [
+                    {
                         "title": "Users",
                         "plans": {
-                            "basic": "1",
                             "growth": "1",
+                            "growth": "3",
                             "pro": "5"
-                        }
-                    },
-                    {
-                        "title": " Macro Country Data & Key Information ",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
                         }
                     }
                 ]
             },
             {
                 "title": "Database",
-                "features": [{
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "growth": "1",
-                            "pro": "5"
-                        }
-                    },
+                "features": [
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Basic Profile",
                         "plans": {
                             "basic": true,
                             "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Showroom",
+                        "plans": {
+                            "basic": false,
+                            "growth": "8",
+                            "pro": "24"
+                        }
+                    },
+                    {
+                        "title": "Search Supplier by Basic Criteria",
+                        "plans": {
+                            "basic": false,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advanced Search",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
                             "pro": true
                         }
                     }
@@ -437,18 +489,35 @@
             },
             {
                 "title": "Marketplace",
-                "features": [{
-                        "title": "Users",
+                "features": [
+                    {
+                        "title": "Post RFIs (monthly)",
                         "plans": {
-                            "basic": "1",
-                            "growth": "1",
-                            "pro": "5"
+                            "basic": false,
+                            "growth": "30",
+                            "pro": "Unlimited"
                         }
                     },
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Post RFQs (monthly)",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
+                            "growth": "10",
+                            "pro": "Unlimited"
+                        }
+                    },
+                    {
+                        "title": "See Listing",
+                        "plans": {
+                            "basic": false,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Be Notified",
+                        "plans": {
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -456,20 +525,74 @@
                 ]
             },
             {
-                "title": "Support",
-                "features": [{
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "growth": "1",
-                            "pro": "5"
-                        }
-                    },
+                "title": "Ecommerce",
+                "features": [
                     {
-                        "title": " Macro Country Data & Key Information ",
+                        "title": "Access Drops",
                         "plans": {
                             "basic": true,
                             "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Access Brands Store",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Fast Custom",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
+                            "pro": true
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Support Services",
+                "features": [
+                    {
+                        "title": "Marketing Services ",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Online Order Follow-Up - Critical path (coming soon)",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Financial Services",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Advisory",
+                        "plans": {
+                            "basic": true,
+                            "growth": true,
+                            "pro": true
+                        }
+                    },
+                    {
+                        "title": "Joint Purchasing Discounts",
+                        "plans": {
+                            "basic": false,
+                            "growth": false,
                             "pro": true
                         }
                     }

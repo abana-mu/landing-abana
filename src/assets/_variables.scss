@@ -9,8 +9,10 @@ $blue-grey-dark: #2f2f45;
 $grey-dark: #737a96;
 $grey-darker: #444;
 $grey-light: #f3f6f9;
+$blue-text-dark: #a6a6ca;
 $grey-light-blue: #d7d7f5;
 $beige-grey: #f5f0ee;
+$grey-mid: #ccc;
 $white: #fff;
 $light-red: #ff9590;
 $lightest-red: #fff0f0;
@@ -25,11 +27,13 @@ $info: $grey-dark;
 $title-dark: $very-dark-blue;
 $text-body: $very-dark-blue-text;
 
+
 $subtitle-dark: $grey-dark;
 $subtitle-light: $grey-light-blue;
 
 $text-white: $white;
-
+$text-light: $blue-text-dark;
+$text-disabled: $grey-mid;
 
 $break-s: 576px;
 $break-m: 768px;

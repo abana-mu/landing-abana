@@ -482,6 +482,12 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - label: "Available?"
+        name: filled
+        required: true
+        widget: "select"
+        options: ["filled","open"]
+        hint: "filled = display that position has been filled"
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Department',

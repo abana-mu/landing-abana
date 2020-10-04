@@ -19,15 +19,14 @@
             :key="plans"
             class="feature-plans-options col"
           >
-            <div v-if="plans === true">
-              <b-icon
-                icon="check-circle"
-                aria-hidden="true"
-                variant="success"
-                font-scale="1.2"
-              ></b-icon>
-            </div>
-            <div v-else-if="plans === false">
+            <b-icon
+              v-if="plans === true"
+              icon="check-circle"
+              aria-hidden="true"
+              variant="success"
+              font-scale="1.2"
+            ></b-icon>
+            <div class="icon-no-container" v-else-if="plans === false">
               <b-icon
                 icon="x-circle"
                 aria-hidden="true"
@@ -35,6 +34,7 @@
                 font-scale="1.2"
               ></b-icon>
             </div>
+
             <div v-else class="text-success">{{ plans }}</div>
           </div>
         </div>
@@ -93,10 +93,9 @@ export default {
 
 //Category Title
 .plan-category-title {
-  padding-bottom: 4px;
-  margin-bottom: 8px;
+  padding: 0.75rem;
   color: $subtitle-dark;
-  border-bottom: 1px solid $subtitle-light;
+  border: 1px solid #d7d7f58f;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -106,9 +105,10 @@ export default {
 //Features Row
 .plan-feature {
   display: flex;
-  padding: 5px 20px;
-  border-radius: 5px;
+  padding: 0px 20px;
   align-items: center;
+  border: 1px solid #d7d7f58f;
+  border-top: none;
   &:hover {
     background-color: #f1f1f9;
   }
@@ -116,20 +116,35 @@ export default {
 
 //Features title
 .plan-feature-title {
-  width: 30%;
+  width: 40%;
+  font-size: 1rem;
 }
 
 //Plans container
 .plan-feature-plans {
-  width: 70%;
+  width: 60%;
   display: flex;
 }
 
 .feature-plans-options {
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-left: 1px solid #d7d7f58f;
+  min-height: 3rem;
+  padding: 0;
+}
+
+.icon-no-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey-light;
 }
 
 .icon-no {
-  color: #c7c7c7;
+  color: #cccccc;
 }
 </style>

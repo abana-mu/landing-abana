@@ -1,5 +1,6 @@
 ---
 layout: blog
+filled: filled
 title: Visual Assets Executive
 department: Marketing & Visuals
 location: Goodlands, Mauritius
