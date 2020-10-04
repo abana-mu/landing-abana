@@ -22,7 +22,7 @@
           <g-image
             id="header-image"
             immediate
-            src="~/assets/images/laptop-1x.png"
+            src="~/assets/images/test1.png"
             quality="100"
           />
         </div>
@@ -125,6 +125,8 @@ export default {
   max-width: 90vw;
   display: block;
   margin: 25px auto 25px auto;
+
+  border-radius: 10px;
 
   @media (min-width: $break-s) {
     margin: 0px auto 25px auto;
