@@ -4,7 +4,7 @@ subtext: (Version 1.0, updated 05 October 2020)
 ---
 1.
 
-* 1.1. “Account” means Company Account or Individual Account.
+* 1.1. “Accounteedede” means Company Account or Individual Account.
 * 1.2. “Company Account” shall mean a company Member’s technical and legal access to the Platform, under which single Profiles can be created.
 * 1.3.”Buyers” are (i) Members who signed up to buy textiles and garments or (ii) users who have a Profile under such Members’ Accounts.
 * 1.4.”ABANA” shall mean Abana Ltd, Royal Road, Mapou Leclezio, 30410, Goodlands.
