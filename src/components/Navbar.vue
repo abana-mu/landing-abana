@@ -424,7 +424,16 @@
                       <div class="drop-image-sm">
                         <IPrivacy />
                       </div>
-                      <div class="drop-text">Privacy & Terms</div>
+                      <div class="drop-text">Privacy</div>
+                    </g-link>
+                    <g-link
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
+                      to="/terms/"
+                    >
+                      <div class="drop-image-sm">
+                        <IPrivacy />
+                      </div>
+                      <div class="drop-text">Terms & Conditions</div>
                     </g-link>
                   </div>
                   <!--
@@ -789,7 +798,18 @@
                       <div class="drop-image-sm">
                         <IPrivacy />
                       </div>
-                      <div class="drop-text">Privacy & Terms</div>
+                      <div class="drop-text">Privacy</div>
+                    </g-link>
+
+                    <g-link
+                      class="sidebar-item-level-2 d-flex align-items-center"
+                      to="/terms/"
+                      @click="hide"
+                    >
+                      <div class="drop-image-sm">
+                        <IPrivacy />
+                      </div>
+                      <div class="drop-text">Terms & Conditions</div>
                     </g-link>
                   </div>
                   <!--

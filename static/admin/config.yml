@@ -339,61 +339,6 @@ collections:
                     options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
                     hint: "Index is the home page"
 
-      - label: 'Sourcing Buyers'
-        name: 'sourcingbuyers'
-        file: 'src/_settings/sourcingbuyers.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-
-      - label: 'Product Buyers'
-        name: 'productbuyers'
-        file: 'src/_settings/productbuyers.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-
-      - label: 'Garment Makers'
-        name: 'garmentmakers'
-        file: 'src/_settings/garmentmakers.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-
-      - label: 'Input Suppliers'
-        name: 'inputsuppliers'
-        file: 'src/_settings/inputsuppliers.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-
-      - label: 'Service Providers'
-        name: 'serviceproviders'
-        file: 'src/_settings/serviceproviders.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-
       - label: 'Why Africa'
         name: 'whyafrica'
         file: 'src/_settings/whyafrica.json'
@@ -509,9 +454,9 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: 'Privacy & Terms'
+      - label: 'Privacy'
         name: 'privacy'
-        file: 'src/_settings/privacy.json'
+        file: 'src/_settings/privacy.md'
         fields:
           - label: 'Header'
             name: header
@@ -519,6 +464,19 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown'}
+
+      - label: 'Terms & Conditions'
+        name: 'terms'
+        file: 'src/_settings/terms.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Content', name: 'content', widget: 'markdown'}
 
       - label: 'Partner'
         name: 'partner'
@@ -531,6 +489,19 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
+  - name: 'Terms and Privacy' # Used in routes, e.g., /admin/collections/blog
+    label: 'terms' # Used in the UI
+    folder: '_terms/' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'SubText', name: 'subtext', widget: 'text' }
+      - { label: 'Content', name: 'body', widget: 'markdown'}
+              
+    
+  
+  
   - name: 'careers' # Used in routes, e.g., /admin/collections/blog
     label: 'Jobs' # Used in the UI
     folder: '_careers/' # The path to the folder where the documents are stored

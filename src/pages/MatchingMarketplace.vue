@@ -9,15 +9,25 @@
         <g-image :src="Data.header.image" quality="100" />
       </div>
     </div>
+
+    <section class="mt-5 section-content anchor-links">
+      <p class="text-center semi-spaced mb-5 text-small">OUR SOLUTIONS</p>
+      <ul>
+        <li><a href="#database">Database</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+      </ul>
+    </section>
+
+    <hr class="a-keyline" />
+
     <div class="content mb-5">
-      <String1 />
-      <section class="section-content">
-        <OneCol :data="Data.content.database" />
+      <section id="database" class="linked section-content">
+        <OneCol class="mt-5" :data="Data.content.database" />
         <TwoCol :data="Data.content.database.elements" />
       </section>
       <String2 />
-      <section class="section-content">
-        <OneCol :data="Data.content.marketplace" image />
+      <section id="marketplace" class="linked section-content">
+        <OneCol class="mt-5" :data="Data.content.marketplace" image />
       </section>
     </div>
   </Layout>

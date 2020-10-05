@@ -11,6 +11,7 @@ module.exports = {
   siteUrl: 'https://www.abana.mu',
   siteDescription: "Discover Africa's textile and apparel resources in just a few clicks.",
 
+
   transformers: {
     remark: {
       externalLinksTarget: '_blank',

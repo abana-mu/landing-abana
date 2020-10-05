@@ -1,9 +1,9 @@
+
 <template>
   <Layout>
     <div class="header">
       <h1 class="title">{{ Data.header.title }}</h1>
       <p class="subtitle">{{ Data.header.subtext }}</p>
-      <p>{{ Data.header.content }}</p>
     </div>
   </Layout>
 </template>

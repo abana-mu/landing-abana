@@ -152,6 +152,57 @@ p {
   white-space: pre-line!important;
 }
 
+
+.a-keyline {
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-bottom: 1px solid #e7e7e7;
+  margin: 4rem auto 2rem auto;
+  width: calc(100% - (50px));
+  max-width: calc(1600px - (20px + 40px));
+}
+
+.linked::before {
+  content: "";
+  display: block;
+  height: 55px; /* fixed header height*/
+  margin: -55px 0 0; /* negative fixed header height */
+  @media (min-width: $break-collapse) {
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+  }
+}
+
+
+.anchor-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  li {
+    list-style: none;
+    margin: 0 2rem;
+    padding: 0;
+  }
+  a {
+    text-decoration: underline;
+    color: $subtitle-dark;
+    &:hover {
+      color: $text-body;
+    }
+  }
+}
+
+
 // TITLES and SUBTITLES
 
 
@@ -327,6 +378,6 @@ p {
   @media (min-width: $break-l) {
     width: 60px;
   }
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
 }
 

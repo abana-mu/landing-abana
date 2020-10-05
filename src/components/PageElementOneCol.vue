@@ -39,6 +39,8 @@ export default {
 
   .text {
     text-align: left;
+    max-width: 650px;
+    margin: 0 auto;
     @media (min-width: $break-collapse) {
       text-align: center;
     }
