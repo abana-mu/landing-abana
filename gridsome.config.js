@@ -46,6 +46,17 @@ chainWebpack: config => {
         typeName: 'Careers',
         remark: {},
       },
+
+    },
+
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_terms/**/*.md',
+        typeName: 'Terms',
+        remark: {},
+      },
+
     },
 
     {

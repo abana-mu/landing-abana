@@ -456,7 +456,7 @@ collections:
 
       - label: 'Privacy'
         name: 'privacy'
-        file: 'src/_settings/privacy.md'
+        file: 'src/_settings/privacy.json'
         fields:
           - label: 'Header'
             name: header
@@ -490,7 +490,7 @@ collections:
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
   - name: 'Terms and Privacy' # Used in routes, e.g., /admin/collections/blog
-    label: 'terms' # Used in the UI
+    label: 'Terms' # Used in the UI
     folder: '_terms/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -499,9 +499,6 @@ collections:
       - { label: 'SubText', name: 'subtext', widget: 'text' }
       - { label: 'Content', name: 'body', widget: 'markdown'}
               
-    
-  
-  
   - name: 'careers' # Used in routes, e.g., /admin/collections/blog
     label: 'Jobs' # Used in the UI
     folder: '_careers/' # The path to the folder where the documents are stored
