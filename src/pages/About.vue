@@ -26,6 +26,19 @@
         </b-col>
       </b-row>
     </section>
+
+    <div class="image-container">
+      <g-image immediate src="~/assets/images/cdm.jpg" quality="100" />
+    </div>
+
+    <section>
+      <h3 class="mt-5 mb-4 text-center">Join us on our adventure!</h3>
+      <div class="text-center mb-5">
+        <g-link to="/Register/">
+          <b-button size="md" variant="primary">Register now </b-button>
+        </g-link>
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -60,6 +73,15 @@ export default {
     margin-bottom: 3rem;
   }
 }
+.image-container {
+  img {
+    display: block;
+    border-radius: 6px;
+    width: 750px;
+    margin: 0px auto 25px auto;
+  }
+}
+
 .header {
   position: relative;
   display: flex;

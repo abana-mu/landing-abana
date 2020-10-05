@@ -149,205 +149,6 @@
                 </div>
               </div>
 
-              <!-- Solutions-->
-              <!--
-              <div
-                class="nav-item nav-only"
-                @mouseover="hoverSol = true"
-                @mouseleave="hoverSol = false"
-              >
-                <a class="nav-link"
-                  >For Business<b-icon icon="chevron-down" scale=".6"
-                /></a>
-                <div
-                  id="solutions-drop"
-                  class="dropdown-container"
-                  v-bind:class="{ dropActive: hoverSol }"
-                >
-                  <div class="col col-6 left-panel">
-                    <div class="left-link-container">
-                      <b-dropdown-header class="dropdown-header"
-                        >For Buyers</b-dropdown-header
-                      >
-                      <div
-                        class="dropdown-link"
-                        @mouseover="hover1 = true"
-                        @mouseleave="hover1 = false"
-                      >
-                        <g-link
-                          class="dropdown-item d-flex align-items-center"
-                          to="/sourcing-buyers/"
-                        >
-                          <div class="drop-image">
-                            <ISource />
-                          </div>
-                          <div class="drop-text">
-                            <p class="drop-title text-transition">
-                              {{ source.title }}
-                            </p>
-                            <p class="drop-subtitle text-transition">
-                              {{ source.subtitle }}
-                            </p>
-                          </div>
-                        </g-link>
-                      </div>
-                      <div
-                        class="dropdown-link"
-                        @mouseover="hover2 = true"
-                        @mouseleave="hover2 = false"
-                      >
-                        <g-link
-                          class="dropdown-item d-flex align-items-center"
-                          to="/product-buyers/"
-                        >
-                          <div class="drop-image">
-                            <IProduct />
-                          </div>
-                          <div class="drop-text">
-                            <p class="drop-title text-transition">
-                              {{ product.title }}
-                            </p>
-                            <p class="drop-subtitle text-transition">
-                              {{ product.subtitle }}
-                            </p>
-                          </div>
-                        </g-link>
-                      </div>
-                      <b-dropdown-header class="dropdown-header"
-                        >For Makers</b-dropdown-header
-                      >
-                      <div
-                        class="dropdown-link"
-                        @mouseover="hover3 = true"
-                        @mouseleave="hover3 = false"
-                      >
-                        <g-link
-                          class="dropdown-item d-flex align-items-center"
-                          to="/garment-makers/"
-                        >
-                          <div class="drop-image">
-                            <IGM />
-                          </div>
-                          <div class="drop-text">
-                            <p class="drop-title text-transition">
-                              {{ gm.title }}
-                            </p>
-                            <p class="drop-subtitle text-transition">
-                              {{ gm.subtitle }}
-                            </p>
-                          </div>
-                        </g-link>
-                      </div>
-                      <div
-                        class="dropdown-link"
-                        @mouseover="hover4 = true"
-                        @mouseleave="hover4 = false"
-                      >
-                        <g-link
-                          class="dropdown-item d-flex align-items-center"
-                          to="/input-suppliers/"
-                        >
-                          <div class="drop-image">
-                            <IIS />
-                          </div>
-                          <div class="drop-text">
-                            <p class="drop-title text-transition">
-                              {{ ip.title }}
-                            </p>
-                            <p class="drop-subtitle text-transition">
-                              {{ ip.subtitle }}
-                            </p>
-                          </div>
-                        </g-link>
-                      </div>
-                      <div
-                        class="dropdown-link"
-                        @mouseover="hover5 = true"
-                        @mouseleave="hover5 = false"
-                      >
-                        <g-link
-                          class="dropdown-item d-flex align-items-center"
-                          to="/service-providers"
-                        >
-                          <div class="drop-image">
-                            <ISP />
-                          </div>
-                          <div class="drop-text">
-                            <p class="drop-title text-transition">
-                              {{ sp.title }}
-                            </p>
-                            <p class="drop-subtitle text-transition">
-                              {{ sp.subtitle }}
-                            </p>
-                          </div>
-                        </g-link>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-6 grey-panel">
-                    <div v-show="hover1">
-                      <b-dropdown-header>Features:</b-dropdown-header>
-                      <ul class="feature-list">
-                        <li v-for="item in source.examples" :key="item.example">
-                          <span class="feature-title">{{ item.title }}</span>
-                          <span class="feature-details">{{
-                            item.example
-                          }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div v-show="hover2">
-                      <b-dropdown-header>Features:</b-dropdown-header>
-                      <ul class="feature-list">
-                        <li
-                          v-for="item in product.examples"
-                          :key="item.example"
-                        >
-                          <span class="feature-title">{{ item.title }}</span>
-                          <span class="feature-details">{{
-                            item.example
-                          }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div v-show="hover3">
-                      <b-dropdown-header>Features:</b-dropdown-header>
-                      <ul class="feature-list">
-                        <li v-for="item in gm.examples" :key="item.example">
-                          <span class="feature-title">{{ item.title }}</span>
-                          <span class="feature-details">{{
-                            item.example
-                          }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div v-show="hover4">
-                      <b-dropdown-header>Features:</b-dropdown-header>
-                      <ul class="feature-list">
-                        <li v-for="item in ip.examples" :key="item.example">
-                          <span class="feature-title">{{ item.title }}</span>
-                          <span class="feature-details">{{
-                            item.example
-                          }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div v-show="hover5">
-                      <b-dropdown-header>Features:</b-dropdown-header>
-                      <ul class="feature-list">
-                        <li v-for="item in sp.examples" :key="item.example">
-                          <span class="feature-title">{{ item.title }}</span>
-                          <span class="feature-details">{{
-                            item.example
-                          }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              -->
-
               <!-- Why Africa-->
               <li class="nav-item nav-only">
                 <g-link class="nav-link" to="/why-africa/">Why Africa</g-link>
@@ -436,33 +237,27 @@
                       <div class="drop-text">Terms & Conditions</div>
                     </g-link>
                   </div>
-                  <!--
-                  <div class="col col-2">
-                    <b-dropdown-header>Partnerships</b-dropdown-header>
-
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/partnerships/"
-                    >
-                      <div class="drop-image-sm">
-                        <IPartnership />
-                      </div>
-                      <div class="drop-text">Partner with us</div>
-                    </g-link>
-                  </div>
-                  -->
                 </div>
               </div>
             </b-navbar-nav>
           </div>
 
-          <!-- Right aligned nav items -->
+          <!-- Right aligned nav items --
           <div class="col col-auto d-none d-lg-block">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
               <b-button variant="link" class="title-dark">{{
                 cta.sub
               }}</b-button>
               <b-button variant="primary">{{ cta.main }}</b-button>
+            </b-navbar-nav>
+          </div>
+          -->
+
+          <div class="col col-auto d-none d-lg-block">
+            <b-navbar-nav class="d-none d-lg-block ml-auto">
+              <g-link to="/Register/"
+                ><b-button variant="primary">Pre-Register</b-button>
+              </g-link>
             </b-navbar-nav>
           </div>
 
@@ -482,12 +277,6 @@
               Solutions
               <b-icon icon="arrow-right-short" class="float-right" />
             </div>
-            <!--
-            <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-1>
-              For Business
-              <b-icon icon="arrow-right-short" class="float-right" />
-            </div>
-            -->
             <div @click="hide">
               <g-link class="sidebar-item-level-1" to="/why-africa/">
                 Why Africa
@@ -812,23 +601,6 @@
                       <div class="drop-text">Terms & Conditions</div>
                     </g-link>
                   </div>
-                  <!--
-                  <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Partnerships</b-dropdown-header
-                    >
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/partnerships/"
-                      @click="hide"
-                    >
-                      <div class="drop-image-sm">
-                        <IPartnership />
-                      </div>
-                      <div class="drop-text">Partner with us</div>
-                    </g-link>
-                  </div>
-                  -->
                 </div>
               </div>
             </template>
@@ -1253,6 +1025,7 @@ export default {
 
 .drop-text {
   padding-left: 1rem;
+  font-size: $f16;
 }
 
 .drop-title {

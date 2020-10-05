@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import Data from "~/_settings/inputsuppliers.json";
+import Data from "~/_settings/register.json";
 
 export default {
   metaInfo: {
-    title: "Input Suppliers",
+    title: "Register",
   },
   data() {
     return {

@@ -15,7 +15,7 @@
             </p>
           </div>
           <div id="header-cta">
-            <g-link to="/Plans/">
+            <g-link to="/Register/">
               <b-button size="md" variant="primary">{{ cta }} </b-button>
             </g-link>
           </div>
