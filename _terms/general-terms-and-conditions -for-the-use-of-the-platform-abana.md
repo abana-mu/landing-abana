@@ -1,8 +1,8 @@
 ---
-title: General Terms and Conditions  for the use of the Platform ABANA
+title: General Terms and Conditions for the use of the Platform ABANA
 subtext: (Version 1.4, updated 05 October 2020)
 ---
-General Terms and Conditions  for the use of the Platform ABANA
+General Terms and Conditions for the use of the Platform ABANA
 (Version 1.4, updated 05 October 2020)
 
 **1. Applicability**
@@ -84,9 +84,8 @@ General Terms and Conditions  for the use of the Platform ABANA
   * b) to ensure the careful handling of log-in information and ensure that no unauthorized person gains access to the log-in information;
   * c) to cooperate with ABANA, to the extent necessary to investigate and prevent unauthorized access to the Platform;
   * d) to use the Platform exclusively for the purpose to enable a connection between Members for commercial purposes.
-* 8.5. Member warrants that it complies with the ABANA Code of Conduct under https://foursource.com/code-of-conduct/ in the latest relevant version.
-* 8.6. The Member undertakes to refrain from any activities which endanger the performance of the Platform or disturb other Members. The Member refrains from using crawlers to gather data from the Platform and accessing data which the Member is not entitled to use or to share the data provided on the Platform or by other Members with third parties who are not a Member of the Platform for commercial purposes.
-* 8.7. Members shall ensure that the information and data published or uploaded by it on the Platform does not contain any malware such as trojans, spy viruses and similar software. The Member is obliged to compensate ABANA for any damages and to hold ABANA harmless from any third party claims resulting from the non-compliance with these obligations.
+* 8.5. The Member undertakes to refrain from any activities which endanger the performance of the Platform or disturb other Members. The Member refrains from using crawlers to gather data from the Platform and accessing data which the Member is not entitled to use or to share the data provided on the Platform or by other Members with third parties who are not a Member of the Platform for commercial purposes.
+* 8.6. Members shall ensure that the information and data published or uploaded by it on the Platform does not contain any malware such as trojans, spy viruses and similar software. The Member is obliged to compensate ABANA for any damages and to hold ABANA harmless from any third party claims resulting from the non-compliance with these obligations.
 
 **9. Additional obligations regarding Subaccounts**
 
