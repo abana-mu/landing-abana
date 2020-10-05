@@ -172,9 +172,7 @@ content: >-
   12. Information and Contact
       You can contact ABANA under Abana Ltd, Royal Road, Mapou Leclezio, 30410, Goodlands, under the email address support@abana.mu.
 ---
-
-
-1. Definitions for the purposes of this Privacy Policy, the following definitions shall apply:
+1.
 
 * 1.1. “Account” means Company Account or Individual Account.
 * 1.2. “Company Account” shall mean a company Member’s technical and legal access to the Platform, under which single Profiles can be created.
