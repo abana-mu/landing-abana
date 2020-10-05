@@ -4,7 +4,7 @@
       <h1 class="title">{{ $page.thisTerm.title }}</h1>
       <p class="subtitle">{{ $page.thisTerm.subtext }}</p>
 
-      <div class="post__content" v-html="$page.thisTerm.content" />
+      <div class="text-left" v-html="$page.thisTerm.content" />
     </div>
   </Layout>
 </template>
@@ -22,16 +22,9 @@ query{
 
 
 <script>
-import Data from "~/_settings/privacy.json";
-
 export default {
   metaInfo: {
     title: "Privacy",
-  },
-  data() {
-    return {
-      Data,
-    };
   },
 };
 </script>

@@ -431,7 +431,7 @@
                       to="/terms/"
                     >
                       <div class="drop-image-sm">
-                        <IPrivacy />
+                        <ITerms />
                       </div>
                       <div class="drop-text">Terms & Conditions</div>
                     </g-link>
@@ -807,7 +807,7 @@
                       @click="hide"
                     >
                       <div class="drop-image-sm">
-                        <IPrivacy />
+                        <ITerms />
                       </div>
                       <div class="drop-text">Terms & Conditions</div>
                     </g-link>
@@ -865,6 +865,7 @@ import IIS from "@/components/compIcons/IIS";
 import ISP from "@/components/compIcons/ISP";
 import IAbout from "@/components/compIcons/IAbout";
 import IPrivacy from "@/components/compIcons/IPrivacy";
+import ITerms from "@/components/compIcons/ITerms";
 import IContact from "@/components/compIcons/IContact";
 import ICareer from "@/components/compIcons/ICareer";
 import IPartnership from "@/components/compIcons/IPartnership";
@@ -892,6 +893,7 @@ export default {
     ISP,
     IAbout,
     IPrivacy,
+    ITerms,
     IContact,
     ICareer,
     IPartnership,

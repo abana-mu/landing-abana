@@ -420,6 +420,34 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Elements'
+            name: elements
+            widget: 'object'
+            fields:
+              - label: 'Who'
+                name: who
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'Where'
+                name: where
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'With'
+                name: with
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'Why'
+                name: Why
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
 
       - label: 'Careers'
         name: 'careers'
@@ -453,30 +481,6 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-
-      - label: 'Privacy'
-        name: 'privacy'
-        file: 'src/_settings/privacy.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - { label: 'Body', name: 'body', widget: 'markdown'}
-
-      - label: 'Terms & Conditions'
-        name: 'terms'
-        file: 'src/_settings/terms.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-              - { label: 'Content', name: 'content', widget: 'markdown'}
 
       - label: 'Partner'
         name: 'partner'

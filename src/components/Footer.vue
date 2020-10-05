@@ -26,7 +26,8 @@
         <b-col
           ><div class="footer-title">Resources</div>
           <div class="d-flex flex-column text-small">
-            <g-link to="/privacy">Privacy & Terms</g-link>
+            <g-link to="/privacy">Privacy Policy</g-link>
+            <g-link to="/terms">Terms & Conditions</g-link>
           </div></b-col
         >
       </b-col>
