@@ -1,6 +1,24 @@
 {
   "header": {
     "title": "About Us",
-    "subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto. "
+    "subtext": "Mercury is building banking for startups.\nWe want to power the next generation of companies that will shape American industry."
+  },
+  "elements": {
+    "who": {
+      "title": "Who",
+      "subtext": "We are a team of fashion industry professionals, with many decades of experience in manufacturing, marketing, branding and buying. We have worked with sophisticated retailers and brands from Europe, the US and South Africa and understand the challenges facing the whole eco-system, especially in these troubled times.\n\nWe have combined this experience with a young, diverse team of creative professionals from different backgrounds & perspectives to create ABANA.\n"
+    },
+    "where": {
+      "title": "Where",
+      "subtext": "We are based in Mauritius, the Indian Ocean Island with the oldest export-oriented apparel industry on the African Continent, dating back 50 years."
+    },
+    "with": {
+      "title": "With",
+      "subtext": "We passionately believe in value addition through collaboration and have built a unique win-win partnership of factories to produce out Drop service. And we have developed a network of experienced partners throughout Africa for a continental presence and footprint. "
+    },
+    "Why": {
+      "title": "Why",
+      "subtext": "We believe in the future of Africa and the potential of the fashion industry to re-invent itself as a creator of economic & social value rather than being its most relentless extractor."
+    }
   }
 }
