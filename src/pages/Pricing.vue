@@ -6,7 +6,7 @@
         {{ Data.header.subtext }}
       </p>
     </div>
-    <div class="my-3">
+    <div class="mt-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
         <!--------- BUYERS --------->
         <b-tab title="Buyers" active>
@@ -49,9 +49,20 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
+                <b-button
+                  v-b-toggle="'accordion-' + card.name"
+                  variant="text"
+                  class="see-all d-block d-md-none"
+                  >See All Features
+                  <b-icon icon="chevron-down" class="ml-2" scale=".6" />
+                </b-button>
+                <b-collapse :id="'accordion-' + card.name" class="mt-2">
+                  <TableMob :data="Plans.buyer" :type="card.name" />
+                </b-collapse>
               </b-card>
             </template>
           </b-card-group>
+
           <!-- TABLE -->
           <div class="pricing-container mt-5">
             <h4 class="allfeatures">All Features</h4>
@@ -80,6 +91,7 @@
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
+              class="periods"
               v-model="selected"
               :options="periods"
               name="radio-suppliers"
@@ -114,6 +126,16 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
+                <b-button
+                  v-b-toggle="'accordion-' + card.name"
+                  variant="text"
+                  class="see-all d-block d-md-none"
+                  >See All Features
+                  <b-icon icon="chevron-down" class="ml-2" scale=".6" />
+                </b-button>
+                <b-collapse :id="'accordion-' + card.name" class="mt-2">
+                  <TableMob :data="Plans.supplier" :type="card.name" />
+                </b-collapse>
               </b-card>
             </template>
           </b-card-group>
@@ -154,6 +176,7 @@
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
             <b-form-radio-group
+              class="periods"
               v-model="selected"
               :options="periods"
               name="radio-service"
@@ -188,6 +211,16 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
+                <b-button
+                  v-b-toggle="'accordion-' + card.name"
+                  variant="text"
+                  class="see-all d-block d-md-none"
+                  >See All Features
+                  <b-icon icon="chevron-down" class="ml-2" scale=".6" />
+                </b-button>
+                <b-collapse :id="'accordion-' + card.name" class="mt-2">
+                  <TableMob :data="Plans.supplier" :type="card.name" />
+                </b-collapse>
               </b-card>
             </template>
           </b-card-group>
@@ -233,19 +266,31 @@
 import Data from "~/_settings/pricing.json";
 import Plans from "~/_settings/plans.json";
 import Table from "~/components/PlanTable";
-import { BIcon, BIconCheckCircle } from "bootstrap-vue";
+import TableMob from "~/components/PlanTableMob";
+import {
+  BIcon,
+  BIconCheckCircle,
+  BIconChevronDown,
+  BIconChevronUp,
+} from "bootstrap-vue";
+import { BCollapse } from "bootstrap-vue";
 
 export default {
   components: {
+    BCollapse,
     BIcon,
     BIconCheckCircle,
+    BIconChevronDown,
+    BIconChevronUp,
     Table,
+    TableMob,
   },
   metaInfo: {
     title: "Pricing",
   },
   data() {
     return {
+      visible: false,
       Data,
       Plans,
       selected: "price12",
@@ -440,6 +485,8 @@ export default {
 
 .desc {
   font-size: 0.9rem;
+  line-height: 1.2em;
+  min-height: 2.4em;
 }
 
 .features {
@@ -477,6 +524,10 @@ export default {
   &:before {
     background-color: #607aff;
   }
+}
+
+.see-all {
+  padding: 0;
 }
 
 .pricing-container {

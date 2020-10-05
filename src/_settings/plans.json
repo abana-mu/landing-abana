@@ -8,7 +8,7 @@
                 "price6": "$0",
                 "price12": "$0",
                 "features": [
-                    "Access Bi-monthly Drop Collections",
+                    "Bi-monthly Drop Collections",
                     "QC & Compliance on purchases"
                 ]
             },
@@ -197,15 +197,19 @@
         "subs": [
             {
                 "name": "Basic",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$119/mo",
                 "price6": "$109/mo",
                 "price12": "$99/mo",
-                "features": []
+                "features": [
+                    "feature1",
+                    "feature2",
+                    "feature3"
+                ]
             },
             {
                 "name": "Growth",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$239/mo",
                 "price6": "$219/mo",
                 "price12": "$199/mo",
@@ -217,7 +221,7 @@
             },
             {
                 "name": "Pro",
-                "desc": "This describes the member plan",
+                "desc": "This describes the basic plan",
                 "price3": "$349/mo",
                 "price6": "$329/mo",
                 "price12": "$299/mo",
@@ -256,24 +260,16 @@
                     {
                         "title": "Showroom",
                         "plans": {
-                            "basic": false,
-                            "growth": "8",
+                            "basic": "8",
+                            "growth": "16",
                             "pro": "24"
                         }
                     },
                     {
-                        "title": "Search Supplier by Basic Criteria",
+                        "title": "Search Buyers & Suppliers",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advanced Search",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
                             "pro": true
                         }
                     }
@@ -283,33 +279,33 @@
                 "title": "Marketplace",
                 "features": [
                     {
-                        "title": "Post RFIs (monthly)",
+                        "title": "Post Listings (monthly)",
                         "plans": {
-                            "basic": false,
+                            "basic": "15",
                             "growth": "30",
                             "pro": "Unlimited"
                         }
                     },
                     {
-                        "title": "Post RFQs (monthly)",
+                        "title": "Number of Contacts (Total)",
                         "plans": {
-                            "basic": false,
-                            "growth": "10",
+                            "basic": "15",
+                            "growth": "30",
                             "pro": "Unlimited"
                         }
                     },
                     {
                         "title": "See Listing",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
                             "pro": true
                         }
                     },
                     {
-                        "title": "Be Notified",
+                        "title": "View RFQs",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
                             "pro": true
                         }
@@ -438,7 +434,7 @@
                     {
                         "title": "Users",
                         "plans": {
-                            "growth": "1",
+                            "basic": "1",
                             "growth": "3",
                             "pro": "5"
                         }
@@ -459,24 +455,16 @@
                     {
                         "title": "Showroom",
                         "plans": {
-                            "basic": false,
-                            "growth": "8",
+                            "basic": "8",
+                            "growth": "16",
                             "pro": "24"
                         }
                     },
                     {
-                        "title": "Search Supplier by Basic Criteria",
+                        "title": "Search Buyers & Suppliers",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advanced Search",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
                             "pro": true
                         }
                     }
@@ -486,33 +474,33 @@
                 "title": "Marketplace",
                 "features": [
                     {
-                        "title": "Post RFIs (monthly)",
+                        "title": "Post Listings (monthly)",
                         "plans": {
-                            "basic": false,
+                            "basic": "15",
                             "growth": "30",
                             "pro": "Unlimited"
                         }
                     },
                     {
-                        "title": "Post RFQs (monthly)",
+                        "title": "Number of Contacts (Total)",
                         "plans": {
-                            "basic": false,
-                            "growth": "10",
+                            "basic": "15",
+                            "growth": "30",
                             "pro": "Unlimited"
                         }
                     },
                     {
                         "title": "See Listing",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
                             "pro": true
                         }
                     },
                     {
-                        "title": "Be Notified",
+                        "title": "View RFQs",
                         "plans": {
-                            "basic": false,
+                            "basic": true,
                             "growth": true,
                             "pro": true
                         }

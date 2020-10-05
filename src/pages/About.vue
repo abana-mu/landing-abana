@@ -32,10 +32,10 @@
     </div>
 
     <section>
-      <h3 class="mt-5 mb-4 text-center">Join us on our adventure!</h3>
+      <h2 class="mt-5 mb-4 text-center">Join us on our adventure!</h2>
       <div class="text-center mb-5">
         <g-link to="/Register/">
-          <b-button size="md" variant="primary">Register now </b-button>
+          <b-button size="md" variant="primary">Pre-Register Now </b-button>
         </g-link>
       </div>
     </section>
@@ -64,31 +64,38 @@ export default {
 <style lang="scss" scoped>
 .about-container {
   padding: 0 1rem;
-  margin: 10rem auto;
+  margin: 10rem auto 5rem auto;
+
   max-width: 350px;
   @media (min-width: $break-m) {
     max-width: 750px;
   }
   h2 {
-    margin-bottom: 3rem;
+    font-size: $f32;
+    margin-bottom: 1rem;
+    @media (min-width: $break-m) {
+      margin-bottom: 3rem;
+    }
   }
 }
 .image-container {
+  max-width: 750px;
+  margin: 0 auto;
+  border-radius: 6px;
   img {
-    display: block;
-    border-radius: 6px;
-    width: 750px;
-    margin: 0px auto 25px auto;
+    width: 100%;
   }
 }
 
 .header {
+  overflow-x: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 100px auto;
+  width: 100%;
 }
 
 .about-text {
@@ -98,8 +105,8 @@ export default {
 }
 
 .logo {
-  width: 125%;
-  margin: 100px auto;
+  width: 115%;
+  fill: $blue-grey;
   position: absolute;
   opacity: 0.05;
   z-index: -1;
