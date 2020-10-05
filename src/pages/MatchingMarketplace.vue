@@ -39,7 +39,6 @@ import OneCol from "~/components/PageElementOneCol";
 import TwoCol from "~/components/PageElementTwoCol";
 import String1 from "~/components/compIcons/String1";
 import String2 from "~/components/compIcons/String2";
-import Imbuy from "~/assets/images/alex.png";
 import ICheck from "@/components/compIcons/ICheck";
 
 export default {
