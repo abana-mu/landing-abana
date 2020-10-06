@@ -46,9 +46,7 @@ chainWebpack: config => {
         typeName: 'Careers',
         remark: {},
       },
-
     },
-    /*
     {
       use: '@gridsome/source-filesystem',
       options: {
@@ -58,8 +56,6 @@ chainWebpack: config => {
       },
 
     },
-    */
-
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {

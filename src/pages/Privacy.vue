@@ -1,7 +1,5 @@
 
-<!--
 <template>
-
   <Layout>
     <div class="header">
       <h1 class="title">{{ $page.thisTerm.title }}</h1>
@@ -10,7 +8,6 @@
       <div class="text-left" v-html="$page.thisTerm.content" />
     </div>
   </Layout>
-
 </template>
 
 <page-query>
@@ -23,11 +20,7 @@ query{
 }
 </page-query>
 
--->
 
-<template>
-  <div></div>
-</template>
 
 <script>
 export default {
