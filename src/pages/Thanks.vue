@@ -8,7 +8,7 @@
           together.
         </p>
       </div>
-      <div class=" mt-5 text-center">
+      <div class="mt-5 text-center">
         <g-link to="/">
           <b-button variant="primary">Back Home</b-button>
         </g-link>
@@ -20,12 +20,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Thanks',
-  },
-  data() {
-    return {
-      Data,
-    };
+    title: "Thanks",
   },
 };
 </script>
