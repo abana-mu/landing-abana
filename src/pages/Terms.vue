@@ -20,7 +20,6 @@ query{
   }
 }
 </page-query>
-
 -->
 <script>
 export default {
