@@ -4,20 +4,18 @@
       <h1 class="title">{{ Data.header.title }}</h1>
     </div>
 
-    <div class="content mt-4 overflow-hidden">
-      <!--
+    <div class="content mt-5 overflow-hidden">
       <b-row>
         <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture1-b.jpg"></g-image>
+          <g-image class="w-100" src="~/assets/images/picture4.jpg"></g-image>
         </b-col>
         <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture3-b.jpg"></g-image>
+          <g-image class="w-100" src="~/assets/images/picture5.jpg"></g-image>
         </b-col>
         <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture2-b.jpg"></g-image>
+          <g-image class="w-100" src="~/assets/images/picture6.jpg"></g-image>
         </b-col>
       </b-row>
-      -->
 
       <section class="mt-5 section-content anchor-links">
         <p class="text-center semi-spaced mb-5 text-small">
@@ -35,22 +33,31 @@
       <div class="mb-5">
         <section id="opp" class="linked section-content">
           <div class="sus-title">
-            <div>{{ Data.content.solutions.title }}</div>
-            <div>{{ Data.content.solutions.subtext }}</div>
+            <p>{{ Data.content.solutions.title }}</p>
+            <p>{{ Data.content.solutions.subtext }}</p>
           </div>
           <TwoCol :data="Data.content.solutions.elements" />
         </section>
         <String2 />
         <section id="sus" class="linked section-content">
           <div class="sus-title">
-            <div>{{ Data.content.sustainability.title }}</div>
-            <div>{{ Data.content.sustainability.subtext }}</div>
+            <p>{{ Data.content.sustainability.title }}</p>
+            <p>{{ Data.content.sustainability.subtext }}</p>
           </div>
           <TwoCol :data="Data.content.sustainability.elements" />
         </section>
         <String1 />
         <section id="com" class="linked section-content">
-          <OneCol :data="Data.content.commitment" image />
+          <div class="sus-title">
+            <p>{{ Data.content.commitment.title }}</p>
+          </div>
+          <vue-simple-markdown
+            :source="Data.content.commitment.content"
+            class="text mt-4"
+          ></vue-simple-markdown>
+          <div class="image-banner">
+            <g-image :src="Data.content.commitment.image" quality="100" />
+          </div>
         </section>
 
         <section>
@@ -93,27 +100,33 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .sus-title {
-  text-align: center;
   margin: 4rem 0 8rem 0;
-  font-size: $f28;
-  color: $grey-dark;
-  letter-spacing: 3px;
-  @media (min-width: $break-collapse) {
-    font-size: $f32;
+  p {
+    text-align: center;
+    margin: 0;
+    font-size: $f28;
+    color: $grey-dark;
+    letter-spacing: 3px;
+    @media (min-width: $break-collapse) {
+      font-size: $f32;
+    }
   }
 }
 
-.offset h2 {
-  text-align: center;
-  margin: 4rem 0 6rem 0;
-  font-size: $f28;
-  color: $grey-dark;
-  letter-spacing: 3px;
-  font-weight: 400;
-  @media (min-width: $break-collapse) {
-    font-size: $f32;
+.sustainability {
+  color: red;
+  h2 {
+    text-align: center;
+    margin: 4rem 0 6rem 0;
+    font-size: $f28;
+    color: $grey-dark;
+    letter-spacing: 3px;
+    font-weight: 400;
+    @media (min-width: $break-collapse) {
+      font-size: $f32;
+    }
   }
 }
 
@@ -157,6 +170,16 @@ export default {
   @media (min-width: $break-collapse) {
     background-attachment: fixed;
   }
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 650px;
+  margin-bottom: 8rem;
+}
+
+.image-banner {
+  text-align: center;
 }
 
 #economic .image {

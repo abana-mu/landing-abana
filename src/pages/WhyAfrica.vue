@@ -4,7 +4,7 @@
       <h1 class="title">{{ Data.header.title }}</h1>
     </div>
 
-    <div class="content mt-4 overflow-hidden">
+    <div class="content mt-5 overflow-hidden">
       <b-row>
         <b-col class="col-4 p-0">
           <g-image class="w-100" src="~/assets/images/picture1-b.jpg"></g-image>
