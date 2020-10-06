@@ -1,29 +1,29 @@
 
+
 <template>
   <Layout>
     <div class="header">
-      <h1 class="title">{{ $page.thisTerm.title }}</h1>
-      <p class="subtitle">{{ $page.thisTerm.subtext }}</p>
-
-      <div class="text-left" v-html="$page.thisTerm.content" />
+      <h1 class="title">{{ Data.header.title }}</h1>
+      <p class="subtitle">{{ Data.header.subtext }}</p>
     </div>
+
+    <vue-simple-markdown
+      :source="Data.content"
+      class="md-text"
+    ></vue-simple-markdown>
   </Layout>
 </template>
-
-<page-query>
-query{
-  thisTerm: terms(id: "29cad7070c6e9322f40cf5ebdded9be1"){
-    title
-    subtext
-    content
-  }
-}
-</page-query>
 
 
 
 <script>
+import Data from "~/_settings/privacy.json";
 export default {
+  data() {
+    return {
+      Data,
+    };
+  },
   metaInfo: {
     title: "Privacy",
   },

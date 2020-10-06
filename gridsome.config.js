@@ -48,15 +48,6 @@ chainWebpack: config => {
       },
     },
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: '_terms/*.md',
-        typeName: 'Terms',
-        remark: {},
-      },
-
-    },
-    {
       use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: `/admin`,

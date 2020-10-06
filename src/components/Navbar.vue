@@ -229,7 +229,7 @@
                     </g-link>
                     <g-link
                       class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/terms-conditions-conditions/"
+                      to="/terms-conditions/"
                     >
                       <div class="drop-image-sm">
                         <ITerms />
