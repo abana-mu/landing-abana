@@ -24,7 +24,7 @@ query{
 <script>
 export default {
   metaInfo: {
-    title: "Privacy",
+    title: "Terms",
   },
 };
 </script>

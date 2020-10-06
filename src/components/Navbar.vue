@@ -229,7 +229,7 @@
                     </g-link>
                     <g-link
                       class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/terms/"
+                      to="/terms-conditions-conditions/"
                     >
                       <div class="drop-image-sm">
                         <ITerms />
@@ -592,7 +592,7 @@
 
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/terms/"
+                      to="/terms-conditions/"
                       @click="hide"
                     >
                       <div class="drop-image-sm">
