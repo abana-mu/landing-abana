@@ -1,4 +1,4 @@
-<!--
+
 
 <template>
   <Layout>
@@ -20,11 +20,6 @@ query{
   }
 }
 </page-query>
--->
-
-<template>
-  <div></div>
-</template>
 
 
 <script>
