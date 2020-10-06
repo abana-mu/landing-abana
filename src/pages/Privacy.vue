@@ -1,5 +1,3 @@
-
-
 <template>
   <Layout>
     <div class="header">
