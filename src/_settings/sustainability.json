@@ -1,6 +1,50 @@
 {
   "header": {
     "title": "Sustainability",
-    "subtext": "No simple solution, many creative opportunities\n"
+    "subtext": "Lorem\n"
+  },
+  "content": {
+    "solutions": {
+      "title": "No simple solution",
+      "subtext": "Many creative opportunities",
+      "elements": {
+        "discover": {
+          "title": "Discover Africa",
+          "content": "As the new frontier for apparel sourcing, Africa offers unique opportunities to expand the notion of sustainable fashion.\n\nOur platform illuminates the whole ecosystem and reveals expertise, resources and business potential.\n\nExpand your sourcing in a region with the potential to grow and make a difference.",
+          "image": "/uploads/back10.jpg"
+        },
+        "transparency": {
+          "content": "Search our database of compliant suppliers from the African continent using multiple criteria including their sustainability credentials.\n\nKnow where our Drops Collections are produced. Each label includes the maker’s exact coordinates.",
+          "title": "Transparency",
+          "image": "/uploads/back10.jpg"
+        }
+      }
+    },
+    "sustainability": {
+      "title": "Sustainability as a form of resilience",
+      "subtext": "Fashion as a form of good",
+      "elements": {
+        "value": {
+          "title": "Value",
+          "content": "Unlock value in the ‘’first mile’’ closest to makers, materials and logistics. Leverage business opportunities on our market place and add value to existing assets.\n\nWith our Drops Collections we re-imagine a system where profit and risk are fairly distributed throughout the supply chain.",
+          "image": "/uploads/back10.jpg"
+        },
+        "materials": {
+          "title": "Materials",
+          "content": "Find sustainable options throughout the supply chain – compliant & innovative factories, thoughtfully made materials and inputs. \n\nOur Drops Collections are driven by materials that are kind to the earth. Unused stocks or natural fibres are carefully chosen as primary materials to reduce environmental impact.",
+          "image": "/uploads/back10.jpg"
+        },
+        "process": {
+          "title": "Process",
+          "content": "Use our E-commerce options to shorten and speed-up your supply chain and reduce inventory risks – a significant source of environmental impact.\n\n‘Well-made clothes to last’ is the core principle for our Drops & Fast Custom services. We design thoughtfully to minimise effort during sampling and production by adapting timeless blocks & not creating wastefully.",
+          "image": "/uploads/back10.jpg"
+        }
+      }
+    },
+    "commitment": {
+      "title": "Our commitment and purspose",
+      "content": "We recognise not having all the answers. However, we shall continuously seek new ways to support buyers and suppliers to build a fair, transparent and inclusive global supply chain. \n\nWe aim to grow ABANA into an important agent of change in developing the African textile and apparel ecosystem.\n\nWe plan to facilitate African SMEs’ social and environmental compliance by developing our own assessment criteria and assisting their development.\n\nOur ambition is to support more SMEs in Africa to be globally recognised for their craftsmanship and unique business models.",
+      "image": "/uploads/back10.jpg"
+    }
   }
 }
