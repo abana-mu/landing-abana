@@ -6,13 +6,13 @@
 
     <div class="content mt-5 overflow-hidden">
       <b-row>
-        <b-col class="col-4 p-0">
+        <b-col class="col-4 px-1 px-md-2">
           <g-image class="w-100" src="~/assets/images/picture4.jpg"></g-image>
         </b-col>
-        <b-col class="col-4 p-0">
+        <b-col class="col-4 px-1 px-md-2">
           <g-image class="w-100" src="~/assets/images/picture5.jpg"></g-image>
         </b-col>
-        <b-col class="col-4 p-0">
+        <b-col class="col-4 px-1 px-md-2">
           <g-image class="w-100" src="~/assets/images/picture6.jpg"></g-image>
         </b-col>
       </b-row>
