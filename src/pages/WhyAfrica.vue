@@ -6,14 +6,14 @@
 
     <div class="content mt-5 overflow-hidden">
       <b-row>
-        <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture1-b.jpg"></g-image>
+        <b-col class="col-4 px-1 px-md-2">
+          <g-image class="w-100" src="~/assets/images/picture3-c.jpg"></g-image>
         </b-col>
-        <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture3-b.jpg"></g-image>
+        <b-col class="col-4 px-1 px-md-2">
+          <g-image class="w-100" src="~/assets/images/picture2-c.jpg"></g-image>
         </b-col>
-        <b-col class="col-4 p-0">
-          <g-image class="w-100" src="~/assets/images/picture2-b.jpg"></g-image>
+        <b-col class="col-4 px-1 px-md-2">
+          <g-image class="w-100" src="~/assets/images/picture1-c.jpg"></g-image>
         </b-col>
       </b-row>
 
