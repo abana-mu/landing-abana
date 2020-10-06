@@ -1,4 +1,4 @@
-
+<!--
 
 <template>
   <Layout>
@@ -21,7 +21,7 @@ query{
 }
 </page-query>
 
-
+-->
 <script>
 export default {
   metaInfo: {
