@@ -470,6 +470,115 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Content'
+            name: content
+            widget: 'object'
+            fields:
+              - label: 'Solutions'
+                name: solutions
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Elements'
+                    name: elements
+                    widget: 'object'
+                    fields:
+                      - label: 'Discover Africa'
+                        name: discover
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
+                      - label: 'Transparency'
+                        name: transparency
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
+              - label: 'Sustainability'
+                name: sustainability
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Elements'
+                    name: elements
+                    widget: 'object'
+                    fields:
+                      - label: 'Value'
+                        name: value
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"
+                      - label: 'Materials'
+                        name: materials
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"    
+                      - label: 'Process'
+                        name: process
+                        widget: 'object'
+                        fields:
+                          - { label: 'Title', name: 'title', widget: 'string' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                          - label: "Page link"
+                            name: page
+                            required: false
+                            widget: "select"
+                            options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                            hint: "Index is the home page"   
+              - label: 'Commitment'
+                name: commitment
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', required: false, name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
+                  - { label: 'Link', name: 'link', required: false, widget: 'string' }
+                  - label: "Page link"
+                    name: page
+                    required: false
+                    widget: "select"
+                    options: ["about","contact","ecommerce","garment-makers","index","input-suppliers","matching-marketplace","pricing","product-buyers","service-providers","sourcing-buyers","supply-chain","sustainability","why-africa"]
+                    hint: "Index is the home page"
 
       - label: 'Contact Us'
         name: 'contact'
