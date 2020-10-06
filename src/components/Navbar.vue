@@ -295,11 +295,20 @@
               <b-icon icon="arrow-right-short" class="float-right" />
             </div>
 
+            <!--
             <div class="sidebar-buttons d-flex mt-5 justify-content-center">
               <b-button variant="link" class="title-dark">{{
                 cta.sub
               }}</b-button>
               <b-button variant="primary">{{ cta.main }}</b-button>
+            </div>
+
+            -->
+
+            <div class="sidebar-buttons  mt-5 text-center">
+              <g-link to="/Register/">
+                <b-button variant="primary">Pre-Register</b-button>
+              </g-link>
             </div>
           </div>
 
@@ -613,7 +622,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BNavbar, BNavbarNav } from "bootstrap-vue";
+import { BNavbar, BNavbarNav } from 'bootstrap-vue';
 
 import {
   BIcon,
@@ -622,26 +631,26 @@ import {
   BDropdownHeader,
   BDropdownDivider,
   BIconArrowLeftShort,
-} from "bootstrap-vue";
+} from 'bootstrap-vue';
 
-import Logo from "@/components/compIcons/Logo";
-import Hamburger from "@/components/Hamburger";
-import IMarket from "@/components/compIcons/IMarket";
+import Logo from '@/components/compIcons/Logo';
+import Hamburger from '@/components/Hamburger';
+import IMarket from '@/components/compIcons/IMarket';
 
-import IEcomm from "@/components/compIcons/IEcomm";
-import ISupply from "@/components/compIcons/ISupply";
-import ISource from "@/components/compIcons/ISource";
-import IProduct from "@/components/compIcons/IProduct";
-import IGM from "@/components/compIcons/IGM";
-import IIS from "@/components/compIcons/IIS";
-import ISP from "@/components/compIcons/ISP";
-import IAbout from "@/components/compIcons/IAbout";
-import IPrivacy from "@/components/compIcons/IPrivacy";
-import ITerms from "@/components/compIcons/ITerms";
-import IContact from "@/components/compIcons/IContact";
-import ICareer from "@/components/compIcons/ICareer";
-import IPartnership from "@/components/compIcons/IPartnership";
-import ISustainability from "@/components/compIcons/ISustainability";
+import IEcomm from '@/components/compIcons/IEcomm';
+import ISupply from '@/components/compIcons/ISupply';
+import ISource from '@/components/compIcons/ISource';
+import IProduct from '@/components/compIcons/IProduct';
+import IGM from '@/components/compIcons/IGM';
+import IIS from '@/components/compIcons/IIS';
+import ISP from '@/components/compIcons/ISP';
+import IAbout from '@/components/compIcons/IAbout';
+import IPrivacy from '@/components/compIcons/IPrivacy';
+import ITerms from '@/components/compIcons/ITerms';
+import IContact from '@/components/compIcons/IContact';
+import ICareer from '@/components/compIcons/ICareer';
+import IPartnership from '@/components/compIcons/IPartnership';
+import ISustainability from '@/components/compIcons/ISustainability';
 
 export default {
   components: {
@@ -675,166 +684,166 @@ export default {
     return {
       scrollPosition: null,
       market: {
-        title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities",
+        title: 'Matching Marketplace',
+        subtitle: 'Illuminating sourcing opportunities',
         examples: [
           {
-            title: "DATABASE",
-            example: "Use multiple criteria to find new partners",
+            title: 'DATABASE',
+            example: 'Use multiple criteria to find new partners',
           },
           {
-            title: "MARKETPLACE",
+            title: 'MARKETPLACE',
             example:
-              "Discover a wealth of targeted information and opportunities",
+              'Discover a wealth of targeted information and opportunities',
           },
         ],
       },
       ecom: {
-        title: "E-commerce",
+        title: 'E-commerce',
         subtitle:
-          "Sophisticated products in low MOQs for immediate or quick deliveries",
+          'Sophisticated products in low MOQs for immediate or quick deliveries',
         examples: [
           {
-            title: "Drops",
-            example: "Bi-monthly collections of ready-to-ship styles",
+            title: 'Drops',
+            example: 'Bi-monthly collections of ready-to-ship styles',
           },
           {
-            title: "Brands",
-            example: "Curated list of the best regional brands (coming soon)",
+            title: 'Brands',
+            example: 'Curated list of the best regional brands (coming soon)',
           },
           {
-            title: "Fast Custom",
+            title: 'Fast Custom',
             example:
-              "Order directly from factories in low MOQs & short lead-times (coming soon)",
+              'Order directly from factories in low MOQs & short lead-times (coming soon)',
           },
         ],
       },
       supply: {
-        title: "Supply Chain Solutions",
-        subtitle: "Tailored services to help you grow in the region",
+        title: 'Supply Chain Solutions',
+        subtitle: 'Tailored services to help you grow in the region',
         examples: [
           {
-            title: "Support Services",
-            example: "Quality Assurance, Compliance & Testing",
+            title: 'Support Services',
+            example: 'Quality Assurance, Compliance & Testing',
           },
           {
-            title: "Virtual Supplier",
-            example: "Sample development, merchandising and more...",
+            title: 'Virtual Supplier',
+            example: 'Sample development, merchandising and more...',
           },
           {
-            title: "Advisory",
-            example: "Strategic advice on sourcing from the Indian Ocean",
+            title: 'Advisory',
+            example: 'Strategic advice on sourcing from the Indian Ocean',
           },
           {
-            title: "Online order Tracking",
-            example: "Set up Critical Path dates",
+            title: 'Online order Tracking',
+            example: 'Set up Critical Path dates',
           },
           {
-            title: "Corporate Discounts",
-            example: "Key partners in the region",
+            title: 'Corporate Discounts',
+            example: 'Key partners in the region',
           },
         ],
       },
       source: {
-        title: "Sourcing Buyers",
-        subtitle: "Looking for factories to partner with",
+        title: 'Sourcing Buyers',
+        subtitle: 'Looking for factories to partner with',
         examples: [
           {
-            title: "NEW TO THE REGION",
-            example: "Discover what the region has to offer",
+            title: 'NEW TO THE REGION',
+            example: 'Discover what the region has to offer',
           },
           {
-            title: "CONSOLIDATE YOUR SOURCING",
-            example: "Find more products and suppliers",
+            title: 'CONSOLIDATE YOUR SOURCING',
+            example: 'Find more products and suppliers',
           },
           {
-            title: "EXPLORE NEW POSSIBILITIES",
+            title: 'EXPLORE NEW POSSIBILITIES',
             example:
-              "Connect with material and accessory suppliers in the region",
+              'Connect with material and accessory suppliers in the region',
           },
         ],
       },
       product: {
-        title: "Product Buyers",
-        subtitle: "Looking for high-quality, ready-to-ship styles",
+        title: 'Product Buyers',
+        subtitle: 'Looking for high-quality, ready-to-ship styles',
         examples: [
           {
-            title: "ON TREND – NOW",
+            title: 'ON TREND – NOW',
             example:
-              "Ready-to-ship DROP collections, add your private label, start selling within a week",
+              'Ready-to-ship DROP collections, add your private label, start selling within a week',
           },
           {
-            title: "YOUR PRIVATE LABEL BASICS – FAST",
+            title: 'YOUR PRIVATE LABEL BASICS – FAST',
             example:
-              "Build your order directly with our selection of high-quality suppliers",
+              'Build your order directly with our selection of high-quality suppliers',
           },
           {
-            title: "FIND SPECIAL OFFERS",
+            title: 'FIND SPECIAL OFFERS',
             example:
-              "Stock garments and other opportunities directly from factories",
+              'Stock garments and other opportunities directly from factories',
           },
         ],
       },
       gm: {
-        title: "Garment Makers",
-        subtitle: "FOB & CMT Factories, Textile Producers",
+        title: 'Garment Makers',
+        subtitle: 'FOB & CMT Factories, Textile Producers',
         examples: [
           {
-            title: "FIND NEW BUYERS",
+            title: 'FIND NEW BUYERS',
             example:
-              "Find, connect, message and build relationships with new buyers",
+              'Find, connect, message and build relationships with new buyers',
           },
           {
-            title: "SEIZE ORDER OPPORTUNITIES",
-            example: "View and instantly respond to buyer requests ",
+            title: 'SEIZE ORDER OPPORTUNITIES',
+            example: 'View and instantly respond to buyer requests ',
           },
           {
-            title: "SEE WHAT’S THERE",
+            title: 'SEE WHAT’S THERE',
             example:
-              "Post offers & needs to buyers, other factories, input suppliers and service providers",
+              'Post offers & needs to buyers, other factories, input suppliers and service providers',
           },
         ],
       },
       ip: {
-        title: "Input Suppliers",
-        subtitle: "Accessories, Yarn, Fabric, & Trim Suppliers",
+        title: 'Input Suppliers',
+        subtitle: 'Accessories, Yarn, Fabric, & Trim Suppliers',
         examples: [
           {
-            title: "EXPLORE A NEW MARKET",
+            title: 'EXPLORE A NEW MARKET',
             example:
-              "Find and build relationships with a whole new set of buyers",
+              'Find and build relationships with a whole new set of buyers',
           },
           {
-            title: "UNDERSTAND NEEDS",
+            title: 'UNDERSTAND NEEDS',
             example:
-              "Post offers and needs to buyers, factories, other input suppliers and service providers",
+              'Post offers and needs to buyers, factories, other input suppliers and service providers',
           },
         ],
       },
       sp: {
-        title: "Service Providers",
+        title: 'Service Providers',
         subtitle:
-          "Agents, QC & Compliance, Logistics, Finance Services, Industry Associations",
+          'Agents, QC & Compliance, Logistics, Finance Services, Industry Associations',
         examples: [
           {
-            title: "RESEARCH",
+            title: 'RESEARCH',
             example:
-              "Find, connect and build relationships with platform members",
+              'Find, connect and build relationships with platform members',
           },
           {
-            title: "COMMUNICATE",
-            example: "Constantly update your offers to the platform community",
+            title: 'COMMUNICATE',
+            example: 'Constantly update your offers to the platform community',
           },
           {
-            title: "PROMOTE",
+            title: 'PROMOTE',
             example:
-              "Post listings to highlight and promote new services or offers",
+              'Post listings to highlight and promote new services or offers',
           },
         ],
       },
       cta: {
-        main: "Sign Up",
-        sub: "Log In",
+        main: 'Sign Up',
+        sub: 'Log In',
       },
       hoverPro: false,
       hoverSol: false,
@@ -853,7 +862,7 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener('scroll', this.updateScroll);
   },
 };
 </script>
