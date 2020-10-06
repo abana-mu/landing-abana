@@ -493,6 +493,18 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
 
+      - label: 'Terms'
+        name: 'terms'
+        file: 'src/_settings/terms.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+
   - name: 'Terms and Privacy' # Used in routes, e.g., /admin/collections/blog
     label: 'Terms' # Used in the UI
     folder: '_terms/' # The path to the folder where the documents are stored
