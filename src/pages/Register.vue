@@ -1245,9 +1245,7 @@ export default {
 .custom-control-label {
   cursor: pointer;
 }
-.tabs > :first-child {
-  padding-top: 0;
-}
+
 .nav-tabs {
   background-color: $blue-grey;
   border: none;

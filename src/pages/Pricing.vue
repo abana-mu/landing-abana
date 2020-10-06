@@ -371,9 +371,6 @@ export default {
 }
 
 .tabs > :first-child {
-  //
-
-  padding-top: 10px;
   background-color: white;
   z-index: 10;
 }
