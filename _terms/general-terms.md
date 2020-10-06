@@ -1,5 +1,5 @@
 ---
-title: General Terms and Conditions for the use of the Platform ABANA
+title: General Terms
 subtext: (Version 1.4, updated 05 October 2020)
 ---
 General Terms and Conditions for the use of the Platform ABANA
