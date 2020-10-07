@@ -18,7 +18,12 @@
           <b-col class="contact-card">
             <h4 class="mb-3">Want to talk to an Agent?</h4>
             <p class="mb-3">We will respond as soon as we are online!</p>
-            <b-button variant="primary"> Start Chatting </b-button>
+            <b-button
+              variant="primary"
+              onclick="window.fcWidget.open();window.fcWidget.show();"
+            >
+              Start Chatting
+            </b-button>
           </b-col>
         </b-row>
       </b-container>
