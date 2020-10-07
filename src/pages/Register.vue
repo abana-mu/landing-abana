@@ -637,7 +637,7 @@
                         <label
                           class="form-check-label btn btn-outline-primary"
                           for="inlineRadio1"
-                          >Manufacturer</label
+                          >Garment Maker</label
                         >
                       </div>
                       <div class="form-check">
@@ -651,7 +651,7 @@
                         <label
                           class="form-check-label btn btn-outline-primary"
                           for="inlineRadio2"
-                          >Textile Producer</label
+                          >Input Supplier</label
                         >
                       </div>
                       <div class="form-check">
