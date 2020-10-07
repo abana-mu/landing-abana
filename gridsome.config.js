@@ -49,7 +49,7 @@ chainWebpack: config => {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-156587227-1'
+        id: 'UA-156587227-2'
       }
     },
     {
