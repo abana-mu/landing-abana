@@ -12,7 +12,7 @@
             <h4 class="mb-3">Want to send us an Email?</h4>
             <p class="mb-3">Send us your questions or comments.</p>
             <b-button size="lg" variant="link" class="p-0">
-              help@abana.mu
+              <a href="mailto:help@abana.mu">help@abana.mu</a>
             </b-button>
           </b-col>
           <b-col class="contact-card">
