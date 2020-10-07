@@ -39,6 +39,13 @@ chainWebpack: config => {
 */
 
   plugins: [
+
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-156587227-1'
+      }
+    },
     {
       use: '@gridsome/source-filesystem',
       options: {
@@ -47,6 +54,7 @@ chainWebpack: config => {
         remark: {},
       },
     },
+
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
