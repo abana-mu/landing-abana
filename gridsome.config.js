@@ -40,6 +40,12 @@ chainWebpack: config => {
 
   plugins: [
 
+    'gridsome-plugin-robots-txt',
+
+    {
+      use: '@gridsome/plugin-sitemap',
+    },
+
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
