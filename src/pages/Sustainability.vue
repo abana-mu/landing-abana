@@ -59,15 +59,6 @@
             <g-image :src="Data.content.commitment.image" quality="100" />
           </div>
         </section>
-
-        <section>
-          <h2 class="mt-5 mb-4 text-center">Join us on our adventure!</h2>
-          <div class="text-center mb-5">
-            <g-link to="/Register/">
-              <b-button size="md" variant="primary">Pre-Register Now </b-button>
-            </g-link>
-          </div>
-        </section>
       </div>
     </div>
   </Layout>
