@@ -21,9 +21,8 @@ body {
   color: white;
 }
 
-select,
-option {
-  font-family: $sans-serif;
+select {
+  font-family: revert;
 }
 
 
