@@ -392,38 +392,38 @@
         "subs": [
             {
                 "name": "Basic",
-                "desc": "This describes the basic plan",
+                "desc": "Single User companies",
                 "price3": "$119/mo",
                 "price6": "$109/mo",
                 "price12": "$99/mo",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Profile & e-Showroom",
+                    "Post Listings",
+                    "View Buyer RFQs",
+                    "Search Buyers & Sellers Database"
                 ]
             },
             {
                 "name": "Growth",
-                "desc": "This describes the basic plan",
+                "desc": "Multiple User companies with more marketplace activities",
                 "price3": "$239/mo",
                 "price6": "$219/mo",
                 "price12": "$199/mo",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Multiple Users",
+                    "Marketing & Financial Services"
                 ]
             },
             {
                 "name": "Pro",
-                "desc": "This describes the basic plan",
+                "desc": "Users who want to access all features",
                 "price3": "$349/mo",
                 "price6": "$329/mo",
                 "price12": "$299/mo",
                 "features": [
-                    "feature1",
-                    "feature2",
-                    "feature3"
+                    "Fast Custom",
+                    "Online Critical Path",
+                    "Corporate Discounts"
                 ]
             }
         ],
