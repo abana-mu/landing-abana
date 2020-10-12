@@ -347,7 +347,7 @@
                     {
                         "title": "Marketing Services ",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -363,7 +363,7 @@
                     {
                         "title": "Financial Services",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -371,7 +371,7 @@
                     {
                         "title": "Advisory",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -542,7 +542,7 @@
                     {
                         "title": "Marketing Services ",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -558,7 +558,7 @@
                     {
                         "title": "Financial Services",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
@@ -566,7 +566,7 @@
                     {
                         "title": "Advisory",
                         "plans": {
-                            "basic": true,
+                            "basic": false,
                             "growth": true,
                             "pro": true
                         }
