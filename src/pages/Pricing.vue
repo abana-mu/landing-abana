@@ -231,7 +231,7 @@
               If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
             </b-card-text>
             <b-button href="mailto:arif@abana.mu" variant="outline-primary"
-              >More Information Here</b-button
+              >Get in touch with us</b-button
             >
           </b-card>
 
