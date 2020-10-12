@@ -141,13 +141,12 @@
           </b-card-group>
           <!-- SUPPORT -->
           <b-card class="back-white border-0 mt-3 mb-5 support-creators">
-            <b-card-title>We support independant creators</b-card-title>
+            <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you are a designer, QA or special service provider, become part
-              of the ABANA network.
+              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
             </b-card-text>
-            <b-button href="#" variant="outline-primary"
-              >More Information Here</b-button
+            <b-button href="mailto:arif@abana.mu" variant="outline-primary"
+              >Get in touch with us</b-button
             >
           </b-card>
           <!-- TABLE -->
@@ -227,12 +226,11 @@
 
           <!-- SUPPORT -->
           <b-card class="back-white border-0 mt-3 mb-5 support-creators">
-            <b-card-title>We support independant creators</b-card-title>
+            <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you are a designer, QA or special service provider, become part
-              of the ABANA network.
+              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
             </b-card-text>
-            <b-button href="#" variant="outline-primary"
+            <b-button href="mailto:arif@abana.mu" variant="outline-primary"
               >More Information Here</b-button
             >
           </b-card>
