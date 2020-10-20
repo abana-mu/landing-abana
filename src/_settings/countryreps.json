@@ -2,11 +2,19 @@
   "reps": [
     {
       "name": "Alexander Currimjee",
-      "description": "Location: London, UK\n\nEmail: [alex.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +44 (0) 123-45678"
+      "description": "Location: London, UK\n\nEmail: [alex.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +44 (0) 123-45678",
+      "location": "London, UK",
+      "coverage": "EU+UK",
+      "number": "+447708-900104",
+      "email": "alex.currimjee@gmail.com"
     },
     {
       "name": "Naim Currimjee",
-      "description": "Location: Portland, OR, USA\n\nEmail: [naim.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +1 123-456-7890"
+      "description": "Location: Portland, OR, USA\n\nEmail: [naim.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +1 123-456-7890",
+      "location": "Portland, OR, USA",
+      "coverage": "USA",
+      "number": "+1123-456-7890",
+      "email": "test@gmail.com"
     }
   ],
   "header": {
