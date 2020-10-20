@@ -1,0 +1,17 @@
+{
+  "reps": [
+    {
+      "name": "Alexander Currimjee",
+      "description": "Location: London, UK\n\nEmail: [alex.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +44 (0) 123-45678"
+    },
+    {
+      "name": "Naim Currimjee",
+      "description": "Location: Portland, OR, USA\n\nEmail: [naim.currimjee@gmail.com](mailto:alex.currimjee@gmail.com)\n\nPhone Number: +1 123-456-7890"
+    }
+  ],
+  "header": {
+    "title": "Country Representatives",
+    "subtext": "Find and contact our country representatives ",
+    "image": "/uploads/world-map-with-2-pins.png"
+  }
+}
