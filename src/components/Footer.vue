@@ -30,7 +30,7 @@
             ><div class="footer-title">Resources</div>
             <div class="d-flex flex-column text-small">
               <g-link to="/privacy">Privacy Policy</g-link>
-              <g-link to="/terms">Terms & Conditions</g-link>
+              <g-link to="/terms-conditions/">Terms & Conditions</g-link>
             </div></b-col
           >
         </b-col>
@@ -44,8 +44,8 @@
 
 <!-- SCRIPTS -->
 <script>
-import Data from "~/_settings/landing.json";
-import Logo from "~/components/compIcons/Logo";
+import Data from '~/_settings/landing.json';
+import Logo from '~/components/compIcons/Logo';
 
 export default {
   components: { Logo },
@@ -62,7 +62,7 @@ export default {
 </page-query>
 
 <!-- STYLING -->
-<style lang='scss'>
+<style lang="scss">
 footer {
   padding: 3rem 0rem 1rem 0rem;
   overflow: hidden;
