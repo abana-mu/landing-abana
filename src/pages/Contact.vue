@@ -1,12 +1,12 @@
 <template>
-  <Layout>
+  <Layout class="one-section-tight-layout">
     <div class="height-restriction">
       <div class="header">
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
 
-      <b-container>
+      <div class="back-grey">
         <b-row class="container-card">
           <b-col class="contact-card">
             <h4 class="mb-3">Want to send us an Email?</h4>
@@ -26,17 +26,17 @@
             </b-button>
           </b-col>
         </b-row>
-      </b-container>
+      </div>
     </div>
   </Layout>
 </template>
 
 <script>
-import Data from "~/_settings/contact.json";
+import Data from '~/_settings/contact.json';
 
 export default {
   metaInfo: {
-    title: "Contact Us",
+    title: 'Contact Us',
   },
   data() {
     return {
@@ -45,7 +45,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss">
 .height-restriction {
@@ -65,9 +64,9 @@ export default {
   max-width: 20rem;
   height: 20rem;
   padding: 4.5rem 4rem;
-  margin: 2rem 1rem 4rem 1rem;
+  margin: 3rem 1rem 3rem 1rem;
 
-  background-color: $grey-light;
+  background-color: $white;
   border-radius: 6px;
 }
 </style>

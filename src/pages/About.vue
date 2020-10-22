@@ -1,12 +1,46 @@
 <template>
   <Layout>
     <div class="header">
-      <div class="logo">
-        <Logo />
-      </div>
       <h1 class="title">{{ Data.header.title }}</h1>
       <p class="subtitle">{{ Data.header.subtext }}</p>
     </div>
+    <String2 />
+    <section>
+      <b-container fluid>
+        <b-row class="about-row">
+          <b-col cols="12" lg>
+            <div class="about-image-container">
+              <g-image immediate src="~/assets/images/arif.png" quality="100" />
+            </div>
+          </b-col>
+          <b-col cols="12" lg>
+            <h2 class="mb-3">
+              Arif Currimjee - <span class="red">Founder</span>
+            </h2>
+            <vue-simple-markdown
+              :source="Data.arif"
+              class="about-text"
+            ></vue-simple-markdown>
+          </b-col>
+        </b-row>
+        <String1 />
+        <b-row class="about-row">
+          <b-col cols="12" lg order-lg="1">
+            <div class="about-image-container">
+              <g-image immediate src="~/assets/images/dirk.png" quality="100" />
+            </div>
+          </b-col>
+          <b-col cols="12" lg>
+            <h2 class="mb-3">Dirk Robbens - <span class="blue">CEO</span></h2>
+            <vue-simple-markdown
+              :source="Data.dirk"
+              class="about-text"
+            ></vue-simple-markdown
+          ></b-col>
+        </b-row>
+      </b-container>
+    </section>
+
     <section
       v-for="(row, index) in Data.elements"
       :key="index"
@@ -28,7 +62,7 @@
     </section>
 
     <div class="image-container">
-      <g-image immediate src="~/assets/images/cdm.jpg" quality="100" />
+      <g-image src="~/assets/images/cdm.jpg" quality="100" />
     </div>
 
     <section>
@@ -43,15 +77,19 @@
 </template>
 
 <script>
-import Data from "~/_settings/aboutus.json";
-import Logo from "@/components/compIcons/Logo";
+import Data from '~/_settings/aboutus.json';
+import Logo from '@/components/compIcons/Logo';
+import String2 from '~/components/compIcons/String2';
+import String1 from '~/components/compIcons/String1';
 
 export default {
   metaInfo: {
-    title: "About Us",
+    title: 'About Us',
   },
   components: {
     Logo,
+    String2,
+    String1,
   },
   data() {
     return {
@@ -61,7 +99,37 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  img {
+    width: 250px;
+    height: 250px;
+    @media (min-width: $break-m) {
+      width: 300px;
+      height: 300px;
+    }
+    @media (min-width: $break-l) {
+      width: 75%;
+      height: 75%;
+    }
+  }
+}
+
+.red {
+  color: $primary;
+}
+
+.blue {
+  color: #607aff;
+}
+
+.about-row {
+  margin: 3rem 0;
+}
+
 .about-container {
   padding: 0 1rem;
   margin: 10rem auto 5rem auto;
@@ -88,32 +156,9 @@ export default {
   }
 }
 
-.header {
-  overflow-x: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px auto;
-  width: 100%;
-}
-
 .about-text {
   font-size: 1rem;
   line-height: 28px;
   letter-spacing: 0.6px;
-}
-
-.logo {
-  width: 115%;
-  fill: $blue-grey;
-  position: absolute;
-  opacity: 0.05;
-  z-index: -1;
-
-  @media (min-width: $break-collapse) {
-    width: 75%;
-  }
 }
 </style>

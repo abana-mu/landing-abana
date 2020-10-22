@@ -33,7 +33,7 @@ h4,
 h5,
 h6 {
   color: $title-dark;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -41,7 +41,6 @@ h1 {
   // -576
   font-size: $f38;
   letter-spacing: 1.2px;
-  font-weight: 500;
 
   // 768-1440
   @media (min-width: $break-m) {
@@ -50,7 +49,7 @@ h1 {
 
   // 1440+
   @media (min-width: $break-xxl) {
-    font-size: $f42;
+    font-size: $f46;
   }
 }
 
@@ -67,7 +66,7 @@ h2 {
 
   // 1440+
   @media (min-width: $break-xxl) {
-    font-size: $f38;
+    font-size: $f36;
   }
 
 }
