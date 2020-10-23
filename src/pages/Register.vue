@@ -215,7 +215,7 @@
                     </b-form-input>
                   </div>
                   <div class="form-line">
-                    <label for="MERGE5">Your Interests</label>
+                    <label for="MERGE5">Your Speciality</label>
                     <b-form-select
                       placeholder="Select your Interest"
                       id="MERGE5"
