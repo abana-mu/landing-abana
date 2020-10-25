@@ -1,586 +1,576 @@
 {
-    "buyer": {
-        "subs": [
-            {
-                "name": "Member",
-                "desc": "Users only interested in E-Commerce",
-                "price3": "$0",
-                "price6": "$0",
-                "price12": "$0",
-                "features": [
-                    "Bi-monthly Drop Collections",
-                    "QC & Compliance on purchases"
-                ]
-            },
-            {
-                "name": "Basic",
-                "desc": "Users interested in trying the Database Search",
-                "price3": "$65/mo",
-                "price6": "$59/mo",
-                "price12": "$49/mo",
-                "features": [
-                    "Basic Profile",
-                    "Basic Search",
-                    "Post RFIs & RFQs"
-                ]
-            },
-            {
-                "name": "Pro",
-                "desc": "Users who want access to all features",
-                "price3": "$349/mo",
-                "price6": "$329/mo",
-                "price12": "$299/mo",
-                "features": [
-                    "Advanced Profile & Search",
-                    "Fast Custom",
-                    "Advanced Services"
-                ]
-            }
-        ],
-        "categories": [
-            {
-                "title": "General",
-                "features": [
-                    {
-                        "title": "Users",
-                        "plans": {
-                            "member": "1",
-                            "basic": "1",
-                            "pro": "5"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Database",
-                "features": [
-                    {
-                        "title": "Basic Profile",
-                        "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Showroom",
-                        "plans": {
-                            "member": false,
-                            "basic": "8",
-                            "pro": "24"
-                        }
-                    },
-                    {
-                        "title": "Search Supplier by Basic Criteria",
-                        "plans": {
-                            "member": false,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advanced Search",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Marketplace",
-                "features": [
-                    {
-                        "title": "Post RFIs (monthly)",
-                        "plans": {
-                            "member": false,
-                            "basic": "30",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "Post RFQs (monthly)",
-                        "plans": {
-                            "member": false,
-                            "basic": "10",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "See Listing",
-                        "plans": {
-                            "member": false,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Be Notified",
-                        "plans": {
-                            "member": false,
-                            "basic": true,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Ecommerce",
-                "features": [
-                    {
-                        "title": "Access Drops",
-                        "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Access Brands Store",
-                        "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Fast Custom",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Support Services",
-                "features": [
-                    {
-                        "title": "Basic Services (QC, Compliance, Order Follow-up)",
-                        "plans": {
-                            "member": true,
-                            "basic": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Online Order Follow-up - Critical path (coming soon)",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advisory",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Joint Purchasing & E-commerce Discount",
-                        "plans": {
-                            "member": false,
-                            "basic": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            }
+  "buyer": {
+    "subs": [
+      {
+        "name": "Member",
+        "desc": "Users only interested in E-Commerce",
+        "price3": "$0",
+        "price6": "$0",
+        "price12": "$0",
+        "features": [
+          "Bi-monthly Drop Collections",
+          "QC & Compliance on purchases"
         ]
-    },
-    "supplier": {
-        "subs": [
-            {
-                "name": "Basic",
-                "desc": "Single User companies",
-                "price3": "$119/mo",
-                "price6": "$109/mo",
-                "price12": "$99/mo",
-                "features": [
-                    "Profile & e-Showroom",
-                    "Post Listings",
-                    "View Buyer RFQs",
-                    "Search Buyers & Sellers Database"
-                ]
-            },
-            {
-                "name": "Growth",
-                "desc": "Multiple User companies with more marketplace activities",
-                "price3": "$239/mo",
-                "price6": "$219/mo",
-                "price12": "$199/mo",
-                "features": [
-                    "Multiple Users",
-                    "Marketing & Financial Services"
-                ]
-            },
-            {
-                "name": "Pro",
-                "desc": "Users who want to access all features",
-                "price3": "$349/mo",
-                "price6": "$329/mo",
-                "price12": "$299/mo",
-                "features": [
-                    "Fast Custom",
-                    "Online Critical Path",
-                    "Corporate Discounts"
-                ]
-            }
-        ],
-        "categories": [
-            {
-                "title": "General",
-                "features": [
-                    {
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "growth": "3",
-                            "pro": "5"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Database",
-                "features": [
-                    {
-                        "title": "Basic Profile",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Showroom",
-                        "plans": {
-                            "basic": "8",
-                            "growth": "16",
-                            "pro": "24"
-                        }
-                    },
-                    {
-                        "title": "Search Buyers & Suppliers",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Marketplace",
-                "features": [
-                    {
-                        "title": "Post Listings (monthly)",
-                        "plans": {
-                            "basic": "15",
-                            "growth": "30",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "Number of Contacts (Total)",
-                        "plans": {
-                            "basic": "15",
-                            "growth": "30",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "See Listing",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "View RFQs",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Ecommerce",
-                "features": [
-                    {
-                        "title": "Access Drops",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Access Brands Store",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Fast Custom",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Support Services",
-                "features": [
-                    {
-                        "title": "Marketing Services ",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Online Order Follow-Up - Critical path (coming soon)",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Financial Services",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advisory",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Joint Purchasing Discounts",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            }
+      },
+      {
+        "name": "Basic",
+        "desc": "Users interested in trying the Database Search",
+        "price3": "$65/mo",
+        "price6": "$59/mo",
+        "price12": "$49/mo",
+        "features": ["Basic Profile", "Basic Search", "Post RFIs & RFQs"]
+      },
+      {
+        "name": "Pro",
+        "desc": "Users who want access to all features",
+        "price3": "$349/mo",
+        "price6": "$329/mo",
+        "price12": "$299/mo",
+        "features": [
+          "Advanced Profile & Search",
+          "Fast Custom",
+          "Advanced Services"
         ]
-    },
-    "service": {
-        "subs": [
-            {
-                "name": "Basic",
-                "desc": "Single User companies",
-                "price3": "$119/mo",
-                "price6": "$109/mo",
-                "price12": "$99/mo",
-                "features": [
-                    "Profile & e-Showroom",
-                    "Post Listings",
-                    "View Buyer RFQs",
-                    "Search Buyers & Sellers Database"
-                ]
-            },
-            {
-                "name": "Growth",
-                "desc": "Multiple User companies with more marketplace activities",
-                "price3": "$239/mo",
-                "price6": "$219/mo",
-                "price12": "$199/mo",
-                "features": [
-                    "Multiple Users",
-                    "Marketing & Financial Services"
-                ]
-            },
-            {
-                "name": "Pro",
-                "desc": "Users who want to access all features",
-                "price3": "$349/mo",
-                "price6": "$329/mo",
-                "price12": "$299/mo",
-                "features": [
-                    "Fast Custom",
-                    "Online Critical Path",
-                    "Corporate Discounts"
-                ]
+      }
+    ],
+    "categories": [
+      {
+        "title": "General",
+        "features": [
+          {
+            "title": "Users",
+            "plans": {
+              "member": "1",
+              "basic": "1",
+              "pro": "5"
             }
-        ],
-        "categories": [
-            {
-                "title": "General",
-                "features": [
-                    {
-                        "title": "Users",
-                        "plans": {
-                            "basic": "1",
-                            "growth": "3",
-                            "pro": "5"
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Database",
-                "features": [
-                    {
-                        "title": "Basic Profile",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Showroom",
-                        "plans": {
-                            "basic": "8",
-                            "growth": "16",
-                            "pro": "24"
-                        }
-                    },
-                    {
-                        "title": "Search Buyers & Suppliers",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Marketplace",
-                "features": [
-                    {
-                        "title": "Post Listings (monthly)",
-                        "plans": {
-                            "basic": "15",
-                            "growth": "30",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "Number of Contacts (Total)",
-                        "plans": {
-                            "basic": "15",
-                            "growth": "30",
-                            "pro": "Unlimited"
-                        }
-                    },
-                    {
-                        "title": "See Listing",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "View RFQs",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Ecommerce",
-                "features": [
-                    {
-                        "title": "Access Drops",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Access Brands Store",
-                        "plans": {
-                            "basic": true,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Fast Custom",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            },
-            {
-                "title": "Support Services",
-                "features": [
-                    {
-                        "title": "Marketing Services ",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Online Order Follow-Up - Critical path (coming soon)",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Financial Services",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Advisory",
-                        "plans": {
-                            "basic": false,
-                            "growth": true,
-                            "pro": true
-                        }
-                    },
-                    {
-                        "title": "Joint Purchasing Discounts",
-                        "plans": {
-                            "basic": false,
-                            "growth": false,
-                            "pro": true
-                        }
-                    }
-                ]
-            }
+          }
         ]
-    }
+      },
+      {
+        "title": "Database",
+        "features": [
+          {
+            "title": "Basic Profile",
+            "plans": {
+              "member": true,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Showroom",
+            "plans": {
+              "member": false,
+              "basic": "8",
+              "pro": "24"
+            }
+          },
+          {
+            "title": "Search Supplier by Basic Criteria",
+            "plans": {
+              "member": false,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Advanced Search",
+            "plans": {
+              "member": false,
+              "basic": false,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Marketplace",
+        "features": [
+          {
+            "title": "Post RFIs (monthly)",
+            "plans": {
+              "member": false,
+              "basic": "30",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "Post RFQs (monthly)",
+            "plans": {
+              "member": false,
+              "basic": "10",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "See Listing",
+            "plans": {
+              "member": false,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Be Notified",
+            "plans": {
+              "member": false,
+              "basic": true,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce",
+        "features": [
+          {
+            "title": "Access Drops",
+            "plans": {
+              "member": true,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Access Brands Store",
+            "plans": {
+              "member": true,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Fast Custom",
+            "plans": {
+              "member": false,
+              "basic": false,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Support Services",
+        "features": [
+          {
+            "title": "Basic Services (QC, Compliance, Order Follow-up)",
+            "plans": {
+              "member": true,
+              "basic": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Online Order Follow-up - Critical path (coming soon)",
+            "plans": {
+              "member": false,
+              "basic": false,
+              "pro": true
+            }
+          },
+          {
+            "title": "Advisory",
+            "plans": {
+              "member": false,
+              "basic": false,
+              "pro": true
+            }
+          },
+          {
+            "title": "Joint Purchasing & E-commerce Discount",
+            "plans": {
+              "member": false,
+              "basic": false,
+              "pro": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "supplier": {
+    "subs": [
+      {
+        "name": "Basic",
+        "desc": "Single User companies",
+        "price3": "$119/mo",
+        "price6": "$109/mo",
+        "price12": "$99/mo",
+        "features": [
+          "Profile & e-Showroom",
+          "Post Listings",
+          "View Buyer RFQs",
+          "Search Buyers & Sellers Database"
+        ]
+      },
+      {
+        "name": "Growth",
+        "desc": "Multiple User companies with more marketplace activities",
+        "price3": "$239/mo",
+        "price6": "$219/mo",
+        "price12": "$199/mo",
+        "features": ["Multiple Users", "Marketing & Financial Services"]
+      },
+      {
+        "name": "Pro",
+        "desc": "Users who want to access all features",
+        "price3": "$349/mo",
+        "price6": "$329/mo",
+        "price12": "$299/mo",
+        "features": [
+          "Fast Custom",
+          "Online Critical Path",
+          "Corporate Discounts"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "title": "General",
+        "features": [
+          {
+            "title": "Users",
+            "plans": {
+              "basic": "1",
+              "growth": "3",
+              "pro": "5"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "features": [
+          {
+            "title": "Basic Profile",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Showroom",
+            "plans": {
+              "basic": "8",
+              "growth": "16",
+              "pro": "24"
+            }
+          },
+          {
+            "title": "Search Buyers & Suppliers",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Marketplace",
+        "features": [
+          {
+            "title": "Post Listings (monthly)",
+            "plans": {
+              "basic": "15",
+              "growth": "30",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "Number of Contacts (Total)",
+            "plans": {
+              "basic": "15",
+              "growth": "30",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "See Listing",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "View RFQs",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce",
+        "features": [
+          {
+            "title": "Access Drops",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Access Brands Store",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Fast Custom",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Support Services",
+        "features": [
+          {
+            "title": "Marketing Services ",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Online Order Follow-Up - Critical path (coming soon)",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          },
+          {
+            "title": "Financial Services",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Advisory",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Joint Purchasing Discounts",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "service": {
+    "subs": [
+      {
+        "name": "Basic",
+        "desc": "Single User companies",
+        "price3": "$119/mo",
+        "price6": "$109/mo",
+        "price12": "$99/mo",
+        "features": [
+          "Profile & e-Showroom",
+          "Post Listings",
+          "View Buyer RFQs",
+          "Search Buyers & Sellers Database"
+        ]
+      },
+      {
+        "name": "Growth",
+        "desc": "Multiple User companies with more marketplace activities",
+        "price3": "$239/mo",
+        "price6": "$219/mo",
+        "price12": "$199/mo",
+        "features": ["Multiple Users", "Marketing & Financial Services"]
+      },
+      {
+        "name": "Pro",
+        "desc": "Users who want to access all features",
+        "price3": "$349/mo",
+        "price6": "$329/mo",
+        "price12": "$299/mo",
+        "features": [
+          "Fast Custom",
+          "Online Critical Path",
+          "Corporate Discounts"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "title": "General",
+        "features": [
+          {
+            "title": "Users",
+            "plans": {
+              "basic": "1",
+              "growth": "3",
+              "pro": "5"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "features": [
+          {
+            "title": "Basic Profile",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Showroom",
+            "plans": {
+              "basic": "8",
+              "growth": "16",
+              "pro": "24"
+            }
+          },
+          {
+            "title": "Search Buyers & Suppliers",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Marketplace",
+        "features": [
+          {
+            "title": "Post Listings (monthly)",
+            "plans": {
+              "basic": "15",
+              "growth": "30",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "Number of Contacts (Total)",
+            "plans": {
+              "basic": "15",
+              "growth": "30",
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "See Listing",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "View RFQs",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce",
+        "features": [
+          {
+            "title": "Access Drops",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Access Brands Store",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Fast Custom",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          }
+        ]
+      },
+      {
+        "title": "Support Services",
+        "features": [
+          {
+            "title": "Marketing Services ",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Online Order Follow-Up - Critical path (coming soon)",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          },
+          {
+            "title": "Financial Services",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Advisory",
+            "plans": {
+              "basic": true,
+              "growth": true,
+              "pro": true
+            }
+          },
+          {
+            "title": "Joint Purchasing Discounts",
+            "plans": {
+              "basic": false,
+              "growth": false,
+              "pro": true
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
