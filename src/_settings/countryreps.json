@@ -1,17 +1,11 @@
 {
-  "reps": [{
-      "name": "Alexander Currimjee",
-      "location": "London, UK",
-      "coverage": "EU+UK",
-      "number": "+447708-900104",
-      "email": "alex.currimjee@gmail.com"
-    },
+  "reps": [
     {
-      "name": "Naim Currimjee",
-      "location": "Portland, OR, USA",
-      "coverage": "USA",
-      "number": "+1123-456-7890",
-      "email": "test@gmail.com"
+      "name": "Sabrina Tomassoli",
+      "location": "Prato, Italy",
+      "coverage": "Italy",
+      "number": "+39 339 7544748",
+      "email": "sabrina.tomassoli@abana.mu"
     }
   ],
   "header": {
