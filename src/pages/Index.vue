@@ -42,9 +42,14 @@
     </div>
     <DiagonalBreaker colorTop="grey" colorBottom="white" />
     <!-- FLOW -->
-    <div class>
+    <div>
       <FlowGraph :data="Data.flow" />
     </div>
+    
+    <div>
+    <DropGraph :data="Data.flow" />
+    </div>
+
   </Layout>
 </template>
 
@@ -69,6 +74,8 @@ import IEnv from "@/components/compIcons/IEnv";
 import ICheck from "@/components/compIcons/ICheck";
 import ICal from "@/components/compIcons/ICal";
 import FlowGraph from "~/components/FlowGraph";
+import DropGraph from "~/components/DropGraph";
+
 
 export default {
   metaInfo: {
@@ -82,6 +89,7 @@ export default {
     box3: IEnv,
     box4: ICal,
     FlowGraph,
+    DropGraph,
   },
   data() {
     return {

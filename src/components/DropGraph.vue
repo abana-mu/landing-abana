@@ -2,6 +2,13 @@
 <template>
   <b-container fluid class="my-5">
     <b-row>
+      
+      <b-col>
+        <div class="svg-container-drop">
+          <Drop />
+        </div>
+      </b-col>
+
       <b-col
         cols="12"
         lg="6"
@@ -16,22 +23,18 @@
           <b-icon-arrow-right-short class="arrow-anim" />
         </g-link>
       </b-col>
-      <b-col>
-        <div class="svg-container">
-          <Flow /></div
-      ></b-col>
     </b-row>
   </b-container>
 </template>
 
 <!-- SCRIPTS -->
 <script>
-import Flow from "~/components/compIcons/Flow";
+import Drop from "~/components/compIcons/Drop";
 import { BIcon, BIconArrowRightShort } from "bootstrap-vue";
 
 export default {
   components: {
-    Flow,
+    Drop,
     BIcon,
     BIconArrowRightShort,
   },
@@ -51,7 +54,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 3rem;
   .title,
   .subtitle {
     margin: 0;
@@ -59,19 +61,22 @@ export default {
   }
 }
 
-.svg-container {
-  width: 100%;
+.svg-container-drop {
+  width: 60%;
+  
   margin: 0 auto;
   margin-bottom: 2rem;
 
   @media (min-width: $break-s) {
-    width: 80%;
+    width: 50%;
   }
   @media (min-width: $break-collapse) {
-    width: 100%;
+    width: 50%;
     margin-bottom: 0rem;
   }
-
+  @media (min-width: $break-l) {
+    width: 60%;
+  }
 }
 
 .col-link {

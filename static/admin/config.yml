@@ -97,6 +97,42 @@ collections:
                   ]
                 hint: "Index is the home page"
 
+          - label: "Drop"
+            name: drop
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtext", widget: "text" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  required: false,
+                  widget: "string",
+                }
+              - label: "Page link"
+                name: page
+                required: false
+                widget: "select"
+                options:
+                  [
+                    "about",
+                    "contact",
+                    "ecommerce",
+                    "garment-makers",
+                    "index",
+                    "input-suppliers",
+                    "matching-marketplace",
+                    "pricing",
+                    "product-buyers",
+                    "service-providers",
+                    "sourcing-buyers",
+                    "supply-chain",
+                    "sustainability",
+                    "why-africa",
+                  ]
+                hint: "Index is the home page"
+
+
       - label: "Matching Marketplace"
         name: "matching"
         file: "src/_settings/matching.json"
