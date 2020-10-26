@@ -42,12 +42,12 @@
     </div>
     <DiagonalBreaker colorTop="grey" colorBottom="white" />
     <!-- FLOW -->
-    <div>
+    <div class="p-5">
       <FlowGraph :data="Data.flow" />
     </div>
-    
-    <div>
-    <DropGraph :data="Data.flow" />
+
+    <div class="p-5 mb-5">
+    <DropGraph :data="Data.drop" />
     </div>
 
   </Layout>
