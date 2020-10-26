@@ -871,6 +871,12 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
+          - label: "Arif"
+            name: arif
+            widget: "markdown"
+          - label: "Dirk"
+            name: dirk
+            widget: "markdown"
           - label: "Elements"
             name: elements
             widget: "object"
@@ -1193,9 +1199,9 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
 
-      - label: "Partner"
-        name: "partner"
-        file: "src/_settings/partner.json"
+      - label: "Country Reps"
+        name: "countryreps"
+        file: "src/_settings/countryreps.json"
         fields:
           - label: "Header"
             name: header
@@ -1203,6 +1209,31 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: "Country Reps"
+            name: reps
+            label_singular: "Country Rep"
+            widget: list
+            fields:
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
 
       - label: "Terms"
         name: "terms"

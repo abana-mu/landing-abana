@@ -1,0 +1,16 @@
+{
+  "reps": [
+    {
+      "name": "Sabrina Tomassoli",
+      "location": "Prato, Italy",
+      "coverage": "Italy",
+      "number": "+39 339 7544748",
+      "email": "sabrina.tomassoli@abana.mu"
+    }
+  ],
+  "header": {
+    "title": "Country Representatives",
+    "subtext": "Find and contact our country representatives ",
+    "image": "/uploads/world-map-with-2-pins.png"
+  }
+}

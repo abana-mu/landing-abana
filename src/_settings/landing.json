@@ -2,7 +2,7 @@
   "header": {
     "title": "Africa's Textile & Apparel Industry, at your fingertips",
     "subtext": "Discover the on-line Sourcing & E-Commerce Platform that connects the Indian Ocean & African Textile & Apparel industry to the World.",
-    "cta": "Start your journey with us"
+    "cta": "Join Us"
   },
   "boxes": {
     "header": {
@@ -30,8 +30,14 @@
   },
   "flow": {
     "title": "Connecting all modern industry players",
-    "subtext": "This industry is renowned for its lack of transparency. ABANA makes is possible for modern players to use modern solutions to connect and partner painlessly.  ",
+    "subtext": "This industry is known for its lack of transparency. ABANA makes is possible for modern players to use modern solutions to connect and partner painlessly.  ",
     "link": "See our matching solutions",
     "page": "matching-marketplace"
+  },
+  "drop": {
+    "title": "Low MOQs, Short Lead Time",
+    "subtext": "Purchase from our E-commerce to get new styles in your shops quicker, without taking the risk of purchasing large quantities. Choose between a curated collection of monthly Drops or order pre-developed essentials in a wide-array of colours and fabrics (fast-custom feature coming soon).",
+    "link": "See our E-commerce solutions",
+    "page": "ecommerce"
   }
 }
