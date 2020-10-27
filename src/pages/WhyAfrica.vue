@@ -7,13 +7,25 @@
     <div class="content mt-5 overflow-hidden">
       <b-row>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture3-c.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture3-c.jpg"
+          ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture2-c.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture2-c.jpg"
+          ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture1-c.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture1-c.jpg"
+          ></g-image>
         </b-col>
       </b-row>
 
@@ -46,12 +58,10 @@
   </Layout>
 </template>
 
-
-
 <script>
-import Data from "~/_settings/whyafrica.json";
-import TwoCol from "~/components/PageElementTwoCol";
-import OneCol from "~/components/PageElementOneCol";
+import Data from '~/_settings/whyafrica.json';
+import TwoCol from '~/components/PageElementTwoCol';
+import OneCol from '~/components/PageElementOneCol';
 
 export default {
   components: {
@@ -59,7 +69,14 @@ export default {
     OneCol,
   },
   metaInfo: {
-    title: "Why Africa",
+    title: 'Why Africa',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   data() {
     return {
@@ -98,14 +115,14 @@ export default {
 }
 
 #economic .image {
-  background-image: url("~@/assets/images/picture1-b.jpg");
+  background-image: url('~@/assets/images/picture1-b.jpg');
 }
 
 #social .image {
-  background-image: url("~@/assets/images/picture3-b.jpg");
+  background-image: url('~@/assets/images/picture3-b.jpg');
 }
 
 #environmental .image {
-  background-image: url("~@/assets/images/picture2-b.jpg");
+  background-image: url('~@/assets/images/picture2-b.jpg');
 }
 </style>

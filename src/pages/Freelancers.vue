@@ -36,6 +36,13 @@ import Data from '~/_settings/freelancers.json';
 export default {
   metaInfo: {
     title: 'Freelancers',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   data() {
     return {

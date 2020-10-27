@@ -34,7 +34,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title", "subtext", "cta"],
+  props: ['title', 'subtext', 'cta'],
 };
 </script>
 
@@ -67,10 +67,10 @@ export default {
 
   //XLarge 1200-1440+
   @media (min-width: $break-xl) {
-    max-width: 930px;
+    max-width: 900px;
   }
   @media (min-width: $break-xxl) {
-    max-width: 975px;
+    max-width: 1000px;
     font-size: $f56;
   }
 }

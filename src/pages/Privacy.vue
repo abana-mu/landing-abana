@@ -13,10 +13,8 @@
   </Layout>
 </template>
 
-
-
 <script>
-import Data from "~/_settings/privacy.json";
+import Data from '~/_settings/privacy.json';
 export default {
   data() {
     return {
@@ -24,7 +22,14 @@ export default {
     };
   },
   metaInfo: {
-    title: "Privacy",
+    title: 'Privacy',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
 };
 </script>

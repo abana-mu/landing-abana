@@ -54,6 +54,13 @@ import String2 from '~/components/compIcons/String2';
 export default {
   metaInfo: {
     title: 'Country Reps',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   components: {
     RepCard,

@@ -7,13 +7,25 @@
     <div class="content mt-5 overflow-hidden">
       <b-row>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture7.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture7.jpg"
+          ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture9.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture9.jpg"
+          ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
-          <g-image class="w-100" immediate src="~/assets/images/picture8.jpg"></g-image>
+          <g-image
+            class="w-100"
+            immediate
+            src="~/assets/images/picture8.jpg"
+          ></g-image>
         </b-col>
       </b-row>
 
@@ -64,14 +76,12 @@
   </Layout>
 </template>
 
-
-
 <script>
-import Data from "~/_settings/sustainability.json";
-import TwoCol from "~/components/PageElementTwoCol";
-import OneCol from "~/components/PageElementOneCol";
-import String1 from "~/components/compIcons/String1";
-import String2 from "~/components/compIcons/String2";
+import Data from '~/_settings/sustainability.json';
+import TwoCol from '~/components/PageElementTwoCol';
+import OneCol from '~/components/PageElementOneCol';
+import String1 from '~/components/compIcons/String1';
+import String2 from '~/components/compIcons/String2';
 
 export default {
   components: {
@@ -81,7 +91,14 @@ export default {
     String2,
   },
   metaInfo: {
-    title: "Sustainability",
+    title: 'Sustainability',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   data() {
     return {
@@ -174,14 +191,14 @@ export default {
 }
 
 #economic .image {
-  background-image: url("~@/assets/images/picture1-b.jpg");
+  background-image: url('~@/assets/images/picture1-b.jpg');
 }
 
 #social .image {
-  background-image: url("~@/assets/images/picture3-b.jpg");
+  background-image: url('~@/assets/images/picture3-b.jpg');
 }
 
 #environmental .image {
-  background-image: url("~@/assets/images/picture2-b.jpg");
+  background-image: url('~@/assets/images/picture2-b.jpg');
 }
 </style>

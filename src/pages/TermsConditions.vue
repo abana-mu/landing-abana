@@ -1,5 +1,3 @@
-
-
 <template>
   <Layout>
     <div class="header">
@@ -15,10 +13,8 @@
   </Layout>
 </template>
 
-
-
 <script>
-import Data from "~/_settings/terms.json";
+import Data from '~/_settings/terms.json';
 export default {
   data() {
     return {
@@ -26,7 +22,14 @@ export default {
     };
   },
   metaInfo: {
-    title: "Terms",
+    title: 'Terms',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
 };
 </script>

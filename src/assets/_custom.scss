@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: $sans-serif;
+  font-family: $font;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
@@ -147,7 +147,7 @@ p {
 }
 
 .markdown-body {
-  font-family: $sans-serif !important;
+  font-family: $font !important;
   -moz-osx-font-smoothing: grayscale !important;
   color: $text-body !important;
   font-size: inherit !important;
@@ -320,7 +320,7 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .dropdown-menu {

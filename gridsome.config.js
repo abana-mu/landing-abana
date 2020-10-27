@@ -9,7 +9,7 @@
 module.exports = {
   siteName: 'ABANA',
   siteUrl: 'https://www.abana.mu',
-  siteDescription: "Discover Africa's textile and apparel resources in just a few clicks.",
+  siteDescription: "Africa's Textile and Apparel Industry, at your fingertips. ABANA is an online Sourcing & E-Commerce Platform that shines a light on the Indian Ocean & African Textile & Apparel industry and connects it to the World.",
 
 
   transformers: {

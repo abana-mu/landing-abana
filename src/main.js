@@ -1,13 +1,15 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
+import '~/assets/_styles.scss';
 
 import {
-  CardPlugin, ButtonPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, FormRadioPlugin
+  CardPlugin,
+  ButtonPlugin,
+  LayoutPlugin,
+  SidebarPlugin,
+  TabsPlugin,
+  FormRadioPlugin
 } from 'bootstrap-vue';
 
 import DefaultLayout from '~/layouts/Default.vue';
-
-import '~/assets/_styles.scss';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
 import 'vue-simple-markdown/dist/vue-simple-markdown.css';
@@ -27,6 +29,11 @@ export default function (Vue, {
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
 
-
-
+  head.meta.push({
+    name: 'author',
+    content: 'Alexander Currimjee'
+  }, {
+    name: 'keywords',
+    content: 'textile, apparel, africa, ecommerce, b2b'
+  })
 }

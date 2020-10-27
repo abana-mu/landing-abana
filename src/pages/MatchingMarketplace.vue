@@ -34,12 +34,12 @@
 </template>
 
 <script>
-import Data from "~/_settings/matching.json";
-import OneCol from "~/components/PageElementOneCol";
-import TwoCol from "~/components/PageElementTwoCol";
-import String1 from "~/components/compIcons/String1";
-import String2 from "~/components/compIcons/String2";
-import ICheck from "@/components/compIcons/ICheck";
+import Data from '~/_settings/matching.json';
+import OneCol from '~/components/PageElementOneCol';
+import TwoCol from '~/components/PageElementTwoCol';
+import String1 from '~/components/compIcons/String1';
+import String2 from '~/components/compIcons/String2';
+import ICheck from '@/components/compIcons/ICheck';
 
 export default {
   components: {
@@ -49,7 +49,14 @@ export default {
     String2,
   },
   metaInfo: {
-    title: "Matching & Marketplace",
+    title: 'Matching & Marketplace',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   data() {
     return {
