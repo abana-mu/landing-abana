@@ -132,7 +132,6 @@ collections:
                   ]
                 hint: "Index is the home page"
 
-
       - label: "Matching Marketplace"
         name: "matching"
         file: "src/_settings/matching.json"
@@ -1209,9 +1208,8 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-          - label: "Country Reps"
-            name: reps
+          - label: "Europe Country Reps"
+            name: eu_reps
             label_singular: "Country Rep"
             widget: list
             fields:
@@ -1222,6 +1220,82 @@ collections:
                   hint: "First and Last",
                 }
               - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
+          - label: "Africa Country Reps"
+            name: af_reps
+            label_singular: "Country Rep"
+            widget: list
+            fields:
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
+          - label: "America Country Reps"
+            name: am_reps
+            label_singular: "Country Rep"
+            widget: list
+            fields:
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
+          - label: "America Country Reps"
+            name: am_reps
+            label_singular: "Country Rep"
+            widget: list
+            fields:
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
               - {
                   label: "Georgraphic Coverage",
                   name: "coverage",
