@@ -140,14 +140,18 @@
             </template>
           </b-card-group>
           <!-- SUPPORT -->
-          <b-card class="back-white border-0 mt-3 mb-5 support-creators">
+          <b-card class="back-white mt-3 mb-5 support-creators">
             <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
+              If you have skills relevant to the Textile & Apparel eco-system
+              (design, technical, advisory, etc.) become part of the ABANA
+              network.
             </b-card-text>
-            <b-button href="mailto:arif@abana.mu" variant="outline-primary"
-              >Get in touch with us</b-button
-            >
+            <g-link to="/freelancers">
+              <b-button variant="outline-primary">
+                See more
+              </b-button>
+            </g-link>
           </b-card>
           <!-- TABLE -->
           <div class="pricing-container mt-5">
@@ -225,14 +229,18 @@
           </b-card-group>
 
           <!-- SUPPORT -->
-          <b-card class="back-white border-0 mt-3 mb-5 support-creators">
+          <b-card class="back-white mt-3 mb-5 support-creators">
             <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
+              If you have skills relevant to the Textile & Apparel eco-system
+              (design, technical, advisory, etc.) become part of the ABANA
+              network.
             </b-card-text>
-            <b-button href="mailto:arif@abana.mu" variant="outline-primary"
-              >Get in touch with us</b-button
-            >
+            <g-link to="/freelancers">
+              <b-button variant="outline-primary">
+                See More
+              </b-button>
+            </g-link>
           </b-card>
 
           <!-- Table -->
@@ -261,17 +269,17 @@
 </template>
 
 <script>
-import Data from "~/_settings/pricing.json";
-import Plans from "~/_settings/plans.json";
-import Table from "~/components/PlanTable";
-import TableMob from "~/components/PlanTableMob";
+import Data from '~/_settings/pricing.json';
+import Plans from '~/_settings/plans.json';
+import Table from '~/components/PlanTable';
+import TableMob from '~/components/PlanTableMob';
 import {
   BIcon,
   BIconCheckCircle,
   BIconChevronDown,
   BIconChevronUp,
-} from "bootstrap-vue";
-import { BCollapse } from "bootstrap-vue";
+} from 'bootstrap-vue';
+import { BCollapse } from 'bootstrap-vue';
 
 export default {
   components: {
@@ -284,18 +292,18 @@ export default {
     TableMob,
   },
   metaInfo: {
-    title: "Pricing",
+    title: 'Pricing',
   },
   data() {
     return {
       visible: false,
       Data,
       Plans,
-      selected: "price12",
+      selected: 'price12',
       periods: [
-        { text: "12 months", value: "price12" },
-        { text: "6 months", value: "price6" },
-        { text: "3 months", value: "price3" },
+        { text: '12 months', value: 'price12' },
+        { text: '6 months', value: 'price6' },
+        { text: '3 months', value: 'price3' },
       ],
     };
   },
@@ -310,67 +318,6 @@ export default {
 
 .custom-control-label {
   cursor: pointer;
-}
-
-.nav-tabs {
-  background-color: $blue-grey;
-  border: none;
-  padding: 15px 0 1px 0;
-  @media (min-width: $break-s) {
-    padding: 20px 0 10px 0;
-  }
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  background-color: transparent;
-  color: $subtitle-light;
-}
-
-.nav-tabs .nav-link {
-  /*border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #dee2e63d;*/
-
-  border: solid 1px rgba(255, 218, 216, 0.164);
-  border-radius: 10px;
-  margin: 5px;
-
-  text-transform: uppercase;
-  color: $subtitle-light;
-  padding: 0.5rem 0.75rem;
-
-  @media (min-width: $break-collapse) {
-    padding: 0.5rem 1rem;
-    margin: 0 10px;
-  }
-
-  &:hover {
-    border: solid 1px rgba(255, 97, 88, 0.5);
-    background-color: rgba(255, 97, 88, 0.05);
-  }
-
-  &.active {
-    border: solid 1px rgba(255, 97, 88, 0.7);
-    background-color: rgba(255, 97, 88, 0.2);
-    color: white;
-  }
-}
-
-.nav-tabs .nav-item {
-  text-align: center;
-
-  @media (min-width: $break-s) {
-    min-width: 150px;
-  }
-  .nav-link:focus {
-    outline: none;
-  }
-}
-
-.tabs > :first-child {
-  background-color: white;
-  z-index: 10;
 }
 
 .billed {
@@ -448,7 +395,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: "";
+    content: '';
     height: 10px;
     left: 0;
     position: absolute;
@@ -527,7 +474,7 @@ export default {
 
 .pricing-container {
   display: none;
-  border: 1px solid #d7d7f58f;
+  border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem;
   border-radius: 4px;
   background-color: white;

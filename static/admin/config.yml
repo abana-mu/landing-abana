@@ -94,6 +94,8 @@ collections:
                     "supply-chain",
                     "sustainability",
                     "why-africa",
+                    "country-reps",
+                    "freelancers",
                   ]
                 hint: "Index is the home page"
 
@@ -129,6 +131,45 @@ collections:
                     "supply-chain",
                     "sustainability",
                     "why-africa",
+                    "country-reps",
+                    "freelancers",
+                  ]
+                hint: "Index is the home page"
+
+          - label: "Reps"
+            name: reps
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtext", widget: "text" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  required: false,
+                  widget: "string",
+                }
+              - label: "Page link"
+                name: page
+                required: false
+                widget: "select"
+                options:
+                  [
+                    "about",
+                    "contact",
+                    "ecommerce",
+                    "garment-makers",
+                    "index",
+                    "input-suppliers",
+                    "matching-marketplace",
+                    "pricing",
+                    "product-buyers",
+                    "service-providers",
+                    "sourcing-buyers",
+                    "supply-chain",
+                    "sustainability",
+                    "why-africa",
+                    "country-reps",
+                    "freelancers",
                   ]
                 hint: "Index is the home page"
 
@@ -194,6 +235,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "For Garment Makers"
@@ -233,6 +276,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "For Input Suppliers & Service Providers"
@@ -272,6 +317,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "Intuitive & Useful Functionalities"
@@ -311,6 +358,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
               - label: "Marketplace"
@@ -347,6 +396,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
 
@@ -387,6 +438,8 @@ collections:
                     "supply-chain",
                     "sustainability",
                     "why-africa",
+                    "country-reps",
+                    "freelancers",
                   ]
                 hint: "Index is the home page"
           - label: "Elements"
@@ -427,6 +480,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Fast Custom"
@@ -463,6 +518,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Brands"
@@ -499,6 +556,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
 
@@ -539,6 +598,8 @@ collections:
                     "supply-chain",
                     "sustainability",
                     "why-africa",
+                    "country-reps",
+                    "freelancers",
                   ]
                 hint: "Index is the home page"
           - label: "Elements"
@@ -579,6 +640,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Virtual Supplier"
@@ -615,6 +678,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Advisory"
@@ -651,6 +716,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Online Order Tracking"
@@ -687,6 +754,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Corporate Discount"
@@ -723,6 +792,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
 
@@ -774,6 +845,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Social"
@@ -810,6 +883,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
               - label: "Environmental"
@@ -846,6 +921,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
 
@@ -977,6 +1054,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "Transparency"
@@ -1016,6 +1095,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
               - label: "Sustainability"
@@ -1065,6 +1146,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "Materials"
@@ -1104,6 +1187,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
                       - label: "Process"
@@ -1143,6 +1228,8 @@ collections:
                                 "supply-chain",
                                 "sustainability",
                                 "why-africa",
+                                "country-reps",
+                                "freelancers",
                               ]
                             hint: "Index is the home page"
               - label: "Commitment"
@@ -1184,6 +1271,8 @@ collections:
                         "supply-chain",
                         "sustainability",
                         "why-africa",
+                        "country-reps",
+                        "freelancers",
                       ]
                     hint: "Index is the home page"
 
@@ -1283,8 +1372,8 @@ collections:
                   hint: "Add Country Code ex: +230 ...",
                 }
               - { label: "Email Address", name: "email", widget: "string" }
-          - label: "America Country Reps"
-            name: am_reps
+          - label: "Asia Country Reps"
+            name: as_reps
             label_singular: "Country Rep"
             widget: list
             fields:
@@ -1308,6 +1397,19 @@ collections:
                   hint: "Add Country Code ex: +230 ...",
                 }
               - { label: "Email Address", name: "email", widget: "string" }
+
+      - label: "Freelancers"
+        name: "freelancers"
+        file: "src/_settings/freelancers.json"
+        fields:
+          - label: "Header"
+            name: header
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+
+          - { label: "SubText", name: "subtitle", widget: "text" }
+          - { label: "Content", name: "content", widget: "markdown" }
 
       - label: "Terms"
         name: "terms"

@@ -205,7 +205,6 @@
                       <div class="drop-text">Careers</div>
                     </g-link>
                   </div>
-                  <!--   
 
                   <div class="col col-2">
                     <b-dropdown-header>Partnerships</b-dropdown-header>
@@ -231,7 +230,6 @@
                     </g-link>
                   </div>
 
-                  -->
                   <div class="col col-2">
                     <b-dropdown-header>Support</b-dropdown-header>
 
@@ -475,7 +473,7 @@
                       <div class="drop-text">Careers</div>
                     </g-link>
                   </div>
-                  <!-- 
+
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle"
                       >Partnerships</b-dropdown-header
@@ -502,7 +500,7 @@
                       <div class="drop-text">Freelancers</div>
                     </g-link>
                   </div>
-                  -->
+
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle"
                       >Support</b-dropdown-header

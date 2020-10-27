@@ -55,18 +55,20 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border: 1px solid $border;
 
   @media (min-width: $break-collapse) {
     flex-direction: row;
   }
-}
-.contact-card {
-  max-width: 20rem;
-  height: 20rem;
-  padding: 4.5rem 4rem;
-  margin: 3rem 1rem 3rem 1rem;
+  .contact-card {
+    max-width: 20rem;
+    height: 20rem;
+    padding: 4.5rem 4rem;
+    margin: 3rem 1rem 3rem 1rem;
 
-  background-color: $white;
-  border-radius: 6px;
+    background-color: $white;
+    border-radius: 6px;
+    border: 1px solid $border;
+  }
 }
 </style>

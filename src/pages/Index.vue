@@ -42,14 +42,17 @@
     </div>
     <DiagonalBreaker colorTop="grey" colorBottom="white" />
     <!-- FLOW -->
-    <div class="p-5">
+    <div class="p-4">
       <FlowGraph :data="Data.flow" />
     </div>
 
-    <div class="p-5 mb-5">
-    <DropGraph :data="Data.drop" />
+    <div class="p-4">
+      <DropGraph :data="Data.drop" />
     </div>
 
+    <div class="p-4 mb-5">
+      <RepsGraph :data="Data.reps" />
+    </div>
   </Layout>
 </template>
 
@@ -60,26 +63,26 @@
 </page-query>
 
 <script>
-import HeaderBanner from "~/components/HeaderBanner";
-import DiagonalBreaker from "~/components/DiagonalBreaker";
-import Data from "~/_settings/landing.json";
-import ITransf from "@/components/compIcons/ITransf";
-import IExpect from "@/components/compIcons/IExpect";
-import IGuar from "@/components/compIcons/IGuar";
-import ITax from "@/components/compIcons/ITax";
-import ITarget from "@/components/compIcons/ITarget";
-import INew from "@/components/compIcons/INew";
-import IChina from "@/components/compIcons/IChina";
-import IEnv from "@/components/compIcons/IEnv";
-import ICheck from "@/components/compIcons/ICheck";
-import ICal from "@/components/compIcons/ICal";
-import FlowGraph from "~/components/FlowGraph";
-import DropGraph from "~/components/DropGraph";
-
+import HeaderBanner from '~/components/HeaderBanner';
+import DiagonalBreaker from '~/components/DiagonalBreaker';
+import Data from '~/_settings/landing.json';
+import ITransf from '@/components/compIcons/ITransf';
+import IExpect from '@/components/compIcons/IExpect';
+import IGuar from '@/components/compIcons/IGuar';
+import ITax from '@/components/compIcons/ITax';
+import ITarget from '@/components/compIcons/ITarget';
+import INew from '@/components/compIcons/INew';
+import IChina from '@/components/compIcons/IChina';
+import IEnv from '@/components/compIcons/IEnv';
+import ICheck from '@/components/compIcons/ICheck';
+import ICal from '@/components/compIcons/ICal';
+import FlowGraph from '~/components/FlowGraph';
+import DropGraph from '~/components/DropGraph';
+import RepsGraph from '~/components/RepsGraph';
 
 export default {
   metaInfo: {
-    title: "ABANA | African Textile & Apparel Marketplace",
+    title: 'ABANA | African Textile & Apparel Marketplace',
   },
   components: {
     DiagonalBreaker,
@@ -90,6 +93,7 @@ export default {
     box4: ICal,
     FlowGraph,
     DropGraph,
+    RepsGraph,
   },
   data() {
     return {
