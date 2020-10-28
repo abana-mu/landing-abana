@@ -39,7 +39,7 @@ export default {
       {
         name: 'description',
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          'ABANA has re-imaginged buying and selling to drive more informed buying decisions, reduced lead times and faster delivery. Find out more about our Ecommerce features.',
       },
     ],
   },

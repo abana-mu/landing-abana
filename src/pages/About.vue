@@ -89,7 +89,7 @@ export default {
       {
         name: 'description',
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          'More than 65 years of combined textile sector experience as Makers and Buyers, working with industry-leading companies. Find our more about our team',
       },
     ],
   },

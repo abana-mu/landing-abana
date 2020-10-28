@@ -74,7 +74,7 @@ export default {
       {
         name: 'description',
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          'ABANA is firstly Africa. The continent is on the verge of a resurgence and we are committed to helping the textile and apparel industry thrive in the region.',
       },
     ],
   },

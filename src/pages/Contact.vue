@@ -40,8 +40,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+        content: 'There are plenty of ways to get in touch with us!',
       },
     ],
   },

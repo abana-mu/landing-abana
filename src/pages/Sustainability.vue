@@ -96,7 +96,7 @@ export default {
       {
         name: 'description',
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          "A sustainable future is at the core of ABANA's mission. There are no simple solutions but many creative opportunities. Find out more about our commitments.",
       },
     ],
   },

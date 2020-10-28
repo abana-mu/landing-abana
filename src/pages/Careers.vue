@@ -292,7 +292,7 @@ export default {
       {
         name: 'description',
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          'We are always on the lookout for talent that wants to help us grow and disrupt the Textile & Apparel industry! Find out more about the job openings we have',
       },
     ],
   },
