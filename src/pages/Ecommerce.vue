@@ -6,7 +6,7 @@
         {{ Data.header.subtext }}
       </p>
       <div class="image-banner">
-        <g-image :src="Data.header.image" quality="100" />
+        <g-image :src="Data.header.image" quality="100" blur="40" width="750" />
       </div>
     </div>
 
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import Data from '~/_settings/ecommerce.json';
-import OneCol from '~/components/PageElementOneCol';
-import TwoCol from '~/components/PageElementTwoCol';
-import String1 from '~/components/compIcons/String1';
-import String2 from '~/components/compIcons/String2';
+import Data from "~/_settings/ecommerce.json";
+import OneCol from "~/components/PageElementOneCol";
+import TwoCol from "~/components/PageElementTwoCol";
+import String1 from "~/components/compIcons/String1";
+import String2 from "~/components/compIcons/String2";
 
 export default {
   components: {
@@ -34,12 +34,12 @@ export default {
     String2,
   },
   metaInfo: {
-    title: 'E-commerce',
+    title: "E-commerce",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'ABANA has re-imaginged buying and selling to drive more informed buying decisions, reduced lead times and faster delivery. Find out more about our Ecommerce features.',
+          "ABANA has re-imaginged buying and selling to drive more informed buying decisions, reduced lead times and faster delivery. Find out more about our Ecommerce features.",
       },
     ],
   },

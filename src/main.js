@@ -39,9 +39,11 @@ export default function (Vue, {
 
   head.link.push({
     rel: 'preload',
-    href: '/assets/fonts/lineto-circular-book.ttf'
+    href: '/assets/fonts/lineto-circular-book.f25f54b0.ttf',
+    as: 'font'
   }, {
     rel: 'preload',
-    href: '/assets/fonts/lineto-circular-medium.ttf'
+    href: '/assets/fonts/lineto-circular-medium.d71f06b9.ttf',
+    as: 'font',
   })
 }

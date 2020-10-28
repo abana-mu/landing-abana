@@ -26,7 +26,7 @@
         </b-col>
         <b-col md class="column-image">
           <div>
-            <g-image :src="row.image" quality="100" />
+            <g-image :src="row.image" quality="100" blur="40" width="750" />
           </div>
         </b-col>
       </b-row>

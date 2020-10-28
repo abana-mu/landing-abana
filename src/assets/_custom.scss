@@ -3,6 +3,37 @@ html {
   font-size: 16px;
 }
 
+$font: 'SS-font1';
+
+//FONT 1
+
+@font-face {
+  font-family: 'SS-font1';
+  src: url('../assets/fonts/lineto-circular-book.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SS-font1';
+  src: url('../assets/fonts/lineto-circular-medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'SS-font1';
+  src: url('../assets/fonts/lineto-circular-bold.ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 body {
   font-family: $font;
   overflow-x: hidden;
@@ -212,6 +243,55 @@ p {
       color: $text-body;
     }
   }
+}
+
+//Layouts
+
+
+.container-fluid {
+  max-width: 1440px;
+  //XSmall -578
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+
+  //Small 578-776
+  @media (min-width: $break-s) {
+    padding-left: 2.9rem;
+    padding-right: 2.9rem;
+  }
+
+  //Medium 776-992
+  @media (min-width: $break-m) {
+    padding-left: 3.925rem;
+    padding-right: 3.925rem;
+  }
+
+  //Large 992-1200
+  @media (min-width: $break-l) {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  //XL 1200-1400
+  @media (min-width: $break-xl) {
+    padding-left: 5.975rem;
+    padding-right: 5.975rem;
+  }
+
+  //XL 1440+
+  @media (min-width: $break-xxl) {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+.mobile-gutter {
+
+  @media (max-width: $break-s) {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
 }
 
 

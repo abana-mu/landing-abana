@@ -21,9 +21,10 @@
           </div>
           <g-image
             id="header-image"
-            immediate
             src="~/assets/images/test1.png"
-            quality="100"
+            blur="40"
+            width="750"
+            quality="90"
           />
         </div>
       </div>
