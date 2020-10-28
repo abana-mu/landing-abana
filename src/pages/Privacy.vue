@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Data from '~/_settings/privacy.json';
+import Data from "~/_settings/privacy.json";
 export default {
   data() {
     return {
@@ -22,12 +22,12 @@ export default {
     };
   },
   metaInfo: {
-    title: 'Privacy',
+    title: "Privacy",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'As textile buyers and sellers ourselves, we know how important your privacy is. Find out how we treat your data here.',
+          "As textile buyers and sellers ourselves, we know how important your privacy is. Find out how we treat your data here.",
       },
     ],
   },

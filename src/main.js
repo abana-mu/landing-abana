@@ -19,7 +19,7 @@ export default function (Vue, {
   head,
   isClient
 }) {
-  // Set default layout as a global component
+
   Vue.component('Layout', DefaultLayout);
   Vue.use(CardPlugin);
   Vue.use(ButtonPlugin);
@@ -35,15 +35,20 @@ export default function (Vue, {
   }, {
     name: 'keywords',
     content: 'textile, apparel, africa, ecommerce, b2b'
-  })
+  });
 
   head.link.push({
     rel: 'preload',
     href: '/assets/fonts/lineto-circular-book.f25f54b0.ttf',
-    as: 'font'
-  }, {
-    rel: 'preload',
-    href: '/assets/fonts/lineto-circular-medium.d71f06b9.ttf',
     as: 'font',
-  })
+    type: "font/ttf",
+    crossorigin: '',
+  },
+    {
+      rel: 'preload',
+      href: '/assets/fonts/lineto-circular-medium.d71f06b9.ttf',
+      as: 'font',
+      type: "font/ttf",
+      crossorigin: '',
+    });
 }
