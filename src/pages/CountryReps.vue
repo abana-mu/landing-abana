@@ -1,46 +1,48 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <div class="header">
-      <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">{{ Data.header.subtext }}</p>
-      <div class="image-banner"></div>
-    </div>
+    <div class="height-restriction">
+      <div class="header">
+        <h1 class="title">{{ Data.header.title }}</h1>
+        <p class="subtitle">{{ Data.header.subtext }}</p>
+        <div class="image-banner"></div>
+      </div>
 
-    <section class="back-grey d-none d-sm-block">
-      <b-tabs align="center country-rep-tab">
-        <div v-for="(country, index) in Count" :key="index">
-          <b-tab v-if="country.data" :title="country.name">
-            <div class="rep-container ">
-              <b-row no-gutters>
-                <b-col
-                  v-for="(reps, index) in country.data"
-                  :key="index"
-                  cols="12"
-                  md="6"
-                >
-                  <RepCard :data="reps" />
-                </b-col>
-              </b-row>
-            </div>
-          </b-tab>
+      <section class="back-grey d-none d-sm-block bordered">
+        <b-tabs align="center country-rep-tab">
+          <div v-for="(country, index) in Count" :key="index">
+            <b-tab v-if="country.data" :title="country.name">
+              <div class="rep-container ">
+                <b-row no-gutters>
+                  <b-col
+                    v-for="(reps, index) in country.data"
+                    :key="index"
+                    cols="12"
+                    md="6"
+                  >
+                    <RepCard :data="reps" />
+                  </b-col>
+                </b-row>
+              </div>
+            </b-tab>
+          </div>
+        </b-tabs>
+      </section>
+
+      <div v-for="(country, index) in Count" :key="index" class="d-sm-none">
+        <div v-if="country.data" class="rep-container ">
+          <h2 class="text-center">{{ country.name }}</h2>
+          <b-row no-gutters>
+            <b-col
+              v-for="(reps, index) in country.data"
+              :key="index"
+              cols="12"
+              md="6"
+            >
+              <RepCard :data="reps" />
+            </b-col>
+          </b-row>
+          <String2 />
         </div>
-      </b-tabs>
-    </section>
-
-    <div v-for="(country, index) in Count" :key="index" class="d-sm-none">
-      <div v-if="country.data" class="rep-container ">
-        <h2 class="text-center">{{ country.name }}</h2>
-        <b-row no-gutters>
-          <b-col
-            v-for="(reps, index) in country.data"
-            :key="index"
-            cols="12"
-            md="6"
-          >
-            <RepCard :data="reps" />
-          </b-col>
-        </b-row>
-        <String2 />
       </div>
     </div>
   </Layout>
@@ -80,6 +82,9 @@ export default {
 </script>
 
 <style lang="scss">
+.height-restriction {
+  min-height: calc(100vh - 390px);
+}
 .rep-container {
   max-width: 1140px;
   margin: 0 auto;

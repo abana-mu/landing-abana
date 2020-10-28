@@ -300,6 +300,11 @@ p {
   background-color: $beige-grey;
 }
 
+.bordered {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
 // CUSTOM ALL PAGES
 
 .text-transition {

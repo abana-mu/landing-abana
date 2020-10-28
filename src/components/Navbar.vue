@@ -732,15 +732,11 @@ export default {
 
 .nav-item.nav-only {
   cursor: pointer;
-  margin-left: 20px;
-  padding: 1.2rem 0;
+  padding: 1.2rem;
   box-shadow: inset 0px 0px $primary;
   &:hover {
     box-shadow: inset 0px 3px $primary;
     transition: 0.3s;
-  }
-  @media (min-width: $break-l) and (max-width: $break-xl) {
-    margin-left: 15px;
   }
 }
 

@@ -7,7 +7,7 @@
       </div>
 
       <div class="back-grey">
-        <b-row class="container-card">
+        <b-row class="container-card bordered">
           <b-col class="contact-card">
             <h4 class="mb-3">Want to send us an Email?</h4>
             <p class="mb-3">Send us your questions or comments.</p>
@@ -62,7 +62,6 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid $border;
 
   @media (min-width: $break-collapse) {
     flex-direction: row;

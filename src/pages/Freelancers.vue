@@ -6,7 +6,7 @@
       </div>
 
       <div class="back-grey">
-        <b-row class="freelancer-container-card">
+        <b-row class="freelancer-container-card bordered">
           <b-col class="contact-card">
             <h3 class="mb-3 text-center">{{ Data.subtitle }}</h3>
             <vue-simple-markdown
@@ -61,7 +61,6 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid $border;
 
   @media (min-width: $break-collapse) {
     flex-direction: row;
