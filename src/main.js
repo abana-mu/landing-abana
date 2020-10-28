@@ -36,4 +36,12 @@ export default function (Vue, {
     name: 'keywords',
     content: 'textile, apparel, africa, ecommerce, b2b'
   })
+
+  head.link.push({
+    rel: 'preload',
+    href: '/assets/fonts/lineto-circular-book.ttf'
+  }, {
+    rel: 'preload',
+    href: '/assets/fonts/lineto-circular-medium.ttf'
+  })
 }

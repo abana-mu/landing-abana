@@ -721,7 +721,7 @@ export default {
   -webkit-transition: all 0.5s;
   transition: all 0.25s;
   .nav-item.nav-only {
-    padding: 0.75rem 0;
+    padding: 0.75rem 1.2rem;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
