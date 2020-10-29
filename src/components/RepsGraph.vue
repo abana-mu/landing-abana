@@ -13,7 +13,7 @@
         <p>{{ data.subtext }}</p>
         <g-link class="col-link" v-if="data.page" :to="data.page">
           {{ data.link }}
-          <b-icon-arrow-right-short class="arrow-anim" />
+          <b-icon-arrow-right-short />
         </g-link>
       </b-col>
       <b-col>
@@ -70,18 +70,6 @@ export default {
   @media (min-width: $break-collapse) {
     width: 100%;
     margin-bottom: 0rem;
-  }
-}
-
-.col-link {
-  &:hover {
-    .b-icon {
-      transition: ease-out 0.2s;
-      margin-left: 1rem;
-    }
-  }
-  .b-icon {
-    margin-left: 0.5rem;
   }
 }
 </style>

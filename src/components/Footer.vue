@@ -5,10 +5,26 @@
       <b-row>
         <b-col lg>
           <Logo class="footer-logo" />
-          <p class="small-text">{{ Data.header.title }}</p>
+          <p class="small-text mb-2">{{ Data.header.title }}</p>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/company/abana-mauritius/"
+              target="_blank"
+            >
+              <Linkedin />
+            </a>
+            <!--
+            <a href="https://www.facebook.com" target="_blank">
+              <Facebook />
+            </a>
+            -->
+            <a href="https://www.instagram.com/abana.mauritius" target="_blank">
+              <Insta />
+            </a>
+          </div>
         </b-col>
         <b-col>
-          <b-row class="mt-3 mb-4 my-md-0  footer-links no-gutters">
+          <b-row class="mt-4 mb-4 my-md-0  footer-links no-gutters">
             <b-col cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Product</div>
               <div class="d-flex flex-column text-small">
@@ -46,9 +62,12 @@
 <script>
 import Data from '~/_settings/landing.json';
 import Logo from '~/components/compIcons/Logo';
+import Facebook from '~/components/compIcons/SocialFacebook';
+import Linkedin from '~/components/compIcons/SocialLinkedin';
+import Insta from '~/components/compIcons/SocialInsta';
 
 export default {
-  components: { Logo },
+  components: { Logo, Facebook, Linkedin, Insta },
   data() {
     return {
       Data,
@@ -91,6 +110,26 @@ footer {
   &:hover {
     color: white;
     text-decoration: none;
+  }
+}
+
+.social {
+  svg {
+    width: 20px;
+    height: auto;
+    fill: $text-light;
+    margin-right: 1rem;
+  }
+
+  a {
+    outline: none;
+    &:hover {
+      svg {
+        transition: ease-out 0.2s;
+        transform: scale(1.1);
+        fill: #fff;
+      }
+    }
   }
 }
 </style>

@@ -9,22 +9,25 @@
         <b-col class="col-4 px-1 px-md-2">
           <g-image
             class="w-100"
-            immediate
             src="~/assets/images/picture7.jpg"
+            blur="40"
+            quality="90"
           ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
           <g-image
             class="w-100"
-            immediate
             src="~/assets/images/picture9.jpg"
+            blur="40"
+            quality="90"
           ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
           <g-image
             class="w-100"
-            immediate
             src="~/assets/images/picture8.jpg"
+            blur="40"
+            quality="90"
           ></g-image>
         </b-col>
       </b-row>

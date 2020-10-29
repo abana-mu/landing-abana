@@ -8,7 +8,7 @@
       </div>
 
       <section class="back-grey d-none d-sm-block bordered">
-        <b-tabs align="center country-rep-tab">
+        <b-tabs align="center" class=" country-rep-tab" lazy>
           <div v-for="(country, index) in Count" :key="index">
             <b-tab v-if="country.data" :title="country.name">
               <div class="rep-container ">

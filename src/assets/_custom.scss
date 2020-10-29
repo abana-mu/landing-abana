@@ -1,6 +1,7 @@
 // MAIN ELEMENTS
 html {
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 $font: 'SS-font1';
@@ -29,7 +30,7 @@ $font: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-bold.ttf');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 
@@ -548,4 +549,22 @@ p {
 .tabs> :first-child {
   background-color: white;
   z-index: 10;
+}
+
+
+//  ANIMATE AROW
+
+
+
+.col-link {
+  &:hover {
+    .b-icon {
+      transition: ease-out 0.2s;
+      margin-left: 1rem;
+    }
+  }
+
+  .b-icon {
+    margin-left: 0.5rem;
+  }
 }

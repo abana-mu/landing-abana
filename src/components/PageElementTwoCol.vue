@@ -36,7 +36,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BIcon, BIconArrowRightShort } from "bootstrap-vue";
+import { BIcon, BIconArrowRightShort } from 'bootstrap-vue';
 
 export default {
   components: {
@@ -54,7 +54,7 @@ export default {
 </page-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .two-col {
   display: flex;
   align-items: center;
@@ -122,19 +122,4 @@ export default {
   margin: 0 auto 50px auto;
   max-width: 900px;
 }
-
-.col-link {
-  &:hover {
-    .b-icon {
-      transition: ease-out 0.2s;
-      margin-left: 1rem;
-    }
-  }
-  .b-icon {
-    margin-left: 0.5rem;
-  }
-}
 </style>
-
-
-
