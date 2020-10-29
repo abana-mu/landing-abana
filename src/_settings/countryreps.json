@@ -4,12 +4,34 @@
     "subtext": "Find and contact our country representatives. Full list coming soon. ",
     "image": "/uploads/world-map-with-2-pins.png"
   },
-  "eu_reps": [{
-    "name": "Sabrina Tomassoli",
-    "location": "Prato, Italy",
-    "company": "",
-    "coverage": "Italy",
-    "number": "+39 339 7544748",
-    "email": "sabrina.tomassoli@abana.mu"
-  }]
+  "eu_reps": [
+    {
+      "name": "Sabrina Tomassoli",
+      "location": "Prato, Italy",
+      "company": "ABANA Italy",
+      "coverage": "Italy",
+      "number": "+39 (339) 754-4748",
+      "email": "sabrina.tomassoli@abana.mu"
+    }
+  ],
+  "am_reps": [
+    {
+      "name": "William Huburt",
+      "location": "New Jersey",
+      "company": "ABANA USA",
+      "coverage": "USA & CANADA",
+      "number": "+1 (998) 313-9158",
+      "email": "bill.hulburt@abana.mu"
+    }
+  ],
+  "af_reps": [
+    {
+      "name": "Emil Grey",
+      "location": "Cape Town",
+      "company": "ABANA South Africa",
+      "coverage": "South Africa & Lesotho",
+      "number": "+27 (82) 100-1000",
+      "email": "emil.grey@abana.mu"
+    }
+  ]
 }
