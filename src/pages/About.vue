@@ -10,7 +10,12 @@
         <b-row class="about-row">
           <b-col cols="12" lg>
             <div class="about-image-container">
-              <g-image immediate src="~/assets/images/arif.png" quality="100" />
+              <g-image
+                immediate
+                src="~/assets/images/arif.png"
+                quality="90"
+                blur="40"
+              />
             </div>
           </b-col>
           <b-col cols="12" lg>
@@ -27,7 +32,12 @@
         <b-row class="about-row">
           <b-col cols="12" lg order-lg="1">
             <div class="about-image-container">
-              <g-image immediate src="~/assets/images/dirk.png" quality="100" />
+              <g-image
+                immediate
+                src="~/assets/images/dirk.png"
+                quality="90"
+                blur="40"
+              />
             </div>
           </b-col>
           <b-col cols="12" lg>

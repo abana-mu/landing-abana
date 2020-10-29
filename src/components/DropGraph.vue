@@ -2,7 +2,6 @@
 <template>
   <b-container fluid class="my-5">
     <b-row>
-      
       <b-col>
         <div class="svg-container-drop">
           <Drop />
@@ -29,8 +28,8 @@
 
 <!-- SCRIPTS -->
 <script>
-import Drop from "~/components/compIcons/Drop";
-import { BIcon, BIconArrowRightShort } from "bootstrap-vue";
+import Drop from '~/components/compIcons/Drop';
+import { BIcon, BIconArrowRightShort } from 'bootstrap-vue';
 
 export default {
   components: {
@@ -62,8 +61,8 @@ export default {
 }
 
 .svg-container-drop {
-  width: 60%;
-  
+  width: 90%;
+
   margin: 0 auto;
   margin-bottom: 2rem;
 
