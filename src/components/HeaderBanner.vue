@@ -23,7 +23,7 @@
             id="header-image"
             src="~/assets/images/test1.png"
             blur="40"
-            quality="90"
+            quality="100"
           />
         </div>
       </div>
@@ -34,7 +34,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ["title", "subtext", "cta"],
+  props: ['title', 'subtext', 'cta'],
 };
 </script>
 

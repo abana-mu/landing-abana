@@ -8,26 +8,23 @@
       <b-row>
         <b-col class="col-4 px-1 px-md-2">
           <g-image
-            class="w-100"
             src="~/assets/images/picture3-c.jpg"
             blur="40"
-            quality="90"
+            class="w-100"
           ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
           <g-image
-            class="w-100"
             src="~/assets/images/picture2-c.jpg"
             blur="40"
-            quality="90"
+            class="w-100"
           ></g-image>
         </b-col>
         <b-col class="col-4 px-1 px-md-2">
           <g-image
-            class="w-100"
             src="~/assets/images/picture1-c.jpg"
             blur="40"
-            quality="90"
+            class="w-100"
           ></g-image>
         </b-col>
       </b-row>
@@ -110,7 +107,7 @@ export default {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 
   @media (min-width: $break-collapse) {
     background-attachment: fixed;
