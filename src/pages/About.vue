@@ -31,7 +31,7 @@
             </div>
           </b-col>
           <b-col cols="12" lg>
-            <h2 class="mb-3">Dirk Robbens - <span class="blue">CEO</span></h2>
+            <h2 class="mb-3">Dirk Robens - <span class="blue">CEO</span></h2>
             <vue-simple-markdown
               :source="Data.dirk"
               class="about-text"

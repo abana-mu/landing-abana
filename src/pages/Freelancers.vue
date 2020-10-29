@@ -16,10 +16,10 @@
             ></vue-simple-markdown>
             <div class="mt-4 text-center w-100">
               <a
-                href="mailto:arif@abana.mu?cc=arif.currimjee@gmail.com,dirk.robens@abana.mu&subject=ABANA | Freelancer Application&body=(Please attach your CV)"
+                href="mailto:support@abana.mu?cc=arif.currimjee@gmail.com,dirk.robens@abana.mu&subject=ABANA | Freelancer Application&body=(Please attach your CV)"
               >
                 <b-button size="lg" variant="primary">
-                  arif@abana.mu
+                  support@abana.mu
                 </b-button>
               </a>
             </div>
