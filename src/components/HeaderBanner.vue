@@ -21,9 +21,9 @@
           </div>
           <g-image
             id="header-image"
-            immediate
             src="~/assets/images/test1.png"
-            quality="100"
+            blur="40"
+            quality="90"
           />
         </div>
       </div>
@@ -34,7 +34,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ['title', 'subtext', 'cta'],
+  props: ["title", "subtext", "cta"],
 };
 </script>
 

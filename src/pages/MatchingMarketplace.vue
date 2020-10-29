@@ -6,7 +6,7 @@
         {{ Data.header.subtext }}
       </p>
       <div class="image-banner">
-        <g-image :src="Data.header.image" quality="100" />
+        <g-image :src="Data.header.image" quality="100" blur="40" width="750" />
       </div>
     </div>
 
@@ -34,12 +34,12 @@
 </template>
 
 <script>
-import Data from '~/_settings/matching.json';
-import OneCol from '~/components/PageElementOneCol';
-import TwoCol from '~/components/PageElementTwoCol';
-import String1 from '~/components/compIcons/String1';
-import String2 from '~/components/compIcons/String2';
-import ICheck from '@/components/compIcons/ICheck';
+import Data from "~/_settings/matching.json";
+import OneCol from "~/components/PageElementOneCol";
+import TwoCol from "~/components/PageElementTwoCol";
+import String1 from "~/components/compIcons/String1";
+import String2 from "~/components/compIcons/String2";
+import ICheck from "@/components/compIcons/ICheck";
 
 export default {
   components: {
@@ -49,12 +49,12 @@ export default {
     String2,
   },
   metaInfo: {
-    title: 'Matching & Marketplace',
+    title: "Matching & Marketplace",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'ABANA illuminates sourcing opportunities in the African Region. Depending on your needs, find and connect with the right seller, buyer or service provider.',
+          "ABANA illuminates sourcing opportunities in the African Region. Depending on your needs, find and connect with the right seller, buyer or service provider.",
       },
     ],
   },

@@ -7,6 +7,7 @@ $font: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-book.ttf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@ $font: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-bookItalic.ttf');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@ $font: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-medium.ttf');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +38,7 @@ $font: 'SS-font1';
   src: url('../assets/fonts/lineto-circular-bold.ttf');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;\
 }
 
 @font-face {
