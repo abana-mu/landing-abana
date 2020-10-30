@@ -20,18 +20,34 @@
       "location": "New Jersey",
       "company": "ABANA USA",
       "coverage": "USA & CANADA",
-      "number": "+1 (998) 313-9158",
+      "number": "+1 (908) 313-9158",
       "email": "bill.hulburt@abana.mu"
     }
   ],
   "af_reps": [
     {
-      "name": "Yuri Grey",
+      "name": "Emil Grey",
       "location": "Cape Town",
       "company": "ABANA South Africa",
-      "coverage": "South Africa & Lesotho",
+      "coverage": "South Africa ",
       "number": "+27 (61) 027-8642",
       "email": "emil.grey@abana.mu"
+    },
+    {
+      "name": "Ali El Nawawi",
+      "location": "Cairo",
+      "company": "ABANA Egypt",
+      "coverage": "Egypt",
+      "number": "+20 (122) 210-7158",
+      "email": "ali.elnawawi@abana.mu"
+    },
+    {
+      "name": "Lahcen Haddad",
+      "location": "Temarara",
+      "company": "ABANA Morocco",
+      "coverage": "Morocco",
+      "number": "+21 (266) 122-1390",
+      "email": "lahcen.haddad@abana.mu"
     }
   ]
 }
