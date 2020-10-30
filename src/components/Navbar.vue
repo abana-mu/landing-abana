@@ -10,12 +10,13 @@
     >
       <b-container fluid>
         <div
-          class="row w-100 justify-content-between align-items-center no-gutters"
+          class="row top-row w-100 justify-content-between align-items-center no-gutters "
         >
           <!-- Nav Brand -->
           <div class="col col-auto">
-            <g-link class="logo" to="/">
+            <g-link class="nav-logo" to="/">
               <Logo />
+              <Slogan />
             </g-link>
           </div>
 
@@ -562,6 +563,7 @@ import {
 } from 'bootstrap-vue';
 
 import Logo from '@/components/compIcons/Logo';
+import Slogan from '@/components/compIcons/Slogan';
 import Hamburger from '@/components/Hamburger';
 
 import IMarket from '@/components/compIcons/IMarket';
@@ -587,6 +589,7 @@ export default {
     BNavbar,
     ICountryRep,
     Logo,
+    Slogan,
     BNavbarNav,
     BDropdownHeader,
     BDropdownDivider,
@@ -728,6 +731,58 @@ export default {
   .dropdown-container {
     margin-top: 12px;
   }
+
+  .nav-logo {
+    transition: all 0.25s ease-out;
+    padding-bottom: 0px;
+
+    .logo_slogan {
+      transition: opacity 0.25s ease-out;
+      opacity: 0;
+    }
+  }
+}
+
+.nav-logo {
+  width: 8rem;
+  height: auto;
+  display: block;
+  position: relative;
+  padding-bottom: 15px;
+
+  @media (min-width: 400px) {
+    padding-bottom: 16px;
+    width: 8.75rem;
+  }
+
+  @media (min-width: $break-s) {
+    padding-bottom: 20px;
+    width: 10rem;
+  }
+
+  .logo_brand {
+    fill: $primary;
+    z-index: 2;
+  }
+
+  .logo_slogan {
+    z-index: 1;
+
+    opacity: 1;
+    height: auto;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    .slogan-text {
+      fill: $text-body;
+    }
+    .slogan-bar {
+      fill: $primary;
+    }
+  }
 }
 
 .nav-item.nav-only {
@@ -737,15 +792,6 @@ export default {
   &:hover {
     box-shadow: inset 0px 3px $primary;
     transition: 0.3s;
-  }
-}
-
-.logo {
-  fill: $primary;
-  width: 7rem;
-  display: block;
-  @media (min-width: $break-collapse) {
-    width: 8rem;
   }
 }
 

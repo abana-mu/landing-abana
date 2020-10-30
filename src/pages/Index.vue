@@ -45,15 +45,15 @@
     <!--
     <DiagonalBreaker colorTop="grey" colorBottom="white" /> -->
     <!-- FLOW -->
-    <div class="p-4">
+    <div class="py-4">
       <FlowGraph :data="Data.flow" />
     </div>
 
-    <div class="p-4">
+    <div class="pb-4">
       <DropGraph :data="Data.drop" />
     </div>
 
-    <div class="p-4 mb-5">
+    <div class="pb-4 mb-5">
       <RepsGraph :data="Data.reps" />
     </div>
   </Layout>

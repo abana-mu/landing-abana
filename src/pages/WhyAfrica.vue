@@ -102,7 +102,7 @@ export default {
 
 .image {
   margin-top: 3rem;
-  height: 250px;
+  height: 210px;
   width: 100%;
 
   background-position: center;

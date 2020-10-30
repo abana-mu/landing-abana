@@ -4,7 +4,10 @@
     <b-container fluid>
       <b-row>
         <b-col lg>
-          <Logo class="footer-logo" />
+          <div class="footer-logo">
+            <Logo />
+            <Slogan />
+          </div>
           <p class="small-text mb-2">{{ Data.header.title }}</p>
           <div class="social">
             <a
@@ -62,12 +65,13 @@
 <script>
 import Data from '~/_settings/landing.json';
 import Logo from '~/components/compIcons/Logo';
+import Slogan from '@/components/compIcons/Slogan';
 import Facebook from '~/components/compIcons/SocialFacebook';
 import Linkedin from '~/components/compIcons/SocialLinkedin';
 import Insta from '~/components/compIcons/SocialInsta';
 
 export default {
-  components: { Logo, Facebook, Linkedin, Insta },
+  components: { Logo, Slogan, Facebook, Linkedin, Insta },
   data() {
     return {
       Data,
@@ -91,9 +95,32 @@ footer {
 }
 
 .footer-logo {
-  max-width: 125px;
-  margin-bottom: 1rem;
   fill: $white;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $break-s) {
+    flex-direction: row;
+  }
+
+  .logo_brand {
+    fill: $white;
+    max-width: 190px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .logo_slogan {
+    max-width: 175px;
+    margin-bottom: 10px;
+
+    .slogan-text {
+      fill: $text-light;
+    }
+    .slogan-bar {
+      fill: white;
+    }
+  }
 }
 
 .small-text {
