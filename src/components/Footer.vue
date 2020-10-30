@@ -5,8 +5,12 @@
       <b-row>
         <b-col lg>
           <div class="footer-logo">
-            <Logo />
-            <Slogan />
+            <div class="logo-container brand">
+              <Logo />
+            </div>
+            <div class="logo-container slogan">
+              <Slogan />
+            </div>
           </div>
           <p class="small-text mb-2">{{ Data.header.title }}</p>
           <div class="social">
@@ -93,24 +97,37 @@ footer {
 
 .footer-logo {
   fill: $white;
-  display: flex;
-  flex-direction: column;
-
+  display: block;
+  width: 400px;
+  margin-bottom: 10px;
   @media (min-width: $break-s) {
-    flex-direction: row;
+    width: 400px;
+  }
+
+  .logo-container {
+    display: block;
+    @media (min-width: $break-s) {
+      display: inline-block;
+    }
+
+    &.brand {
+      width: 50%;
+      margin-bottom: 5px;
+      @media (min-width: $break-s) {
+        padding-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+    &.slogan {
+      width: 50%;
+    }
   }
 
   .logo_brand {
     fill: $white;
-    max-width: 190px;
-    margin-right: 20px;
-    margin-bottom: 10px;
   }
 
   .logo_slogan {
-    max-width: 175px;
-    margin-bottom: 10px;
-
     .slogan-text {
       fill: $text-light;
     }
