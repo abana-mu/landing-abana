@@ -1,24 +1,12 @@
 <!-- HTML -->
 <template>
   <div>
-    <div
-      v-for="categories in data.categories"
-      class="category-container"
-      :key="categories"
-    >
+    <div v-for="categories in data.categories" class="category-container" :key="categories">
       <div class="plan-category-title">{{ categories.title }}</div>
-      <div
-        v-for="features in categories.features"
-        :key="features.title"
-        class="plan-feature"
-      >
+      <div v-for="features in categories.features" :key="features.title" class="plan-feature">
         <div class="plan-feature-title">{{ features.title }}</div>
         <div class="plan-feature-plans d-flex flex-row">
-          <div
-            v-for="plans in features.plans"
-            :key="plans"
-            class="feature-plans-options col"
-          >
+          <div v-for="plans in features.plans" :key="plans" class="feature-plans-options col">
             <b-icon
               v-if="plans === true"
               icon="check-circle"
@@ -27,12 +15,7 @@
               font-scale="1.2"
             ></b-icon>
             <div class="icon-no-container" v-else-if="plans === false">
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
+              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
             </div>
 
             <div v-else class="text-success">{{ plans }}</div>
@@ -51,11 +34,11 @@ export default {
   components: {
     BIcon,
     BIconCheckCircle,
-    BIconXCircle,
+    BIconXCircle
   },
   props: {
-    data: Object,
-  },
+    data: Object
+  }
 };
 </script>
 

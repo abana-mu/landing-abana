@@ -78,9 +78,9 @@
     <section>
       <h2 class="mt-5 mb-4 text-center">Join us on our adventure!</h2>
       <div class="text-center mb-5">
-        <g-link to="/Register/">
-          <b-button size="md" variant="primary">Pre-Register Now </b-button>
-        </g-link>
+        <a href="https://app.abana.mu/register-buyer">
+          <b-button size="md" variant="primary">Join Now </b-button>
+        </a>
       </div>
     </section>
   </Layout>

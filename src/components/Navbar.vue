@@ -268,17 +268,23 @@
             </b-navbar-nav>
           </div>
 
-          <!-- Right aligned nav items --
+          <!-- Right aligned nav items -->
           <div class="col col-auto d-none d-lg-block">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
-              <b-button variant="link" class="title-dark">{{
-                cta.sub
-              }}</b-button>
-              <b-button variant="primary">{{ cta.main }}</b-button>
+              <a href="https://app.abana.mu/login">
+                <b-button variant="link" class="title-dark">
+                  {{ cta.sub }}
+                </b-button>
+              </a>
+              <a href="https://app.abana.mu/register-buyer">
+                <b-button variant="primary">
+                  {{ cta.main }}
+                </b-button>
+              </a>
             </b-navbar-nav>
           </div>
-          -->
 
+          <!-- Right aligned nav items --
           <div class="col col-auto d-none d-lg-block">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
               <g-link to="/Register/"
@@ -286,6 +292,8 @@
               </g-link>
             </b-navbar-nav>
           </div>
+
+          -->
 
           <!-- Mobile Navigation -->
           <b-navbar-nav class="d-block d-lg-none ml-auto">
@@ -321,21 +329,27 @@
               <b-icon icon="arrow-right-short" class="float-right" />
             </div>
 
-            <!--
             <div class="sidebar-buttons d-flex mt-5 justify-content-center">
-              <b-button variant="link" class="title-dark">{{
-                cta.sub
-              }}</b-button>
-              <b-button variant="primary">{{ cta.main }}</b-button>
+              <a href="https://app.abana.mu/login" class="w-100">
+                <b-button variant="link" class="title-dark w-100 mb-2">
+                  {{ cta.sub }}
+                </b-button>
+              </a>
+              <a href="https://app.abana.mu/register-buyer" class="w-100">
+                <b-button variant="primary" class="w-100">
+                  {{ cta.main }}
+                </b-button>
+              </a>
             </div>
 
-            -->
-
+            <!--
             <div class="sidebar-buttons mt-5 text-center">
               <g-link to="/Register/">
                 <b-button variant="primary">Pre-Register</b-button>
               </g-link>
             </div>
+
+             -->
           </div>
 
           <!-- Sidebar for Products -->
@@ -795,8 +809,11 @@ export default {
   }
 }
 
-.btn-link {
+.btn-link.title-dark {
   color: $title-dark;
+  &:hover {
+    color: $info;
+  }
 }
 
 //DROPDOWN

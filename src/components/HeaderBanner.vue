@@ -5,26 +5,17 @@
       <div class="row">
         <div class="col">
           <div>
-            <h1 id="header-title">
-              {{ title }}
-            </h1>
+            <h1 id="header-title">{{ title }}</h1>
           </div>
           <div>
-            <p id="header-subtitle" class="mb-2 text-center">
-              {{ subtext }}
-            </p>
+            <p id="header-subtitle" class="mb-2 text-center">{{ subtext }}</p>
           </div>
           <div id="header-cta">
-            <g-link to="/Register/">
-              <b-button size="md" variant="primary">{{ cta }} </b-button>
-            </g-link>
+            <a href="https://app.abana.mu/register-buyer">
+              <b-button size="md" variant="primary">{{ cta }}</b-button>
+            </a>
           </div>
-          <g-image
-            id="header-image"
-            src="~/assets/images/test1.png"
-            blur="40"
-            quality="100"
-          />
+          <g-image id="header-image" src="~/assets/images/test1.png" blur="40" quality="100" />
         </div>
       </div>
     </div>
@@ -34,7 +25,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ['title', 'subtext', 'cta'],
+  props: ["title", "subtext", "cta"]
 };
 </script>
 
