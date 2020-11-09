@@ -91,11 +91,9 @@ export default {
       activeBlock: 'block1',
     };
   },
-  created() {
+
+  mounted() {
     document.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    document.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll() {
