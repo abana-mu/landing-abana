@@ -2,14 +2,14 @@
 <template>
   <div>
     <div
-      v-for="categories in data.categories"
+      v-for="(categories, index) in data.categories"
       class="category-container"
-      :key="categories"
+      :key="index + 'cat-mob'"
     >
       <div class="plan-category-title">{{ categories.title }}</div>
       <div
-        v-for="features in categories.features"
-        :key="features.title"
+        v-for="(features, index) in categories.features"
+        :key="index + 'mob'"
         class="plan-feature"
       >
         <div class="plan-feature-title">
@@ -19,14 +19,13 @@
             icon="check-circle"
             aria-hidden="true"
             font-scale="1"
-            v-b-tooltip.hover="{
-              placement: 'top',
-              customClass: 'my-tooltip-class',
-            }"
+            :id="features.title + type + user"
             class="ml-2 tooltip-icon"
             offset="2"
-            :title="features.tooltip"
           ></BIconQuestionCircleFill>
+          <b-tooltip :target="features.title + type + user" placement="top">
+            {{ features.tooltip }}
+          </b-tooltip>
         </div>
         <div class="plan-feature-plans d-flex flex-row">
           <div class="feature-plans-options col" v-if="type === 'Basic'">
@@ -146,6 +145,7 @@ export default {
   props: {
     data: Object,
     type: String,
+    user: String,
   },
 };
 </script>

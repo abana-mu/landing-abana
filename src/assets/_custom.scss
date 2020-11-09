@@ -183,7 +183,7 @@ p {
   padding: 0.5rem 1.5rem;
 }
 
-.my-tooltip-class {
+.tooltip {
   opacity: 1 !important;
 
   .tooltip-inner {
@@ -191,19 +191,19 @@ p {
   }
 }
 
-.my-tooltip-class.tooltip.bs-tooltip-right .arrow:before {
+.tooltip.bs-tooltip-right .arrow:before {
   border-right-color: $blue-grey !important;
 }
 
-.my-tooltip-class.tooltip.bs-tooltip-left .arrow:before {
+.tooltip.bs-tooltip-left .arrow:before {
   border-left-color: $blue-grey !important;
 }
 
-.my-tooltip-class.tooltip.bs-tooltip-bottom .arrow:before {
+.tooltip.bs-tooltip-bottom .arrow:before {
   border-bottom-color: $blue-grey !important;
 }
 
-.my-tooltip-class.tooltip.bs-tooltip-top .arrow:before {
+.tooltip.bs-tooltip-top .arrow:before {
   border-top-color: $blue-grey !important;
 }
 

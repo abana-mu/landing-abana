@@ -57,7 +57,11 @@
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob :data="Plans.buyer" :type="card.name" />
+                  <TableMob
+                    :data="Plans.buyer"
+                    :type="card.name"
+                    user="buyer"
+                  />
                 </b-collapse>
               </b-card>
             </template>
@@ -70,7 +74,7 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.buyer.subs">
-                <div class="sub-plans-options col" :key="subs">
+                <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
                   <h4 class="mb-0" v-if="selected === 'price3'">
                     {{ subs.price3 }}
@@ -82,7 +86,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.buyer" />
+            <Table :data="Plans.buyer" type="buyer" />
           </div>
         </b-tab>
         <!--------- SUPPLIERS --------->
@@ -134,7 +138,11 @@
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob :data="Plans.supplier" :type="card.name" />
+                  <TableMob
+                    :data="Plans.supplier"
+                    :type="card.name"
+                    user="supplier"
+                  />
                 </b-collapse>
               </b-card>
             </template>
@@ -158,7 +166,7 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.supplier.subs">
-                <div class="sub-plans-options col" :key="subs">
+                <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
                   <h4 class="mb-0" v-if="selected === 'price3'">
                     {{ subs.price3 }}
@@ -170,7 +178,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.supplier" />
+            <Table :data="Plans.supplier" type="supplier" />
           </div>
         </b-tab>
         <!--------- SERVICE PROVIDERS --------->
@@ -222,7 +230,11 @@
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob :data="Plans.supplier" :type="card.name" />
+                  <TableMob
+                    :data="Plans.supplier"
+                    :type="card.name"
+                    user="service"
+                  />
                 </b-collapse>
               </b-card>
             </template>
@@ -248,7 +260,7 @@
             <div class="sub-feature">
               <div class="sub-feature-title"></div>
               <template v-for="subs in Plans.service.subs">
-                <div class="sub-plans-options col" :key="subs">
+                <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
                   <h4 class="mb-0" v-if="selected === 'price3'">
                     {{ subs.price3 }}
@@ -260,7 +272,7 @@
                 </div>
               </template>
             </div>
-            <Table :data="Plans.service" />
+            <Table :data="Plans.service" type="service" />
           </div>
         </b-tab>
       </b-tabs>
