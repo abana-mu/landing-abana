@@ -7,7 +7,7 @@ import {
   SidebarPlugin,
   TabsPlugin,
   FormRadioPlugin,
-  VBTooltipPlugin,
+  TooltipPlugin,
 } from 'bootstrap-vue';
 
 import createPopper from '@popperjs/core';
@@ -25,7 +25,7 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(TabsPlugin);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
-  Vue.use(VBTooltipPlugin);
+  Vue.use(TooltipPlugin);
 
   head.meta.push(
     {

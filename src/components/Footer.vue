@@ -14,9 +14,15 @@
           </div>
           <p class="small-text mb-2">{{ Data.header.title }}</p>
           <div class="social">
-            <a href="https://www.linkedin.com/company/abana-mauritius/" target="_blank">
+            <a
+              id="tooltip-target-1"
+              href="https://www.linkedin.com/company/abana-mauritius/"
+              target="_blank"
+            >
               <Linkedin />
             </a>
+
+            <b-tooltip target="tooltip-target-1">Instagram</b-tooltip>
             <!--
             <a href="https://www.facebook.com" target="_blank">
               <Facebook />
@@ -64,20 +70,20 @@
 
 <!-- SCRIPTS -->
 <script>
-import Data from "~/_settings/landing.json";
-import Logo from "~/components/compIcons/Logo";
-import Slogan from "@/components/compIcons/Slogan";
-import Facebook from "~/components/compIcons/SocialFacebook";
-import Linkedin from "~/components/compIcons/SocialLinkedin";
-import Insta from "~/components/compIcons/SocialInsta";
+import Data from '~/_settings/landing.json';
+import Logo from '~/components/compIcons/Logo';
+import Slogan from '@/components/compIcons/Slogan';
+import Facebook from '~/components/compIcons/SocialFacebook';
+import Linkedin from '~/components/compIcons/SocialLinkedin';
+import Insta from '~/components/compIcons/SocialInsta';
 
 export default {
   components: { Logo, Slogan, Facebook, Linkedin, Insta },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
 };
 </script>
 
