@@ -84,6 +84,7 @@ collections:
                     "contact",
                     "ecommerce",
                     "garment-makers",
+                    "drops",
                     "index",
                     "input-suppliers",
                     "matching-marketplace",
@@ -121,6 +122,7 @@ collections:
                     "contact",
                     "ecommerce",
                     "garment-makers",
+                    "drops",
                     "index",
                     "input-suppliers",
                     "matching-marketplace",
@@ -158,6 +160,7 @@ collections:
                     "contact",
                     "ecommerce",
                     "garment-makers",
+                    "drops",
                     "index",
                     "input-suppliers",
                     "matching-marketplace",
@@ -225,6 +228,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -266,6 +270,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -307,6 +312,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -348,6 +354,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -386,6 +393,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -412,41 +420,11 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
-              - {
-                  label: "Link",
-                  name: "link",
-                  required: false,
-                  widget: "string",
-                }
-              - label: "Page link"
-                name: page
-                required: false
-                widget: "select"
-                options:
-                  [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
-                  ]
-                hint: "Index is the home page"
           - label: "Elements"
             name: elements
             widget: "object"
             fields:
-              - label: "Drops"
+              - label: "drops"
                 name: drops
                 widget: "object"
                 fields:
@@ -470,6 +448,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -508,6 +487,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -546,6 +526,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -560,6 +541,63 @@ collections:
                         "freelancers",
                       ]
                     hint: "Index is the home page"
+
+      - label: "Drops"
+        name: "drops"
+        file: "src/_settings/drops.json"
+        fields:
+          - label: "Header"
+            name: header
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "SubText", name: "subtext", widget: "text" }
+              - {
+                  label: "Image",
+                  name: "image",
+                  required: false,
+                  widget: "image",
+                }
+
+          - label: "Elements"
+            name: elements
+            label_singular: "element"
+            widget: list
+            fields:
+              - { label: "ID", name: "id", widget: "string", hint: "block+#" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Content", name: "content", widget: "markdown" }
+              - {
+                  label: "Link",
+                  name: "link",
+                  required: false,
+                  widget: "string",
+                }
+              - label: "Page link"
+                name: page
+                required: false
+                widget: "select"
+                options:
+                  [
+                    "about",
+                    "contact",
+                    "ecommerce",
+                    "garment-makers",
+                    "drops",
+                    "index",
+                    "input-suppliers",
+                    "matching-marketplace",
+                    "pricing",
+                    "product-buyers",
+                    "service-providers",
+                    "sourcing-buyers",
+                    "supply-chain",
+                    "sustainability",
+                    "why-africa",
+                    "country-reps",
+                    "freelancers",
+                  ]
+                hint: "Index is the home page"
 
       - label: "Supply Chain Solutions"
         name: "supplychain"
@@ -588,6 +626,7 @@ collections:
                     "contact",
                     "ecommerce",
                     "garment-makers",
+                    "drops",
                     "index",
                     "input-suppliers",
                     "matching-marketplace",
@@ -630,6 +669,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -668,6 +708,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -706,6 +747,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -744,6 +786,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -782,6 +825,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -835,6 +879,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -873,6 +918,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -911,6 +957,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",
@@ -1044,6 +1091,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -1085,6 +1133,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -1136,6 +1185,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -1177,6 +1227,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -1218,6 +1269,7 @@ collections:
                                 "contact",
                                 "ecommerce",
                                 "garment-makers",
+                                "drops",
                                 "index",
                                 "input-suppliers",
                                 "matching-marketplace",
@@ -1261,6 +1313,7 @@ collections:
                         "contact",
                         "ecommerce",
                         "garment-makers",
+                        "drops",
                         "index",
                         "input-suppliers",
                         "matching-marketplace",

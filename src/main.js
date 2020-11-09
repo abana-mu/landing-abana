@@ -6,7 +6,8 @@ import {
   LayoutPlugin,
   SidebarPlugin,
   TabsPlugin,
-  FormRadioPlugin
+  FormRadioPlugin,
+  TooltipPlugin
 } from 'bootstrap-vue';
 
 import DefaultLayout from '~/layouts/Default.vue';
@@ -28,6 +29,7 @@ export default function (Vue, {
   Vue.use(TabsPlugin);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
+  Vue.use(TooltipPlugin);
 
   head.meta.push({
     name: 'author',
@@ -37,6 +39,7 @@ export default function (Vue, {
     content: 'textile, apparel, africa, ecommerce, b2b'
   });
 
+  /*
   head.link.push({
     rel: 'preload',
     href: '/assets/fonts/lineto-circular-book.f25f54b0.ttf',
@@ -51,4 +54,5 @@ export default function (Vue, {
       type: "font/ttf",
       crossorigin: '',
     });
+    */
 }

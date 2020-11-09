@@ -3,22 +3,25 @@
     "title": "Drops",
     "subtext": "Informed decisions, reduced lead times and faster deliveries to support brands, retailers and designers buy sustainably and transparently."
   },
-  "elements": [
-    {
+  "elements": [{
+      "id": "block1",
       "title": "Speed Up the Supply Chain",
-      "content": "Order Ready-To-Ship styles in low MOQs & receive delivery within a week.\n\nReduce Inventory & Markdown Risk\n\n Replenish Best-Sellers"
+      "content": "Order Ready-To-Ship styles in low MOQs & receive delivery within a week.\n\nReduce Inventory & Markdown Risk\n\nReplenish Best-Sellers"
     },
     {
+      "id": "block2",
       "title": "Restore Value",
       "content": "Every year we lose $120 billion worth of economic and environmental capital in the form of surplus stock going to landfill. \n\nTo reduce their environmental footprint, many of our Drops are made with high-end surplus yarns & fabrics.\n\nWe partner with factories to restore value & reduce waste"
     },
     {
+      "id": "block3",
       "title": "Sustainability Commitments",
-      "content": "We passionately believe that fashion should not harm the earth or people.\nEvery detail matters - we commit to be transparent, be accountable and carefully select alternatives to reduce our environmental impact.  \n\nBesides surplus stocks, we use materials with low carbon footprint such as linen, Tencel and certified fibres\n\nMost of our trims & packaging are made from bio-degradable or recycled materials. \n\nFor the balance we aim to source recycled alternatives by 2021"
+      "content": "We passionately believe that fashion should not harm the earth or people.\nEvery detail matters - we commit to be transparent, be accountable and carefully select alternatives to reduce our environmental impact. \n\nBesides surplus stocks, we use materials with low carbon footprint such as linen, Tencel and certified fibres\n\nMost of our trims & packaging are made from bio-degradable or recycled materials. \n\nFor the balance we aim to source recycled alternatives by 2021"
     },
     {
+      "id": "block4",
       "title": "Behind the Label",
-      "content": " We believe that transparency and accountability are essential to build real partnerships. Our ‘unbranded’ labels and swing tags include the maker’s exact coordinates.\n\nEach garment has an additional swing tag indicating any sustainable quality.\n\n**Partner with us and use this in your brand story!**"
+      "content": "We believe that transparency and accountability are essential to build real partnerships. Our ‘unbranded’ labels and swing tags include the maker’s exact coordinates.\n\nEach garment has an additional swing tag indicating any sustainable quality.\n\n**Partner with us and use this in your brand story!**"
     }
   ]
 }

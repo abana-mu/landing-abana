@@ -12,7 +12,22 @@
         :key="features.title"
         class="plan-feature"
       >
-        <div class="plan-feature-title">{{ features.title }}</div>
+        <div class="plan-feature-title">
+          {{ features.title }}
+          <BIconQuestionCircleFill
+            v-if="features.tooltip"
+            icon="check-circle"
+            aria-hidden="true"
+            font-scale="1"
+            v-b-tooltip.hover="{
+              placement: 'top',
+              customClass: 'my-tooltip-class',
+            }"
+            class="ml-2 tooltip-icon"
+            offset="2"
+            :title="features.tooltip"
+          ></BIconQuestionCircleFill>
+        </div>
         <div class="plan-feature-plans d-flex flex-row">
           <div class="feature-plans-options col" v-if="type === 'Basic'">
             <b-icon
@@ -114,13 +129,19 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BIcon, BIconCheckCircle, BIconXCircle } from "bootstrap-vue";
+import {
+  BIcon,
+  BIconCheckCircle,
+  BIconXCircle,
+  BIconQuestionCircleFill,
+} from 'bootstrap-vue';
 
 export default {
   components: {
     BIcon,
     BIconCheckCircle,
     BIconXCircle,
+    BIconQuestionCircleFill,
   },
   props: {
     data: Object,

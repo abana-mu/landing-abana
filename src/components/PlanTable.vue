@@ -1,12 +1,41 @@
 <!-- HTML -->
 <template>
   <div>
-    <div v-for="categories in data.categories" class="category-container" :key="categories">
-      <div class="plan-category-title">{{ categories.title }}</div>
-      <div v-for="features in categories.features" :key="features.title" class="plan-feature">
-        <div class="plan-feature-title">{{ features.title }}</div>
+    <div
+      v-for="categories in data.categories"
+      class="category-container"
+      :key="categories"
+    >
+      <div class="plan-category-title">
+        {{ categories.title }}
+      </div>
+      <div
+        v-for="features in categories.features"
+        :key="features.title"
+        class="plan-feature"
+      >
+        <div class="plan-feature-title">
+          {{ features.title }}
+          <BIconQuestionCircleFill
+            v-if="features.tooltip"
+            icon="check-circle"
+            aria-hidden="true"
+            font-scale="1"
+            v-b-tooltip.hover="{
+              placement: 'right',
+              customClass: 'my-tooltip-class',
+            }"
+            class="ml-2 tooltip-icon"
+            offset="2"
+            :title="features.tooltip"
+          ></BIconQuestionCircleFill>
+        </div>
         <div class="plan-feature-plans d-flex flex-row">
-          <div v-for="plans in features.plans" :key="plans" class="feature-plans-options col">
+          <div
+            v-for="plans in features.plans"
+            :key="plans"
+            class="feature-plans-options col"
+          >
             <b-icon
               v-if="plans === true"
               icon="check-circle"
@@ -15,7 +44,12 @@
               font-scale="1.2"
             ></b-icon>
             <div class="icon-no-container" v-else-if="plans === false">
-              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
+              <b-icon
+                icon="x-circle"
+                aria-hidden="true"
+                class="icon-no"
+                font-scale="1.2"
+              ></b-icon>
             </div>
 
             <div v-else class="text-success">{{ plans }}</div>
@@ -28,17 +62,23 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BIcon, BIconCheckCircle, BIconXCircle } from "bootstrap-vue";
+import {
+  BIcon,
+  BIconCheckCircle,
+  BIconXCircle,
+  BIconQuestionCircleFill,
+} from 'bootstrap-vue';
 
 export default {
   components: {
     BIcon,
     BIconCheckCircle,
-    BIconXCircle
+    BIconXCircle,
+    BIconQuestionCircleFill,
   },
   props: {
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 
@@ -129,5 +169,10 @@ export default {
 
 .icon-no {
   color: #cccccc;
+}
+
+.tooltip-icon {
+  opacity: 0.75;
+  cursor: pointer;
 }
 </style>

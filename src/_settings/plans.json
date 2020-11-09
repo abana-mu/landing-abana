@@ -1,7 +1,6 @@
 {
   "buyer": {
-    "subs": [
-      {
+    "subs": [{
         "name": "Member",
         "desc": "Users only interested in E-Commerce",
         "price3": "$0",
@@ -33,25 +32,23 @@
         ]
       }
     ],
-    "categories": [
-      {
+    "categories": [{
         "title": "General",
-        "features": [
-          {
-            "title": "Users",
-            "plans": {
-              "member": "1",
-              "basic": "1",
-              "pro": "5"
-            }
+        "features": [{
+          "title": "Users",
+          "tooltip": "Number of accounts your plan comes with",
+          "plans": {
+            "member": "1",
+            "basic": "1",
+            "pro": "5"
           }
-        ]
+        }]
       },
       {
         "title": "Database",
-        "features": [
-          {
+        "features": [{
             "title": "Basic Profile",
+            "tooltip": "Build a profile page with information on your company",
             "plans": {
               "member": true,
               "basic": true,
@@ -60,6 +57,7 @@
           },
           {
             "title": "Showroom",
+            "tooltip": "Showcase products in your portfolio",
             "plans": {
               "member": false,
               "basic": "8",
@@ -67,7 +65,8 @@
             }
           },
           {
-            "title": "Search Supplier by Basic Criteria",
+            "title": "Search Suppliers by Basic Criteria",
+            "tooltip": "Use our search functionalities to find suppliers",
             "plans": {
               "member": false,
               "basic": true,
@@ -76,6 +75,7 @@
           },
           {
             "title": "Advanced Search",
+            "tooltip": "Additional filters to search for companies based on MOQs, certifications etc.",
             "plans": {
               "member": false,
               "basic": false,
@@ -86,9 +86,9 @@
       },
       {
         "title": "Marketplace",
-        "features": [
-          {
+        "features": [{
             "title": "Post RFIs (monthly)",
+            "tooltip": "Ask our database network for information on products or services you might need. Invite suppliers to get in touch with you",
             "plans": {
               "member": false,
               "basic": "30",
@@ -97,6 +97,7 @@
           },
           {
             "title": "Post RFQs (monthly)",
+            "tooltip": "Get quotes directly from suppliers on specific requests",
             "plans": {
               "member": false,
               "basic": "10",
@@ -104,7 +105,8 @@
             }
           },
           {
-            "title": "See Listing",
+            "title": "See Listings",
+            "tooltip": "See posts by our suppliers on their extra capacity, new capabilities and special offers",
             "plans": {
               "member": false,
               "basic": true,
@@ -113,6 +115,7 @@
           },
           {
             "title": "Be Notified",
+            "tooltip": "Be notified whenever a product or service matching your tags becomes available ",
             "plans": {
               "member": false,
               "basic": true,
@@ -123,9 +126,9 @@
       },
       {
         "title": "Ecommerce",
-        "features": [
-          {
+        "features": [{
             "title": "Access Drops",
+            "tooltip": "",
             "plans": {
               "member": true,
               "basic": true,
@@ -134,6 +137,7 @@
           },
           {
             "title": "Access Brands Store",
+            "tooltip": "",
             "plans": {
               "member": true,
               "basic": true,
@@ -142,6 +146,7 @@
           },
           {
             "title": "Fast Custom",
+            "tooltip": "",
             "plans": {
               "member": false,
               "basic": false,
@@ -152,9 +157,9 @@
       },
       {
         "title": "Support Services",
-        "features": [
-          {
+        "features": [{
             "title": "Basic Services (QC, Compliance, Order Follow-up)",
+            "tooltip": "",
             "plans": {
               "member": true,
               "basic": true,
@@ -163,6 +168,7 @@
           },
           {
             "title": "Online Order Follow-up - Critical path (coming soon)",
+            "tooltip": "",
             "plans": {
               "member": false,
               "basic": false,
@@ -171,6 +177,7 @@
           },
           {
             "title": "Advisory",
+            "tooltip": "",
             "plans": {
               "member": false,
               "basic": false,
@@ -179,6 +186,7 @@
           },
           {
             "title": "Joint Purchasing & E-commerce Discount",
+            "tooltip": "",
             "plans": {
               "member": false,
               "basic": false,
@@ -190,8 +198,7 @@
     ]
   },
   "supplier": {
-    "subs": [
-      {
+    "subs": [{
         "name": "Basic",
         "desc": "Single User companies",
         "price3": "$119/mo",
@@ -225,25 +232,23 @@
         ]
       }
     ],
-    "categories": [
-      {
+    "categories": [{
         "title": "General",
-        "features": [
-          {
-            "title": "Users",
-            "plans": {
-              "basic": "1",
-              "growth": "3",
-              "pro": "5"
-            }
+        "features": [{
+          "title": "Users",
+          "tooltip": "Number of accounts your plan comes with",
+          "plans": {
+            "basic": "1",
+            "growth": "3",
+            "pro": "5"
           }
-        ]
+        }]
       },
       {
         "title": "Database",
-        "features": [
-          {
+        "features": [{
             "title": "Basic Profile",
+            "tooltip": "Build a profile page with information on your company",
             "plans": {
               "basic": true,
               "growth": true,
@@ -252,6 +257,7 @@
           },
           {
             "title": "Showroom",
+            "tooltip": "Showcase products in your portfolio",
             "plans": {
               "basic": "8",
               "growth": "16",
@@ -260,6 +266,7 @@
           },
           {
             "title": "Search Buyers & Suppliers",
+            "tooltip": "Use our search functionalities to filter through our database",
             "plans": {
               "basic": true,
               "growth": true,
@@ -270,9 +277,9 @@
       },
       {
         "title": "Marketplace",
-        "features": [
-          {
+        "features": [{
             "title": "Post Listings (monthly)",
+            "tooltip": "Notify our network with new capabilities, extra capacity or special offers",
             "plans": {
               "basic": "15",
               "growth": "30",
@@ -281,6 +288,7 @@
           },
           {
             "title": "Number of Contacts (Total)",
+            "tooltip": "The number of buyers and suppliers you can concurrently be in touch with",
             "plans": {
               "basic": "15",
               "growth": "30",
@@ -288,7 +296,8 @@
             }
           },
           {
-            "title": "See Listing",
+            "title": "See RFIs",
+            "tooltip": "See what our networks buyers are looking for and get in touch with them",
             "plans": {
               "basic": true,
               "growth": true,
@@ -296,7 +305,8 @@
             }
           },
           {
-            "title": "View RFQs",
+            "title": "View and reply to RFQs",
+            "tooltip": "Reply to specific requests by our buyers and provide them with quotes",
             "plans": {
               "basic": true,
               "growth": true,
@@ -307,9 +317,9 @@
       },
       {
         "title": "Ecommerce",
-        "features": [
-          {
+        "features": [{
             "title": "Access Drops",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -318,6 +328,7 @@
           },
           {
             "title": "Access Brands Store",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -326,6 +337,7 @@
           },
           {
             "title": "Fast Custom",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
@@ -336,9 +348,9 @@
       },
       {
         "title": "Support Services",
-        "features": [
-          {
+        "features": [{
             "title": "Marketing Services ",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -347,6 +359,7 @@
           },
           {
             "title": "Online Order Follow-Up - Critical path (coming soon)",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
@@ -355,6 +368,7 @@
           },
           {
             "title": "Financial Services",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -363,6 +377,7 @@
           },
           {
             "title": "Advisory",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -371,6 +386,7 @@
           },
           {
             "title": "Joint Purchasing Discounts",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
@@ -382,8 +398,7 @@
     ]
   },
   "service": {
-    "subs": [
-      {
+    "subs": [{
         "name": "Basic",
         "desc": "Single User companies",
         "price3": "$119/mo",
@@ -417,25 +432,23 @@
         ]
       }
     ],
-    "categories": [
-      {
+    "categories": [{
         "title": "General",
-        "features": [
-          {
-            "title": "Users",
-            "plans": {
-              "basic": "1",
-              "growth": "3",
-              "pro": "5"
-            }
+        "features": [{
+          "title": "Users",
+          "tooltip": "Number of accounts your plan comes with",
+          "plans": {
+            "basic": "1",
+            "growth": "3",
+            "pro": "5"
           }
-        ]
+        }]
       },
       {
         "title": "Database",
-        "features": [
-          {
+        "features": [{
             "title": "Basic Profile",
+            "tooltip": "Build a profile page with information on your company",
             "plans": {
               "basic": true,
               "growth": true,
@@ -444,6 +457,7 @@
           },
           {
             "title": "Showroom",
+            "tooltip": "Showcase your services or events in your portfolio",
             "plans": {
               "basic": "8",
               "growth": "16",
@@ -452,6 +466,7 @@
           },
           {
             "title": "Search Buyers & Suppliers",
+            "tooltip": "Use our search functionalities to filter through our database",
             "plans": {
               "basic": true,
               "growth": true,
@@ -462,9 +477,9 @@
       },
       {
         "title": "Marketplace",
-        "features": [
-          {
+        "features": [{
             "title": "Post Listings (monthly)",
+            "tooltip": "Notify our network with new capabilities, extra capacity or special offers",
             "plans": {
               "basic": "15",
               "growth": "30",
@@ -473,6 +488,7 @@
           },
           {
             "title": "Number of Contacts (Total)",
+            "tooltip": "The number of buyers and suppliers you can concurrently be in touch with",
             "plans": {
               "basic": "15",
               "growth": "30",
@@ -480,7 +496,8 @@
             }
           },
           {
-            "title": "See Listing",
+            "title": "See RFIs",
+            "tooltip": "See what our networks buyers are looking for and get in touch with them",
             "plans": {
               "basic": true,
               "growth": true,
@@ -488,7 +505,8 @@
             }
           },
           {
-            "title": "View RFQs",
+            "title": "View and reply to RFQs",
+            "tooltip": "Reply to specific requests by our buyers and provide them with quotes",
             "plans": {
               "basic": true,
               "growth": true,
@@ -499,9 +517,9 @@
       },
       {
         "title": "Ecommerce",
-        "features": [
-          {
+        "features": [{
             "title": "Access Drops",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -510,6 +528,7 @@
           },
           {
             "title": "Access Brands Store",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -518,6 +537,7 @@
           },
           {
             "title": "Fast Custom",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
@@ -528,9 +548,9 @@
       },
       {
         "title": "Support Services",
-        "features": [
-          {
+        "features": [{
             "title": "Marketing Services ",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -539,6 +559,7 @@
           },
           {
             "title": "Online Order Follow-Up - Critical path (coming soon)",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
@@ -547,6 +568,7 @@
           },
           {
             "title": "Financial Services",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -555,6 +577,7 @@
           },
           {
             "title": "Advisory",
+            "tooltip": "",
             "plans": {
               "basic": true,
               "growth": true,
@@ -563,6 +586,7 @@
           },
           {
             "title": "Joint Purchasing Discounts",
+            "tooltip": "",
             "plans": {
               "basic": false,
               "growth": false,
