@@ -48,6 +48,22 @@
       "coverage": "Morocco",
       "number": "+21 (266) 122-1390",
       "email": "lahcen.haddad@abana.mu"
+    },
+    {
+      "name": "Dirk Robens",
+      "location": "Mauritius",
+      "company": "ABANA Mauritius",
+      "coverage": "Mauritius & Madagascar ",
+      "number": "+230 282 1700",
+      "email": "dirk.robens@abana.mu"
+    },
+    {
+      "name": "Gengar Pushparathan",
+      "location": "Antananarivo",
+      "company": "ABANA Mauritius",
+      "coverage": "Madagascar",
+      "number": "+261 33 426 3980",
+      "email": "gengar.p@abana.mu"
     }
   ]
 }
