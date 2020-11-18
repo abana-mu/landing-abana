@@ -38,7 +38,7 @@
           <div class="scroll-image-container w-50">
             <div class="mask">
               <div class="scroll-image1">
-                <g-image :src="Data.elements[0].image" quality="100" />
+                <g-image src="../assets/images/supply.png" quality="100" />
               </div>
               <div class="scroll-image scroll-image2">
                 <g-image :src="Data.elements[1].image" quality="100" />
@@ -58,12 +58,28 @@
         </section>
       </section>
     </div>
+    <section class="my-5">
+      <h2 class="text-center mb-5">Sample Drops</h2>
+      <div class="video-container">
+        <div class="d-flex justify-content-center video-wrapper">
+          <iframe
+            width="840"
+            height="472.5"
+            :src="Data.header.video | youtubize"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            modestbranding
+          ></iframe>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
-import Data from "~/_settings/drops.json";
-import TwoCol from "~/components/PageElementTwoColMd";
+import Data from '~/_settings/drops.json';
+import TwoCol from '~/components/PageElementTwoColMd';
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
@@ -84,25 +100,26 @@ export default {
     TwoCol,
   },
   metaInfo: {
-    title: "Drops",
+    title: 'Drops',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.",
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
     ],
   },
   data() {
     return {
       Data,
-      activeBlock: "block1",
+      activeBlock: 'block1',
     };
   },
 
   mounted() {
-    document.addEventListener("scroll", this.handleScroll);
+    document.addEventListener('scroll', this.handleScroll);
   },
+
   methods: {
     handleScroll() {
       this.Data.elements.find((number) => {
@@ -120,6 +137,15 @@ export default {
 <style lang="scss">
 .height-restriction {
   min-height: calc(100vh - 390px);
+}
+
+.video-container {
+  width: 100%;
+  @media (min-width: $break-l) {
+    width: 50%;
+  }
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .scroll-container {
@@ -270,7 +296,7 @@ export default {
     }
 
     .scroll-image1 {
-      background-color: #6b6d9b;
+      background-color: #393855;
       height: calc(100vh - 11.875rem);
       position: relative;
       display: flex;
@@ -283,7 +309,7 @@ export default {
       }
     }
     .scroll-image2 {
-      background-color: #a3a6c4;
+      background-color: #6b6d9b;
     }
     .scroll-image3 {
       background-color: #f2dcbb;

@@ -21,7 +21,6 @@
               <Linkedin />
             </a>
 
-
             <!--
             <a href="https://www.facebook.com" target="_blank">
               <Facebook />
@@ -29,6 +28,12 @@
             -->
             <a href="https://www.instagram.com/abana.mauritius" target="_blank">
               <Insta />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA"
+              target="_blank"
+            >
+              <Youtube />
             </a>
           </div>
         </b-col>
@@ -75,9 +80,10 @@ import Slogan from '@/components/compIcons/Slogan';
 import Facebook from '~/components/compIcons/SocialFacebook';
 import Linkedin from '~/components/compIcons/SocialLinkedin';
 import Insta from '~/components/compIcons/SocialInsta';
+import Youtube from '~/components/compIcons/SocialYoutube';
 
 export default {
-  components: { Logo, Slogan, Facebook, Linkedin, Insta },
+  components: { Logo, Slogan, Facebook, Linkedin, Insta, Youtube },
   data() {
     return {
       Data,

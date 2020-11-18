@@ -27,7 +27,7 @@ export default {
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss'>
+<style lang="scss">
 .hamburger {
   display: flex;
   outline: none;
@@ -45,7 +45,7 @@ export default {
 .hamburger.active .hamburger-inner,
 .hamburger.active .hamburger-inner:after,
 .hamburger.active .hamburger-inner:before {
-  background-color: $title-dark;
+  background-color: $primary;
 }
 .hamburger-box {
   position: relative;
@@ -68,12 +68,12 @@ export default {
   transition-duration: 0.15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: $title-dark;
+  background-color: $primary;
 }
 .hamburger-inner:after,
 .hamburger-inner:before {
   display: block;
-  content: "";
+  content: '';
 }
 .hamburger-inner:before {
   top: -8px;

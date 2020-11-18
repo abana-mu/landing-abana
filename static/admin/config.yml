@@ -553,10 +553,10 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
               - {
-                  label: "Image",
-                  name: "image",
-                  required: false,
-                  widget: "image",
+                  label: "Youtube Video",
+                  name: "video",
+                  widget: "string",
+                  hint: "Add youtube URL",
                 }
 
           - label: "Elements"
@@ -1499,6 +1499,40 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
+
+  - name: "tutorials"
+    label: "How it works"
+    editor:
+      preview: false
+    files:
+      - label: "Videos"
+        name: "videos"
+        file: "src/_settings/tutorials.json"
+        fields:
+          - label: "Header"
+            name: header
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "SubText", name: "subtext", widget: "text" }
+          - label: "Categories"
+            name: categories
+            label_singular: "Category"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Tutorial"
+                name: tutorial
+                label_singular: "Tutorial"
+                widget: list
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - {
+                      label: "Video",
+                      name: "video",
+                      widget: "string",
+                      hint: "Youtube Link",
+                    }
 
   - name: "careers" # Used in routes, e.g., /admin/collections/blog
     label: "Jobs" # Used in the UI

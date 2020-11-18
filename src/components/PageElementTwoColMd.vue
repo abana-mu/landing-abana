@@ -24,8 +24,8 @@
             /></g-link>
           </b-col>
         </b-col>
-        <b-col lg class="column-image">
-          <div>
+        <b-col lg class="column-image d-flex justify-content-center">
+          <div class="col-img-container">
             <g-image :src="row.image" quality="100" blur="40" width="750" />
           </div>
         </b-col>
@@ -65,7 +65,6 @@ export default {
     margin-top: 8rem;
   }
 
-
   .column-text {
     margin-bottom: 30px;
     @media (min-width: $break-m) {
@@ -93,6 +92,13 @@ export default {
       font-style: italic;
       color: $subtitle-dark;
     }
+  }
+}
+
+.col-img-container {
+  width: 100%;
+  @media (min-width: $break-s) {
+    width: 75%;
   }
 }
 
