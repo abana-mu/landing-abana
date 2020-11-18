@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "title": "General",
+      "tutorial": [
+        {
+          "title": "Register as a free Buyer",
+          "video": "https://www.youtube.com/watch?v=_BvYu0bTxlw"
+        },
+        {
+          "title": "Using the Feed",
+          "video": "https://www.youtube.com/watch?v=SHd4g7d7IoU"
+        }
+      ]
+    },
+    {
+      "title": "Features",
+      "tutorial": [
+        {
+          "video": "https://www.youtube.com/watch?v=G0j3WN2UWJY",
+          "title": "Searching the Database and visiting profiles"
+        },
+        {
+          "title": "How to send Messages",
+          "video": "https://www.youtube.com/watch?v=rdi9_NaGVSU"
+        },
+        {
+          "title": "How to post an RFQ as a Buyer",
+          "video": "https://www.youtube.com/watch?v=lh0WGFQfKT8"
+        }
+      ]
+    }
+  ],
+  "header": {
+    "subtext": "See tutorials on how our platform functions",
+    "title": "How it works"
+  }
+}
