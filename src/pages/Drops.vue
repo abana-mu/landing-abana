@@ -11,7 +11,7 @@
       </div>
       <section class="pt-5 back-grey bordered">
         <div
-          class="scroll-container d-flex flex-row align-items-start"
+          class="scroll-container flex-row align-items-start d-none d-lg-flex"
           :class="activeBlock"
         >
           <ul class="scroll-circle">
@@ -35,7 +35,7 @@
               ></vue-simple-markdown>
             </li>
           </ul>
-          <div class="scroll-image-container w-50">
+          <div class="scroll-image-container w-50 ">
             <div class="mask">
               <div class="scroll-image1">
                 <g-image src="~/assets/images/picture7.jpg" quality="100" />
@@ -52,6 +52,10 @@
             </div>
           </div>
         </div>
+
+        <section class="section-content d-flex d-lg-none">
+          <TwoCol :data="Data.elements" break="lg" />
+        </section>
       </section>
     </div>
   </Layout>
@@ -59,6 +63,7 @@
 
 <script>
 import Data from '~/_settings/drops.json';
+import TwoCol from "~/components/PageElementTwoColMd";
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
@@ -75,6 +80,9 @@ function isElementInViewport(el) {
 }
 
 export default {
+  components: {
+    TwoCol
+  },
   metaInfo: {
     title: 'Drops',
     meta: [
@@ -134,10 +142,16 @@ export default {
   flex-direction: column;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+
+  padding-left: 0;
+
+  @media (min-width: $break-l) {
+    padding-left: 10px;
+  }
   li {
     flex-direction: column;
     justify-content: center;
-    max-width: 30rem;
+    max-width: 80%;
     .title-block {
       margin-bottom: 1.5rem;
     }
@@ -237,6 +251,7 @@ export default {
   position: sticky;
   display: block;
   width: 50%;
+  border-width: 10px;;
 
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
@@ -244,10 +259,15 @@ export default {
   .mask {
     position: relative;
     overflow: hidden;
+    height: calc(100vh - 11.875rem);
+    border-radius: 10px;
+
+    .scroll-image, .scroll-image1{
+      img{width: 100%;}
+    }
 
     .scroll-image1 {
       background-color: #393855;
-      height: calc(100vh - 11.875rem);
       position: relative;
     }
     .scroll-image2 {
@@ -271,6 +291,7 @@ export default {
         opacity: 0;
       }
     }
+    
   }
 }
 </style>

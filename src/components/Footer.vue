@@ -15,14 +15,13 @@
           <p class="small-text mb-2">{{ Data.header.title }}</p>
           <div class="social">
             <a
-              id="tooltip-target-1"
               href="https://www.linkedin.com/company/abana-mauritius/"
               target="_blank"
             >
               <Linkedin />
             </a>
 
-            <b-tooltip target="tooltip-target-1">Instagram</b-tooltip>
+
             <!--
             <a href="https://www.facebook.com" target="_blank">
               <Facebook />
