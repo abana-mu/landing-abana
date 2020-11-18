@@ -35,19 +35,19 @@
               ></vue-simple-markdown>
             </li>
           </ul>
-          <div class="scroll-image-container w-50 ">
+          <div class="scroll-image-container w-50">
             <div class="mask">
               <div class="scroll-image1">
-                <g-image src="~/assets/images/picture7.jpg" quality="100" />
+                <g-image :src="Data.elements[0].image" quality="100" />
               </div>
               <div class="scroll-image scroll-image2">
-                <g-image src="~/assets/images/picture8.jpg" quality="100" />
+                <g-image :src="Data.elements[1].image" quality="100" />
               </div>
               <div class="scroll-image scroll-image3">
-                <g-image src="~/assets/images/picture9.jpg" quality="100" />
+                <g-image :src="Data.elements[2].image" quality="100" />
               </div>
               <div class="scroll-image scroll-image4">
-                <g-image src="~/assets/images/picture7.jpg" quality="100" />
+                <g-image :src="Data.elements[3].image" quality="100" />
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import Data from '~/_settings/drops.json';
+import Data from "~/_settings/drops.json";
 import TwoCol from "~/components/PageElementTwoColMd";
 
 function isElementInViewport(el) {
@@ -81,27 +81,27 @@ function isElementInViewport(el) {
 
 export default {
   components: {
-    TwoCol
+    TwoCol,
   },
   metaInfo: {
-    title: 'Drops',
+    title: "Drops",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.",
       },
     ],
   },
   data() {
     return {
       Data,
-      activeBlock: 'block1',
+      activeBlock: "block1",
     };
   },
 
   mounted() {
-    document.addEventListener('scroll', this.handleScroll);
+    document.addEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
@@ -251,7 +251,7 @@ export default {
   position: sticky;
   display: block;
   width: 50%;
-  border-width: 10px;;
+  border-width: 10px;
 
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
@@ -262,26 +262,43 @@ export default {
     height: calc(100vh - 11.875rem);
     border-radius: 10px;
 
-    .scroll-image, .scroll-image1{
-      img{width: 100%;}
+    .scroll-image,
+    .scroll-image1 {
+      img {
+        width: 100%;
+      }
     }
 
     .scroll-image1 {
-      background-color: #393855;
+      background-color: #6b6d9b;
+      height: calc(100vh - 11.875rem);
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 3px rgb(0, 0, 0);
+      img {
+        width: 75%;
+        filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.2));
+      }
     }
     .scroll-image2 {
-      background-color: $lightest-red;
+      background-color: #a3a6c4;
     }
     .scroll-image3 {
-      background-color: $light-blue;
+      background-color: #f2dcbb;
     }
     .scroll-image4 {
-      background-color: $green;
+      background-color: #f9f7cf;
     }
 
     .scroll-image {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
       top: 0;
       transform: scaleY(0);
       transform-origin: bottom;
@@ -289,9 +306,10 @@ export default {
       transition-property: transform;
       img {
         opacity: 0;
+        width: 75%;
+        filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.25));
       }
     }
-    
   }
 }
 </style>
