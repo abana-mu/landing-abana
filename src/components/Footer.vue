@@ -42,9 +42,9 @@
             <b-col cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Product</div>
               <div class="d-flex flex-column text-small">
+                <g-link to="/how-it-works">How It Works</g-link>
                 <g-link to="/pricing">Pricing</g-link>
                 <g-link to="/why-africa">Why Africa</g-link>
-                <g-link to="/sustainability">Sustainability</g-link>
               </div>
             </b-col>
             <b-col cols="12" sm class="mb-4 mb-sm-0">
@@ -74,13 +74,13 @@
 
 <!-- SCRIPTS -->
 <script>
-import Data from '~/_settings/landing.json';
-import Logo from '~/components/compIcons/Logo';
-import Slogan from '@/components/compIcons/Slogan';
-import Facebook from '~/components/compIcons/SocialFacebook';
-import Linkedin from '~/components/compIcons/SocialLinkedin';
-import Insta from '~/components/compIcons/SocialInsta';
-import Youtube from '~/components/compIcons/SocialYoutube';
+import Data from "~/_settings/landing.json";
+import Logo from "~/components/compIcons/Logo";
+import Slogan from "@/components/compIcons/Slogan";
+import Facebook from "~/components/compIcons/SocialFacebook";
+import Linkedin from "~/components/compIcons/SocialLinkedin";
+import Insta from "~/components/compIcons/SocialInsta";
+import Youtube from "~/components/compIcons/SocialYoutube";
 
 export default {
   components: { Logo, Slogan, Facebook, Linkedin, Insta, Youtube },

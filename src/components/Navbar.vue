@@ -13,7 +13,7 @@
           class="row top-row w-100 justify-content-between align-items-center no-gutters"
         >
           <!-- Nav Brand -->
-          <div class="col col-auto ">
+          <div class="col col-auto">
             <g-link class="nav-logo" to="/">
               <Logo />
               <Slogan />
@@ -21,7 +21,7 @@
           </div>
 
           <!-- Middle Buttons / Hidden on mobile-->
-          <div class="col col-auto  d-none d-lg-flex justify-content-center">
+          <div class="col col-auto d-none d-lg-flex justify-content-center">
             <b-navbar-nav class="nav-main">
               <!-- Products-->
               <div
@@ -243,6 +243,16 @@
 
                     <g-link
                       class="dropdown-item drop-title-singular d-flex align-items-center"
+                      to="/how-it-works/"
+                    >
+                      <div class="drop-image-sm">
+                        <IHow />
+                      </div>
+                      <div class="drop-text">How It Works</div>
+                    </g-link>
+
+                    <g-link
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
                       to="/contact/"
                     >
                       <div class="drop-image-sm">
@@ -276,7 +286,7 @@
           </div>
 
           <!-- Right aligned nav items -->
-          <div class="col col-auto  d-none d-lg-flex">
+          <div class="col col-auto d-none d-lg-flex">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
               <a href="https://app.abana.mu/login" class="log-in"
                 >{{ cta.sub }}
@@ -541,6 +551,16 @@
                     >
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
+                      to="/how-it-works/"
+                      @click="hide"
+                    >
+                      <div class="drop-image-sm">
+                        <IHow />
+                      </div>
+                      <div class="drop-text">How it Works</div>
+                    </g-link>
+                    <g-link
+                      class="sidebar-item-level-2 d-flex align-items-center"
                       to="/contact/"
                       @click="hide"
                     >
@@ -584,7 +604,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BNavbar, BNavbarNav } from 'bootstrap-vue';
+import { BNavbar, BNavbarNav } from "bootstrap-vue";
 
 import {
   BIcon,
@@ -593,29 +613,30 @@ import {
   BDropdownHeader,
   BDropdownDivider,
   BIconArrowLeftShort,
-} from 'bootstrap-vue';
+} from "bootstrap-vue";
 
-import Logo from '@/components/compIcons/Logo';
-import Slogan from '@/components/compIcons/Slogan';
-import Hamburger from '@/components/Hamburger';
+import Logo from "@/components/compIcons/Logo";
+import Slogan from "@/components/compIcons/Slogan";
+import Hamburger from "@/components/Hamburger";
 
-import IMarket from '@/components/compIcons/IMarket';
-import IEcomm from '@/components/compIcons/IEcomm';
-import ISupply from '@/components/compIcons/ISupply';
-import ISource from '@/components/compIcons/ISource';
-import IProduct from '@/components/compIcons/IProduct';
-import IGM from '@/components/compIcons/IGM';
-import IIS from '@/components/compIcons/IIS';
-import ISP from '@/components/compIcons/ISP';
-import IAbout from '@/components/compIcons/IAbout';
-import IPrivacy from '@/components/compIcons/IPrivacy';
-import ITerms from '@/components/compIcons/ITerms';
-import IContact from '@/components/compIcons/IContact';
-import ICareer from '@/components/compIcons/ICareer';
-import IPartnership from '@/components/compIcons/IPartnership';
-import ISustainability from '@/components/compIcons/ISustainability';
-import IFreelancers from '@/components/compIcons/IFreelancers';
-import ICountryRep from '@/components/compIcons/ICountryRep';
+import IMarket from "@/components/compIcons/IMarket";
+import IEcomm from "@/components/compIcons/IEcomm";
+import ISupply from "@/components/compIcons/ISupply";
+import ISource from "@/components/compIcons/ISource";
+import IProduct from "@/components/compIcons/IProduct";
+import IGM from "@/components/compIcons/IGM";
+import IIS from "@/components/compIcons/IIS";
+import ISP from "@/components/compIcons/ISP";
+import IAbout from "@/components/compIcons/IAbout";
+import IPrivacy from "@/components/compIcons/IPrivacy";
+import ITerms from "@/components/compIcons/ITerms";
+import IContact from "@/components/compIcons/IContact";
+import ICareer from "@/components/compIcons/ICareer";
+import IPartnership from "@/components/compIcons/IPartnership";
+import ISustainability from "@/components/compIcons/ISustainability";
+import IFreelancers from "@/components/compIcons/IFreelancers";
+import ICountryRep from "@/components/compIcons/ICountryRep";
+import IHow from "@/components/compIcons/IHow";
 
 export default {
   components: {
@@ -640,6 +661,7 @@ export default {
     IGM,
     IIS,
     ISP,
+    IHow,
     IAbout,
     IPrivacy,
     ITerms,
@@ -652,69 +674,69 @@ export default {
     return {
       scrollPosition: null,
       market: {
-        title: 'Matching Marketplace',
-        subtitle: 'Illuminating sourcing opportunities',
+        title: "Matching Marketplace",
+        subtitle: "Illuminating sourcing opportunities",
         examples: [
           {
-            title: 'DATABASE',
-            example: 'Use multiple criteria to find new partners',
+            title: "DATABASE",
+            example: "Use multiple criteria to find new partners",
           },
           {
-            title: 'MARKETPLACE',
+            title: "MARKETPLACE",
             example:
-              'Discover a wealth of targeted information and opportunities',
+              "Discover a wealth of targeted information and opportunities",
           },
         ],
       },
       ecom: {
-        title: 'E-commerce',
+        title: "E-commerce",
         subtitle:
-          'Sophisticated products in low MOQs for immediate or quick deliveries',
+          "Sophisticated products in low MOQs for immediate or quick deliveries",
         examples: [
           {
-            title: 'Drops',
-            example: 'Bi-monthly collections of ready-to-ship styles',
+            title: "Drops",
+            example: "Bi-monthly collections of ready-to-ship styles",
           },
           {
-            title: 'Brands',
-            example: 'Curated list of the best regional brands (coming soon)',
+            title: "Brands",
+            example: "Curated list of the best regional brands (coming soon)",
           },
           {
-            title: 'Fast Custom',
+            title: "Fast Custom",
             example:
-              'Order directly from factories in low MOQs & short lead-times (coming soon)',
+              "Order directly from factories in low MOQs & short lead-times (coming soon)",
           },
         ],
       },
       supply: {
-        title: 'Supply Chain Solutions',
-        subtitle: 'Tailored services to help you grow in the region',
+        title: "Supply Chain Solutions",
+        subtitle: "Tailored services to help you grow in the region",
         examples: [
           {
-            title: 'Support Services',
-            example: 'Quality Assurance, Compliance & Testing',
+            title: "Support Services",
+            example: "Quality Assurance, Compliance & Testing",
           },
           {
-            title: 'Virtual Supplier',
-            example: 'Sample development, merchandising and more...',
+            title: "Virtual Supplier",
+            example: "Sample development, merchandising and more...",
           },
           {
-            title: 'Advisory',
-            example: 'Strategic advice on sourcing from the Indian Ocean',
+            title: "Advisory",
+            example: "Strategic advice on sourcing from the Indian Ocean",
           },
           {
-            title: 'Online order Tracking',
-            example: 'Set up Critical Path dates',
+            title: "Online order Tracking",
+            example: "Set up Critical Path dates",
           },
           {
-            title: 'Corporate Discounts',
-            example: 'Key partners in the region',
+            title: "Corporate Discounts",
+            example: "Key partners in the region",
           },
         ],
       },
       cta: {
-        main: 'Sign Up',
-        sub: 'Log In',
+        main: "Sign Up",
+        sub: "Log In",
       },
       hoverPro: false,
       hoverSol: false,
@@ -733,7 +755,7 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
+    window.addEventListener("scroll", this.updateScroll);
   },
 };
 </script>
