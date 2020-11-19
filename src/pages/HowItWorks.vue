@@ -90,6 +90,7 @@ export default {
   font-size: 20px;
 
   background-color: $grey-light;
+  border: 1px solid $border;
   border-radius: 6px;
 
   span {
