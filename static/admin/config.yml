@@ -1437,101 +1437,89 @@ collections:
         name: "af_reps"
         file: "src/_settings/afreps.json"
         fields:
-          - label: "Header"
-            name: header
-            widget: "object"
+          - label: "Africa Country Reps"
+            name: af_reps
+            label_singular: "Country Rep"
+            widget: list
             fields:
-              - label: "Africa Country Reps"
-                name: af_reps
-                label_singular: "Country Rep"
-                widget: list
-                fields:
-                  - {
-                      label: "Name",
-                      name: "name",
-                      widget: "string",
-                      hint: "First and Last",
-                    }
-                  - { label: "Location", name: "location", widget: "string" }
-                  - { label: "Company", name: "company", widget: "string" }
-                  - {
-                      label: "Georgraphic Coverage",
-                      name: "coverage",
-                      widget: "text",
-                    }
-                  - {
-                      label: "Phone Number",
-                      name: "number",
-                      widget: "string",
-                      hint: "Add Country Code ex: +230 ...",
-                    }
-                  - { label: "Email Address", name: "email", widget: "string" }
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
       - label: "America Country Reps"
         name: "am_reps"
         file: "src/_settings/amreps.json"
         fields:
-          - label: "Header"
-            name: header
-            widget: "object"
+          - label: "America Country Reps"
+            name: am_reps
+            label_singular: "Country Rep"
+            widget: list
             fields:
-              - label: "America Country Reps"
-                name: am_reps
-                label_singular: "Country Rep"
-                widget: list
-                fields:
-                  - {
-                      label: "Name",
-                      name: "name",
-                      widget: "string",
-                      hint: "First and Last",
-                    }
-                  - { label: "Location", name: "location", widget: "string" }
-                  - { label: "Company", name: "company", widget: "string" }
-                  - {
-                      label: "Georgraphic Coverage",
-                      name: "coverage",
-                      widget: "text",
-                    }
-                  - {
-                      label: "Phone Number",
-                      name: "number",
-                      widget: "string",
-                      hint: "Add Country Code ex: +230 ...",
-                    }
-                  - { label: "Email Address", name: "email", widget: "string" }
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
       - label: "Asia Country Reps"
         name: "as_reps"
         file: "src/_settings/asreps.json"
         fields:
-          - label: "Header"
-            name: header
-            widget: "object"
+          - label: "Asia Country Reps"
+            name: as_reps
+            label_singular: "Country Rep"
+            widget: list
             fields:
-              - label: "Asia Country Reps"
-                name: as_reps
-                label_singular: "Country Rep"
-                widget: list
-                fields:
-                  - {
-                      label: "Name",
-                      name: "name",
-                      widget: "string",
-                      hint: "First and Last",
-                    }
-                  - { label: "Location", name: "location", widget: "string" }
-                  - { label: "Company", name: "company", widget: "string" }
-                  - {
-                      label: "Georgraphic Coverage",
-                      name: "coverage",
-                      widget: "text",
-                    }
-                  - {
-                      label: "Phone Number",
-                      name: "number",
-                      widget: "string",
-                      hint: "Add Country Code ex: +230 ...",
-                    }
-                  - { label: "Email Address", name: "email", widget: "string" }
+              - {
+                  label: "Name",
+                  name: "name",
+                  widget: "string",
+                  hint: "First and Last",
+                }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Company", name: "company", widget: "string" }
+              - {
+                  label: "Georgraphic Coverage",
+                  name: "coverage",
+                  widget: "text",
+                }
+              - {
+                  label: "Phone Number",
+                  name: "number",
+                  widget: "string",
+                  hint: "Add Country Code ex: +230 ...",
+                }
+              - { label: "Email Address", name: "email", widget: "string" }
   
 
   - name: "tutorials"
