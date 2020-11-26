@@ -86,8 +86,8 @@
 import Data from '~/_settings/sustainability.json';
 import TwoCol from '~/components/PageElementTwoCol';
 import OneCol from '~/components/PageElementOneCol';
-import String1 from '~/components/compIcons/String1';
-import String2 from '~/components/compIcons/String2';
+import String1 from '~/components/icons/String1';
+import String2 from '~/components/icons/String2';
 
 export default {
   components: {

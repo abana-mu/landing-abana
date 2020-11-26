@@ -283,8 +283,8 @@
 <script>
 import Data from '~/_settings/pricing.json';
 import Plans from '~/_settings/plans.json';
-import Table from '~/components/PlanTable';
-import TableMob from '~/components/PlanTableMob';
+import Table from '~/components/PricingPlanTable';
+import TableMob from '~/components/PricingPlanTableMob';
 import {
   BIcon,
   BIconCheckCircle,

@@ -329,7 +329,7 @@ export default {
   h4,
   p,
   .footer p {
-    color: $text-disabled;
+    color: $disabled;
   }
   .footer {
     background-color: white;

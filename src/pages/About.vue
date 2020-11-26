@@ -20,7 +20,7 @@
           </b-col>
           <b-col cols="12" lg>
             <h2 class="mb-3">
-              Arif Currimjee - <span class="red">Founder</span>
+              Arif Currimjee - <span class="text-primary">Founder</span>
             </h2>
             <vue-simple-markdown
               :source="Data.arif"
@@ -88,9 +88,9 @@
 
 <script>
 import Data from '~/_settings/aboutus.json';
-import Logo from '@/components/compIcons/Logo';
-import String2 from '~/components/compIcons/String2';
-import String1 from '~/components/compIcons/String1';
+import Logo from '@/components/icons/Logo';
+import String2 from '~/components/icons/String2';
+import String1 from '~/components/icons/String1';
 
 export default {
   metaInfo: {
@@ -135,12 +135,8 @@ export default {
   }
 }
 
-.red {
-  color: $primary;
-}
-
 .blue {
-  color: #607aff;
+  color: $blue;
 }
 
 .about-row {

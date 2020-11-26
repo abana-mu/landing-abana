@@ -22,8 +22,8 @@
 import Data from "~/_settings/supplychain.json";
 import OneCol from "~/components/PageElementOneCol";
 import TwoCol from "~/components/PageElementTwoCol";
-import String1 from "~/components/compIcons/String1";
-import String2 from "~/components/compIcons/String2";
+import String1 from "~/components/icons/String1";
+import String2 from "~/components/icons/String2";
 
 export default {
   components: {

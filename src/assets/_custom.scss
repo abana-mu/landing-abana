@@ -6,7 +6,7 @@ html {
 
 $font: 'SS-font1';
 
-//FONT 1
+// --- FONT ---
 
 @font-face {
   font-family: 'SS-font1';
@@ -33,8 +33,6 @@ $font: 'SS-font1';
   font-display: swap;
 }
 
-
-
 body {
   font-family: $font;
   overflow-x: hidden;
@@ -53,10 +51,8 @@ body {
   color: white;
 }
 
-select {
-  font-family: revert;
-}
 
+//  --- TYPOGRAPHY --- 
 
 h1,
 h2,
@@ -71,7 +67,6 @@ h6 {
 
 h1 {
   // -576
-
   font-size: 2.2rem;
   letter-spacing: 1.2px;
 
@@ -169,15 +164,15 @@ h4 {
   }
 }
 
-
 p {
   color: $text-body;
 }
 
 .text-small {
   font-size: 1rem;
-  ;
 }
+
+//  --- COMPONENTS --- 
 
 .btn {
   padding: 0.5rem 1.5rem;
@@ -187,26 +182,42 @@ p {
   opacity: 1 !important;
 
   .tooltip-inner {
-    background-color: $blue-grey;
+    background-color: $secondary;
   }
 }
 
 .tooltip.bs-tooltip-right .arrow:before {
-  border-right-color: $blue-grey !important;
+  border-right-color: $secondary !important;
 }
 
 .tooltip.bs-tooltip-left .arrow:before {
-  border-left-color: $blue-grey !important;
+  border-left-color: $secondary !important;
 }
 
 .tooltip.bs-tooltip-bottom .arrow:before {
-  border-bottom-color: $blue-grey !important;
+  border-bottom-color: $secondary !important;
 }
 
 .tooltip.bs-tooltip-top .arrow:before {
-  border-top-color: $blue-grey !important;
+  border-top-color: $secondary !important;
 }
 
+
+.string {
+  width: 50px;
+
+  @media (min-width: $break-m) {
+    width: 55px;
+  }
+
+  @media (min-width: $break-l) {
+    width: 60px;
+  }
+
+  margin: 50px auto 20px auto;
+}
+
+//  --- MARKDOWN --- 
 
 .markdown-body {
   font-family: $font !important;
@@ -219,6 +230,7 @@ p {
   white-space: pre-line !important;
 }
 
+// --- LINKING ---
 
 .a-keyline {
   border: none;
@@ -246,7 +258,6 @@ p {
     /* negative fixed header height */
   }
 }
-
 
 .anchor-links {
   display: flex;
@@ -276,8 +287,7 @@ p {
   }
 }
 
-//Layouts
-
+// --- LAYOUTS --- 
 
 .container-fluid {
   max-width: 1440px;
@@ -326,7 +336,7 @@ p {
 }
 
 
-// TITLES and SUBTITLES
+//  --- TITLES & SUBTITLES --- 
 
 
 .title {
@@ -334,8 +344,6 @@ p {
   margin-bottom: 12px;
   text-align: center;
 }
-
-
 
 .subtitle {
   color: $subtitle-dark;
@@ -372,43 +380,19 @@ p {
   }
 }
 
-//COLORS
+// --- COLOURS + BACKGROUND COLORS + BORDERS --- 
 
-.title-dark {
-  color: $title-dark;
-}
-
-.text-primary {
+.text-primary{
   color: $primary;
-}
-
-.text-lighter {
-  color: $text-light;
 }
 
 .back-grey {
   background-color: $grey-light;
 }
 
-.back-light-red {
-  background-color: $lightest-red;
-}
-
 .back-blue {
-  background-color: $blue-grey;
+  background-color: $secondary;
   color: $white;
-}
-
-.back-light-blue {
-  background-color: $light-blue;
-}
-
-.btn-outline-dark {
-  border-color: $grey-light;
-}
-
-.back-beige {
-  background-color: $beige-grey;
 }
 
 .bordered {
@@ -416,7 +400,7 @@ p {
   border-bottom: 1px solid $border;
 }
 
-// CUSTOM ALL PAGES
+//  --- TRANSITIONS & ANIMATIONS--- 
 
 .text-transition {
   -webkit-transition: all 0.2s ease-in-out;
@@ -424,7 +408,20 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-//NAVIGATION
+.col-link {
+  &:hover {
+    .b-icon {
+      transition: ease-out 0.2s;
+      margin-left: 1rem;
+    }
+  }
+
+  .b-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+// --- NAVIGATION --- 
 
 .navbar-light .navbar-nav .nav-link {
   color: $title-dark;
@@ -470,51 +467,10 @@ p {
   transform: translateY(-100%);
 }
 
-
-.section-content {
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-}
-
-.header {
-  text-align: center;
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-
-}
-
-.image-banner {
-  img {
-    border-radius: 6px;
-    width: 100%;
-
-    @media (min-width: $break-m) {
-      width: 85%;
-    }
-  }
-}
-
-
-.string {
-  width: 50px;
-
-  @media (min-width: $break-m) {
-    width: 55px;
-  }
-
-  @media (min-width: $break-l) {
-    width: 60px;
-  }
-
-  margin: 50px auto 20px auto;
-}
+// --- TABS ---
 
 .nav-tabs {
-  background-color: $blue-grey;
+  background-color: $secondary;
   border: none;
   padding: 15px 0 1px 0;
 
@@ -576,25 +532,37 @@ p {
   z-index: 10;
 }
 
+// --- PAGES --- 
 
-//  ANIMATE AROW
+.header {
+  text-align: center;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
 
+}
 
+.image-banner {
+  img {
+    border-radius: 6px;
+    width: 100%;
 
-.col-link {
-  &:hover {
-    .b-icon {
-      transition: ease-out 0.2s;
-      margin-left: 1rem;
+    @media (min-width: $break-m) {
+      width: 85%;
     }
-  }
-
-  .b-icon {
-    margin-left: 0.5rem;
   }
 }
 
-//YOUTUBE
+.section-content {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+
+// --- YOUTUBE --- 
 
 .video-wrapper {
   position: relative;

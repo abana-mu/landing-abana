@@ -37,9 +37,9 @@
 import Data from "~/_settings/matching.json";
 import OneCol from "~/components/PageElementOneCol";
 import TwoCol from "~/components/PageElementTwoCol";
-import String1 from "~/components/compIcons/String1";
-import String2 from "~/components/compIcons/String2";
-import ICheck from "@/components/compIcons/ICheck";
+import String1 from "~/components/icons/String1";
+import String2 from "~/components/icons/String2";
+import ICheck from "@/components/icons/ICheck";
 
 export default {
   components: {

@@ -1,29 +1,5 @@
 <template>
   <div class="rep-card">
-    <!--
-    <div class="rep-banner">
-      <g-image src="~/assets/images/cdm.jpg" />
-    </div>
-    <b-row class="rep-header d-flex ">
-      <b-col cols="12" lg="9" class="d-flex flex-row">
-        <div class="avatar">
-          <g-image src="~/assets/images/avatar.jpg" />
-        </div>
-        <div class="header-text d-flex flex-column align-items-start">
-          <h3>{{ data.name }}</h3>
-          <span class="m-0"
-            ><BIconGeoAlt class="mr-2" />{{ data.location }}</span
-          >
-        </div>
-      </b-col>
-      <b-col cols="12" lg="3" class="p-0 ">
-        <div class="d-flex rep-button justify-content-center mt-3 mt-lg-0">
-          <b-button variant="outline-primary" class="m-0">E-mail</b-button>
-        </div>
-      </b-col>
-    </b-row>
-    -->
-
     <b-row class="rep-header-no-image d-flex ">
       <b-col cols="12" lg="9" class="d-flex flex-row">
         <div class="header-text d-flex flex-column align-items-start">

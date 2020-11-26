@@ -318,7 +318,7 @@
             <a href="https://app.abana.mu/login" class="log-in pl-2"
               >{{ cta.sub }}
             </a>
-            <Hamburger v-b-toggle.sidebar-level-1 />
+            <NavbarHamburger v-b-toggle.sidebar-level-1 />
             <!-- Main SideBar -->
           </b-navbar-nav>
         </div>
@@ -615,28 +615,28 @@ import {
   BIconArrowLeftShort,
 } from "bootstrap-vue";
 
-import Logo from "@/components/compIcons/Logo";
-import Slogan from "@/components/compIcons/Slogan";
-import Hamburger from "@/components/Hamburger";
+import Logo from "@/components/icons/Logo";
+import Slogan from "@/components/icons/Slogan";
+import NavbarHamburger from "@/components/NavbarHamburger";
 
-import IMarket from "@/components/compIcons/IMarket";
-import IEcomm from "@/components/compIcons/IEcomm";
-import ISupply from "@/components/compIcons/ISupply";
-import ISource from "@/components/compIcons/ISource";
-import IProduct from "@/components/compIcons/IProduct";
-import IGM from "@/components/compIcons/IGM";
-import IIS from "@/components/compIcons/IIS";
-import ISP from "@/components/compIcons/ISP";
-import IAbout from "@/components/compIcons/IAbout";
-import IPrivacy from "@/components/compIcons/IPrivacy";
-import ITerms from "@/components/compIcons/ITerms";
-import IContact from "@/components/compIcons/IContact";
-import ICareer from "@/components/compIcons/ICareer";
-import IPartnership from "@/components/compIcons/IPartnership";
-import ISustainability from "@/components/compIcons/ISustainability";
-import IFreelancers from "@/components/compIcons/IFreelancers";
-import ICountryRep from "@/components/compIcons/ICountryRep";
-import IHow from "@/components/compIcons/IHow";
+import IMarket from "@/components/icons/IMarket";
+import IEcomm from "@/components/icons/IEcomm";
+import ISupply from "@/components/icons/ISupply";
+import ISource from "@/components/icons/ISource";
+import IProduct from "@/components/icons/IProduct";
+import IGM from "@/components/icons/IGM";
+import IIS from "@/components/icons/IIS";
+import ISP from "@/components/icons/ISP";
+import IAbout from "@/components/icons/IAbout";
+import IPrivacy from "@/components/icons/IPrivacy";
+import ITerms from "@/components/icons/ITerms";
+import IContact from "@/components/icons/IContact";
+import ICareer from "@/components/icons/ICareer";
+import IPartnership from "@/components/icons/IPartnership";
+import ISustainability from "@/components/icons/ISustainability";
+import IFreelancers from "@/components/icons/IFreelancers";
+import ICountryRep from "@/components/icons/ICountryRep";
+import IHow from "@/components/icons/IHow";
 
 export default {
   components: {
@@ -651,7 +651,7 @@ export default {
     BIconChevronDown,
     BIconArrowRightShort,
     BIconArrowLeftShort,
-    Hamburger,
+    NavbarHamburger,
     IFreelancers,
     IMarket,
     IEcomm,

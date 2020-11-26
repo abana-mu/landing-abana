@@ -65,7 +65,7 @@
           </b-row>
         </b-col>
         <b-col cols="12" class="text-center mt-5">
-          <p class="text-lighter small-text">© 2020 ABANA</p>
+          <p class="small-text">© 2020 ABANA</p>
         </b-col>
       </b-row>
     </b-container>
@@ -75,12 +75,12 @@
 <!-- SCRIPTS -->
 <script>
 import Data from "~/_settings/landing.json";
-import Logo from "~/components/compIcons/Logo";
-import Slogan from "@/components/compIcons/Slogan";
-import Facebook from "~/components/compIcons/SocialFacebook";
-import Linkedin from "~/components/compIcons/SocialLinkedin";
-import Insta from "~/components/compIcons/SocialInsta";
-import Youtube from "~/components/compIcons/SocialYoutube";
+import Logo from "~/components/icons/Logo";
+import Slogan from "@/components/icons/Slogan";
+import Facebook from "~/components/icons/SocialFacebook";
+import Linkedin from "~/components/icons/SocialLinkedin";
+import Insta from "~/components/icons/SocialInsta";
+import Youtube from "~/components/icons/SocialYoutube";
 
 export default {
   components: { Logo, Slogan, Facebook, Linkedin, Insta, Youtube },
@@ -150,6 +150,7 @@ footer {
 
 .small-text {
   font-size: 1rem;
+  color: $text-light;
 }
 
 .footer-title {

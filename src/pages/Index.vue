@@ -1,13 +1,12 @@
 <template>
   <Layout class="index-layout">
     <!-- HEADER -->
-    <HeaderBanner
+    <IndexBanner
       :title="Data.header.title"
       :subtext="Data.header.subtext"
       :cta="Data.header.cta"
     />
 
-    <!--<DiagonalBreaker colorTop="white" colorBottom="grey" class="mt-4" />-->
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">
       <b-container fluid class="box-container">
@@ -42,19 +41,17 @@
       </b-container>
     </div>
 
-    <!--
-    <DiagonalBreaker colorTop="grey" colorBottom="white" /> -->
     <!-- FLOW -->
     <div class="py-4">
-      <FlowGraph :data="Data.flow" />
+      <IndexFlowGraph :data="Data.flow" />
     </div>
 
     <div class="pb-4">
-      <DropGraph :data="Data.drop" />
+      <IndexDropGraph :data="Data.drop" />
     </div>
 
     <div class="pb-4 mb-5">
-      <RepsGraph :data="Data.reps" />
+      <IndexRepsGraph :data="Data.reps" />
     </div>
   </Layout>
 </template>
@@ -66,22 +63,21 @@
 </page-query>
 
 <script>
-import HeaderBanner from '~/components/HeaderBanner';
-import DiagonalBreaker from '~/components/DiagonalBreaker';
+import IndexBanner from '~/components/IndexBanner';
 import Data from '~/_settings/landing.json';
-import ITransf from '@/components/compIcons/ITransf';
-import IExpect from '@/components/compIcons/IExpect';
-import IGuar from '@/components/compIcons/IGuar';
-import ITax from '@/components/compIcons/ITax';
-import ITarget from '@/components/compIcons/ITarget';
-import INew from '@/components/compIcons/INew';
-import IChina from '@/components/compIcons/IChina';
-import IEnv from '@/components/compIcons/IEnv';
-import ICheck from '@/components/compIcons/ICheck';
-import ICal from '@/components/compIcons/ICal';
-import FlowGraph from '~/components/FlowGraph';
-import DropGraph from '~/components/DropGraph';
-import RepsGraph from '~/components/RepsGraph';
+import ITransf from '@/components/icons/ITransf';
+import IExpect from '@/components/icons/IExpect';
+import IGuar from '@/components/icons/IGuar';
+import ITax from '@/components/icons/ITax';
+import ITarget from '@/components/icons/ITarget';
+import INew from '@/components/icons/INew';
+import IChina from '@/components/icons/IChina';
+import IEnv from '@/components/icons/IEnv';
+import ICheck from '@/components/icons/ICheck';
+import ICal from '@/components/icons/ICal';
+import IndexFlowGraph from '~/components/IndexFlowGraph';
+import IndexDropGraph from '~/components/IndexDropGraph';
+import IndexRepsGraph from '~/components/IndexRepsGraph';
 
 export default {
   metaInfo: {
@@ -95,15 +91,14 @@ export default {
     ],
   },
   components: {
-    DiagonalBreaker,
-    HeaderBanner,
+    IndexBanner,
     box1: IChina,
     box2: ICheck,
     box3: IEnv,
     box4: ICal,
-    FlowGraph,
-    DropGraph,
-    RepsGraph,
+    IndexFlowGraph,
+    IndexDropGraph,
+    IndexRepsGraph,
   },
   data() {
     return {
@@ -169,9 +164,6 @@ export default {
   border-radius: 3px;
   .box-button {
     text-align: center;
-  }
-  a {
-    color: $blue;
   }
   @media (min-width: $break-l) {
     padding: 3rem 3rem;

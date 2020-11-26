@@ -40,8 +40,12 @@
 
 <script>
 import Data from "~/_settings/countryreps.json";
+import EUData from "~/_settings/eureps.json";
+import AFData from "~/_settings/afreps.json";
+import AMData from "~/_settings/amreps.json";
+import ASData from "~/_settings/asreps.json";
 import RepCard from "~/components/RepCard";
-import String2 from "~/components/compIcons/String2";
+import String2 from "~/components/icons/String2";
 
 export default {
   metaInfo: {

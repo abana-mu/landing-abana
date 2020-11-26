@@ -18,7 +18,7 @@
       </b-col>
       <b-col>
         <div class="svg-container">
-          <Flow /></div
+          <Reps /></div
       ></b-col>
     </b-row>
   </b-container>
@@ -26,12 +26,12 @@
 
 <!-- SCRIPTS -->
 <script>
-import Flow from '~/components/compIcons/Flow';
+import Reps from '~/components/icons/Reps';
 import { BIcon, BIconArrowRightShort } from 'bootstrap-vue';
 
 export default {
   components: {
-    Flow,
+    Reps,
     BIcon,
     BIconArrowRightShort,
   },

@@ -1,14 +1,12 @@
 {
-  "header": {
-    "eu_reps": [
-      {
-        "name": "Sabrina Tomassoli",
-        "location": "Prato, Italy",
-        "company": "ABANA Italy",
-        "coverage": "Italy",
-        "number": "+39 (339) 754-4748",
-        "email": "sabrina.tomassoli@abana.mu"
-      }
-    ]
-  }
+  "eu_reps": [
+    {
+      "name": "Sabrina Tomassoli",
+      "location": "Prato, Italy",
+      "company": "ABANA Italy",
+      "coverage": "Italy",
+      "number": "+39 (339) 754-4748",
+      "email": "sabrina.tomassoli@abana.mu"
+    }
+  ]
 }
