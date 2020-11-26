@@ -1409,7 +1409,7 @@ collections:
         file: "src/_settings/eureps.json"
         fields:
           - label: "Europe Country Reps"
-            name: eu_reps
+            name: reps
             label_singular: "Country Rep"
             widget: list
             fields:
@@ -1438,7 +1438,7 @@ collections:
         file: "src/_settings/afreps.json"
         fields:
           - label: "Africa Country Reps"
-            name: af_reps
+            name: reps
             label_singular: "Country Rep"
             widget: list
             fields:
@@ -1467,7 +1467,7 @@ collections:
         file: "src/_settings/amreps.json"
         fields:
           - label: "America Country Reps"
-            name: am_reps
+            name: reps
             label_singular: "Country Rep"
             widget: list
             fields:
@@ -1496,7 +1496,7 @@ collections:
         file: "src/_settings/asreps.json"
         fields:
           - label: "Asia Country Reps"
-            name: as_reps
+            name: reps
             label_singular: "Country Rep"
             widget: list
             fields:
