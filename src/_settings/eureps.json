@@ -7,6 +7,22 @@
       "coverage": "Italy",
       "number": "+39 (339) 754-4748",
       "email": "sabrina.tomassoli@abana.mu"
+    },
+    {
+      "name": "Edgar Rosenberger",
+      "location": "Hamburg, Germany",
+      "company": "ABANA Germany",
+      "coverage": "Germany, Austria, Switzerland, Netherlands, Denmark, Sweden Finland",
+      "email": "edgar.rosenberger@abana.mu",
+      "number": "+49 (40) 34 03 64"
+    },
+    {
+      "name": "Stuart Cass",
+      "location": "London, England",
+      "company": "ABANA Uk",
+      "coverage": "United Kingdom, Ireland",
+      "number": "+44 7930 404937",
+      "email": "staurt.cass@abana.mu"
     }
   ]
 }
