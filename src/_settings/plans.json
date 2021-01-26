@@ -1,6 +1,7 @@
 {
   "buyer": {
-    "subs": [{
+    "subs": [
+      {
         "name": "Member",
         "desc": "Users only interested in E-Commerce",
         "price3": "$0",
@@ -32,21 +33,25 @@
         ]
       }
     ],
-    "categories": [{
+    "categories": [
+      {
         "title": "General",
-        "features": [{
-          "title": "Users",
-          "tooltip": "Number of accounts your plan comes with",
-          "plans": {
-            "member": "1",
-            "basic": "1",
-            "pro": "5"
+        "features": [
+          {
+            "title": "Users",
+            "tooltip": "Number of accounts your plan comes with",
+            "plans": {
+              "member": "1",
+              "basic": "1",
+              "pro": "5"
+            }
           }
-        }]
+        ]
       },
       {
         "title": "Database",
-        "features": [{
+        "features": [
+          {
             "title": "Basic Profile",
             "tooltip": "Build a profile page with information on your company",
             "plans": {
@@ -86,7 +91,8 @@
       },
       {
         "title": "Marketplace",
-        "features": [{
+        "features": [
+          {
             "title": "Post RFIs (monthly)",
             "tooltip": "Ask our database network for information on products or services you might need. Invite suppliers to get in touch with you",
             "plans": {
@@ -126,7 +132,8 @@
       },
       {
         "title": "Ecommerce",
-        "features": [{
+        "features": [
+          {
             "title": "Access Drops",
             "tooltip": "",
             "plans": {
@@ -157,7 +164,8 @@
       },
       {
         "title": "Support Services",
-        "features": [{
+        "features": [
+          {
             "title": "Basic Services (QC, Compliance, Order Follow-up)",
             "tooltip": "",
             "plans": {
@@ -198,7 +206,8 @@
     ]
   },
   "supplier": {
-    "subs": [{
+    "subs": [
+      {
         "name": "Basic",
         "desc": "Single User companies",
         "price3": "$119/mo",
@@ -232,21 +241,25 @@
         ]
       }
     ],
-    "categories": [{
+    "categories": [
+      {
         "title": "General",
-        "features": [{
-          "title": "Users",
-          "tooltip": "Number of accounts your plan comes with",
-          "plans": {
-            "basic": "1",
-            "growth": "3",
-            "pro": "5"
+        "features": [
+          {
+            "title": "Users",
+            "tooltip": "Number of accounts your plan comes with",
+            "plans": {
+              "basic": "1",
+              "growth": "3",
+              "pro": "5"
+            }
           }
-        }]
+        ]
       },
       {
         "title": "Database",
-        "features": [{
+        "features": [
+          {
             "title": "Basic Profile",
             "tooltip": "Build a profile page with information on your company",
             "plans": {
@@ -277,7 +290,8 @@
       },
       {
         "title": "Marketplace",
-        "features": [{
+        "features": [
+          {
             "title": "Post Listings (monthly)",
             "tooltip": "Notify our network with new capabilities, extra capacity or special offers",
             "plans": {
@@ -317,7 +331,8 @@
       },
       {
         "title": "Ecommerce",
-        "features": [{
+        "features": [
+          {
             "title": "Access Drops",
             "tooltip": "",
             "plans": {
@@ -348,7 +363,8 @@
       },
       {
         "title": "Support Services",
-        "features": [{
+        "features": [
+          {
             "title": "Marketing Services ",
             "tooltip": "",
             "plans": {
@@ -398,7 +414,16 @@
     ]
   },
   "service": {
-    "subs": [{
+    "subs": [
+      {
+        "name": "Freelancer",
+        "desc": "Single Users",
+        "price3": "$12/mo",
+        "price6": "$10/mo",
+        "price12": "$9/mo",
+        "features": ["Profile & e-Showroom", "View Drops"]
+      },
+      {
         "name": "Basic",
         "desc": "Single User companies",
         "price3": "$119/mo",
@@ -432,24 +457,30 @@
         ]
       }
     ],
-    "categories": [{
+    "categories": [
+      {
         "title": "General",
-        "features": [{
-          "title": "Users",
-          "tooltip": "Number of accounts your plan comes with",
-          "plans": {
-            "basic": "1",
-            "growth": "3",
-            "pro": "5"
+        "features": [
+          {
+            "title": "Users",
+            "tooltip": "Number of accounts your plan comes with",
+            "plans": {
+              "freelancer": "1",
+              "basic": "1",
+              "growth": "3",
+              "pro": "5"
+            }
           }
-        }]
+        ]
       },
       {
         "title": "Database",
-        "features": [{
+        "features": [
+          {
             "title": "Basic Profile",
             "tooltip": "Build a profile page with information on your company",
             "plans": {
+              "freelancer": true,
               "basic": true,
               "growth": true,
               "pro": true
@@ -459,6 +490,7 @@
             "title": "Showroom",
             "tooltip": "Showcase your services or events in your portfolio",
             "plans": {
+              "freelancer": "4",
               "basic": "8",
               "growth": "16",
               "pro": "24"
@@ -468,6 +500,7 @@
             "title": "Search Buyers & Suppliers",
             "tooltip": "Use our search functionalities to filter through our database",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -477,10 +510,12 @@
       },
       {
         "title": "Marketplace",
-        "features": [{
+        "features": [
+          {
             "title": "Post Listings (monthly)",
             "tooltip": "Notify our network with new capabilities, extra capacity or special offers",
             "plans": {
+              "freelancer": false,
               "basic": "15",
               "growth": "30",
               "pro": "Unlimited"
@@ -490,6 +525,7 @@
             "title": "Number of Contacts (Total)",
             "tooltip": "The number of buyers and suppliers you can concurrently be in touch with",
             "plans": {
+              "freelancer": false,
               "basic": "15",
               "growth": "30",
               "pro": "Unlimited"
@@ -499,6 +535,7 @@
             "title": "See RFIs",
             "tooltip": "See what our networks buyers are looking for and get in touch with them",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -508,6 +545,7 @@
             "title": "View and reply to RFQs",
             "tooltip": "Reply to specific requests by our buyers and provide them with quotes",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -517,10 +555,12 @@
       },
       {
         "title": "Ecommerce",
-        "features": [{
+        "features": [
+          {
             "title": "Access Drops",
             "tooltip": "",
             "plans": {
+              "freelancer": true,
               "basic": true,
               "growth": true,
               "pro": true
@@ -530,6 +570,7 @@
             "title": "Access Brands Store",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -539,6 +580,7 @@
             "title": "Fast Custom",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": false,
               "growth": false,
               "pro": true
@@ -548,10 +590,12 @@
       },
       {
         "title": "Support Services",
-        "features": [{
+        "features": [
+          {
             "title": "Marketing Services ",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -561,6 +605,7 @@
             "title": "Online Order Follow-Up - Critical path (coming soon)",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": false,
               "growth": false,
               "pro": true
@@ -570,6 +615,7 @@
             "title": "Financial Services",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -579,6 +625,7 @@
             "title": "Advisory",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": true,
               "growth": true,
               "pro": true
@@ -588,6 +635,7 @@
             "title": "Joint Purchasing Discounts",
             "tooltip": "",
             "plans": {
+              "freelancer": false,
               "basic": false,
               "growth": false,
               "pro": true

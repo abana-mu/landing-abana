@@ -7,14 +7,11 @@
       :cta="Data.header.cta"
     />
 
-    <!-- Trusted By -->
+    <!-- Trusted By --
 
     <div class="trusted my-4 py-4 pb-5">
       <h4 class="m-0 mr-5">Trusted by:</h4>
-      <!-- <div class="trusted-logos">
-          <g-image src="~/assets/images/EDB_logo.png" blur="40" quality="100" />
-          <g-image src="~/assets/images/gov_logo.png" blur="40" quality="100" />
-        </div> -->
+
       <div class="logo-container">
         <b-row>
           <b-col
@@ -36,6 +33,8 @@
         </b-row>
       </div>
     </div>
+
+    -->
 
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">

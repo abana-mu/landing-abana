@@ -9,7 +9,7 @@
         <b-col
           cols="12"
           md="6"
-          lg="3"
+          lg="4"
           class="p-3"
           v-for="press in $page.posts.edges"
           :key="press.id"
@@ -18,7 +18,7 @@
             <div>
               <b-card
                 :title="press.node.title"
-                img-src="https://picsum.photos/600/300/?image=25"
+                :img-src="press.node.image"
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -49,6 +49,7 @@ query{
         excerpt
         date(format: "DD/MM/YYYY")
         path
+        image
       }
     }
   }

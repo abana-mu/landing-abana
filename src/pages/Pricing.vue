@@ -45,7 +45,7 @@
                     >All features in Basic and...</span
                   >
                   <li v-for="feature in card.features" :key="feature">
-                    <b-icon icon="check-circle" class="float-left mr-2" />
+                    <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
@@ -126,7 +126,7 @@
                     >All features in Growth and...</span
                   >
                   <li v-for="feature in card.features" :key="feature">
-                    <b-icon icon="check-circle" class="float-left mr-2" />
+                    <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
@@ -153,7 +153,7 @@
             <b-card-text>
               If you have skills relevant to the Textile & Apparel eco-system
               (design, technical, advisory, etc.) become part of the ABANA
-              network.
+              network. Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
               <b-button variant="outline-primary">
@@ -218,7 +218,7 @@
                     >All features in Growth and...</span
                   >
                   <li v-for="feature in card.features" :key="feature">
-                    <b-icon icon="check-circle" class="float-left mr-2" />
+                    <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
@@ -246,7 +246,7 @@
             <b-card-text>
               If you have skills relevant to the Textile & Apparel eco-system
               (design, technical, advisory, etc.) become part of the ABANA
-              network.
+              network. Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
               <b-button variant="outline-primary">
@@ -456,7 +456,6 @@ export default {
   span,
   li {
     display: flex;
-    align-items: center;
     color: $subtitle-dark;
     font-size: 0.85rem;
   }
@@ -466,7 +465,8 @@ export default {
   font-size: 2rem;
 }
 
-.card.Member {
+.card.Member,
+.card.Freelancer {
   &:before {
     background-color: #dbdbdb;
   }
