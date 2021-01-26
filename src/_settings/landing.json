@@ -45,5 +45,27 @@
     "subtext": "Need help with understanding the region or on-the-ground services to start or grow your business? Our network of Country Representatives is ever-growing and offers support services in the main Producing and Buying markets. ",
     "link": "Find a Representative near you",
     "page": "country-reps"
+  },
+  "trusted": {
+    "trusted1": {
+      "name": "EDB",
+      "link": "https://www.edbmauritius.org/",
+      "image": "/uploads/edb_logo.png"
+    },
+    "trusted2": {
+      "name": "Gov Mauritius",
+      "link": "https://govmu.org",
+      "image": "/uploads/gov_logo.png"
+    },
+    "trusted3": {
+      "name": "EDB",
+      "link": "https://www.edbmauritius.org/",
+      "image": "/uploads/edb_logo.png"
+    },
+    "trusted4": {
+      "name": "Gov Mauritius",
+      "link": "https://govmu.org",
+      "image": "/uploads/gov_logo.png"
+    }
   }
 }
