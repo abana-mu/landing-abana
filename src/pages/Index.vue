@@ -7,6 +7,36 @@
       :cta="Data.header.cta"
     />
 
+    <!-- Trusted By -->
+
+    <div class="trusted my-4 py-4 pb-5">
+      <h4 class="m-0 mr-5">Trusted by:</h4>
+      <!-- <div class="trusted-logos">
+          <g-image src="~/assets/images/EDB_logo.png" blur="40" quality="100" />
+          <g-image src="~/assets/images/gov_logo.png" blur="40" quality="100" />
+        </div> -->
+      <div class="logo-container">
+        <b-row>
+          <b-col
+            class="trusted-logos"
+            v-for="logo in Data.trusted"
+            :key="logo.title"
+            cols="6"
+            lg
+          >
+            <a :href="logo.link" target="_blank">
+              <g-image
+                :src="logo.image"
+                blur="40"
+                quality="100"
+                :alt="logo.title"
+              />
+            </a>
+          </b-col>
+        </b-row>
+      </div>
+    </div>
+
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">
       <b-container fluid class="box-container">
@@ -124,6 +154,45 @@ export default {
   margin-bottom: 2rem;
   font-weight: 500;
   text-align: center;
+}
+
+.trusted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $break-l) {
+    flex-direction: row;
+  }
+
+  color: #a4a4a4;
+  h4 {
+    color: #a4a4a4;
+  }
+  img {
+    max-height: 40px;
+    @media (min-width: $break-l) {
+      max-height: 50px;
+    }
+    width: auto;
+    margin-right: 30px;
+    opacity: 0.6;
+    filter: grayscale(1);
+  }
+}
+
+.trusted-logos {
+  text-align: center;
+  margin-top: 20px;
+  @media (min-width: $break-l) {
+    margin-top: 0;
+  }
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .examples {

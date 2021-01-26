@@ -23,6 +23,69 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
               - { label: "Call to Action", name: "cta", widget: "string" }
+          - label: "Trusted By"
+            name: trusted
+            widget: "object"
+            fields:
+              - label: "Trusted 1"
+                name: trusted1
+                widget: "object"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      hint: "Format: PNG with transparent background",
+                    }
+              - label: "Trusted 2"
+                name: trusted2
+                widget: "object"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      hint: "Format: PNG with transparent background",
+                    }
+              - label: "Trusted 3"
+                name: trusted3
+                widget: "object"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      hint: "Format: PNG with transparent background",
+                    }
+              - label: "Trusted 4"
+                name: trusted4
+                widget: "object"
+                fields:
+                  - {
+                      label: "Name",
+                      name: "name",
+                      required: false,
+                      widget: "string",
+                    }
+                  - {
+                      label: "Link",
+                      name: "link",
+                      required: false,
+                      widget: "string",
+                    }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      required: false,
+                      widget: "image",
+                      hint: "Format: PNG with transparent background",
+                    }
           - label: "Boxes"
             name: boxes
             widget: "object"
@@ -1041,6 +1104,17 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
 
+      - label: "Press"
+        name: "press"
+        file: "src/_settings/press.json"
+        fields:
+          - label: "Header"
+            name: header
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "SubText", name: "subtext", widget: "text" }
+
       - label: "Sustainability"
         name: "sustainability"
         file: "src/_settings/sustainability.json"
@@ -1340,7 +1414,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
-    
+
       - label: "Freelancers"
         name: "freelancers"
         file: "src/_settings/freelancers.json"
@@ -1520,7 +1594,6 @@ collections:
                   hint: "Add Country Code ex: +230 ...",
                 }
               - { label: "Email Address", name: "email", widget: "string" }
-  
 
   - name: "tutorials"
     label: "How it works"
@@ -1593,3 +1666,22 @@ collections:
           widget: "markdown",
         }
       - { label: "You will thrive if", name: "thrive", widget: "markdown" }
+
+  - name: "press"
+    label: "Press"
+    folder: "_press/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Banner", name: "image", widget: "image" }
+      - {
+          label: "Original Link",
+          name: "link",
+          widget: "string",
+          required: false,
+          hint: "Optional",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -24,7 +24,7 @@
             /></g-link>
           </b-col>
         </b-col>
-        <b-col lg class="column-image d-flex justify-content-center">
+        <b-col lg class="column-image d-flex justify-content-center ">
           <div class="col-img-container">
             <g-image :src="row.image" quality="100" blur="40" width="750" />
           </div>

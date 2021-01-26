@@ -59,6 +59,14 @@ chainWebpack: config => {
         remark: {},
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_press/**/*.md',
+        typeName: 'Press',
+        remark: {},
+      },
+    },
 
     {
       use: `gridsome-plugin-netlify-cms`,
