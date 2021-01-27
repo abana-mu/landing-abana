@@ -48,27 +48,27 @@
   },
   "trusted": [
     {
-      "name": "1",
+      "name": "EDB",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     },
     {
-      "name": "2",
+      "name": "GOV",
       "link": "https://govmu.org",
       "image": "/uploads/gov_logo.png"
     },
     {
-      "name": "3",
+      "name": "EDB1",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     },
     {
-      "name": "4",
+      "name": "EDB2",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     },
     {
-      "name": "5",
+      "name": "EDB3",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     }
