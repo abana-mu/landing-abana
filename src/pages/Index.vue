@@ -34,9 +34,9 @@
       </div>
     </div>
 
-    -->
+    --
 
-    <IndexTrusted :data="Data.trusted" />
+    <IndexTrusted :data="Data.trusted" /> -->
 
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">
