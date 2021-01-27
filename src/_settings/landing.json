@@ -71,6 +71,11 @@
       "name": "EDB3",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
+    },
+    {
+      "name": "Random",
+      "link": "GOV",
+      "image": "/uploads/gov_logo.png"
     }
   ]
 }
