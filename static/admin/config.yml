@@ -23,69 +23,20 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
               - { label: "Call to Action", name: "cta", widget: "string" }
+
           - label: "Trusted By"
             name: trusted
-            widget: "object"
+            label_singular: "trustee"
+            widget: list
             fields:
-              - label: "Trusted 1"
-                name: trusted1
-                widget: "object"
-                fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      hint: "Format: PNG with transparent background",
-                    }
-              - label: "Trusted 2"
-                name: trusted2
-                widget: "object"
-                fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      hint: "Format: PNG with transparent background",
-                    }
-              - label: "Trusted 3"
-                name: trusted3
-                widget: "object"
-                fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      hint: "Format: PNG with transparent background",
-                    }
-              - label: "Trusted 4"
-                name: trusted4
-                widget: "object"
-                fields:
-                  - {
-                      label: "Name",
-                      name: "name",
-                      required: false,
-                      widget: "string",
-                    }
-                  - {
-                      label: "Link",
-                      name: "link",
-                      required: false,
-                      widget: "string",
-                    }
-                  - {
-                      label: "Image",
-                      name: "image",
-                      required: false,
-                      widget: "image",
-                      hint: "Format: PNG with transparent background",
-                    }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  hint: "Format: PNG with transparent background",
+                }
           - label: "Boxes"
             name: boxes
             widget: "object"

@@ -36,6 +36,8 @@
 
     -->
 
+    <IndexTrusted :data="Data.trusted" />
+
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">
       <b-container fluid class="box-container">
@@ -107,6 +109,7 @@ import ICal from '@/components/icons/ICal';
 import IndexFlowGraph from '~/components/IndexFlowGraph';
 import IndexDropGraph from '~/components/IndexDropGraph';
 import IndexRepsGraph from '~/components/IndexRepsGraph';
+import IndexTrusted from '~/components/IndexTrusted';
 
 export default {
   metaInfo: {
@@ -128,6 +131,7 @@ export default {
     IndexFlowGraph,
     IndexDropGraph,
     IndexRepsGraph,
+    IndexTrusted,
   },
   data() {
     return {
@@ -153,45 +157,6 @@ export default {
   margin-bottom: 2rem;
   font-weight: 500;
   text-align: center;
-}
-
-.trusted {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $break-l) {
-    flex-direction: row;
-  }
-
-  color: #a4a4a4;
-  h4 {
-    color: #a4a4a4;
-  }
-  img {
-    max-height: 40px;
-    @media (min-width: $break-l) {
-      max-height: 50px;
-    }
-    width: auto;
-    margin-right: 30px;
-    opacity: 0.6;
-    filter: grayscale(1);
-  }
-}
-
-.trusted-logos {
-  text-align: center;
-  margin-top: 20px;
-  @media (min-width: $break-l) {
-    margin-top: 0;
-  }
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: row;
 }
 
 .examples {

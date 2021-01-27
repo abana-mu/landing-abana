@@ -46,26 +46,31 @@
     "link": "Find a Representative near you",
     "page": "country-reps"
   },
-  "trusted": {
-    "trusted1": {
-      "name": "EDB",
+  "trusted": [
+    {
+      "name": "1",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     },
-    "trusted2": {
-      "name": "Gov Mauritius",
+    {
+      "name": "2",
       "link": "https://govmu.org",
       "image": "/uploads/gov_logo.png"
     },
-    "trusted3": {
-      "name": "EDB",
+    {
+      "name": "3",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo.png"
     },
-    "trusted4": {
-      "name": "Gov Mauritius",
-      "link": "https://govmu.org",
-      "image": "/uploads/gov_logo.png"
+    {
+      "name": "4",
+      "link": "https://www.edbmauritius.org/",
+      "image": "/uploads/edb_logo.png"
+    },
+    {
+      "name": "5",
+      "link": "https://www.edbmauritius.org/",
+      "image": "/uploads/edb_logo.png"
     }
-  }
+  ]
 }
