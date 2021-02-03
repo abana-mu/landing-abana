@@ -1,6 +1,6 @@
 ---
-title: Our CEO Dirk Robens was featured on the Podcast "A Seat at the Table"
-excerpt: Leadership, Innovation & Vision for a New Era
+title: Leadership, Innovation & Vision for a New Era
+excerpt: Our CEO Dirk Robens was featured on the Podcast "A Seat at the Table"
 date: 2021-02-03T11:10:45.366Z
 image: /uploads/dirk-social-media.jpg
 link: https://www.buzzsprout.com/1293362/7429993
