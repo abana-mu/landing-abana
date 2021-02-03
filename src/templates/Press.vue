@@ -12,7 +12,7 @@
       <div v-html="$page.thisPost.content" class="my-5"></div>
 
       <p v-if="$page.thisPost.link">
-        Original Link: <a class="original-link" href="#">edienodien</a>
+        Original Link: <a class="original-link" :href="$page.thisPost.link">{{$page.thisPost.link}}</a>
       </p>
     </div>
   </Layout>
@@ -27,6 +27,7 @@
       excerpt
       date(format: "DD/MM/YYYY")
       content
+      link
     }
   }
 </page-query>
