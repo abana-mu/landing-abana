@@ -212,6 +212,16 @@
                       </div>
                       <div class="drop-text">Careers</div>
                     </g-link>
+
+                    <g-link
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
+                      to="/press/"
+                    >
+                      <div class="drop-image-sm">
+                        <INews />
+                      </div>
+                      <div class="drop-text">Press</div>
+                    </g-link>
                   </div>
 
                   <div class="col col-2">
@@ -516,6 +526,16 @@
                       </div>
                       <div class="drop-text">Careers</div>
                     </g-link>
+                    <g-link
+                      class="sidebar-item-level-2 d-flex align-items-center"
+                      to="/press/"
+                      @click="hide"
+                    >
+                      <div class="drop-image-sm">
+                        <INews />
+                      </div>
+                      <div class="drop-text">Press</div>
+                    </g-link>
                   </div>
 
                   <div class="col col-12 mb-3">
@@ -629,6 +649,7 @@ import IIS from "@/components/icons/IIS";
 import ISP from "@/components/icons/ISP";
 import IAbout from "@/components/icons/IAbout";
 import IPrivacy from "@/components/icons/IPrivacy";
+import INews from "@/components/icons/INews";
 import ITerms from "@/components/icons/ITerms";
 import IContact from "@/components/icons/IContact";
 import ICareer from "@/components/icons/ICareer";
@@ -657,6 +678,7 @@ export default {
     IEcomm,
     ISupply,
     IProduct,
+    INews,
     ISource,
     IGM,
     IIS,
