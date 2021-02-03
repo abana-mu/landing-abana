@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <div>
-    <div class="trusted  container my-4 py-4 pb-5">
+    <div v-if="control" class="trusted  container my-4 py-4 pb-5">
       <h4 class="m-0 mb-4 mb-lg-0 mr-lg-5">Trusted by:</h4>
       <b-carousel
         id="trusted-carousel"
@@ -35,19 +35,6 @@
             </b-row>
           </div>
         </b-carousel-slide>
-
-        <!--
-      <b-carousel-slide>
-        <h1>Slide 2</h1>
-      </b-carousel-slide>
-
-      <b-carousel-slide>
-        <h1>Slide 3</h1>
-      </b-carousel-slide>
-
-      <b-carousel-slide>
-        <h1>Slide 4</h1>
-      </b-carousel-slide> -->
       </b-carousel>
     </div>
   </div>
@@ -64,6 +51,7 @@ export default {
   },
   props: {
     data: Object,
+    control: Boolean,
   },
   data() {
     return {

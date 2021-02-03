@@ -24,6 +24,13 @@ collections:
               - { label: "SubText", name: "subtext", widget: "text" }
               - { label: "Call to Action", name: "cta", widget: "string" }
 
+          - {
+              label: "Activate Trusted",
+              name: "trustedBool",
+              widget: "boolean",
+              default: false,
+            }
+
           - label: "Trusted By"
             name: trusted
             label_singular: "trustee"
