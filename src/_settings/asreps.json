@@ -1,3 +1,12 @@
 {
-  "reps": []
+  "reps": [
+    {
+      "name": "Norbert Grobe",
+      "email": "norbert.grobe@abana.mu",
+      "coverage": "Hong Kong, China, Taiwan, South Korea, Japan",
+      "number": "+85268759128",
+      "company": "ABANA Asia Pacific",
+      "location": "Hong Kong"
+    }
+  ]
 }
