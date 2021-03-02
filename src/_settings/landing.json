@@ -54,29 +54,9 @@
       "image": "/uploads/edb_logo.png"
     },
     {
-      "name": "GOV",
-      "link": "https://govmu.org",
-      "image": "/uploads/gov_logo.png"
-    },
-    {
-      "name": "EDB1",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
-    },
-    {
-      "name": "EDB2",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
-    },
-    {
-      "name": "EDB3",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
-    },
-    {
-      "name": "Random",
-      "link": "GOV",
-      "image": "/uploads/gov_logo.png"
+      "name": "Kick Advisory",
+      "link": "https://www.kickadvisory.com/",
+      "image": "/uploads/kick-logo-high-resolution-.png"
     }
   ]
 }
