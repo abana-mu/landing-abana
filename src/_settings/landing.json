@@ -57,6 +57,41 @@
       "name": "Kick Advisory",
       "link": "https://www.kickadvisory.com/",
       "image": "/uploads/kick-logo-high-resolution-.png"
+    },
+    {
+      "name": "Ariva Logistics",
+      "link": "https://ariva-logistics.com/",
+      "image": "/uploads/ariva-logo.png"
+    },
+    {
+      "name": "Star Knitwear",
+      "link": "https://www.star-knitwear.com/",
+      "image": "/uploads/grey-star-knitwear.png"
+    },
+    {
+      "name": "Aquarelle",
+      "link": "https://cieltextile.com/",
+      "image": "/uploads/horizontal-logos-aquarelle-charcoal-.png"
+    },
+    {
+      "name": "Socota Madagascar",
+      "link": "http://www.groupesocota.com/socota/index.html",
+      "image": "/uploads/logo-socota-ofa-main.png"
+    },
+    {
+      "name": "LOI Madagascar",
+      "image": "/uploads/loi-vf-newslogan.png",
+      "link": " "
+    },
+    {
+      "name": "R.E.A.L Garment",
+      "link": "https://www.real-garments.com/",
+      "image": "/uploads/real-garment.png"
+    },
+    {
+      "name": "Somatrans Logistics",
+      "link": "http://www.somatrans.mu/",
+      "image": "/uploads/somatrans-logo-cmyk.png"
     }
   ]
 }
