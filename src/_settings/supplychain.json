@@ -1,20 +1,20 @@
 {
   "header": {
     "subtext": "Tailored services to help you grow in the region",
-    "title": "Supply Chain Solutions",
+    "title": "On-the-ground Support",
     "image": "/uploads/people_hands_1920x1080.jpg"
   },
   "elements": {
     "support": {
       "title": "Support Services",
       "subtext": "A complete range of support services across producing and buying countries",
-      "content": "We have a network of Country Representatives offering production support services in the main producing countries and customer-facing support in the principal Buying markets:\n\n**Producing Countries**                                                                 \n\n**Mauritius, Madagascar, South Africa, Swaziland, Lesotho, Botswana, Tanzania, Ethiopia, Egypt, Morocco, Tunisia,** \nComing Soon: Kenya, Uganda                                                                                 \n\n**Buying Markets**\n\n**USA, Italy, Germany, Austria, Switzerland, Belgium, Netherlands, Luxembourg, Denmark, Sweden, Norway, Finland, Baltic Countries, Poland, Ukraine, Russia, South Africa, Reunion**\nComing Soon: France, Portugal",
+      "content": "We have a network of Country Representatives offering production support services in the main producing countries and customer-facing support in the principal Buying markets:\n\n**Producing Countries**                                                                 \n\n**Mauritius, Madagascar, South Africa, Swaziland, Lesotho, Botswana, Tanzania, Ethiopia, Egypt, Morocco, Kenya, Uganda**\nComing Soon: Tunisia                                                                             \n\n**Buying Markets**\n\n**USA, Italy, Germany, Austria, Switzerland, Belgium, Netherlands, Luxembourg, Denmark, Sweden, Norway, Finland, Baltic Countries, Poland, Ukraine, Russia, South Africa, Reunion**\nComing Soon: France, Portugal",
       "image": "/uploads/world-map-with-2-pins.png"
     },
     "virtual": {
-      "title": "Virtual Supplier",
-      "subtext": "Complete solution accessing a network of smaller factories",
-      "content": "* Complete service including sample development, merchandising, production follow-up, quality assurance & logistics support\n* Financing of raw materials for supplier",
+      "title": "Virtual Factory",
+      "subtext": "ABANA acts as your supplier providing  an end-to end sourcing solution accessing a network of specialized factories",
+      "content": "* Access a network of proven factories with a complete service including sample development, merchandising, quality assurance & logistics support\n* Financing of raw materials",
       "image": "/uploads/img_6896.jpg"
     },
     "advisory": {
