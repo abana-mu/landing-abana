@@ -9,7 +9,8 @@
 module.exports = {
   siteName: 'ABANA',
   siteUrl: 'https://www.abana.mu',
-  siteDescription: "Africa's Textile and Apparel Industry, at your fingertips. ABANA is an online Sourcing & E-Commerce Platform that shines a light on the Indian Ocean & African Textile & Apparel industry and connects it to the World.",
+  siteDescription:
+    "Africa's Textile and Apparel Industry, at your fingertips. ABANA is an online Sourcing & E-Commerce Platform that shines a light on the Indian Ocean & African Textile & Apparel industry and connects it to the World.",
 
   transformers: {
     remark: {
@@ -38,7 +39,6 @@ chainWebpack: config => {
 */
 
   plugins: [
-
     'gridsome-plugin-robots-txt',
 
     {
@@ -48,8 +48,8 @@ chainWebpack: config => {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-156587227-2'
-      }
+        id: 'UA-156587227-2',
+      },
     },
     {
       use: '@gridsome/source-filesystem',
@@ -67,6 +67,14 @@ chainWebpack: config => {
         remark: {},
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_testimonials/**/*.md',
+        typeName: 'Testimonials',
+        remark: {},
+      },
+    },
 
     {
       use: `gridsome-plugin-netlify-cms`,
@@ -81,7 +89,5 @@ chainWebpack: config => {
         resources: './src/assets/_variables.scss',
       },
     },
-
-
   ],
 };

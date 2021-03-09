@@ -1006,6 +1006,17 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "SubText", name: "subtext", widget: "text" }
 
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/_settings/testimonials.json"
+        fields:
+          - label: "Header"
+            name: header
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "SubText", name: "subtext", widget: "text" }
+
       - label: "About Us"
         name: "aboutus"
         file: "src/_settings/aboutus.json"
@@ -1650,7 +1661,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Company", name: "title", widget: "string" }
       - {
           label: "Subtitle",
           name: "subtitle",
@@ -1676,6 +1687,13 @@ collections:
           name: "position",
           widget: "string",
           required: false,
+        }
+      - { label: "Background Colour", name: "color", widget: "color" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          hint: "Make sure this image is less than 250kb in size!",
         }
       - {
           label: "Case Study?",

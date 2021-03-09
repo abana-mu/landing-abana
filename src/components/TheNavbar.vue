@@ -246,6 +246,17 @@
                       </div>
                       <div class="drop-text">Freelancers</div>
                     </g-link>
+                    <!--
+                    <g-link
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
+                      to="/testimonials/"
+                    >
+                      <div class="drop-image-sm">
+                        <ITestimonial />
+                      </div>
+                      <div class="drop-text">Testimonials</div>
+                    </g-link>
+                    -->
                   </div>
 
                   <div class="col col-2">
@@ -563,6 +574,19 @@
                       </div>
                       <div class="drop-text">Freelancers</div>
                     </g-link>
+
+                    <!--
+                    <g-link
+                      class="sidebar-item-level-2 d-flex align-items-center"
+                      to="/testimonials/"
+                      @click="hide"
+                    >
+                      <div class="drop-image-sm">
+                        <ITestimonial />
+                      </div>
+                      <div class="drop-text">Testimonials</div>
+                    </g-link>
+                    -->
                   </div>
 
                   <div class="col col-12 mb-3">
@@ -624,7 +648,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BNavbar, BNavbarNav } from "bootstrap-vue";
+import { BNavbar, BNavbarNav } from 'bootstrap-vue';
 
 import {
   BIcon,
@@ -633,31 +657,32 @@ import {
   BDropdownHeader,
   BDropdownDivider,
   BIconArrowLeftShort,
-} from "bootstrap-vue";
+} from 'bootstrap-vue';
 
-import Logo from "@/components/icons/Logo";
-import Slogan from "@/components/icons/Slogan";
-import NavbarHamburger from "@/components/NavbarHamburger";
+import Logo from '@/components/icons/Logo';
+import Slogan from '@/components/icons/Slogan';
+import NavbarHamburger from '@/components/NavbarHamburger';
 
-import IMarket from "@/components/icons/IMarket";
-import IEcomm from "@/components/icons/IEcomm";
-import ISupply from "@/components/icons/ISupply";
-import ISource from "@/components/icons/ISource";
-import IProduct from "@/components/icons/IProduct";
-import IGM from "@/components/icons/IGM";
-import IIS from "@/components/icons/IIS";
-import ISP from "@/components/icons/ISP";
-import IAbout from "@/components/icons/IAbout";
-import IPrivacy from "@/components/icons/IPrivacy";
-import INews from "@/components/icons/INews";
-import ITerms from "@/components/icons/ITerms";
-import IContact from "@/components/icons/IContact";
-import ICareer from "@/components/icons/ICareer";
-import IPartnership from "@/components/icons/IPartnership";
-import ISustainability from "@/components/icons/ISustainability";
-import IFreelancers from "@/components/icons/IFreelancers";
-import ICountryRep from "@/components/icons/ICountryRep";
-import IHow from "@/components/icons/IHow";
+import IMarket from '@/components/icons/IMarket';
+import IEcomm from '@/components/icons/IEcomm';
+import ISupply from '@/components/icons/ISupply';
+import ISource from '@/components/icons/ISource';
+import IProduct from '@/components/icons/IProduct';
+import IGM from '@/components/icons/IGM';
+import IIS from '@/components/icons/IIS';
+import ISP from '@/components/icons/ISP';
+import IAbout from '@/components/icons/IAbout';
+import IPrivacy from '@/components/icons/IPrivacy';
+import INews from '@/components/icons/INews';
+import ITerms from '@/components/icons/ITerms';
+import IContact from '@/components/icons/IContact';
+import ICareer from '@/components/icons/ICareer';
+import IPartnership from '@/components/icons/IPartnership';
+import ISustainability from '@/components/icons/ISustainability';
+import IFreelancers from '@/components/icons/IFreelancers';
+import ICountryRep from '@/components/icons/ICountryRep';
+import ITestimonial from '@/components/icons/ITestimonial';
+import IHow from '@/components/icons/IHow';
 
 export default {
   components: {
@@ -687,6 +712,7 @@ export default {
     IAbout,
     IPrivacy,
     ITerms,
+    ITestimonial,
     IContact,
     ICareer,
     IPartnership,
@@ -696,69 +722,69 @@ export default {
     return {
       scrollPosition: null,
       market: {
-        title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities",
+        title: 'Matching Marketplace',
+        subtitle: 'Illuminating sourcing opportunities',
         examples: [
           {
-            title: "DATABASE",
-            example: "Use multiple criteria to find new partners",
+            title: 'DATABASE',
+            example: 'Use multiple criteria to find new partners',
           },
           {
-            title: "MARKETPLACE",
+            title: 'MARKETPLACE',
             example:
-              "Discover a wealth of targeted information and opportunities",
+              'Discover a wealth of targeted information and opportunities',
           },
         ],
       },
       ecom: {
-        title: "E-commerce",
+        title: 'E-commerce',
         subtitle:
-          "Sophisticated products in low MOQs for immediate or quick deliveries",
+          'Sophisticated products in low MOQs for immediate or quick deliveries',
         examples: [
           {
-            title: "Drops",
-            example: "Bi-monthly collections of ready-to-ship styles",
+            title: 'Drops',
+            example: 'Bi-monthly collections of ready-to-ship styles',
           },
           {
-            title: "Brands",
-            example: "Curated list of the best regional brands (coming soon)",
+            title: 'Brands',
+            example: 'Curated list of the best regional brands (coming soon)',
           },
           {
-            title: "Fast Custom",
+            title: 'Fast Custom',
             example:
-              "Order directly from factories in low MOQs & short lead-times (coming soon)",
+              'Order directly from factories in low MOQs & short lead-times (coming soon)',
           },
         ],
       },
       supply: {
-        title: "Supply Chain Solutions",
-        subtitle: "Tailored services to help you grow in the region",
+        title: 'Supply Chain Solutions',
+        subtitle: 'Tailored services to help you grow in the region',
         examples: [
           {
-            title: "Support Services",
-            example: "Quality Assurance, Compliance & Testing",
+            title: 'Support Services',
+            example: 'Quality Assurance, Compliance & Testing',
           },
           {
-            title: "Virtual Supplier",
-            example: "Sample development, merchandising and more...",
+            title: 'Virtual Supplier',
+            example: 'Sample development, merchandising and more...',
           },
           {
-            title: "Advisory",
-            example: "Strategic advice on sourcing from the Indian Ocean",
+            title: 'Advisory',
+            example: 'Strategic advice on sourcing from the Indian Ocean',
           },
           {
-            title: "Online order Tracking",
-            example: "Set up Critical Path dates",
+            title: 'Online order Tracking',
+            example: 'Set up Critical Path dates',
           },
           {
-            title: "Corporate Discounts",
-            example: "Key partners in the region",
+            title: 'Corporate Discounts',
+            example: 'Key partners in the region',
           },
         ],
       },
       cta: {
-        main: "Sign Up",
-        sub: "Log In",
+        main: 'Sign Up',
+        sub: 'Log In',
       },
       hoverPro: false,
       hoverSol: false,
@@ -777,7 +803,7 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener('scroll', this.updateScroll);
   },
 };
 </script>
