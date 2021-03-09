@@ -51,7 +51,7 @@ export default {
     BCarouselSlide,
   },
   props: {
-    data: Object,
+    data: Array,
     control: Boolean,
   },
   data() {

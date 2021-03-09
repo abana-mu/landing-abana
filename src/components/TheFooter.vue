@@ -53,6 +53,7 @@
                 <g-link to="/about">About</g-link>
                 <g-link to="/contact">Contact</g-link>
                 <g-link to="/careers">Jobs</g-link>
+                <g-link to="/press">Press</g-link>
               </div>
             </b-col>
             <b-col cols="12" sm class="mb-4 mb-sm-0">

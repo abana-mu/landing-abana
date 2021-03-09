@@ -9,14 +9,6 @@
       "email": "emil.grey@abana.mu"
     },
     {
-      "name": "Ali El Nawawi",
-      "location": "Cairo",
-      "company": "ABANA Egypt",
-      "coverage": "Egypt",
-      "number": "+20 1017 222 482",
-      "email": "ali.elnawawi@abana.mu"
-    },
-    {
       "name": "Lahcen Haddad",
       "location": "Temarara",
       "company": "ABANA Morocco",
@@ -47,6 +39,14 @@
       "coverage": "Reunion Island",
       "number": "+262 693 03 16 77",
       "email": "omar.ravate@abana.mu"
+    },
+    {
+      "name": "Theodros Wossenyeleh",
+      "location": "Ethiopia",
+      "company": "ABANA Ethiopia",
+      "coverage": "Ethiopia",
+      "number": "+251-911-225271",
+      "email": "theodros.wossenyeleh@abana.mu"
     }
   ]
 }

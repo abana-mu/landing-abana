@@ -1,10 +1,10 @@
 {
   "header": {
     "title": "Africa's Textile and Apparel Industry, at your fingertips",
-    "subtext": "Discover the on-line Sourcing & E-Commerce Platform that connects the Indian Ocean & African Textile & Apparel industry to the World.",
-    "cta": "Join Us"
+    "subtext": "Our on-line Sourcing Platform connects Mauritius, Madagascar and Africa to the world. Facilitated by our unique network of experienced teams on-the-ground to turn opportunities into reality.",
+    "cta": "About Us"
   },
-  "trustedBool": false,
+  "trustedBool": true,
   "boxes": {
     "header": {
       "title": "Re-Imagining Supply-Chains",
@@ -31,7 +31,7 @@
   },
   "flow": {
     "title": "Connecting all modern industry players",
-    "subtext": "This industry is known for its lack of transparency. ABANA makes is possible for modern players to use modern solutions to connect and partner painlessly.  ",
+    "subtext": "This industry is known for its lack of transparency. ABANA makes it possible for modern players to use modern solutions to connect and partner painlessly.  ",
     "link": "See our matching solutions",
     "page": "matching-marketplace"
   },
@@ -51,32 +51,47 @@
     {
       "name": "EDB",
       "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
+      "image": "/uploads/edb_logo-1-.png"
     },
     {
-      "name": "GOV",
-      "link": "https://govmu.org",
-      "image": "/uploads/gov_logo.png"
+      "name": "Kick Advisory",
+      "link": "https://www.kickadvisory.com/",
+      "image": "/uploads/kick-logo-high-resolution-.png"
     },
     {
-      "name": "EDB1",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
+      "name": "Ariva Logistics",
+      "link": "https://ariva-logistics.com/",
+      "image": "/uploads/ariva-logo.png"
     },
     {
-      "name": "EDB2",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
+      "name": "Star Knitwear",
+      "link": "https://www.star-knitwear.com/",
+      "image": "/uploads/grey-star-knitwear-copy.png"
     },
     {
-      "name": "EDB3",
-      "link": "https://www.edbmauritius.org/",
-      "image": "/uploads/edb_logo.png"
+      "name": "Aquarelle",
+      "link": "https://cieltextile.com/",
+      "image": "/uploads/horizontal-logos-aquarelle-charcoal-.png"
     },
     {
-      "name": "Random",
-      "link": "GOV",
-      "image": "/uploads/gov_logo.png"
+      "name": "Socota Madagascar",
+      "link": "http://www.groupesocota.com/socota/index.html",
+      "image": "/uploads/logo-socota-ofa-main-copy2.png"
+    },
+    {
+      "name": "LOI Madagascar",
+      "image": "/uploads/loi-vf-newslogan-copy.png",
+      "link": " "
+    },
+    {
+      "name": "R.E.A.L Garment",
+      "link": "https://www.real-garments.com/",
+      "image": "/uploads/real-garment-copy.png"
+    },
+    {
+      "name": "Somatrans Logistics",
+      "link": "http://www.somatrans.mu/",
+      "image": "/uploads/somatrans-logo-cmyk.png"
     }
   ]
 }
