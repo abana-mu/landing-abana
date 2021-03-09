@@ -1,44 +1,6 @@
-// MAIN ELEMENTS
-html {
-  font-size: 16px;
-  font-family: sans-serif;
-}
-
-$font: 'SS-font1';
-
-// --- FONT ---
-
-@font-face {
-  font-family: 'SS-font1';
-  src: url('../assets/fonts/lineto-circular-book.ttf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'SS-font1';
-  src: url('../assets/fonts/lineto-circular-medium.ttf');
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-
-
-@font-face {
-  font-family: 'SS-font1';
-  src: url('../assets/fonts/lineto-circular-bold.ttf');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
-  font-family: $font;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
   color: $text-body;
 
   @media (min-width: $break-s) {
@@ -51,9 +13,7 @@ body {
   color: white;
 }
 
-
-//  --- TYPOGRAPHY --- 
-
+//  --- TYPOGRAPHY ---
 h1,
 h2,
 h3,
@@ -100,7 +60,6 @@ h2 {
   @media (min-width: $break-xxl) {
     font-size: $f36;
   }
-
 }
 
 h3 {
@@ -121,7 +80,6 @@ h3 {
 }
 
 h4 {
-
   //-578
   font-size: $f20;
 
@@ -172,7 +130,7 @@ p {
   font-size: 1rem;
 }
 
-//  --- COMPONENTS --- 
+//  --- COMPONENTS ---
 
 .btn {
   padding: 0.5rem 1.5rem;
@@ -202,7 +160,6 @@ p {
   border-top-color: $secondary !important;
 }
 
-
 .string {
   width: 50px;
 
@@ -217,7 +174,7 @@ p {
   margin: 50px auto 20px auto;
 }
 
-//  --- MARKDOWN --- 
+//  --- MARKDOWN ---
 
 .markdown-body {
   font-family: $font !important;
@@ -244,7 +201,7 @@ p {
 }
 
 .linked::before {
-  content: "";
+  content: '';
   display: block;
   height: 55px;
   /* fixed header height*/
@@ -287,7 +244,7 @@ p {
   }
 }
 
-// --- LAYOUTS --- 
+// --- LAYOUTS ---
 
 .container-fluid {
   max-width: 1440px;
@@ -327,17 +284,13 @@ p {
 }
 
 .mobile-gutter {
-
   @media (max-width: $break-s) {
     margin-left: 16px;
     margin-right: 16px;
   }
-
 }
 
-
-//  --- TITLES & SUBTITLES --- 
-
+//  --- TITLES & SUBTITLES ---
 
 .title {
   margin: 0 auto;
@@ -380,9 +333,9 @@ p {
   }
 }
 
-// --- COLOURS + BACKGROUND COLORS + BORDERS --- 
+// --- COLOURS + BACKGROUND COLORS + BORDERS ---
 
-.text-primary{
+.text-primary {
   color: $primary;
 }
 
@@ -400,7 +353,7 @@ p {
   border-bottom: 1px solid $border;
 }
 
-//  --- TRANSITIONS & ANIMATIONS--- 
+//  --- TRANSITIONS & ANIMATIONS---
 
 .text-transition {
   -webkit-transition: all 0.2s ease-in-out;
@@ -421,7 +374,7 @@ p {
   }
 }
 
-// --- NAVIGATION --- 
+// --- NAVIGATION ---
 
 .navbar-light .navbar-nav .nav-link {
   color: $title-dark;
@@ -527,12 +480,12 @@ p {
   }
 }
 
-.tabs> :first-child {
+.tabs > :first-child {
   background-color: white;
   z-index: 10;
 }
 
-// --- PAGES --- 
+// --- PAGES ---
 
 .header {
   text-align: center;
@@ -540,7 +493,6 @@ p {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-
 }
 
 .image-banner {
@@ -561,8 +513,7 @@ p {
   max-width: 1200px;
 }
 
-
-// --- YOUTUBE --- 
+// --- YOUTUBE ---
 
 .video-wrapper {
   position: relative;

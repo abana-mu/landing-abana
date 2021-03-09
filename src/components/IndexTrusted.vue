@@ -26,8 +26,9 @@
                 <a :href="logo.link" target="_blank">
                   <g-image
                     :src="logo.image"
+                    width="300"
                     blur="40"
-                    quality="100"
+                    quality="75"
                     :alt="logo.title"
                   />
                 </a>
