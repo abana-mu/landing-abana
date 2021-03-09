@@ -8,6 +8,7 @@ quote: '*"Working with ABANA makes the complex process of creating clothes
   processes."*'
 name: Alexander Currimjee
 position: CEO of Lafayette Designs
+color: "#dceef6"
 image: /uploads/supply2.png
 caseStudy: true
 ---
