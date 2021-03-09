@@ -1,8 +1,8 @@
 <!-- HTML -->
 <template>
-  <div>
-    <div v-if="control" class="trusted  container my-4 py-4 pb-5">
-      <h4 class="m-0 mb-4 mb-lg-0 mr-lg-5">Trusted by:</h4>
+  <div class="text-center my-4 py-4 pb-5">
+    <div v-if="control" class="trusted container">
+      <p class="m-0 mb-4 mb-lg-0 mr-lg-5">Trusted by:</p>
       <b-carousel
         id="trusted-carousel"
         v-model="slide"
@@ -26,7 +26,6 @@
                 <a :href="logo.link" target="_blank">
                   <g-image
                     :src="logo.image"
-                    width="300"
                     blur="40"
                     quality="75"
                     :alt="logo.title"
@@ -38,6 +37,7 @@
         </b-carousel-slide>
       </b-carousel>
     </div>
+    <a href="#" class="read">Read what they are saying...</a>
   </div>
 </template>
 
@@ -134,7 +134,7 @@ export default {
   }
 
   color: #a4a4a4;
-  h4 {
+  p {
     color: #a4a4a4;
     flex-shrink: 0;
   }
@@ -151,6 +151,9 @@ export default {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (min-width: $break-l) {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -167,5 +170,10 @@ export default {
     margin: 0 40px;
     width: 100%;
   }
+}
+
+.read {
+  text-decoration: underline;
+  color: #a4a4a4;
 }
 </style>
