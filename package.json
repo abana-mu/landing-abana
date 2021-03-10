@@ -19,6 +19,7 @@
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-sass-resources-loader": "0.0.3",
     "netlify-cms": "^2.10.55",
+    "netlify-cms-widget-color": "^3.0.1",
     "vue": "^2.6.12",
     "vue-server-renderer": "^2.6.12",
     "vue-simple-markdown": "^1.1.4",
