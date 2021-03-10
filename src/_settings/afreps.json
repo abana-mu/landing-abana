@@ -7,6 +7,30 @@
       "coverage": "South Africa , Swaziland, Lesotho, Tanzania"
     },
     {
+      "name": "Nitin Arora",
+      "location": "Kenya",
+      "company": "ABANA Kenya & Uganda",
+      "coverage": "Kenya & Uganda",
+      "email": "nitin.arora@abana.mu",
+      "number": "+256 707 888 444 / +254 735 093 696"
+    },
+    {
+      "name": "Amr Hussein",
+      "location": "Egypt",
+      "company": "ABANA Egypt",
+      "coverage": "Egypt",
+      "number": "+202 2327 6934 / +202 3824 1293",
+      "email": "amr.hussein@abana.mu"
+    },
+    {
+      "name": "Theodros Wossenyeleh",
+      "location": "Ethiopia",
+      "company": "ABANA Ethiopia",
+      "coverage": "Ethiopia",
+      "number": "+251-911-225271",
+      "email": "theodros.wossenyeleh@abana.mu"
+    },
+    {
       "name": "Lahcen Haddad",
       "location": "Temarara",
       "company": "ABANA Morocco",
@@ -19,22 +43,18 @@
       "coverage": "Mauritius & Madagascar "
     },
     {
-      "name": "Gengar Pushparathan",
-      "location": "Antananarivo",
-      "company": "ABANA Mauritius",
-      "coverage": "Madagascar"
-    },
-    {
       "name": "Omar Ravate",
       "location": "Reunion Island",
       "company": "ABANA Reunion",
       "coverage": "Reunion Island"
     },
     {
-      "name": "Theodros Wossenyeleh",
-      "location": "Ethiopia",
-      "company": "ABANA Ethiopia",
-      "coverage": "Ethiopia"
+      "name": "Gengar Pushparathan",
+      "location": "Antananarivo",
+      "company": "ABANA Mauritius",
+      "coverage": "Madagascar",
+      "number": "+261 33 426 3980",
+      "email": "gengar.p@abana.mu"
     }
   ]
 }

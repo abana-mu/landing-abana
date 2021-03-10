@@ -49,6 +49,16 @@
   },
   "trusted": [
     {
+      "name": "Mr Price",
+      "link": "https://www.mrp.com/",
+      "image": "/uploads/mr-price.png"
+    },
+    {
+      "name": "DHL",
+      "link": "https://www.dhl.com/en.html",
+      "image": "/uploads/dhl.png"
+    },
+    {
       "name": "EDB",
       "link": "https://www.edbmauritius.org/",
       "image": "/uploads/edb_logo-1-.png"
@@ -59,29 +69,9 @@
       "image": "/uploads/kick-logo-high-resolution-.png"
     },
     {
-      "name": "Ariva Logistics",
-      "link": "https://ariva-logistics.com/",
-      "image": "/uploads/ariva-logo.png"
-    },
-    {
       "name": "Star Knitwear",
       "link": "https://www.star-knitwear.com/",
       "image": "/uploads/grey-star-knitwear-copy.png"
-    },
-    {
-      "name": "Aquarelle",
-      "link": "https://cieltextile.com/",
-      "image": "/uploads/horizontal-logos-aquarelle-charcoal-.png"
-    },
-    {
-      "name": "Socota Madagascar",
-      "link": "http://www.groupesocota.com/socota/index.html",
-      "image": "/uploads/logo-socota-ofa-main-copy2.png"
-    },
-    {
-      "name": "LOI Madagascar",
-      "image": "/uploads/loi-vf-newslogan-copy.png",
-      "link": " "
     },
     {
       "name": "R.E.A.L Garment",
@@ -89,9 +79,54 @@
       "image": "/uploads/real-garment-copy.png"
     },
     {
+      "name": "Aquarelle",
+      "link": "https://cieltextile.com/",
+      "image": "/uploads/horizontal-logos-aquarelle-charcoal-.png"
+    },
+    {
+      "name": "Texpull",
+      "link": "http://www.texpull.com/preview",
+      "image": "/uploads/unknown.png"
+    },
+    {
+      "name": "World Knits",
+      "link": "https://www.worldknitsltd.com/",
+      "image": "/uploads/wkl-logo.png"
+    },
+    {
+      "name": "Socota Madagascar",
+      "link": "http://www.groupesocota.com/socota/index.html",
+      "image": "/uploads/logo-socota-ofa-main-copy2.png"
+    },
+    {
+      "name": "CFL (Consolidated Fabrics Ltd)",
+      "link": "https://cieltextile.com/",
+      "image": "/uploads/horizontal-logos-cfl-charcoal-.png"
+    },
+    {
+      "name": "LOI Madagascar",
+      "image": "/uploads/loi-vf-newslogan-copy.png",
+      "link": " "
+    },
+    {
+      "name": "Ariva Logistics",
+      "link": "https://ariva-logistics.com/",
+      "image": "/uploads/ariva-logo.png"
+    },
+    {
       "name": "Somatrans Logistics",
       "link": "http://www.somatrans.mu/",
       "image": "/uploads/somatrans-logo-cmyk.png"
+    },
+    {
+      "name": "Celero Group",
+      "link": "https://www.celerogroup.com/",
+      "image": "/uploads/celero.png"
+    },
+    {
+      "name": "Trans Universal Consolidators",
+      "image": "/uploads/tuc.png",
+      "link": " "
     }
   ]
 }
