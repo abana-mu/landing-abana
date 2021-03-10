@@ -12,7 +12,7 @@
       <b-col cols="12" lg="3" class="p-0 ">
         <div class="d-flex rep-button justify-content-center mt-3 mt-lg-0">
           <b-button
-            :href="'mailto:' + data.email"
+            href="mailto:support@abana.mu"
             variant="outline-primary"
             class="m-0"
           >
@@ -25,12 +25,6 @@
     <div class="rep-content d-flex flex-column">
       <p><BIconGlobe2 class="mr-3" />{{ data.coverage }}</p>
       <p><BIconBriefcase class="mr-3" />{{ data.company }}</p>
-      <a :href="'tel:' + data.number">
-        <BIconTelephone class="mr-3" />{{ data.number }}
-      </a>
-      <a :href="'mailto:' + data.email">
-        <BIconEnvelope class="mr-3" />{{ data.email }}
-      </a>
     </div>
   </div>
 </template>

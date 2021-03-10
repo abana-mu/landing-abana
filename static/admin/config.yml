@@ -2,1704 +2,1677 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/uploads"
+media_folder: 'static/uploads' # Media files will be stored in the repo under static/images/uploads
+public_folder: '/uploads'
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: 'Pages'
+    name: 'pages'
     editor:
       preview: false
     files:
-      - label: "Landing Page"
-        name: "landing"
-        file: "src/_settings/landing.json"
-        description: "General Site Settings"
+      - label: 'Landing Page'
+        name: 'landing'
+        file: 'src/_settings/landing.json'
+        description: 'General Site Settings'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-              - { label: "Call to Action", name: "cta", widget: "string" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Call to Action', name: 'cta', widget: 'string' }
 
           - {
-              label: "Activate Trusted",
-              name: "trustedBool",
-              widget: "boolean",
+              label: 'Activate Trusted',
+              name: 'trustedBool',
+              widget: 'boolean',
               default: false,
             }
 
-          - label: "Trusted By"
+          - label: 'Trusted By'
             name: trusted
-            label_singular: "trustee"
+            label_singular: 'trustee'
             widget: list
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Link", name: "link", widget: "string" }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Link', name: 'link', widget: 'string' }
               - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
-                  hint: "Format: PNG with transparent background",
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  hint: 'Format: PNG with transparent background',
                 }
-          - label: "Boxes"
+          - label: 'Boxes'
             name: boxes
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Header"
+              - label: 'Header'
                 name: header
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Box Title", name: "title", widget: "string" }
-                  - { label: "Box Sub Text", name: "subtext", widget: "string" }
-              - label: "Boxes"
+                  - { label: 'Box Title', name: 'title', widget: 'string' }
+                  - { label: 'Box Sub Text', name: 'subtext', widget: 'string' }
+              - label: 'Boxes'
                 name: boxes
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - label: "Box 1"
+                  - label: 'Box 1'
                     name: box1
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - { label: "Title", name: "title", widget: "string" }
-                      - { label: "Content", name: "content", widget: "text" }
-                  - label: "Box 2"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 2'
                     name: box2
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - { label: "Title", name: "title", widget: "string" }
-                      - { label: "Content", name: "content", widget: "text" }
-                  - label: "Box 3"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 3'
                     name: box3
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - { label: "Title", name: "title", widget: "string" }
-                      - { label: "Content", name: "content", widget: "text" }
-                  - label: "Box 4"
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
+                  - label: 'Box 4'
                     name: box4
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - { label: "Title", name: "title", widget: "string" }
-                      - { label: "Content", name: "content", widget: "text" }
+                      - { label: 'Title', name: 'title', widget: 'string' }
+                      - { label: 'Content', name: 'content', widget: 'text' }
 
-          - label: "Flow"
+          - label: 'Flow'
             name: flow
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: 'Link',
+                  name: 'link',
                   required: false,
-                  widget: "string",
+                  widget: 'string',
                 }
-              - label: "Page link"
+              - label: 'Page link'
                 name: page
                 required: false
-                widget: "select"
+                widget: 'select'
                 options:
                   [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "drops",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
                   ]
-                hint: "Index is the home page"
+                hint: 'Index is the home page'
 
-          - label: "Drop"
+          - label: 'Drop'
             name: drop
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: 'Link',
+                  name: 'link',
                   required: false,
-                  widget: "string",
+                  widget: 'string',
                 }
-              - label: "Page link"
+              - label: 'Page link'
                 name: page
                 required: false
-                widget: "select"
+                widget: 'select'
                 options:
                   [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "drops",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
                   ]
-                hint: "Index is the home page"
+                hint: 'Index is the home page'
 
-          - label: "Reps"
+          - label: 'Reps'
             name: reps
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: 'Link',
+                  name: 'link',
                   required: false,
-                  widget: "string",
+                  widget: 'string',
                 }
-              - label: "Page link"
+              - label: 'Page link'
                 name: page
                 required: false
-                widget: "select"
+                widget: 'select'
                 options:
                   [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "drops",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
                   ]
-                hint: "Index is the home page"
+                hint: 'Index is the home page'
 
-      - label: "Matching Marketplace"
-        name: "matching"
-        file: "src/_settings/matching.json"
+      - label: 'Matching Marketplace'
+        name: 'matching'
+        file: 'src/_settings/matching.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-          - label: "Content"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+          - label: 'Content'
             name: content
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Database"
+              - label: 'Database'
                 name: database
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "SubText", name: "subtext", widget: "text" }
-                  - label: "Elements"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Elements'
                     name: elements
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - label: "For Buyers"
+                      - label: 'For Buyers'
                         name: buyers
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "For Garment Makers"
+                            hint: 'Index is the home page'
+                      - label: 'For Garment Makers'
                         name: gm
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "For Input Suppliers & Service Providers"
+                            hint: 'Index is the home page'
+                      - label: 'For Input Suppliers & Service Providers'
                         name: issp
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "Intuitive & Useful Functionalities"
+                            hint: 'Index is the home page'
+                      - label: 'Intuitive & Useful Functionalities'
                         name: functionalities
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-              - label: "Marketplace"
+                            hint: 'Index is the home page'
+              - label: 'Marketplace'
                 name: marketplace
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "SubText", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
+                    hint: 'Index is the home page'
 
-      - label: "E-Commerce"
-        name: "ecommerce"
-        file: "src/_settings/ecommerce.json"
+      - label: 'E-Commerce'
+        name: 'ecommerce'
+        file: 'src/_settings/ecommerce.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-          - label: "Elements"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+          - label: 'Elements'
             name: elements
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "drops"
+              - label: 'drops'
                 name: drops
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Fast Custom"
+                    hint: 'Index is the home page'
+              - label: 'Fast Custom'
                 name: fastcustom
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Brands"
+                    hint: 'Index is the home page'
+              - label: 'Brands'
                 name: brands
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
+                    hint: 'Index is the home page'
 
-      - label: "Drops"
-        name: "drops"
-        file: "src/_settings/drops.json"
+      - label: 'Drops'
+        name: 'drops'
+        file: 'src/_settings/drops.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
               - {
-                  label: "Youtube Video",
-                  name: "video",
-                  widget: "string",
-                  hint: "Add youtube URL",
+                  label: 'Youtube Video',
+                  name: 'video',
+                  widget: 'string',
+                  hint: 'Add youtube URL',
                 }
 
-          - label: "Elements"
+          - label: 'Elements'
             name: elements
-            label_singular: "element"
+            label_singular: 'element'
             widget: list
             fields:
-              - { label: "ID", name: "id", widget: "string", hint: "block+#" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: 'ID', name: 'id', widget: 'string', hint: 'block+#' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - { label: 'Image', name: 'image', widget: 'image' }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: 'Link',
+                  name: 'link',
                   required: false,
-                  widget: "string",
+                  widget: 'string',
                 }
-              - label: "Page link"
+              - label: 'Page link'
                 name: page
                 required: false
-                widget: "select"
+                widget: 'select'
                 options:
                   [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "drops",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
                   ]
-                hint: "Index is the home page"
+                hint: 'Index is the home page'
 
-      - label: "Supply Chain Solutions"
-        name: "supplychain"
-        file: "src/_settings/supplychain.json"
+      - label: 'Supply Chain Solutions'
+        name: 'supplychain'
+        file: 'src/_settings/supplychain.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
               - {
-                  label: "Link",
-                  name: "link",
+                  label: 'Link',
+                  name: 'link',
                   required: false,
-                  widget: "string",
+                  widget: 'string',
                 }
-              - label: "Page link"
+              - label: 'Page link'
                 name: page
                 required: false
-                widget: "select"
+                widget: 'select'
                 options:
                   [
-                    "about",
-                    "contact",
-                    "ecommerce",
-                    "garment-makers",
-                    "drops",
-                    "index",
-                    "input-suppliers",
-                    "matching-marketplace",
-                    "pricing",
-                    "product-buyers",
-                    "service-providers",
-                    "sourcing-buyers",
-                    "supply-chain",
-                    "sustainability",
-                    "why-africa",
-                    "country-reps",
-                    "freelancers",
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
                   ]
-                hint: "Index is the home page"
-          - label: "Elements"
+                hint: 'Index is the home page'
+          - label: 'Elements'
             name: elements
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Support Services"
+              - label: 'Support Services'
                 name: support
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Virtual Supplier"
+                    hint: 'Index is the home page'
+              - label: 'Virtual Supplier'
                 name: virtual
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Advisory"
+                    hint: 'Index is the home page'
+              - label: 'Advisory'
                 name: advisory
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Online Order Tracking"
+                    hint: 'Index is the home page'
+              - label: 'Online Order Tracking'
                 name: onlinetracking
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Corporate Discount"
+                    hint: 'Index is the home page'
+              - label: 'Corporate Discount'
                 name: discounts
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
+                    hint: 'Index is the home page'
 
-      - label: "Why Africa"
-        name: "whyafrica"
-        file: "src/_settings/whyafrica.json"
+      - label: 'Why Africa'
+        name: 'whyafrica'
+        file: 'src/_settings/whyafrica.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - label: "Elements"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Elements'
             name: elements
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Economic"
+              - label: 'Economic'
                 name: economic
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Social"
+                    hint: 'Index is the home page'
+              - label: 'Social'
                 name: social
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
-              - label: "Environmental"
+                    hint: 'Index is the home page'
+              - label: 'Environmental'
                 name: environmental
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "text" }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
+                    hint: 'Index is the home page'
 
-      - label: "Pricing"
-        name: "pricing"
-        file: "src/_settings/pricing.json"
+      - label: 'Pricing'
+        name: 'pricing'
+        file: 'src/_settings/pricing.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: "Testimonials"
-        name: "testimonials"
-        file: "src/_settings/testimonials.json"
+      - label: 'Testimonials'
+        name: 'testimonials'
+        file: 'src/_settings/testimonials.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: "About Us"
-        name: "aboutus"
-        file: "src/_settings/aboutus.json"
+      - label: 'About Us'
+        name: 'aboutus'
+        file: 'src/_settings/aboutus.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - label: "Arif"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Arif'
             name: arif
-            widget: "markdown"
-          - label: "Dirk"
+            widget: 'markdown'
+          - label: 'Dirk'
             name: dirk
-            widget: "markdown"
-          - label: "Elements"
+            widget: 'markdown'
+          - label: 'Elements'
             name: elements
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Who"
+              - label: 'Who'
                 name: who
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "markdown" }
-              - label: "Where"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'Where'
                 name: where
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "markdown" }
-              - label: "With"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'With'
                 name: with
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "markdown" }
-              - label: "Why"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+              - label: 'Why'
                 name: Why
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Subtext", name: "subtext", widget: "markdown" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
 
-      - label: "Careers"
-        name: "careers"
-        file: "src/_settings/careers.json"
+      - label: 'Careers'
+        name: 'careers'
+        file: 'src/_settings/careers.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: "Press"
-        name: "press"
-        file: "src/_settings/press.json"
+      - label: 'Press'
+        name: 'press'
+        file: 'src/_settings/press.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: "Sustainability"
-        name: "sustainability"
-        file: "src/_settings/sustainability.json"
+      - label: 'Sustainability'
+        name: 'sustainability'
+        file: 'src/_settings/sustainability.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - label: "Content"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Content'
             name: content
-            widget: "object"
+            widget: 'object'
             fields:
-              - label: "Solutions"
+              - label: 'Solutions'
                 name: solutions
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "SubText", name: "subtext", widget: "text" }
-                  - label: "Elements"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Elements'
                     name: elements
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - label: "Discover Africa"
+                      - label: 'Discover Africa'
                         name: discover
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "Transparency"
+                            hint: 'Index is the home page'
+                      - label: 'Transparency'
                         name: transparency
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-              - label: "Sustainability"
+                            hint: 'Index is the home page'
+              - label: 'Sustainability'
                 name: sustainability
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "SubText", name: "subtext", widget: "text" }
-                  - label: "Elements"
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'SubText', name: 'subtext', widget: 'text' }
+                  - label: 'Elements'
                     name: elements
-                    widget: "object"
+                    widget: 'object'
                     fields:
-                      - label: "Value"
+                      - label: 'Value'
                         name: value
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "Materials"
+                            hint: 'Index is the home page'
+                      - label: 'Materials'
                         name: materials
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-                      - label: "Process"
+                            hint: 'Index is the home page'
+                      - label: 'Process'
                         name: process
-                        widget: "object"
+                        widget: 'object'
                         fields:
-                          - { label: "Title", name: "title", widget: "string" }
+                          - { label: 'Title', name: 'title', widget: 'string' }
                           - {
-                              label: "Content",
-                              name: "content",
-                              widget: "markdown",
+                              label: 'Content',
+                              name: 'content',
+                              widget: 'markdown',
                             }
-                          - { label: "Image", name: "image", widget: "image" }
+                          - { label: 'Image', name: 'image', widget: 'image' }
                           - {
-                              label: "Link",
-                              name: "link",
+                              label: 'Link',
+                              name: 'link',
                               required: false,
-                              widget: "string",
+                              widget: 'string',
                             }
-                          - label: "Page link"
+                          - label: 'Page link'
                             name: page
                             required: false
-                            widget: "select"
+                            widget: 'select'
                             options:
                               [
-                                "about",
-                                "contact",
-                                "ecommerce",
-                                "garment-makers",
-                                "drops",
-                                "index",
-                                "input-suppliers",
-                                "matching-marketplace",
-                                "pricing",
-                                "product-buyers",
-                                "service-providers",
-                                "sourcing-buyers",
-                                "supply-chain",
-                                "sustainability",
-                                "why-africa",
-                                "country-reps",
-                                "freelancers",
+                                'about',
+                                'contact',
+                                'ecommerce',
+                                'garment-makers',
+                                'drops',
+                                'index',
+                                'input-suppliers',
+                                'matching-marketplace',
+                                'pricing',
+                                'product-buyers',
+                                'service-providers',
+                                'sourcing-buyers',
+                                'supply-chain',
+                                'sustainability',
+                                'why-africa',
+                                'country-reps',
+                                'freelancers',
                               ]
-                            hint: "Index is the home page"
-              - label: "Commitment"
+                            hint: 'Index is the home page'
+              - label: 'Commitment'
                 name: commitment
-                widget: "object"
+                widget: 'object'
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
                   - {
-                      label: "SubText",
+                      label: 'SubText',
                       required: false,
-                      name: "subtext",
-                      widget: "text",
+                      name: 'subtext',
+                      widget: 'text',
                     }
-                  - { label: "Content", name: "content", widget: "markdown" }
-                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
-                      label: "Link",
-                      name: "link",
+                      label: 'Link',
+                      name: 'link',
                       required: false,
-                      widget: "string",
+                      widget: 'string',
                     }
-                  - label: "Page link"
+                  - label: 'Page link'
                     name: page
                     required: false
-                    widget: "select"
+                    widget: 'select'
                     options:
                       [
-                        "about",
-                        "contact",
-                        "ecommerce",
-                        "garment-makers",
-                        "drops",
-                        "index",
-                        "input-suppliers",
-                        "matching-marketplace",
-                        "pricing",
-                        "product-buyers",
-                        "service-providers",
-                        "sourcing-buyers",
-                        "supply-chain",
-                        "sustainability",
-                        "why-africa",
-                        "country-reps",
-                        "freelancers",
+                        'about',
+                        'contact',
+                        'ecommerce',
+                        'garment-makers',
+                        'drops',
+                        'index',
+                        'input-suppliers',
+                        'matching-marketplace',
+                        'pricing',
+                        'product-buyers',
+                        'service-providers',
+                        'sourcing-buyers',
+                        'supply-chain',
+                        'sustainability',
+                        'why-africa',
+                        'country-reps',
+                        'freelancers',
                       ]
-                    hint: "Index is the home page"
+                    hint: 'Index is the home page'
 
-      - label: "Contact Us"
-        name: "contact"
-        file: "src/_settings/contact.json"
+      - label: 'Contact Us'
+        name: 'contact'
+        file: 'src/_settings/contact.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-      - label: "Freelancers"
-        name: "freelancers"
-        file: "src/_settings/freelancers.json"
+      - label: 'Freelancers'
+        name: 'freelancers'
+        file: 'src/_settings/freelancers.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - { label: 'Title', name: 'title', widget: 'string' }
 
-          - { label: "SubText", name: "subtitle", widget: "text" }
-          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: 'SubText', name: 'subtitle', widget: 'text' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
 
-      - label: "Terms"
-        name: "terms"
-        file: "src/_settings/terms.json"
+      - label: 'Terms'
+        name: 'terms'
+        file: 'src/_settings/terms.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - { label: "Content", name: "content", widget: "markdown" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
 
-      - label: "Privacy"
-        name: "privacy"
-        file: "src/_settings/privacy.json"
+      - label: 'Privacy'
+        name: 'privacy'
+        file: 'src/_settings/privacy.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - { label: "Content", name: "content", widget: "markdown" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
 
-      - label: "Register"
-        name: "register"
-        file: "src/_settings/register.json"
+      - label: 'Register'
+        name: 'register'
+        file: 'src/_settings/register.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
-  - label: "Country Reps"
-    name: "countryreps"
+  - label: 'Country Reps'
+    name: 'countryreps'
     editor:
       preview: false
     files:
-      - label: "Header Content"
-        name: "header"
-        file: "src/_settings/countryreps.json"
+      - label: 'Header Content'
+        name: 'header'
+        file: 'src/_settings/countryreps.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-      - label: "Europe Country Reps"
-        name: "eu_reps"
-        file: "src/_settings/eureps.json"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+      - label: 'Europe Country Reps'
+        name: 'eu_reps'
+        file: 'src/_settings/eureps.json'
         fields:
-          - label: "Europe Country Reps"
+          - label: 'Europe Country Reps'
             name: reps
-            label_singular: "Country Rep"
+            label_singular: 'Country Rep'
             widget: list
             fields:
               - {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "First and Last",
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  hint: 'First and Last',
                 }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
+              - { label: 'Location', name: 'location', widget: 'string' }
+              - { label: 'Company', name: 'company', widget: 'string' }
               - {
-                  label: "Georgraphic Coverage",
-                  name: "coverage",
-                  widget: "text",
+                  label: 'Georgraphic Coverage',
+                  name: 'coverage',
+                  widget: 'text',
                 }
-              - {
-                  label: "Phone Number",
-                  name: "number",
-                  widget: "string",
-                  hint: "Add Country Code ex: +230 ...",
-                }
-              - { label: "Email Address", name: "email", widget: "string" }
-      - label: "Africa Country Reps"
-        name: "af_reps"
-        file: "src/_settings/afreps.json"
+      - label: 'Africa Country Reps'
+        name: 'af_reps'
+        file: 'src/_settings/afreps.json'
         fields:
-          - label: "Africa Country Reps"
+          - label: 'Africa Country Reps'
             name: reps
-            label_singular: "Country Rep"
+            label_singular: 'Country Rep'
             widget: list
             fields:
               - {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "First and Last",
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  hint: 'First and Last',
                 }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
+              - { label: 'Location', name: 'location', widget: 'string' }
+              - { label: 'Company', name: 'company', widget: 'string' }
               - {
-                  label: "Georgraphic Coverage",
-                  name: "coverage",
-                  widget: "text",
+                  label: 'Georgraphic Coverage',
+                  name: 'coverage',
+                  widget: 'text',
                 }
-              - {
-                  label: "Phone Number",
-                  name: "number",
-                  widget: "string",
-                  hint: "Add Country Code ex: +230 ...",
-                }
-              - { label: "Email Address", name: "email", widget: "string" }
-      - label: "America Country Reps"
-        name: "am_reps"
-        file: "src/_settings/amreps.json"
+      - label: 'America Country Reps'
+        name: 'am_reps'
+        file: 'src/_settings/amreps.json'
         fields:
-          - label: "America Country Reps"
+          - label: 'America Country Reps'
             name: reps
-            label_singular: "Country Rep"
+            label_singular: 'Country Rep'
             widget: list
             fields:
               - {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "First and Last",
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  hint: 'First and Last',
                 }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
+              - { label: 'Location', name: 'location', widget: 'string' }
+              - { label: 'Company', name: 'company', widget: 'string' }
               - {
-                  label: "Georgraphic Coverage",
-                  name: "coverage",
-                  widget: "text",
+                  label: 'Georgraphic Coverage',
+                  name: 'coverage',
+                  widget: 'text',
                 }
-              - {
-                  label: "Phone Number",
-                  name: "number",
-                  widget: "string",
-                  hint: "Add Country Code ex: +230 ...",
-                }
-              - { label: "Email Address", name: "email", widget: "string" }
-      - label: "Asia Country Reps"
-        name: "as_reps"
-        file: "src/_settings/asreps.json"
-        fields:
-          - label: "Asia Country Reps"
-            name: reps
-            label_singular: "Country Rep"
-            widget: list
-            fields:
-              - {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "First and Last",
-                }
-              - { label: "Location", name: "location", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
-              - {
-                  label: "Georgraphic Coverage",
-                  name: "coverage",
-                  widget: "text",
-                }
-              - {
-                  label: "Phone Number",
-                  name: "number",
-                  widget: "string",
-                  hint: "Add Country Code ex: +230 ...",
-                }
-              - { label: "Email Address", name: "email", widget: "string" }
 
-  - name: "tutorials"
-    label: "How it works"
+      - label: 'Asia Country Reps'
+        name: 'as_reps'
+        file: 'src/_settings/asreps.json'
+        fields:
+          - label: 'Asia Country Reps'
+            name: reps
+            label_singular: 'Country Rep'
+            widget: list
+            fields:
+              - {
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  hint: 'First and Last',
+                }
+              - { label: 'Location', name: 'location', widget: 'string' }
+              - { label: 'Company', name: 'company', widget: 'string' }
+              - {
+                  label: 'Georgraphic Coverage',
+                  name: 'coverage',
+                  widget: 'text',
+                }
+
+  - name: 'tutorials'
+    label: 'How it works'
     editor:
       preview: false
     files:
-      - label: "Videos"
-        name: "videos"
-        file: "src/_settings/tutorials.json"
+      - label: 'Videos'
+        name: 'videos'
+        file: 'src/_settings/tutorials.json'
         fields:
-          - label: "Header"
+          - label: 'Header'
             name: header
-            widget: "object"
+            widget: 'object'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "SubText", name: "subtext", widget: "text" }
-          - label: "Categories"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Categories'
             name: categories
-            label_singular: "Category"
+            label_singular: 'Category'
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - label: "Tutorial"
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - label: 'Tutorial'
                 name: tutorial
-                label_singular: "Tutorial"
+                label_singular: 'Tutorial'
                 widget: list
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: 'Title', name: 'title', widget: 'string' }
                   - {
-                      label: "Video",
-                      name: "video",
-                      widget: "string",
-                      hint: "Youtube Link",
+                      label: 'Video',
+                      name: 'video',
+                      widget: 'string',
+                      hint: 'Youtube Link',
                     }
 
-  - name: "careers" # Used in routes, e.g., /admin/collections/blog
-    label: "Jobs" # Used in the UI
-    folder: "_careers/" # The path to the folder where the documents are stored
+  - name: 'careers' # Used in routes, e.g., /admin/collections/blog
+    label: 'Jobs' # Used in the UI
+    folder: '_careers/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - label: "Available?"
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - label: 'Available?'
         name: filled
         required: true
-        widget: "select"
-        options: ["filled", "open"]
-        hint: "filled = display that position has been filled"
-      - { label: "Title", name: "title", widget: "string" }
+        widget: 'select'
+        options: ['filled', 'open']
+        hint: 'filled = display that position has been filled'
+      - { label: 'Title', name: 'title', widget: 'string' }
       - {
-          label: "Department",
-          name: "department",
-          widget: "select",
+          label: 'Department',
+          name: 'department',
+          widget: 'select',
           options:
             [
-              "Product",
-              "Growth & Sales",
-              "Textile & Apparel Design",
-              "Marketing & Visuals",
-              "Operations",
-              "Engineering",
+              'Product',
+              'Growth & Sales',
+              'Textile & Apparel Design',
+              'Marketing & Visuals',
+              'Operations',
+              'Engineering',
             ],
         }
-      - { label: "Location", name: "location", widget: "string" }
-      - { label: "Role", name: "role", widget: "markdown" }
-      - { label: "Main Tasks", name: "tasks", widget: "markdown" }
+      - { label: 'Location', name: 'location', widget: 'string' }
+      - { label: 'Role', name: 'role', widget: 'markdown' }
+      - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
       - {
-          label: "What you bring to the table",
-          name: "table",
-          widget: "markdown",
+          label: 'What you bring to the table',
+          name: 'table',
+          widget: 'markdown',
         }
-      - { label: "You will thrive if", name: "thrive", widget: "markdown" }
+      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown' }
 
-  - name: "press"
-    label: "Press"
-    folder: "_press/"
+  - name: 'press'
+    label: 'Press'
+    folder: '_press/'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - { label: "Banner", name: "image", widget: "image" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Banner', name: 'image', widget: 'image' }
       - {
-          label: "Original Link",
-          name: "link",
-          widget: "string",
+          label: 'Original Link',
+          name: 'link',
+          widget: 'string',
           required: false,
-          hint: "Optional",
+          hint: 'Optional',
         }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "testimonials"
-    label: "Testimonials"
-    folder: "_testimonials/"
+  - name: 'testimonials'
+    label: 'Testimonials'
+    folder: '_testimonials/'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
-      - { label: "Company", name: "title", widget: "string" }
+      - { label: 'Company', name: 'title', widget: 'string' }
       - {
-          label: "Subtitle",
-          name: "subtitle",
-          widget: "string",
+          label: 'Subtitle',
+          name: 'subtitle',
+          widget: 'string',
           required: false,
-          hint: "case study, testimonial or one-liner",
+          hint: 'case study, testimonial or one-liner',
         }
       - {
-          label: "Quote",
-          name: "quote",
-          widget: "markdown",
-          hint: "quote or excerpt of case study",
+          label: 'Quote',
+          name: 'quote',
+          widget: 'markdown',
+          hint: 'quote or excerpt of case study',
         }
       - {
-          label: "Name",
-          name: "name",
-          widget: "string",
+          label: 'Name',
+          name: 'name',
+          widget: 'string',
           required: false,
-          hint: "author of the quote",
+          hint: 'author of the quote',
         }
       - {
-          label: "Position",
-          name: "position",
-          widget: "string",
+          label: 'Position',
+          name: 'position',
+          widget: 'string',
           required: false,
         }
-      - { label: "Background Colour", name: "color", widget: "color" }
+      - { label: 'Background Colour', name: 'color', widget: 'color' }
       - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          hint: "Make sure this image is less than 250kb in size!",
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          hint: 'Make sure this image is less than 250kb in size!',
         }
       - {
-          label: "Case Study?",
-          name: "caseStudy",
-          widget: "boolean",
+          label: 'Case Study?',
+          name: 'caseStudy',
+          widget: 'boolean',
           default: false,
-          hint: "does this have more content (ex. case study",
+          hint: 'does this have more content (ex. case study',
         }
-      - { label: "Case Study content", name: "body", widget: "markdown" }
+      - { label: 'Case Study content', name: 'body', widget: 'markdown' }

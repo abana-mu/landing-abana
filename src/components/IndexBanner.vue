@@ -11,9 +11,9 @@
             <p id="header-subtitle" class="mb-2 text-center">{{ subtext }}</p>
           </div>
           <div id="header-cta">
-            <a href="https://app.abana.mu/register-buyer">
+            <g-link to="/about">
               <b-button size="md" variant="primary">{{ cta }}</b-button>
-            </a>
+            </g-link>
           </div>
           <g-image
             id="header-image"

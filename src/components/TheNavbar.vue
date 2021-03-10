@@ -783,7 +783,7 @@ export default {
         ],
       },
       cta: {
-        main: 'Sign Up',
+        main: 'Register',
         sub: 'Log In',
       },
       hoverPro: false,

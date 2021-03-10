@@ -37,7 +37,7 @@
         </b-carousel-slide>
       </b-carousel>
     </div>
-    <a href="#" class="read">Read what they are saying...</a>
+    <!--<a href="#" class="read">Read what they are saying...</a>-->
   </div>
 </template>
 

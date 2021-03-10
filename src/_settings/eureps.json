@@ -4,25 +4,19 @@
       "name": "Sabrina Tomassoli",
       "location": "Prato, Italy",
       "company": "ABANA Italy",
-      "coverage": "Italy",
-      "number": "+39 (339) 754-4748",
-      "email": "sabrina.tomassoli@abana.mu"
+      "coverage": "Italy"
     },
     {
       "name": "Edgar Rosenberger",
       "location": "Hamburg, Germany",
       "company": "ABANA Germany",
-      "coverage": "Germany, Austria, Switzerland, Netherlands, Belgium, Luxembourg, Denmark, Sweden, Norway, Finland, Poland, Baltic Countries, Ukraine, Russia",
-      "email": "edgar.rosenberger@abana.mu",
-      "number": "+49 (40) 34 03 64"
+      "coverage": "Germany, Austria, Switzerland, Netherlands, Belgium, Luxembourg, Denmark, Sweden, Norway, Finland, Poland, Baltic Countries, Ukraine, Russia"
     },
     {
       "name": "Stuart Cass",
       "location": "London, England",
       "company": "ABANA Uk",
-      "coverage": "United Kingdom, Ireland",
-      "number": "+44 7930 404937",
-      "email": "staurt.cass@abana.mu"
+      "coverage": "United Kingdom, Ireland"
     }
   ]
 }
