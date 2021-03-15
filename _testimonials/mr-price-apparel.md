@@ -15,7 +15,7 @@ quote: >-
   *As such, I can highly recommend the services of ABANA, a transformative platform that will add value to your business as well as support the fashion apparel factories in Africa.*
 name: Donovan Bailey
 position: Managing Director
-color: "#fbeb9a"
+color: "#fdf9e4"
 image: /uploads/donovan-baney-copy.jpg
 caseStudy: false
 subtitle: ""
