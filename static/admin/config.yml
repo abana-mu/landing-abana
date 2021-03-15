@@ -1675,4 +1675,4 @@ collections:
           default: false,
           hint: 'does this have more content (ex. case study',
         }
-      - { label: 'Case Study content', name: 'body', widget: 'markdown' }
+      - { label: 'Case Study content', name: 'body', widget: 'markdown', required: false }
