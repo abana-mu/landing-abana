@@ -18,4 +18,5 @@ position: Managing Director
 color: "#fbeb9a"
 image: /uploads/donovan-baney-copy.jpg
 caseStudy: false
+subtitle: ""
 ---
