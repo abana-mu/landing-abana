@@ -677,7 +677,7 @@ quote: >-
   <!--EndFragment-->
 name: ""
 position: ""
-color: "#68cbe3"
+color: "#afdce5"
 image: /uploads/donovan-baney.jpg
 caseStudy: false
 ---
