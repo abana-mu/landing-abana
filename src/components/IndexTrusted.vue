@@ -37,7 +37,9 @@
         </b-carousel-slide>
       </b-carousel>
     </div>
-    <!--<a href="#" class="read">Read what they are saying...</a>-->
+    <g-link to="/testimonials" class="read"
+      >Read what they are saying...</g-link
+    >
   </div>
 </template>
 

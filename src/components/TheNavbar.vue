@@ -246,7 +246,7 @@
                       </div>
                       <div class="drop-text">Freelancers</div>
                     </g-link>
-                    <!--
+
                     <g-link
                       class="dropdown-item drop-title-singular d-flex align-items-center"
                       to="/testimonials/"
@@ -256,7 +256,6 @@
                       </div>
                       <div class="drop-text">Testimonials</div>
                     </g-link>
-                    -->
                   </div>
 
                   <div class="col col-2">
@@ -575,7 +574,6 @@
                       <div class="drop-text">Freelancers</div>
                     </g-link>
 
-                    <!--
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
                       to="/testimonials/"
@@ -586,7 +584,6 @@
                       </div>
                       <div class="drop-text">Testimonials</div>
                     </g-link>
-                    -->
                   </div>
 
                   <div class="col col-12 mb-3">
