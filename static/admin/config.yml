@@ -231,6 +231,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -273,6 +274,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -315,6 +317,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -357,6 +360,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -396,7 +400,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'SubText', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -451,7 +455,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -490,7 +494,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -529,7 +533,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -587,7 +591,7 @@ collections:
             fields:
               - { label: 'ID', name: 'id', widget: 'string', hint: 'block+#' }
               - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
               - { label: 'Image', name: 'image', widget: 'image' }
               - {
                   label: 'Link',
@@ -673,7 +677,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -712,7 +716,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -751,7 +755,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -790,7 +794,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -829,7 +833,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -883,7 +887,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -922,7 +926,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -961,7 +965,7 @@ collections:
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
                   - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -1030,9 +1034,11 @@ collections:
           - label: 'Arif'
             name: arif
             widget: 'markdown'
+            hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
           - label: 'Dirk'
             name: dirk
             widget: 'markdown'
+            hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
           - label: 'Elements'
             name: elements
             widget: 'object'
@@ -1042,25 +1048,25 @@ collections:
                 widget: 'object'
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
               - label: 'Where'
                 name: where
                 widget: 'object'
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
               - label: 'With'
                 name: with
                 widget: 'object'
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
               - label: 'Why'
                 name: Why
                 widget: 'object'
                 fields:
                   - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'markdown' }
+                  - { label: 'Subtext', name: 'subtext', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
       - label: 'Careers'
         name: 'careers'
@@ -1159,6 +1165,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -1211,6 +1218,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -1253,6 +1261,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -1295,6 +1304,7 @@ collections:
                               label: 'Content',
                               name: 'content',
                               widget: 'markdown',
+                              hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                             }
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - {
@@ -1339,7 +1349,7 @@ collections:
                       name: 'subtext',
                       widget: 'text',
                     }
-                  - { label: 'Content', name: 'content', widget: 'markdown' }
+                  - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
                   - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
@@ -1395,7 +1405,7 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
 
           - { label: 'SubText', name: 'subtitle', widget: 'text' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
+          - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
       - label: 'Terms'
         name: 'terms'
@@ -1407,7 +1417,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
+          - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
       - label: 'Privacy'
         name: 'privacy'
@@ -1419,7 +1429,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
+          - { label: 'Content', name: 'content', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
       - label: 'Register'
         name: 'register'
@@ -1600,14 +1610,15 @@ collections:
             ],
         }
       - { label: 'Location', name: 'location', widget: 'string' }
-      - { label: 'Role', name: 'role', widget: 'markdown' }
-      - { label: 'Main Tasks', name: 'tasks', widget: 'markdown' }
+      - { label: 'Role', name: 'role', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
+      - { label: 'Main Tasks', name: 'tasks', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
       - {
           label: 'What you bring to the table',
           name: 'table',
           widget: 'markdown',
+          hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
         }
-      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown' }
+      - { label: 'You will thrive if', name: 'thrive', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
   - name: 'press'
     label: 'Press'
@@ -1626,7 +1637,7 @@ collections:
           required: false,
           hint: 'Optional',
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
 
   - name: 'testimonials'
     label: 'Testimonials'
@@ -1647,7 +1658,7 @@ collections:
           label: 'Quote',
           name: 'quote',
           widget: 'markdown',
-          hint: 'quote or excerpt of case study',
+          hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
         }
       - {
           label: 'Name',
@@ -1676,4 +1687,4 @@ collections:
           default: false,
           hint: 'does this have more content (ex. case study',
         }
-      - { label: 'Case Study content', name: 'body', widget: 'markdown', required: false }
+      - { label: 'Case Study content', name: 'body', widget: 'markdown', required: false, hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"', }
