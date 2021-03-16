@@ -9,14 +9,14 @@ quote: >-
   through to the door of the retailer and everything in between*
 
 
-  *Ultimately though, it was Dirk’s passion for manufacturing that brought him back from the retail side ABANA. His intricate knowledge of manufacturing capabilities in Africa will be an asset and a strategic advantage to any fashion retailer globally, linking them with factories that meet all of your requirements, and setting you apart from your competitors on the metrics that are most important to you.*
+  *Ultimately though, it was Dirk’s passion for manufacturing that brought him back from the retail side to ABANA. His intricate knowledge of manufacturing capabilities in Africa will be an asset and a strategic advantage to any fashion retailer globally, linking them with factories that meet all of your requirements, and setting you apart from your competitors on the metrics that are most important to you.*
 
 
   *As such, I can highly recommend the services of ABANA, a transformative platform that will add value to your business as well as support the fashion apparel factories in Africa.*
 name: Donovan Bailey
 position: Managing Director
-color: "#fdf9e4"
+color: '#fdf9e4'
 image: /uploads/donovan-baney-copy.jpg
 caseStudy: false
-subtitle: ""
+subtitle: ''
 ---
