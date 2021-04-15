@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import TheNavbar from "~/components/TheNavbar";
+import TheNavbar from "~/components/TheNavbar2";
 import TheFooter from "~/components/TheFooter";
 
 export default {
   components: {
     TheNavbar,
-    TheFooter,
-  },
+    TheFooter
+  }
 };
 </script>
 

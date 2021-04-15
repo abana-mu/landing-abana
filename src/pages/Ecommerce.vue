@@ -2,9 +2,7 @@
   <Layout>
     <div class="header">
       <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">
-        {{ Data.header.subtext }}
-      </p>
+      <p class="subtitle">{{ Data.header.subtext }}</p>
       <div class="image-banner">
         <g-image :src="Data.header.image" quality="100" blur="40" width="750" />
       </div>
@@ -31,7 +29,7 @@ export default {
     OneCol,
     TwoCol,
     String1,
-    String2,
+    String2
   },
   metaInfo: {
     title: "E-commerce",
@@ -39,14 +37,14 @@ export default {
       {
         name: "description",
         content:
-          "ABANA has re-imaginged buying and selling to drive more informed buying decisions, reduced lead times and faster delivery. Find out more about our Ecommerce features.",
-      },
-    ],
+          "ABANA has re-imaginged buying and selling to drive more informed buying decisions, reduced lead times and faster delivery. Find out more about our Ecommerce features."
+      }
+    ]
   },
   data() {
     return {
-      Data,
+      Data
     };
-  },
+  }
 };
 </script>

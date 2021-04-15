@@ -2,9 +2,7 @@
   <Layout class="one-section-tight-layout">
     <div class="mobile-gutter">
       <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">
-        {{ Data.header.subtext }}
-      </p>
+      <p class="subtitle">{{ Data.header.subtext }}</p>
     </div>
     <div class="mt-3">
       <b-tabs align="center" content-class="pb-5 back-grey">
@@ -23,27 +21,14 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.buyer.subs">
-              <b-card
-                :title="card.name"
-                class="card-top"
-                :class="card.name"
-                :key="card.name"
-              >
+              <b-card :title="card.name" class="card-top" :class="card.name" :key="card.name">
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">
-                  {{ card.price3 }}
-                </h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">
-                  {{ card.price6 }}
-                </h4>
+                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <span v-if="card.name === 'Basic'" class="mb-1"
-                    >All features in Member and...</span
-                  >
-                  <span v-else-if="card.name === 'Pro'" class="mb-1"
-                    >All features in Basic and...</span
-                  >
+                  <span v-if="card.name === 'Basic'" class="mb-1">All features in Member and...</span>
+                  <span v-else-if="card.name === 'Pro'" class="mb-1">All features in Basic and...</span>
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
@@ -53,15 +38,12 @@
                   v-b-toggle="'accordion-' + card.name"
                   variant="text"
                   class="see-all d-block d-md-none"
-                  >See All Features
+                >
+                  See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob
-                    :data="Plans.buyer"
-                    :type="card.name"
-                    user="buyer"
-                  />
+                  <TableMob :data="Plans.buyer" :type="card.name" user="buyer" />
                 </b-collapse>
               </b-card>
             </template>
@@ -76,12 +58,8 @@
               <template v-for="subs in Plans.buyer.subs">
                 <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">
-                    {{ subs.price3 }}
-                  </h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">
-                    {{ subs.price6 }}
-                  </h4>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
@@ -104,27 +82,14 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.supplier.subs">
-              <b-card
-                :title="card.name"
-                class="card-top"
-                :class="card.name"
-                :key="card.name"
-              >
+              <b-card :title="card.name" class="card-top" :class="card.name" :key="card.name">
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">
-                  {{ card.price3 }}
-                </h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">
-                  {{ card.price6 }}
-                </h4>
+                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <span v-if="card.name === 'Growth'" class="mb-1"
-                    >All features in Basic and...</span
-                  >
-                  <span v-else-if="card.name === 'Pro'" class="mb-1"
-                    >All features in Growth and...</span
-                  >
+                  <span v-if="card.name === 'Growth'" class="mb-1">All features in Basic and...</span>
+                  <span v-else-if="card.name === 'Pro'" class="mb-1">All features in Growth and...</span>
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
@@ -134,15 +99,12 @@
                   v-b-toggle="'accordion-' + card.name"
                   variant="text"
                   class="see-all d-block d-md-none"
-                  >See All Features
+                >
+                  See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob
-                    :data="Plans.supplier"
-                    :type="card.name"
-                    user="supplier"
-                  />
+                  <TableMob :data="Plans.supplier" :type="card.name" user="supplier" />
                 </b-collapse>
               </b-card>
             </template>
@@ -156,9 +118,7 @@
               network. Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
-              <b-button variant="outline-primary">
-                See more
-              </b-button>
+              <b-button variant="outline-primary">See more</b-button>
             </g-link>
           </b-card>
           <!-- TABLE -->
@@ -168,12 +128,8 @@
               <template v-for="subs in Plans.supplier.subs">
                 <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">
-                    {{ subs.price3 }}
-                  </h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">
-                    {{ subs.price6 }}
-                  </h4>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
@@ -196,27 +152,14 @@
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
             <template v-for="card in Plans.service.subs">
-              <b-card
-                :title="card.name"
-                class="card-top"
-                :class="card.name"
-                :key="card.name"
-              >
+              <b-card :title="card.name" class="card-top" :class="card.name" :key="card.name">
                 <b-card-text class="desc">{{ card.desc }}</b-card-text>
-                <h4 class="pricetag" v-if="selected === 'price3'">
-                  {{ card.price3 }}
-                </h4>
-                <h4 class="pricetag" v-else-if="selected === 'price6'">
-                  {{ card.price6 }}
-                </h4>
+                <h4 class="pricetag" v-if="selected === 'price3'">{{ card.price3 }}</h4>
+                <h4 class="pricetag" v-else-if="selected === 'price6'">{{ card.price6 }}</h4>
                 <h4 class="pricetag" v-else>{{ card.price12 }}</h4>
                 <ul class="features">
-                  <span v-if="card.name === 'Growth'" class="mb-1"
-                    >All features in Basic and...</span
-                  >
-                  <span v-else-if="card.name === 'Pro'" class="mb-1"
-                    >All features in Growth and...</span
-                  >
+                  <span v-if="card.name === 'Growth'" class="mb-1">All features in Basic and...</span>
+                  <span v-else-if="card.name === 'Pro'" class="mb-1">All features in Growth and...</span>
                   <li v-for="feature in card.features" :key="feature">
                     <b-icon icon="check-circle" class="float-left mr-2 mt-1" />
                     <span>{{ feature }}</span>
@@ -226,15 +169,12 @@
                   v-b-toggle="'accordion-' + card.name"
                   variant="text"
                   class="see-all d-block d-md-none"
-                  >See All Features
+                >
+                  See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
                 </b-button>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
-                  <TableMob
-                    :data="Plans.supplier"
-                    :type="card.name"
-                    user="service"
-                  />
+                  <TableMob :data="Plans.supplier" :type="card.name" user="service" />
                 </b-collapse>
               </b-card>
             </template>
@@ -249,9 +189,7 @@
               network. Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
-              <b-button variant="outline-primary">
-                See More
-              </b-button>
+              <b-button variant="outline-primary">See More</b-button>
             </g-link>
           </b-card>
 
@@ -262,12 +200,8 @@
               <template v-for="subs in Plans.service.subs">
                 <div class="sub-plans-options col" :key="subs.name">
                   <h5 class="plan-category-title border-0">{{ subs.name }}</h5>
-                  <h4 class="mb-0" v-if="selected === 'price3'">
-                    {{ subs.price3 }}
-                  </h4>
-                  <h4 class="mb-0" v-else-if="selected === 'price6'">
-                    {{ subs.price6 }}
-                  </h4>
+                  <h4 class="mb-0" v-if="selected === 'price3'">{{ subs.price3 }}</h4>
+                  <h4 class="mb-0" v-else-if="selected === 'price6'">{{ subs.price6 }}</h4>
                   <h4 class="mb-0" v-else>{{ subs.price12 }}</h4>
                 </div>
               </template>
@@ -281,17 +215,17 @@
 </template>
 
 <script>
-import Data from '~/_settings/pricing.json';
-import Plans from '~/_settings/plans.json';
-import Table from '~/components/PricingPlanTable';
-import TableMob from '~/components/PricingPlanTableMob';
+import Data from "~/_settings/pricing.json";
+import Plans from "~/_settings/plans.json";
+import Table from "~/components/PricingPlanTable";
+import TableMob from "~/components/PricingPlanTableMob";
 import {
   BIcon,
   BIconCheckCircle,
   BIconChevronDown,
-  BIconChevronUp,
-} from 'bootstrap-vue';
-import { BCollapse } from 'bootstrap-vue';
+  BIconChevronUp
+} from "bootstrap-vue";
+import { BCollapse } from "bootstrap-vue";
 
 export default {
   components: {
@@ -301,31 +235,31 @@ export default {
     BIconChevronDown,
     BIconChevronUp,
     Table,
-    TableMob,
+    TableMob
   },
   metaInfo: {
-    title: 'Pricing',
+    title: "Pricing",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business.',
-      },
-    ],
+          "Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business."
+      }
+    ]
   },
   data() {
     return {
       visible: false,
       Data,
       Plans,
-      selected: 'price12',
+      selected: "price12",
       periods: [
-        { text: '12 months', value: 'price12' },
-        { text: '6 months', value: 'price6' },
-        { text: '3 months', value: 'price3' },
-      ],
+        { text: "12 months", value: "price12" },
+        { text: "6 months", value: "price6" }
+        //{ text: '3 months', value: 'price3' },
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -414,7 +348,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: '';
+    content: "";
     height: 10px;
     left: 0;
     position: absolute;

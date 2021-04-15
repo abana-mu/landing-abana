@@ -181,6 +181,9 @@ p {
   -moz-osx-font-smoothing: grayscale !important;
   color: $text-body !important;
   font-size: inherit !important;
+  a {
+    color: $primary !important;
+  }
 }
 
 .vue-simple-markdown {

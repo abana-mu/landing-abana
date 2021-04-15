@@ -439,154 +439,6 @@ collections:
                       ]
                     hint: 'Index is the home page'
 
-      - label: 'E-Commerce'
-        name: 'ecommerce'
-        file: 'src/_settings/ecommerce.json'
-        fields:
-          - label: 'Header'
-            name: header
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'SubText', name: 'subtext', widget: 'text' }
-              - { label: 'Image', name: 'image', widget: 'image' }
-          - label: 'Elements'
-            name: elements
-            widget: 'object'
-            fields:
-              - label: 'drops'
-                name: drops
-                widget: 'object'
-                fields:
-                  - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - {
-                      label: 'Content',
-                      name: 'content',
-                      widget: 'markdown',
-                      hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
-                    }
-                  - { label: 'Image', name: 'image', widget: 'image' }
-                  - {
-                      label: 'Link',
-                      name: 'link',
-                      required: false,
-                      widget: 'string',
-                    }
-                  - label: 'Page link'
-                    name: page
-                    required: false
-                    widget: 'select'
-                    options:
-                      [
-                        'about',
-                        'contact',
-                        'ecommerce',
-                        'garment-makers',
-                        'drops',
-                        'index',
-                        'input-suppliers',
-                        'matching-marketplace',
-                        'pricing',
-                        'product-buyers',
-                        'service-providers',
-                        'sourcing-buyers',
-                        'supply-chain',
-                        'sustainability',
-                        'why-africa',
-                        'country-reps',
-                        'freelancers',
-                      ]
-                    hint: 'Index is the home page'
-              - label: 'Fast Custom'
-                name: fastcustom
-                widget: 'object'
-                fields:
-                  - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - {
-                      label: 'Content',
-                      name: 'content',
-                      widget: 'markdown',
-                      hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
-                    }
-                  - { label: 'Image', name: 'image', widget: 'image' }
-                  - {
-                      label: 'Link',
-                      name: 'link',
-                      required: false,
-                      widget: 'string',
-                    }
-                  - label: 'Page link'
-                    name: page
-                    required: false
-                    widget: 'select'
-                    options:
-                      [
-                        'about',
-                        'contact',
-                        'ecommerce',
-                        'garment-makers',
-                        'drops',
-                        'index',
-                        'input-suppliers',
-                        'matching-marketplace',
-                        'pricing',
-                        'product-buyers',
-                        'service-providers',
-                        'sourcing-buyers',
-                        'supply-chain',
-                        'sustainability',
-                        'why-africa',
-                        'country-reps',
-                        'freelancers',
-                      ]
-                    hint: 'Index is the home page'
-              - label: 'Brands'
-                name: brands
-                widget: 'object'
-                fields:
-                  - { label: 'Title', name: 'title', widget: 'string' }
-                  - { label: 'Subtext', name: 'subtext', widget: 'text' }
-                  - {
-                      label: 'Content',
-                      name: 'content',
-                      widget: 'markdown',
-                      hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
-                    }
-                  - { label: 'Image', name: 'image', widget: 'image' }
-                  - {
-                      label: 'Link',
-                      name: 'link',
-                      required: false,
-                      widget: 'string',
-                    }
-                  - label: 'Page link'
-                    name: page
-                    required: false
-                    widget: 'select'
-                    options:
-                      [
-                        'about',
-                        'contact',
-                        'ecommerce',
-                        'garment-makers',
-                        'drops',
-                        'index',
-                        'input-suppliers',
-                        'matching-marketplace',
-                        'pricing',
-                        'product-buyers',
-                        'service-providers',
-                        'sourcing-buyers',
-                        'supply-chain',
-                        'sustainability',
-                        'why-africa',
-                        'country-reps',
-                        'freelancers',
-                      ]
-                    hint: 'Index is the home page'
-
       - label: 'Drops'
         name: 'drops'
         file: 'src/_settings/drops.json'
@@ -603,6 +455,63 @@ collections:
                   widget: 'string',
                   hint: 'Add youtube URL',
                 }
+
+          - label: 'Elements'
+            name: elements
+            label_singular: 'element'
+            widget: list
+            fields:
+              - { label: 'ID', name: 'id', widget: 'string', hint: 'block+#' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'markdown',
+                  hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - {
+                  label: 'Link',
+                  name: 'link',
+                  required: false,
+                  widget: 'string',
+                }
+              - label: 'Page link'
+                name: page
+                required: false
+                widget: 'select'
+                options:
+                  [
+                    'about',
+                    'contact',
+                    'ecommerce',
+                    'garment-makers',
+                    'drops',
+                    'index',
+                    'input-suppliers',
+                    'matching-marketplace',
+                    'pricing',
+                    'product-buyers',
+                    'service-providers',
+                    'sourcing-buyers',
+                    'supply-chain',
+                    'sustainability',
+                    'why-africa',
+                    'country-reps',
+                    'freelancers',
+                  ]
+                hint: 'Index is the home page'
+
+      - label: 'Fast Custom'
+        name: 'fastcustom'
+        file: 'src/_settings/fastcustom.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
 
           - label: 'Elements'
             name: elements

@@ -14,7 +14,6 @@
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
           </ul>
           <ul class="scroll-text-container w-50">
             <li v-for="block in Data.elements" :key="block.id">
@@ -37,9 +36,6 @@
               <div class="scroll-image scroll-image3">
                 <g-image :src="Data.elements[2].image" quality="100" />
               </div>
-              <div class="scroll-image scroll-image4">
-                <g-image :src="Data.elements[3].image" quality="100" />
-              </div>
             </div>
           </div>
         </div>
@@ -49,27 +45,11 @@
         </section>
       </section>
     </div>
-    <section class="my-5">
-      <h2 class="text-center mb-5">Sample Drops</h2>
-      <div class="video-container">
-        <div class="d-flex justify-content-center video-wrapper">
-          <iframe
-            width="840"
-            height="472.5"
-            :src="Data.header.video | youtubize"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            modestbranding
-          ></iframe>
-        </div>
-      </div>
-    </section>
   </Layout>
 </template>
 
 <script>
-import Data from "~/_settings/drops.json";
+import Data from "~/_settings/fastcustom.json";
 import TwoCol from "~/components/PageElementTwoColMd";
 
 function isElementInViewport(el) {
