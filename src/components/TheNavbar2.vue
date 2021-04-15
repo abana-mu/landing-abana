@@ -195,15 +195,23 @@
 
                   <div class="col col-2">
                     <b-dropdown-header>Support</b-dropdown-header>
-
+                    <div
+                      @click="launch(), hoverCom = false"
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
+                    >
+                      <div class="drop-image-sm">
+                        <IHow />
+                      </div>
+                      <div class="drop-text">FAQ</div>
+                    </div>
                     <g-link
                       class="dropdown-item drop-title-singular d-flex align-items-center"
                       to="/how-it-works/"
                     >
                       <div class="drop-image-sm">
-                        <IHow />
+                        <IVideo />
                       </div>
-                      <div class="drop-text">How It Works</div>
+                      <div class="drop-text">Video Tutorials</div>
                     </g-link>
 
                     <g-link
@@ -263,7 +271,7 @@
           <!-- Mobile Navigation -->
           <b-navbar-nav class="d-flex flex-row align-items-center d-lg-none ml-auto">
             <a href="https://app.abana.mu/login" class="log-in pl-2">{{ cta.sub }}</a>
-            <NavbarHamburger v-b-toggle.sidebar-level-1 />
+            <NavbarHamburger v-b-toggle.sidebar-level-1 ref="hamburger" />
             <!-- Main SideBar -->
           </b-navbar-nav>
         </div>
@@ -488,15 +496,25 @@
 
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle">Support</b-dropdown-header>
+                    <div
+                      v-b-toggle.sidebar-level-1
+                      @click="launchMobile()"
+                      class="dropdown-item drop-title-singular d-flex align-items-center"
+                    >
+                      <div class="drop-image-sm">
+                        <IHow />
+                      </div>
+                      <div class="drop-text">FAQ</div>
+                    </div>
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
                       to="/how-it-works/"
                       @click="hide"
                     >
                       <div class="drop-image-sm">
-                        <IHow />
+                        <IVideo />
                       </div>
-                      <div class="drop-text">How it Works</div>
+                      <div class="drop-text">Video Tutorials</div>
                     </g-link>
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
@@ -578,10 +596,12 @@ import IFreelancers from "@/components/icons/IFreelancers";
 import ICountryRep from "@/components/icons/ICountryRep";
 import ITestimonial from "@/components/icons/ITestimonial";
 import IHow from "@/components/icons/IHow";
+import IVideo from "@/components/icons/IVideo";
 
 export default {
   components: {
     BNavbar,
+    IVideo,
     ICountryRep,
     Logo,
     Slogan,
@@ -644,6 +664,15 @@ export default {
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY;
+    },
+    launch() {
+      window.fcWidget.open();
+      window.fcWidget.show();
+    },
+    launchMobile() {
+      window.fcWidget.open();
+      window.fcWidget.show();
+      this.$refs.hamburger.activate();
     }
   },
   mounted() {

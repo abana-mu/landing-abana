@@ -3,7 +3,7 @@
   <div
     class="hamburger hamburger--spin js-hamburger"
     v-bind:class="{ active: isActive }"
-    v-on:click="isActive = !isActive"
+    v-on:click="activate()"
   >
     <div class="hamburger-box">
       <div class="hamburger-inner"></div>
@@ -16,9 +16,14 @@
 export default {
   data() {
     return {
-      isActive: false,
+      isActive: false
     };
   },
+  methods: {
+    activate() {
+      this.isActive = !this.isActive;
+    }
+  }
 };
 </script>
 
@@ -73,7 +78,7 @@ export default {
 .hamburger-inner:after,
 .hamburger-inner:before {
   display: block;
-  content: '';
+  content: "";
 }
 .hamburger-inner:before {
   top: -8px;
