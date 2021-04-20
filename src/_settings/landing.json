@@ -64,9 +64,9 @@
       "image": "/uploads/edb_logo-1-.png"
     },
     {
-      "name": "Kick Advisory",
-      "link": "https://www.kickadvisory.com/",
-      "image": "/uploads/kick-logo-high-resolution-.png"
+      "name": "QIMA",
+      "link": "https://www.qima.com",
+      "image": "/uploads/qima-2x.png"
     },
     {
       "name": "Star Knitwear",
@@ -127,6 +127,11 @@
       "name": "Trans Universal Consolidators",
       "image": "/uploads/tuc.png",
       "link": " "
+    },
+    {
+      "name": "Kick Advisory",
+      "link": "https://www.kickadvisory.com/",
+      "image": "/uploads/kick-logo-high-resolution-.png"
     }
   ]
 }
