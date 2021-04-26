@@ -737,7 +737,7 @@ collections:
                         'freelancers',
                       ]
                     hint: 'Index is the home page'
-              
+
       - label: 'Why Africa'
         name: 'whyafrica'
         file: 'src/_settings/whyafrica.json'
@@ -764,7 +764,6 @@ collections:
                       widget: 'markdown',
                       hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                     }
-                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
                       name: 'link',
@@ -808,7 +807,6 @@ collections:
                       widget: 'markdown',
                       hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                     }
-                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
                       name: 'link',
@@ -852,7 +850,6 @@ collections:
                       widget: 'markdown',
                       hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                     }
-                  - { label: 'Image', name: 'image', widget: 'image' }
                   - {
                       label: 'Link',
                       name: 'link',
