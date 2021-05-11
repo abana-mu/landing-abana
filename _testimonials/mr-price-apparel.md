@@ -1,5 +1,6 @@
 ---
 title: Mr Price Apparel
+subtitle: ""
 quote: >-
   *Dirk Robens has an incredible and in-depth knowledge of fashion apparel
   manufacturing. Having run one of Africa’s most progressive manufacturing
@@ -13,10 +14,9 @@ quote: >-
 
 
   *As such, I can highly recommend the services of ABANA, a transformative platform that will add value to your business as well as support the fashion apparel factories in Africa.*
-name: Donovan Bailey
+name: Donovan Baney
 position: Managing Director
-color: '#fdf9e4'
+color: "#fdf9e4"
 image: /uploads/donovan-baney-copy.jpg
 caseStudy: false
-subtitle: ''
 ---
