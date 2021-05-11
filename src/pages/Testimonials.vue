@@ -12,11 +12,11 @@
           v-for="testi in $page.posts.edges"
           :key="testi.id"
         >
-          <div class="testimonial">
-            <div
-              class="text-side"
-              :style="`background-color:` + testi.node.color"
-            >
+          <div
+            class="testimonial"
+            :style="`background-color:` + testi.node.color"
+          >
+            <div class="text-side">
               <h3>{{ testi.node.title }}</h3>
               <p>{{ testi.node.subtitle }}</p>
               <vue-simple-markdown
@@ -110,7 +110,7 @@ export default {
   padding: 64px 20px;
   width: 100%;
   @media (min-width: $break-collapse) {
-    width: 50%;
+    width: 60%;
     padding: 64px;
   }
 }
@@ -119,12 +119,14 @@ export default {
   width: 100%;
   position: relative;
   @media (min-width: $break-collapse) {
-    width: 50%;
+    width: 40%;
+    padding: 24px;
   }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 }
 </style>
