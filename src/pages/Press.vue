@@ -67,7 +67,7 @@ export default {
       {
         name: 'Press',
         content:
-          'We are always on the lookout for talent that wants to help us grow and disrupt the Textile & Apparel industry! Find out more about the job openings we have',
+          "Listen to what the voices of the press have to say about ABANA's impact in the fashion and textile industry",
       },
     ],
   },

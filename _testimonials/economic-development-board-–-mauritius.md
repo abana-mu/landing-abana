@@ -1,6 +1,8 @@
 ---
 title: Economic Development Board – Mauritius
-subtitle: ""
+subtitle: ''
+blurb: 'ABANA addresses a gap where manufacturers must develop a digital identity that can be connected directly to buyers to respond to their exigencies in fashion, taking into consideration the demand of the new generations'
+featured: 'false'
 quote: >-
   The world is witnessing a new era of digital globalisation and consumer
   service revolution. This has allowed the development of Innovative Value
@@ -14,7 +16,7 @@ quote: >-
   The advent of platforms like ABANA addresses a gap where manufacturers must develop a digital identity that can be connected directly to buyers to respond to their exigencies in fashion, taking into consideration the demand of the new generations. ABANA stands as a ‘one stop shop’ to address the challenges of developing a world class product from yarn to fashion, and gives a boost to Trade & Business with Africa. In this process, Mauritius leads the UNCTAD Productive Capacities Index standing as an unflinching partner and positions itself as a strategic hub for the region.
 name: Geerish Bucktowonsing
 position: Director – Industry
-color: "#f6f9fc"
+color: '#f6f9fc'
 image: /uploads/gb-pic.jpg
 caseStudy: false
 ---

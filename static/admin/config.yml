@@ -1601,6 +1601,19 @@ collections:
           hint: 'case study, testimonial or one-liner',
         }
       - {
+          label: 'Featured',
+          name: 'featured',
+          widget: 'boolean',
+          default: false,
+          hint: 'Will this go on the front page',
+        }
+      - {
+          label: 'Blurb',
+          name: 'blurb',
+          widget: 'string',
+          hint: 'max 2 sentences',
+        }
+      - {
           label: 'Quote',
           name: 'quote',
           widget: 'markdown',

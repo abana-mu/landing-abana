@@ -84,6 +84,33 @@
     <div class="pb-4 mb-5">
       <IndexRepsGraph :data="Data.reps" />
     </div>
+
+    <div class="back-grey overflow-hidden bordered mt-4 py-4">
+      <b-container fluid class="box-container">
+        <div class="box">
+          <h2 class="title">Leading voices of the Industry</h2>
+
+          <b-container class="examples">
+            <b-row>
+              <b-col cols="12" md="6" class="box-item">
+                <div class="box-text">
+                  <h4>MR PRICE</h4>
+                  <p class="box-item-text">TEST</p>
+                </div>
+              </b-col>
+            </b-row>
+          </b-container>
+
+          <div class="box-button">
+            <g-link to="/testimonials">
+              <b-button variant="outline-primary"
+                >See all testimonials</b-button
+              >
+            </g-link>
+          </div>
+        </div>
+      </b-container>
+    </div>
   </Layout>
 </template>
 
