@@ -2,7 +2,7 @@
 title: Economic Development Board – Mauritius
 subtitle: ''
 blurb: 'ABANA addresses a gap where manufacturers must develop a digital identity that can be connected directly to buyers to respond to their exigencies in fashion, taking into consideration the demand of the new generations'
-featured: 'false'
+featured: true
 quote: >-
   *The world is witnessing a new era of digital globalisation and consumer
   service revolution. This has allowed the development of Innovative Value

@@ -88,14 +88,27 @@
     <div class="back-grey overflow-hidden bordered mt-4 py-4">
       <b-container fluid class="box-container">
         <div class="box">
-          <h2 class="title">Leading voices of the Industry</h2>
+          <h2 class="title mb-5">Leading voices of the Industry</h2>
 
           <b-container class="examples">
-            <b-row>
-              <b-col cols="12" md="6" class="box-item">
-                <div class="box-text">
-                  <h4>MR PRICE</h4>
-                  <p class="box-item-text">TEST</p>
+            <b-row class="box-row">
+              <b-col
+                class="box-item"
+                v-for="testi in $page.posts.edges"
+                :key="testi.id"
+              >
+                <p class="blurb">"{{ testi.node.blurb }}"</p>
+                <div class="testi-person">
+                  <div class="box-image">
+                    <g-image :src="testi.node.image" />
+                  </div>
+                  <div class="box-text">
+                    <h4 class="mb-1 font-weight-bold">{{ testi.node.name }}</h4>
+                    <div class="d-flex flex-column justify-content-center">
+                      <p class="mb-0">{{ testi.node.position }}</p>
+                      <p>{{ testi.node.title }}</p>
+                    </div>
+                  </div>
                 </div>
               </b-col>
             </b-row>
@@ -104,7 +117,7 @@
           <div class="box-button">
             <g-link to="/testimonials">
               <b-button variant="outline-primary"
-                >See all testimonials</b-button
+                >See full testimonials</b-button
               >
             </g-link>
           </div>
@@ -116,8 +129,21 @@
 
 <!-- QUERIES -->
 <page-query>
-
-
+query{
+  posts: allTestimonials(filter: { featured: { eq: true }}){
+    edges{
+      node{
+        id
+        title
+        featured
+        blurb
+        name
+        position
+        image
+      }
+    }
+  }
+}
 </page-query>
 
 <script>
@@ -190,27 +216,65 @@ export default {
   padding: 1rem 0;
 }
 
+.blurb {
+  color: $text-body;
+  font-size: $f20;
+  font-style: italic;
+  background-color: white;
+  padding: 32px 16px 64px;
+  border-radius: 8px;
+  border: 1px solid $border;
+}
+.testi-person {
+  margin-top: -55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $break-m) {
+    flex-direction: row;
+  }
+}
+
 .box-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 4rem;
+  text-align: center;
   padding: 0;
-  @media (min-width: $break-s) {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  @media (min-width: $break-m) {
     padding: 0 2rem;
+  }
+  @media (min-width: $break-s) {
+    padding: 0 1rem;
   }
 }
 
 .box-text {
-  text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
-.box-img {
-  width: 60px;
+.box-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 1.5rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
 .box-item-text {

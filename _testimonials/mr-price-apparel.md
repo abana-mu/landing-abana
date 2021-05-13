@@ -2,7 +2,7 @@
 title: Mr Price Apparel
 subtitle: ''
 blurb: 'I can highly recommend the services of ABANA, a transformative platform that will add value to your business as well as support the fashion apparel factories in Africa.'
-featured: 'true'
+featured: true
 quote: >-
   *Dirk Robens has an incredible and in-depth knowledge of fashion apparel
   manufacturing. Having run one of Africa’s most progressive manufacturing
