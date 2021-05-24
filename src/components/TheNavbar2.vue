@@ -9,7 +9,9 @@
       tag="header"
     >
       <b-container fluid>
-        <div class="row top-row w-100 justify-content-between align-items-center no-gutters">
+        <div
+          class="row top-row w-100 justify-content-between align-items-center no-gutters"
+        >
           <!-- Nav Brand -->
           <div class="col col-auto">
             <g-link class="nav-logo" to="/">
@@ -38,35 +40,73 @@
                 >
                   <div class="col col-6 left-panel">
                     <div class="left-link-container">
-                      <b-dropdown-header id="dropdown-header-1">Our Solutions</b-dropdown-header>
+                      <b-dropdown-header id="dropdown-header-1"
+                        >Our Solutions</b-dropdown-header
+                      >
                       <div class="dropdown-link">
-                        <g-link class="dropdown-item d-flex" to="/matching-marketplace/">
+                        <g-link
+                          class="dropdown-item d-flex"
+                          to="/matching-marketplace/"
+                        >
                           <div class="drop-image">
                             <IMarket />
                           </div>
                           <div class="drop-text">
-                            <p class="drop-title text-transition">{{ market.title }}</p>
-                            <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                            <p class="drop-title text-transition">
+                              {{ market.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ market.subtitle }}
+                            </p>
                           </div>
                         </g-link>
                       </div>
 
                       <div class="dropdown-link">
-                        <g-link class="dropdown-item d-flex" to="/supply-chain/">
+                        <g-link
+                          class="dropdown-item d-flex"
+                          to="/supply-chain/"
+                        >
                           <div class="drop-image">
                             <ISupply />
                           </div>
                           <div class="drop-text">
-                            <p class="drop-title text-transition">{{ supply.title }}</p>
-                            <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
+                            <p class="drop-title text-transition">
+                              {{ supply.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ supply.subtitle }}
+                            </p>
                           </div>
                         </g-link>
+                      </div>
+
+                      <div class="dropdown-link">
+                        <a
+                          href="/documents/ABANA_Carbon_Emissions.pdf"
+                          target="_blank"
+                          class="dropdown-item d-flex"
+                        >
+                          <div class="drop-image">
+                            <ICarbon />
+                          </div>
+                          <div class="drop-text">
+                            <p class="drop-title text-transition">
+                              {{ carbon.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ carbon.subtitle }}
+                            </p>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="col col-6 right-panel">
                     <div class="left-link-container">
-                      <b-dropdown-header id="dropdown-header-1">Ecommerce</b-dropdown-header>
+                      <b-dropdown-header id="dropdown-header-1"
+                        >Ecommerce</b-dropdown-header
+                      >
 
                       <div class="dropdown-link">
                         <g-link class="dropdown-item d-flex" to="/drops/">
@@ -74,8 +114,12 @@
                             <IEcomm />
                           </div>
                           <div class="drop-text">
-                            <p class="drop-title text-transition">{{ drops.title }}</p>
-                            <p class="drop-subtitle text-transition">{{ drops.subtitle }}</p>
+                            <p class="drop-title text-transition">
+                              {{ drops.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ drops.subtitle }}
+                            </p>
                           </div>
                         </g-link>
                       </div>
@@ -86,8 +130,12 @@
                             <IGM />
                           </div>
                           <div class="drop-text">
-                            <p class="drop-title text-transition">{{ fastc.title }}</p>
-                            <p class="drop-subtitle text-transition">{{ fastc.subtitle }}</p>
+                            <p class="drop-title text-transition">
+                              {{ fastc.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ fastc.subtitle }}
+                            </p>
                           </div>
                         </g-link>
                       </div>
@@ -103,7 +151,9 @@
 
               <!-- Sustainability-->
               <li class="nav-item nav-only">
-                <g-link class="nav-link" to="/sustainability/">Sustainability</g-link>
+                <g-link class="nav-link" to="/sustainability/"
+                  >Sustainability</g-link
+                >
               </li>
 
               <!-- Pricing-->
@@ -196,7 +246,7 @@
                   <div class="col col-2">
                     <b-dropdown-header>Support</b-dropdown-header>
                     <div
-                      @click="launch(), hoverCom = false"
+                      @click="launch(), (hoverCom = false)"
                       class="dropdown-item drop-title-singular d-flex align-items-center"
                     >
                       <div class="drop-image-sm">
@@ -251,9 +301,15 @@
           <!-- Right aligned nav items -->
           <div class="col col-auto d-none d-lg-flex">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
-              <a href="https://app.abana.mu/login" class="log-in">{{ cta.sub }}</a>
+              <a href="https://app.abana.mu/login" class="log-in">{{
+                cta.sub
+              }}</a>
 
-              <b-button href="https://app.abana.mu/register-buyer" variant="primary">{{ cta.main }}</b-button>
+              <b-button
+                href="https://app.abana.mu/register-buyer"
+                variant="primary"
+                >{{ cta.main }}</b-button
+              >
             </b-navbar-nav>
           </div>
 
@@ -269,8 +325,12 @@
           -->
 
           <!-- Mobile Navigation -->
-          <b-navbar-nav class="d-flex flex-row align-items-center d-lg-none ml-auto">
-            <a href="https://app.abana.mu/login" class="log-in pl-2">{{ cta.sub }}</a>
+          <b-navbar-nav
+            class="d-flex flex-row align-items-center d-lg-none ml-auto"
+          >
+            <a href="https://app.abana.mu/login" class="log-in pl-2">{{
+              cta.sub
+            }}</a>
             <NavbarHamburger v-b-toggle.sidebar-level-1 ref="hamburger" />
             <!-- Main SideBar -->
           </b-navbar-nav>
@@ -317,12 +377,14 @@
                 href="https://app.abana.mu/login"
                 variant="link"
                 class="title-dark w-100 mb-2"
-              >{{ cta.sub }}</b-button>
+                >{{ cta.sub }}</b-button
+              >
               <b-button
                 href="https://app.abana.mu/register-buyer"
                 variant="primary"
                 class="w-100"
-              >{{ cta.main }}</b-button>
+                >{{ cta.main }}</b-button
+              >
             </div>
 
             <!--
@@ -336,7 +398,14 @@
           </div>
 
           <!-- Sidebar for Products -->
-          <b-sidebar id="sidebar-level-2-0" class="w-100" right shadow no-header bg-variant="white">
+          <b-sidebar
+            id="sidebar-level-2-0"
+            class="w-100"
+            right
+            shadow
+            no-header
+            bg-variant="white"
+          >
             <template v-slot:default="{ hide }">
               <div class="sidebar-container-2">
                 <!-- Content -->
@@ -345,16 +414,27 @@
                     <b-icon icon="arrow-left-short" class="mr-2" />Products
                   </div>
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Our Solutions</b-dropdown-header>
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
+                      >Our Solutions</b-dropdown-header
+                    >
                     <div @click="hide">
-                      <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
-                        <div class="sidebar-item-level-2-container d-flex align-items-center">
+                      <g-link
+                        class="sidebar-item-level-2"
+                        to="/matching-marketplace/"
+                      >
+                        <div
+                          class="sidebar-item-level-2-container d-flex align-items-center"
+                        >
                           <div class="drop-image">
                             <IMarket />
                           </div>
                           <div class="drop-text">
-                            <p class="drop-title text-transition">{{ market.title }}</p>
-                            <p class="drop-subtitle text-transition">{{ market.subtitle }}</p>
+                            <p class="drop-title text-transition">
+                              {{ market.title }}
+                            </p>
+                            <p class="drop-subtitle text-transition">
+                              {{ market.subtitle }}
+                            </p>
                           </div>
                         </div>
                       </g-link>
@@ -362,38 +442,83 @@
                   </div>
                   <div class="col col-12 mb-3">
                     <g-link class="sidebar-item-level-2" to="/supply-chain/">
-                      <div class="sidebar-item-level-2-container d-flex align-items-center">
+                      <div
+                        class="sidebar-item-level-2-container d-flex align-items-center"
+                      >
                         <div class="drop-image">
                           <ISupply />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ supply.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ supply.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ supply.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ supply.subtitle }}
+                          </p>
                         </div>
                       </div>
                     </g-link>
                   </div>
+
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Ecommerce</b-dropdown-header>
+                    <a
+                      href="/documents/ABANA_Carbon_Emissions.pdf"
+                      target="_blank"
+                      class="sidebar-item-level-2"
+                    >
+                      <div
+                        class="sidebar-item-level-2-container d-flex align-items-center"
+                      >
+                        <div class="drop-image">
+                          <ICarbon />
+                        </div>
+                        <div class="drop-text">
+                          <p class="drop-title text-transition">
+                            {{ carbon.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ carbon.subtitle }}
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col col-12 mb-3">
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
+                      >Ecommerce</b-dropdown-header
+                    >
                     <g-link class="sidebar-item-level-2" to="/drops/">
-                      <div class="sidebar-item-level-2-container d-flex align-items-center">
+                      <div
+                        class="sidebar-item-level-2-container d-flex align-items-center"
+                      >
                         <div class="drop-image">
                           <IEcomm />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ drops.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ drops.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ drops.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ drops.subtitle }}
+                          </p>
                         </div>
                       </div>
                     </g-link>
                     <g-link class="sidebar-item-level-2" to="/fast-custom/">
-                      <div class="sidebar-item-level-2-container d-flex align-items-center">
+                      <div
+                        class="sidebar-item-level-2-container d-flex align-items-center"
+                      >
                         <div class="drop-image">
                           <IEcomm />
                         </div>
                         <div class="drop-text">
-                          <p class="drop-title text-transition">{{ fastc.title }}</p>
-                          <p class="drop-subtitle text-transition">{{ fastc.subtitle }}</p>
+                          <p class="drop-title text-transition">
+                            {{ fastc.title }}
+                          </p>
+                          <p class="drop-subtitle text-transition">
+                            {{ fastc.subtitle }}
+                          </p>
                         </div>
                       </div>
                     </g-link>
@@ -404,7 +529,14 @@
           </b-sidebar>
 
           <!-- Sidebar for Company -->
-          <b-sidebar id="sidebar-level-2-2" class="w-100" right shadow no-header bg-variant="white">
+          <b-sidebar
+            id="sidebar-level-2-2"
+            class="w-100"
+            right
+            shadow
+            no-header
+            bg-variant="white"
+          >
             <template v-slot:default="{ hide }">
               <div class="sidebar-container-2">
                 <!-- Content -->
@@ -413,7 +545,9 @@
                     <b-icon icon="arrow-left-short" class="mr-2" />Company
                   </div>
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Company</b-dropdown-header>
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
+                      >Company</b-dropdown-header
+                    >
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
                       to="/about/"
@@ -459,7 +593,9 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Partnerships</b-dropdown-header>
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
+                      >Partnerships</b-dropdown-header
+                    >
                     <g-link
                       class="sidebar-item-level-2 d-flex align-items-center"
                       to="/country-reps/"
@@ -495,7 +631,9 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Support</b-dropdown-header>
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
+                      >Support</b-dropdown-header
+                    >
                     <div
                       v-b-toggle.sidebar-level-1
                       @click="launchMobile()"
@@ -561,7 +699,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BNavbar, BNavbarNav } from "bootstrap-vue";
+import { BNavbar, BNavbarNav } from 'bootstrap-vue';
 
 import {
   BIcon,
@@ -569,39 +707,41 @@ import {
   BIconArrowRightShort,
   BDropdownHeader,
   BDropdownDivider,
-  BIconArrowLeftShort
-} from "bootstrap-vue";
+  BIconArrowLeftShort,
+} from 'bootstrap-vue';
 
-import Logo from "@/components/icons/Logo";
-import Slogan from "@/components/icons/Slogan";
-import NavbarHamburger from "@/components/NavbarHamburger";
+import Logo from '@/components/icons/Logo';
+import Slogan from '@/components/icons/Slogan';
+import NavbarHamburger from '@/components/NavbarHamburger';
 
-import IMarket from "@/components/icons/IMarket";
-import IEcomm from "@/components/icons/IEcomm";
-import ISupply from "@/components/icons/ISupply";
-import ISource from "@/components/icons/ISource";
-import IProduct from "@/components/icons/IProduct";
-import IGM from "@/components/icons/IGM";
-import IIS from "@/components/icons/IIS";
-import ISP from "@/components/icons/ISP";
-import IAbout from "@/components/icons/IAbout";
-import IPrivacy from "@/components/icons/IPrivacy";
-import INews from "@/components/icons/INews";
-import ITerms from "@/components/icons/ITerms";
-import IContact from "@/components/icons/IContact";
-import ICareer from "@/components/icons/ICareer";
-import IPartnership from "@/components/icons/IPartnership";
-import ISustainability from "@/components/icons/ISustainability";
-import IFreelancers from "@/components/icons/IFreelancers";
-import ICountryRep from "@/components/icons/ICountryRep";
-import ITestimonial from "@/components/icons/ITestimonial";
-import IHow from "@/components/icons/IHow";
-import IVideo from "@/components/icons/IVideo";
+import IMarket from '@/components/icons/IMarket';
+import ICarbon from '@/components/icons/ICarbon';
+import IEcomm from '@/components/icons/IEcomm';
+import ISupply from '@/components/icons/ISupply';
+import ISource from '@/components/icons/ISource';
+import IProduct from '@/components/icons/IProduct';
+import IGM from '@/components/icons/IGM';
+import IIS from '@/components/icons/IIS';
+import ISP from '@/components/icons/ISP';
+import IAbout from '@/components/icons/IAbout';
+import IPrivacy from '@/components/icons/IPrivacy';
+import INews from '@/components/icons/INews';
+import ITerms from '@/components/icons/ITerms';
+import IContact from '@/components/icons/IContact';
+import ICareer from '@/components/icons/ICareer';
+import IPartnership from '@/components/icons/IPartnership';
+import ISustainability from '@/components/icons/ISustainability';
+import IFreelancers from '@/components/icons/IFreelancers';
+import ICountryRep from '@/components/icons/ICountryRep';
+import ITestimonial from '@/components/icons/ITestimonial';
+import IHow from '@/components/icons/IHow';
+import IVideo from '@/components/icons/IVideo';
 
 export default {
   components: {
     BNavbar,
     IVideo,
+    ICarbon,
     ICountryRep,
     Logo,
     Slogan,
@@ -631,34 +771,40 @@ export default {
     IContact,
     ICareer,
     IPartnership,
-    ISustainability
+    ISustainability,
   },
   data() {
     return {
       scrollPosition: null,
       market: {
-        title: "Matching Marketplace",
-        subtitle: "Illuminating sourcing opportunities"
+        title: 'Matching Marketplace',
+        subtitle: 'Illuminating sourcing opportunities',
       },
       fastc: {
-        title: "Fast Custom (coming soon)",
-        subtitle: "Order directly from factories in low MOQs & short lead-times"
+        title: 'Fast Custom (coming soon)',
+        subtitle:
+          'Order directly from factories in low MOQs & short lead-times',
       },
       supply: {
-        title: "Supply Chain Solutions",
-        subtitle: "Tailored services to help you grow in the region"
+        title: 'Supply Chain Solutions',
+        subtitle: 'Tailored services to help you grow in the region',
+      },
+      carbon: {
+        title: 'Carbon Offset Solution (coming soon)',
+        subtitle:
+          'Offset the carbon emissions of your airfreight with our unique solution. Take a sneak peek here.',
       },
       drops: {
-        title: "Drops",
+        title: 'Drops',
         subtitle:
-          "Sophisticated products in low MOQs for immediate or quick deliveries"
+          'Sophisticated products in low MOQs for immediate or quick deliveries',
       },
       cta: {
-        main: "Register",
-        sub: "Log In"
+        main: 'Register',
+        sub: 'Log In',
       },
       hoverPro: false,
-      hoverCom: false
+      hoverCom: false,
     };
   },
   methods: {
@@ -673,11 +819,11 @@ export default {
       window.fcWidget.open();
       window.fcWidget.show();
       this.$refs.hamburger.activate();
-    }
+    },
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
-  }
+    window.addEventListener('scroll', this.updateScroll);
+  },
 };
 </script>
 
