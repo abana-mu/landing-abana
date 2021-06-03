@@ -197,6 +197,23 @@ collections:
                   ]
                 hint: 'Index is the home page'
 
+      - label: 'Announcement'
+        name: 'announce'
+        file: 'src/_settings/announce.json'
+        fields:
+          - label: 'Active?'
+            name: 'active'
+            widget: 'boolean'
+            default: false
+
+          - { label: 'Text', name: 'text', widget: 'string' }
+          - {
+              label: 'Link',
+              name: 'link',
+              widget: 'string',
+              hint: 'in the format: www.abana.mu/example',
+            }
+
       - label: 'Matching Marketplace'
         name: 'matching'
         file: 'src/_settings/matching.json'

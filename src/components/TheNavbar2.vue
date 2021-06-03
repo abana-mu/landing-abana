@@ -1,11 +1,15 @@
 <!-- HTML -->
 <template>
   <nav>
+    <div id="announce" :class="{ hidden: !Data.active }">
+      <a :href="link" target="_blank">
+        {{ Data.text }}
+      </a>
+    </div>
     <b-navbar
       class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white"
-      :class="{ navShadow: scrollPosition > 50 }"
+      :class="{ navShadow: scrollPosition > 40 }"
       toggleable="lg"
-      fixed="top"
       tag="header"
     >
       <b-container fluid>
@@ -700,6 +704,7 @@
 <!-- SCRIPTS -->
 <script>
 import { BNavbar, BNavbarNav } from 'bootstrap-vue';
+import Data from '~/_settings/announce.json';
 
 import {
   BIcon,
@@ -776,6 +781,9 @@ export default {
   data() {
     return {
       scrollPosition: null,
+      announce: true,
+      Data,
+      link: 'https://' + Data.link,
       market: {
         title: 'Matching Marketplace',
         subtitle: 'Illuminating sourcing opportunities',
@@ -843,8 +851,13 @@ export default {
   -webkit-box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   box-shadow: 0 2px 12px 0 rgba(36, 50, 66, 0.075);
   background-color: white;
-  -webkit-transition: all 0.5s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  width: 100%;
+  top: 0;
   .nav-item.nav-only {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1228,5 +1241,31 @@ export default {
       fill: $light-red;
     }
   }
+}
+
+#announce {
+  height: auto;
+  background-color: $secondary;
+  z-index: 1050;
+  position: relative;
+  display: flex;
+  width: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  a {
+    color: white;
+    font-size: $f14;
+    padding: 2px 0;
+    @media (min-width: $break-s) {
+      font-size: $f16;
+      padding: 6px 0;
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
 }
 </style>
