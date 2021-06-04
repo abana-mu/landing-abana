@@ -5,9 +5,8 @@ title: Internship - Sustainability & Communication
 department: Product
 location: Goodlands
 role: >-
-  
-
-  We are hiring a Sustainability & Communication intern that is driven, curious, creative, and motivated
+  We are hiring a Sustainability & Communication intern that is driven, curious,
+  creative, and motivated.
 
 
   He/she will gain the opportunity to explore and lead initiatives within the company that will leave a visible impact.
@@ -45,6 +44,9 @@ table: >-
 
   Able to start immediately and commit for at least 3 months full time
 thrive: >-
+  You are open to learn and eager to contribute.
+
+
   **Learning Outcomes & Objectives:**
 
 
