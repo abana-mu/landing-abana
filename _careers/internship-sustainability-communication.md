@@ -54,40 +54,8 @@ thrive: >-
   Get the opportunity to work with a vibrant team
 
 
-  Be part of the change and contribute to concrete improvements in the African T&A ecosystem.
+  Be part of the change and contribute to concrete improvements in the African T&A ecosystem
 
 
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-   
-
-
-  <!--EndFragment-->
+  Get a broad understanding of the challenges and opportunities in developing sustainability initiatives across a diverse range of activities from manufacturing to services.
 ---
