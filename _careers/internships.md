@@ -46,6 +46,9 @@ table: >-
 
   Able to start immediately and commit for at least 3 months full time
 thrive: >-
+  You are open to learn and eager to contribute.
+
+
   **Learning Outcomes & Objectives:**
 
 
