@@ -32,7 +32,7 @@ table: >-
   A Polytechnic or University student trained in Communications 
 
 
-  An outstanding communicator who is skilled in copywriting and photo-editing software (Photoshop, Illustrator, Lightroom)
+  An outstanding communicator who is skilled in copywriting and photo-editing (Photoshop, Illustrator, Lightroom)
 
 
   A team player, who enjoys the fast-paced life of a startup 
