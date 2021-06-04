@@ -1,27 +1,25 @@
 ---
 layout: blog
-filled: filled
+filled: open
 title: Customer Success Executive
 department: Growth & Sales
 location: Goodlands, Mauritius
-role: ABANA is building a B2B platform which will bring together the diverse
+role: ABANA has built a B2B platform which brings together the diverse
   stakeholders of the Texitle & Apparel eco-system in the Indian Ocean and
   Africa. Your role will be to digitally manage our member relationships in
   co-ordination with our Country Representatives to consistently illustrate the
   value delivered by our platform.
 tasks: >-
-  * As the internal voice of the customer, you will work with the other
-  functional teams to exceed customer expectations
+  * Demo the platform to potential members virtually and physically and assist
+  them to register and on-board.
+
+  * Co-ordinate with our international Country Representatives and manage our sales pipeline and budgeting.
 
   * Analyze membership profiles and their use of the platform.
 
-  * Generate management reports with relevant analytics
-
-  * Co-ordinate with Country Representatives on their members’ activity.
-
   * Propose actions to enable additional revenue generation from active members including new platform functionalities.
 
-  * Manage members’ onboarding, expansion, retention and new product adoption.
+  * Generate management reports with relevant analytics
 
   * Work closely with our digital marketing team for appropriate customer communication.
 table: >-
