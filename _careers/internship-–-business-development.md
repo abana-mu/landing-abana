@@ -14,9 +14,8 @@ role: >-
 
   He/she should be responsible, committed, and be able to work with a level of autonomy and strong customer facing skills.
 tasks: >-
-  
-
-  Responsible for engaging with potential customers physically and virtually to demo our on-line platform functionalities
+  Responsible for engaging with potential customers physically and virtually to
+  demo our on-line platform functionalities
 
 
   Assist new members to register and on-board the platform.
@@ -25,13 +24,13 @@ tasks: >-
   Engage new members  online through our social media channels
 
 
-  Assist in managing our member pipeline and CRM system
+  Improve our sales pipeline and customer development strategy
 
 
   Collaborate with various teams to design and create different forms of marketing collaterals
 
 
-  Contribute to thought leadership pieces and various other content
+  Assist in the roll-out and support of product launches
 
 
   Generate and contribute new and creative ideas in brainstorming sessions
@@ -65,8 +64,8 @@ thrive: >-
   Analyze key audiences and learn to interact with them effectively, expecially in the Textile & Apparel sector
 
 
-  Understand various tools, techniques, and platforms used to manage membership growth
+  Develop your direct sales skills through video chat 
 
 
-  Evaluate end-to-end marketing processes and suggest improvement
+  Gain hands-on real-world experience in each stage of the sales funnel
 ---
