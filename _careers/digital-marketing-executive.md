@@ -10,8 +10,6 @@ role: We are hiring a Digital Marketing Executive that is driven, curious,
   be responsible, committed, and be able to work with a level of autonomy with a
   flair for imaginative communication and knowledge of B2B social media channels
 tasks: >-
-  
-
   * Develop marketing collaterals and other related works
 
   * Write engaging copy for messaging through various channels and target various groups
@@ -22,9 +20,9 @@ tasks: >-
 
   * Evaluate important metrics that affect our website traffic, service quotas, and target audience
 
-  * Measure and report performance of all digital marketing campaigns and assess against goals (ROI and KPIs)Contribute to thought leadership pieces and various other content
+  * Measure and report performance of all digital marketing campaigns and assess against goals (ROI and KPIs)
 
-  * Generate and contribute new and creative ideas in brainstorming sessions
+  * Contribute to thought leadership pieces and various other content, and generate new and creative ideas in brainstorming sessions
 table: >-
   * A BA / BS in Communications or a related field of study.
 
@@ -34,9 +32,7 @@ table: >-
 
   * The ability to work independently and find innovative ways to achieve objectives.
 
-  * Demonstrable experience leading and managing SEO/SEM, marketing database, email, social media campaigns
-
-    *
+  * Demonstrable experience leading and managing SEO/SEM, marketing database, email, social media campaigns.
 thrive: >-
   
 
