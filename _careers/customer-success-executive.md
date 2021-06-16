@@ -1,14 +1,14 @@
 ---
 layout: blog
 filled: open
-title: Customer Success Executive
+title: Business Development & Customer Success Executive
 department: Growth & Sales
 location: Goodlands, Mauritius
 role: ABANA has built a B2B platform which brings together the diverse
   stakeholders of the Textile & Apparel eco-system in the Indian Ocean and
-  Africa. Your role will be to digitally manage our member relationships in
-  co-ordination with our Country Representatives to consistently illustrate the
-  value delivered by our platform.
+  Africa. Your role will be to grow our membership in co-ordination with our
+  Country Representatives and consistently illustrate the value delivered by our
+  platform to our community,
 tasks: >-
   * Demo the platform to potential members virtually and physically and assist
   them to register and on-board.
