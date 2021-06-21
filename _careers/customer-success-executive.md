@@ -17,15 +17,19 @@ tasks: >-
 
   * Analyze membership profiles and their use of the platform.
 
-  * Propose actions to enable additional revenue generation from active members including new platform functionalities.
+  * Engage with members, analyse their needs and advise them on suitable solutions both on-line and off-line.
 
   * Generate management reports with relevant analytics
 
   * Work closely with our digital marketing team for appropriate customer communication.
 table: >-
+  
+
   * A BA / BS in a related field of study – an MBA would be an advantage.
 
-  * Proven and in-depth expertise in use of Excel, database or CRM tools.
+  * Proven expertise in use of Excel, Database & CRM tools.
+
+  * A textile industry back-ground to understand customer needs and how to best leverage on-line and off-line solutions.
 
   * The ability to work independently and find innovative ways to achieve objectives.
 
