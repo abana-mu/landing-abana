@@ -1,7 +1,7 @@
 ---
 layout: blog
 filled: open
-title: INTERNSHIPS
+title: Internship - Digital Marketing
 department: Marketing & Visuals
 location: Goodlands
 role: >-
@@ -32,7 +32,7 @@ table: >-
   A Polytechnic or University student trained in Communications 
 
 
-  An outstanding communicator who is skilled in copywriting 
+  An outstanding communicator who is skilled in copywriting and photo-editing (Photoshop, Illustrator, Lightroom)
 
 
   A team player, who enjoys the fast-paced life of a startup 
@@ -46,6 +46,9 @@ table: >-
 
   Able to start immediately and commit for at least 3 months full time
 thrive: >-
+  You are open to learn and eager to contribute.
+
+
   **Learning Outcomes & Objectives:**
 
 

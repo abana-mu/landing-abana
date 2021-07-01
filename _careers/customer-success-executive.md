@@ -1,33 +1,35 @@
 ---
 layout: blog
-filled: filled
-title: Customer Success Executive
+filled: open
+title: Business Development & Customer Success Executive
 department: Growth & Sales
 location: Goodlands, Mauritius
-role: ABANA is building a B2B platform which will bring together the diverse
-  stakeholders of the Texitle & Apparel eco-system in the Indian Ocean and
-  Africa. Your role will be to digitally manage our member relationships in
-  co-ordination with our Country Representatives to consistently illustrate the
-  value delivered by our platform.
+role: ABANA has built a B2B platform which brings together the diverse
+  stakeholders of the Textile & Apparel eco-system in the Indian Ocean and
+  Africa. Your role will be to grow our membership in co-ordination with our
+  Country Representatives and consistently illustrate the value delivered by our
+  platform to our community,
 tasks: >-
-  * As the internal voice of the customer, you will work with the other
-  functional teams to exceed customer expectations
+  * Demo the platform to potential members virtually and physically and assist
+  them to register and on-board.
+
+  * Co-ordinate with our international Country Representatives and manage our sales pipeline and budgeting.
 
   * Analyze membership profiles and their use of the platform.
 
+  * Engage with members, analyse their needs and advise them on suitable solutions both on-line and off-line.
+
   * Generate management reports with relevant analytics
-
-  * Co-ordinate with Country Representatives on their members’ activity.
-
-  * Propose actions to enable additional revenue generation from active members including new platform functionalities.
-
-  * Manage members’ onboarding, expansion, retention and new product adoption.
 
   * Work closely with our digital marketing team for appropriate customer communication.
 table: >-
+  
+
   * A BA / BS in a related field of study – an MBA would be an advantage.
 
-  * Proven and in-depth expertise in use of Excel, database or CRM tools.
+  * Proven expertise in use of Excel, Database & CRM tools.
+
+  * A textile industry back-ground to understand customer needs and how to best leverage on-line and off-line solutions.
 
   * The ability to work independently and find innovative ways to achieve objectives.
 
