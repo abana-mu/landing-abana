@@ -10,24 +10,24 @@
     "@gridsome/plugin-google-analytics": "^0.1.2",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.2",
-    "@popperjs/core": "^2.5.4",
-    "bootstrap": "^4.5.2",
-    "bootstrap-vue": "^2.16.0",
-    "gridsome": "^0.7.20",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-sass-resources-loader": "0.0.3",
-    "netlify-cms": "^2.10.55",
+    "netlify-cms": "^2.10.140",
     "netlify-cms-widget-color": "^3.0.1",
-    "vue": "^2.6.12",
-    "vue-server-renderer": "^2.6.12",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
     "vue-simple-markdown": "^1.1.4",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.0",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }
