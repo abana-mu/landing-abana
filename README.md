@@ -1,21 +1,14 @@
+# Default starter for Gridsome
 
-<p align="center">
-  <br>
-  <a href="https://www.abana.mu">
-    <img src="https://app.abana.mu//assets/images/logo-full.svg" width="300"/>
-  </a>
-</p>
+This is the project you get when you run `gridsome create new-project`.
 
+### 1. Install Gridsome CLI tool if you don't have
 
-# ABANA Platform
+`npm install --global @gridsome/cli`
 
+### 2. Create a Gridsome project
 
-## Built with
-
-* [Gridsome](https://gridsome.org/)
-* [NetlifyCMS](https://www.netlifycms.org/)
-* [Tailwind CSS](https://tailwindcss.com)
-
-## Deployment
-
-We use [Netlify](https://www.netlify.com/) for continious integration and deployment, with a manual trigger to deploy 
+1. `gridsome create my-gridsome-site` to install default starter
+2. `cd my-gridsome-site` to open the folder
+3. `gridsome develop` to start a local dev server at `http://localhost:8080`
+4. Happy coding 🎉🙌
