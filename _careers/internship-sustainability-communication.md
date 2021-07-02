@@ -1,6 +1,6 @@
 ---
 layout: blog
-filled: open
+filled: filled
 title: Internship - Sustainability & Communication
 department: Product
 location: Goodlands
