@@ -1,10 +1,4 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
-//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const tailwindcss = require('tailwindcss');
 
 module.exports = {
   siteName: 'ABANA',
@@ -17,30 +11,23 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
-      plugins: [
-        // ...global plugins
-      ],
+      plugins: [],
     },
   },
-  /*
-chainWebpack: config => {
-  const svgRule = config.module.rule('svg')
-  svgRule.uses.clear()
-  svgRule
-    .use('vue-svg-loader')
-    .loader('vue-svg-loader')
-},
 
-
-  chainWebpack: (config) => {
-    config
-      .plugin('BundleAnalyzerPlugin')
-      .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }]);
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [tailwindcss],
+      },
+    },
   },
-*/
+
   plugins: [
     'gridsome-plugin-robots-txt',
-
+    {
+      use: 'tailwindcss',
+    },
     {
       use: '@gridsome/plugin-sitemap',
     },

@@ -11,9 +11,6 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^4.6.0",
-    "bootstrap-vue": "^2.21.2",
     "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-robots-txt": "^1.0.2",
@@ -26,8 +23,11 @@
     "vue-template-compiler": "^2.6.14"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "node-sass": "^4.14.1",
+    "postcss": "^7.0.36",
     "sass-loader": "^10.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
     "webpack-bundle-analyzer": "^4.4.2"
   }
 }
