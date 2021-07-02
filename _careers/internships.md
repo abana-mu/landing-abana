@@ -1,6 +1,6 @@
 ---
 layout: blog
-filled: open
+filled: filled
 title: Internship - Digital Marketing
 department: Marketing & Visuals
 location: Goodlands
