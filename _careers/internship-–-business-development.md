@@ -1,6 +1,6 @@
 ---
 layout: blog
-filled: open
+filled: filled
 title: Internship – Business Development
 department: Growth & Sales
 location: Goodlands
