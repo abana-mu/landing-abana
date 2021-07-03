@@ -2,42 +2,47 @@
 <template>
   <b-container fluid class="my-5">
     <b-row>
-      <b-col
-        cols="12"
-        lg="6"
-        order="1"
-        order-lg="0"
-        class="flow-section section-container"
-      >
+      <b-col cols="12" lg="6" order="1" order-lg="0" class="flow-section section-container">
         <h3 class="title mb-3">{{ data.title }}</h3>
         <p>{{ data.subtext }}</p>
-        <g-link class="col-link" v-if="data.page" :to="data.page">
+        <g-link class="group inline-flex items-center" v-if="data.page" :to="data.page">
           {{ data.link }}
-          <b-icon-arrow-right-short />
+          <!-- Arrow right-short -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+          </svg>
         </g-link>
       </b-col>
       <b-col>
         <div class="svg-container">
-          <Flow /></div
-      ></b-col>
+          <Flow />
+        </div>
+      </b-col>
     </b-row>
   </b-container>
 </template>
 
 <!-- SCRIPTS -->
 <script>
-import Flow from '~/components/icons/Flow';
-import { BIcon, BIconArrowRightShort } from 'bootstrap-vue';
+import Flow from "~/components/icons/Flow";
 
 export default {
   components: {
-    Flow,
-    BIcon,
-    BIconArrowRightShort,
+    Flow
   },
   props: {
-    data: Object,
-  },
+    data: Object
+  }
 };
 </script>
 

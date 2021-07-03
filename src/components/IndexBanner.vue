@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col">
           <div>
-            <h1 id="header-title">{{ title }}</h1>
+            <h1 id="header-title" class="opacity-50">{{ title }}</h1>
           </div>
           <div>
             <p id="header-subtitle" class="mb-2 text-center">{{ subtext }}</p>

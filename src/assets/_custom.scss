@@ -364,19 +364,6 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-.col-link {
-  &:hover {
-    .b-icon {
-      transition: ease-out 0.2s;
-      margin-left: 1rem;
-    }
-  }
-
-  .b-icon {
-    margin-left: 0.5rem;
-  }
-}
-
 // --- NAVIGATION ---
 
 .navbar-light .navbar-nav .nav-link {
