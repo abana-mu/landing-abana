@@ -3,18 +3,20 @@
   <div>
     <div
       v-for="categories in data.categories"
-      class="category-container"
+      class="p-8"
       :key="categories.title"
     >
-      <div class="plan-category-title">
+      <div
+        class="plan-category-title p-3 border text-sm font-medium uppercase text-subtitle tracking-wide"
+      >
         {{ categories.title }}
       </div>
       <div
         v-for="(features, index) in categories.features"
         :key="index"
-        class="plan-feature"
+        class="flex py-0 px-5 items-center border-b border-l border-r hover:bg-gray-50"
       >
-        <div class="plan-feature-title">
+        <div class="text-base w-2/5">
           {{ features.title }}
           <BIconQuestionCircleFill
             v-if="features.tooltip"
@@ -30,29 +32,49 @@
             {{ features.tooltip }}
           </b-tooltip>
         </div>
-        <div class="plan-feature-plans d-flex flex-row">
+        <div class="flex w-3/5 flex-row">
           <div
             v-for="(plans, index) in features.plans"
             :key="index"
-            class="feature-plans-options col"
+            class="h-12 min-h-full flex justify-center items-center border-l p-0 col"
           >
-            <b-icon
+            <!-- Check circle -->
+            <svg
               v-if="plans === true"
-              icon="check-circle"
-              aria-hidden="true"
-              variant="success"
-              font-scale="1.2"
-            ></b-icon>
-            <div class="icon-no-container" v-else-if="plans === false">
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
-            </div>
+              class="h-5 w-5 text-green-500"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+              />
+            </svg>
 
-            <div v-else class="text-success">{{ plans }}</div>
+            <!-- X circle -->
+            <svg
+              v-else-if="plans === false"
+              class="h-5 w-5 text-gray-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+
+            <div v-else class="text-green-500">{{ plans }}</div>
           </div>
         </div>
       </div>
@@ -62,18 +84,11 @@
 
 <!-- SCRIPTS -->
 <script>
-import {
-  BIcon,
-  BIconCheckCircle,
-  BIconXCircle,
-  BIconQuestionCircleFill,
-} from 'bootstrap-vue';
+import { BIcon, BIconQuestionCircleFill } from 'bootstrap-vue';
 
 export default {
   components: {
     BIcon,
-    BIconCheckCircle,
-    BIconXCircle,
     BIconQuestionCircleFill,
   },
   props: {
@@ -89,13 +104,6 @@ export default {
 
 <!-- STYLING -->
 <style lang="scss" scoped>
-.feature {
-  &:hover {
-    background-color: $primary;
-    cursor: default;
-  }
-}
-
 .pricing-container {
   margin: 0 2rem;
 
@@ -110,22 +118,6 @@ export default {
   }
 }
 
-//Category Container
-.category-container {
-  padding-bottom: 30px;
-}
-
-//Category Title
-.plan-category-title {
-  padding: 0.75rem;
-  color: $subtitle-dark;
-  border: 1px solid #d7d7f58f;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 //Features Row
 .plan-feature {
   display: flex;
@@ -136,40 +128,6 @@ export default {
   &:hover {
     background-color: $grey-light;
   }
-}
-
-//Features title
-.plan-feature-title {
-  width: 40%;
-  font-size: 1rem;
-}
-
-//Plans container
-.plan-feature-plans {
-  width: 60%;
-  display: flex;
-}
-
-.feature-plans-options {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border-left: 1px solid #d7d7f58f;
-  min-height: 3rem;
-  padding: 0;
-}
-
-.icon-no-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $grey-light;
-}
-
-.icon-no {
-  color: #cccccc;
 }
 
 .tooltip-icon {

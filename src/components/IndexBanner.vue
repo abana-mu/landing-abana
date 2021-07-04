@@ -12,7 +12,7 @@
           </div>
           <div id="header-cta">
             <g-link to="/about">
-              <b-button size="md" variant="primary">{{ cta }}</b-button>
+              <div class="btn btn-primary">{{ cta }}</div>
             </g-link>
           </div>
           <g-image

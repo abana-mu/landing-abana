@@ -4,14 +4,13 @@
       <Oops class="oops-image" />
       <h2 class="text-primary">Oops!</h2>
       <p>We couldn't find the page you were looking for</p>
-      <b-button to="/" variant="primary">Go Back Home</b-button>
+      <a to="/" class="btn btn-primary">Go Back Home</a>
     </section>
   </Layout>
 </template>
 
-
 <script>
-import Oops from "~/components/icons/Oops";
+import Oops from '~/components/icons/Oops';
 
 export default {
   components: {
@@ -32,6 +31,3 @@ export default {
   }
 }
 </style>
-
-
-

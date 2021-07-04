@@ -3,7 +3,20 @@
   <Layout>
     <div class="mb-5 container">
       <g-link to="/testimonials/" class="sidebar-item-level-2-title mb-3">
-        <b-icon icon="arrow-left-short" class="mr-2" />Back
+        <!-- Arrow left-short -->
+        <svg
+          class="h-5 w-5 mr-2 inline-flex"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 8a.5.5 0 0 1-.5.5h-5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+          /></svg
+        >Back
       </g-link>
       <div class="d-flex flex-row">
         <div
@@ -53,13 +66,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BIcon, BIconArrowLeftShort } from 'bootstrap-vue';
-
 export default {
-  components: {
-    BIcon,
-    BIconArrowLeftShort,
-  },
   metaInfo() {
     return {
       title: this.$page.thisPost.title,

@@ -1,17 +1,16 @@
 module.exports = {
   darkMode: false, // or 'media' or 'class'
-  purge: [
-    './src/**/*.vue',
-    './src/**/*.js',
-    './src/**/*.md',
-    './src/**/*.html',
-  ],
+  purge: ['./src/**/*.vue', './src/**/*.js', './src/**/*.md', './src/**/*.html'],
   theme: {
     extend: {
       colors: {
         body: '#202c4f',
+        title: '#0d183a',
         icon: '#737a96',
+        subtitle: '#737a96',
+
         primary: {
+          DEFAULT: '#FF6158',
           100: '#FFF4F3',
           200: '#FFAAA6',
           300: '#FF6158',

@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  @responsive {
+    /* Button sizes */
+    .btn {
+      @apply px-4 py-2 text-base;
+    }
+
+    .btn-xs {
+      @apply px-4 py-1.5 text-xs;
+    }
+
+    .btn-sm {
+      @apply px-4 py-2 text-sm;
+    }
+
+    .btn-lg {
+      @apply px-4 py-3 text-base;
+    }
+  }
+
+  .btn-primary {
+    @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-white bg-primary-300 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200 transition;
+  }
+
+  .btn-ghost {
+    @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-primary-300 border border-primary-300 bg-transparent hover:bg-primary-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200 transition;
+  }
+
+  .btn-secondary {
+    @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-white bg-secondary-400 hover:bg-secondary-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-200 transition;
+  }
+}

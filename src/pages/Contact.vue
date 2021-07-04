@@ -11,19 +11,14 @@
           <b-col class="contact-card">
             <h4 class="mb-3">Want to send us an Email?</h4>
             <p class="mb-3">Send us your questions or comments.</p>
-            <b-button size="lg" variant="link" class="p-0">
-              <a href="mailto:support@abana.mu">support@abana.mu</a>
-            </b-button>
+            <a class="text-primary" href="mailto:support@abana.mu">support@abana.mu</a>
           </b-col>
           <b-col class="contact-card">
             <h4 class="mb-3">Want to talk to an Agent?</h4>
             <p class="mb-3">We will respond as soon as we are online!</p>
-            <b-button
-              variant="primary"
-              onclick="window.fcWidget.open();window.fcWidget.show();"
-            >
+            <a class="btn btn-primary" onclick="window.fcWidget.open();window.fcWidget.show();">
               Start Chatting
-            </b-button>
+            </a>
           </b-col>
         </b-row>
       </div>

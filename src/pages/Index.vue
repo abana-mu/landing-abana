@@ -1,11 +1,7 @@
 <template>
   <Layout class="index-layout">
     <!-- HEADER -->
-    <IndexBanner
-      :title="Data.header.title"
-      :subtext="Data.header.subtext"
-      :cta="Data.header.cta"
-    />
+    <IndexBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
 
     <!-- Trusted By --
 
@@ -47,13 +43,7 @@
 
           <b-container class="examples">
             <b-row>
-              <b-col
-                v-for="(box, index) in Data.boxes.boxes"
-                :key="box.title"
-                cols="12"
-                md="6"
-                class="box-item"
-              >
+              <b-col v-for="(box, index) in Data.boxes.boxes" :key="box.title" cols="12" md="6" class="box-item">
                 <component :is="index" class="box-image"></component>
                 <div class="box-text">
                   <h4>{{ box.title }}</h4>
@@ -65,7 +55,7 @@
 
           <div class="box-button">
             <g-link to="/why-africa">
-              <b-button variant="outline-primary">Why Africa?</b-button>
+              <div class="btn btn-ghost">Why Africa?</div>
             </g-link>
           </div>
         </div>
@@ -92,11 +82,7 @@
 
           <b-container class="examples">
             <b-row class="box-row">
-              <b-col
-                class="box-item"
-                v-for="testi in $page.posts.edges"
-                :key="testi.id"
-              >
+              <b-col class="box-item" v-for="testi in $page.posts.edges" :key="testi.id">
                 <p class="blurb">"{{ testi.node.blurb }}"</p>
                 <div class="testi-person">
                   <div class="box-image">
@@ -116,9 +102,7 @@
 
           <div class="box-button">
             <g-link to="/testimonials">
-              <b-button variant="outline-primary"
-                >See full testimonials</b-button
-              >
+              <div class="btn btn-ghost">See full testimonials</div>
             </g-link>
           </div>
         </div>

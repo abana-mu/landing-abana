@@ -4,13 +4,12 @@
       <div class="header">
         <h1 class="title">Thanks for registering!</h1>
         <p class="subtitle">
-          We will be in touch shortly. We look forward to starting a partnership
-          together.
+          We will be in touch shortly. We look forward to starting a partnership together.
         </p>
       </div>
       <div class="mt-5 text-center">
         <g-link to="/">
-          <b-button variant="primary">Back Home</b-button>
+          <a class="btn btn-primary">Back Home</a>
         </g-link>
       </div>
     </div>

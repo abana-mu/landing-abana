@@ -6,16 +6,9 @@
         {{ Data.text }}
       </a>
     </div>
-    <b-navbar
-      class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white"
-      :class="{ navShadow: scrollPosition > 40 }"
-      toggleable="lg"
-      tag="header"
-    >
+    <b-navbar class="py-3 px-4 px-sm-5 px-lg-0 my-0 py-lg-0 bg-white" :class="{ navShadow: scrollPosition > 40 }" toggleable="lg" tag="header">
       <b-container fluid>
-        <div
-          class="row top-row w-100 justify-content-between align-items-center no-gutters"
-        >
+        <div class="row top-row w-100 justify-content-between align-items-center no-gutters">
           <!-- Nav Brand -->
           <div class="col col-auto">
             <g-link class="nav-logo" to="/">
@@ -28,30 +21,17 @@
           <div class="col col-auto d-none d-lg-flex justify-content-center">
             <b-navbar-nav class="nav-main">
               <!-- Products-->
-              <div
-                class="nav-item nav-only"
-                @mouseover="hoverPro = true"
-                @mouseleave="hoverPro = false"
-              >
+              <div class="nav-item nav-only" @mouseover="hoverPro = true" @mouseleave="hoverPro = false">
                 <a class="nav-link">
                   Products
                   <b-icon icon="chevron-down" scale=".6" />
                 </a>
-                <div
-                  id="products-drop"
-                  class="dropdown-container"
-                  v-bind:class="{ dropActive: hoverPro }"
-                >
+                <div id="products-drop" class="dropdown-container" v-bind:class="{ dropActive: hoverPro }">
                   <div class="col col-6 left-panel">
                     <div class="left-link-container">
-                      <b-dropdown-header id="dropdown-header-1"
-                        >Our Solutions</b-dropdown-header
-                      >
+                      <b-dropdown-header id="dropdown-header-1">Our Solutions</b-dropdown-header>
                       <div class="dropdown-link">
-                        <g-link
-                          class="dropdown-item d-flex"
-                          to="/matching-marketplace/"
-                        >
+                        <g-link class="dropdown-item d-flex" to="/matching-marketplace/">
                           <div class="drop-image">
                             <IMarket />
                           </div>
@@ -67,10 +47,7 @@
                       </div>
 
                       <div class="dropdown-link">
-                        <g-link
-                          class="dropdown-item d-flex"
-                          to="/supply-chain/"
-                        >
+                        <g-link class="dropdown-item d-flex" to="/supply-chain/">
                           <div class="drop-image">
                             <ISupply />
                           </div>
@@ -86,11 +63,7 @@
                       </div>
 
                       <div class="dropdown-link">
-                        <a
-                          href="/documents/ABANA_Carbon_Emissions.pdf"
-                          target="_blank"
-                          class="dropdown-item d-flex"
-                        >
+                        <a href="/documents/ABANA_Carbon_Emissions.pdf" target="_blank" class="dropdown-item d-flex">
                           <div class="drop-image">
                             <ICarbon />
                           </div>
@@ -108,9 +81,7 @@
                   </div>
                   <div class="col col-6 right-panel">
                     <div class="left-link-container">
-                      <b-dropdown-header id="dropdown-header-1"
-                        >Ecommerce</b-dropdown-header
-                      >
+                      <b-dropdown-header id="dropdown-header-1">Ecommerce</b-dropdown-header>
 
                       <div class="dropdown-link">
                         <g-link class="dropdown-item d-flex" to="/drops/">
@@ -155,9 +126,7 @@
 
               <!-- Sustainability-->
               <li class="nav-item nav-only">
-                <g-link class="nav-link" to="/sustainability/"
-                  >Sustainability</g-link
-                >
+                <g-link class="nav-link" to="/sustainability/">Sustainability</g-link>
               </li>
 
               <!-- Pricing-->
@@ -166,46 +135,29 @@
               </li>
 
               <!-- Company-->
-              <div
-                class="nav-item nav-only"
-                @mouseover="hoverCom = true"
-                @mouseleave="hoverCom = false"
-              >
+              <div class="nav-item nav-only" @mouseover="hoverCom = true" @mouseleave="hoverCom = false">
                 <a class="nav-link">
                   Company
                   <b-icon icon="chevron-down" scale=".6" />
                 </a>
-                <div
-                  id="company-drop"
-                  class="dropdown-container pt-2 pb-5 justify-content-center"
-                  v-bind:class="{ dropActive: hoverCom }"
-                >
+                <div id="company-drop" class="dropdown-container pt-2 pb-5 justify-content-center" v-bind:class="{ dropActive: hoverCom }">
                   <div class="col col-2">
                     <b-dropdown-header>Company</b-dropdown-header>
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/about/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/about/">
                       <div class="drop-image-sm">
                         <IAbout />
                       </div>
                       <div class="drop-text">About Us</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/careers/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/careers/">
                       <div class="drop-image-sm">
                         <ICareer />
                       </div>
                       <div class="drop-text">Careers</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/press/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/press/">
                       <div class="drop-image-sm">
                         <INews />
                       </div>
@@ -216,30 +168,21 @@
                   <div class="col col-2">
                     <b-dropdown-header>Partnerships</b-dropdown-header>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/country-reps/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/country-reps/">
                       <div class="drop-image-sm">
                         <ICountryRep />
                       </div>
                       <div class="drop-text">Country Reps</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/freelancers/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/freelancers/">
                       <div class="drop-image-sm">
                         <IFreelancers />
                       </div>
                       <div class="drop-text">Freelancers</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/testimonials/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/testimonials/">
                       <div class="drop-image-sm">
                         <ITestimonial />
                       </div>
@@ -249,48 +192,33 @@
 
                   <div class="col col-2">
                     <b-dropdown-header>Support</b-dropdown-header>
-                    <div
-                      @click="launch(), (hoverCom = false)"
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                    >
+                    <div @click="launch(), (hoverCom = false)" class="dropdown-item drop-title-singular d-flex align-items-center">
                       <div class="drop-image-sm">
                         <IHow />
                       </div>
                       <div class="drop-text">FAQ</div>
                     </div>
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/how-it-works/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/how-it-works/">
                       <div class="drop-image-sm">
                         <IVideo />
                       </div>
                       <div class="drop-text">Video Tutorials</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/contact/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/contact/">
                       <div class="drop-image-sm">
                         <IContact />
                       </div>
                       <div class="drop-text">Contact Us</div>
                     </g-link>
 
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/privacy/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/privacy/">
                       <div class="drop-image-sm">
                         <IPrivacy />
                       </div>
                       <div class="drop-text">Privacy</div>
                     </g-link>
-                    <g-link
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                      to="/terms-conditions/"
-                    >
+                    <g-link class="dropdown-item drop-title-singular d-flex align-items-center" to="/terms-conditions/">
                       <div class="drop-image-sm">
                         <ITerms />
                       </div>
@@ -305,36 +233,17 @@
           <!-- Right aligned nav items -->
           <div class="col col-auto d-none d-lg-flex">
             <b-navbar-nav class="d-none d-lg-block ml-auto">
-              <a href="https://app.abana.mu/login" class="log-in">{{
-                cta.sub
-              }}</a>
+              <a href="https://app.abana.mu/login" class="log-in">{{ cta.sub }}</a>
 
-              <b-button
-                href="https://app.abana.mu/register-buyer"
-                variant="primary"
-                >{{ cta.main }}</b-button
-              >
+              <a href="https://app.abana.mu/register-buyer" class="btn btn-primary">
+                {{ cta.main }}
+              </a>
             </b-navbar-nav>
           </div>
-
-          <!-- Right aligned nav items --
-          <div class="col col-auto d-none d-lg-block">
-            <b-navbar-nav class="d-none d-lg-block ml-auto">
-              <g-link to="/Register/"
-                ><b-button variant="primary">Pre-Register</b-button>
-              </g-link>
-            </b-navbar-nav>
-          </div>
-
-          -->
 
           <!-- Mobile Navigation -->
-          <b-navbar-nav
-            class="d-flex flex-row align-items-center d-lg-none ml-auto"
-          >
-            <a href="https://app.abana.mu/login" class="log-in pl-2">{{
-              cta.sub
-            }}</a>
+          <b-navbar-nav class="d-flex flex-row align-items-center d-lg-none ml-auto">
+            <a href="https://app.abana.mu/login" class="log-in pl-2">{{ cta.sub }}</a>
             <NavbarHamburger v-b-toggle.sidebar-level-1 ref="hamburger" />
             <!-- Main SideBar -->
           </b-navbar-nav>
@@ -377,58 +286,23 @@
             </div>
 
             <div class="sidebar-buttons d-flex mt-5 justify-content-center">
-              <b-button
-                href="https://app.abana.mu/login"
-                variant="link"
-                class="title-dark w-100 mb-2"
-                >{{ cta.sub }}</b-button
-              >
-              <b-button
-                href="https://app.abana.mu/register-buyer"
-                variant="primary"
-                class="w-100"
-                >{{ cta.main }}</b-button
-              >
+              <a href="https://app.abana.mu/login" class="text-primary text-center w-100 mb-2">{{ cta.sub }}</a>
+              <a href="https://app.abana.mu/register-buyer" class="btn btn-primary w-100">{{ cta.main }}</a>
             </div>
-
-            <!--
-            <div class="sidebar-buttons mt-5 text-center">
-              <g-link to="/Register/">
-                <b-button variant="primary">Pre-Register</b-button>
-              </g-link>
-            </div>
-
-            -->
           </div>
 
           <!-- Sidebar for Products -->
-          <b-sidebar
-            id="sidebar-level-2-0"
-            class="w-100"
-            right
-            shadow
-            no-header
-            bg-variant="white"
-          >
+          <b-sidebar id="sidebar-level-2-0" class="w-100" right shadow no-header bg-variant="white">
             <template v-slot:default="{ hide }">
               <div class="sidebar-container-2">
                 <!-- Content -->
                 <div class="row no-gutters align-items-stretch nowrap">
-                  <div class="sidebar-item-level-2-title" @click="hide">
-                    <b-icon icon="arrow-left-short" class="mr-2" />Products
-                  </div>
+                  <div class="sidebar-item-level-2-title" @click="hide"><b-icon icon="arrow-left-short" class="mr-2" />Products</div>
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Our Solutions</b-dropdown-header
-                    >
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Our Solutions</b-dropdown-header>
                     <div @click="hide">
-                      <g-link
-                        class="sidebar-item-level-2"
-                        to="/matching-marketplace/"
-                      >
-                        <div
-                          class="sidebar-item-level-2-container d-flex align-items-center"
-                        >
+                      <g-link class="sidebar-item-level-2" to="/matching-marketplace/">
+                        <div class="sidebar-item-level-2-container d-flex align-items-center">
                           <div class="drop-image">
                             <IMarket />
                           </div>
@@ -446,9 +320,7 @@
                   </div>
                   <div class="col col-12 mb-3">
                     <g-link class="sidebar-item-level-2" to="/supply-chain/">
-                      <div
-                        class="sidebar-item-level-2-container d-flex align-items-center"
-                      >
+                      <div class="sidebar-item-level-2-container d-flex align-items-center">
                         <div class="drop-image">
                           <ISupply />
                         </div>
@@ -465,14 +337,8 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <a
-                      href="/documents/ABANA_Carbon_Emissions.pdf"
-                      target="_blank"
-                      class="sidebar-item-level-2"
-                    >
-                      <div
-                        class="sidebar-item-level-2-container d-flex align-items-center"
-                      >
+                    <a href="/documents/ABANA_Carbon_Emissions.pdf" target="_blank" class="sidebar-item-level-2">
+                      <div class="sidebar-item-level-2-container d-flex align-items-center">
                         <div class="drop-image">
                           <ICarbon />
                         </div>
@@ -489,13 +355,9 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Ecommerce</b-dropdown-header
-                    >
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Ecommerce</b-dropdown-header>
                     <g-link class="sidebar-item-level-2" to="/drops/">
-                      <div
-                        class="sidebar-item-level-2-container d-flex align-items-center"
-                      >
+                      <div class="sidebar-item-level-2-container d-flex align-items-center">
                         <div class="drop-image">
                           <IEcomm />
                         </div>
@@ -510,9 +372,7 @@
                       </div>
                     </g-link>
                     <g-link class="sidebar-item-level-2" to="/fast-custom/">
-                      <div
-                        class="sidebar-item-level-2-container d-flex align-items-center"
-                      >
+                      <div class="sidebar-item-level-2-container d-flex align-items-center">
                         <div class="drop-image">
                           <IEcomm />
                         </div>
@@ -533,30 +393,15 @@
           </b-sidebar>
 
           <!-- Sidebar for Company -->
-          <b-sidebar
-            id="sidebar-level-2-2"
-            class="w-100"
-            right
-            shadow
-            no-header
-            bg-variant="white"
-          >
+          <b-sidebar id="sidebar-level-2-2" class="w-100" right shadow no-header bg-variant="white">
             <template v-slot:default="{ hide }">
               <div class="sidebar-container-2">
                 <!-- Content -->
                 <div class="row no-gutters align-items-stretch nowrap mb-2">
-                  <div class="sidebar-item-level-2-title" @click="hide">
-                    <b-icon icon="arrow-left-short" class="mr-2" />Company
-                  </div>
+                  <div class="sidebar-item-level-2-title" @click="hide"><b-icon icon="arrow-left-short" class="mr-2" />Company</div>
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Company</b-dropdown-header
-                    >
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/about/"
-                      @click="hide"
-                    >
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Company</b-dropdown-header>
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/about/" @click="hide">
                       <div class="drop-image-sm">
                         <IAbout />
                       </div>
@@ -574,21 +419,13 @@
                       <div class="drop-text">Sustainability</div>
                     </g-link>-->
 
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/careers/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/careers/" @click="hide">
                       <div class="drop-image-sm">
                         <ICareer />
                       </div>
                       <div class="drop-text">Careers</div>
                     </g-link>
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/press/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/press/" @click="hide">
                       <div class="drop-image-sm">
                         <INews />
                       </div>
@@ -597,36 +434,22 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Partnerships</b-dropdown-header
-                    >
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/country-reps/"
-                      @click="hide"
-                    >
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Partnerships</b-dropdown-header>
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/country-reps/" @click="hide">
                       <div class="drop-image-sm">
                         <ICountryRep />
                       </div>
                       <div class="drop-text">Our Country Reps</div>
                     </g-link>
 
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/freelancers/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/freelancers/" @click="hide">
                       <div class="drop-image-sm">
                         <IFreelancers />
                       </div>
                       <div class="drop-text">Freelancers</div>
                     </g-link>
 
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/testimonials/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/testimonials/" @click="hide">
                       <div class="drop-image-sm">
                         <ITestimonial />
                       </div>
@@ -635,56 +458,34 @@
                   </div>
 
                   <div class="col col-12 mb-3">
-                    <b-dropdown-header class="sidebar-item-level-2-subtitle"
-                      >Support</b-dropdown-header
-                    >
-                    <div
-                      v-b-toggle.sidebar-level-1
-                      @click="launchMobile()"
-                      class="dropdown-item drop-title-singular d-flex align-items-center"
-                    >
+                    <b-dropdown-header class="sidebar-item-level-2-subtitle">Support</b-dropdown-header>
+                    <div v-b-toggle.sidebar-level-1 @click="launchMobile()" class="dropdown-item drop-title-singular d-flex align-items-center">
                       <div class="drop-image-sm">
                         <IHow />
                       </div>
                       <div class="drop-text">FAQ</div>
                     </div>
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/how-it-works/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/how-it-works/" @click="hide">
                       <div class="drop-image-sm">
                         <IVideo />
                       </div>
                       <div class="drop-text">Video Tutorials</div>
                     </g-link>
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/contact/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/contact/" @click="hide">
                       <div class="drop-image-sm">
                         <IContact />
                       </div>
                       <div class="drop-text">Contact Us</div>
                     </g-link>
 
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/privacy/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/privacy/" @click="hide">
                       <div class="drop-image-sm">
                         <IPrivacy />
                       </div>
                       <div class="drop-text">Privacy</div>
                     </g-link>
 
-                    <g-link
-                      class="sidebar-item-level-2 d-flex align-items-center"
-                      to="/terms-conditions/"
-                      @click="hide"
-                    >
+                    <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/terms-conditions/" @click="hide">
                       <div class="drop-image-sm">
                         <ITerms />
                       </div>
@@ -706,14 +507,7 @@
 import { BNavbar, BNavbarNav } from 'bootstrap-vue';
 import Data from '~/_settings/announce.json';
 
-import {
-  BIcon,
-  BIconChevronDown,
-  BIconArrowRightShort,
-  BDropdownHeader,
-  BDropdownDivider,
-  BIconArrowLeftShort,
-} from 'bootstrap-vue';
+import { BIcon, BIconChevronDown, BIconArrowRightShort, BDropdownHeader, BDropdownDivider, BIconArrowLeftShort } from 'bootstrap-vue';
 
 import Logo from '@/components/icons/Logo';
 import Slogan from '@/components/icons/Slogan';
@@ -790,8 +584,7 @@ export default {
       },
       fastc: {
         title: 'Fast Custom (coming soon)',
-        subtitle:
-          'Order directly from factories in low MOQs & short lead-times',
+        subtitle: 'Order directly from factories in low MOQs & short lead-times',
       },
       supply: {
         title: 'Supply Chain Solutions',
@@ -799,13 +592,11 @@ export default {
       },
       carbon: {
         title: 'Carbon Offset Solution (coming soon)',
-        subtitle:
-          'Offset the carbon emissions of your airfreight with our unique solution. Take a sneak peek here.',
+        subtitle: 'Offset the carbon emissions of your airfreight with our unique solution. Take a sneak peek here.',
       },
       drops: {
         title: 'Drops',
-        subtitle:
-          'Sophisticated products in low MOQs for immediate or quick deliveries',
+        subtitle: 'Sophisticated products in low MOQs for immediate or quick deliveries',
       },
       cta: {
         main: 'Register',
@@ -969,10 +760,8 @@ export default {
   pointer-events: none;
   -webkit-transform: translateY(-0.8em);
   transform: translateY(-0.8em);
-  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 10ms;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
-    z-index 0s linear 10ms;
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 10ms;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 10ms;
 
   background-color: white;
   flex-direction: row;

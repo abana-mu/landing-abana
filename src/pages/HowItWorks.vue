@@ -8,20 +8,18 @@
         </p>
       </div>
       <section class="section-content">
-        <div
-          v-for="category in Data.categories"
-          :key="category.title"
-          class="mb-5"
-        >
+        <div v-for="category in Data.categories" :key="category.title" class="mb-5">
           <h3 class="how-title mb-3">{{ category.title }}</h3>
-          <div
-            v-for="(tutorial, index) in category.tutorial"
-            :key="tutorial.title"
-            class="how-collapse"
-          >
+          <div v-for="(tutorial, index) in category.tutorial" :key="tutorial.title" class="how-collapse">
             <span v-b-toggle="category.title + index">
               {{ tutorial.title }}
-              <BIconChevronDown class="ml-3" />
+              <!-- Chevron-Down -->
+              <svg class="h-5 w-5 ml-3 inline-flex" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
             </span>
 
             <b-collapse :id="category.title + index" class="mt-2">
@@ -47,23 +45,20 @@
 </template>
 
 <script>
-import Data from "~/_settings/tutorials.json";
-import { BCollapse } from "bootstrap-vue";
-import { BIcon, BIconChevronDown } from "bootstrap-vue";
+import Data from '~/_settings/tutorials.json';
+import { BCollapse } from 'bootstrap-vue';
 
 export default {
   components: {
     BCollapse,
-    BIcon,
-    BIconChevronDown,
   },
   metaInfo: {
-    title: "How it Works",
+    title: 'How it Works',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.",
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
     ],
   },
@@ -104,16 +99,6 @@ export default {
     margin: 1rem auto;
     width: 100%;
     max-width: 800px;
-  }
-}
-
-.b-icon {
-  transition: all ease 0.2s;
-}
-
-.not-collapsed {
-  .b-icon {
-    transform: rotate(180deg);
   }
 }
 </style>

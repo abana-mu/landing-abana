@@ -11,12 +11,7 @@
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group
-              class="periods"
-              v-model="selected"
-              :options="periods"
-              name="radio-buyers"
-            ></b-form-radio-group>
+            <b-form-radio-group class="periods" v-model="selected" :options="periods" name="radio-buyers"></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
@@ -34,14 +29,10 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
-                <b-button
-                  v-b-toggle="'accordion-' + card.name"
-                  variant="text"
-                  class="see-all d-block d-md-none"
-                >
+                <a v-b-toggle="'accordion-' + card.name" class="see-all d-block d-md-none">
                   See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
-                </b-button>
+                </a>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
                   <TableMob :data="Plans.buyer" :type="card.name" user="buyer" />
                 </b-collapse>
@@ -72,12 +63,7 @@
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group
-              class="periods"
-              v-model="selected"
-              :options="periods"
-              name="radio-suppliers"
-            ></b-form-radio-group>
+            <b-form-radio-group class="periods" v-model="selected" :options="periods" name="radio-suppliers"></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
@@ -95,14 +81,10 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
-                <b-button
-                  v-b-toggle="'accordion-' + card.name"
-                  variant="text"
-                  class="see-all d-block d-md-none"
-                >
+                <a v-b-toggle="'accordion-' + card.name" variant="text" class="see-all d-block d-md-none">
                   See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
-                </b-button>
+                </a>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
                   <TableMob :data="Plans.supplier" :type="card.name" user="supplier" />
                 </b-collapse>
@@ -113,12 +95,11 @@
           <b-card class="back-white mt-3 mb-5 support-creators">
             <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you have skills relevant to the Textile & Apparel eco-system
-              (design, technical, advisory, etc.) become part of the ABANA
-              network. Our network will open a wide range of new opportunities.
+              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
+              Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
-              <b-button variant="outline-primary">See more</b-button>
+              <div class="btn btn-ghost">See more</div>
             </g-link>
           </b-card>
           <!-- TABLE -->
@@ -142,12 +123,7 @@
           <!-- RADIO -->
           <div class="billed justify-content-center d-flex back-blue">
             <p class="pl-sm-5 pr-sm-4">Billed every:</p>
-            <b-form-radio-group
-              class="periods"
-              v-model="selected"
-              :options="periods"
-              name="radio-service"
-            ></b-form-radio-group>
+            <b-form-radio-group class="periods" v-model="selected" :options="periods" name="radio-service"></b-form-radio-group>
           </div>
           <!-- CARDS -->
           <b-card-group deck class="mt-5 mb-5 card-container mx-auto">
@@ -165,14 +141,10 @@
                     <span>{{ feature }}</span>
                   </li>
                 </ul>
-                <b-button
-                  v-b-toggle="'accordion-' + card.name"
-                  variant="text"
-                  class="see-all d-block d-md-none"
-                >
+                <a v-b-toggle="'accordion-' + card.name" class="see-all d-block d-md-none">
                   See All Features
                   <b-icon icon="chevron-down" class="ml-2" scale=".6" />
-                </b-button>
+                </a>
                 <b-collapse :id="'accordion-' + card.name" class="mt-2">
                   <TableMob :data="Plans.supplier" :type="card.name" user="service" />
                 </b-collapse>
@@ -184,12 +156,11 @@
           <b-card class="back-white mt-3 mb-5 support-creators">
             <b-card-title>We support independent freelancers</b-card-title>
             <b-card-text>
-              If you have skills relevant to the Textile & Apparel eco-system
-              (design, technical, advisory, etc.) become part of the ABANA
-              network. Our network will open a wide range of new opportunities.
+              If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.
+              Our network will open a wide range of new opportunities.
             </b-card-text>
             <g-link to="/freelancers">
-              <b-button variant="outline-primary">See More</b-button>
+              <div class="btn btn-ghost">See more</div>
             </g-link>
           </b-card>
 
@@ -215,17 +186,12 @@
 </template>
 
 <script>
-import Data from "~/_settings/pricing.json";
-import Plans from "~/_settings/plans.json";
-import Table from "~/components/PricingPlanTable";
-import TableMob from "~/components/PricingPlanTableMob";
-import {
-  BIcon,
-  BIconCheckCircle,
-  BIconChevronDown,
-  BIconChevronUp
-} from "bootstrap-vue";
-import { BCollapse } from "bootstrap-vue";
+import Data from '~/_settings/pricing.json';
+import Plans from '~/_settings/plans.json';
+import Table from '~/components/PricingPlanTable';
+import TableMob from '~/components/PricingPlanTableMob';
+import { BIcon, BIconCheckCircle, BIconChevronDown, BIconChevronUp } from 'bootstrap-vue';
+import { BCollapse } from 'bootstrap-vue';
 
 export default {
   components: {
@@ -235,31 +201,31 @@ export default {
     BIconChevronDown,
     BIconChevronUp,
     Table,
-    TableMob
+    TableMob,
   },
   metaInfo: {
-    title: "Pricing",
+    title: 'Pricing',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business."
-      }
-    ]
+          'Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business.',
+      },
+    ],
   },
   data() {
     return {
       visible: false,
       Data,
       Plans,
-      selected: "price12",
+      selected: 'price12',
       periods: [
-        { text: "12 months", value: "price12" },
-        { text: "6 months", value: "price6" }
+        { text: '12 months', value: 'price12' },
+        { text: '6 months', value: 'price6' },
         //{ text: '3 months', value: 'price3' },
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -348,7 +314,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: "";
+    content: '';
     height: 10px;
     left: 0;
     position: absolute;

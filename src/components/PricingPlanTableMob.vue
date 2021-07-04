@@ -1,17 +1,9 @@
 <!-- HTML -->
 <template>
   <div>
-    <div
-      v-for="(categories, index) in data.categories"
-      class="category-container"
-      :key="index + 'cat-mob'"
-    >
+    <div v-for="(categories, index) in data.categories" class="category-container" :key="index + 'cat-mob'">
       <div class="plan-category-title">{{ categories.title }}</div>
-      <div
-        v-for="(features, index) in categories.features"
-        :key="index + 'mob'"
-        class="plan-feature"
-      >
+      <div v-for="(features, index) in categories.features" :key="index + 'mob'" class="plan-feature">
         <div class="plan-feature-title">
           {{ features.title }}
           <BIconQuestionCircleFill
@@ -29,92 +21,36 @@
         </div>
         <div class="plan-feature-plans d-flex flex-row">
           <div class="feature-plans-options col" v-if="type === 'Basic'">
-            <b-icon
-              v-if="features.plans.basic === true"
-              icon="check-circle"
-              aria-hidden="true"
-              variant="success"
-              font-scale="1.2"
-            ></b-icon>
-            <div
-              class="icon-no-container"
-              v-else-if="features.plans.basic === false"
-            >
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
+            <b-icon v-if="features.plans.basic === true" icon="check-circle" aria-hidden="true" variant="success" font-scale="1.2"></b-icon>
+            <div class="icon-no-container" v-else-if="features.plans.basic === false">
+              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
             </div>
             <div v-else class="text-success">
               {{ features.plans.basic }}
             </div>
           </div>
           <div class="feature-plans-options col" v-else-if="type === 'Member'">
-            <b-icon
-              v-if="features.plans.member === true"
-              icon="check-circle"
-              aria-hidden="true"
-              variant="success"
-              font-scale="1.2"
-            ></b-icon>
-            <div
-              class="icon-no-container"
-              v-else-if="features.plans.member === false"
-            >
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
+            <b-icon v-if="features.plans.member === true" icon="check-circle" aria-hidden="true" variant="success" font-scale="1.2"></b-icon>
+            <div class="icon-no-container" v-else-if="features.plans.member === false">
+              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
             </div>
             <div v-else class="text-success">
               {{ features.plans.member }}
             </div>
           </div>
           <div class="feature-plans-options col" v-else-if="type === 'Growth'">
-            <b-icon
-              v-if="features.plans.growth === true"
-              icon="check-circle"
-              aria-hidden="true"
-              variant="success"
-              font-scale="1.2"
-            ></b-icon>
-            <div
-              class="icon-no-container"
-              v-else-if="features.plans.growth === false"
-            >
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
+            <b-icon v-if="features.plans.growth === true" icon="check-circle" aria-hidden="true" variant="success" font-scale="1.2"></b-icon>
+            <div class="icon-no-container" v-else-if="features.plans.growth === false">
+              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
             </div>
             <div v-else class="text-success">
               {{ features.plans.growth }}
             </div>
           </div>
           <div class="feature-plans-options col" v-else>
-            <b-icon
-              v-if="features.plans.pro === true"
-              icon="check-circle"
-              aria-hidden="true"
-              variant="success"
-              font-scale="1.2"
-            ></b-icon>
-            <div
-              class="icon-no-container"
-              v-else-if="features.plans.pro === false"
-            >
-              <b-icon
-                icon="x-circle"
-                aria-hidden="true"
-                class="icon-no"
-                font-scale="1.2"
-              ></b-icon>
+            <b-icon v-if="features.plans.pro === true" icon="check-circle" aria-hidden="true" variant="success" font-scale="1.2"></b-icon>
+            <div class="icon-no-container" v-else-if="features.plans.pro === false">
+              <b-icon icon="x-circle" aria-hidden="true" class="icon-no" font-scale="1.2"></b-icon>
             </div>
             <div v-else class="text-success">
               {{ features.plans.pro }}
@@ -128,12 +64,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import {
-  BIcon,
-  BIconCheckCircle,
-  BIconXCircle,
-  BIconQuestionCircleFill,
-} from 'bootstrap-vue';
+import { BIcon, BIconCheckCircle, BIconXCircle, BIconQuestionCircleFill } from 'bootstrap-vue';
 
 export default {
   components: {
