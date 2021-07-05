@@ -6,10 +6,14 @@
       </div>
 
       <div class="back-grey">
-        <b-row class="freelancer-container-card bordered">
-          <b-col class="contact-card">
+        <div class="freelancer-container-card bordered">
+          <div class="contact-card">
             <h3 class="mb-3 text-center">{{ Data.subtitle }}</h3>
-            <vue-simple-markdown v-if="Data.content" :source="Data.content" class="text mt-4 text-center"></vue-simple-markdown>
+            <vue-simple-markdown
+              v-if="Data.content"
+              :source="Data.content"
+              class="text mt-4 text-center"
+            ></vue-simple-markdown>
             <div class="mt-4 text-center w-100">
               <a
                 href="mailto:support@abana.mu?cc=arif.currimjee@gmail.com,dirk.robens@abana.mu&subject=ABANA | Freelancer Application&body=(Please attach your CV)"
@@ -19,8 +23,8 @@
                 </div>
               </a>
             </div>
-          </b-col>
-        </b-row>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>

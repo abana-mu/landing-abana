@@ -5,8 +5,8 @@
     </div>
 
     <div class="content mt-5 overflow-hidden">
-      <b-row>
-        <b-col class="col-4 px-1 px-md-2">
+      <div>
+        <div class="col-4 px-1 px-md-2">
           <g-image
             src="~/assets/images/picture7.jpg"
             blur="40"
@@ -14,8 +14,8 @@
             immediate="false"
             quality="100"
           ></g-image>
-        </b-col>
-        <b-col class="col-4 px-1 px-md-2">
+        </div>
+        <div class="col-4 px-1 px-md-2">
           <g-image
             src="~/assets/images/picture9.jpg"
             blur="40"
@@ -23,8 +23,8 @@
             immediate="false"
             quality="100"
           ></g-image>
-        </b-col>
-        <b-col class="col-4 px-1 px-md-2">
+        </div>
+        <div class="col-4 px-1 px-md-2">
           <g-image
             src="~/assets/images/picture8.jpg"
             blur="40"
@@ -32,8 +32,8 @@
             immediate="false"
             quality="100"
           ></g-image>
-        </b-col>
-      </b-row>
+        </div>
+      </div>
 
       <section class="mt-5 section-content anchor-links">
         <p class="text-center semi-spaced mb-5 text-small">

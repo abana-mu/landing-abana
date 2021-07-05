@@ -7,41 +7,31 @@
         <div class="image-banner"></div>
       </div>
 
-      <section class="back-grey d-none d-sm-block bordered">
-        <b-tabs align="center" class="country-rep-tab" lazy>
-          <div v-for="(country, index) in Count" :key="index">
-            <b-tab v-if="country.data[0]" :title="country.name">
-              <div class="rep-container">
-                <b-row no-gutters>
-                  <b-col
-                    v-for="(reps, index) in country.data"
-                    :key="index"
-                    cols="12"
-                    md="6"
-                  >
-                    <RepCard :data="reps" />
-                  </b-col>
-                </b-row>
-              </div>
-            </b-tab>
-          </div>
-        </b-tabs>
-      </section>
-
-      <div v-for="(country, index) in Count" :key="index" class="d-sm-none">
-        <div v-if="country.data[0]" class="rep-container">
-          <h2 class="text-center">{{ country.name }}</h2>
-          <b-row no-gutters>
-            <b-col
-              v-for="(reps, index) in country.data"
-              :key="index"
-              cols="12"
-              md="6"
+      <div id="tabs" class="mx-auto">
+        <div
+          class="bg-secondary-400 grid grid-cols-2 gap-4 sm:gap-0 sm:flex sm:flex-row justify-center py-4"
+        >
+          <a
+            class="btn-price text-center"
+            v-on:click="activetab = index"
+            v-bind:class="[activetab === index ? 'active' : '']"
+            v-for="(count, index) in Count"
+            :key="count.index"
+          >
+            {{ count.name }}
+          </a>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <div v-for="(tab, index) in Count" :key="index">
+            <div
+              v-if="activetab === index"
+              class="grid grid-cols-1 md:grid-cols-2"
             >
-              <RepCard :data="reps" />
-            </b-col>
-          </b-row>
-          <String2 />
+              <div v-for="reps in tab.data" :key="reps.name">
+                <RepCard :data="reps" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -49,22 +39,22 @@
 </template>
 
 <script>
-import Data from "~/_settings/countryreps.json";
-import EUData from "~/_settings/eureps.json";
-import AFData from "~/_settings/afreps.json";
-import AMData from "~/_settings/amreps.json";
-import ASData from "~/_settings/asreps.json";
-import RepCard from "~/components/RepCard";
-import String2 from "~/components/icons/String2";
+import Data from '~/_settings/countryreps.json';
+import EUData from '~/_settings/eureps.json';
+import AFData from '~/_settings/afreps.json';
+import AMData from '~/_settings/amreps.json';
+import ASData from '~/_settings/asreps.json';
+import RepCard from '~/components/RepCard';
+import String2 from '~/components/icons/String2';
 
 export default {
   metaInfo: {
-    title: "Country Reps",
+    title: 'Country Reps',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Need help with onboarding or general services? Our network of country representatives is ever-growing and offers support services in the main producing and buying markets. Find a rep near you!",
+          'Need help with onboarding or general services? Our network of country representatives is ever-growing and offers support services in the main producing and buying markets. Find a rep near you!',
       },
     ],
   },
@@ -76,11 +66,12 @@ export default {
     return {
       Data,
       Count: [
-        { name: "Europe", data: EUData.reps },
-        { name: "Africa", data: AFData.reps },
-        { name: "America", data: AMData.reps },
-        { name: "Asia", data: ASData.reps },
+        { name: 'Europe', data: EUData.reps },
+        { name: 'Africa', data: AFData.reps },
+        { name: 'America', data: AMData.reps },
+        { name: 'Asia', data: ASData.reps },
       ],
+      activetab: 0,
     };
   },
 };

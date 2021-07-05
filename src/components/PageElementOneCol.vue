@@ -1,18 +1,22 @@
 <!-- HTML -->
 <template>
   <div class="col-container">
-    <b-row no-gutters class="one-col">
-      <b-col cols="12" class="offset p-0">
+    <div no-gutters class="one-col">
+      <div cols="12" class="offset p-0">
         <h2 class="spaced">{{ data.title }}</h2>
         <p class="subtitle">{{ data.subtext }}</p>
-        <vue-simple-markdown v-if="data.content" :source="data.content" class="text mt-4"></vue-simple-markdown>
-      </b-col>
-      <b-col v-if="data.image" cols="12" class="text-center">
+        <vue-simple-markdown
+          v-if="data.content"
+          :source="data.content"
+          class="text mt-4"
+        ></vue-simple-markdown>
+      </div>
+      <div v-if="data.image" cols="12" class="text-center">
         <div class="image-banner">
           <g-image :src="data.image" quality="100" blur="40" width="750" />
         </div>
-      </b-col>
-    </b-row>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,8 +25,8 @@
 export default {
   props: {
     data: Object,
-    image: Boolean
-  }
+    image: Boolean,
+  },
 };
 </script>
 
@@ -31,7 +35,7 @@ export default {
 </page-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .one-col {
   //margin-top: 150px;
 

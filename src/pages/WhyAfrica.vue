@@ -5,20 +5,34 @@
     </div>
 
     <div class="content mt-5 overflow-hidden">
-      <b-row>
-        <b-col class="col-4 px-1 px-md-2">
-          <g-image src="~/assets/images/picture3-c.jpg" blur="40" class="w-100"></g-image>
-        </b-col>
-        <b-col class="col-4 px-1 px-md-2">
-          <g-image src="~/assets/images/picture2-c.jpg" blur="40" class="w-100"></g-image>
-        </b-col>
-        <b-col class="col-4 px-1 px-md-2">
-          <g-image src="~/assets/images/picture1-c.jpg" blur="40" class="w-100"></g-image>
-        </b-col>
-      </b-row>
+      <div>
+        <div class="col-4 px-1 px-md-2">
+          <g-image
+            src="~/assets/images/picture3-c.jpg"
+            blur="40"
+            class="w-100"
+          ></g-image>
+        </div>
+        <div class="col-4 px-1 px-md-2">
+          <g-image
+            src="~/assets/images/picture2-c.jpg"
+            blur="40"
+            class="w-100"
+          ></g-image>
+        </div>
+        <div class="col-4 px-1 px-md-2">
+          <g-image
+            src="~/assets/images/picture1-c.jpg"
+            blur="40"
+            class="w-100"
+          ></g-image>
+        </div>
+      </div>
 
       <section class="mt-5 section-content anchor-links">
-        <p class="text-center semi-spaced mb-5 text-small">EXPLORE OUR VALUES</p>
+        <p class="text-center semi-spaced mb-5 text-small">
+          EXPLORE OUR VALUES
+        </p>
         <ul>
           <li>
             <a href="#economic">Economic</a>
@@ -51,30 +65,30 @@
 </template>
 
 <script>
-import Data from "~/_settings/whyafrica.json";
-import TwoCol from "~/components/PageElementTwoCol";
-import OneCol from "~/components/PageElementOneCol";
+import Data from '~/_settings/whyafrica.json';
+import TwoCol from '~/components/PageElementTwoCol';
+import OneCol from '~/components/PageElementOneCol';
 
 export default {
   components: {
     TwoCol,
-    OneCol
+    OneCol,
   },
   metaInfo: {
-    title: "Why Africa",
+    title: 'Why Africa',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "ABANA is firstly Africa. The continent is on the verge of a resurgence and we are committed to helping the textile and apparel industry thrive in the region."
-      }
-    ]
+          'ABANA is firstly Africa. The continent is on the verge of a resurgence and we are committed to helping the textile and apparel industry thrive in the region.',
+      },
+    ],
   },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
 };
 </script>
 
@@ -107,15 +121,15 @@ export default {
 }
 
 #economic .image {
-  background-image: url("~@/assets/images/picture1-b.jpg");
+  background-image: url('~@/assets/images/picture1-b.jpg');
 }
 
 #social .image {
-  background-image: url("~@/assets/images/picture3-b.jpg");
+  background-image: url('~@/assets/images/picture3-b.jpg');
 }
 
 #environmental .image {
-  background-image: url("~@/assets/images/picture2-b.jpg");
+  background-image: url('~@/assets/images/picture2-b.jpg');
 
   @media (min-width: $break-xl) {
     background-position-y: 100%;

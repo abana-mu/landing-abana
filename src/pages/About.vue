@@ -6,44 +6,69 @@
     </div>
     <String2 />
     <section>
-      <b-container fluid>
-        <b-row class="about-row">
-          <b-col cols="12" lg>
+      <div>
+        <div class="about-row">
+          <div cols="12" lg>
             <div class="about-image-container">
-              <g-image immediate src="~/assets/images/arif.png" quality="90" blur="40" />
+              <g-image
+                immediate
+                src="~/assets/images/arif.png"
+                quality="90"
+                blur="40"
+              />
             </div>
-          </b-col>
-          <b-col cols="12" lg>
-            <h2 class="mb-3">Arif Currimjee - <span class="text-primary">Founder</span></h2>
-            <vue-simple-markdown :source="Data.arif" class="about-text"></vue-simple-markdown>
-          </b-col>
-        </b-row>
+          </div>
+          <div cols="12" lg>
+            <h2 class="mb-3">
+              Arif Currimjee - <span class="text-primary">Founder</span>
+            </h2>
+            <vue-simple-markdown
+              :source="Data.arif"
+              class="about-text"
+            ></vue-simple-markdown>
+          </div>
+        </div>
         <String1 />
-        <b-row class="about-row">
-          <b-col cols="12" lg order-lg="1">
+        <div class="about-row">
+          <div cols="12" lg order-lg="1">
             <div class="about-image-container">
-              <g-image immediate src="~/assets/images/dirk.png" quality="90" blur="40" />
+              <g-image
+                immediate
+                src="~/assets/images/dirk.png"
+                quality="90"
+                blur="40"
+              />
             </div>
-          </b-col>
-          <b-col cols="12" lg>
+          </div>
+          <div cols="12" lg>
             <h2 class="mb-3">Dirk Robens - <span class="blue">CEO</span></h2>
-            <vue-simple-markdown :source="Data.dirk" class="about-text"></vue-simple-markdown
-          ></b-col>
-        </b-row>
-      </b-container>
+            <vue-simple-markdown
+              :source="Data.dirk"
+              class="about-text"
+            ></vue-simple-markdown>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section v-for="(row, index) in Data.elements" :key="index" class="about-container">
-      <b-row>
-        <b-col cols="12" md="4">
+    <section
+      v-for="(row, index) in Data.elements"
+      :key="index"
+      class="about-container"
+    >
+      <div>
+        <div cols="12" md="4">
           <h2 class="spaced">{{ row.title }}</h2>
-        </b-col>
-        <b-col cols="12" md="8">
+        </div>
+        <div cols="12" md="8">
           <p>
-            <vue-simple-markdown :source="row.subtext" class="about-text"></vue-simple-markdown>
+            <vue-simple-markdown
+              :source="row.subtext"
+              class="about-text"
+            ></vue-simple-markdown>
           </p>
-        </b-col>
-      </b-row>
+        </div>
+      </div>
     </section>
 
     <div class="image-container">

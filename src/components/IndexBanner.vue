@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <b-container fluid class="overflow-hidden">
+  <div class="overflow-hidden">
     <div id="header-banner">
       <div class="row">
         <div class="col">
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </b-container>
+  </div>
 </template>
 
 <!-- SCRIPTS -->

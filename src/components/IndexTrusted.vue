@@ -15,8 +15,8 @@
       >
         <b-carousel-slide v-for="n in Math.ceil(data.length / 4)" :key="n">
           <div class="logo-container">
-            <b-row>
-              <b-col
+            <div>
+              <div
                 class="trusted-logos"
                 v-for="logo in range(n)"
                 :key="logo.name"
@@ -31,8 +31,8 @@
                     :alt="logo.title"
                   />
                 </a>
-              </b-col>
-            </b-row>
+              </div>
+            </div>
           </div>
         </b-carousel-slide>
       </b-carousel>

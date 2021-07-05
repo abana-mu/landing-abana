@@ -1,17 +1,21 @@
 <!-- HTML -->
 <template>
-  <b-container fluid class="my-5">
-    <b-row>
-      <b-col>
+  <div class="my-5">
+    <div>
+      <div>
         <div class="svg-container-drop">
           <Drop />
         </div>
-      </b-col>
+      </div>
 
-      <b-col cols="12" lg="6" order="1" order-lg="0" class="flow-section section-container">
+      <div class="flow-section section-container">
         <h3 class="title mb-3">{{ data.title }}</h3>
         <p>{{ data.subtext }}</p>
-        <g-link class="inline-flex items-center group" v-if="data.page" :to="data.page">
+        <g-link
+          class="inline-flex items-center group"
+          v-if="data.page"
+          :to="data.page"
+        >
           {{ data.link }}
           <!-- Arrow right-short -->
           <svg
@@ -28,22 +32,22 @@
             />
           </svg>
         </g-link>
-      </b-col>
-    </b-row>
-  </b-container>
+      </div>
+    </div>
+  </div>
 </template>
 
 <!-- SCRIPTS -->
 <script>
-import Drop from "~/components/icons/Drop";
+import Drop from '~/components/icons/Drop';
 
 export default {
   components: {
-    Drop
+    Drop,
   },
   props: {
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 

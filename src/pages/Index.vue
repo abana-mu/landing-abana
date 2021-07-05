@@ -1,7 +1,11 @@
 <template>
   <Layout class="index-layout">
     <!-- HEADER -->
-    <IndexBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" />
+    <IndexBanner
+      :title="Data.header.title"
+      :subtext="Data.header.subtext"
+      :cta="Data.header.cta"
+    />
 
     <!-- Trusted By --
 
@@ -9,8 +13,8 @@
       <h4 class="m-0 mr-5">Trusted by:</h4>
 
       <div class="logo-container">
-        <b-row>
-          <b-col
+        <div>
+          <div
             class="trusted-logos"
             v-for="logo in Data.trusted"
             :key="logo.title"
@@ -25,8 +29,8 @@
                 :alt="logo.title"
               />
             </a>
-          </b-col>
-        </b-row>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -36,22 +40,28 @@
 
     <!-- BOX -->
     <div class="back-grey overflow-hidden bordered my-4 py-4">
-      <b-container fluid class="box-container">
+      <div class="box-container">
         <div class="box">
           <h2 class="title">{{ Data.boxes.header.title }}</h2>
           <p class="subtitle">{{ Data.boxes.header.subtext }}</p>
 
-          <b-container class="examples">
-            <b-row>
-              <b-col v-for="(box, index) in Data.boxes.boxes" :key="box.title" cols="12" md="6" class="box-item">
+          <div class="examples">
+            <div>
+              <div
+                v-for="(box, index) in Data.boxes.boxes"
+                :key="box.title"
+                cols="12"
+                md="6"
+                class="box-item"
+              >
                 <component :is="index" class="box-image"></component>
                 <div class="box-text">
                   <h4>{{ box.title }}</h4>
                   <p class="box-item-text">{{ box.content }}</p>
                 </div>
-              </b-col>
-            </b-row>
-          </b-container>
+              </div>
+            </div>
+          </div>
 
           <div class="box-button">
             <g-link to="/why-africa">
@@ -59,7 +69,7 @@
             </g-link>
           </div>
         </div>
-      </b-container>
+      </div>
     </div>
 
     <!-- FLOW -->
@@ -76,13 +86,17 @@
     </div>
 
     <div class="back-grey overflow-hidden bordered mt-4 py-4">
-      <b-container fluid class="box-container">
+      <div class="box-container">
         <div class="box">
           <h2 class="title mb-5">Leading voices of the Industry</h2>
 
-          <b-container class="examples">
-            <b-row class="box-row">
-              <b-col class="box-item" v-for="testi in $page.posts.edges" :key="testi.id">
+          <div class="examples">
+            <div class="box-row">
+              <div
+                class="box-item"
+                v-for="testi in $page.posts.edges"
+                :key="testi.id"
+              >
                 <p class="blurb">"{{ testi.node.blurb }}"</p>
                 <div class="testi-person">
                   <div class="box-image">
@@ -96,9 +110,9 @@
                     </div>
                   </div>
                 </div>
-              </b-col>
-            </b-row>
-          </b-container>
+              </div>
+            </div>
+          </div>
 
           <div class="box-button">
             <g-link to="/testimonials">
@@ -106,7 +120,7 @@
             </g-link>
           </div>
         </div>
-      </b-container>
+      </div>
     </div>
   </Layout>
 </template>

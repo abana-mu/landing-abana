@@ -33,4 +33,12 @@
   .btn-secondary {
     @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-white bg-secondary-400 hover:bg-secondary-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-200 transition;
   }
+
+  .btn-price {
+    @apply border border-secondary-300 cursor-pointer hover:border-primary-300 hover:bg-primary-300 hover:bg-opacity-10 hover:border-opacity-50 px-4 py-2 mx-2.5 rounded-xl uppercase text-light-400 text-lg;
+  }
+
+  .btn-price.active {
+    @apply bg-primary-300 bg-opacity-25 text-white border-primary border-opacity-70;
+  }
 }

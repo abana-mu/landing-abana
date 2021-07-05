@@ -2,15 +2,28 @@
 <template>
   <div>
     <div class="col-container">
-      <b-row v-for="(row, index) in data" :key="index" :id="index" no-gutters class="two-col">
-        <b-col lg class="column-text">
-          <b-col cols="11" lg="10" class="p-0">
+      <div
+        v-for="(row, index) in data"
+        :key="index"
+        :id="index"
+        no-gutters
+        class="two-col"
+      >
+        <div lg class="column-text">
+          <div cols="11" lg="10" class="p-0">
             <div class="col-headers">
               <h3>{{ row.title }}</h3>
               <p v-if="row.subtext">{{ row.subtext }}</p>
             </div>
-            <vue-simple-markdown :source="row.content" class="md-text"></vue-simple-markdown>
-            <g-link class="group inline-flex items-center" v-if="row.page" :to="row.page">
+            <vue-simple-markdown
+              :source="row.content"
+              class="md-text"
+            ></vue-simple-markdown>
+            <g-link
+              class="group inline-flex items-center"
+              v-if="row.page"
+              :to="row.page"
+            >
               {{ row.link }}
               <!-- Arrow right-short -->
               <svg
@@ -27,14 +40,14 @@
                 />
               </svg>
             </g-link>
-          </b-col>
-        </b-col>
-        <b-col lg class="column-image d-flex justify-content-center">
+          </div>
+        </div>
+        <div lg class="column-image d-flex justify-content-center">
           <div class="col-img-container">
             <g-image :src="row.image" quality="100" blur="40" width="750" />
           </div>
-        </b-col>
-      </b-row>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -43,8 +56,8 @@
 <script>
 export default {
   props: {
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 

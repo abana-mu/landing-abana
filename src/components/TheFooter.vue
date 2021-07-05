@@ -1,9 +1,9 @@
 <!-- HTML -->
 <template>
   <footer class="back-blue">
-    <b-container fluid>
-      <b-row>
-        <b-col lg>
+    <div>
+      <div>
+        <div lg>
           <div class="footer-logo">
             <div class="logo-container brand">
               <Logo />
@@ -36,18 +36,18 @@
               <Youtube />
             </a>
           </div>
-        </b-col>
-        <b-col>
-          <b-row class="mb-4 footer-links no-gutters">
-            <b-col cols="12" sm class="mb-4 mb-sm-0">
+        </div>
+        <div>
+          <div class="mb-4 footer-links no-gutters">
+            <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Product</div>
               <div class="d-flex flex-column text-small">
                 <g-link to="/how-it-works">How It Works</g-link>
                 <g-link to="/pricing">Pricing</g-link>
                 <g-link to="/why-africa">Why Africa</g-link>
               </div>
-            </b-col>
-            <b-col cols="12" sm class="mb-4 mb-sm-0">
+            </div>
+            <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Company</div>
               <div class="d-flex flex-column text-small">
                 <g-link to="/about">About</g-link>
@@ -55,21 +55,21 @@
                 <g-link to="/careers">Jobs</g-link>
                 <g-link to="/press">Press</g-link>
               </div>
-            </b-col>
-            <b-col cols="12" sm class="mb-4 mb-sm-0">
+            </div>
+            <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Resources</div>
               <div class="d-flex flex-column text-small">
                 <g-link to="/privacy">Privacy Policy</g-link>
                 <g-link to="/terms-conditions/">Terms & Conditions</g-link>
               </div>
-            </b-col>
-          </b-row>
-        </b-col>
-        <b-col cols="12" class="text-center mt-5">
+            </div>
+          </div>
+        </div>
+        <div cols="12" class="text-center mt-5">
           <p class="small-text">© 2021 ABANA</p>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 

@@ -1,11 +1,21 @@
 <!-- HTML -->
 <template>
-  <b-container fluid class="my-5">
-    <b-row>
-      <b-col cols="12" lg="6" order="1" order-lg="0" class="flow-section section-container">
+  <div class="my-5">
+    <div>
+      <div
+        cols="12"
+        lg="6"
+        order="1"
+        order-lg="0"
+        class="flow-section section-container"
+      >
         <h3 class="title mb-3">{{ data.title }}</h3>
         <p>{{ data.subtext }}</p>
-        <g-link class="group inline-flex items-center" v-if="data.page" :to="data.page">
+        <g-link
+          class="group inline-flex items-center"
+          v-if="data.page"
+          :to="data.page"
+        >
           {{ data.link }}
           <!-- Arrow right-short -->
           <svg
@@ -22,27 +32,27 @@
             />
           </svg>
         </g-link>
-      </b-col>
-      <b-col>
+      </div>
+      <div>
         <div class="svg-container">
           <Reps />
         </div>
-      </b-col>
-    </b-row>
-  </b-container>
+      </div>
+    </div>
+  </div>
 </template>
 
 <!-- SCRIPTS -->
 <script>
-import Reps from "~/components/icons/Reps";
+import Reps from '~/components/icons/Reps';
 
 export default {
   components: {
-    Reps
+    Reps,
   },
   props: {
-    data: Object
-  }
+    data: Object,
+  },
 };
 </script>
 

@@ -5,8 +5,8 @@
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
-      <b-row>
-        <b-col
+      <div>
+        <div
           cols="12"
           class="mb-5 p-3 testimonial-container"
           v-for="testi in $page.posts.edges"
@@ -36,8 +36,8 @@
               <g-image :src="testi.node.image" />
             </div>
           </div>
-        </b-col>
-      </b-row>
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
