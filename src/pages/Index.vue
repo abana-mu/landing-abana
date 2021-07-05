@@ -1,124 +1,76 @@
 <template>
   <Layout class="index-layout">
     <!-- HEADER -->
-    <IndexBanner
-      :title="Data.header.title"
-      :subtext="Data.header.subtext"
-      :cta="Data.header.cta"
-    />
-
-    <!-- Trusted By --
-
-    <div class="trusted my-4 py-4 pb-5">
-      <h4 class="m-0 mr-5">Trusted by:</h4>
-
-      <div class="logo-container">
-        <div>
-          <div
-            class="trusted-logos"
-            v-for="logo in Data.trusted"
-            :key="logo.title"
-            cols="6"
-            lg
-          >
-            <a :href="logo.link" target="_blank">
-              <g-image
-                :src="logo.image"
-                blur="40"
-                quality="100"
-                :alt="logo.title"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    -->
+    <IndexBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" class="contain" />
 
     <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" />
 
     <!-- BOX -->
-    <div class="back-grey overflow-hidden bordered my-4 py-4">
-      <div class="box-container">
-        <div class="box">
-          <h2 class="title">{{ Data.boxes.header.title }}</h2>
-          <p class="subtitle">{{ Data.boxes.header.subtext }}</p>
+    <div class="bg-gray-50 overflow-hidden border my-4 py-4">
+      <div class="py-8 rounded lg:p-12 text-center">
+        <h2 class="text-title font-medium text-3xl mb-4">{{ Data.boxes.header.title }}</h2>
+        <p class="text-caption text-lg">{{ Data.boxes.header.subtext }}</p>
 
-          <div class="examples">
-            <div>
-              <div
-                v-for="(box, index) in Data.boxes.boxes"
-                :key="box.title"
-                cols="12"
-                md="6"
-                class="box-item"
-              >
-                <component :is="index" class="box-image"></component>
-                <div class="box-text">
-                  <h4>{{ box.title }}</h4>
-                  <p class="box-item-text">{{ box.content }}</p>
-                </div>
+        <div class="py-4">
+          <div>
+            <div v-for="(box, index) in Data.boxes.boxes" :key="box.title" cols="12" md="6" class="flex flex-col items-center text-center p-0 max-w-2xl mx-auto mb-1 sm:px-4 md:px-8">
+              <component :is="index" class="h-24 w-24 rounded-full overflow-hidden mb-6"></component>
+              <div class="flex flex-col">
+                <h4 class="text-title text-xl font-medium mb-2">{{ box.title }}</h4>
+                <p class="m-0 max-w-lg">{{ box.content }}</p>
               </div>
             </div>
           </div>
-
-          <div class="box-button">
-            <g-link to="/why-africa">
-              <div class="btn btn-ghost">Why Africa?</div>
-            </g-link>
-          </div>
+        </div>
+        <div class="w-full flex justify-center">
+          <g-link to="/why-africa" class="btn btn-ghost">
+            Why Africa?
+          </g-link>
         </div>
       </div>
     </div>
 
     <!-- FLOW -->
-    <div class="py-4">
+    <div class="py-4 contain">
       <IndexFlowGraph :data="Data.flow" />
     </div>
 
-    <div class="pb-4">
+    <div class="pb-4 contain">
       <IndexDropGraph :data="Data.drop" />
     </div>
 
-    <div class="pb-4 mb-5">
+    <div class="pb-4 mb-5 contain">
       <IndexRepsGraph :data="Data.reps" />
     </div>
 
     <div class="back-grey overflow-hidden bordered mt-4 py-4">
-      <div class="box-container">
-        <div class="box">
-          <h2 class="title mb-5">Leading voices of the Industry</h2>
+      <div class="py-8 rounded lg:p-12">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-center mb-8">Leading voices of the Industry</h2>
 
-          <div class="examples">
-            <div class="box-row">
-              <div
-                class="box-item"
-                v-for="testi in $page.posts.edges"
-                :key="testi.id"
-              >
-                <p class="blurb">"{{ testi.node.blurb }}"</p>
-                <div class="testi-person">
-                  <div class="box-image">
-                    <g-image :src="testi.node.image" />
-                  </div>
-                  <div class="box-text">
-                    <h4 class="mb-1 font-weight-bold">{{ testi.node.name }}</h4>
-                    <div class="d-flex flex-column justify-content-center">
-                      <p class="mb-0">{{ testi.node.position }}</p>
-                      <p>{{ testi.node.title }}</p>
-                    </div>
+        <div class="py-4 max-w-screen-lg mx-auto">
+          <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col items-center text-center p-0 max-w-lg mx-auto mb-1 sm:px-4 md:px-8" v-for="testi in $page.posts.edges" :key="testi.id">
+              <p class="text-body text-xl italic bg-white px-4 pt-8 pb-16 border rounded">"{{ testi.node.blurb }}"</p>
+              <div class="-mt-14 flex flex-col items-center text-center">
+                <div class="h-24 w-24 rounded-full overflow-hidden mb-6">
+                  <g-image :src="testi.node.image" class="w-full h-full object-cover object-top" />
+                </div>
+                <div class="flex flex-col">
+                  <h4 class="mb-1 font-bold">{{ testi.node.name }}</h4>
+                  <div class="flex flex-col justify-content-center">
+                    <p class="mb-0">{{ testi.node.position }}</p>
+                    <p>{{ testi.node.title }}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="box-button">
-            <g-link to="/testimonials">
-              <div class="btn btn-ghost">See full testimonials</div>
-            </g-link>
-          </div>
+        <div class="w-full flex justify-center">
+          <g-link to="/testimonials" class="btn btn-ghost">
+            See full testimonials
+          </g-link>
         </div>
       </div>
     </div>
@@ -168,8 +120,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
     ],
   },
@@ -210,85 +161,11 @@ export default {
   text-align: center;
 }
 
-.examples {
-  padding: 1rem 0;
-}
-
-.blurb {
-  color: $text-body;
-  font-size: $f20;
-  font-style: italic;
-  background-color: white;
-  padding: 32px 16px 64px;
-  border-radius: 8px;
-  border: 1px solid $border;
-}
-.testi-person {
-  margin-top: -55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .box-row {
   display: flex;
   flex-direction: column;
   @media (min-width: $break-m) {
     flex-direction: row;
-  }
-}
-
-.box-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  max-width: 450px;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  @media (min-width: $break-m) {
-    padding: 0 2rem;
-  }
-  @media (min-width: $break-s) {
-    padding: 0 1rem;
-  }
-}
-
-.box-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.box-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-  }
-}
-
-.box-item-text {
-  max-width: 400px;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.box {
-  padding: 2rem 0;
-  border-radius: 3px;
-  .box-button {
-    text-align: center;
-  }
-  @media (min-width: $break-l) {
-    padding: 3rem 3rem;
   }
 }
 </style>

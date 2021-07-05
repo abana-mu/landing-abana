@@ -7,7 +7,6 @@ module.exports = {
         body: '#202c4f',
         title: '#0d183a',
         caption: '#737a96',
-
         primary: {
           DEFAULT: '#FF6158',
           100: '#FFF4F3',
@@ -40,6 +39,7 @@ module.exports = {
       },
       boxShadow: {
         glow: '0 3px 10px rgba(51, 62, 73, 0.18), 0 6px 17px rgba(51, 62, 73, 0.18)',
+        nav: 'inset 0 3px #ff6158',
       },
     },
   },

@@ -2,10 +2,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   color: $text-body;
-
-  @media (min-width: $break-s) {
-    font-size: $f18;
-  }
 }
 
 ::selection {
@@ -14,16 +10,6 @@ body {
 }
 
 //  --- TYPOGRAPHY ---
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $title-dark;
-  font-weight: 500;
-  line-height: 1.2;
-}
 
 h1 {
   // -576

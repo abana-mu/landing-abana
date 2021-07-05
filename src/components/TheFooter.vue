@@ -14,10 +14,7 @@
           </div>
           <p class="small-text mb-2">{{ Data.header.title }}</p>
           <div class="social">
-            <a
-              href="https://www.linkedin.com/company/abana-mauritius/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/company/abana-mauritius/" target="_blank">
               <Linkedin />
             </a>
 
@@ -29,10 +26,7 @@
             <a href="https://www.instagram.com/abana.mauritius" target="_blank">
               <Insta />
             </a>
-            <a
-              href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA" target="_blank">
               <Youtube />
             </a>
           </div>
@@ -41,7 +35,7 @@
           <div class="mb-4 footer-links no-gutters">
             <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Product</div>
-              <div class="d-flex flex-column text-small">
+              <div class="flex flex-col text-small">
                 <g-link to="/how-it-works">How It Works</g-link>
                 <g-link to="/pricing">Pricing</g-link>
                 <g-link to="/why-africa">Why Africa</g-link>
@@ -49,7 +43,7 @@
             </div>
             <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Company</div>
-              <div class="d-flex flex-column text-small">
+              <div class="flex flex-col text-small">
                 <g-link to="/about">About</g-link>
                 <g-link to="/contact">Contact</g-link>
                 <g-link to="/careers">Jobs</g-link>
@@ -58,7 +52,7 @@
             </div>
             <div cols="12" sm class="mb-4 mb-sm-0">
               <div class="footer-title">Resources</div>
-              <div class="d-flex flex-column text-small">
+              <div class="flex flex-col text-small">
                 <g-link to="/privacy">Privacy Policy</g-link>
                 <g-link to="/terms-conditions/">Terms & Conditions</g-link>
               </div>

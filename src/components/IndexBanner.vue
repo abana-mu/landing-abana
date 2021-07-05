@@ -15,13 +15,7 @@
               <div class="btn btn-primary">{{ cta }}</div>
             </g-link>
           </div>
-          <g-image
-            id="header-image"
-            src="~/assets/images/test1.png"
-            blur="40"
-            quality="100"
-            immediate
-          />
+          <g-image id="header-image" src="~/assets/images/test1.png" blur="40" quality="100" immediate />
         </div>
       </div>
     </div>
