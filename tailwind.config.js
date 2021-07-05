@@ -6,8 +6,7 @@ module.exports = {
       colors: {
         body: '#202c4f',
         title: '#0d183a',
-        icon: '#737a96',
-        subtitle: '#737a96',
+        caption: '#737a96',
 
         primary: {
           DEFAULT: '#FF6158',
@@ -39,11 +38,15 @@ module.exports = {
           500: '#94A3B8',
         },
       },
+      boxShadow: {
+        glow: '0 3px 10px rgba(51, 62, 73, 0.18), 0 6px 17px rgba(51, 62, 73, 0.18)',
+      },
     },
   },
   variants: {
     extend: {
       translate: ['group-hover'],
+      display: ['group-hover'],
     },
   },
   plugins: [],

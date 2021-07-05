@@ -1,5 +1,6 @@
 {
   "buyer": {
+    "title": "Buyers",
     "subs": [
       {
         "name": "Member",
@@ -7,10 +8,7 @@
         "price3": "$0",
         "price6": "$0",
         "price12": "$0",
-        "features": [
-          "Bi-monthly Drop Collections",
-          "QC & Compliance on purchases"
-        ]
+        "features": ["Bi-monthly Drop Collections", "QC & Compliance on purchases"]
       },
       {
         "name": "Basic",
@@ -26,11 +24,7 @@
         "price3": "$349/mo",
         "price6": "$219/mo",
         "price12": "$199/mo",
-        "features": [
-          "Advanced Profile & Search",
-          "Fast Custom",
-          "Advanced Services"
-        ]
+        "features": ["Advanced Profile & Search", "Fast Custom", "Advanced Services"]
       }
     ],
     "categories": [
@@ -206,6 +200,7 @@
     ]
   },
   "supplier": {
+    "title": "Suppliers",
     "subs": [
       {
         "name": "Basic",
@@ -213,12 +208,7 @@
         "price3": "$119/mo",
         "price6": "$109/mo",
         "price12": "$99/mo",
-        "features": [
-          "Profile & e-Showroom",
-          "Post Listings",
-          "View Buyer RFQs",
-          "Search Buyers & Sellers Database"
-        ]
+        "features": ["Profile & e-Showroom", "Post Listings", "View Buyer RFQs", "Search Buyers & Sellers Database"]
       },
       {
         "name": "Growth",
@@ -234,11 +224,7 @@
         "price3": "$349/mo",
         "price6": "$329/mo",
         "price12": "$299/mo",
-        "features": [
-          "Fast Custom",
-          "Online Critical Path",
-          "Corporate Discounts"
-        ]
+        "features": ["Fast Custom", "Online Critical Path", "Corporate Discounts"]
       }
     ],
     "categories": [
@@ -414,6 +400,7 @@
     ]
   },
   "service": {
+    "title": "Service Providers",
     "subs": [
       {
         "name": "Freelancer",
@@ -429,12 +416,7 @@
         "price3": "$119/mo",
         "price6": "$109/mo",
         "price12": "$99/mo",
-        "features": [
-          "Profile & e-Showroom",
-          "Post Listings",
-          "View Buyer RFQs",
-          "Search Buyers & Sellers Database"
-        ]
+        "features": ["Profile & e-Showroom", "Post Listings", "View Buyer RFQs", "Search Buyers & Sellers Database"]
       },
       {
         "name": "Growth",
@@ -450,11 +432,7 @@
         "price3": "$349/mo",
         "price6": "$329/mo",
         "price12": "$299/mo",
-        "features": [
-          "Fast Custom",
-          "Online Critical Path",
-          "Corporate Discounts"
-        ]
+        "features": ["Fast Custom", "Online Critical Path", "Corporate Discounts"]
       }
     ],
     "categories": [

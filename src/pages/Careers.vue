@@ -15,30 +15,26 @@
         <div v-if="!$page.products.edges.length" class="col-12 p-3">
           <a
             href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
-            class="card-link"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
-        <div
-          class="col-12 col-lg-6 p-3"
-          v-for="job in $page.products.edges"
-          :key="job.id"
-          v-bind:class="{ disabled: job.node.filled === 'filled' }"
-        >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+        <div class="col-12 col-lg-6 p-3" v-for="job in $page.products.edges" :key="job.id" v-bind:class="{ disabled: job.node.filled === 'filled' }">
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
 
@@ -48,31 +44,26 @@
         <div v-if="!$page.growth.edges.length" class="col-12 p-3">
           <a
             href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
-            class="card-link"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
-        <div
-          class="col-12 col-lg-6 p-3"
-          v-for="job in $page.growth.edges"
-          :key="job.id"
-          v-bind:class="{ disabled: job.node.filled === 'filled' }"
-        >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+        <div class="col-12 col-lg-6 p-3" v-for="job in $page.growth.edges" :key="job.id" v-bind:class="{ disabled: job.node.filled === 'filled' }">
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
 
@@ -81,32 +72,27 @@
         </div>
         <div v-if="!$page.textile.edges.length" class="col-12 p-3">
           <a
-            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-            class="card-link"
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
-        <div
-          class="col-12 col-lg-6 p-3"
-          v-for="job in $page.textile.edges"
-          :key="job.id"
-          v-bind:class="{ disabled: job.node.filled === 'filled' }"
-        >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+        <div class="col-12 col-lg-6 p-3" v-for="job in $page.textile.edges" :key="job.id" v-bind:class="{ disabled: job.node.filled === 'filled' }">
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
 
@@ -115,32 +101,27 @@
         </div>
         <div v-if="!$page.marketing.edges.length" class="col-12 p-3">
           <a
-            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-            class="card-link"
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
-        <div
-          class="col-12 col-lg-6 p-3"
-          v-for="job in $page.marketing.edges"
-          :key="job.id"
-          v-bind:class="{ disabled: job.node.filled === 'filled' }"
-        >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+        <div class="col-12 col-lg-6 p-3" v-for="job in $page.marketing.edges" :key="job.id" v-bind:class="{ disabled: job.node.filled === 'filled' }">
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
 
@@ -149,15 +130,12 @@
         </div>
         <div v-if="!$page.operations.edges.length" class="col-12 p-3">
           <a
-            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-            class="card-link"
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
         <div
@@ -166,15 +144,18 @@
           :key="job.id"
           v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
 
@@ -183,15 +164,12 @@
         </div>
         <div v-if="!$page.engineering.edges.length" class="col-12 p-3">
           <a
-            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application "
-            class="card-link"
+            href="mailto:arif.currimjee@abana.mu?cc=dirk.robens@abana.mu&subject=ABANA Job Application"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <b-card>
-              <b-card-text
-                >There is nothing here. Get in touch if you think you can help
-                us!</b-card-text
-              >
-            </b-card>
+            <div class="flex flex-col flex-1 p-3">
+              <div class="">There is nothing here. Get in touch if you think you can help us!</div>
+            </div>
           </a>
         </div>
         <div
@@ -200,15 +178,18 @@
           :key="job.id"
           v-bind:class="{ disabled: job.node.filled === 'filled' }"
         >
-          <g-link :to="job.node.path" class="card-link">
-            <b-card :title="job.node.title" footer-class="footer">
-              <b-card-text>{{ job.node.location }} ∙ Full-Time</b-card-text>
-
-              <template v-slot:footer>
-                <p v-if="job.node.filled === 'open'">See more</p>
-                <p v-else>Position Filled</p>
-              </template>
-            </b-card>
+          <g-link
+            :to="job.node.path"
+            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
+          >
+            <div class="flex flex-col flex-1 p-5">
+              <div class="mb-2 font-medium text-xl">{{ job.node.title }}</div>
+              <div class="">{{ job.node.location }} ∙ Full-Time</div>
+            </div>
+            <div class="bg-gray-100 border-t py-3 px-5 text-center ">
+              <p v-if="job.node.filled === 'open'">See more</p>
+              <p v-else>Position Filled</p>
+            </div>
           </g-link>
         </div>
       </div>
@@ -315,8 +296,7 @@ export default {
 .card-link:hover {
   text-decoration: none;
   .card {
-    box-shadow: 0 3px 10px rgba(51, 62, 73, 0.18),
-      0 6px 17px rgba(51, 62, 73, 0.18);
+    box-shadow: 0 3px 10px rgba(51, 62, 73, 0.18), 0 6px 17px rgba(51, 62, 73, 0.18);
   }
 }
 

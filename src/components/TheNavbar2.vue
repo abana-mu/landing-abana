@@ -22,9 +22,15 @@
             <b-navbar-nav class="nav-main">
               <!-- Products-->
               <div class="nav-item nav-only" @mouseover="hoverPro = true" @mouseleave="hoverPro = false">
-                <a class="nav-link">
+                <a class="nav-link inline-flex items-center">
                   Products
-                  <b-icon icon="chevron-down" scale=".6" />
+                  <!-- Chevron-Down -->
+                  <svg class="h-3 w-3 ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
                 </a>
                 <div id="products-drop" class="dropdown-container" v-bind:class="{ dropActive: hoverPro }">
                   <div class="col col-6 left-panel">
@@ -136,9 +142,15 @@
 
               <!-- Company-->
               <div class="nav-item nav-only" @mouseover="hoverCom = true" @mouseleave="hoverCom = false">
-                <a class="nav-link">
+                <a class="nav-link inline-flex items-center">
                   Company
-                  <b-icon icon="chevron-down" scale=".6" />
+                  <!-- Chevron-Down -->
+                  <svg class="h-3 w-3 ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
                 </a>
                 <div id="company-drop" class="dropdown-container pt-2 pb-5 justify-content-center" v-bind:class="{ dropActive: hoverCom }">
                   <div class="col col-2">
@@ -256,33 +268,63 @@
           <div class="sidebar-container-1">
             <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-0>
               Products
-              <b-icon icon="arrow-right-short" class="float-right" />
+              <!-- Arrow right-short -->
+              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
             </div>
 
             <div @click="hide">
               <g-link class="sidebar-item-level-1" to="/why-africa/">
                 Why Africa
-                <b-icon icon="arrow-right-short" class="float-right" />
+                <!-- Arrow right-short -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
               </g-link>
             </div>
 
             <div @click="hide">
               <g-link class="sidebar-item-level-1" to="/sustainability/">
                 Sustainability
-                <b-icon icon="arrow-right-short" class="float-right" />
+                <!-- Arrow right-short -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
               </g-link>
             </div>
 
             <div @click="hide">
               <g-link class="sidebar-item-level-1" to="/pricing/">
                 Pricing
-                <b-icon icon="arrow-right-short" class="float-right" />
+                <!-- Arrow right-short -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
               </g-link>
             </div>
 
             <div class="sidebar-item-level-1" v-b-toggle.sidebar-level-2-2>
               Company
-              <b-icon icon="arrow-right-short" class="float-right" />
+              <!-- Arrow right-short -->
+              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
             </div>
 
             <div class="sidebar-buttons d-flex mt-5 justify-content-center">
@@ -297,7 +339,24 @@
               <div class="sidebar-container-2">
                 <!-- Content -->
                 <div class="row no-gutters align-items-stretch nowrap">
-                  <div class="sidebar-item-level-2-title" @click="hide"><b-icon icon="arrow-left-short" class="mr-2" />Products</div>
+                  <div class="sidebar-item-level-2-title" @click="hide">
+                    <!-- Arrow left-short -->
+                    <svg
+                      class="h-5 w-5 mr-2 inline-flex"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5h-5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                      />
+                    </svg>
+
+                    Products
+                  </div>
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle">Our Solutions</b-dropdown-header>
                     <div @click="hide">
@@ -398,7 +457,24 @@
               <div class="sidebar-container-2">
                 <!-- Content -->
                 <div class="row no-gutters align-items-stretch nowrap mb-2">
-                  <div class="sidebar-item-level-2-title" @click="hide"><b-icon icon="arrow-left-short" class="mr-2" />Company</div>
+                  <div class="sidebar-item-level-2-title" @click="hide">
+                    <!-- Arrow left-short -->
+                    <svg
+                      class="h-5 w-5 mr-2 inline-flex"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5h-5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                      />
+                    </svg>
+
+                    Company
+                  </div>
                   <div class="col col-12 mb-3">
                     <b-dropdown-header class="sidebar-item-level-2-subtitle">Company</b-dropdown-header>
                     <g-link class="sidebar-item-level-2 d-flex align-items-center" to="/about/" @click="hide">
@@ -507,7 +583,7 @@
 import { BNavbar, BNavbarNav } from 'bootstrap-vue';
 import Data from '~/_settings/announce.json';
 
-import { BIcon, BIconChevronDown, BIconArrowRightShort, BDropdownHeader, BDropdownDivider, BIconArrowLeftShort } from 'bootstrap-vue';
+import { BDropdownHeader, BDropdownDivider } from 'bootstrap-vue';
 
 import Logo from '@/components/icons/Logo';
 import Slogan from '@/components/icons/Slogan';
@@ -547,10 +623,6 @@ export default {
     BNavbarNav,
     BDropdownHeader,
     BDropdownDivider,
-    BIcon,
-    BIconChevronDown,
-    BIconArrowRightShort,
-    BIconArrowLeftShort,
     NavbarHamburger,
     IFreelancers,
     IMarket,

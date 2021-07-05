@@ -1,15 +1,7 @@
 import '~/assets/_styles.scss';
 require('~/assets/tailwindcss.scss');
 
-import {
-  CardPlugin,
-  ButtonPlugin,
-  LayoutPlugin,
-  SidebarPlugin,
-  TabsPlugin,
-  FormRadioPlugin,
-  TooltipPlugin,
-} from 'bootstrap-vue';
+import { CardPlugin, LayoutPlugin, SidebarPlugin, TabsPlugin, FormRadioPlugin } from 'bootstrap-vue';
 
 import createPopper from '@popperjs/core';
 import DefaultLayout from '~/layouts/Default.vue';
@@ -17,18 +9,16 @@ import DefaultLayout from '~/layouts/Default.vue';
 import VueSimpleMarkdown from 'vue-simple-markdown';
 import 'vue-simple-markdown/dist/vue-simple-markdown.css';
 
-export default function (Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.use(CardPlugin);
-  Vue.use(ButtonPlugin);
   Vue.use(LayoutPlugin);
   Vue.use(SidebarPlugin);
   Vue.use(TabsPlugin);
   Vue.use(VueSimpleMarkdown);
   Vue.use(FormRadioPlugin);
-  Vue.use(TooltipPlugin);
 
-  Vue.filter('youtubize', function (value) {
+  Vue.filter('youtubize', function(value) {
     if (!value) return '';
     value = value.replace('watch?v=', '/embed/');
     return value;
