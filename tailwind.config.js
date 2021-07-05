@@ -46,6 +46,7 @@ module.exports = {
   variants: {
     extend: {
       translate: ['group-hover'],
+      rotate: ['group-hover'],
       display: ['group-hover'],
     },
   },
