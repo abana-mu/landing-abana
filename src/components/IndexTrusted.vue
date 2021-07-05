@@ -3,39 +3,19 @@
   <div class="text-center my-4 py-4 pb-5">
     <div v-if="control" class="trusted container">
       <p class="m-0 mb-4 mb-lg-0 mr-lg-5">Trusted by:</p>
-      <b-carousel
-        id="trusted-carousel"
-        v-model="slide"
-        :interval="4000"
-        controls
-        indicators
-        style="text-shadow: 1px 1px 2px #333;"
-        @sliding-start="onSlideStart"
-        @sliding-end="onSlideEnd"
-      >
-        <b-carousel-slide v-for="n in Math.ceil(data.length / 4)" :key="n">
+      <div id="trusted-carousel" :interval="4000" controls indicators style="text-shadow: 1px 1px 2px #333;" @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
+        <div class="slide" v-for="n in Math.ceil(data.length / 4)" :key="n">
           <div class="logo-container">
             <div>
-              <div
-                class="trusted-logos"
-                v-for="logo in range(n)"
-                :key="logo.name"
-                cols="6"
-                lg="3"
-              >
+              <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name" cols="6" lg="3">
                 <a :href="logo.link" target="_blank">
-                  <g-image
-                    :src="logo.image"
-                    blur="40"
-                    quality="75"
-                    :alt="logo.title"
-                  />
+                  <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" />
                 </a>
               </div>
             </div>
           </div>
-        </b-carousel-slide>
-      </b-carousel>
+        </div>
+      </div>
     </div>
     <g-link to="/testimonials" class="read">Read our Testimonials</g-link>
   </div>
@@ -43,13 +23,7 @@
 
 <!-- SCRIPTS -->
 <script>
-import { BCarousel, BCarouselSlide } from 'bootstrap-vue';
-
 export default {
-  components: {
-    BCarousel,
-    BCarouselSlide,
-  },
   props: {
     data: Array,
     control: Boolean,
