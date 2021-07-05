@@ -1,10 +1,6 @@
 <!-- HTML -->
 <template>
-  <div
-    class="hamburger hamburger--spin js-hamburger"
-    v-bind:class="{ active: isActive }"
-    v-on:click="activate()"
-  >
+  <div class="hamburger hamburger--spin js-hamburger" v-bind:class="{ active: isActive }">
     <div class="hamburger-box">
       <div class="hamburger-inner"></div>
     </div>
@@ -14,15 +10,8 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  data() {
-    return {
-      isActive: false
-    };
-  },
-  methods: {
-    activate() {
-      this.isActive = !this.isActive;
-    }
+  props: {
+    isActive: Boolean
   }
 };
 </script>
@@ -55,7 +44,7 @@ export default {
 .hamburger-box {
   position: relative;
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 19px;
 }
 .hamburger-inner {
@@ -67,7 +56,7 @@ export default {
 .hamburger-inner:after,
 .hamburger-inner:before {
   position: absolute;
-  width: 30px;
+  width: 25px;
   height: 2px;
   transition-timing-function: ease;
   transition-duration: 0.15s;
