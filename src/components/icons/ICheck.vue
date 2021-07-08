@@ -1,13 +1,9 @@
 <!-- HTML -->
 <template>
-  <svg
-    class="box-img"
-    data-name="Layer 2"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 79 79"
-  >
+  <svg class="box-img" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79">
     <path
-      class="cls-2"
+      class="dark"
+      fill="currentColor"
       d="M71.7,44.7l-2.4-4.6c-0.2-0.4-0.2-0.8,0-1.2l2.3-4.6c1.8-3.5,0.4-7.8-3.1-9.5l-4.6-2.3
 				c-0.4-0.2-0.6-0.5-0.7-0.9l-0.8-5.1c-0.6-3.9-4.3-6.5-8.1-5.9l-5.1,0.8c-0.4,0.1-0.8-0.1-1.2-0.4l-3.5-3.7c-2.8-2.8-7.2-2.8-10,0
 				L30.8,11c-0.3,0.3-0.7,0.5-1.2,0.4l-5.1-0.8c-3.9-0.6-7.5,2-8.1,5.9l-0.7,5.1c-0.1,0.4-0.3,0.8-0.7,1l-4.6,2.3
@@ -23,7 +19,8 @@
     />
 
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M54.5,33.3L37.9,49.9c-1.2,1.2-3.1,1.2-4.3,0c0,0,0,0,0,0L24.7,41c-1.2-1.2-1.2-3.2,0-4.4
 				c1.2-1.2,3.1-1.2,4.4,0l6.7,6.7L50.1,29c1.3-1.1,3.2-1,4.3,0.3C55.5,30.4,55.5,32.1,54.5,33.3z"
     />
@@ -31,20 +28,19 @@
 </template>
 
 <!-- SCRIPTS -->
-<script>
-</script>
+<script></script>
 
 <!-- QUERIES -->
 <static-query>
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
-.cls-1 {
+<style lang="scss" scoped>
+.bg {
   fill: #ff9590;
 }
 
-.cls-2 {
+.dark {
   fill: #ff6158;
 }
 </style>

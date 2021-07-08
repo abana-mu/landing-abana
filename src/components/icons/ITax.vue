@@ -1,19 +1,16 @@
 <!-- HTML -->
 <template>
-  <svg
-    class="box-img"
-    data-name="Layer 2"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 78.97 78.97"
-  >
+  <svg class="box-img" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.97 78.97">
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M57.3,73.8h-38c-8.8,0-16-7.2-16-16v-38c0-8.8,7.2-16,16-16h38c8.8,0,16,7.2,16,16v38
 	C73.3,66.7,66.1,73.8,57.3,73.8z"
     />
     <path
       id="language"
-      class="cls-2"
+      class="dark"
+      fill="currentColor"
       d="M59.1,39.5c0-10.8-8.7-19.6-19.5-19.6h-0.1c-10.8,0-19.6,8.8-19.6,19.6
 			c0,10.8,8.8,19.6,19.6,19.6l0,0C50.3,59.1,59.1,50.3,59.1,39.5z M39.5,55.1c-2.2-2.3-3.9-5-5-8h10C43.4,50.1,41.7,52.8,39.5,55.1z
 			 M33.6,43.8C33,41,33,38,33.6,35.2h11.8c0.6,2.9,0.6,5.8,0,8.6H33.6z M23.2,39.5c0-1.5,0.2-2.9,0.6-4.3h6.4
@@ -26,7 +23,8 @@
 
     <path
       id="language_1_"
-      class="cls-3"
+      class="light"
+      fill="currentColor"
       d="M39.6,19.9h-0.1c-10.8,0-19.6,8.8-19.6,19.6c0,10.8,8.8,19.6,19.6,19.6
 			c5.4,0,10.3-2.2,13.9-5.8c3.5-3.5,5.8-8.4,5.8-13.9C59.1,28.7,50.4,19.9,39.6,19.9z M55.2,43.8c-0.3,1.2-0.8,2.3-1.3,3.3h0
 			c0,0,0,0.1-0.1,0.1c-0.1,0.2-0.2,0.5-0.4,0.7c-0.4,0.7-0.9,1.3-1.4,1.9c-0.2,0.2-0.3,0.4-0.5,0.6c-0.2,0.2-0.3,0.4-0.5,0.6
@@ -46,22 +44,21 @@
 </template>
 
 <!-- SCRIPTS -->
-<script>
-</script>
+<script></script>
 
 <!-- QUERIES -->
 <static-query>
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
-.cls-1 {
+<style lang="scss" scoped>
+.bg {
   fill: #2f2f45;
 }
-.cls-2 {
+.dark {
   fill: #4e5db6;
 }
-.cls-3 {
+.light {
   fill: #607aff;
 }
 </style>

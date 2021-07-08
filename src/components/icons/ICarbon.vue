@@ -1,18 +1,15 @@
 <!-- HTML -->
 <template>
-  <svg
-    class="drop-image"
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 55 55"
-  >
-    <rect class="cls-1" x="3.5" y="3.5" width="48" height="48" rx="10" />
+  <svg class="drop-image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
+    <rect class="bg" fill="currentColor" x="3.5" y="3.5" width="48" height="48" rx="10" />
     <path
-      class="cls-2"
+      class="dark"
+      fill="currentColor"
       d="M25.12,16.79l-.4-.2-.4.2a11.8,11.8,0,0,0-6.8,10.9,11.73,11.73,0,0,0,6.9,10.9l.8-1.8a9.73,9.73,0,0,1-5.6-9.1c0-.6.1-1.1.1-1.6l3.7,3.3v1.8a1,1,0,1,0,2,0V23a1,1,0,1,0-2,0v3.7l-3.1-2.8a9.83,9.83,0,0,1,4.5-5.1,9.29,9.29,0,0,1,4.6,5.3l1.9-.7A11.52,11.52,0,0,0,25.12,16.79Z"
     />
     <path
-      class="cls-3"
+      class="light"
+      fill="currentColor"
       d="M39.52,22.89l-.2-.4-.4-.2a11.71,11.71,0,0,0-12.5,3.1A11.52,11.52,0,0,0,23.82,38h0l.2.4.4.1h0a9.86,9.86,0,0,0,3.8.7,12.16,12.16,0,0,0,8.7-3.8A11.5,11.5,0,0,0,39.52,22.89Zm-1.7,1.2a9.12,9.12,0,0,1,0,6.1h-4.3l2.1-2.2a1,1,0,1,0-1.4-1.4l-3.8,3.8h0l-.9,1-.1-5.8A9.41,9.41,0,0,1,37.82,24.09Zm-10.5,3.4.1,6-2.3,2.3A9.88,9.88,0,0,1,27.32,27.49Zm-.7,9.7,4.9-5h5.4a13.3,13.3,0,0,1-1.4,1.9A10.33,10.33,0,0,1,26.62,37.19Z"
     />
   </svg>
@@ -27,13 +24,13 @@
 
 <!-- STYLING -->
 <style lang="scss" scoped>
-.cls-1 {
-  fill: #f4f4f4;
+.bg {
+  color: #f4f4f4;
 }
-.cls-2 {
-  fill: #8185a7;
+.dark {
+  color: #8185a7;
 }
-.cls-3 {
-  fill: #b1b4d3;
+.light {
+  color: #b1b4d3;
 }
 </style>

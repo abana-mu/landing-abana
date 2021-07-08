@@ -1,24 +1,20 @@
 <!-- HTML -->
 <template>
   <div class="overflow-hidden">
-    <div id="header-banner">
-      <div class="row">
-        <div class="col">
-          <div>
-            <h1 id="header-title" class="opacity-50">{{ title }}</h1>
-          </div>
-          <div>
-            <p id="header-subtitle" class="mb-2 text-center">{{ subtext }}</p>
-          </div>
-          <div id="header-cta">
-            <g-link to="/about">
-              <div class="btn btn-primary">{{ cta }}</div>
-            </g-link>
-          </div>
-          <g-image id="header-image" src="~/assets/images/test1.png" blur="40" quality="100" immediate />
-        </div>
+    <div id="header-banner" class="max-w-4xl mx-auto">
+      <div>
+        <h1 class="text-title text-center text-5xl font-medium mb-4">{{ title }}</h1>
+      </div>
+      <div>
+        <p id="header-subtitle" class="mb-2 text-center">{{ subtext }}</p>
+      </div>
+      <div id="header-cta">
+        <g-link to="/about">
+          <div class="btn btn-primary">{{ cta }}</div>
+        </g-link>
       </div>
     </div>
+    <g-image id="header-image" src="~/assets/images/test1.png" blur="40" quality="100" immediate />
   </div>
 </template>
 

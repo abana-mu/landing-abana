@@ -1,19 +1,16 @@
 <!-- HTML -->
 <template>
-  <svg
-    class="drop-image"
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 55 55"
-  >
+  <svg class="drop-image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
     <path
-      class="cls-2"
+      class="dark"
+      fill="currentColor"
       d="M11.2,3.8l-0.4-0.2l-0.4,0.2C6.3,5.6,3.6,9.9,3.6,14.7c0,4.8,2.7,9.1,6.9,10.9l0.8-1.8c-3.4-1.5-5.6-5-5.6-9.1
 		c0-0.6,0.1-1.1,0.1-1.6l3.7,3.3v1.8c0,0.6,0.4,1,1,1s1-0.4,1-1V10c0-0.6-0.4-1-1-1s-1,0.4-1,1v3.7l-3.1-2.8
 		c0.9-2.2,2.5-4.1,4.5-5.1c2.1,1,3.8,3,4.6,5.3l1.9-0.7C16.3,7.4,14,5,11.2,3.8z"
     />
     <path
-      class="cls-3"
+      class="light"
+      fill="currentColor"
       d="M25.6,9.9l-0.2-0.4L25,9.3c-4.2-1.6-9.1-0.4-12.5,3.1c-3.4,3.5-4.4,8.4-2.6,12.6c0,0,0,0,0,0c0,0,0,0,0,0
 		l0.2,0.4l0.4,0.1c0,0,0,0,0,0l0,0c1.2,0.5,2.5,0.7,3.8,0.7c3.1,0,6.3-1.3,8.7-3.8C26.3,19,27.4,14.1,25.6,9.9z M23.9,11.1
 		c0.7,1.9,0.7,4.1,0,6.1h-4.3l2.1-2.2c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-3.8,3.8c0,0,0,0,0,0l-0.9,1l-0.1-5.8
@@ -24,22 +21,21 @@
 </template>
 
 <!-- SCRIPTS -->
-<script>
-</script>
+<script></script>
 
 <!-- QUERIES -->
 <static-query>
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
-.cls-1 {
-  fill: #f4f4f4;
+<style lang="scss" scoped>
+.bg {
+  color: #f4f4f4;
 }
-.cls-2 {
-  fill: #8185a7;
+.dark {
+  color: #8185a7;
 }
-.cls-3 {
-  fill: #b1b4d3;
+.light {
+  color: #b1b4d3;
 }
 </style>

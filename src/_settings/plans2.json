@@ -5,24 +5,19 @@
       {
         "name": "basic",
         "desc": "Users interested in trying the Database Search",
-        "price61": "Free",
-        "price66": "Free",
-        "price121": "Free",
-        "price1212": "Free",
+        "price": "Free",
         "features": ["Basic Profile", "Basic Search", "Post RFIs & RFQs"]
       },
       {
         "name": "pro",
         "desc": "Users who want access to all features",
-        "price61": "$269/mo",
-        "price66": "$219/mo",
-        "price121": "$249/mo",
-        "price1212": "$199/mo",
-        "features": [
-          "Advanced Profile & Search",
-          "Fast Custom",
-          "Advanced Services"
-        ]
+        "price": {
+          "61": 269,
+          "66": 219,
+          "121": 249,
+          "1212": 199
+        },
+        "features": ["Advanced Profile & Search", "Fast Custom", "Advanced Services"]
       }
     ],
     "categories": [
@@ -187,38 +182,37 @@
       {
         "name": "freelancer",
         "desc": "Single User companies",
-        "price61": "$10/mo",
-        "price66": "$10/mo",
-        "price121": "$9/mo",
-        "price1212": "$9/mo",
-        "features": [
-          "Profile & e-Showroom",
-          "Post Listings",
-          "View Buyer RFQs",
-          "Search Buyers & Sellers Database"
-        ]
+        "price": {
+          "61": 10,
+          "66": 10,
+          "121": 9,
+          "1212": 9
+        },
+        "features": ["Profile & e-Showroom", "Post Listings", "View Buyer RFQs", "Search Buyers & Sellers Database"]
       },
       {
         "name": "basic",
         "desc": "Multiple User companies with more marketplace activities",
-        "price61": "$129/mo",
-        "price66": "$109/mo",
-        "price121": "$119/mo",
-        "price1212": "$99/mo",
+
+        "price": {
+          "61": 129,
+          "66": 109,
+          "121": 119,
+          "1212": 99
+        },
         "features": ["Multiple Users", "Marketing & Financial Services"]
       },
       {
         "name": "pro",
         "desc": "Users who want to access all features",
-        "price61": "$269/mo",
-        "price66": "$219/mo",
-        "price121": "$249/mo",
-        "price1212": "$199/mo",
-        "features": [
-          "Fast Custom",
-          "Online Critical Path",
-          "Corporate Discounts"
-        ]
+        "price": {
+          "61": 269,
+          "66": 219,
+          "121": 249,
+          "1212": 199
+        },
+
+        "features": ["Fast Custom", "Online Critical Path", "Corporate Discounts"]
       }
     ],
     "categories": [
@@ -345,7 +339,7 @@
         "title": "Support Services",
         "features": [
           {
-            "title": "Marketing Services ",
+            "title": "Marketing Services",
             "tooltip": "",
             "plans": {
               "freelancer": true,

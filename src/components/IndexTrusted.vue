@@ -1,46 +1,53 @@
 <!-- HTML -->
 <template>
   <div class="text-center my-4 py-4 pb-5">
-    <div v-if="control" class="trusted container">
-      <p class="m-0 mb-4 mb-lg-0 mr-lg-5">Trusted by:</p>
-      <div id="trusted-carousel" :interval="4000" controls indicators style="text-shadow: 1px 1px 2px #333;" @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
-        <div class="slide" v-for="n in Math.ceil(data.length / 4)" :key="n">
-          <div class="logo-container">
-            <div>
-              <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name" cols="6" lg="3">
-                <a :href="logo.link" target="_blank">
-                  <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" />
-                </a>
-              </div>
+    <div class="contain grid grid-cols-1 md:grid-cols-8 mb-4 items-center">
+      <p class="col-span-1">Trusted by:</p>
+
+      <VueSlickCarousel v-bind="settings" class="col-span-1 md:col-span-7 px-6">
+        <div v-for="n in Math.ceil(data.length / 4)" :key="n">
+          <div class="grid grid-cols-2 sm:grid-cols-4 items-center">
+            <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name">
+              <a :href="logo.link" target="_blank">
+                <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" class="trusted-image" />
+              </a>
             </div>
           </div>
         </div>
-      </div>
+      </VueSlickCarousel>
     </div>
-    <g-link to="/testimonials" class="read">Read our Testimonials</g-link>
+    <g-link to="/testimonials" class="underline text-gray-400 hover:text-gray-500">Read our Testimonials</g-link>
   </div>
 </template>
 
 <!-- SCRIPTS -->
 <script>
+import VueSlickCarousel from 'vue-slick-carousel';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+
 export default {
+  components: { VueSlickCarousel },
+
   props: {
     data: Array,
     control: Boolean,
   },
   data() {
     return {
-      slide: 0,
-      sliding: null,
+      settings: {
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+      },
     };
   },
   methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
     range: function(n) {
       return this.data.slice((n - 1) * 4, (n - 1) * 4 + 4);
     },
@@ -48,77 +55,37 @@ export default {
 };
 </script>
 
-<!-- QUERIES -->
-<static-query>
-</static-query>
-
 <!-- STYLING -->
 <style lang="scss">
-.carousel {
-  width: 100%;
-}
-
-.carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: flex;
-  align-items: center;
-}
-
-.carousel-item {
-  min-height: 150px;
-}
-
-.carousel-caption {
-  width: 100%;
-}
-
-.carousel-caption {
-  right: inherit;
-  bottom: inherit;
-  left: inherit;
-
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 40px;
-  z-index: 11;
-  background-color: white;
-  opacity: 1;
-}
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3Csvg class='w-6 h-6' fill='none' stroke='%23aaa' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23aaa' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 19l-7-7 7-7'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.trusted {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $break-l) {
-    flex-direction: row;
+.slick-prev {
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23aaa' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15 19l-7-7 7-7'%3E%3C/path%3E%3C/svg%3E") !important;
+  &:before {
+    content: none;
+    color: #9ca3af;
   }
+}
 
-  color: #a4a4a4;
-  p {
-    color: #a4a4a4;
-    flex-shrink: 0;
+.slick-next {
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg class='w-6 h-6' fill='none' stroke='%23aaa' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7'%3E%3C/path%3E%3C/svg%3E") !important;
+
+  &:before {
+    content: none;
+    color: #9ca3af;
   }
-  img {
-    max-height: 50px;
-    max-width: 100%;
-    width: auto;
-    opacity: 0.6;
-    filter: grayscale(1);
-  }
+}
+
+.slick-disabled {
+  opacity: 25%;
+}
+
+.trusted-image {
+  max-height: 50px;
+  max-width: 80%;
+  width: auto;
+  opacity: 0.6;
+  filter: grayscale(1);
 }
 
 .trusted-logos {
@@ -135,19 +102,5 @@ export default {
   a {
     display: block;
   }
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  .row {
-    margin: 0 40px;
-    width: 100%;
-  }
-}
-
-.read {
-  text-decoration: underline;
-  color: #a4a4a4;
 }
 </style>

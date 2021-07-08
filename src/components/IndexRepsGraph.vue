@@ -1,43 +1,30 @@
 <!-- HTML -->
 <template>
-  <div class="my-5">
-    <div>
-      <div
-        cols="12"
-        lg="6"
-        order="1"
-        order-lg="0"
-        class="flow-section section-container"
-      >
-        <h3 class="title mb-3">{{ data.title }}</h3>
-        <p>{{ data.subtext }}</p>
-        <g-link
-          class="group inline-flex items-center"
-          v-if="data.page"
-          :to="data.page"
+  <div class="my-5 grid grid-cols-1 md:grid-cols-2">
+    <div class="flow-section section-container">
+      <h3 class="text-2xl font-medium mb-4 text-title">{{ data.title }}</h3>
+      <p class="mb-4 text-body text-lg">{{ data.subtext }}</p>
+      <g-link class="text-primary inline-flex items-center group" v-if="data.page" :to="data.page">
+        {{ data.link }}
+        <!-- Arrow right-short -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+          viewBox="0 0 16 16"
         >
-          {{ data.link }}
-          <!-- Arrow right-short -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-            />
-          </svg>
-        </g-link>
-      </div>
-      <div>
-        <div class="svg-container">
-          <Reps />
-        </div>
-      </div>
+          <path
+            fill-rule="evenodd"
+            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+          />
+        </svg>
+      </g-link>
+    </div>
+
+    <div class="w-full mx-auto mb-8 sm:w-4/5 md:mb-0 md:w-full">
+      <Reps />
     </div>
   </div>
 </template>
@@ -71,20 +58,6 @@ export default {
   .subtitle {
     margin: 0;
     text-align: left;
-  }
-}
-
-.svg-container {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-
-  @media (min-width: $break-s) {
-    width: 80%;
-  }
-  @media (min-width: $break-collapse) {
-    width: 100%;
-    margin-bottom: 0rem;
   }
 }
 </style>

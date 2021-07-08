@@ -3,10 +3,17 @@ module.exports = {
   purge: ['./src/**/*.vue', './src/**/*.js', './src/**/*.md', './src/**/*.html'],
   theme: {
     extend: {
+      screens: {
+        xs: '375px',
+      },
+      zIndex: {
+        '1': 1,
+      },
       colors: {
         body: '#202c4f',
         title: '#0d183a',
         caption: '#737a96',
+        bodyOnDark: '#a6a6ca',
         primary: {
           DEFAULT: '#FF6158',
           100: '#FFF4F3',
@@ -19,7 +26,7 @@ module.exports = {
           100: '#F9F9FB',
           200: '#C1C1DC',
           300: '#74749C',
-          400: '#41415A',
+          400: '#393855',
           500: '#202C4F',
         },
         dark: {
@@ -39,7 +46,7 @@ module.exports = {
       },
       boxShadow: {
         glow: '0 3px 10px rgba(51, 62, 73, 0.18), 0 6px 17px rgba(51, 62, 73, 0.18)',
-        nav: 'inset 0 3px #ff6158',
+        nav: 'inset 0 -3px #ff6158',
       },
     },
   },

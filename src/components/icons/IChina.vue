@@ -1,13 +1,9 @@
 <!-- HTML -->
 <template>
-  <svg
-    class="box-img"
-    data-name="Layer 2"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 79 79"
-  >
+  <svg class="box-img" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79">
     <path
-      class="cls-2"
+      class="dark"
+      fill="currentColor"
       d="M39.6,4.2h-0.2C20,4.2,4.2,20.1,4.2,39.5S20,74.8,39.5,74.8c9.7,0,18.5-4,25-10.4c6.3-6.3,10.4-15.1,10.4-25
 			C74.7,20.1,59.1,4.2,39.6,4.2z M68.4,44.2c0,0.3-0.1,0.5-0.1,0.8c-0.1,0.8-0.3,1.5-0.5,2.2c-0.4,1.7-1,3.2-1.7,4.7
 			c-0.2,0.4-0.4,0.9-0.6,1.3c0,0,0,0.2-0.2,0.2c-0.2,0.4-0.4,0.9-0.7,1.3c-0.2,0.4-0.4,0.7-0.7,1c-0.5,0.7-1,1.4-1.6,2.1
@@ -29,116 +25,122 @@
     />
 
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M57.1,16.1c-0.4,0.4-1,0.7-1.6,0.7c-1.4,0.1-2.6-1-2.6-2.4c0-0.2,0-0.5,0.1-0.7c0.1,0,0.1,0.1,0.1,0.1
 				c0.2,0.2,0.5,0.4,0.7,0.4c0.4,0.2,0.5,0.4,0.9,0.5c0.4,0.2,0.9,0.5,1.3,0.7C56.4,15.6,56.7,15.9,57.1,16.1
 				C57.1,16.1,57.1,16.1,57.1,16.1z"
     />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M62.1,21c-0.4,0.3-0.9,0.6-1.5,0.6c-1.4,0.1-2.6-1-2.6-2.4c0-0.7,0.2-1.3,0.7-1.8c0.6,0.5,1.1,1,1.6,1.5
 				c0.4,0.4,0.7,0.7,0.9,1.1C61.6,20.2,62,20.6,62.1,21L62.1,21z"
     />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M65.8,26.3L65.8,26.3c-1.4,0.1-2.6-1-2.6-2.4c0-0.5,0.1-0.9,0.3-1.3c0.4,0.6,0.8,1.1,1.2,1.8
 				c0.4,0.4,0.5,0.9,0.7,1.3c0,0,0,0.2,0.2,0.2C65.6,26,65.7,26.1,65.8,26.3z"
     />
 
-    <circle class="cls-1" cx="45.2" cy="15" r="2.5" />
-    <circle class="cls-1" cx="50.4" cy="19.7" r="2.5" />
-    <circle class="cls-1" cx="55.5" cy="24.5" r="2.5" />
-    <circle class="cls-1" cx="60.6" cy="29.3" r="2.5" />
-    <circle class="cls-1" cx="65.8" cy="34" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="45.2" cy="15" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="50.4" cy="19.7" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="55.5" cy="24.5" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="60.6" cy="29.3" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="65.8" cy="34" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M68.8,39.2c0,0.3,0,0.6,0,0.8c-0.2-0.3-0.4-0.8-0.4-1.2c0-0.5,0.1-1,0.4-1.4C68.8,38.1,68.8,38.6,68.8,39.2z
 				"
     />
 
-    <circle class="cls-1" cx="40.2" cy="20.4" r="2.5" />
-    <circle class="cls-1" cx="30" cy="21.6" r="2.5" />
-    <circle class="cls-1" cx="21.8" cy="23" r="2.5" />
-    <circle class="cls-1" cx="45.3" cy="25.2" r="2.5" />
-    <circle class="cls-1" cx="50.5" cy="30" r="2.5" />
-    <circle class="cls-1" cx="55.6" cy="34.7" r="2.5" />
-    <circle class="cls-1" cx="60.7" cy="39.5" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="40.2" cy="20.4" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="30" cy="21.6" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="21.8" cy="23" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="45.3" cy="25.2" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="50.5" cy="30" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="55.6" cy="34.7" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="60.7" cy="39.5" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M68.4,44.1v0.1c0,0.3-0.1,0.5-0.1,0.8c-0.3,1-1.2,1.7-2.3,1.7c-1.4,0.1-2.6-1-2.6-2.4
 				c-0.1-1.4,1-2.6,2.4-2.6C67.2,41.6,68.3,42.7,68.4,44.1z"
     />
 
-    <circle class="cls-1" cx="35.1" cy="25.9" r="2.5" />
-    <circle class="cls-1" cx="40.3" cy="30.7" r="2.5" />
-    <circle class="cls-1" cx="45.4" cy="35.4" r="2.5" />
-    <circle class="cls-1" cx="50.6" cy="40.2" r="2.5" />
-    <circle class="cls-1" cx="55.7" cy="44.9" r="2.5" />
-    <circle class="cls-1" cx="60.8" cy="49.7" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="35.1" cy="25.9" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="40.3" cy="30.7" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="45.4" cy="35.4" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="50.6" cy="40.2" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="55.7" cy="44.9" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="60.8" cy="49.7" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M66,51.9c-0.2,0.4-0.4,0.9-0.6,1.3c0,0,0,0.2-0.2,0.2c-0.2,0.4-0.4,0.9-0.7,1.3c-0.2,0.4-0.4,0.7-0.7,1
 				c-0.2-0.3-0.3-0.7-0.4-1.2c-0.1-1.4,1-2.6,2.4-2.6H66z"
     />
 
-    <circle class="cls-1" cx="50.6" cy="50.4" r="2.5" />
-    <circle class="cls-1" cx="55.8" cy="55.1" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="50.6" cy="50.4" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="55.8" cy="55.1" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M62.2,57.7C62.1,57.8,62,57.9,62,58c-0.4,0.4-0.5,0.7-0.9,1.1c-0.4,0.4-0.5,0.7-0.9,1.1
 				c-0.4,0.4-0.8,0.8-1.2,1.2c-0.3-0.4-0.5-0.9-0.5-1.4c-0.1-1.4,1-2.6,2.4-2.6C61.3,57.3,61.8,57.5,62.2,57.7z"
     />
 
-    <circle class="cls-1" cx="35.3" cy="46.3" r="2.5" />
-    <circle class="cls-1" cx="40.5" cy="51.1" r="2.5" />
-    <circle class="cls-1" cx="45.6" cy="55.8" r="2.5" />
-    <circle class="cls-1" cx="50.7" cy="60.6" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="35.3" cy="46.3" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="40.5" cy="51.1" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="45.6" cy="55.8" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="50.7" cy="60.6" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M56.8,63c-0.3,0.2-0.6,0.5-1,0.6c-0.4,0.4-0.7,0.5-1.3,0.7c-0.4,0.2-0.5,0.4-0.9,0.5
 				c-0.1,0.1-0.2,0.2-0.3,0.2c0.1-1.2,1.1-2.2,2.4-2.3C56.1,62.8,56.5,62.9,56.8,63z"
     />
 
-    <circle class="cls-1" cx="20" cy="42.3" r="2.5" />
-    <circle class="cls-1" cx="25.1" cy="47" r="2.5" />
-    <circle class="cls-1" cx="30.3" cy="51.8" r="2.5" />
-    <circle class="cls-1" cx="35.4" cy="56.5" r="2.5" />
-    <circle class="cls-1" cx="40.6" cy="61.3" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="20" cy="42.3" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="25.1" cy="47" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="30.3" cy="51.8" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="35.4" cy="56.5" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="40.6" cy="61.3" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M48.2,65.9c0,0.5-0.1,1-0.4,1.5c-0.2,0.1-0.4,0.1-0.6,0.2c-0.9,0.3-1.8,0.5-2.7,0.6
 				c-0.7-0.4-1.3-1.2-1.3-2.1c-0.1-1.4,1-2.6,2.4-2.6C47,63.4,48.2,64.5,48.2,65.9z"
     />
 
-    <circle class="cls-1" cx="30.4" cy="62" r="2.5" />
+    <circle class="bg" fill="currentColor" cx="30.4" cy="62" r="2.5" />
     <path
-      class="cls-1"
+      class="bg"
+      fill="currentColor"
       d="M38,66.6c0,0.8-0.3,1.4-0.8,1.9c-1.3-0.1-2.7-0.3-3.9-0.6c-0.2-0.3-0.3-0.7-0.3-1.1c-0.1-1.4,1-2.6,2.4-2.6
 				C36.8,64.1,38,65.2,38,66.6z"
     />
 
-    <path
-      class="cls-1"
-      d="M27.5,66.2c-0.9-0.3-1.7-0.8-2.5-1.3c0.1,0,0.1,0,0.2,0C26.2,64.9,27.1,65.4,27.5,66.2z"
-    />
+    <path class="bg" fill="currentColor" d="M27.5,66.2c-0.9-0.3-1.7-0.8-2.5-1.3c0.1,0,0.1,0,0.2,0C26.2,64.9,27.1,65.4,27.5,66.2z" />
   </svg>
 </template>
 
 <!-- SCRIPTS -->
-<script>
-</script>
+<script></script>
 
 <!-- QUERIES -->
 <static-query>
 </static-query>
 
 <!-- STYLING -->
-<style lang='scss' scoped>
-.cls-1 {
+<style lang="scss" scoped>
+.bg {
   fill: #ff9590;
 }
 
-.cls-2 {
+.dark {
   fill: #ff6158;
 }
 </style>

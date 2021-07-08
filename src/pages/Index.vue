@@ -12,8 +12,14 @@
         <p class="text-caption text-lg">{{ Data.boxes.header.subtext }}</p>
 
         <div class="py-4">
-          <div>
-            <div v-for="(box, index) in Data.boxes.boxes" :key="box.title" cols="12" md="6" class="flex flex-col items-center text-center p-0 max-w-2xl mx-auto mb-1 sm:px-4 md:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div
+              v-for="(box, index) in Data.boxes.boxes"
+              :key="box.title"
+              cols="12"
+              md="6"
+              class="flex flex-col items-center text-center p-0 max-w-2xl mx-auto mb-1 sm:px-4 md:px-8"
+            >
               <component :is="index" class="h-24 w-24 rounded-full overflow-hidden mb-6"></component>
               <div class="flex flex-col">
                 <h4 class="text-title text-xl font-medium mb-2">{{ box.title }}</h4>
@@ -49,7 +55,11 @@
 
         <div class="py-4 max-w-screen-lg mx-auto">
           <div class="flex flex-col md:flex-row">
-            <div class="flex flex-col items-center text-center p-0 max-w-lg mx-auto mb-1 sm:px-4 md:px-8" v-for="testi in $page.posts.edges" :key="testi.id">
+            <div
+              class="flex flex-col items-center text-center p-0 max-w-lg mx-auto mb-1 sm:px-4 md:px-8"
+              v-for="testi in $page.posts.edges"
+              :key="testi.id"
+            >
               <p class="text-body text-xl italic bg-white px-4 pt-8 pb-16 border rounded">"{{ testi.node.blurb }}"</p>
               <div class="-mt-14 flex flex-col items-center text-center">
                 <div class="h-24 w-24 rounded-full overflow-hidden mb-6">
@@ -120,7 +130,8 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+        content:
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
     ],
   },
