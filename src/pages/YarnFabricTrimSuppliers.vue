@@ -1,17 +1,17 @@
 <template>
   <Layout>
-    <div class="header">
-      <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">
+    <div class="my-20 text-center">
+      <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
+      <p class="text-lg text-subtitle max-w-2xl mx-auto">
         {{ Data.header.subtext }}
       </p>
-      <div class="image-banner">
-        <g-image :src="Data.header.image" quality="100" blur="40" width="750" />
+      <div v-if="Data.header.image" class="mx-auto text-center max-w-5xl">
+        <g-image :src="Data.header.image" quality="100" blur="40" width="750" class="mt-12 lg:rounded-md" />
       </div>
     </div>
 
-    <section class="mt-5 section-content anchor-links">
-      <p class="text-center semi-spaced mb-5 text-small">OUR SOLUTIONS</p>
+    <section class="section-content anchor-links">
+      <p class="text-center semi-spaced mb-10 text-xl">OUR SOLUTIONS</p>
       <ul>
         <li><a href="#database">Database</a></li>
         <li><a href="#marketplace">Marketplace</a></li>
@@ -20,21 +20,14 @@
 
     <hr class="a-keyline" />
 
-    <div class="content mb-5">
-      <section id="database" class="linked section-content">
-        <OneCol class="mt-5" :data="Data.content.database" />
-        <TwoCol :data="Data.content.database.elements" />
-      </section>
-      <String2 />
-      <section id="marketplace" class="linked section-content">
-        <OneCol class="mt-5" :data="Data.content.marketplace" image center />
-      </section>
+    <div class="contain my-20">
+      <TwoCol :data="Data.blocks" />
     </div>
   </Layout>
 </template>
 
 <script>
-import Data from '~/_settings/matching.json';
+import Data from '~/_settings/yar-sup.json';
 import OneCol from '~/components/PageElementOneCol';
 import TwoCol from '~/components/PageElementTwoCol';
 import String1 from '~/components/icons/String1';

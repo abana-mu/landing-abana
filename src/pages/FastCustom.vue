@@ -100,7 +100,7 @@ export default {
 
 .video-container {
   width: 100%;
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     width: 50%;
   }
   margin: 0 auto;
@@ -130,7 +130,7 @@ export default {
 
   padding-left: 0;
 
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     padding-left: 10px;
   }
   li {

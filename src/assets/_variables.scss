@@ -31,13 +31,13 @@ $subtitle-light: $grey-light-blue; // pricing billed
 $text-white: $white;
 $text-light: $blue-text-dark; //footer text light
 
-$break-s: 576px;
-$break-m: 768px;
-$break-l: 992px;
-$break-xl: 1200px;
-$break-xxl: 1440px;
+$break-sm: 640px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xl: 1280px;
+$break-2xl: 1536px;
 
-$break-collapse: $break-l;
+$break-collapse: $break-lg;
 
 $font: 'SS-font1';
 

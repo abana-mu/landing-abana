@@ -1,8 +1,8 @@
 <!-- HTML -->
 <template>
   <div class="text-center my-4 py-4 pb-5">
-    <div class="contain grid grid-cols-1 md:grid-cols-8 mb-4 items-center">
-      <p class="col-span-1">Trusted by:</p>
+    <div class="contain grid grid-cols-1 md:grid-cols-8 mb-6 items-center">
+      <p class="col-span-1 text-lg font-medium">Trusted by:</p>
 
       <VueSlickCarousel v-bind="settings" class="col-span-1 md:col-span-7 px-6">
         <div v-for="n in Math.ceil(data.length / 4)" :key="n">
@@ -95,7 +95,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     margin-top: 0px;
     margin-bottom: 0px;
   }

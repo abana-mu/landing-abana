@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <TheNavbar />
-    <div class="layout">
+    <TheNavbar class="relative z-20" />
+    <div class="relative z-10">
       <slot />
     </div>
     <TheFooter />
@@ -35,12 +35,12 @@ query {
   padding-top: 2rem;
 
   //Small 578-776
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     padding-top: 4rem;
   }
 
   //Large 992-1200
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     margin-top: 80px;
   }
 }

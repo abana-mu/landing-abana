@@ -21,12 +21,12 @@ h1 {
   }
 
   // 768-1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: $f42;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     font-size: $f46;
   }
 }
@@ -38,12 +38,12 @@ h2 {
   font-size: $f28;
 
   // 768 - 1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: $f32;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     font-size: $f36;
   }
 }
@@ -55,12 +55,12 @@ h3 {
   font-size: $f20;
 
   //Medium 776-1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: $f22;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     font-size: $f24;
   }
 }
@@ -70,12 +70,12 @@ h4 {
   font-size: $f20;
 
   //Medium 776-1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: $f20;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     font-size: $f20;
   }
 }
@@ -84,12 +84,12 @@ h4 {
   letter-spacing: 8px;
 
   //Medium 776-1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     letter-spacing: 9px;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     letter-spacing: 10px;
   }
 }
@@ -98,12 +98,12 @@ h4 {
   letter-spacing: 3px;
 
   //Medium 776-1440
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     letter-spacing: 4px;
   }
 
   // 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     letter-spacing: 5px;
   }
 }
@@ -145,11 +145,11 @@ p {
 .string {
   width: 50px;
 
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     width: 55px;
   }
 
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     width: 60px;
   }
 
@@ -161,10 +161,11 @@ p {
 .markdown-body {
   font-family: $font !important;
   -moz-osx-font-smoothing: grayscale !important;
-  color: $text-body !important;
-  font-size: inherit !important;
   a {
     color: $primary !important;
+  }
+  ul {
+    list-style: initial;
   }
 }
 
@@ -238,19 +239,19 @@ p {
   padding-right: 1.875rem;
 
   //Small 578-776
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     padding-left: 2.9rem;
     padding-right: 2.9rem;
   }
 
   //Medium 776-992
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     padding-left: 3.925rem;
     padding-right: 3.925rem;
   }
 
   //Large 992-1200
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -262,14 +263,14 @@ p {
   }
 
   //XL 1440+
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     padding-left: 7rem;
     padding-right: 7rem;
   }
 }
 
 .mobile-gutter {
-  @media (max-width: $break-s) {
+  @media (max-width: $break-sm) {
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -294,19 +295,19 @@ p {
   font-size: 1rem;
 
   //Small 578-776
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     font-size: 1.05rem;
     max-width: 500px;
   }
 
   //Medium 776-992
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: 1.1rem;
     max-width: 500px;
   }
 
   //Large 992-1200
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     font-size: 1.15rem;
     max-width: 780px;
   }
@@ -399,7 +400,7 @@ p {
   border: none;
   padding: 15px 0 1px 0;
 
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     padding: 20px 0 10px 0;
   }
 }
@@ -443,7 +444,7 @@ p {
 .nav-tabs .nav-item {
   text-align: center;
 
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     min-width: 150px;
   }
 
@@ -472,13 +473,14 @@ p {
     border-radius: 6px;
     width: 100%;
 
-    @media (min-width: $break-m) {
+    @media (min-width: $break-md) {
       width: 85%;
     }
   }
 }
 
 .section-content {
+  margin-top: 1.25rem;
   width: 85%;
   margin-right: auto;
   margin-left: auto;

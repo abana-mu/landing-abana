@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="col-container">
-      <div v-for="(row, index) in data" :key="index" :id="index" no-gutters class="two-col">
+      <div v-for="(row, index) in data" :key="index" :id="index" class="two-col">
         <div lg class="column-text">
           <div cols="11" lg="10" class="p-0">
             <div class="col-headers">
@@ -49,14 +49,14 @@ export default {
   align-items: center;
   margin-bottom: 8rem;
   margin-top: 35px;
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     margin-bottom: 8rem;
     margin-top: 8rem;
   }
 
   .column-text {
     margin-bottom: 30px;
-    @media (min-width: $break-m) {
+    @media (min-width: $break-md) {
       margin-bottom: 0px;
     }
   }
@@ -86,7 +86,7 @@ export default {
 
 .col-img-container {
   width: 100%;
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     width: 75%;
   }
 }

@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.vue', './src/**/*.js', './src/**/*.md', './src/**/*.html'],
   theme: {
     extend: {
+      spacing: {
+        18: '72px',
+      },
       screens: {
         xs: '375px',
       },
@@ -12,8 +15,10 @@ module.exports = {
       colors: {
         body: '#202c4f',
         title: '#0d183a',
-        caption: '#737a96',
-        bodyOnDark: '#a6a6ca',
+        subtitle: '#737a96',
+        caption: '#acb1c3',
+        bodyOnDark: '#dadaed',
+        titleOnDark: 'white',
         primary: {
           DEFAULT: '#FF6158',
           100: '#FFF4F3',
@@ -37,7 +42,7 @@ module.exports = {
           500: '#18181B',
         },
         light: {
-          100: '#F8FAFC',
+          100: '#f9f9fb',
           200: '#F1F5F9',
           300: '#E2E8F0',
           400: '#CBD5E1',
@@ -57,5 +62,5 @@ module.exports = {
       display: ['group-hover'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

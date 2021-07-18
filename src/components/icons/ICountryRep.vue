@@ -1,22 +1,14 @@
 <!-- HTML -->
 <template>
-  <svg class="drop-image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
-    <path class="dark" fill="currentColor" d="M8.1,4.3v20.8c0,0.5-0.5,0.9-1,0.9c-0.6,0-1-0.4-1-0.9V5.3c0-0.5,0.5-0.9,1-0.9H8.1z" />
+  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="dark" fill="currentColor" d="M8.41895 4.3V25.1C8.41895 25.6 7.91895 26 7.41895 26C6.81895 26 6.41895 25.6 6.41895 25.1V5.3C6.41895 4.8 6.91895 4.4 7.41895 4.4H8.41895V4.3Z" />
     <path
       class="light"
       fill="currentColor"
-      d="M23.9,18.5c0,0.5-0.3,0.9-0.8,0.9H9.1V4.3h14.1c0.1,0,0.3,0,0.4,0.1c0.4,0.3,0.5,0.8,0.3,1.3l-3.2,6.1
-			l3.2,6.1C23.9,18.2,23.9,18.3,23.9,18.5z"
+      d="M24.2189 18.5C24.2189 19 23.9189 19.4 23.4189 19.4H9.41895V4.3H23.5189C23.6189 4.3 23.8189 4.3 23.9189 4.4C24.3189 4.7 24.4189 5.2 24.2189 5.7L21.0189 11.8L24.2189 17.9C24.2189 18.2 24.2189 18.3 24.2189 18.5Z"
     />
   </svg>
 </template>
-
-<!-- SCRIPTS -->
-<script></script>
-
-<!-- QUERIES -->
-<static-query>
-</static-query>
 
 <!-- STYLING -->
 <style lang="scss" scoped>

@@ -1,10 +1,7 @@
 <template>
   <Layout>
     <div class="my-20 text-center">
-      <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
-      <p class="text-lg text-subtitle max-w-2xl mx-auto">
-        {{ Data.header.subtext }}
-      </p>
+      <h1 class="font-medium text-5xl">{{ Data.header.title }}</h1>
     </div>
 
     <div class="content overflow-hidden">
@@ -15,8 +12,8 @@
       </div>
 
       <section class="section-content anchor-links">
-        <p class="text-center semi-spaced my-10 text-xl uppercase">
-          EXPLORE THE REASONS
+        <p class="text-center semi-spaced my-10 text-xl">
+          EXPLORE OUR VALUES
         </p>
         <ul class="flex flex-col lg:flex-row text-center space-y-10 lg:space-y-0">
           <li>
@@ -35,7 +32,7 @@
 
       <section v-for="(row, index) in Data.elements" :id="index" class="linked" :key="index">
         <div class="mt-5">
-          <OneCol :data="row" class="why-col section-content py-5" />
+          <OneCol :data="row" class="why-col section-content" />
           <div class="image"></div>
         </div>
       </section>
@@ -44,7 +41,7 @@
 </template>
 
 <script>
-import Data from '~/_settings/whyafrica.json';
+import Data from '~/_settings/carbon-offset.json';
 import TwoCol from '~/components/PageElementTwoCol';
 import OneCol from '~/components/PageElementOneCol';
 

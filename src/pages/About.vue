@@ -1,82 +1,51 @@
 <template>
   <Layout>
-    <div class="header">
-      <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">{{ Data.header.subtext }}</p>
+    <div class="my-20 text-center">
+      <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
+      <p class="text-lg text-subtitle max-w-2xl mx-auto">
+        {{ Data.header.subtext }}
+      </p>
     </div>
     <String2 />
-    <section>
-      <div>
-        <div class="about-row">
-          <div cols="12" lg>
-            <div class="about-image-container">
-              <g-image
-                immediate
-                src="~/assets/images/arif.png"
-                quality="90"
-                blur="40"
-              />
-            </div>
-          </div>
-          <div cols="12" lg>
-            <h2 class="mb-3">
-              Arif Currimjee - <span class="text-primary">Founder</span>
-            </h2>
-            <vue-simple-markdown
-              :source="Data.arif"
-              class="about-text"
-            ></vue-simple-markdown>
-          </div>
+    <div class="contain">
+      <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex justify-center pb-12">
+          <g-image class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96" immediate src="~/assets/images/arif.png" quality="90" blur="40" />
         </div>
-        <String1 />
-        <div class="about-row">
-          <div cols="12" lg order-lg="1">
-            <div class="about-image-container">
-              <g-image
-                immediate
-                src="~/assets/images/dirk.png"
-                quality="90"
-                blur="40"
-              />
-            </div>
-          </div>
-          <div cols="12" lg>
-            <h2 class="mb-3">Dirk Robens - <span class="blue">CEO</span></h2>
-            <vue-simple-markdown
-              :source="Data.dirk"
-              class="about-text"
-            ></vue-simple-markdown>
-          </div>
+
+        <div>
+          <h2 class="mb-3 text-4xl font-medium">Arif Currimjee - <span class="text-primary">Founder</span></h2>
+          <vue-simple-markdown :source="Data.arif" class="text-body text-lg"></vue-simple-markdown>
         </div>
       </div>
-    </section>
-
-    <section
-      v-for="(row, index) in Data.elements"
-      :key="index"
-      class="about-container"
-    >
-      <div>
-        <div cols="12" md="4">
-          <h2 class="spaced">{{ row.title }}</h2>
+      <String1 />
+      <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div class="flex justify-center pb-12 order-2">
+          <g-image class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96" immediate src="~/assets/images/dirk.png" quality="90" blur="40" />
         </div>
-        <div cols="12" md="8">
-          <p>
-            <vue-simple-markdown
-              :source="row.subtext"
-              class="about-text"
-            ></vue-simple-markdown>
-          </p>
+
+        <div>
+          <h2 class="mb-3 text-4xl font-medium">Dirk Robens - <span class="blue">CEO</span></h2>
+          <vue-simple-markdown :source="Data.dirk" class="text-body text-lg"></vue-simple-markdown>
         </div>
       </div>
-    </section>
-
-    <div class="image-container">
-      <g-image src="~/assets/images/cdm.jpg" quality="100" />
     </div>
 
-    <section>
-      <h2 class="mt-5 mb-4 text-center">Join us on our adventure!</h2>
+    <section v-for="(row, index) in Data.elements" :key="index" class="about-container">
+      <div class="grid grid-cols-3">
+        <h2 class="tracking-widest font-medium col-span-1">{{ row.title }}</h2>
+        <div class="col-span-2">
+          <vue-simple-markdown :source="row.subtext" class="text-body text-lg"></vue-simple-markdown>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-3xl mx-auto">
+      <g-image src="~/assets/images/cdm.jpg" quality="100" class="w-full rounded" />
+    </div>
+
+    <section class="my-24">
+      <h2 class="mt-5 mb-8 text-center text-3xl font-medium">Join us on our adventure!</h2>
       <div class="text-center mb-5">
         <a href="https://app.abana.mu/register-buyer">
           <div class="btn btn-primary">Join Now</div>
@@ -94,12 +63,11 @@ import String1 from '~/components/icons/String1';
 
 export default {
   metaInfo: {
-    title: 'About Us',
+    title: Data.header.title,
     meta: [
       {
         name: 'description',
-        content:
-          'More than 65 years of combined textile sector experience as Makers and Buyers, working with industry-leading companies. Find our more about our team',
+        content: Data.header.subtext,
       },
     ],
   },
@@ -117,61 +85,7 @@ export default {
 </script>
 
 <style lang="scss">
-.about-image-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3rem;
-  img {
-    width: 250px;
-    height: 250px;
-    @media (min-width: $break-m) {
-      width: 300px;
-      height: 300px;
-    }
-    @media (min-width: $break-l) {
-      width: 75%;
-      height: 75%;
-    }
-  }
-}
-
 .blue {
   color: $blue;
-}
-
-.about-row {
-  margin: 3rem 0;
-}
-
-.about-container {
-  padding: 0 1rem;
-  margin: 10rem auto 5rem auto;
-
-  max-width: 350px;
-  @media (min-width: $break-m) {
-    max-width: 750px;
-  }
-  h2 {
-    font-size: $f32;
-    margin-bottom: 1rem;
-    @media (min-width: $break-m) {
-      margin-bottom: 3rem;
-    }
-  }
-}
-.image-container {
-  max-width: 750px;
-  margin: 0 auto;
-  border-radius: 6px;
-  img {
-    width: 100%;
-    border-radius: 6px;
-  }
-}
-
-.about-text {
-  font-size: 1rem;
-  line-height: 28px;
-  letter-spacing: 0.6px;
 }
 </style>

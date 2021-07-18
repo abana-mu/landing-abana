@@ -11,8 +11,8 @@
 <script>
 export default {
   props: {
-    isActive: Boolean
-  }
+    isActive: Boolean,
+  },
 };
 </script>
 
@@ -39,7 +39,7 @@ export default {
 .hamburger.active .hamburger-inner,
 .hamburger.active .hamburger-inner:after,
 .hamburger.active .hamburger-inner:before {
-  background-color: $primary;
+  background-color: $title-dark;
 }
 .hamburger-box {
   position: relative;
@@ -62,12 +62,12 @@ export default {
   transition-duration: 0.15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: $primary;
+  background-color: $title-dark;
 }
 .hamburger-inner:after,
 .hamburger-inner:before {
   display: block;
-  content: "";
+  content: '';
 }
 .hamburger-inner:before {
   top: -8px;
@@ -84,8 +84,7 @@ export default {
   transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
 }
 .hamburger--spin .hamburger-inner:after {
-  transition: bottom 0.1s ease-in 0.25s,
-    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--spin.active .hamburger-inner {
   transition-delay: 0.12s;
@@ -99,8 +98,7 @@ export default {
 }
 .hamburger--spin.active .hamburger-inner:after {
   bottom: 0;
-  transition: bottom 0.1s ease-out,
-    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transform: rotate(-90deg);
 }
 </style>

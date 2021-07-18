@@ -42,13 +42,13 @@ export default {
   font-size: $f38;
 
   //Medium 767-992
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     max-width: 780px;
     font-size: $f48;
   }
 
   //Large 992-1200
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     max-width: 860px;
   }
 
@@ -56,7 +56,7 @@ export default {
   @media (min-width: $break-xl) {
     max-width: 900px;
   }
-  @media (min-width: $break-xxl) {
+  @media (min-width: $break-2xl) {
     max-width: 1000px;
     font-size: $f56;
   }
@@ -72,19 +72,19 @@ export default {
   font-size: 1rem;
 
   //Small 578-776
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     font-size: 1.05rem;
     max-width: 500px;
   }
 
   //Medium 776-992
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     font-size: 1.1rem;
     max-width: 500px;
   }
 
   //Large 992-1200
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     font-size: 1.15rem;
     max-width: 780px;
   }
@@ -100,7 +100,7 @@ export default {
   margin: 20px 0 40px 0;
   text-align: center;
   .btn {
-    @media (max-width: $break-s) {
+    @media (max-width: $break-sm) {
       width: 100%;
     }
   }
@@ -115,14 +115,14 @@ export default {
 
   border-radius: 10px;
 
-  @media (min-width: $break-s) {
+  @media (min-width: $break-sm) {
     margin: 0px auto 25px auto;
   }
-  @media (min-width: $break-m) {
+  @media (min-width: $break-md) {
     width: 600px;
     margin: 0px auto 25px auto;
   }
-  @media (min-width: $break-l) {
+  @media (min-width: $break-lg) {
     width: 700px;
     margin: 0px auto 25px auto;
   }

@@ -1,14 +1,11 @@
 <template>
   <Layout>
-    <div class="header">
-      <h1 class="title">{{ Data.header.title }}</h1>
-      <p class="subtitle">{{ Data.header.subtext }}</p>
+    <div class="my-12 text-center max-w-2xl mx-auto">
+      <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
+      <p class="text-lg text-subtitle">{{ Data.header.subtext }}</p>
     </div>
-    <div class="my-5">
-      <vue-simple-markdown
-        :source="Data.content"
-        class="md-text"
-      ></vue-simple-markdown>
+    <div class="mt-5 mb-24 contain">
+      <vue-simple-markdown :source="Data.content" class="md-text"></vue-simple-markdown>
     </div>
   </Layout>
 </template>
@@ -26,8 +23,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content:
-          'As textile buyers and sellers ourselves, we know how important your privacy is. Find out about our terms here.',
+        content: 'As textile buyers and sellers ourselves, we know how important your privacy is. Find out about our terms here.',
       },
     ],
   },

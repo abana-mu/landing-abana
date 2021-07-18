@@ -1,40 +1,22 @@
 <template>
   <Layout>
-    <div class="container-fluid">
-      <div class="header">
-        <h1 class="title">{{ Data.header.title }}</h1>
-        <p class="subtitle">{{ Data.header.subtext }}</p>
-      </div>
-      <div>
-        <div
-          cols="12"
-          class="mb-5 p-3 testimonial-container"
-          v-for="testi in $page.posts.edges"
-          :key="testi.id"
-        >
-          <div
-            class="testimonial"
-            :style="`background-color:` + testi.node.color"
-          >
-            <div class="text-side">
-              <h3>{{ testi.node.title }}</h3>
-              <p>{{ testi.node.subtitle }}</p>
-              <vue-simple-markdown
-                :source="testi.node.quote"
-                class="mb-5"
-              ></vue-simple-markdown>
-              <h4>{{ testi.node.name }}</h4>
-              <p>{{ testi.node.position }}</p>
-              <g-link
-                :to="testi.node.path"
-                class="card-link"
-                v-if="testi.node.caseStudy"
-                >Read the Case Study</g-link
-              >
-            </div>
-            <div class="image-side">
-              <g-image :src="testi.node.image" />
-            </div>
+    <div class="my-20 text-center">
+      <h1 class="font-medium text-5xl">{{ Data.header.title }}</h1>
+      <p class="text-lg text-subtitle max-w-2xl mx-auto">{{ Data.header.subtext }}</p>
+    </div>
+    <div class="contain">
+      <div class="mb-5 p-3 testimonial-container" v-for="testi in $page.posts.edges" :key="testi.id">
+        <div class="flex flex-col lg:flex-row" :style="`background-color:` + testi.node.color">
+          <div class="text-side">
+            <h3 class="text-2xl font-medium mb-4">{{ testi.node.title }}</h3>
+            <p>{{ testi.node.subtitle }}</p>
+            <vue-simple-markdown :source="testi.node.quote" class="text-body text-lg mb-4"></vue-simple-markdown>
+            <h4 class="text-xl mb-2">{{ testi.node.name }}</h4>
+            <p class="text-lg">{{ testi.node.position }}</p>
+            <g-link :to="testi.node.path" class="card-link" v-if="testi.node.caseStudy">Read the Case Study</g-link>
+          </div>
+          <div class="image-side">
+            <g-image :src="testi.node.image" />
           </div>
         </div>
       </div>
@@ -73,8 +55,7 @@ export default {
     meta: [
       {
         name: 'Testimonials',
-        content:
-          "Listen to what the voices of the industry have to say about ABANA's impact in the fashion and textile industry",
+        content: "Listen to what the voices of the industry have to say about ABANA's impact in the fashion and textile industry",
       },
     ],
   },
@@ -95,14 +76,6 @@ export default {
   order: 2;
   @media (min-width: $break-collapse) {
     order: inherit;
-  }
-}
-
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $break-collapse) {
-    flex-direction: row;
   }
 }
 

@@ -1,45 +1,23 @@
 <template>
   <Layout>
-    <div class="header">
-      <h1 class="title">{{ Data.header.title }}</h1>
+    <div class="my-20 text-center">
+      <h1 class="font-medium text-5xl">{{ Data.header.title }}</h1>
     </div>
 
-    <div class="content mt-5 overflow-hidden">
-      <div>
-        <div class="col-4 px-1 px-md-2">
-          <g-image
-            src="~/assets/images/picture7.jpg"
-            blur="40"
-            class="w-100"
-            immediate="false"
-            quality="100"
-          ></g-image>
-        </div>
-        <div class="col-4 px-1 px-md-2">
-          <g-image
-            src="~/assets/images/picture9.jpg"
-            blur="40"
-            class="w-100"
-            immediate="false"
-            quality="100"
-          ></g-image>
-        </div>
-        <div class="col-4 px-1 px-md-2">
-          <g-image
-            src="~/assets/images/picture8.jpg"
-            blur="40"
-            class="w-100"
-            immediate="false"
-            quality="100"
-          ></g-image>
-        </div>
+    <div class="content overflow-hidden">
+      <div class="flex flex-row -mx-2">
+        <g-image src="~/assets/images/picture7.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
+
+        <g-image src="~/assets/images/picture9.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
+
+        <g-image src="~/assets/images/picture8.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
       </div>
 
-      <section class="mt-5 section-content anchor-links">
-        <p class="text-center semi-spaced mb-5 text-small">
+      <section class="section-content anchor-links">
+        <p class="text-center semi-spaced my-10 text-xl">
           EXPLORE OUR VALUES
         </p>
-        <ul class="break-col">
+        <ul class="flex flex-col lg:flex-row text-center space-y-10 lg:space-y-0">
           <li><a href="#opp">Africa, an Opportunity</a></li>
           <li><a href="#sus">Fashion For Good</a></li>
           <li><a href="#com">Commitments & Purpose</a></li>
@@ -50,31 +28,28 @@
 
       <div class="mb-5">
         <section id="opp" class="linked section-content">
-          <div class="sus-title">
-            <p>{{ Data.content.solutions.title }}</p>
-            <p>{{ Data.content.solutions.subtext }}</p>
+          <div class="mt-16 mb-32">
+            <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.solutions.title }}</p>
+            <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.solutions.subtext }}</p>
           </div>
           <TwoCol :data="Data.content.solutions.elements" />
         </section>
         <String2 />
         <section id="sus" class="linked section-content">
-          <div class="sus-title">
-            <p>{{ Data.content.sustainability.title }}</p>
-            <p>{{ Data.content.sustainability.subtext }}</p>
+          <div class="mt-16 mb-32">
+            <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.sustainability.title }}</p>
+            <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.sustainability.subtext }}</p>
           </div>
           <TwoCol :data="Data.content.sustainability.elements" />
         </section>
         <String1 />
         <section id="com" class="linked section-content">
-          <div class="sus-title">
-            <p>{{ Data.content.commitment.title }}</p>
+          <div class="my-16">
+            <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.commitment.title }}</p>
           </div>
-          <vue-simple-markdown
-            :source="Data.content.commitment.content"
-            class="text mt-4"
-          ></vue-simple-markdown>
-          <div class="image-banner">
-            <g-image :src="Data.content.commitment.image" quality="100" />
+          <vue-simple-markdown :source="Data.content.commitment.content" class="max-w-2xl mx-auto text-base text-body mt-4 mb-16"></vue-simple-markdown>
+          <div class="w-full">
+            <g-image :src="Data.content.commitment.image" quality="100" class="rounded mx-auto " />
           </div>
         </section>
       </div>
@@ -101,8 +76,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content:
-          "A sustainable future is at the core of ABANA's mission. There are no simple solutions but many creative opportunities. Find out more about our commitments.",
+        content: "A sustainable future is at the core of ABANA's mission. There are no simple solutions but many creative opportunities. Find out more about our commitments.",
       },
     ],
   },
@@ -113,98 +87,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.sus-title {
-  margin: 4rem 0 8rem 0;
-  p {
-    text-align: center;
-    margin: 0;
-    font-size: $f28;
-    color: $grey-dark;
-    letter-spacing: 3px;
-    @media (min-width: $break-collapse) {
-      font-size: $f32;
-    }
-  }
-}
-
-.sustainability {
-  color: red;
-  h2 {
-    text-align: center;
-    margin: 4rem 0 6rem 0;
-    font-size: $f28;
-    color: $grey-dark;
-    letter-spacing: 3px;
-    font-weight: 400;
-    @media (min-width: $break-collapse) {
-      font-size: $f32;
-    }
-  }
-}
-
-.why-col {
-  max-width: 500px;
-  margin: 0 auto;
-  h2,
-  p {
-    text-align: left;
-  }
-  .text {
-    text-align: left !important;
-    width: 100% !important;
-  }
-}
-
-.break-col {
-  display: flex;
-  flex-direction: column;
-  @media (max-width: $break-collapse) {
-    align-items: center;
-    li {
-      margin: 10px 0;
-    }
-  }
-
-  @media (min-width: $break-collapse) {
-    flex-direction: row;
-  }
-}
-
-.image {
-  margin-top: 3rem;
-  height: 250px;
-  width: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: $break-collapse) {
-    background-attachment: fixed;
-  }
-}
-
-.text {
-  margin: 0 auto;
-  max-width: 650px;
-  margin-bottom: 8rem;
-}
-
-.image-banner {
-  text-align: center;
-}
-
-#economic .image {
-  background-image: url('~@/assets/images/picture1-b.jpg');
-}
-
-#social .image {
-  background-image: url('~@/assets/images/picture3-b.jpg');
-}
-
-#environmental .image {
-  background-image: url('~@/assets/images/picture2-b.jpg');
-}
-</style>

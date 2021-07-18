@@ -7,14 +7,11 @@
       </div>
       <div class="grid grid-cols-2 gap-10 mb-4">
         <div v-for="press in $page.posts.edges" :key="press.id">
-          <g-link
-            :to="press.node.path"
-            class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
-          >
+          <g-link :to="press.node.path" class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow">
             <g-image :src="press.node.image" class="w-full" />
             <div class="flex flex-col flex-1 p-3">
               <div class="mb-2">{{ press.node.title }}</div>
-              <div class="text-sm text-caption mb-1">{{ press.node.date }}</div>
+              <div class="text-sm text-subtitle mb-1">{{ press.node.date }}</div>
               <div class="">{{ press.node.excerpt }}</div>
             </div>
             <div class="bg-gray-100 border-t py-3 px-5 text-center ">

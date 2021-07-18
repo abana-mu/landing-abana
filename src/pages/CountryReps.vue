@@ -1,32 +1,22 @@
 <template>
   <Layout class="one-section-tight-layout">
     <div class="height-restriction">
-      <div class="header">
-        <h1 class="title">{{ Data.header.title }}</h1>
-        <p class="subtitle">{{ Data.header.subtext }}</p>
-        <div class="image-banner"></div>
+      <div class="my-20 text-center">
+        <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
+        <p class="text-lg text-subtitle max-w-2xl mx-auto">
+          {{ Data.header.subtext }}
+        </p>
       </div>
 
       <div id="tabs" class="mx-auto">
-        <div
-          class="bg-secondary-400 grid grid-cols-2 gap-4 sm:gap-0 sm:flex sm:flex-row justify-center py-4"
-        >
-          <a
-            class="btn-price text-center"
-            v-on:click="activetab = index"
-            v-bind:class="[activetab === index ? 'active' : '']"
-            v-for="(count, index) in Count"
-            :key="count.index"
-          >
+        <div class="bg-secondary-400 grid grid-cols-2 gap-4 sm:gap-0 sm:flex sm:flex-row justify-center py-4">
+          <a class="btn-price text-center" v-on:click="activetab = index" v-bind:class="[activetab === index ? 'active' : '']" v-for="(count, index) in Count" :key="count.index">
             {{ count.name }}
           </a>
         </div>
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-5xl mx-auto">
           <div v-for="(tab, index) in Count" :key="index">
-            <div
-              v-if="activetab === index"
-              class="grid grid-cols-1 md:grid-cols-2"
-            >
+            <div v-if="activetab === index" class="grid grid-cols-1 md:grid-cols-2">
               <div v-for="reps in tab.data" :key="reps.name">
                 <RepCard :data="reps" />
               </div>
@@ -65,12 +55,7 @@ export default {
   data() {
     return {
       Data,
-      Count: [
-        { name: 'Europe', data: EUData.reps },
-        { name: 'Africa', data: AFData.reps },
-        { name: 'America', data: AMData.reps },
-        { name: 'Asia', data: ASData.reps },
-      ],
+      Count: [{ name: 'Europe', data: EUData.reps }, { name: 'Africa', data: AFData.reps }, { name: 'America', data: AMData.reps }, { name: 'Asia', data: ASData.reps }],
       activetab: 0,
     };
   },
