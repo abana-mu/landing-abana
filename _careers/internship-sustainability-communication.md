@@ -47,8 +47,6 @@ thrive: >-
   You are open to learn and eager to contribute. 
 
 
-
-
   **Learning Outcomes & Objectives:** 
 
 
