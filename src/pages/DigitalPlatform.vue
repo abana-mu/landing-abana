@@ -10,17 +10,9 @@
       </div>
     </div>
 
-    <section class="section-content anchor-links">
-      <p class="text-center semi-spaced mb-10 text-xl">OUR SOLUTIONS</p>
-      <ul>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#marketplace">Marketplace</a></li>
-      </ul>
-    </section>
-
     <hr class="a-keyline" />
 
-    <div class="contain my-20">
+    <div class="my-10 lg:my-20">
       <TwoCol :data="Data.blocks" />
     </div>
   </Layout>
@@ -33,10 +25,6 @@ import TwoCol from '~/components/PageElementTwoCol';
 import String1 from '~/components/icons/String1';
 import String2 from '~/components/icons/String2';
 import ICheck from '@/components/icons/ICheck';
-import IRegister from '@/components/icons/IRegister';
-import IApprove from '@/components/icons/IApprove';
-import IComplete from '@/components/icons/IComplete';
-import IBegin from '@/components/icons/IBegin';
 
 export default {
   components: {
@@ -44,10 +32,6 @@ export default {
     TwoCol,
     String1,
     String2,
-    IRegister,
-    IApprove,
-    IComplete,
-    IBegin,
   },
   metaInfo: {
     title: Data.header.title,

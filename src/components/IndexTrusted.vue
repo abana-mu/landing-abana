@@ -1,14 +1,14 @@
 <!-- HTML -->
 <template>
   <div class="text-center my-4 py-4 pb-5">
-    <div class="contain grid grid-cols-1 md:grid-cols-8 mb-6 items-center">
-      <p class="col-span-1 text-lg font-medium">Trusted by:</p>
+    <div class="grid grid-cols-1 md:grid-cols-8 mb-6 items-center">
+      <p class="col-span-1 text-lg font-medium mb-4">Trusted by:</p>
 
       <VueSlickCarousel v-bind="settings" class="col-span-1 md:col-span-7 px-6">
         <div v-for="n in Math.ceil(data.length / 4)" :key="n">
           <div class="grid grid-cols-2 sm:grid-cols-4 items-center">
             <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name">
-              <a :href="logo.link" target="_blank">
+              <a :href="logo.link" target="_blank" class="flex justify-center">
                 <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" class="trusted-image" />
               </a>
             </div>
@@ -85,7 +85,7 @@ export default {
   max-width: 80%;
   width: auto;
   opacity: 0.6;
-  filter: grayscale(1);
+  filter: grayscale(200%) contrast(250%);
 }
 
 .trusted-logos {
@@ -98,9 +98,6 @@ export default {
   @media (min-width: $break-lg) {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-  a {
-    display: block;
   }
 }
 </style>

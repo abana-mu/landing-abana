@@ -10,17 +10,9 @@
       </div>
     </div>
 
-    <section class="section-content anchor-links">
-      <p class="text-center semi-spaced mb-10 text-xl">OUR SOLUTIONS</p>
-      <ul>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#marketplace">Marketplace</a></li>
-      </ul>
-    </section>
-
     <hr class="a-keyline" />
 
-    <div class="contain my-20">
+    <div class="my-10 lg:my-20">
       <TwoCol :data="Data.blocks" />
     </div>
   </Layout>

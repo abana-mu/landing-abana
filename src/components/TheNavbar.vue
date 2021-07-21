@@ -2,7 +2,7 @@
 <template>
   <div id="nav-bar" :class="{ announce: announce }" class="top-0">
     <div id="announce" :class="{ hidden: !announce }" class="absolute bg-primary z-20 relative flex w-full top-0 justify-center items-center text-center h-12 sm:h-10">
-      <a :href="link" target="_blank" class="text-white text-sm sm:text-base hover:underline">{{ Data.text }}</a>
+      <a :href="link" target="_blank" class="text-white text-sm sm:text-base hover:underline">{{ AnnounceData.text }}</a>
     </div>
     <div class="relative">
       <div :class="[{ 'nav-sticky': scrolled }, { absolute: !scrolled }]" class="top-0 transition duration-1000 z-10 w-full">
@@ -47,19 +47,19 @@
                         <div class="shadow-xl border rounded-lg overflow-hidden max-w-3xl">
                           <div v-if="link.drop.type === 1" class="relative grid gap-6 bg-white sm:gap-8 lg:grid-cols-5">
                             <div class="col-span-3 py-8 px-10">
-                              <span class="uppercase text-sm font-medium tracking-wider text-caption pl-2 mb-6 block">{{ link.drop.header }}</span>
-                              <div class="flex flex-col justify-center space-y-8">
+                              <span class="uppercase text-sm s tracking-widest text-caption pl-2 mb-8 block">{{ link.drop.header }}</span>
+                              <div class="flex flex-col justify-center space-y-10">
                                 <g-link :to="drop.link" class="drop-item flex flex-row" v-for="(drop, index) in link.drop.links" :key="index">
                                   <component :is="drop.icon" class="drop-item-icon h-12 h-12 mr-4" />
                                   <div class="flex flex-col">
                                     <span class="drop-item-title font-medium text-title text-lg">{{ drop.title }}</span>
-                                    <span class="drop-item-subtitle text-subtitle text-xs ">{{ drop.title }}</span>
+                                    <span class="drop-item-subtitle text-subtitle text-xs ">{{ drop.subtitle }}</span>
                                   </div>
                                 </g-link>
                               </div>
                             </div>
                             <div class="col-span-2 bg-gray-50 py-8 px-10">
-                              <span class="uppercase text-sm font-medium tracking-wider text-caption pl-1 mb-4 block">more...</span>
+                              <span class="uppercase text-sm  tracking-widest text-caption pl-1 mb-6 block">more...</span>
                               <div class="flex flex-col justify-center space-y-4">
                                 <g-link :to="drop.link" class="drop-item flex items-center cursor-pointer" v-for="(drop, index) in link.drop.extra" :key="index">
                                   <component :is="drop.icon" class="drop-item-icon h-5 w-5 mr-4" />
@@ -70,8 +70,21 @@
                               </div>
                             </div>
                           </div>
-                          <div v-else>
-                            <span>HI</span>
+                          <div v-else class="relative grid gap-6 bg-white lg:grid-cols-3 p-8 ">
+                            <div v-for="(col, index) in link.drop.columns" :key="index">
+                              <span class="uppercase text-sm font-regular tracking-widest text-caption mb-4 block ml-4">{{ col.header }}</span>
+                              <g-link
+                                v-for="(link, index) in col.links"
+                                :key="index"
+                                :to="link.link"
+                                class="drop-item flex items-center cursor-pointer p-4 rounded-md hover:bg-primary-100 hover:bg-opacity-75 transition duration-200"
+                              >
+                                <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                                <div class="flex flex-col">
+                                  <span class="drop-item-title text-title text-base">{{ link.title }}</span>
+                                </div>
+                              </g-link>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -151,7 +164,8 @@
 
 <!-- SCRIPTS -->
 <script>
-import Data from '~/_settings/announce.json';
+import AnnounceData from '~/_settings/announce.json';
+import NavData from '~/_settings/navigation.json';
 
 import Logo from '@/components/icons/Logo';
 import Slogan from '@/components/icons/Slogan';
@@ -161,7 +175,9 @@ import IASS from '@/components/icons/IASS';
 import IMarket from '@/components/icons/IMarket';
 import IAfrica from '@/components/icons/IAfrica';
 import ICarbon from '@/components/icons/ICarbon';
-import IEcomm from '@/components/icons/IEcomm';
+import IDrops from '@/components/icons/IDrops';
+import IDigital from '@/components/icons/IDigital';
+import IFastCustom from '@/components/icons/IFastCustom';
 import ISupply from '@/components/icons/ISupply';
 import ISource from '@/components/icons/ISource';
 import IProduct from '@/components/icons/IProduct';
@@ -188,13 +204,15 @@ export default {
     IASS,
     IAfrica,
     ICarbon,
+    IDigital,
     ICountryRep,
+    IFastCustom,
     Logo,
     Slogan,
     NavbarHamburger,
     IFreelancers,
     IMarket,
-    IEcomm,
+    IDrops,
     ISupply,
     IProduct,
     INews,
@@ -214,12 +232,13 @@ export default {
   },
   data() {
     return {
-      Data,
+      AnnounceData,
+      NavData,
       scrolled: false,
-      announce: Data.active,
+      announce: false,
       sideBar: false,
       activetab: '',
-      link: 'https://' + Data.link,
+      link: 'https://' + AnnounceData.link,
       Nav: {
         buyer: {
           name: 'Buyers',
@@ -229,18 +248,27 @@ export default {
             links: [
               {
                 title: 'Apparel Sourcing Solutions',
+                subtitle: NavData.appSouSol,
                 link: '/apparel-sourcing-solutions',
                 icon: IASS,
               },
               {
                 title: 'Digital Platform',
+                subtitle: NavData.digPla,
                 link: '/digital-platform',
-                icon: ISource,
+                icon: IDigital,
               },
               {
-                title: 'E-commerce Solutions',
-                link: '/e-commerce-solutions',
-                icon: IEcomm,
+                title: 'Drops',
+                subtitle: NavData.dro,
+                link: '/drops',
+                icon: IFastCustom,
+              },
+              {
+                title: 'Fast Custom',
+                subtitle: NavData.fasCus,
+                link: '/fast-custom',
+                icon: IDrops,
               },
             ],
             extra: [
@@ -275,16 +303,19 @@ export default {
             links: [
               {
                 title: 'Apparel Manufacturers',
+                subtitle: NavData.appMan,
                 link: '/apparel-manufacturers',
                 icon: ISource,
               },
               {
                 title: 'Yarn, Fabric, Trim suppliers',
+                subtitle: NavData.yarSup,
                 link: '/yarn-fabric-trim-suppliers',
                 icon: IGM,
               },
               {
                 title: 'Service Providers',
+                subtitle: NavData.serPro,
                 link: '/service-providers',
                 icon: ISP,
               },
@@ -311,21 +342,66 @@ export default {
           name: 'Company',
           drop: {
             type: 2,
-            links: [
+            columns: [
               {
-                title: 'Apparel Sourcing Solutions',
-                link: '/',
-                icon: ITerms,
+                header: 'Company',
+                links: [
+                  {
+                    title: 'About Us',
+                    link: '/about',
+                    icon: IAbout,
+                  },
+                  {
+                    title: 'Careers',
+                    link: '/careers',
+                    icon: ICareer,
+                  },
+                  {
+                    title: 'Press',
+                    link: '/press',
+                    icon: INews,
+                  },
+                ],
               },
               {
-                title: 'Digital Platform',
-                link: '/',
-                icon: ITerms,
+                header: 'Partnerships',
+                links: [
+                  {
+                    title: 'Country Reps',
+                    link: '/country-reps',
+                    icon: ICountryRep,
+                  },
+                  {
+                    title: 'Freelancers',
+                    link: '/freelancers',
+                    icon: IFreelancers,
+                  },
+                  {
+                    title: 'Testimonials',
+                    link: '/testimonials',
+                    icon: ITestimonial,
+                  },
+                ],
               },
               {
-                title: 'E-commerce Solutions',
-                link: '/',
-                icon: ITerms,
+                header: 'Support',
+                links: [
+                  {
+                    title: 'FAQ',
+                    link: '/yarn-fabric-trim-suppliers',
+                    icon: IHow,
+                  },
+                  {
+                    title: 'Contact Us',
+                    link: '/contact',
+                    icon: IContact,
+                  },
+                  {
+                    title: 'Video Tutorials',
+                    link: '/service-providers',
+                    icon: IVideo,
+                  },
+                ],
               },
             ],
           },
@@ -358,6 +434,9 @@ export default {
     };
   },
   methods: {
+    setannounce() {
+      this.$router.currentRoute.path == '/' ? (this.announce = AnnounceData.active) : false;
+    },
     updateScroll() {
       if (window.scrollY > 40) {
         this.scrolled = true;
@@ -380,6 +459,7 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
+    this.setannounce();
   },
 };
 </script>

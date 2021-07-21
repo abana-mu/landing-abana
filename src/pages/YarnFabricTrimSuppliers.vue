@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="my-20 text-center">
+    <div class="py-20 mb-10 text-center">
       <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
       <p class="text-lg text-subtitle max-w-2xl mx-auto">
         {{ Data.header.subtext }}
@@ -10,19 +10,33 @@
       </div>
     </div>
 
-    <section class="section-content anchor-links">
-      <p class="text-center semi-spaced mb-10 text-xl">OUR SOLUTIONS</p>
-      <ul>
-        <li><a href="#database">Database</a></li>
-        <li><a href="#marketplace">Marketplace</a></li>
-      </ul>
+    <section class="relative">
+      <div class="realtive bg-white">
+        <p class="text-center semi-spaced mb-10 text-xl">OUR SOLUTIONS</p>
+        <div class="block">
+          <div class="border-b border-gray-200">
+            <nav class="-mb-px flex contain" aria-label="Tabs">
+              <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
+              <a v-on:click="activetab = 'b2b'" v-bind:class="[activetab === 'b2b' ? 'active' : '']" class="tab-buttons">
+                B2B Platform
+              </a>
+
+              <a v-on:click="activetab = 'support'" v-bind:class="[activetab === 'support' ? 'active' : '']" class="tab-buttons" aria-current="page">
+                On-the-Ground Support
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="my-20">
+        <transition enter-class="opacity-0" enter-active-class="transition duration-500" leave-active-class="transition duration-200" leave-to-class="opacity-0">
+          <TwoCol v-show="activetab == 'b2b'" :data="Data.b2bblocks" />
+        </transition>
+        <transition enter-class="opacity-0" enter-active-class="transition duration-500" leave-active-class="transition duration-200" leave-to-class="opacity-0">
+          <TwoCol v-show="activetab == 'support'" :data="Data.supportblocks" />
+        </transition>
+      </div>
     </section>
-
-    <hr class="a-keyline" />
-
-    <div class="contain my-20">
-      <TwoCol :data="Data.blocks" />
-    </div>
   </Layout>
 </template>
 
@@ -53,6 +67,7 @@ export default {
   data() {
     return {
       Data,
+      activetab: 'b2b',
     };
   },
 };

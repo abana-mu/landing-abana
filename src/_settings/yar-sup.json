@@ -1,9 +1,32 @@
 {
   "header": {
-    "title": "Apparel Sourcig Solutions",
+    "title": "Yarn, Fabric, Trim Suppliers",
     "subtext": "jkheblew buywgiluwegiueh\n"
   },
-  "blocks": [
+  "b2bblocks": [
+    {
+      "title": "Country Reps",
+      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
+      "image": "/uploads/back4.jpg",
+      "linkText": "Find a country Rep",
+      "url": "/country-reps"
+    },
+    {
+      "title": "Country Reps",
+      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
+      "image": "/uploads/back4.jpg",
+      "linkText": "Find a country Rep",
+      "url": "/country-reps"
+    },
+    {
+      "title": "Country Reps",
+      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
+      "image": "/uploads/back4.jpg",
+      "linkText": "Find a country Rep",
+      "url": "/country-reps"
+    }
+  ],
+  "supportblocks": [
     {
       "title": "Country Reps",
       "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",

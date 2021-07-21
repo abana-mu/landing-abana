@@ -1,6 +1,6 @@
 <!-- HTML -->
 <template>
-  <svg class="drop-image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55">
+  <svg class="drop-image" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
     <path
       id="scissors"
       class="dark"

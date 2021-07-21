@@ -1,10 +1,10 @@
 <template>
   <Layout class="index-layout">
     <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center border-b bg-gradient-to-l from-light-200">
-      <div class="contain h-full w-full flex flex-col justify-between z-10">
-        <div class="flex h-3/4 flex-col md:flex-row">
+      <div class="contain pt-24 lg:py-0 lg:h-full w-full flex flex-col justify-between z-10">
+        <div class="flex lg:h-3/4 flex-col md:flex-row">
           <div class="w-full md:w-2/3 h-full flex flex-col justify-center">
-            <span class="text-3xl sm:text-4xl lg:text-6xl font-regular mb-6 text-title">{{ Data.header.title }}</span>
+            <span class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title">{{ Data.header.title }}</span>
             <span class="text-base sm:text-lg lg:text-xl font-regular mb-12 text-subtitle">{{ Data.header.subtext }}</span>
             <!-- <g-link to="/about" class="btn btn-primary">
             {{ Data.header.cta }}
@@ -186,8 +186,6 @@ export default {
 
 <style lang="scss">
 #banner {
-  height: calc(100vh - 5rem);
-
   @media (min-width: $break-collapse) {
     height: calc(100vh - 6rem);
   }

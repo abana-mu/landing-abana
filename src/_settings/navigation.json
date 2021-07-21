@@ -1,9 +1,9 @@
 {
-  "app-sou-sol": "Apparel Sourcing Solutions subtitle",
-  "dig-pla": "Digital Platform subtitle",
+  "appSouSol": "Apparel Sourcing Solutions subtitle",
+  "digPla": "Digital Platform subtitle",
   "dro": "Drops subtitle",
-  "fas-cus": "Fast Custom subtitle",
-  "app-man": "Apparel Manufacturers subtitle",
-  "yar-sup": "Yarn subtitle",
-  "ser-pro": "Service Providers subtitle"
+  "fasCus": "Fast Custom subtitle",
+  "appMan": "Apparel Manufacturers subtitle",
+  "yarSup": "Yarn subtitle",
+  "serPro": "Service Providers subtitle"
 }

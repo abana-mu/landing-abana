@@ -52,75 +52,77 @@
 
         <!-- Cards Container -->
         <div class="bg-gray-100">
-          <div class="max-w-screen-lg mx-auto xs:px-4 py-10">
+          <div class="max-w-screen-xl mx-auto xs:px-4 py-10">
             <!-- Cards Tab -->
             <div v-for="(tabs, index) in Plans" :key="tabs.index">
-              <div v-if="activetab === index" class="tabcontent">
-                <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'">
-                  <!-- Cards -->
-                  <div
-                    class="relative flex flex-col items-start card-top grid-span-1 bg-white xs:rounded-md border-t border-b xs:border p-4 xs:p-5"
-                    :class="card.name"
-                    v-for="card in tabs.subs"
-                    :key="card.index"
-                  >
-                    <div class="capitalize font-medium text-xl mb-2 mt-1">{{ card.name }}</div>
-                    <div class="text-sm mb-4 h-10">{{ card.desc }}</div>
-                    <div class="text-4xl font-medium mb-4">
-                      <div v-if="card.price == 'Free'">
-                        <div>Free</div>
+              <transition enter-class="opacity-0" enter-active-class="transition duration-300" leave-active-class="transition duration-200" leave-to-class="opacity-0">
+                <div v-if="activetab === index" class="tabcontent">
+                  <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'">
+                    <!-- Cards -->
+                    <div
+                      class="relative flex flex-col items-start card-top grid-span-1 bg-white xs:rounded-md border-t border-b xs:border p-4 xs:p-5"
+                      :class="card.name"
+                      v-for="card in tabs.subs"
+                      :key="card.index"
+                    >
+                      <div class="capitalize font-medium text-xl mb-2 mt-1">{{ card.name }}</div>
+                      <div class="text-sm mb-4 h-10">{{ card.desc }}</div>
+                      <div class="text-4xl font-medium mb-4">
+                        <div v-if="card.price == 'Free'">
+                          <div>Free</div>
+                        </div>
+                        <div v-else><span class="text-subtitle  font-thin text-xl">US</span> ${{ card.price[currentPrice] }}/mo</div>
                       </div>
-                      <div v-else><span class="text-subtitle  font-thin text-xl">US</span> ${{ card.price[currentPrice] }}/mo</div>
-                    </div>
-                    <div v-if="card.price != 'Free'" class="p-2 border border-primary-200 text-primary">Save {{ Math.round((1 - card.price[currentPrice] / card.price[61]) * 100) }}% per month</div>
-                    <div v-else class="p-2 text-xl">
-                      🎉
-                    </div>
-                    <ul class="mt-4 pl-0 text-subtitle text-sm">
-                      <span v-if="card.name === 'pro'" class="flex mb-1">All features in Basic and...</span>
-                      <li v-for="feature in card.features" :key="feature" class="flex items-center">
-                        <svg class="h-3 w-3 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                      <div v-if="card.price != 'Free'" class="p-2 border border-primary-200 text-primary">Save {{ Math.round((1 - card.price[currentPrice] / card.price[61]) * 100) }}% per month</div>
+                      <div v-else class="p-2 text-xl">
+                        🎉
+                      </div>
+                      <ul class="mt-4 pl-0 text-subtitle text-sm">
+                        <span v-if="card.name === 'pro'" class="flex mb-1">All features in Basic and...</span>
+                        <li v-for="feature in card.features" :key="feature" class="flex items-center">
+                          <svg class="h-3 w-3 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                          </svg>
+                          <span>{{ feature }}</span>
+                        </li>
+                      </ul>
+                      <!-- MObile Table -->
+                      <a v-on:click="toggle('accordion-' + card.name)" class="mt-4 p-0 flex items-center md:hidden">
+                        See All Features
+                        <!-- Chevron-Down -->
+                        <svg class="h-3.5 w-3.5 ml-2 flex" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                         </svg>
-                        <span>{{ feature }}</span>
-                      </li>
-                    </ul>
-                    <!-- MObile Table -->
-                    <a v-on:click="toggle('accordion-' + card.name)" class="mt-4 p-0 flex items-center md:hidden">
-                      See All Features
-                      <!-- Chevron-Down -->
-                      <svg class="h-3.5 w-3.5 ml-2 flex" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                      </svg>
-                    </a>
-                    <div :id="'accordion-' + card.name" class="mt-2 hidden w-full">
-                      <TableMob :data="tabs" :type="card.name" />
+                      </a>
+                      <div :id="'accordion-' + card.name" class="mt-2 hidden w-full">
+                        <TableMob :data="tabs" :type="card.name" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- Desktop Table -->
-                <div class="hidden md:block border p-4 rounded-md bg-white mt-5">
-                  <h4 class="mb-4 text-xl text-center">All Features</h4>
-                  <div class="flex sticky pl-5 bg-gray-50 border top-24 rounded z-1">
-                    <div class="w-3/5 m-0"></div>
-                    <div class="w-2/2 flex flex-row flex-1">
-                      <div class="flex-1 text-center m-0 py-4 border-l" v-for="subs in tabs.subs" :key="subs.name">
-                        <div class="text-subtitle uppercase text-xs font-medium tracking-wider border-0 text-center">
-                          {{ subs.name }}
-                        </div>
-                        <div class="mb-0 text-xl font-medium">
-                          <div v-if="subs.price != 'Free'">${{ subs.price[currentPrice] }}/mo</div>
-                          <div v-else>
-                            Free
+                  <!-- Desktop Table -->
+                  <div class="hidden md:block border p-4 rounded-md bg-white mt-5">
+                    <h4 class="mb-4 text-xl text-center">All Features</h4>
+                    <div class="flex sticky pl-5 bg-gray-50 border top-24 rounded z-1">
+                      <div class="w-3/5 m-0"></div>
+                      <div class="w-2/2 flex flex-row flex-1">
+                        <div class="flex-1 text-center m-0 py-4 border-l" v-for="subs in tabs.subs" :key="subs.name">
+                          <div class="text-subtitle uppercase text-xs font-medium tracking-wider border-0 text-center">
+                            {{ subs.name }}
+                          </div>
+                          <div class="mb-0 text-xl font-medium">
+                            <div v-if="subs.price != 'Free'">${{ subs.price[currentPrice] }}/mo</div>
+                            <div v-else>
+                              Free
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <Table :data="tabs" />
                   </div>
-                  <Table :data="tabs" />
                 </div>
-              </div>
+              </transition>
             </div>
           </div>
         </div>

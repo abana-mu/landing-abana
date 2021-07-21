@@ -4,10 +4,10 @@
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
-        <div class="mt-12 xl:mt-0 mb-10">
+        <div class="mt-8 lg:mt-12 xl:mt-0 mb-16">
           <div class="footer-logo text-white block mb-4">
-            <div class="block sm:inline-block w-1/2 mb-2 sm:pr-5 sm:mb-0">
-              <Logo class="mb-2" />
+            <div class="block sm:inline-block w-1/2 max-w-xs mb-2 sm:pr-5 sm:mb-0">
+              <Logo class="mb-2 " />
               <Slogan />
             </div>
           </div>
@@ -210,16 +210,12 @@ export default {
 
 <!-- STYLING -->
 <style lang="scss">
-.footer-logo {
-  width: 400px;
-
-  .logo_slogan {
-    .slogan-text {
-      fill: $text-light;
-    }
-    .slogan-bar {
-      fill: white;
-    }
+.logo_slogan {
+  .slogan-text {
+    fill: $text-light;
+  }
+  .slogan-bar {
+    fill: white;
   }
 }
 </style>

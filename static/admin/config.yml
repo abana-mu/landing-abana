@@ -206,6 +206,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
@@ -236,9 +237,35 @@ collections:
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
-      - label: 'E-Commerce Solutions'
-        name: 'ecoSol'
-        file: 'src/_settings/eco-sol.json'
+      - label: 'Drops'
+        name: 'dro'
+        file: 'src/_settings/dro.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+          - label: 'Blocks'
+            name: blocks
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'markdown',
+                  hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+
+      - label: 'Fast Custom'
+        name: 'fasCus'
+        file: 'src/_settings/fas-cus.json'
         fields:
           - label: 'Header'
             name: header
@@ -272,8 +299,24 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Blocks'
-            name: blocks
+          - label: 'B2B Plateform Elements'
+            name: b2bblocks
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'markdown',
+                  hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+
+          - label: 'One the Ground Support Elements'
+            name: supportblocks
             label_singular: 'Block'
             widget: list
             fields:
@@ -298,8 +341,24 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Blocks'
-            name: blocks
+          - label: 'B2B Plateform Elements'
+            name: b2bblocks
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'markdown',
+                  hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+
+          - label: 'One the Ground Support Elements'
+            name: supportblocks
             label_singular: 'Block'
             widget: list
             fields:
@@ -324,8 +383,24 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
-          - label: 'Blocks'
-            name: blocks
+          - label: 'B2B Plateform Elements'
+            name: b2bblocks
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - {
+                  label: 'Content',
+                  name: 'content',
+                  widget: 'markdown',
+                  hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+                }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+
+          - label: 'One the Ground Support Elements'
+            name: supportblocks
             label_singular: 'Block'
             widget: list
             fields:
@@ -1582,3 +1657,21 @@ collections:
           required: false,
           hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
         }
+
+  - label: 'Navigation'
+    name: 'navigation'
+    editor:
+      preview: false
+    files:
+      - label: 'Main Navigation'
+        name: 'mainNav'
+        file: 'src/_settings/navigation.json'
+        description: 'Navigation Subtitles'
+        fields:
+          - { label: 'Apparel Sourcing solutions', name: 'appSouSol', widget: 'string' }
+          - { label: 'Digital Platform', name: 'digPla', widget: 'string' }
+          - { label: 'Drops', name: 'dro', widget: 'string' }
+          - { label: 'Fast Custom', name: 'fasCus', widget: 'string' }
+          - { label: 'Apparel Manufacturers', name: 'appMan', widget: 'string' }
+          - { label: 'Yarn, Fabric, Trim Suppliers', name: 'yarSup', widget: 'string' }
+          - { label: 'Service Providers', name: 'serPro', widget: 'string' }
