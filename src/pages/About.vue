@@ -31,9 +31,9 @@
       </div>
     </div>
 
-    <section v-for="(row, index) in Data.elements" :key="index" class="about-container">
+    <section v-for="(row, index) in Data.elements" :key="index" class="contain my-32">
       <div class="grid grid-cols-3">
-        <h2 class="tracking-widest font-medium col-span-1">{{ row.title }}</h2>
+        <h2 class="tracking-widest font-medium col-span-1 text-4xl">{{ row.title }}</h2>
         <div class="col-span-2">
           <vue-simple-markdown :source="row.subtext" class="text-body text-lg"></vue-simple-markdown>
         </div>

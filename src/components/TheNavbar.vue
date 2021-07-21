@@ -73,17 +73,24 @@
                           <div v-else class="relative grid gap-6 bg-white lg:grid-cols-3 p-8 ">
                             <div v-for="(col, index) in link.drop.columns" :key="index">
                               <span class="uppercase text-sm font-regular tracking-widest text-caption mb-4 block ml-4">{{ col.header }}</span>
-                              <g-link
-                                v-for="(link, index) in col.links"
-                                :key="index"
-                                :to="link.link"
-                                class="drop-item flex items-center cursor-pointer p-4 rounded-md hover:bg-primary-100 hover:bg-opacity-75 transition duration-200"
-                              >
-                                <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
-                                <div class="flex flex-col">
-                                  <span class="drop-item-title text-title text-base">{{ link.title }}</span>
-                                </div>
-                              </g-link>
+                              <div v-for="(link, index) in col.links" :key="index">
+                                <template v-if="link.title == 'FAQ'">
+                                  <div @click="launch()" class="drop-item flex items-center cursor-pointer p-4 rounded-md hover:bg-primary-100 hover:bg-opacity-75 transition duration-200">
+                                    <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                                    <div class="flex flex-col">
+                                      <span class="drop-item-title text-title text-base">{{ link.title }}</span>
+                                    </div>
+                                  </div>
+                                </template>
+                                <template v-else>
+                                  <g-link :to="link.link" class="drop-item flex items-center cursor-pointer p-4 rounded-md hover:bg-primary-100 hover:bg-opacity-75 transition duration-200">
+                                    <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                                    <div class="flex flex-col">
+                                      <span class="drop-item-title text-title text-base">{{ link.title }}</span>
+                                    </div>
+                                  </g-link>
+                                </template>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -388,7 +395,7 @@ export default {
                 links: [
                   {
                     title: 'FAQ',
-                    link: '/yarn-fabric-trim-suppliers',
+                    link: '#',
                     icon: IHow,
                   },
                   {

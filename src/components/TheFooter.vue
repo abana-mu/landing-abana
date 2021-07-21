@@ -6,9 +6,9 @@
       <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
         <div class="mt-8 lg:mt-12 xl:mt-0 mb-16">
           <div class="footer-logo text-white block mb-4">
-            <div class="block sm:inline-block w-1/2 max-w-xs mb-2 sm:pr-5 sm:mb-0">
+            <div class="block sm:inline-block w-1/2 md:w-1/4 lg:w-full max-w-xs mb-2 sm:pr-5 sm:mb-0">
               <Logo class="mb-2 " />
-              <Slogan />
+              <Slogan class="dark" />
             </div>
           </div>
           <div class="flex flex-row space-x-4 text-bodyOnDark">
@@ -203,19 +203,3 @@ export default {
   },
 };
 </script>
-
-<!-- QUERIES -->
-<page-query>
-</page-query>
-
-<!-- STYLING -->
-<style lang="scss">
-.logo_slogan {
-  .slogan-text {
-    fill: $text-light;
-  }
-  .slogan-bar {
-    fill: white;
-  }
-}
-</style>

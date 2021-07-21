@@ -156,6 +156,26 @@ p {
   margin: 50px auto 20px auto;
 }
 
+// --- LOGO ---
+
+.logo_slogan.dark {
+  .slogan-text {
+    fill: $text-light;
+  }
+  .slogan-bar {
+    fill: white;
+  }
+}
+
+.logo_slogan {
+  .slogan-text {
+    fill: $text-body;
+  }
+  .slogan-bar {
+    fill: $primary;
+  }
+}
+
 //  --- MARKDOWN ---
 
 .markdown-body {
