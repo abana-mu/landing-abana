@@ -1,12 +1,15 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <div class="height-restriction">
+    <div>
       <div class="header pb-5">
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
       <section class="pt-5 back-grey bordered">
-        <div class="scroll-container flex-row align-items-start d-none d-lg-flex" :class="activeBlock">
+        <div
+          class="scroll-container flex-row align-items-start d-none d-lg-flex"
+          :class="activeBlock"
+        >
           <ul class="scroll-circle">
             <li></li>
             <li></li>
@@ -15,7 +18,11 @@
           </ul>
           <ul class="scroll-text-container w-50">
             <li v-for="block in Data.elements" :key="block.id">
-              <h2 :id="block.id" class="title-block" :class="{ isActive: block.id === activeBlock }">{{ block.title }}</h2>
+              <h2
+                :id="block.id"
+                class="title-block"
+                :class="{ isActive: block.id === activeBlock }"
+              >{{ block.title }}</h2>
               <vue-simple-markdown :source="block.content" class="text-block"></vue-simple-markdown>
             </li>
           </ul>
@@ -62,62 +69,63 @@
 </template>
 
 <script>
-import Data from '~/_settings/drops.json';
-import TwoCol from '~/components/PageElementTwoColMd';
+import Data from "~/_settings/drops.json";
+import TwoCol from "~/components/PageElementTwoColMd";
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */ &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    rect.bottom <=
+      (window.innerHeight ||
+        document.documentElement.clientHeight) /* or $(window).height() */ &&
+    rect.right <=
+      (window.innerWidth ||
+        document.documentElement.clientWidth) /* or $(window).width() */
   );
 }
 
 export default {
   components: {
-    TwoCol,
+    TwoCol
   },
   metaInfo: {
-    title: 'Drops',
+    title: "Drops",
     meta: [
       {
-        name: 'description',
-        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
-      },
-    ],
+        name: "description",
+        content:
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
+      }
+    ]
   },
   data() {
     return {
       Data,
-      activeBlock: 'block1',
+      activeBlock: "block1"
     };
   },
 
   mounted() {
-    document.addEventListener('scroll', this.handleScroll);
+    document.addEventListener("scroll", this.handleScroll);
   },
 
   methods: {
     handleScroll() {
-      this.Data.elements.find((number) => {
+      this.Data.elements.find(number => {
         const el = document.getElementById(number.id);
         if (isElementInViewport(el)) {
           this.activeBlock = number.id;
         }
       });
       console.log(this.activeBlock);
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss">
-.height-restriction {
-  min-height: calc(100vh - 390px);
-}
-
 .video-container {
   width: 100%;
   @media (min-width: $break-lg) {

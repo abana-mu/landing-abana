@@ -1,29 +1,22 @@
 {
   "header": {
     "title": "Drops",
-    "subtext": "jkheblew buywgiluwegiueh\n"
+    "subtext": "Informed decisions, reduced lead time and faster deliveries to support brands, retailers and designers. Buy Sutainably and transparently"
   },
   "blocks": [
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
+      "title": "Speed up the supply-chain",
+      "content": "* Order ready-to-ship styles\n* Low MOQs(as from 10 pieces)\n* Receive delivery within a week",
       "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "linkText": "Register to view collection",
+      "url": "https://app.abana.mu/register-buyer"
     },
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
+      "title": "Make informed decisions",
+      "content": "* Buy closer to season\n* Reduce inventory & markdow risk\n* Replenish best-sellers",
       "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
-    },
-    {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "linkText": "Register to view collection",
+      "url": "https://app.abana.mu/register-buyer"
     }
   ]
 }

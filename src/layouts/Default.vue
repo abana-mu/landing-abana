@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main text-body">
     <TheNavbar class="relative z-20" />
     <div class="relative z-10">
       <slot />
@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import TheNavbar from '~/components/TheNavbar';
-import TheFooter from '~/components/TheFooter';
+import TheNavbar from "~/components/TheNavbar";
+import TheFooter from "~/components/TheFooter";
 
 export default {
   components: {
     TheNavbar,
-    TheFooter,
-  },
+    TheFooter
+  }
 };
 </script>
 

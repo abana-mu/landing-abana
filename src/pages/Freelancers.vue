@@ -1,6 +1,6 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <div class="height-restriction">
+    <div>
       <div class="header">
         <h1 class="title mb-4">{{ Data.header.title }}</h1>
       </div>
@@ -18,9 +18,7 @@
               <a
                 href="mailto:support@abana.mu?cc=arif.currimjee@gmail.com,dirk.robens@abana.mu&subject=ABANA | Freelancer Application&body=(Please attach your CV)"
               >
-                <div class="btn-lg btn-primary">
-                  support@abana.mu
-                </div>
+                <div class="btn-lg btn-primary">support@abana.mu</div>
               </a>
             </div>
           </div>
@@ -31,31 +29,28 @@
 </template>
 
 <script>
-import Data from '~/_settings/freelancers.json';
+import Data from "~/_settings/freelancers.json";
 
 export default {
   metaInfo: {
-    title: 'Freelancers',
+    title: "Freelancers",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network.',
-      },
-    ],
+          "If you have skills relevant to the Textile & Apparel eco-system (design, technical, advisory, etc.) become part of the ABANA network."
+      }
+    ]
   },
   data() {
     return {
-      Data,
+      Data
     };
-  },
+  }
 };
 </script>
 
 <style lang="scss">
-.height-restriction {
-  min-height: calc(100vh - 390px);
-}
 .freelancer-container-card {
   align-items: center;
   display: flex;

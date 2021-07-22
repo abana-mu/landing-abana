@@ -13,8 +13,8 @@ module.exports = {
         '1': 1,
       },
       colors: {
-        body: '#202c4f',
-        title: '#0d183a',
+        body: '#555C6A',
+        title: '#1E293B',
         subtitle: '#737a96',
         caption: '#acb1c3',
         bodyOnDark: '#dadaed',

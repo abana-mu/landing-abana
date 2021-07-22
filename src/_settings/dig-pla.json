@@ -1,29 +1,23 @@
 {
   "header": {
     "title": "Digital Platform",
-    "subtext": "jkheblew buywgiluwegiueh\n"
+    "subtext": "Online sourcing platform connecting Mauritius, Madagascar & Africa to the world"
   },
   "blocks": [
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "Diversify your supply chains",
+      "content": "Explore and connect with vetted African manufacturers, worldwide Yarn, Fabric & Trims Suppliers and Service Providers.\n\nSave time by filtering manufacturers digital profiles based on compliance, product, capacity, lead times and E-Showrooms.",
+      "image": "/uploads/back4.jpg"
     },
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "A simple price benchmarking tool",
+      "content": "Make sure you are paying for the right price by posting and comparing detailed Request-for-Quote (RFQs) tailored to your company’s needs.\n\nDeal directly with your suppliers, no commission fee is charged by ABANA.",
+      "image": "/uploads/back4.jpg"
     },
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "Identify sourcing opportunities and remain competitive",
+      "content": "Browse the Home Feed to view offerings and react fast by instantly connecting to prospective opportunities.",
+      "image": "/uploads/back4.jpg"
     }
   ]
 }

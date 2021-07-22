@@ -1,10 +1,8 @@
 <template>
   <Layout>
     <div class="my-20 text-center">
-      <h1 class="font-medium text-5xl mb-4">{{ Data.header.title }}</h1>
-      <p class="text-lg text-subtitle max-w-2xl mx-auto">
-        {{ Data.header.subtext }}
-      </p>
+      <h1 class="font-medium text-title text-5xl mb-4">{{ Data.header.title }}</h1>
+      <p class="text-lg text-subtitle max-w-2xl mx-auto">{{ Data.header.subtext }}</p>
     </div>
 
     <div class="content overflow-hidden">
@@ -15,9 +13,7 @@
       </div>
 
       <section class="section-content anchor-links">
-        <p class="text-center semi-spaced my-10 text-xl uppercase">
-          EXPLORE THE REASONS
-        </p>
+        <p class="text-center semi-spaced my-10 text-xl uppercase">EXPLORE THE REASONS</p>
         <ul class="flex flex-col lg:flex-row text-center space-y-10 lg:space-y-0">
           <li>
             <a href="#economic">Economic</a>
@@ -44,29 +40,30 @@
 </template>
 
 <script>
-import Data from '~/_settings/whyafrica.json';
-import TwoCol from '~/components/PageElementTwoCol';
-import OneCol from '~/components/PageElementOneCol';
+import Data from "~/_settings/whyafrica.json";
+import TwoCol from "~/components/PageElementTwoCol";
+import OneCol from "~/components/PageElementOneCol";
 
 export default {
   components: {
     TwoCol,
-    OneCol,
+    OneCol
   },
   metaInfo: {
-    title: 'Why Africa',
+    title: "Why Africa",
     meta: [
       {
-        name: 'description',
-        content: 'ABANA is firstly Africa. The continent is on the verge of a resurgence and we are committed to helping the textile and apparel industry thrive in the region.',
-      },
-    ],
+        name: "description",
+        content:
+          "ABANA is firstly Africa. The continent is on the verge of a resurgence and we are committed to helping the textile and apparel industry thrive in the region."
+      }
+    ]
   },
   data() {
     return {
-      Data,
+      Data
     };
-  },
+  }
 };
 </script>
 
@@ -86,15 +83,15 @@ export default {
 }
 
 #economic .image {
-  background-image: url('~@/assets/images/picture1-b.jpg');
+  background-image: url("~@/assets/images/picture1-b.jpg");
 }
 
 #social .image {
-  background-image: url('~@/assets/images/picture3-b.jpg');
+  background-image: url("~@/assets/images/picture3-b.jpg");
 }
 
 #environmental .image {
-  background-image: url('~@/assets/images/picture2-b.jpg');
+  background-image: url("~@/assets/images/picture2-b.jpg");
 
   @media (min-width: $break-xl) {
     background-position-y: 100%;

@@ -1,16 +1,23 @@
 <template>
   <Layout class="index-layout">
-    <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center border-b bg-gradient-to-l from-light-200">
+    <div
+      id="banner"
+      class="relative w-full flex flex-col md:flex-row justify-center border-b bg-white"
+    >
       <div class="contain pt-24 lg:py-0 lg:h-full w-full flex flex-col justify-between z-10">
         <div class="flex lg:h-3/4 flex-col md:flex-row">
           <div class="w-full md:w-2/3 h-full flex flex-col justify-center">
-            <span class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title">{{ Data.header.title }}</span>
-            <span class="text-base sm:text-lg lg:text-xl font-regular mb-12 text-subtitle">{{ Data.header.subtext }}</span>
+            <span
+              class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title"
+            >{{ Data.header.title }}</span>
+            <span
+              class="text-base sm:text-lg lg:text-xl font-regular mb-12 text-subtitle"
+            >{{ Data.header.subtext }}</span>
             <!-- <g-link to="/about" class="btn btn-primary">
             {{ Data.header.cta }}
-          </g-link> -->
+            </g-link>-->
 
-            <form class="max-w-sm lg:max-w-lg w-full mt-8 flex rounded-md focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary-200">
+            <form class="mt-8 sm:flex">
               <label for="email-address" class="sr-only">Email address</label>
               <input
                 id="email-address"
@@ -18,16 +25,14 @@
                 type="email"
                 autocomplete="email"
                 required
-                class="w-full px-2 sm:px-5 py-3 font-light text-sm sm:text-base tracking-wide placeholder-caption border-primary-300 focus:ring-0 focus:border-primary-300  rounded-l-md"
+                class="w-full px-5 py-3 placeholder-caption focus:ring-primary-200 focus:border-primary-200 sm:max-w-xs border-gray-300 rounded-md"
                 placeholder="name@company.com"
               />
-              <div class="rounded-md shadow mt-0 flex-shrink-0">
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-sm sm:text-base font-medium rounded-r-md text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200"
-                >
-                  Book a Demo
-                </button>
+                  class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-300 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200"
+                >Book a Demo</button>
               </div>
             </form>
           </div>
@@ -36,7 +41,6 @@
 
         <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" class="w-full" />
       </div>
-      <!--backgrounds-->
     </div>
 
     <!-- HEADER -
@@ -84,22 +88,28 @@
     </div>
 
     <div class="back-grey overflow-hidden bordered mt-4 py-4">
-      <div class="py-8 rounded lg:p-12">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-center mb-8">Leading voices of the Industry</h2>
+      <div class="contain py-12">
+        <h2
+          class="text-3xl lg:text-4xl font-medium mb-10 text-center text-title"
+        >What industry leading voices are saying:</h2>
 
-        <div class="py-4 max-w-screen-lg mx-auto">
-          <div class="flex flex-col md:flex-row">
-            <div class="flex flex-col items-center text-center p-0 max-w-lg mx-auto mb-1 sm:px-4 md:px-8" v-for="testi in $page.posts.edges" :key="testi.id">
-              <p class="text-body text-xl italic bg-white px-4 pt-8 pb-16 border rounded">"{{ testi.node.blurb }}"</p>
-              <div class="-mt-14 flex flex-col items-center text-center">
-                <div class="h-24 w-24 rounded-full overflow-hidden mb-6">
+        <div class="py-4 mb-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+            <div
+              class="flex flex-col justify-around bg-white rounded-lg shadow-xl border px-8 py-10"
+              v-for="testi in $page.posts.edges"
+              :key="testi.id"
+            >
+              <p class="text-body text-xl pb-8">"{{ testi.node.blurb }}"</p>
+              <div class="flex flex-row items-center space-x-4">
+                <div class="h-24 w-24 rounded-full overflow-hidden flex-shrink-0">
                   <g-image :src="testi.node.image" class="w-full h-full object-cover object-top" />
                 </div>
-                <div class="flex flex-col">
-                  <h4 class="mb-1 font-bold">{{ testi.node.name }}</h4>
+                <div class="flex flex-col text-title">
+                  <h4 class="font-bold">{{ testi.node.name }}</h4>
                   <div class="flex flex-col justify-content-center">
-                    <p class="mb-0">{{ testi.node.position }}</p>
-                    <p>{{ testi.node.title }}</p>
+                    <p class="text-base">{{ testi.node.title }}</p>
+                    <p class="text-sm">{{ testi.node.position }}</p>
                   </div>
                 </div>
               </div>
@@ -108,9 +118,7 @@
         </div>
 
         <div class="w-full flex justify-center">
-          <g-link to="/testimonials" class="btn btn-ghost">
-            See full testimonials
-          </g-link>
+          <g-link to="/testimonials" class="btn btn-ghost">See full testimonials</g-link>
         </div>
       </div>
     </div>
@@ -137,33 +145,34 @@ query{
 </page-query>
 
 <script>
-import IndexBanner from '~/components/IndexBanner';
-import Data from '~/_settings/landing.json';
-import ITransf from '@/components/icons/ITransf';
-import IExpect from '@/components/icons/IExpect';
-import IGuar from '@/components/icons/IGuar';
-import ITax from '@/components/icons/ITax';
-import ITarget from '@/components/icons/ITarget';
+import IndexBanner from "~/components/IndexBanner";
+import Data from "~/_settings/landing.json";
+import ITransf from "@/components/icons/ITransf";
+import IExpect from "@/components/icons/IExpect";
+import IGuar from "@/components/icons/IGuar";
+import ITax from "@/components/icons/ITax";
+import ITarget from "@/components/icons/ITarget";
 
-import INew from '@/components/icons/INew';
-import IChina from '@/components/icons/IChina';
-import IEnv from '@/components/icons/IEnv';
-import ICheck from '@/components/icons/ICheck';
-import ICal from '@/components/icons/ICal';
-import IndexFlowGraph from '~/components/IndexFlowGraph';
-import IndexDropGraph from '~/components/IndexDropGraph';
-import IndexRepsGraph from '~/components/IndexRepsGraph';
-import IndexTrusted from '~/components/IndexTrusted';
+import INew from "@/components/icons/INew";
+import IChina from "@/components/icons/IChina";
+import IEnv from "@/components/icons/IEnv";
+import ICheck from "@/components/icons/ICheck";
+import ICal from "@/components/icons/ICal";
+import IndexFlowGraph from "~/components/IndexFlowGraph";
+import IndexDropGraph from "~/components/IndexDropGraph";
+import IndexRepsGraph from "~/components/IndexRepsGraph";
+import IndexTrusted from "~/components/IndexTrusted";
 
 export default {
   metaInfo: {
-    title: 'ABANA | African Textile & Apparel Marketplace',
+    title: "ABANA | African Textile & Apparel Marketplace",
     meta: [
       {
-        name: 'description',
-        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
-      },
-    ],
+        name: "description",
+        content:
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
+      }
+    ]
   },
   components: {
     IndexBanner,
@@ -174,13 +183,13 @@ export default {
     IndexFlowGraph,
     IndexDropGraph,
     IndexRepsGraph,
-    IndexTrusted,
+    IndexTrusted
   },
   data() {
     return {
-      Data,
+      Data
     };
-  },
+  }
 };
 </script>
 
