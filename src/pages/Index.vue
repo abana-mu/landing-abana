@@ -21,7 +21,7 @@
             </div>
             <div class="w-full md:w-1/2 h-full relative">
               <div id="banner-image" class="absolute top-0 left-0">
-                <g-image src="../assets/images/Group5.png" quality="100" class="w-full" />
+                <g-image src="../assets/images/Group5.png" quality="100" class="w-full" immediate />
               </div>
             </div>
           </div>
