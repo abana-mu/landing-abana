@@ -97,19 +97,19 @@
             <div id="image-container" class="sticky block w-2/3">
               <div class="h-full relative overflow-hidden rounded-lg">
                 <div id="block0-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
-                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                  <p class="text-4xl font-medium italic">Image 1</p>
                 </div>
                 <div
                   id="block1-image"
                   class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300"
                 >
-                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                  <p class="text-4xl font-medium italic">Image 2</p>
                 </div>
                 <div
                   id="block2-image"
                   class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
                 >
-                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                  <p class="text-4xl font-medium italic">Image 3</p>
                 </div>
               </div>
             </div>
@@ -249,12 +249,7 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  mounted() {
-    //var width = window.innerWidth;
+    var width = window.innerWidth;
     if (width > 768) {
       var footer = document.querySelector('footer');
       var over = document.getElementById('parallax-over');
@@ -276,6 +271,9 @@ export default {
         }
       });
     }
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     isBlockScrolled(el) {
