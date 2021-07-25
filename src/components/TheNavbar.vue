@@ -131,7 +131,12 @@
             </div>
             <!-- Right Hand Buttons -->
             <div class="hidden lg:flex items-center justify-end md:flex-1 lg:w-0 divide-x divide-gray-300">
-              <a href="#" class="whitespace-nowrap text-base text-primary hover:text-primary-400 hover:underline mr-4">Get a Demo</a>
+              <a
+                href="https://meetings.hubspot.com/abana"
+                target="_blank"
+                class="whitespace-nowrap text-base text-primary hover:text-primary-400 hover:underline mr-4"
+                >Get a Demo</a
+              >
               <div class="pl-4 space-x-4">
                 <a href="#" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline">Log in</a>
                 <a href="#" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary">Register</a>
@@ -139,7 +144,7 @@
             </div>
             <!-- Hamburger -->
             <div class="z-50 flex lg:hidden items-center space-x-4" @click="sideBar = !sideBar">
-              <div class="btn-xs btn-ghost">Get a Demo</div>
+              <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xs btn-ghost">Get a Demo</a>
               <NavbarHamburger :isActive="sideBar" />
             </div>
           </div>
@@ -181,10 +186,13 @@
                   <!-- SIDEBAR 2 -->
                   <div
                     :id="'sidebar-2-' + link.name.toLowerCase()"
-                    class="absolute w-full h-full top-0 left-0 bg-gray-100 z-20 transition sidebar-2-hide"
+                    class="absolute w-full h-full top-0 left-0 bg-gray-50 z-20 transition sidebar-2-hide"
                   >
                     <div class="contain pt-5">
-                      <div class="inline-flex items-center cursor-pointer py-4 hover:text-primary" @click="toggleSideBar2(link.name.toLowerCase())">
+                      <div
+                        class="inline-flex items-center cursor-pointer mt-2 mb-6 hover:text-primary"
+                        @click="toggleSideBar2(link.name.toLowerCase())"
+                      >
                         <!-- Arrow left-short -->
                         <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                           <path
@@ -194,15 +202,43 @@
                         </svg>
                         <span>{{ link.name }}</span>
                       </div>
+                      <template v-if="link.drop.type === 1">
+                        <div class="uppercase text-sm s tracking-widest text-caption pl-2 mb-2 block">{{ link.drop.header }}</div>
+                        <div v-for="(link, index) in link.drop.links" :key="index">
+                          <g-link
+                            :to="link.link"
+                            class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center font-medium text-body hover:text-primary cursor-pointer"
+                          >
+                            <component :is="link.icon" class="drop-item-icon h-12 w-12 mr-4" />
+                            <span class="text-lg">{{ link.title }}</span>
+                          </g-link>
+                        </div>
+                        <div class="uppercase text-sm s tracking-widest text-caption pl-2 mt-5 mb-2 block">more...</div>
+                        <div v-for="(link, index) in link.drop.extra" :key="index">
+                          <g-link
+                            :to="link.link"
+                            class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
+                          >
+                            <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                            <span class="text-base">{{ link.title }}</span>
+                          </g-link>
+                        </div>
+                      </template>
+                      <template v-else>
+                        <div v-for="(col, index) in link.drop.columns" :key="index" class="mb-6">
+                          <div class="uppercase text-sm tracking-widest text-caption pl-2 mb-2 block">{{ col.header }}</div>
 
-                      <div v-for="(link, index) in link.drop.links" :key="index">
-                        <g-link
-                          :to="link.link"
-                          class="w-full py-4 inline-flex justify-between items-center font-medium text-body hover:text-primary cursor-pointer"
-                        >
-                          <span class="text-lg">{{ link.title }}</span>
-                        </g-link>
-                      </div>
+                          <div v-for="(link, index) in col.links" :key="index">
+                            <g-link
+                              :to="link.link"
+                              class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
+                            >
+                              <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                              <span class="text-base">{{ link.title }}</span>
+                            </g-link>
+                          </div>
+                        </div>
+                      </template>
                     </div>
                   </div>
                 </div>
@@ -212,6 +248,10 @@
                     <span>{{ link.name }}</span>
                   </g-link>
                 </div>
+              </div>
+              <div class="w-full max-w-xs mx-auto flex flex-col text-center space-y-4 mt-10">
+                <a href="#" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline">Log in</a>
+                <a href="#" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary">Register</a>
               </div>
             </div>
           </div>
@@ -462,7 +502,7 @@ export default {
                   },
                   {
                     title: 'Video Tutorials',
-                    link: '/service-providers',
+                    link: '/how-it-works',
                     icon: IVideo,
                   },
                 ],
@@ -521,7 +561,7 @@ export default {
       document.getElementById('sidebar-2-' + target).classList.toggle('sidebar-2-hide');
     },
   },
-  created() {
+  mounted() {
     window.addEventListener('scroll', this.updateScroll);
     this.setannounce();
   },

@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import '~/assets/_styles.scss';
 require('~/assets/tailwindcss.scss');
 
@@ -10,10 +13,6 @@ import GraphikRegular from '~/assets/fonts/GraphikRegular.otf';
 import GraphikLight from '~/assets/fonts/GraphikLight.otf';
 import GraphikMedium from '~/assets/fonts/GraphikMedium.otf';
 import GraphikSemibold from '~/assets/fonts/GraphikSemibold.otf';
-
-import AOS from 'aos';
-
-import 'aos/dist/aos.css';
 
 export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);

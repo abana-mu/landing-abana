@@ -1,6 +1,6 @@
 <template>
   <Layout class="one-section-tight-layout">
-    <div class="my-12 text-center max-w-2xl mx-auto">
+    <div class="my-12 text-center max-w-2xl mx-auto contain">
       <h1 class="font-medium text-title text-5xl mb-4">{{ Data.header.title }}</h1>
       <p class="text-lg text-subtitle">{{ Data.header.subtext }}</p>
     </div>
@@ -15,7 +15,8 @@
               v-bind:class="[activetab === index ? 'active' : '']"
               v-for="(tabs, index) in Plans"
               :key="tabs.index"
-            >{{ tabs.title }}</a>
+              >{{ tabs.title }}</a
+            >
           </div>
           <div class="space-y-4 text-sm sm:text-base">
             <div class="flex flex-row space-x-4 text-bodyOnDark">
@@ -66,10 +67,7 @@
                 leave-to-class="opacity-0"
               >
                 <div v-if="activetab === index" class="tabcontent">
-                  <div
-                    class="grid grid-cols-1 gap-4"
-                    :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'"
-                  >
+                  <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'">
                     <!-- Cards -->
                     <div
                       class="relative flex flex-col items-start card-top grid-span-1 bg-white xs:rounded-md border-t border-b xs:border p-4 xs:p-5"
@@ -88,21 +86,13 @@
                           ${{ card.price[currentPrice] }}/mo
                         </div>
                       </div>
-                      <div
-                        v-if="card.price != 'Free'"
-                        class="p-2 border border-primary-200 text-primary"
-                      >Save {{ Math.round((1 - card.price[currentPrice] / card.price[61]) * 100) }}% per month</div>
+                      <div v-if="card.price != 'Free'" class="p-2 border border-primary-200 text-primary">
+                        Save {{ Math.round((1 - card.price[currentPrice] / card.price[61]) * 100) }}% per month
+                      </div>
                       <div v-else class="p-2 text-xl">🎉</div>
                       <ul class="mt-4 pl-0 text-subtitle text-sm">
-                        <span
-                          v-if="card.name === 'pro'"
-                          class="flex mb-1"
-                        >All features in Basic and...</span>
-                        <li
-                          v-for="feature in card.features"
-                          :key="feature"
-                          class="flex items-center"
-                        >
+                        <span v-if="card.name === 'pro'" class="flex mb-1">All features in Basic and...</span>
+                        <li v-for="feature in card.features" :key="feature" class="flex items-center">
                           <svg
                             class="h-3 w-3 mr-2 flex-shrink-0"
                             xmlns="http://www.w3.org/2000/svg"
@@ -111,9 +101,7 @@
                             fill="currentColor"
                             viewBox="0 0 16 16"
                           >
-                            <path
-                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-                            />
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                             <path
                               d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
                             />
@@ -122,10 +110,7 @@
                         </li>
                       </ul>
                       <!-- MObile Table -->
-                      <a
-                        v-on:click="toggle('accordion-' + card.name)"
-                        class="mt-4 p-0 flex items-center md:hidden"
-                      >
+                      <a v-on:click="toggle('accordion-' + card.name)" class="mt-4 p-0 flex items-center md:hidden">
                         See All Features
                         <!-- Chevron-Down -->
                         <svg
@@ -153,14 +138,8 @@
                     <div class="flex sticky pl-5 bg-gray-50 border top-24 rounded z-1">
                       <div class="w-3/5 m-0"></div>
                       <div class="w-2/2 flex flex-row flex-1">
-                        <div
-                          class="flex-1 text-center m-0 py-4 border-l"
-                          v-for="subs in tabs.subs"
-                          :key="subs.name"
-                        >
-                          <div
-                            class="text-subtitle uppercase text-xs font-medium tracking-wider border-0 text-center"
-                          >{{ subs.name }}</div>
+                        <div class="flex-1 text-center m-0 py-4 border-l" v-for="subs in tabs.subs" :key="subs.name">
+                          <div class="text-subtitle uppercase text-xs font-medium tracking-wider border-0 text-center">{{ subs.name }}</div>
                           <div class="mb-0 text-xl font-medium">
                             <div v-if="subs.price != 'Free'">${{ subs.price[currentPrice] }}/mo</div>
                             <div v-else>Free</div>
@@ -181,59 +160,56 @@
 </template>
 
 <script>
-import Data from "~/_settings/pricing.json";
-import Plans from "~/_settings/plans2.json";
-import Table from "~/components/PricingPlanTable";
-import TableMob from "~/components/PricingPlanTableMob";
+import Data from '~/_settings/pricing.json';
+import Plans from '~/_settings/plans2.json';
+import Table from '~/components/PricingPlanTable';
+import TableMob from '~/components/PricingPlanTableMob';
 
 export default {
   components: {
     Table,
-    TableMob
+    TableMob,
   },
   metaInfo: {
-    title: "Pricing",
+    title: 'Pricing',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business."
-      }
-    ]
+          'Choose the plan that is right for you and your business. Join as a free buyer to access our ecommerce solutions or subscribe to access a world of features to help your business.',
+      },
+    ],
   },
   data() {
     return {
-      activetab: "buyer",
+      activetab: 'buyer',
       Data,
       Plans,
 
       contract12: false,
       payFull: false,
 
-      periods: [
-        { text: "12 months", value: "price12" },
-        { text: "6 months", value: "price6" }
-      ]
+      periods: [{ text: '12 months', value: 'price12' }, { text: '6 months', value: 'price6' }],
     };
   },
   methods: {
     toggle: function(target) {
-      document.getElementById(target).classList.toggle("hidden");
-    }
+      document.getElementById(target).classList.toggle('hidden');
+    },
   },
   computed: {
     currentPrice: function() {
       if (this.contract12 && this.payFull) {
-        return "1212";
+        return '1212';
       } else if (this.contract12 && !this.payFull) {
-        return "121";
+        return '121';
       } else if (!this.contract12 && this.payFull) {
-        return "66";
+        return '66';
       } else if (!this.contract12 && !this.payFull) {
-        return "61";
+        return '61';
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -261,7 +237,7 @@ export default {
   &:before {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    content: "";
+    content: '';
     height: 10px;
     left: 0;
     position: absolute;

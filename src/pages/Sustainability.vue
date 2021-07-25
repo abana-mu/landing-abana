@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="my-20 text-center">
+    <div class="my-20 text-center contain">
       <h1 class="font-medium text-5xl">{{ Data.header.title }}</h1>
     </div>
 
@@ -17,10 +17,10 @@
         <p class="text-center semi-spaced my-10 text-xl">
           EXPLORE OUR VALUES
         </p>
-        <ul class="flex flex-col lg:flex-row text-center space-y-10 lg:space-y-0">
-          <li><a href="#opp">Africa, an Opportunity</a></li>
-          <li><a href="#sus">Fashion For Good</a></li>
-          <li><a href="#com">Commitments & Purpose</a></li>
+        <ul class="flex flex-col lg:flex-row w-full max-w-2xl mx-auto justify-between text-center space-y-10 lg:space-y-0">
+          <li class="font-medium text-lg"><a href="#opp">Africa, an Opportunity</a></li>
+          <li class="font-medium text-lg"><a href="#sus">Fashion For Good</a></li>
+          <li class="font-medium text-lg"><a href="#com">Commitments & Purpose</a></li>
         </ul>
       </section>
 
@@ -47,7 +47,10 @@
           <div class="my-16">
             <p class="text-center text-2xl text-subtitle tracking-widest lg:text-4xl">{{ Data.content.commitment.title }}</p>
           </div>
-          <vue-simple-markdown :source="Data.content.commitment.content" class="max-w-2xl mx-auto text-base text-body mt-4 mb-16"></vue-simple-markdown>
+          <vue-simple-markdown
+            :source="Data.content.commitment.content"
+            class="max-w-2xl mx-auto text-base text-body mt-4 mb-16"
+          ></vue-simple-markdown>
           <div class="w-full">
             <g-image :src="Data.content.commitment.image" quality="100" class="rounded mx-auto " />
           </div>
@@ -76,7 +79,8 @@ export default {
     meta: [
       {
         name: 'description',
-        content: "A sustainable future is at the core of ABANA's mission. There are no simple solutions but many creative opportunities. Find out more about our commitments.",
+        content:
+          "A sustainable future is at the core of ABANA's mission. There are no simple solutions but many creative opportunities. Find out more about our commitments.",
       },
     ],
   },

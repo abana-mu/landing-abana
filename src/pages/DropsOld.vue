@@ -84,7 +84,7 @@ export default {
       Data,
     };
   },
-  created() {
+  mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -93,7 +93,7 @@ export default {
   methods: {
     isBlockScrolled(el) {
       var block = el.getBoundingClientRect();
-      return block.top <= window.innerHeight * 0.5;
+      //return block.top <= window.innerHeight * 0.5;
     },
 
     handleScroll() {

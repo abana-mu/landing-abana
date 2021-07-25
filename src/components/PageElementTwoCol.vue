@@ -65,7 +65,16 @@
           </div>
         </div>
         <div class="mx-0 lg:col-span-7">
-          <g-image :src="row.image" quality="100" blur="40" width="750" class="rounded-md w-full" />
+          <g-image
+            :src="row.image"
+            quality="100"
+            blur="40"
+            width="750"
+            class="rounded-md w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+          />
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 <!-- HTML -->
 <template>
   <Layout>
-    <div class="mb-5 container">
-      <g-link to="/careers/" class="sidebar-item-level-2-title mb-3">
+    <div class="my-20 contain">
+      <g-link to="/careers/" class="block hover:underline text-lg mb-10">
         <!-- Arrow left-short -->
         <svg class="h-5 w-5 mr-2 inline-flex" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
           <path
@@ -11,7 +11,7 @@
           /></svg
         >Back
       </g-link>
-      <h1 class="title">{{ $page.thisJob.title }}</h1>
+      <h1 class="text-center font-medium text-title text-4xl mb-8">{{ $page.thisJob.title }}</h1>
       <a
         v-if="$page.thisJob.filled === 'open'"
         :href="
@@ -23,17 +23,17 @@
       >
         Apply now
       </a>
-      <p>Location: {{ $page.thisJob.location }}</p>
-      <h4 class="mt-5">The role you’ll play:</h4>
+      <p class="mb-4">Location: {{ $page.thisJob.location }}</p>
+      <h4 class="mt-6 mb-4 font-medium text-xl">The role you’ll play:</h4>
       <p>{{ $page.thisJob.role }}</p>
-      <h4 class="mt-5">Your Main Tasks:</h4>
-      <vue-simple-markdown :source="$page.thisJob.tasks" class="md-text"></vue-simple-markdown>
-      <h4 class="mt-5">What you bring to the table:</h4>
-      <vue-simple-markdown :source="$page.thisJob.table" class="md-text"></vue-simple-markdown>
-      <h4 class="mt-5">
+      <h4 class="mt-6 mb-4 font-medium text-xl">Your Main Tasks:</h4>
+      <vue-simple-markdown :source="$page.thisJob.tasks"></vue-simple-markdown>
+      <h4 class="mt-6 mb-4 font-medium text-xl">What you bring to the table:</h4>
+      <vue-simple-markdown :source="$page.thisJob.table"></vue-simple-markdown>
+      <h4 class="mt-6 mb-4 font-medium text-xl">
         We are an ambitious start-up and we wish to attract multi-disciplinary and like-minded individuals to the team. You will thrive here if:
       </h4>
-      <vue-simple-markdown :source="$page.thisJob.thrive" class="md-text"></vue-simple-markdown>
+      <vue-simple-markdown :source="$page.thisJob.thrive"></vue-simple-markdown>
       <a
         v-if="$page.thisJob.filled === 'open'"
         :href="
@@ -41,7 +41,7 @@
             $page.thisJob.title +
             '&body=Please attach CV and fill the following in as applicable:%0A%0ALinkedin Profile Link:%0A%0AWhy do you want to work here (max. 100 words):'
         "
-        class="btn btn-primarymy-4"
+        class="btn btn-primary my-4"
         >Apply now</a
       >
     </div>

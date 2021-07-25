@@ -247,14 +247,14 @@ export default {
       Data,
     };
   },
-  created() {
+  mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   mounted() {
-    var width = window.innerWidth;
+    //var width = window.innerWidth;
     if (width > 768) {
       var footer = document.querySelector('footer');
       var over = document.getElementById('parallax-over');

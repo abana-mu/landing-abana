@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="my-20 text-center">
+    <div class="contain my-20 text-center">
       <h1 class="font-medium text-title text-5xl mb-4">{{ Data.header.title }}</h1>
       <p class="text-lg text-subtitle max-w-2xl mx-auto">{{ Data.header.subtext }}</p>
     </div>
@@ -8,13 +8,7 @@
     <div class="contain">
       <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="flex justify-center pb-12">
-          <g-image
-            class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96"
-            immediate
-            src="~/assets/images/arif.png"
-            quality="90"
-            blur="40"
-          />
+          <g-image class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96" immediate src="~/assets/images/arif.png" quality="90" blur="40" />
         </div>
 
         <div>
@@ -28,13 +22,7 @@
       <String1 />
       <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16">
         <div class="flex justify-center pb-12 order-2">
-          <g-image
-            class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96"
-            immediate
-            src="~/assets/images/dirk.png"
-            quality="90"
-            blur="40"
-          />
+          <g-image class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96" immediate src="~/assets/images/dirk.png" quality="90" blur="40" />
         </div>
 
         <div>
@@ -72,31 +60,31 @@
 </template>
 
 <script>
-import Data from "~/_settings/aboutus.json";
-import Logo from "@/components/icons/Logo";
-import String2 from "~/components/icons/String2";
-import String1 from "~/components/icons/String1";
+import Data from '~/_settings/aboutus.json';
+import Logo from '@/components/icons/Logo';
+import String2 from '~/components/icons/String2';
+import String1 from '~/components/icons/String1';
 
 export default {
   metaInfo: {
     title: Data.header.title,
     meta: [
       {
-        name: "description",
-        content: Data.header.subtext
-      }
-    ]
+        name: 'description',
+        content: Data.header.subtext,
+      },
+    ],
   },
   components: {
     Logo,
     String2,
-    String1
+    String1,
   },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
 };
 </script>
 
