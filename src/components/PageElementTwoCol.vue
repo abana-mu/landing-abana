@@ -1,13 +1,7 @@
 <!-- HTML -->
 <template>
   <div class>
-    <div
-      v-for="(row, index) in data"
-      :key="index"
-      :id="index"
-      class="two-col"
-      v-bind:class="{ grey: isGrey }"
-    >
+    <div v-for="(row, index) in data" :key="index" :id="index" class="two-col" v-bind:class="{ grey: isGrey }">
       <div
         class="contain grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-4 lg:gap-10 py-16 lg:py-24"
         :class="{ 'items-center': !row.learnmore }"
@@ -15,19 +9,25 @@
         <div class="mb-2 md:mb-0 lg:col-span-5 two-col-text">
           <div class="p-0">
             <div class="mb-5">
-              <h3 class="text-3xl lg:text-4xl font-medium text-title">{{ row.title }}</h3>
-              <p class="italic text-subtitle" v-if="row.subtext">{{ row.subtext }}</p>
+              <h3 class="text-3xl lg:text-4xl font-bold text-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                {{ row.title }}
+              </h3>
+              <p class="italic text-subtitle" v-if="row.subtext" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                {{ row.subtext }}
+              </p>
             </div>
-            <vue-simple-markdown :source="row.content" class="mb-8 text-lg text-body"></vue-simple-markdown>
+            <vue-simple-markdown
+              :source="row.content"
+              class="mb-8 text-lg text-body"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            ></vue-simple-markdown>
             <div v-if="row.learnmore">
               <LearnMore :source="row.learnmore" />
             </div>
             <div v-if="row.url">
-              <g-link
-                class="group inline-flex items-center text-primary hover:underline"
-                v-if="row.url.charAt(0) == '/'"
-                :to="row.url"
-              >
+              <g-link class="group inline-flex items-center text-primary hover:underline" v-if="row.url.charAt(0) == '/'" :to="row.url">
                 {{ row.linkText }}
                 <!-- Arrow right-short -->
                 <svg
@@ -44,11 +44,7 @@
                   />
                 </svg>
               </g-link>
-              <a
-                v-else
-                class="group inline-flex items-center text-primary hover:underline"
-                :href="row.url"
-              >
+              <a v-else class="group inline-flex items-center text-primary hover:underline" :href="row.url">
                 {{ row.linkText }}
                 <!-- Arrow right-short -->
                 <svg
@@ -78,14 +74,14 @@
 
 <!-- SCRIPTS -->
 <script>
-import LearnMore from "~/components/LearnMore";
+import LearnMore from '~/components/LearnMore';
 
 export default {
   components: { LearnMore },
   props: {
     data: Array,
-    isGrey: Boolean
-  }
+    isGrey: Boolean,
+  },
 };
 </script>
 

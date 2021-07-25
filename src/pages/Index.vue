@@ -1,54 +1,40 @@
 <template>
   <Layout class="index-layout">
-    <div
-      id="banner"
-      class="relative w-full flex flex-col md:flex-row justify-center border-b bg-white"
-    >
-      <div class="contain pt-24 lg:py-0 lg:h-full w-full flex flex-col justify-between z-10">
-        <div class="flex lg:h-3/4 flex-col md:flex-row">
-          <div class="w-full md:w-2/3 h-full flex flex-col justify-center">
-            <span
-              class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title"
-            >{{ Data.header.title }}</span>
-            <span
-              class="text-base sm:text-lg lg:text-xl font-regular mb-12 text-subtitle"
-            >{{ Data.header.subtext }}</span>
-            <!-- <g-link to="/about" class="btn btn-primary">
-            {{ Data.header.cta }}
-            </g-link>-->
-
-            <form class="mt-8 sm:flex">
-              <label for="email-address" class="sr-only">Email address</label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autocomplete="email"
-                required
-                class="w-full px-5 py-3 placeholder-caption focus:ring-primary-200 focus:border-primary-200 sm:max-w-xs border-gray-300 rounded-md"
-                placeholder="name@company.com"
-              />
-              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-300 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200"
-                >Book a Demo</button>
+    <div id="parallax-over" class="relative z-1 bg-white">
+      <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
+        <div class="contain lg:h-full w-full flex flex-col justify-between z-10 mb-20">
+          <div class="flex  flex-col md:flex-row">
+            <div class="w-full pt-24 pb-20 md:w-1/2 h-full flex flex-col justify-center items-start">
+              <span class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title max-w-lg font-graphik">{{ Data.header.title }}</span>
+              <span class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg">{{ Data.header.subtext }}</span>
+              <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xl btn-primary inline-flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 mr-4" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+                  />
+                  <path
+                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z"
+                  />
+                </svg>
+                Book a Demo
+              </a>
+            </div>
+            <div class="w-full md:w-1/2 h-full relative">
+              <div id="banner-image" class="absolute top-0 left-0">
+                <g-image src="../assets/images/Group5.png" quality="100" class="w-full" />
               </div>
-            </form>
+            </div>
           </div>
-          <div class="w-full md:w-1/3 h-full"></div>
         </div>
-
-        <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" class="w-full" />
       </div>
-    </div>
 
-    <!-- HEADER -
-    <IndexBanner :title="Data.header.title" :subtext="Data.header.subtext" :cta="Data.header.cta" class="contain" />
-    <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" />
-    -->
+      <div class="bg-gray-50 border-t border-b">
+        <div class="contain my-12">
+          <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" class="w-full max-w-screen-lg mx-auto" />
+        </div>
+      </div>
 
-    <!-- BOX -
+      <!-- BOX -
     <div class="bg-gray-50 overflow-hidden border my-4 py-4">
       <div class="contain py-8 rounded lg:p-12 text-center">
         <h2 class="text-title font-medium text-3xl mb-4">{{ Data.boxes.header.title }}</h2>
@@ -73,34 +59,103 @@
       </div>
     </div>
     -->
+      <div class="bg-white"></div>
 
-    <!-- FLOW -->
-    <div class="py-4 contain">
-      <IndexFlowGraph :data="Data.flow" />
+      <section class="pt-5 z-1 bg-white">
+        <div class="contain">
+          <div class="mt-32 mb-24">
+            <div class="grid grid-cols-2 gap-10">
+              <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
+                <div class="text-6xl mb-4 font-bold text-title max-w-2xl">
+                  <span class="text-primary">Powerful</span> reports to answer any question
+                </div>
+                <div class="text-lg max-w-xl leading-loose">
+                  Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power
+                  users are, and the behaviors tied to long-term retention.
+                </div>
+              </div>
+              <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200">
+                <Flow />
+              </div>
+            </div>
+          </div>
+          <div class=" flex-row items-start hidden lg:flex">
+            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-1/3">
+              <div id="block0" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">Connect & partner from anywhere, seemlessly</h2>
+                <p class="mb-4 text-xl">Modern solutions allow you to find business from anywhere on the globe</p>
+              </div>
+              <div id="block1" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">Opportunities come to you</h2>
+                <p class="mb-4 text-xl">Easily post and view listings on our feed and discover new business opportunities.</p>
+              </div>
+              <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">You're in control of your best match</h2>
+                <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
+              </div>
+            </div>
+            <div id="image-container" class="sticky block w-2/3">
+              <div class="h-full relative overflow-hidden rounded-lg">
+                <div id="block0-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
+                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                </div>
+                <div
+                  id="block1-image"
+                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300"
+                >
+                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                </div>
+                <div
+                  id="block2-image"
+                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
+                >
+                  <g-image src="../assets/images/supply.png" quality="100" class="w-3/4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 z-1 bg-white pb-40">
+        <div class="contain">
+          <div class="mt-32 mb-24">
+            <div class="grid grid-cols-2 gap-10">
+              <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
+                <div class="text-6xl mb-4 font-bold text-title max-w-2xl">Digital is <span class="text-primary">not enough</span></div>
+                <div class="text-lg max-w-xl leading-loose">
+                  Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power
+                  users are, and the behaviors tied to long-term retention.
+                </div>
+              </div>
+              <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLOW -
+      <div class="bg-white">
+        <div class="contain py-32 space-y-32">
+          <IndexFlowGraph :data="Data.flow" />
+          <IndexDropGraph :data="Data.drop" />
+          <IndexRepsGraph :data="Data.reps" />
+        </div>
+      </div> -->
     </div>
-
-    <div class="pb-4 contain">
-      <IndexDropGraph :data="Data.drop" />
-    </div>
-
-    <div class="pb-4 mb-5 contain">
-      <IndexRepsGraph :data="Data.reps" />
-    </div>
-
-    <div class="back-grey overflow-hidden bordered mt-4 py-4">
-      <div class="contain py-12">
-        <h2
-          class="text-3xl lg:text-4xl font-medium mb-10 text-center text-title"
-        >What industry leading voices are saying:</h2>
+    <div id="spacer" class="hidden md:flex"></div>
+    <div id="parallax-under" class="overflow-hidden bg-primary md:h-full top-0 z-0 w-full">
+      <div class="contain pt-28">
+        <h2 class="text-2xl lg:text-5xl font-medium mb-16 text-center text-primary-100">What industry leading voices are saying:</h2>
 
         <div class="py-4 mb-12">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
             <div
-              class="flex flex-col justify-around bg-white rounded-lg shadow-xl border px-8 py-10"
+              class="flex flex-col justify-around bg-white rounded-lg shadow-xl border px-8 py-16"
               v-for="testi in $page.posts.edges"
               :key="testi.id"
             >
-              <p class="text-body text-xl pb-8">"{{ testi.node.blurb }}"</p>
+              <p class="text-body text-xl pb-16">"{{ testi.node.blurb }}"</p>
               <div class="flex flex-row items-center space-x-4">
                 <div class="h-24 w-24 rounded-full overflow-hidden flex-shrink-0">
                   <g-image :src="testi.node.image" class="w-full h-full object-cover object-top" />
@@ -117,8 +172,8 @@
           </div>
         </div>
 
-        <div class="w-full flex justify-center">
-          <g-link to="/testimonials" class="btn btn-ghost">See full testimonials</g-link>
+        <div class="w-full flex justify-center pb-10">
+          <g-link to="/testimonials" class="btn btn-light">See full testimonials</g-link>
         </div>
       </div>
     </div>
@@ -145,34 +200,35 @@ query{
 </page-query>
 
 <script>
-import IndexBanner from "~/components/IndexBanner";
-import Data from "~/_settings/landing.json";
-import ITransf from "@/components/icons/ITransf";
-import IExpect from "@/components/icons/IExpect";
-import IGuar from "@/components/icons/IGuar";
-import ITax from "@/components/icons/ITax";
-import ITarget from "@/components/icons/ITarget";
+import IndexBanner from '~/components/IndexBanner';
+import Data from '~/_settings/landing.json';
+import Flow from '~/components/icons/Flow';
+import ITransf from '@/components/icons/ITransf';
+import IExpect from '@/components/icons/IExpect';
+import IGuar from '@/components/icons/IGuar';
+import ITax from '@/components/icons/ITax';
+import ITarget from '@/components/icons/ITarget';
 
-import INew from "@/components/icons/INew";
-import IChina from "@/components/icons/IChina";
-import IEnv from "@/components/icons/IEnv";
-import ICheck from "@/components/icons/ICheck";
-import ICal from "@/components/icons/ICal";
-import IndexFlowGraph from "~/components/IndexFlowGraph";
-import IndexDropGraph from "~/components/IndexDropGraph";
-import IndexRepsGraph from "~/components/IndexRepsGraph";
-import IndexTrusted from "~/components/IndexTrusted";
+import INew from '@/components/icons/INew';
+import IChina from '@/components/icons/IChina';
+import IEnv from '@/components/icons/IEnv';
+import ICheck from '@/components/icons/ICheck';
+import ICal from '@/components/icons/ICal';
+import IndexFlowGraph from '~/components/IndexFlowGraph';
+import IndexDropGraph from '~/components/IndexDropGraph';
+import IndexRepsGraph from '~/components/IndexRepsGraph';
+import IndexTrusted from '~/components/IndexTrusted';
 
 export default {
   metaInfo: {
-    title: "ABANA | African Textile & Apparel Marketplace",
+    title: 'ABANA | African Textile & Apparel Marketplace',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
-      }
-    ]
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   components: {
     IndexBanner,
@@ -183,21 +239,85 @@ export default {
     IndexFlowGraph,
     IndexDropGraph,
     IndexRepsGraph,
-    IndexTrusted
+    IndexTrusted,
+    Flow,
   },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  mounted() {
+    var width = window.innerWidth;
+    if (width > 768) {
+      var footer = document.querySelector('footer');
+      var over = document.getElementById('parallax-over');
+      var spacer = document.getElementById('spacer');
+      var under = document.getElementById('parallax-under');
+      footer.classList.add('fixed');
+      under.classList.add('fixed');
+      spacer.style.height = under.getBoundingClientRect().height + footer.getBoundingClientRect().height + 'px';
+      window.addEventListener('scroll', function() {
+        if (over.getBoundingClientRect().bottom > 1) {
+          spacer.classList.remove('fixed');
+          footer.classList.add('fixed');
+          under.classList.add('fixed');
+        }
+        if (over.getBoundingClientRect().bottom <= 1) {
+          spacer.classList.add('fixed');
+          footer.classList.remove('fixed');
+          under.classList.remove('fixed');
+        }
+      });
+    }
+  },
+  methods: {
+    isBlockScrolled(el) {
+      var block = el.getBoundingClientRect();
+      return block.top <= window.innerHeight * 0.5;
+    },
+    stickyElement() {
+      var blocks = document.getElementsByClassName('block-item');
+      blocks.forEach((block, index) => {
+        let imageBlock = document.getElementById(block.id + '-image');
+        if (index > 0) {
+          if (this.isBlockScrolled(block)) {
+            imageBlock.classList.remove('opacity-0');
+          } else {
+            imageBlock.classList.add('opacity-0');
+          }
+        }
+      });
+    },
+    handleScroll() {
+      this.stickyElement();
+    },
+  },
 };
 </script>
 
-<style lang="scss">
-#banner {
-  @media (min-width: $break-collapse) {
-    height: calc(100vh - 6rem);
+<style lang="scss" scoped>
+footer,
+#parallax-under {
+  @media (max-width: $break-md) {
+    position: static !important;
   }
+}
+
+#banner-image {
+  width: 125%;
+}
+
+#image-container {
+  height: calc(100vh - 11.875rem);
+  top: 90px;
+  padding: 3.75rem 0;
 }
 
 .home-links a {

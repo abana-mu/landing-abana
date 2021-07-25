@@ -1,31 +1,24 @@
 <template>
-  <Layout class="one-section-tight-layout">
-    <div>
+  <Layout class="contain">
+    <div class="height-restriction">
       <div class="header pb-5">
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
-      <section class="pt-5 back-grey bordered">
-        <div
-          class="scroll-container flex-row align-items-start d-none d-lg-flex"
-          :class="activeBlock"
-        >
+      <section class="pt-5 back-grey border">
+        <div class="scroll-container flex-row align-items-start hidden lg:flex" :class="activeBlock">
           <ul class="scroll-circle">
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <ul class="scroll-text-container w-50">
+          <ul class="scroll-text-container w-1/2">
             <li v-for="block in Data.elements" :key="block.id">
-              <h2
-                :id="block.id"
-                class="title-block"
-                :class="{ isActive: block.id === activeBlock }"
-              >{{ block.title }}</h2>
+              <h2 :id="block.id" class="title-block" :class="{ isActive: block.id === activeBlock }">{{ block.title }}</h2>
               <vue-simple-markdown :source="block.content" class="text-block"></vue-simple-markdown>
             </li>
           </ul>
-          <div class="scroll-image-container w-50">
+          <div class="px-12 mb-24 mx-auto w-1/2">
             <div class="mask">
               <div class="scroll-image1">
                 <g-image src="../assets/images/supply.png" quality="100" />
@@ -49,63 +42,58 @@
 </template>
 
 <script>
-import Data from "~/_settings/fastcustom.json";
-import TwoCol from "~/components/PageElementTwoColMd";
-
+import Data from '~/_settings/fastcustom.json';
+import TwoCol from '~/components/PageElementTwoColMd';
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight ||
-        document.documentElement.clientHeight) /* or $(window).height() */ &&
-    rect.right <=
-      (window.innerWidth ||
-        document.documentElement.clientWidth) /* or $(window).width() */
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */ &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
   );
 }
-
 export default {
   components: {
-    TwoCol
+    TwoCol,
   },
   metaInfo: {
-    title: "Drops",
+    title: 'Drops',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
-      }
-    ]
+          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   data() {
     return {
       Data,
-      activeBlock: "block1"
+      activeBlock: 'block1',
     };
   },
-
   mounted() {
-    document.addEventListener("scroll", this.handleScroll);
+    document.addEventListener('scroll', this.handleScroll);
   },
-
   methods: {
     handleScroll() {
-      this.Data.elements.find(number => {
+      this.Data.elements.find((number) => {
         const el = document.getElementById(number.id);
         if (isElementInViewport(el)) {
           this.activeBlock = number.id;
         }
       });
       console.log(this.activeBlock);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+.height-restriction {
+  min-height: calc(100vh - 390px);
+}
 .video-container {
   width: 100%;
   @media (min-width: $break-lg) {
@@ -114,7 +102,6 @@ export default {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
 .scroll-container {
   max-width: calc(1280px + 6rem);
   padding-left: 3rem;
@@ -128,16 +115,13 @@ export default {
     display: flex;
   }
 }
-
 .scroll-text-container {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-
   padding-left: 0;
-
   @media (min-width: $break-lg) {
     padding-left: 10px;
   }
@@ -153,7 +137,6 @@ export default {
     }
   }
 }
-
 .scroll-container {
   &.block1 {
     .scroll-circle li:nth-child(1) {
@@ -206,7 +189,6 @@ export default {
     }
   }
 }
-
 .scroll-circle {
   padding: 0;
   display: flex;
@@ -215,7 +197,6 @@ export default {
   position: sticky;
   justify-content: center;
   flex-direction: column;
-
   li {
     background-color: $secondary;
     opacity: 0.1;
@@ -227,7 +208,6 @@ export default {
     height: 0.625rem;
     border-radius: 9999px;
   }
-
   .sticky {
     position: sticky;
   }
@@ -238,30 +218,25 @@ export default {
     flex-direction: column;
   }
 }
-
 .scroll-image-container {
   top: 4.375rem;
   position: sticky;
   display: block;
   width: 50%;
   border-width: 10px;
-
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
-
   .mask {
     position: relative;
     overflow: hidden;
     height: calc(100vh - 11.875rem);
     border-radius: 10px;
-
     .scroll-image,
     .scroll-image1 {
       img {
         width: 100%;
       }
     }
-
     .scroll-image1 {
       background-color: #393855;
       height: calc(100vh - 11.875rem);
@@ -284,7 +259,6 @@ export default {
     .scroll-image4 {
       background-color: #f9f7cf;
     }
-
     .scroll-image {
       position: absolute;
       display: flex;

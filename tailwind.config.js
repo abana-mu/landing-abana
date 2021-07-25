@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.vue', './src/**/*.js', './src/**/*.md', './src/**/*.html'],
   theme: {
     extend: {
+      fontFamily: {
+        graphik: "'Graphik', serif",
+      },
       spacing: {
         18: '72px',
       },
@@ -13,11 +16,11 @@ module.exports = {
         '1': 1,
       },
       colors: {
-        body: '#555C6A',
+        body: '#3F3F46',
         title: '#1E293B',
-        subtitle: '#737a96',
-        caption: '#acb1c3',
-        bodyOnDark: '#dadaed',
+        subtitle: '#64748B',
+        caption: '#9CA3AF',
+        bodyOnDark: '#a6a6ca',
         titleOnDark: 'white',
         primary: {
           DEFAULT: '#FF6158',

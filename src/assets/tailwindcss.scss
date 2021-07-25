@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Graphik';
+    src: url('../assets/fonts/GraphikRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Graphik';
+    src: url('../assets/fonts/GraphikLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Graphik';
+    src: url('../assets/fonts/GraphikMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Graphik';
+    src: url('../assets/fonts/GraphikSemibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .contain {
+    @apply mx-auto px-4 xs:px-5 sm:px-6 lg:px-10 xl:px-24 2xl:px-10 max-w-screen-xl;
+  }
+
+  .tab-buttons {
+    @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/2 py-4 px-1 text-center border-b-2 font-medium hover:bg-gray-50  rounded-t-md cursor-pointer;
+  }
+  .tab-buttons.active {
+    @apply hover:bg-primary-100 hover:bg-opacity-75 border-primary-300 text-primary-400;
+  }
+}
+
 @layer components {
   @responsive {
     /* Button sizes */
@@ -22,12 +60,16 @@
     }
 
     .btn-xl {
-      @apply px-12 py-5 text-xl;
+      @apply px-6 py-4 text-lg;
     }
   }
 
   .btn-primary {
     @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-white bg-primary-300 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200 transition;
+  }
+
+  .btn-light {
+    @apply inline-flex text-center justify-center items-center rounded font-medium shadow-sm text-white bg-primary-200 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-200 transition;
   }
 
   .btn-ghost {
@@ -44,17 +86,5 @@
 
   .btn-price.active {
     @apply bg-primary-300 bg-opacity-25 text-white border-primary border-opacity-70;
-  }
-}
-@layer base {
-  .contain {
-    @apply mx-auto px-4 xs:px-5 sm:px-6 lg:px-10 xl:px-24 2xl:px-10 max-w-screen-xl;
-  }
-
-  .tab-buttons {
-    @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 w-1/2 py-4 px-1 text-center border-b-2 font-medium hover:bg-gray-50  rounded-t-md cursor-pointer;
-  }
-  .tab-buttons.active {
-    @apply hover:bg-primary-100 hover:bg-opacity-75 border-primary-300 text-primary-400;
   }
 }

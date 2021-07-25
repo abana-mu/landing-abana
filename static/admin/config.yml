@@ -194,6 +194,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Blocks'
             name: blocks
             label_singular: 'Block'
@@ -209,7 +210,13 @@ collections:
               - { label: 'Learn More', name: 'learnmore', widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Digital Platform'
         name: 'digPla'
@@ -221,6 +228,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Blocks'
             name: blocks
             label_singular: 'Block'
@@ -235,7 +243,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Drops'
         name: 'dro'
@@ -247,6 +261,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Blocks'
             name: blocks
             label_singular: 'Block'
@@ -261,7 +276,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Fast Custom'
         name: 'fasCus'
@@ -273,6 +294,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'Blocks'
             name: blocks
             label_singular: 'Block'
@@ -287,7 +309,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Apparel Manufacturers'
         name: 'appMan'
@@ -299,6 +327,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'B2B Plateform Elements'
             name: b2bblocks
             label_singular: 'Block'
@@ -313,7 +342,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -329,7 +364,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Yarn, Fabric, Trim Suppliers'
         name: 'yarSupp'
@@ -341,6 +382,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'B2B Plateform Elements'
             name: b2bblocks
             label_singular: 'Block'
@@ -355,7 +397,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -371,7 +419,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Service Providers'
         name: 'serPro'
@@ -383,6 +437,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
+              - { label: 'Image', name: 'image', widget: 'image' }
           - label: 'B2B Plateform Elements'
             name: b2bblocks
             label_singular: 'Block'
@@ -397,7 +452,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -413,7 +474,13 @@ collections:
                 }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
+              - {
+                  label: 'URL',
+                  name: 'url',
+                  required: false,
+                  widget: 'string',
+                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
+                }
 
       - label: 'Matching Marketplace'
         name: 'matching'
@@ -649,7 +716,6 @@ collections:
             label_singular: 'element'
             widget: list
             fields:
-              - { label: 'ID', name: 'id', widget: 'string', hint: 'block+#' }
               - { label: 'Title', name: 'title', widget: 'string' }
               - {
                   label: 'Content',
@@ -1584,7 +1650,12 @@ collections:
         options: ['filled', 'open']
         hint: 'filled = display that position has been filled'
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Department', name: 'department', widget: 'select', options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'] }
+      - {
+          label: 'Department',
+          name: 'department',
+          widget: 'select',
+          options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'],
+        }
       - { label: 'Location', name: 'location', widget: 'string' }
       - {
           label: 'Role',

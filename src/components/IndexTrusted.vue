@@ -1,30 +1,19 @@
 <!-- HTML -->
 <template>
-  <div
-    class="my-4 py-4 pb-5 flex flex-col items-center justify-center w-full space-y-6 md:space-y-10"
-  >
-    <p class="text-lg font-medium text-title">Trusted by:</p>
+  <div class="my-4 py-4 pb-5 flex flex-col items-center justify-center w-full space-y-6 md:space-y-10">
+    <p class="text-lg font-medium text-title tracking-widest">Trusted by:</p>
     <VueSlickCarousel v-bind="settings" class="px-6 w-full">
       <div v-for="n in Math.ceil(data.length / 4)" :key="n">
         <div class="grid grid-cols-2 sm:grid-cols-4 items-center">
           <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name">
             <a :href="logo.link" target="_blank" class="flex justify-center">
-              <g-image
-                :src="logo.image"
-                blur="40"
-                quality="75"
-                :alt="logo.title"
-                class="trusted-image"
-              />
+              <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" class="trusted-image" />
             </a>
           </div>
         </div>
       </div>
     </VueSlickCarousel>
-    <g-link
-      to="/testimonials"
-      class="group inline-flex items-center text-body hover:underline hover:text-title"
-    >
+    <g-link to="/testimonials" class="group inline-flex items-center text-body hover:underline hover:text-title">
       Read what they are saying
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,17 +34,17 @@
 
 <!-- SCRIPTS -->
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import VueSlickCarousel from 'vue-slick-carousel';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
 // optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
 
 export default {
   components: { VueSlickCarousel },
 
   props: {
     data: Array,
-    control: Boolean
+    control: Boolean,
   },
   data() {
     return {
@@ -66,15 +55,15 @@ export default {
         slidesToScroll: 1,
         pauseOnHover: true,
         autoplay: true,
-        autoplaySpeed: 4000
-      }
+        autoplaySpeed: 4000,
+      },
     };
   },
   methods: {
     range: function(n) {
       return this.data.slice((n - 1) * 4, (n - 1) * 4 + 4);
-    }
-  }
+    },
+  },
 };
 </script>
 

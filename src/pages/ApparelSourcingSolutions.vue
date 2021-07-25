@@ -1,16 +1,12 @@
 <template>
   <Layout>
-    <div class="my-20 text-center">
-      <h1 class="font-medium text-title text-5xl mb-4">{{ Data.header.title }}</h1>
-      <p class="text-lg text-subtitle max-w-2xl mx-auto">{{ Data.header.subtext }}</p>
-      <div v-if="Data.header.image" class="mx-auto text-center max-w-5xl">
-        <g-image
-          :src="Data.header.image"
-          quality="100"
-          blur="40"
-          width="750"
-          class="mt-12 lg:rounded-md"
-        />
+    <div class="contain mt-8 mb-20">
+      <div class="relative h-96 rounded-lg overflow-hidden">
+        <div class="overlay absolute w-full h-full flex flex-col justify-center items-center">
+          <h1 class="font-medium text-titleOnDark text-5xl mb-4">{{ Data.header.title }}</h1>
+          <p class="text-lg text-titleOnDark max-w-2xl mx-auto text-center">{{ Data.header.subtext }}</p>
+        </div>
+        <g-image :src="Data.header.image" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
       </div>
     </div>
 
@@ -23,33 +19,38 @@
 </template>
 
 <script>
-import Data from "~/_settings/app-sou-sol.json";
-import OneCol from "~/components/PageElementOneCol";
-import TwoCol from "~/components/PageElementTwoCol";
-import String1 from "~/components/icons/String1";
-import String2 from "~/components/icons/String2";
-import ICheck from "@/components/icons/ICheck";
+import Data from '~/_settings/app-sou-sol.json';
+import OneCol from '~/components/PageElementOneCol';
+import TwoCol from '~/components/PageElementTwoCol';
+import String1 from '~/components/icons/String1';
+import String2 from '~/components/icons/String2';
+import ICheck from '@/components/icons/ICheck';
 
 export default {
   components: {
     OneCol,
     TwoCol,
     String1,
-    String2
+    String2,
   },
   metaInfo: {
     title: Data.header.title,
     meta: [
       {
-        name: "description",
-        title: Data.header.subtext
-      }
-    ]
+        name: 'description',
+        title: Data.header.subtext,
+      },
+    ],
   },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
 };
 </script>
+<style scoped>
+.overlay {
+  background-color: rgba(6, 7, 55, 0.53);
+}
+</style>

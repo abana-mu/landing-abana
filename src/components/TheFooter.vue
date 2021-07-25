@@ -6,19 +6,31 @@
       <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
         <div class="mt-8 lg:mt-12 xl:mt-0 mb-16">
           <div class="footer-logo text-white block mb-4">
-            <div class="block sm:inline-block w-1/2 md:w-1/4 lg:w-full max-w-xs mb-2 sm:pr-5 sm:mb-0">
+            <div class="block sm:inline-block w-full mb-2 sm:pr-5 sm:mb-0">
               <Logo class="mb-2 " />
               <Slogan class="dark" />
             </div>
           </div>
           <div class="flex flex-row space-x-4 text-bodyOnDark">
-            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.linkedin.com/company/abana-mauritius/" target="_blank">
+            <a
+              class="outline-none transition transform hover:scale-110 hover:text-white"
+              href="https://www.linkedin.com/company/abana-mauritius/"
+              target="_blank"
+            >
               <Linkedin class="w-5 h-auto" />
             </a>
-            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.instagram.com/abana.mauritius" target="_blank">
+            <a
+              class="outline-none transition transform hover:scale-110 hover:text-white"
+              href="https://www.instagram.com/abana.mauritius"
+              target="_blank"
+            >
               <Insta class="w-5 h-auto" />
             </a>
-            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA" target="_blank">
+            <a
+              class="outline-none transition transform hover:scale-110 hover:text-white"
+              href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA"
+              target="_blank"
+            >
               <Youtube class="w-5 h-auto" />
             </a>
           </div>
@@ -148,32 +160,23 @@
           </div>
         </div>
       </div>
-      <div class="border-t border-gray-500 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
+      <div class="border-t border-gray-500 pt-8 space-y-4 lg:flex lg:items-center lg:justify-between xl:mt-0">
         <div>
-          <h3 class="text-sm font-semibold text-titleOnDark tracking-wider uppercase">
+          <h3 class="text-sm font-semibold text-titleOnDark tracking-wider uppercase mb-1">
             Book a Demo
           </h3>
-          <p class="mt-2 text-base text-bodyOnDark">
-            Get in touch with our sales team for queries related to our solutions, services and agency work.
+          <p class="text-base text-bodyOnDark">
+            Pick a date and our sales team will get in touch with you for details.
           </p>
         </div>
-        <form class="mt-4 sm:flex sm:max-w-md lg:mt-0">
-          <label for="email-address" class="sr-only">email</label>
-          <input
-            type="email"
-            name="email-address"
-            id="email-address"
-            autocomplete="email"
-            required
-            class="appearance-none min-w-0 w-full bg-white border border-transparent rounded py-1.5 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400 sm:max-w-xs"
-            placeholder="name@company.com"
-          />
-          <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-            <button type="submit" class="btn btn-primary">
-              Book a Demo
-            </button>
-          </div>
-        </form>
+        <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn btn-primary inline-flex justify-center items-center">
+          <svg class="h-5 w-5 mr-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+            />
+          </svg>
+          Book a Demo
+        </a>
       </div>
       <div class="mt-8 border-t border-gray-500 pt-8 md:flex md:items-center md:justify-between">
         <p class="mt-8 text-base text-center text-bodyOnDark md:mt-0">
@@ -203,3 +206,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.footer-logo {
+  max-width: 250px;
+}
+</style>
