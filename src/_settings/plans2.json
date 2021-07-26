@@ -17,7 +17,7 @@
           "121": 249,
           "1212": 199
         },
-        "features": ["Advanced Profile & Search", "Fast Custom", "Advanced Services"]
+        "features": ["Advanced Profile & Search", "Fast Custom (coming soon)", "Advanced Services"]
       }
     ],
     "categories": [
@@ -120,15 +120,7 @@
             }
           },
           {
-            "title": "Access Brands Store",
-            "tooltip": "",
-            "plans": {
-              "basic": true,
-              "pro": true
-            }
-          },
-          {
-            "title": "Fast Custom",
+            "title": "Fast Custom (coming soon)",
             "tooltip": "",
             "plans": {
               "basic": false,
@@ -141,32 +133,17 @@
         "title": "Support Services",
         "features": [
           {
-            "title": "Basic Services (QC, Compliance, Order Follow-up)",
-            "tooltip": "",
+            "title": "Support Services (QC, Compliance, Order Follow-up)",
+            "tooltip": "Pick & choose from our range of services tailored to your specific business needs.",
             "plans": {
               "basic": true,
               "pro": true
             }
           },
-          {
-            "title": "Online Order Follow-up - Critical path (coming soon)",
-            "tooltip": "",
-            "plans": {
-              "basic": false,
-              "pro": true
-            }
-          },
+
           {
             "title": "Advisory",
-            "tooltip": "",
-            "plans": {
-              "basic": false,
-              "pro": true
-            }
-          },
-          {
-            "title": "Joint Purchasing & E-commerce Discount",
-            "tooltip": "",
+            "tooltip": "Tell us what you are looking for and we link you with vetted suppliers based on your business requirements",
             "plans": {
               "basic": false,
               "pro": true
@@ -212,7 +189,7 @@
           "1212": 199
         },
 
-        "features": ["Fast Custom", "Online Critical Path", "Corporate Discounts"]
+        "features": ["Fast Custom (coming soon)", "Corporate Discounts"]
       }
     ],
     "categories": [
@@ -316,16 +293,7 @@
             }
           },
           {
-            "title": "Access Brands Store",
-            "tooltip": "",
-            "plans": {
-              "freelancer": true,
-              "basic": true,
-              "pro": true
-            }
-          },
-          {
-            "title": "Fast Custom",
+            "title": "Fast Custom (coming soon)",
             "tooltip": "",
             "plans": {
               "freelancer": false,
@@ -340,7 +308,7 @@
         "features": [
           {
             "title": "Marketing Services",
-            "tooltip": "",
+            "tooltip": "Join our network of preferred sellers whom we match with buyers based on your specific requirements",
             "plans": {
               "freelancer": true,
               "basic": true,
@@ -357,29 +325,11 @@
             }
           },
           {
-            "title": "Financial Services",
-            "tooltip": "",
-            "plans": {
-              "freelancer": true,
-              "basic": true,
-              "pro": true
-            }
-          },
-          {
             "title": "Advisory",
-            "tooltip": "",
+            "tooltip": "Tell us what you are looking for and we link you with vetted suppliers based on your business requirements",
             "plans": {
               "freelancer": true,
               "basic": true,
-              "pro": true
-            }
-          },
-          {
-            "title": "Joint Purchasing Discounts",
-            "tooltip": "",
-            "plans": {
-              "freelancer": false,
-              "basic": false,
               "pro": true
             }
           }

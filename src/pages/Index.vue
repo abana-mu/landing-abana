@@ -75,7 +75,8 @@
                 </div>
               </div>
               <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200">
-                <Flow />
+                <Flow class="hidden" />
+                <Lottie :options="defaultOptions" v-on:animCreated="handleAnimation" />
               </div>
             </div>
           </div>
@@ -89,10 +90,10 @@
                 <h2 class="mb-4 text-5xl font-medium">Opportunities come to you</h2>
                 <p class="mb-4 text-xl">Easily post and view listings on our feed and discover new business opportunities.</p>
               </div>
-              <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
+              <!-- <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
                 <h2 class="mb-4 text-5xl font-medium">You're in control of your best match</h2>
                 <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
-              </div>
+              </div> -->
             </div>
             <div id="image-container" class="sticky block w-2/3">
               <div class="h-full relative overflow-hidden rounded-lg">
@@ -105,12 +106,12 @@
                 >
                   <p class="text-4xl font-medium italic">Image 2</p>
                 </div>
-                <div
+                <!-- <div
                   id="block2-image"
                   class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
                 >
                   <p class="text-4xl font-medium italic">Image 3</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -124,11 +125,46 @@
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
                 <div class="text-6xl mb-4 font-bold text-title max-w-2xl">Digital is <span class="text-primary">not enough</span></div>
                 <div class="text-lg max-w-xl leading-loose">
-                  Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power
-                  users are, and the behaviors tied to long-term retention.
+                  Unlike other platforms, we understand the magic of fashion happens on the ground. Complement from your digital research by accessing
+                  our on-the-ground supply chain solutions.
                 </div>
               </div>
               <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200"></div>
+            </div>
+          </div>
+          <div class=" flex-row items-start hidden lg:flex">
+            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-1/3">
+              <div id="block3" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">A trusted partner at your side</h2>
+                <p class="mb-4 text-xl">Choose from a menu of support services tailored to your business needs</p>
+              </div>
+              <div id="block4" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">World-class experience, Local Touch</h2>
+                <p class="mb-4 text-xl">Leverage our know-how for custom advice on how to grow your regional business</p>
+              </div>
+              <!-- <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-5xl font-medium">You're in control of your best match</h2>
+                <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
+              </div> -->
+            </div>
+            <div id="image-container" class="sticky block w-2/3">
+              <div class="h-full relative overflow-hidden rounded-lg">
+                <div id="block3-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 1</p>
+                </div>
+                <div
+                  id="block4-image"
+                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300"
+                >
+                  <p class="text-4xl font-medium italic">Image 2</p>
+                </div>
+                <!-- <div
+                  id="block2-image"
+                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
+                >
+                  <p class="text-4xl font-medium italic">Image 3</p>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -208,6 +244,8 @@ import IExpect from '@/components/icons/IExpect';
 import IGuar from '@/components/icons/IGuar';
 import ITax from '@/components/icons/ITax';
 import ITarget from '@/components/icons/ITarget';
+import Lottie from 'vue-lottie';
+import animationData from '@/assets/animation/data.json';
 
 import INew from '@/components/icons/INew';
 import IChina from '@/components/icons/IChina';
@@ -231,6 +269,7 @@ export default {
     ],
   },
   components: {
+    Lottie,
     IndexBanner,
     box1: IChina,
     box2: ICheck,
@@ -245,6 +284,7 @@ export default {
   data() {
     return {
       Data,
+      defaultOptions: { animationData: animationData },
     };
   },
   mounted() {
@@ -276,6 +316,10 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    handleAnimation: function(anim) {
+      this.anim = anim;
+      this.anim.setSpeed(1);
+    },
     isBlockScrolled(el) {
       var block = el.getBoundingClientRect();
       return block.top <= window.innerHeight * 0.5;

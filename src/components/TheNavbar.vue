@@ -58,7 +58,7 @@
                       leave-to-class="opacity-0 scale-y-75"
                     >
                       <div v-if="activetab === index" class="absolute top-full transform w-3/4 lg:left-1/2 lg:-translate-x-1/2 origin-top pt-3">
-                        <div class="shadow-xl border rounded-lg overflow-hidden max-w-3xl">
+                        <div class="shadow-xl border rounded-lg overflow-hidden max-w-4xl">
                           <div v-if="link.drop.type === 1" class="relative grid gap-6 bg-white sm:gap-8 lg:grid-cols-5">
                             <div class="col-span-3 py-8 px-10">
                               <span class="uppercase text-sm s tracking-widest text-caption pl-2 mb-8 block">{{ link.drop.header }}</span>
@@ -352,7 +352,7 @@ export default {
                 icon: IASS,
               },
               {
-                title: 'Digital Platform',
+                title: 'B2B Digital Platform',
                 subtitle: NavData.digPla,
                 link: '/digital-platform',
                 icon: IDigital,
@@ -627,11 +627,12 @@ export default {
     box-shadow: inset 0 -3px #ff6158;
   }
   .active {
-    font-weight: 500;
+    @apply text-primary font-medium;
   }
 }
 
-.drop-item:hover {
+.drop-item:hover,
+.drop-item.active {
   .drop-item-title {
     @apply text-primary;
   }

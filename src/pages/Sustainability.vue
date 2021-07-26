@@ -6,11 +6,11 @@
 
     <div class="content overflow-hidden">
       <div class="flex flex-row -mx-2">
-        <g-image src="~/assets/images/picture7.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
+        <g-image src="~/assets/images/picture7.jpg" blur="40" class="w-1/3 px-2" quality="100"></g-image>
 
-        <g-image src="~/assets/images/picture9.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
+        <g-image src="~/assets/images/picture9.jpg" blur="40" class="w-1/3 px-2" quality="100"></g-image>
 
-        <g-image src="~/assets/images/picture8.jpg" blur="40" class="w-1/3 px-2" immediate="false" quality="100"></g-image>
+        <g-image src="~/assets/images/picture8.jpg" blur="40" class="w-1/3 px-2" quality="100"></g-image>
       </div>
 
       <section class="section-content anchor-links">
