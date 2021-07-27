@@ -106,19 +106,13 @@
                 >
                   <p class="text-4xl font-medium italic">Image 2</p>
                 </div>
-                <!-- <div
-                  id="block2-image"
-                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
-                >
-                  <p class="text-4xl font-medium italic">Image 3</p>
-                </div> -->
               </div>
             </div>
           </div>
 
           <div class=" flex-row items-start flex lg:hidden">
             <div class="flex justify-between flex-col pl-0 w-full">
-              <div class="block-item pb-20 flex flex-col">
+              <div class="pb-20 flex flex-col">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seemlessly</h2>
                 <p class="mb-4 text-xl">
                   Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
@@ -128,7 +122,7 @@
                   <p class="text-4xl font-medium italic">Image 1</p>
                 </div>
               </div>
-              <div class="block-item pb-20 flex flex-col">
+              <div class="pb-20 flex flex-col">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Business comes to you</h2>
                 <p class="mb-4 text-xl">
                   Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.
@@ -164,9 +158,8 @@
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">A trusted partner at your side</h2>
                 <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
                 <div class="space-y-2">
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions/">
                     Our Services for Buyers
-                    <!-- Arrow right-short -->
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -183,7 +176,6 @@
                   </g-link>
                   <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers#support">
                     Our Services for Garment Makers
-                    <!-- Arrow right-short -->
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -200,7 +192,7 @@
                   </g-link>
                   <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers#support">
                     Our Services for Input Suppliers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -217,7 +209,7 @@
                   </g-link>
                   <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers#support">
                     Our Services for Service Providers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -239,9 +231,9 @@
                 <p class="mb-4 text-xl">
                   We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
                 </p>
-                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about">
+                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about/">
                   About us
-                  <!-- Arrow right-short -->
+
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -257,10 +249,6 @@
                   </svg>
                 </g-link>
               </div>
-              <!-- <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium">You're in control of your best match</h2>
-                <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
-              </div> -->
             </div>
             <div id="image-container" class="sticky block w-3/5">
               <div class="h-full relative overflow-hidden rounded-lg">
@@ -273,24 +261,18 @@
                 >
                   <p class="text-4xl font-medium italic">Image 2</p>
                 </div>
-                <!-- <div
-                  id="block2-image"
-                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-300 transition duration-300"
-                >
-                  <p class="text-4xl font-medium italic">Image 3</p>
-                </div> -->
               </div>
             </div>
           </div>
           <div class=" flex-row items-start flex lg:hidden">
             <div class="flex justify-between flex-col pl-0 w-full">
-              <div class="block-item pb-20 flex flex-col">
+              <div class="pb-20 flex flex-col">
                 <h2 class="mb-4 text-4xl lg:text-5xl  font-medium text-title">A trusted partner at your side</h2>
                 <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
                 <div class="space-y-2">
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions/">
                     Our Services for Buyers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -305,9 +287,9 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers#support">
                     Our Services for Garment Makers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -322,9 +304,9 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers#support">
                     Our Services for Input Suppliers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -339,9 +321,9 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers#support">
                     Our Services for Service Providers
-                    <!-- Arrow right-short -->
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -362,14 +344,14 @@
                   <p class="text-4xl font-medium italic">Image 1</p>
                 </div>
               </div>
-              <div class="block-item pb-20 flex flex-col">
+              <div class="pb-20 flex flex-col">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
                 <p class="mb-4 text-xl">
                   We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
                 </p>
-                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about">
+                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about/">
                   About us
-                  <!-- Arrow right-short -->
+
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -432,7 +414,7 @@
         </div>
 
         <div class="w-full flex justify-center pb-10">
-          <g-link to="/testimonials" class="btn btn-light">See full testimonials</g-link>
+          <g-link to="/testimonials/" class="btn btn-light">See full testimonials</g-link>
         </div>
       </div>
     </div>
@@ -546,9 +528,10 @@ export default {
       return block.top <= window.innerHeight * 0.5;
     },
     stickyElement() {
-      var blocks = document.getElementsByClassName('block-item');
+      var blocks = document.querySelectorAll('.block-item');
       blocks.forEach((block, index) => {
         let imageBlock = document.getElementById(block.id + '-image');
+
         if (index > 0) {
           if (this.isBlockScrolled(block)) {
             imageBlock.classList.remove('opacity-0');

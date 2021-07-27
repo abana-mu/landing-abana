@@ -109,10 +109,10 @@ export default {
     };
   },
   created() {
-    if (location.hash == '#support') {
+    if (this.$router.currentRoute.hash == '#support') {
       this.activetab = 'support';
       window.scrollTo(0, 0);
-    } else if (location.hash == '#b2b') {
+    } else if (this.$router.currentRoute.hash == '#b2b') {
       this.activetab = 'b2b';
       window.scrollTo(0, 0);
     }
