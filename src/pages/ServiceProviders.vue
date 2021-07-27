@@ -2,7 +2,7 @@
   <Layout>
     <div class="contain mt-8 mb-20">
       <div class="relative h-96 rounded-lg overflow-hidden">
-        <div class="overlay absolute w-full h-full flex flex-col justify-center items-center">
+        <div class="overlay px-5 absolute w-full h-full flex flex-col justify-center items-center text-center">
           <h1 class="font-medium text-titleOnDark text-5xl mb-4" data-aos="fade-up" data-aos-duration="1000">{{ Data.header.title }}</h1>
           <p class="text-lg text-titleOnDark max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             {{ Data.header.subtext }}
@@ -19,9 +19,9 @@
           <div class="border-b border-gray-200">
             <nav class="-mb-px flex contain" aria-label="Tabs">
               <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-              <a v-on:click="activetab = 'b2b'" v-bind:class="[activetab === 'b2b' ? 'active' : '']" class="tab-buttons">B2B Platform</a>
+              <a v-on:click="changeTab('b2b')" v-bind:class="[activetab === 'b2b' ? 'active' : '']" class="tab-buttons">B2B Platform</a>
 
-              <a v-on:click="activetab = 'support'" v-bind:class="[activetab === 'support' ? 'active' : '']" class="tab-buttons" aria-current="page"
+              <a v-on:click="changeTab('support')" v-bind:class="[activetab === 'support' ? 'active' : '']" class="tab-buttons" aria-current="page"
                 >On-the-Ground Support</a
               >
             </nav>
@@ -41,8 +41,8 @@
               <button
                 class="btn btn-ghost"
                 @click="
-                  activetab = 'support';
                   scrollToTop();
+                  changeTab('support');
                 "
               >
                 See our On-the-Ground Support
@@ -63,8 +63,8 @@
               <button
                 class="btn btn-ghost"
                 @click="
-                  activetab = 'b2b';
                   scrollToTop();
+                  changeTab('b2b');
                 "
               >
                 Get to know our B2B Platform
@@ -108,9 +108,22 @@ export default {
       activetab: 'b2b',
     };
   },
+  created() {
+    if (location.hash == '#support') {
+      this.activetab = 'support';
+      window.scrollTo(0, 0);
+    } else if (location.hash == '#b2b') {
+      this.activetab = 'b2b';
+      window.scrollTo(0, 0);
+    }
+  },
   methods: {
     scrollToTop() {
       window.scrollTo(0, 280);
+    },
+    changeTab(e) {
+      location.hash = e;
+      this.activetab = e;
     },
   },
 };

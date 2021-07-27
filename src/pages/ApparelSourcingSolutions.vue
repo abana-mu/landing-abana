@@ -44,6 +44,12 @@ export default {
       },
     ],
   },
+  created() {
+    window.scrollTo(0, 0);
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   data() {
     return {
       Data,

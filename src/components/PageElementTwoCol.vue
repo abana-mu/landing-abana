@@ -23,10 +23,10 @@
               data-aos-duration="1000"
               data-aos-delay="200"
             ></vue-simple-markdown>
-            <div v-if="row.learnmore">
+            <div v-if="row.learnmore" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <LearnMore :source="row.learnmore" />
             </div>
-            <div v-if="row.url">
+            <div v-if="row.url" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <g-link class="group inline-flex items-center text-primary hover:underline" v-if="row.url.charAt(0) == '/'" :to="row.url">
                 {{ row.linkText }}
                 <!-- Arrow right-short -->
@@ -44,7 +44,14 @@
                   />
                 </svg>
               </g-link>
-              <a v-else class="group inline-flex items-center text-primary hover:underline" :href="row.url">
+              <a
+                v-else
+                class="group inline-flex items-center text-primary hover:underline"
+                :href="row.url"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 {{ row.linkText }}
                 <!-- Arrow right-short -->
                 <svg

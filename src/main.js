@@ -18,6 +18,10 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.use(VueSimpleMarkdown);
 
+  router.options.scrollBehavior = (to, from, savedPosition) => {
+    return { x: 0, y: 0 };
+  };
+
   if (process.isClient) {
     AOS.init({
       once: true,

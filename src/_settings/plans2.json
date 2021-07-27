@@ -142,7 +142,7 @@
           },
 
           {
-            "title": "Advisory",
+            "title": "Manual Matching",
             "tooltip": "Tell us what you are looking for and we link you with vetted suppliers based on your business requirements",
             "plans": {
               "basic": false,
@@ -325,10 +325,10 @@
             }
           },
           {
-            "title": "Advisory",
+            "title": "Manual Matching",
             "tooltip": "Tell us what you are looking for and we link you with vetted suppliers based on your business requirements",
             "plans": {
-              "freelancer": true,
+              "freelancer": false,
               "basic": true,
               "pro": true
             }

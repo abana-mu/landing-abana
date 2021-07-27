@@ -4,8 +4,8 @@
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain lg:h-full w-full flex flex-col justify-between z-10 mb-20">
           <div class="flex  flex-col md:flex-row">
-            <div class="w-full pt-24 pb-20 md:w-1/2 h-full flex flex-col justify-center items-start">
-              <span class="text-4xl sm:text-5xl lg:text-6xl font-medium mb-6 text-title max-w-lg font-graphik">{{ Data.header.title }}</span>
+            <div class="w-full pt-24 pb-20 md:w-1/2 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
+              <span class="text-5xl lg:text-6xl font-medium mb-6 text-title max-w-lg font-graphik">{{ Data.header.title }}</span>
               <span class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg">{{ Data.header.subtext }}</span>
               <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xl btn-primary inline-flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 mr-4" viewBox="0 0 16 16">
@@ -19,8 +19,8 @@
                 Book a Demo
               </a>
             </div>
-            <div class="w-full md:w-1/2 h-full relative">
-              <div id="banner-image" class="absolute top-0 left-0">
+            <div class="w-full md:w-1/2 h-full relative overflow-hidden md:overflow-visible">
+              <div id="banner-image" class="md:absolute top-0 left-0">
                 <g-image src="../assets/images/Group5.png" quality="100" class="w-full" immediate />
               </div>
             </div>
@@ -61,12 +61,12 @@
     -->
       <div class="bg-white"></div>
 
-      <section class="pt-5 z-1 bg-white">
+      <section class="z-1 bg-white">
         <div class="contain">
-          <div class="mt-32 mb-24">
-            <div class="grid grid-cols-2 gap-10">
+          <div class="my-20 md:mt-32 md:mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
-                <div class="text-6xl mb-4 font-bold text-title max-w-2xl">
+                <div class="text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl">
                   <span class="text-primary">Powerful</span> reports to answer any question
                 </div>
                 <div class="text-lg max-w-xl leading-loose">
@@ -74,28 +74,28 @@
                   users are, and the behaviors tied to long-term retention.
                 </div>
               </div>
-              <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200">
+              <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
                 <Flow class="hidden" />
-                <Lottie :options="defaultOptions" v-on:animCreated="handleAnimation" />
+                <Lottie :options="networkAnimationData" />
               </div>
             </div>
           </div>
           <div class=" flex-row items-start hidden lg:flex">
-            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-1/3">
+            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
               <div id="block0" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">Connect & partner from anywhere, seemlessly</h2>
-                <p class="mb-4 text-xl">Modern solutions allow you to find business from anywhere on the globe</p>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seemlessly</h2>
+                <p class="mb-4 text-xl">
+                  Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
+                </p>
               </div>
               <div id="block1" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">Opportunities come to you</h2>
-                <p class="mb-4 text-xl">Easily post and view listings on our feed and discover new business opportunities.</p>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Business comes to you</h2>
+                <p class="mb-4 text-xl">
+                  Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.
+                </p>
               </div>
-              <!-- <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">You're in control of your best match</h2>
-                <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
-              </div> -->
             </div>
-            <div id="image-container" class="sticky block w-2/3">
+            <div id="image-container" class="sticky block w-3/5">
               <div class="h-full relative overflow-hidden rounded-lg">
                 <div id="block0-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
                   <p class="text-4xl font-medium italic">Image 1</p>
@@ -115,39 +115,154 @@
               </div>
             </div>
           </div>
+
+          <div class=" flex-row items-start flex lg:hidden">
+            <div class="flex justify-between flex-col pl-0 w-full">
+              <div class="block-item pb-20 flex flex-col">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seemlessly</h2>
+                <p class="mb-4 text-xl">
+                  Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
+                </p>
+
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 1</p>
+                </div>
+              </div>
+              <div class="block-item pb-20 flex flex-col">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Business comes to you</h2>
+                <p class="mb-4 text-xl">
+                  Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.
+                </p>
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="pt-5 z-1 bg-white pb-40">
+      <section class="z-1 bg-white pb-20 md:pb-40">
         <div class="contain">
-          <div class="mt-32 mb-24">
-            <div class="grid grid-cols-2 gap-10">
+          <div class="my-20 md:mt-32 md:mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
-                <div class="text-6xl mb-4 font-bold text-title max-w-2xl">Digital is <span class="text-primary">not enough</span></div>
+                <div class="text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl">Digital is <span class="text-primary">not enough</span></div>
                 <div class="text-lg max-w-xl leading-loose">
-                  Unlike other platforms, we understand the magic of fashion happens on the ground. Complement from your digital research by accessing
-                  our on-the-ground supply chain solutions.
+                  Unlike other platforms, we understand the magic of fashion requires much more than just an online interface to happen. Complement
+                  your digital research with our on-the-ground supply chain solutions.
                 </div>
               </div>
-              <div class="col-span-1 pl-6" data-aos="fade-up" data-aos-duration="1200"></div>
+              <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
+                <Lottie :options="supportAnimationData" />
+              </div>
             </div>
           </div>
           <div class=" flex-row items-start hidden lg:flex">
-            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-1/3">
+            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
               <div id="block3" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">A trusted partner at your side</h2>
-                <p class="mb-4 text-xl">Choose from a menu of support services tailored to your business needs</p>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">A trusted partner at your side</h2>
+                <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
+                <div class="space-y-2">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions">
+                    Our Services for Buyers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers#support">
+                    Our Services for Garment Makers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers#support">
+                    Our Services for Input Suppliers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers#support">
+                    Our Services for Service Providers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                </div>
               </div>
               <div id="block4" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">World-class experience, Local Touch</h2>
-                <p class="mb-4 text-xl">Leverage our know-how for custom advice on how to grow your regional business</p>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
+                <p class="mb-4 text-xl">
+                  We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
+                </p>
+                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about">
+                  About us
+                  <!-- Arrow right-short -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </g-link>
               </div>
               <!-- <div id="block2" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-5xl font-medium">You're in control of your best match</h2>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium">You're in control of your best match</h2>
                 <p class="mb-4 text-xl">Search detailed & relevant buyer and supplier profiles</p>
               </div> -->
             </div>
-            <div id="image-container" class="sticky block w-2/3">
+            <div id="image-container" class="sticky block w-3/5">
               <div class="h-full relative overflow-hidden rounded-lg">
                 <div id="block3-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
                   <p class="text-4xl font-medium italic">Image 1</p>
@@ -164,6 +279,114 @@
                 >
                   <p class="text-4xl font-medium italic">Image 3</p>
                 </div> -->
+              </div>
+            </div>
+          </div>
+          <div class=" flex-row items-start flex lg:hidden">
+            <div class="flex justify-between flex-col pl-0 w-full">
+              <div class="block-item pb-20 flex flex-col">
+                <h2 class="mb-4 text-4xl lg:text-5xl  font-medium text-title">A trusted partner at your side</h2>
+                <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
+                <div class="space-y-2">
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions">
+                    Our Services for Buyers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers">
+                    Our Services for Garment Makers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers">
+                    Our Services for Input Suppliers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers">
+                    Our Services for Service Providers
+                    <!-- Arrow right-short -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                </div>
+
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 1</p>
+                </div>
+              </div>
+              <div class="block-item pb-20 flex flex-col">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
+                <p class="mb-4 text-xl">
+                  We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
+                </p>
+                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about">
+                  About us
+                  <!-- Arrow right-short -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </g-link>
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 2</p>
+                </div>
               </div>
             </div>
           </div>
@@ -245,7 +468,8 @@ import IGuar from '@/components/icons/IGuar';
 import ITax from '@/components/icons/ITax';
 import ITarget from '@/components/icons/ITarget';
 import Lottie from 'vue-lottie';
-import animationData from '@/assets/animation/data.json';
+import supportAnimation from '@/assets/animation/support.json';
+import networkAnimation from '@/assets/animation/network.json';
 
 import INew from '@/components/icons/INew';
 import IChina from '@/components/icons/IChina';
@@ -284,7 +508,8 @@ export default {
   data() {
     return {
       Data,
-      defaultOptions: { animationData: animationData },
+      networkAnimationData: { animationData: networkAnimation },
+      supportAnimationData: { animationData: supportAnimation },
     };
   },
   mounted() {
@@ -316,10 +541,6 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    handleAnimation: function(anim) {
-      this.anim = anim;
-      this.anim.setSpeed(1);
-    },
     isBlockScrolled(el) {
       var block = el.getBoundingClientRect();
       return block.top <= window.innerHeight * 0.5;
