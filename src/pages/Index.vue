@@ -5,7 +5,9 @@
         <div class="contain lg:h-full w-full flex flex-col justify-between z-10 mb-20">
           <div class="flex  flex-col md:flex-row">
             <div class="w-full pt-24 pb-20 md:w-1/2 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
-              <span class="text-5xl lg:text-6xl font-medium mb-6 text-title max-w-lg font-graphik">{{ Data.header.title }}</span>
+              <span class="text-5xl lg:text-6xl font-medium mb-6 text-title max-w-xl font-graphik"
+                >Make Africa's Textile & Apparel world <span class="text-primary">your own</span></span
+              >
               <span class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg">{{ Data.header.subtext }}</span>
               <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xl btn-primary inline-flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 mr-4" viewBox="0 0 16 16">
@@ -67,7 +69,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
                 <div class="text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl">
-                  <span class="text-primary">Powerful</span> reports to answer any question
+                  <span class="text-primary">World-class</span> Textile & Apparel network
                 </div>
                 <div class="text-lg max-w-xl leading-loose">
                   Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power
@@ -83,7 +85,7 @@
           <div class=" flex-row items-start hidden lg:flex">
             <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
               <div id="block0" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seemlessly</h2>
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seamlessly</h2>
                 <p class="mb-4 text-xl">
                   Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
                 </p>
@@ -143,8 +145,8 @@
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
                 <div class="text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl">Digital is <span class="text-primary">not enough</span></div>
                 <div class="text-lg max-w-xl leading-loose">
-                  Unlike other platforms, we understand the magic of fashion requires much more than just an online interface to happen. Complement
-                  your digital research with our on-the-ground supply chain solutions.
+                  Unlike other platforms, we understand the magic of fashion requires much more than just an online interface. Our on-the-ground
+                  supply chain solutions and advice get your orders past the finish line.
                 </div>
               </div>
               <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
@@ -156,9 +158,38 @@
             <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
               <div id="block3" class="block-item pt-44 pb-44 flex flex-col pr-6">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">A trusted partner at your side</h2>
-                <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
+                <p class="mb-2 text-xl">
+                  We know the region better than anyone and have worked with industry-leading brands and manufacturers.
+                </p>
+                <p class="mb-4 text-xl">Leverage our know-how to confidently and securly grow your regional business.</p>
+                <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/about/">
+                  About us
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </g-link>
+              </div>
+              <div id="block4" class="block-item pt-44 pb-44 flex flex-col pr-6">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
+                <p class="mb-2 text-xl">
+                  We cover all your business needs.
+                </p>
+                <p class="mb-4 text-xl">
+                  Our support services have been crafted over the decades to do one thing: fullfill your order with the highest customer satisfaction.
+                </p>
                 <div class="space-y-2">
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions/">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/apparel-sourcing-solutions/">
                     Our Services for Buyers
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +205,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/apparel-manufacturers#support">
                     Our Services for Garment Makers
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +221,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/yarn-fabric-trim-suppliers#support">
                     Our Services for Input Suppliers
 
                     <svg
@@ -207,7 +238,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/service-providers#support">
                     Our Services for Service Providers
 
                     <svg
@@ -225,29 +256,6 @@
                     </svg>
                   </g-link>
                 </div>
-              </div>
-              <div id="block4" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
-                <p class="mb-4 text-xl">
-                  We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
-                </p>
-                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about/">
-                  About us
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </g-link>
               </div>
             </div>
             <div id="image-container" class="sticky block w-3/5">
@@ -268,9 +276,38 @@
             <div class="flex justify-between flex-col pl-0 w-full">
               <div class="pb-20 flex flex-col">
                 <h2 class="mb-4 text-4xl lg:text-5xl  font-medium text-title">A trusted partner at your side</h2>
-                <p class="mb-4 text-xl">We provide a wide array of trusted support services tailored to all your business needs.</p>
+                <p class="mb-4 text-xl">
+                  We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
+                </p>
+                <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/about/">
+                  About us
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </g-link>
+
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
+                  <p class="text-4xl font-medium italic">Image 1</p>
+                </div>
+              </div>
+              <div class="pb-20 flex flex-col">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
+                <p class="mb-4 text-xl">
+                  We provide a wide array of trusted support services tailored to all your business needs.
+                </p>
                 <div class="space-y-2">
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-sourcing-solutions/">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/apparel-sourcing-solutions/">
                     Our Services for Buyers
 
                     <svg
@@ -287,7 +324,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/apparel-manufacturers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/apparel-manufacturers#support">
                     Our Services for Garment Makers
 
                     <svg
@@ -304,7 +341,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/yarn-fabric-trim-suppliers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/yarn-fabric-trim-suppliers#support">
                     Our Services for Input Suppliers
 
                     <svg
@@ -321,7 +358,7 @@
                       />
                     </svg>
                   </g-link>
-                  <g-link class="group inline-flex items-center text-primary hover:underline" to="/service-providers#support">
+                  <g-link class="group inline-flex items-center text-primary hover:underline text-lg" to="/service-providers#support">
                     Our Services for Service Providers
 
                     <svg
@@ -340,32 +377,6 @@
                   </g-link>
                 </div>
 
-                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
-                  <p class="text-4xl font-medium italic">Image 1</p>
-                </div>
-              </div>
-              <div class="pb-20 flex flex-col">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Best-in-class experience</h2>
-                <p class="mb-4 text-xl">
-                  We know the region better than anyone; leverage our know-how for custom advice on how to grow your regional business
-                </p>
-                <g-link class="group inline-flex items-center text-primary hover:underline" to="/about/">
-                  About us
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </g-link>
                 <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
                   <p class="text-4xl font-medium italic">Image 2</p>
                 </div>
@@ -504,8 +515,14 @@ export default {
       var under = document.getElementById('parallax-under');
       footer.classList.add('fixed');
       under.classList.add('fixed');
+      under.classList.add('opacity-0');
       spacer.style.height = under.getBoundingClientRect().height + footer.getBoundingClientRect().height + 'px';
       window.addEventListener('scroll', function() {
+        if (window.scrollY > 40) {
+          under.classList.remove('opacity-0');
+        } else {
+          under.classList.add('opacity-0');
+        }
         if (over.getBoundingClientRect().bottom > 1) {
           spacer.classList.remove('fixed');
           footer.classList.add('fixed');

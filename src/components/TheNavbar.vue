@@ -27,7 +27,7 @@
                 <div
                   v-for="(link, index) in Nav"
                   class="nav-link md:px-2 xl:px-4 py-5 group transition"
-                  :key="index"
+                  :key="link.name + index"
                   @mouseover="activetab = index"
                   @mouseleave="activetab = ''"
                   v-bind:class="[activetab === index ? 'active' : '']"
@@ -63,7 +63,7 @@
                             <div class="col-span-3 py-8 px-10">
                               <span class="uppercase text-sm s tracking-widest text-caption pl-2 mb-8 block">{{ link.drop.header }}</span>
                               <div class="flex flex-col justify-center space-y-10">
-                                <g-link :to="drop.link" class="drop-item flex flex-row" v-for="(drop, index) in link.drop.links" :key="index">
+                                <g-link :to="drop.link" class="drop-item flex flex-row" v-for="(drop, index) in link.drop.links" :key="drop + index">
                                   <component :is="drop.icon" class="drop-item-icon h-12 w-12 mr-4" />
                                   <div class="flex flex-col">
                                     <span class="drop-item-title font-medium text-title text-lg">{{ drop.title }}</span>
@@ -79,7 +79,7 @@
                                   :to="drop.link"
                                   class="drop-item flex items-center cursor-pointer"
                                   v-for="(drop, index) in link.drop.extra"
-                                  :key="index"
+                                  :key="drop + index"
                                 >
                                   <component :is="drop.icon" class="drop-item-icon h-5 w-5 mr-4" />
                                   <div class="flex flex-col">
@@ -90,9 +90,9 @@
                             </div>
                           </div>
                           <div v-else class="relative grid gap-6 bg-white lg:grid-cols-3 p-8">
-                            <div v-for="(col, index) in link.drop.columns" :key="index">
+                            <div v-for="(col, index) in link.drop.columns" :key="col.header + index">
                               <span class="uppercase text-sm font-regular tracking-widest text-caption mb-4 block ml-4">{{ col.header }}</span>
-                              <div v-for="(link, index) in col.links" :key="index">
+                              <div v-for="(link, index) in col.links" :key="link.title + index">
                                 <template v-if="link.title == 'FAQ'">
                                   <div
                                     @click="launch()"
@@ -159,7 +159,7 @@
           <div class="absolute w-screen h-screen top-full left-0 bg-gray-50 z-10" v-if="sideBar">
             <!-- SIDEBAR 1 -->
             <div class="contain pt-5">
-              <div v-for="(link, index) in Nav" :key="index">
+              <div v-for="(link, index) in Nav" :key="link.name + index">
                 <div v-if="link.drop">
                   <div
                     @click="toggleSideBar2(link.name.toLowerCase())"
@@ -204,17 +204,17 @@
                       </div>
                       <template v-if="link.drop.type === 1">
                         <div class="uppercase text-sm s tracking-widest text-caption pl-2 mb-2 block">{{ link.drop.header }}</div>
-                        <div v-for="(link, index) in link.drop.links" :key="index">
+                        <div v-for="(link, index) in link.drop.links" :key="link.title + index">
                           <g-link
                             :to="link.link"
-                            class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center font-medium text-body hover:text-primary cursor-pointer"
+                            class="drop-item w-full p-3 -ml-3 inline-flex hover:bg-primary-100 rounded-md items-center font-medium text-body hover:text-primary cursor-pointer"
                           >
                             <component :is="link.icon" class="drop-item-icon h-12 w-12 mr-4" />
                             <span class="text-lg">{{ link.title }}</span>
                           </g-link>
                         </div>
                         <div class="uppercase text-sm s tracking-widest text-caption pl-2 mt-5 mb-2 block">more...</div>
-                        <div v-for="(link, index) in link.drop.extra" :key="index">
+                        <div v-for="(link, index) in link.drop.extra" :key="link.title + index">
                           <g-link
                             :to="link.link"
                             class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
@@ -225,10 +225,10 @@
                         </div>
                       </template>
                       <template v-else>
-                        <div v-for="(col, index) in link.drop.columns" :key="index" class="mb-6">
+                        <div v-for="(col, index) in link.drop.columns" :key="col.header + index" class="mb-6">
                           <div class="uppercase text-sm tracking-widest text-caption pl-2 mb-2 block">{{ col.header }}</div>
 
-                          <div v-for="(link, index) in col.links" :key="index">
+                          <div v-for="(link, index) in col.links" :key="link.title + index">
                             <g-link
                               :to="link.link"
                               class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"

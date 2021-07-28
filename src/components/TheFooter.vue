@@ -44,35 +44,40 @@
               </h3>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <g-link to="/apparel-sourcing-solutions" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/apparel-sourcing-solutions/" class="text-base text-bodyOnDark hover:text-white">
                     Apparel Sourcing
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/digital-platform" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/digital-platform/" class="text-base text-bodyOnDark hover:text-white">
                     Digital platform
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/e-commerce-solutions" class="text-base text-bodyOnDark hover:text-white">
-                    E-Commerce
+                  <g-link to="/drops/" class="text-base text-bodyOnDark hover:text-white">
+                    Drops
+                  </g-link>
+                </li>
+                <li>
+                  <g-link to="/fast-custom/" class="text-base text-bodyOnDark hover:text-white">
+                    Fast Custom
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/apparel-manufacturers" href="#" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/apparel-manufacturers/" href="#" class="text-base text-bodyOnDark hover:text-white">
                     For Manufacturers
                   </g-link>
                 </li>
                 <li>
-                  <g-link to="/yarn-fabric-trim-suppliers" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/yarn-fabric-trim-suppliers/" class="text-base text-bodyOnDark hover:text-white">
                     For Suppliers
                   </g-link>
                 </li>
                 <li>
-                  <g-link to="/service-providers" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/service-providers/" class="text-base text-bodyOnDark hover:text-white">
                     For Service Providers
                   </g-link>
                 </li>
@@ -84,24 +89,24 @@
               </h3>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <g-link to="/pricing" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/pricing/" class="text-base text-bodyOnDark hover:text-white">
                     Pricing
                   </g-link>
                 </li>
                 <li>
-                  <g-link to="/country-reps" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/country-reps/" class="text-base text-bodyOnDark hover:text-white">
                     Country Reps
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/why-africa" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/why-africa/" class="text-base text-bodyOnDark hover:text-white">
                     Why Africa
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/sustainability" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/sustainability/" class="text-base text-bodyOnDark hover:text-white">
                     Sustainability
                   </g-link>
                 </li>
@@ -115,25 +120,25 @@
               </h3>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <g-link to="/about" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/about/" class="text-base text-bodyOnDark hover:text-white">
                     About
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/contact" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/contact/" class="text-base text-bodyOnDark hover:text-white">
                     Contact
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/careers" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/careers/" class="text-base text-bodyOnDark hover:text-white">
                     Jobs
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/press" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/press/" class="text-base text-bodyOnDark hover:text-white">
                     Press
                   </g-link>
                 </li>
@@ -145,13 +150,13 @@
               </h3>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <g-link to="/privacy" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/privacy/" class="text-base text-bodyOnDark hover:text-white">
                     Privacy
                   </g-link>
                 </li>
 
                 <li>
-                  <g-link to="/terms-conditions" class="text-base text-bodyOnDark hover:text-white">
+                  <g-link to="/terms-conditions/" class="text-base text-bodyOnDark hover:text-white">
                     Terms
                   </g-link>
                 </li>

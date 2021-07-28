@@ -2,22 +2,28 @@
   "header": {
     "title": "Drops",
     "subtext": "Sophisticated products in low MOQs for immediate delivery",
-    "image": "/uploads/digital.jpg"
+    "image": "/uploads/drops.jpg",
+    "video": "https://www.youtube.com/watch?v=CDNGeyLeo_U"
   },
   "blocks": [
     {
       "title": "Speed up the supply-chain",
-      "content": "* Order ready-to-ship styles\n* Low MOQs(as from 10 pieces)\n* Receive delivery within a week",
+      "content": "Our Drop are collections of ready-to-ship styles. This unique concept provides you with more freedom:\n\n* Order high quality products in low MOQs (as from 10 pieces)\n* Receive delivery within a week",
       "image": "/uploads/back4.jpg",
       "linkText": "Register to view collection",
       "url": "https://app.abana.mu/register-buyer"
     },
     {
       "title": "Make informed decisions",
-      "content": "* Buy closer to season\n* Reduce inventory & markdow risk\n* Replenish best-sellers",
+      "content": "You aren't bound by scale or time:\n\n* Buy closer to season\n* Reduce inventory & markdow risk\n* Replenish your best-sellers instantly",
       "image": "/uploads/back4.jpg",
       "linkText": "Register to view collection",
       "url": "https://app.abana.mu/register-buyer"
+    },
+    {
+      "title": "Restore Value",
+      "content": "Every year we lose $120 billion worth of economic and environmental capital in the form of surplus stock going to landfill. \n\nTo reduce their environmental footprint, many of our Drops are made with high-end surplus yarns & fabrics.\n\nWe partner with factories to restore value & reduce waste",
+      "image": "/uploads/value.png"
     }
   ]
 }

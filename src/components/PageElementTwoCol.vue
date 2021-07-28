@@ -12,7 +12,7 @@
               <h3 class="text-3xl lg:text-4xl font-bold text-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
                 {{ row.title }}
               </h3>
-              <p class="italic text-subtitle" v-if="row.subtext" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <p class="italic text-subtitle" v-if="row.subtext" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {{ row.subtext }}
               </p>
             </div>
@@ -21,12 +21,12 @@
               class="mb-8 text-lg text-body"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="200"
+              data-aos-delay="100"
             ></vue-simple-markdown>
-            <div v-if="row.learnmore" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div v-if="row.learnmore" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <LearnMore :source="row.learnmore" />
             </div>
-            <div v-if="row.url" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div v-if="row.url" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
               <g-link class="group inline-flex items-center text-primary hover:underline" v-if="row.url.charAt(0) == '/'" :to="row.url">
                 {{ row.linkText }}
                 <!-- Arrow right-short -->
@@ -50,7 +50,7 @@
                 :href="row.url"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="200"
+                data-aos-delay="100"
               >
                 {{ row.linkText }}
                 <!-- Arrow right-short -->

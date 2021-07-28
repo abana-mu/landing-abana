@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <section class="foOfo text-center">
-      <Oops class="oops-image" />
-      <h2 class="text-primary">Oops!</h2>
-      <p>We couldn't find the page you were looking for</p>
+    <section class="min-h-96 py-24 text-center flex flex-col items-center justify-center">
+      <Oops class="w-full max-w-sm" />
+      <h2 class="text-4xl font-medium text-primary mb-4">Oops!</h2>
+      <p class="mb-8">We couldn't find the page you were looking for</p>
       <a to="/" class="btn btn-primary">Go Back Home</a>
     </section>
   </Layout>
@@ -18,16 +18,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.foOfo {
-  min-height: calc(100vh - 400px);
-  padding-bottom: 60px;
-}
-.oops-image {
-  width: 300px;
-  .oops-2 {
-    fill: $primary;
-  }
-}
-</style>

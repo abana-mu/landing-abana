@@ -2,29 +2,23 @@
   "header": {
     "title": "Fast Custom",
     "subtext": "Order essential knitwear styles directly from factories in low MOQs ready-to-ship",
-    "image": "/uploads/digital.jpg"
+    "image": "/uploads/picture1.jpg"
   },
   "blocks": [
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "Pre-developed yet high-quality choices",
+      "content": "Our partner factories offer pre-developed essentials & a choice of colours in high-quality fabrics across a wide range of products",
+      "image": "/uploads/supply2.png"
     },
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "You're in control",
+      "content": "Build a low-MOQ order on-line using your size-curves and adding labelling and customization",
+      "image": "/uploads/value.png"
     },
     {
-      "title": "Country Reps",
-      "content": "*Country RepsCountry RepsCountry RepsCountry Reps*\n\nCountry RepsCountry Reps\n\n* Country Reps\n* Country Reps\n* Country Reps",
-      "image": "/uploads/back4.jpg",
-      "linkText": "Find a country Rep",
-      "url": "/country-reps"
+      "title": "Direct from factories and quick delivery",
+      "content": "Deal directly with factories off-line and receive your delivery within 4 weeks",
+      "image": "/uploads/labels.png"
     }
   ]
 }

@@ -5,13 +5,13 @@
         <h1 class="font-medium text-title text-5xl mb-4">{{ Data.header.title }}</h1>
         <p class="text-lg text-subtitle max-w-2xl mx-auto">{{ Data.header.subtext }}</p>
       </div>
-      <div class="grid grid-cols-3 gap-10 mb-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
         <div v-for="press in $page.posts.edges" :key="press.id">
           <g-link
             :to="press.node.path"
             class="hover:no-underline relative flex flex-col break-words bg-white border rounded overflow-hidden transition duration-300 hover:shadow-glow"
           >
-            <g-image :src="press.node.image" class="w-full" />
+            <g-image :src="press.node.image" class="w-full object-cover" />
             <div class="flex flex-col flex-1 p-3">
               <div class="mb-4 text-xl font-medium">{{ press.node.title }}</div>
               <div class="text-sm text-subtitle mb-2">{{ press.node.date }}</div>
