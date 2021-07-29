@@ -75,17 +75,25 @@
                             <div class="col-span-2 bg-gray-50 py-8 px-10">
                               <span class="uppercase text-sm tracking-widest text-caption pl-1 mb-6 block">more...</span>
                               <div class="flex flex-col justify-center space-y-4">
-                                <g-link
-                                  :to="drop.link"
-                                  class="drop-item flex items-center cursor-pointer"
-                                  v-for="(drop, index) in link.drop.extra"
-                                  :key="drop + index"
-                                >
-                                  <component :is="drop.icon" class="drop-item-icon h-5 w-5 mr-4" />
-                                  <div class="flex flex-col">
-                                    <span class="drop-item-title font-regular text-subtitle hover:text-body text-base">{{ drop.title }}</span>
-                                  </div>
-                                </g-link>
+                                <div v-for="(drop, index) in link.drop.extra" :key="drop + index">
+                                  <a
+                                    v-if="drop.title == 'Carbon Offset'"
+                                    href="/documents/ABANA_Carbon_Emissions.pdf"
+                                    target="_blank"
+                                    class="drop-item flex items-center cursor-pointer"
+                                  >
+                                    <component :is="drop.icon" class="drop-item-icon h-5 w-5 mr-4" />
+                                    <div class="flex flex-col">
+                                      <span class="drop-item-title font-regular text-subtitle hover:text-body text-base">{{ drop.title }}</span>
+                                    </div>
+                                  </a>
+                                  <g-link :to="drop.link" class="drop-item flex items-center cursor-pointer" v-else>
+                                    <component :is="drop.icon" class="drop-item-icon h-5 w-5 mr-4" />
+                                    <div class="flex flex-col">
+                                      <span class="drop-item-title font-regular text-subtitle hover:text-body text-base">{{ drop.title }}</span>
+                                    </div>
+                                  </g-link>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -215,7 +223,20 @@
                         </div>
                         <div class="uppercase text-sm s tracking-widest text-caption pl-2 mt-5 mb-2 block">more...</div>
                         <div v-for="(link, index) in link.drop.extra" :key="link.title + index">
+                          <a
+                            v-if="link.title == 'Carbon Offset'"
+                            href="/documents/ABANA_Carbon_Emissions.pdf"
+                            target="_blank"
+                            class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
+                          >
+                            <component :is="link.icon" class="drop-item-icon h-5 w-5 mr-4" />
+                            <div class="flex flex-col">
+                              <span class="drop-item-title font-regular text-subtitle hover:text-body text-base">{{ link.title }}</span>
+                            </div>
+                          </a>
+
                           <g-link
+                            v-else
                             :to="link.link"
                             class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
                           >
@@ -229,13 +250,26 @@
                           <div class="uppercase text-sm tracking-widest text-caption pl-2 mb-2 block">{{ col.header }}</div>
 
                           <div v-for="(link, index) in col.links" :key="link.title + index">
-                            <g-link
-                              :to="link.link"
-                              class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
-                            >
-                              <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
-                              <span class="text-base">{{ link.title }}</span>
-                            </g-link>
+                            <template v-if="link.title == 'FAQ'">
+                              <div
+                                @click="launch()"
+                                class="drop-item flex items-center cursor-pointer p-4 rounded-md hover:bg-primary-100 hover:bg-opacity-75 transition duration-200"
+                              >
+                                <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                                <div class="flex flex-col">
+                                  <span class="drop-item-title text-title text-base">{{ link.title }}</span>
+                                </div>
+                              </div>
+                            </template>
+                            <template v-else>
+                              <g-link
+                                :to="link.link"
+                                class="drop-item w-full p-3 inline-flex hover:bg-primary-100 rounded-md items-center text-body hover:text-primary cursor-pointer"
+                              >
+                                <component :is="link.icon" class="drop-item-icon h-6 w-6 mr-4" />
+                                <span class="text-base">{{ link.title }}</span>
+                              </g-link>
+                            </template>
                           </div>
                         </div>
                       </template>
@@ -511,26 +545,7 @@ export default {
           },
         },
       },
-      market: {
-        title: 'Matching Marketplace',
-        subtitle: 'Illuminating sourcing opportunities',
-      },
-      fastc: {
-        title: 'Fast Custom (coming soon)',
-        subtitle: 'Order directly from factories in low MOQs & short lead-times',
-      },
-      supply: {
-        title: 'Supply Chain Solutions',
-        subtitle: 'Tailored services to help you grow in the region',
-      },
-      carbon: {
-        title: 'Carbon Offset Solution (coming soon)',
-        subtitle: 'Offset the carbon emissions of your airfreight with our unique solution. Take a sneak peek here.',
-      },
-      drops: {
-        title: 'Drops',
-        subtitle: 'Sophisticated products in low MOQs for immediate or quick deliveries',
-      },
+
       cta: {
         main: 'Register',
         sub: 'Log In',
