@@ -1,5 +1,9 @@
 {
   "trustedBool": true,
+  "anaHeader": {
+    "title": "Digital is **not enough**",
+    "subtext": "Unlike other platforms, we understand the magic of fashion requires much more than just an online interface. Our on-the-ground supply chain solutions and advice get your orders past the finish line."
+  },
   "digBlock": [
     {
       "title": "Connect & partner from anywhere, seamlessly",
@@ -12,23 +16,12 @@
       "image": "/uploads/matalan.jpg"
     }
   ],
-  "anaBlock": [
-    {
-      "title": "A trusted partner at your side",
-      "subtext": "We know the region better than anyone and have worked with industry-leading brands and manufacturers. Leverage our know-how to confidently and securly grow your regional business.",
-      "image": "/uploads/abana-square.jpg"
-    },
-    {
-      "title": "Best-in-class experience",
-      "subtext": "We cover all your business needs. Our support services have been crafted over the decades to do one thing: fullfill your order with the highest customer satisfaction. ",
-      "image": "/uploads/matalan.jpg"
-    }
-  ],
   "header": {
     "title2": "Africa's Textile & Apparel Industry, at your fingertips",
     "title": "Make Africa's Textile & Apparel world **your own**",
     "subtext": "We help buyers and sellers find and develop business relationships in this fast growing region",
-    "cta": "Book a Demo"
+    "cta": "Book a Demo",
+    "image": "/uploads/Group5.png"
   },
   "flow": {
     "title": "Connecting all modern industry players",
@@ -39,10 +32,6 @@
   "digHeader": {
     "title": "**World-class** Textile & Apparel network",
     "subtext": "Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power users are, and the behaviors tied to long-term retention. "
-  },
-  "anaHeader": {
-    "title": "Digital is **not enough**",
-    "subtext": "Unlike other platforms, we understand the magic of fashion requires much more than just an online interface. Our on-the-ground supply chain solutions and advice get your orders past the finish line."
   },
   "drop": {
     "title": "Low MOQs & speed-to-market",
@@ -146,6 +135,42 @@
       "name": "Texpull",
       "link": "http://www.texpull.com/preview",
       "image": "/uploads/unknown.png"
+    }
+  ],
+  "anaBlock": [
+    {
+      "title": "A trusted partner at your side",
+      "subtext": "We know the region better than anyone and have worked with industry-leading brands and manufacturers. Leverage our know-how to confidently and securly grow your regional business.",
+      "image": "/uploads/abana-square.jpg",
+      "links": [
+        {
+          "linkText": "About us",
+          "url": "/about"
+        }
+      ]
+    },
+    {
+      "title": "Best-in-class experience",
+      "subtext": "We cover all your business needs. Our support services have been crafted over the decades to do one thing: fullfill your order with the highest customer satisfaction. ",
+      "image": "/uploads/matalan.jpg",
+      "links": [
+        {
+          "linkText": "Our Services for Buyers",
+          "url": "/apparel-sourcing-solutions"
+        },
+        {
+          "url": "/apparel-manufacturers#support",
+          "linkText": "Our Services for Garment Makers"
+        },
+        {
+          "linkText": "Our Services for Input Suppliers",
+          "url": "/yarn-fabric-trim-suppliers#support"
+        },
+        {
+          "linkText": "Our Services for Service Providers",
+          "url": "/service-providers#support"
+        }
+      ]
     }
   ],
   "boxes": {
