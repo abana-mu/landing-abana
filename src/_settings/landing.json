@@ -1,40 +1,27 @@
 {
+  "trustedBool": true,
+  "digBlock": [
+    {
+      "title": "Connect & partner from anywhere, seamlessly",
+      "subtext": "Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles. ",
+      "image": "/uploads/abana-square.jpg"
+    }
+  ],
   "header": {
     "title2": "Africa's Textile & Apparel Industry, at your fingertips",
-    "title": "Make Africa's Textile & Apparel world your own",
+    "title": "Make Africa's Textile & Apparel world **your own**",
     "subtext": "We help buyers and sellers find and develop business relationships in this fast growing region",
     "cta": "About Us"
-  },
-  "trustedBool": true,
-  "boxes": {
-    "header": {
-      "title": "Re-Imagining Supply-Chains",
-      "subtext": "Build new partnerships for value, speed and purpose"
-    },
-    "boxes": {
-      "box1": {
-        "title": "The end of China-centricism",
-        "content": "Fashion’s sourcing chains are changing forever. The challenge to find sustainable and long-term alternatives to China is an imperative."
-      },
-      "box2": {
-        "title": "New Sourcing Partners",
-        "content": "The greatest hidden value in sourcing chains is in the ‘first mile’ closest to factories, materials and workers. Developing partnerships with factories can radically improve speed-to-market, significantly reduce risk and improve profitability."
-      },
-      "box3": {
-        "title": "Go Beyond the Environment",
-        "content": "Earning and keeping the trust of customers will require addressing the environmental, social and economic dimensions of sourcing chains. Purpose and profit must be synchronized."
-      },
-      "box4": {
-        "title": "Re-wiring the Fashion Calendar",
-        "content": "The ‘‘worn out ritual of seasonalities’’ needs to be replaced by a new system where value is created by fresh, frequent and fast design in season-less product flows "
-      }
-    }
   },
   "flow": {
     "title": "Connecting all modern industry players",
     "subtext": "This industry is known for its lack of transparency. ABANA makes it possible for modern players to use modern solutions to connect and partner painlessly.  ",
     "link": "See our matching solutions",
     "page": "matching-marketplace"
+  },
+  "digHeader": {
+    "title": "**World-class** Textile & Apparel network",
+    "subtext": "Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power users are, and the behaviors tied to long-term retention. "
   },
   "drop": {
     "title": "Low MOQs & speed-to-market",
@@ -139,5 +126,29 @@
       "link": "http://www.texpull.com/preview",
       "image": "/uploads/unknown.png"
     }
-  ]
+  ],
+  "boxes": {
+    "header": {
+      "title": "Re-Imagining Supply-Chains",
+      "subtext": "Build new partnerships for value, speed and purpose"
+    },
+    "boxes": {
+      "box1": {
+        "title": "The end of China-centricism",
+        "content": "Fashion’s sourcing chains are changing forever. The challenge to find sustainable and long-term alternatives to China is an imperative."
+      },
+      "box2": {
+        "title": "New Sourcing Partners",
+        "content": "The greatest hidden value in sourcing chains is in the ‘first mile’ closest to factories, materials and workers. Developing partnerships with factories can radically improve speed-to-market, significantly reduce risk and improve profitability."
+      },
+      "box3": {
+        "title": "Go Beyond the Environment",
+        "content": "Earning and keeping the trust of customers will require addressing the environmental, social and economic dimensions of sourcing chains. Purpose and profit must be synchronized."
+      },
+      "box4": {
+        "title": "Re-wiring the Fashion Calendar",
+        "content": "The ‘‘worn out ritual of seasonalities’’ needs to be replaced by a new system where value is created by fresh, frequent and fast design in season-less product flows "
+      }
+    }
+  }
 }
