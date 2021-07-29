@@ -20,11 +20,10 @@ collections:
             name: header
             widget: 'object'
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
               - { label: 'SubText', name: 'subtext', widget: 'text' }
               - { label: 'Call to Action', name: 'cta', widget: 'string' }
-
-          - { label: 'Activate Trusted', name: 'trustedBool', widget: 'boolean', default: false }
+              - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
 
           - label: 'Trusted By'
             name: trusted
@@ -34,143 +33,60 @@ collections:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Link', name: 'link', widget: 'string' }
               - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
-          - label: 'Boxes'
-            name: boxes
+
+          - label: 'Digital Descriptor'
+            name: digHeader
             widget: 'object'
             fields:
-              - label: 'Header'
-                name: header
-                widget: 'object'
+              - { label: 'Title', name: 'title', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+
+          - label: 'Digital Descriptor Blocks'
+            name: digBlock
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtext', name: 'subtext', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                label_singular: 'link'
                 fields:
-                  - { label: 'Box Title', name: 'title', widget: 'string' }
-                  - { label: 'Box Sub Text', name: 'subtext', widget: 'string' }
-              - label: 'Boxes'
-                name: boxes
-                widget: 'object'
+                  - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+                  - label: 'URL'
+                    name: 'url'
+                    required: false
+                    widget: 'string'
+                    hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu'
+
+          - label: 'Analog Descriptor'
+            name: anaHeader
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+              - { label: 'SubText', name: 'subtext', widget: 'text' }
+
+          - label: 'Analogue Descriptor Blocks'
+            name: anaBlock
+            label_singular: 'Block'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtext', name: 'subtext', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - label: 'Links'
+                name: 'links'
+                widget: 'list'
+                label_singular: 'link'
                 fields:
-                  - label: 'Box 1'
-                    name: box1
-                    widget: 'object'
-                    fields:
-                      - { label: 'Title', name: 'title', widget: 'string' }
-                      - { label: 'Content', name: 'content', widget: 'text' }
-                  - label: 'Box 2'
-                    name: box2
-                    widget: 'object'
-                    fields:
-                      - { label: 'Title', name: 'title', widget: 'string' }
-                      - { label: 'Content', name: 'content', widget: 'text' }
-                  - label: 'Box 3'
-                    name: box3
-                    widget: 'object'
-                    fields:
-                      - { label: 'Title', name: 'title', widget: 'string' }
-                      - { label: 'Content', name: 'content', widget: 'text' }
-                  - label: 'Box 4'
-                    name: box4
-                    widget: 'object'
-                    fields:
-                      - { label: 'Title', name: 'title', widget: 'string' }
-                      - { label: 'Content', name: 'content', widget: 'text' }
-
-          - label: 'Flow'
-            name: flow
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
-              - { label: 'Link', name: 'link', required: false, widget: 'string' }
-              - label: 'Page link'
-                name: page
-                required: false
-                widget: 'select'
-                options:
-                  [
-                    'about',
-                    'contact',
-                    'ecommerce',
-                    'garment-makers',
-                    'drops',
-                    'index',
-                    'input-suppliers',
-                    'matching-marketplace',
-                    'pricing',
-                    'product-buyers',
-                    'service-providers',
-                    'sourcing-buyers',
-                    'supply-chain',
-                    'sustainability',
-                    'why-africa',
-                    'country-reps',
-                    'freelancers',
-                  ]
-                hint: 'Index is the home page'
-
-          - label: 'Drop'
-            name: drop
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
-              - { label: 'Link', name: 'link', required: false, widget: 'string' }
-              - label: 'Page link'
-                name: page
-                required: false
-                widget: 'select'
-                options:
-                  [
-                    'about',
-                    'contact',
-                    'ecommerce',
-                    'garment-makers',
-                    'drops',
-                    'index',
-                    'input-suppliers',
-                    'matching-marketplace',
-                    'pricing',
-                    'product-buyers',
-                    'service-providers',
-                    'sourcing-buyers',
-                    'supply-chain',
-                    'sustainability',
-                    'why-africa',
-                    'country-reps',
-                    'freelancers',
-                  ]
-                hint: 'Index is the home page'
-
-          - label: 'Reps'
-            name: reps
-            widget: 'object'
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Subtitle', name: 'subtext', widget: 'text' }
-              - { label: 'Link', name: 'link', required: false, widget: 'string' }
-              - label: 'Page link'
-                name: page
-                required: false
-                widget: 'select'
-                options:
-                  [
-                    'about',
-                    'contact',
-                    'ecommerce',
-                    'garment-makers',
-                    'drops',
-                    'index',
-                    'input-suppliers',
-                    'matching-marketplace',
-                    'pricing',
-                    'product-buyers',
-                    'service-providers',
-                    'sourcing-buyers',
-                    'supply-chain',
-                    'sustainability',
-                    'why-africa',
-                    'country-reps',
-                    'freelancers',
-                  ]
-                hint: 'Index is the home page'
+                  - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
+                  - label: 'URL'
+                    name: 'url'
+                    required: false
+                    widget: 'string'
+                    hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu. Do not remove # in links'
 
       - label: 'Announcement'
         name: 'announce'
@@ -207,7 +123,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
-              - { label: 'Learn More', name: 'learnmore', widget: 'markdown', hint: 'Optional' }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -241,6 +157,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -274,6 +191,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -307,6 +225,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -340,6 +259,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -362,6 +282,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -395,6 +316,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -417,6 +339,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -450,6 +373,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {
@@ -472,6 +396,7 @@ collections:
                   widget: 'markdown',
                   hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
                 }
+              - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
               - {

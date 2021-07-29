@@ -105,10 +105,15 @@ body {
   }
 }
 
+.opacity-important {
+  opacity: 1 !important;
+}
+
 //  --- MARKDOWN ---
 
 .markdown-body {
   -moz-osx-font-smoothing: grayscale !important;
+  font-family: inherit !important;
   a {
     color: $primary !important;
   }
@@ -119,6 +124,11 @@ body {
 
 .vue-simple-markdown {
   white-space: pre-line !important;
+}
+
+.colourful strong {
+  font-weight: inherit !important;
+  color: $primary;
 }
 
 // --- LINKING ---

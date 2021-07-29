@@ -5,9 +5,10 @@
         <div class="contain lg:h-full w-full flex flex-col justify-between z-10 mb-20">
           <div class="flex  flex-col md:flex-row">
             <div class="w-full pt-24 pb-20 md:w-1/2 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
-              <span class="text-5xl lg:text-6xl font-medium mb-6 text-title max-w-xl font-graphik"
-                >Make Africa's Textile & Apparel world <span class="text-primary">your own</span></span
-              >
+              <vue-simple-markdown
+                :source="Data.header.title"
+                class="colourful text-5xl lg:text-6xl font-medium mb-6 text-title max-w-xl"
+              ></vue-simple-markdown>
               <span class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg">{{ Data.header.subtext }}</span>
               <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xl btn-primary inline-flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 mr-4" viewBox="0 0 16 16">
@@ -18,12 +19,12 @@
                     d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z"
                   />
                 </svg>
-                Book a Demo
+                {{ Data.header.cta }}
               </a>
             </div>
             <div class="w-full md:w-1/2 h-full relative overflow-hidden md:overflow-visible">
               <div id="banner-image" class="md:absolute top-0 left-0">
-                <g-image src="../assets/images/Group5.png" quality="100" class="w-full" immediate />
+                <g-image :src="Data.header.image" quality="100" class="w-full" immediate />
               </div>
             </div>
           </div>
@@ -32,7 +33,7 @@
 
       <div class="bg-gray-50 border-t border-b">
         <div class="contain my-12">
-          <IndexTrusted :data="Data.trusted" :control="Data.trustedBool" class="w-full max-w-screen-lg mx-auto" />
+          <IndexTrusted :data="Data.trusted" class="w-full max-w-screen-lg mx-auto" />
         </div>
       </div>
 
@@ -68,12 +69,12 @@
           <div class="my-20 md:mt-32 md:mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
-                <div class="text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl">
-                  <span class="text-primary">World-class</span> Textile & Apparel network
-                </div>
-                <div class="text-lg max-w-xl leading-loose">
-                  Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power
-                  users are, and the behaviors tied to long-term retention.
+                <vue-simple-markdown
+                  :source="Data.digHeader.title"
+                  class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"
+                ></vue-simple-markdown>
+                <div class="text-lg lg:text-xl max-w-xl leading-loose">
+                  {{ Data.digHeader.subtext }}
                 </div>
               </div>
               <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
@@ -82,31 +83,29 @@
               </div>
             </div>
           </div>
-          <div class=" flex-row items-start hidden lg:flex">
+
+          <div class="flex-row items-start hidden lg:flex">
             <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
-              <div id="block0" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seamlessly</h2>
+              <div :id="'block' + index" class="block-item pt-44 pb-44 flex flex-col pr-6" v-for="(block, index) in Data.digBlock" :key="index">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">
-                  Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
-                </p>
-              </div>
-              <div id="block1" class="block-item pt-44 pb-44 flex flex-col pr-6">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Business comes to you</h2>
-                <p class="mb-4 text-xl">
-                  Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.
+                  {{ block.subtext }}
                 </p>
               </div>
             </div>
             <div id="image-container" class="sticky block w-3/5">
               <div class="h-full relative overflow-hidden rounded-lg">
-                <div id="block0-image" class="relative h-full w-full flex items-center justify-center bg-primary-100">
-                  <p class="text-4xl font-medium italic">Image 1</p>
-                </div>
                 <div
-                  id="block1-image"
-                  class="opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300"
+                  :id="'block' + index + '-image'"
+                  v-bind:class="[
+                    index == 0
+                      ? 'relative h-full w-full flex items-center justify-center bg-primary-100'
+                      : 'opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300',
+                  ]"
+                  v-for="(block, index) in Data.digBlock"
+                  :key="index + 'image'"
                 >
-                  <p class="text-4xl font-medium italic">Image 2</p>
+                  <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
                 </div>
               </div>
             </div>
@@ -114,23 +113,14 @@
 
           <div class=" flex-row items-start flex lg:hidden">
             <div class="flex justify-between flex-col pl-0 w-full">
-              <div class="pb-20 flex flex-col">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Connect & partner from anywhere, seemlessly</h2>
+              <div class="pb-20 flex flex-col" v-for="(block, index) in Data.digBlock" :key="index + 'mobile'">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">
-                  Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles.
+                  {{ block.subtext }}
                 </p>
 
-                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
-                  <p class="text-4xl font-medium italic">Image 1</p>
-                </div>
-              </div>
-              <div class="pb-20 flex flex-col">
-                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">Business comes to you</h2>
-                <p class="mb-4 text-xl">
-                  Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.
-                </p>
-                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100">
-                  <p class="text-4xl font-medium italic">Image 2</p>
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100 overflow-hidden rounded-lg">
+                  <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
                 </div>
               </div>
             </div>
@@ -138,7 +128,94 @@
         </div>
       </section>
 
-      <section class="z-1 bg-white pb-20 md:pb-40">
+      <section class="z-1 bg-white  pb-20 md:pb-40">
+        <div class="contain">
+          <div class="my-20 md:mt-32 md:mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
+                <vue-simple-markdown
+                  :source="Data.anaHeader.title"
+                  class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"
+                ></vue-simple-markdown>
+                <div class="text-lg lg:text-xl max-w-xl leading-loose">
+                  {{ Data.anaHeader.subtext }}
+                </div>
+              </div>
+              <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
+                <Flow class="hidden" />
+                <Lottie :options="supportAnimationData" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row items-start hidden lg:flex">
+            <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-2/5">
+              <div :id="'block1' + index" class="block-item pt-44 pb-44 flex flex-col pr-6" v-for="(block, index) in Data.anaBlock" :key="index">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
+                <p class="mb-4 text-xl">
+                  {{ block.subtext }}
+                </p>
+                <div class="space-y-2">
+                  <g-link
+                    v-for="link in block.links"
+                    :key="link.linkText"
+                    class="group inline-flex items-center text-primary hover:underline text-lg"
+                    :to="link.url"
+                  >
+                    {{ link.linkText }}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </g-link>
+                </div>
+              </div>
+            </div>
+            <div id="image-container" class="sticky block w-3/5">
+              <div class="h-full relative overflow-hidden rounded-lg">
+                <div
+                  :id="'block1' + index + '-image'"
+                  v-bind:class="[
+                    index == 0
+                      ? 'relative h-full w-full flex items-center justify-center bg-primary-100 opacity-important'
+                      : 'opacity-0 absolute top-0 h-full w-full flex items-center justify-center bg-primary-200 transition duration-300',
+                  ]"
+                  v-for="(block, index) in Data.anaBlock"
+                  :key="index + 'image'"
+                >
+                  <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" flex-row items-start flex lg:hidden">
+            <div class="flex justify-between flex-col pl-0 w-full">
+              <div class="pb-20 flex flex-col" v-for="(block, index) in Data.anaBlock" :key="index + 'mobile'">
+                <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
+                <p class="mb-4 text-xl">
+                  {{ block.subtext }}
+                </p>
+
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-primary-100 overflow-hidden rounded-lg">
+                  <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="z-1 bg-white pb-20 md:pb-40">
         <div class="contain">
           <div class="my-20 md:mt-32 md:mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -384,7 +461,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- FLOW -
       <div class="bg-white">
@@ -549,7 +626,7 @@ export default {
       blocks.forEach((block, index) => {
         let imageBlock = document.getElementById(block.id + '-image');
 
-        if (index > 0) {
+        if (index % 10 != 0) {
           if (this.isBlockScrolled(block)) {
             imageBlock.classList.remove('opacity-0');
           } else {
