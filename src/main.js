@@ -7,7 +7,7 @@ require('~/assets/tailwindcss.scss');
 import DefaultLayout from '~/layouts/Default.vue';
 
 import VueSimpleMarkdown from 'vue-simple-markdown';
-import 'vue-simple-markdown/dist/vue-simple-markdown.css';
+//import 'vue-simple-markdown/dist/vue-simple-markdown.css';
 
 import GraphikRegular from '~/assets/fonts/GraphikRegular.otf';
 import GraphikLight from '~/assets/fonts/GraphikLight.otf';
