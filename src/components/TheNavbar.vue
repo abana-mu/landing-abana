@@ -146,8 +146,12 @@
                 >Get a Demo</a
               >
               <div class="pl-4 space-x-4">
-                <a href="#" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline">Log in</a>
-                <a href="#" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary">Register</a>
+                <a href="https://app.abana.mu/login" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline"
+                  >Log in</a
+                >
+                <a href="https://app.abana.mu/register-buyer" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary"
+                  >Register</a
+                >
               </div>
             </div>
             <!-- Hamburger -->
@@ -284,8 +288,12 @@
                 </div>
               </div>
               <div class="w-full max-w-xs mx-auto flex flex-col text-center space-y-4 mt-10">
-                <a href="#" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline">Log in</a>
-                <a href="#" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary">Register</a>
+                <a href="https://app.abana.mu/login" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline"
+                  >Log in</a
+                >
+                <a href="https://app.abana.mu/register-buyer" class="whitespace-nowrap inline-flex items-center justify-center btn btn-primary"
+                  >Register</a
+                >
               </div>
             </div>
           </div>
