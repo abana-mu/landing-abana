@@ -1,6 +1,6 @@
 <template>
   <Layout class="contain">
-    <div class="height-restriction">
+    <!-- <div class="height-restriction">
       <div class="header pb-5">
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
@@ -37,7 +37,7 @@
           <TwoCol :data="Data.elements" break="lg" />
         </section>
       </section>
-    </div>
+    </div> -->
   </Layout>
 </template>
 
