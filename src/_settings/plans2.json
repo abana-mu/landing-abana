@@ -49,7 +49,7 @@
             "title": "Showroom",
             "tooltip": "Showcase products in your portfolio",
             "plans": {
-              "basic": "8",
+              "basic": "3",
               "pro": "24"
             }
           },
@@ -78,7 +78,7 @@
             "title": "Post RFIs (monthly)",
             "tooltip": "Ask our database network for information on products or services you might need. Invite suppliers to get in touch with you",
             "plans": {
-              "basic": "30",
+              "basic": "15",
               "pro": "Unlimited"
             }
           },
@@ -86,7 +86,15 @@
             "title": "Post RFQs (monthly)",
             "tooltip": "Get quotes directly from suppliers on specific requests",
             "plans": {
-              "basic": "10",
+              "basic": false,
+              "pro": "Unlimited"
+            }
+          },
+          {
+            "title": "Number of Contacts (total)",
+            "tooltip": "Number of contacts you may interact with at any time",
+            "plans": {
+              "basic": "5",
               "pro": "Unlimited"
             }
           },
@@ -102,7 +110,7 @@
             "title": "Be Notified",
             "tooltip": "Be notified whenever a product or service matching your tags becomes available ",
             "plans": {
-              "basic": true,
+              "basic": false,
               "pro": true
             }
           }
@@ -112,7 +120,7 @@
         "title": "Ecommerce",
         "features": [
           {
-            "title": "Access Drops",
+            "title": "Buy Drops",
             "tooltip": "",
             "plans": {
               "basic": true,
@@ -123,7 +131,7 @@
             "title": "Fast Custom (coming soon)",
             "tooltip": "",
             "plans": {
-              "basic": false,
+              "basic": true,
               "pro": true
             }
           }
@@ -133,7 +141,7 @@
         "title": "Support Services",
         "features": [
           {
-            "title": "Support Services (QC, Compliance, Order Follow-up)",
+            "title": "On-the-ground Services (QC, Compliance, Order Follow-up)",
             "tooltip": "Pick & choose from our range of services tailored to your specific business needs.",
             "plans": {
               "basic": true,
@@ -156,17 +164,6 @@
   "seller": {
     "title": "Sellers",
     "subs": [
-      {
-        "name": "freelancer",
-        "desc": "Single User companies",
-        "price": {
-          "61": 10,
-          "66": 10,
-          "121": 9,
-          "1212": 9
-        },
-        "features": ["Profile & e-Showroom", "Post Listings", "View Buyer RFQs", "Search Buyers & Sellers Database"]
-      },
       {
         "name": "basic",
         "desc": "Multiple User companies with more marketplace activities",
@@ -200,8 +197,7 @@
             "title": "Users",
             "tooltip": "Number of accounts your plan comes with",
             "plans": {
-              "freelancer": "1",
-              "basic": "3",
+              "basic": "1",
               "pro": "5"
             }
           }
@@ -214,7 +210,6 @@
             "title": "Basic Profile",
             "tooltip": "Build a profile page with information on your company",
             "plans": {
-              "freelancer": true,
               "basic": true,
               "pro": true
             }
@@ -223,8 +218,7 @@
             "title": "Showroom",
             "tooltip": "Showcase products in your portfolio",
             "plans": {
-              "freelancer": "8",
-              "basic": "16",
+              "basic": "8",
               "pro": "24"
             }
           },
@@ -232,7 +226,6 @@
             "title": "Search Buyers & Suppliers",
             "tooltip": "Use our search functionalities to filter through our database",
             "plans": {
-              "freelancer": true,
               "basic": true,
               "pro": true
             }
@@ -246,8 +239,7 @@
             "title": "Post Listings (monthly)",
             "tooltip": "Notify our network with new capabilities, extra capacity or special offers",
             "plans": {
-              "freelancer": "15",
-              "basic": "30",
+              "basic": "5",
               "pro": "Unlimited"
             }
           },
@@ -255,8 +247,7 @@
             "title": "Number of Contacts (Total)",
             "tooltip": "The number of buyers and suppliers you can concurrently be in touch with",
             "plans": {
-              "freelancer": "15",
-              "basic": "30",
+              "basic": "5",
               "pro": "Unlimited"
             }
           },
@@ -264,7 +255,6 @@
             "title": "See RFIs",
             "tooltip": "See what our networks buyers are looking for and get in touch with them",
             "plans": {
-              "freelancer": true,
               "basic": true,
               "pro": true
             }
@@ -273,8 +263,7 @@
             "title": "View and reply to RFQs",
             "tooltip": "Reply to specific requests by our buyers and provide them with quotes",
             "plans": {
-              "freelancer": true,
-              "basic": true,
+              "basic": false,
               "pro": true
             }
           }
@@ -284,19 +273,17 @@
         "title": "Ecommerce",
         "features": [
           {
-            "title": "Access Drops",
+            "title": "Access Drops (view only)",
             "tooltip": "",
             "plans": {
-              "freelancer": true,
               "basic": true,
               "pro": true
             }
           },
           {
-            "title": "Fast Custom (coming soon)",
+            "title": "Fast Custom - Coming soon (view only)",
             "tooltip": "",
             "plans": {
-              "freelancer": false,
               "basic": false,
               "pro": true
             }
@@ -307,29 +294,10 @@
         "title": "Support Services",
         "features": [
           {
-            "title": "Marketing Services",
-            "tooltip": "Join our network of preferred sellers whom we match with buyers based on your specific requirements",
-            "plans": {
-              "freelancer": true,
-              "basic": true,
-              "pro": true
-            }
-          },
-          {
-            "title": "Online Order Follow-Up - Critical path (coming soon)",
-            "tooltip": "",
-            "plans": {
-              "freelancer": false,
-              "basic": false,
-              "pro": true
-            }
-          },
-          {
             "title": "Manual Matching",
             "tooltip": "Tell us what you are looking for and we link you with vetted suppliers based on your business requirements",
             "plans": {
-              "freelancer": false,
-              "basic": true,
+              "basic": false,
               "pro": true
             }
           }
