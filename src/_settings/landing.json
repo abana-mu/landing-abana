@@ -2,18 +2,18 @@
   "trustedBool": true,
   "anaHeader": {
     "title": "Digital is **not enough**",
-    "subtext": "Unlike other platforms, we understand the magic of fashion requires much more than just an online interface. Our on-the-ground supply chain solutions and advice get your orders past the finish line."
+    "subtext": "Unlike other platforms, we understand the magic of fashion requires much more than just an online interface. Our on-the-ground supply chain solutions and advice will get your orders past the finish line."
   },
   "digBlock": [
     {
       "title": "Connect & partner from anywhere, seamlessly",
-      "subtext": "Find business from anywhere on the globe. Search detailed & relevant buyer and supplier profiles. ",
+      "subtext": "Search our database using multiple filters and find detailed & relevant buyer and seller profiles. ",
       "image": "/uploads/abana-square.jpg"
     },
     {
-      "title": "Business comes to you",
-      "subtext": "Scroll through our feed to discover new ideas & opportunities or request our wide network for to fullfil your business needs.",
-      "image": "/uploads/matalan.jpg"
+      "title": "Business opportunities come to you",
+      "subtext": "Scroll through our marketplace to discover new ideas & opportunities or post your requests to sollicit feedback and prices",
+      "image": "/uploads/homefeed-landing-page.jpg"
     }
   ],
   "header": {
@@ -30,8 +30,8 @@
     "page": "matching-marketplace"
   },
   "digHeader": {
-    "title": "**World-class** Textile & Apparel network",
-    "subtext": "Great products are built by teams who know their users. Go beneath the surface to learn which features are popular, who your power users are, and the behaviors tied to long-term retention. "
+    "title": "**Illuminating** the complete ecosystem",
+    "subtext": "Find all the supply-chain resources you may need on a single digital platform"
   },
   "drop": {
     "title": "Low MOQs & speed-to-market",
@@ -140,8 +140,8 @@
   "anaBlock": [
     {
       "title": "A trusted partner at your side",
-      "subtext": "We know the region better than anyone and have worked with industry-leading brands and manufacturers. Leverage our know-how to confidently and securly grow your regional business.",
-      "image": "/uploads/abana-square.jpg",
+      "subtext": "We know the region and have worked with industry-leading brands and manufacturers. Leverage our know-how to confidently and securely establish and grow your regional business.",
+      "image": "/uploads/trusted-partner.jpg",
       "links": [
         {
           "linkText": "About us",
@@ -151,7 +151,7 @@
     },
     {
       "title": "Best-in-class experience",
-      "subtext": "We cover all your business needs. Our support services have been crafted over the decades to do one thing: fullfill your order with the highest customer satisfaction. ",
+      "subtext": "Choose from our menu of support services according to your needs. These have been crafted over decades with one goal: fulfilling your orders with the highest customer satisfaction. ",
       "image": "/uploads/matalan.jpg",
       "links": [
         {

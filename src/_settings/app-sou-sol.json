@@ -1,32 +1,32 @@
 {
   "header": {
     "title": "Apparel Sourcing Solutions",
-    "subtext": "On-the-ground services to help you grow in the region",
-    "image": "/uploads/sourcing.jpeg"
+    "subtext": "Use our experience, network and on-the-ground offline support to grow in the region",
+    "image": "/uploads/buyers-2.jpg"
   },
   "blocks": [
     {
       "title": "Manual Matching",
       "content": "We offer advice on woven, knit, denim and jersey apparel production of basic to high-end products. \n\nTell us what you are looking for and we link you with vetted suppliers based on your business requrements (product, price, MOQ, lead times).",
-      "image": "/uploads/back4.jpg"
+      "image": "/uploads/jeans-2.jpg"
     },
     {
       "title": "Support services",
-      "content": "Save time and develop your supply chain in Africa with our on-the-ground support. Pick and choose from our range of services tailored to your business needs.",
+      "content": "Save time and build your supply chain in Africa with our on-the-ground support. Pick and choose from our range of services tailored to your business needs.",
       "learnmore": "* Factory compliance\n* Raw material monitoring\n* Product development & sampling\n* Order follow-up\n* Quality control\n* Logistics & distribution",
-      "image": "/uploads/back4.jpg"
+      "image": "/uploads/support.jpeg"
     },
     {
       "title": "Virtual Factory",
-      "content": "Shorten your feedback loop with ABANA acting as your supplier on-the-ground, providing an end-to-end sourcing solution accessing our trusted specialised factories producing woven, denim, jersey and knitwear.",
+      "content": "Use us as your one-stop shop supplier solution to access our trusted specialised factories producing woven, denim, jersey and knitwear.",
       "learnmore": "* Financing of raw materials\n* Access our network of vetted factories\n* Complete service: sample development, merchandising, quality control & logistics",
-      "image": "/uploads/back4.jpg"
+      "image": "/uploads/knit2.jpg"
     },
     {
       "title": "Country representatives",
       "content": "Our network of Country Representatives offer production support services in the main Producing countries, and customer-facing support in the principal Buying countries.",
       "learnmore": "* Producing countries: Mauritius, Madagascar, South Africa, Swaziland, Lesotho, Botswana, Tanzania, Ethiopia, Morocco, Tunisia, Kenya, Uganda\n* Buying markets: USA, Italy, Germany, Austria, Switzerland, Belgium, Netherlands, Luxembourg, Denmark, Sweden, Norway, Finland, Baltic Countries, Poland, Ukraine, Russia, South Africa, Reunion",
-      "image": "/uploads/reps.jpg",
+      "image": "/uploads/country-rep2.jpg",
       "linkText": "Find a country Rep",
       "url": "/country-reps"
     }

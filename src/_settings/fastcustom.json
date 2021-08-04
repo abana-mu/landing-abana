@@ -6,21 +6,15 @@
   "elements": [
     {
       "id": "block1",
-      "title": "Pre-developed yet high-quality choices",
-      "content": "Our partner factories offer pre-developed essentials & a choice of colours in high-quality fabrics across a wide range of products",
+      "title": "Pre-developed, high-quality choices",
+      "content": "Our partner factories offer pre-developed essentials & a choice of colours in high-quality materials.",
       "image": "/uploads/supply2.png"
     },
     {
       "id": "block2",
       "title": "You're in control",
-      "content": "Build a low-MOQ order on-line using your size-curves and adding labelling and customization",
+      "content": "Build a low-MOQ order on-line using your size-curves and add your private label.",
       "image": "/uploads/value.png"
-    },
-    {
-      "id": "block3",
-      "title": "Direct from factories and quick delivery",
-      "content": "Deal directly with factories off-line and receive your delivery within 4 weeks",
-      "image": "/uploads/labels.png"
     }
   ]
 }
