@@ -67,8 +67,7 @@
                 leave-to-class="opacity-0"
               >
                 <div v-if="activetab === index" class="tabcontent">
-                  <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-2' : 'md:grid-cols-2'">
-                    <!-- <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'"> -->
+                  <div class="grid grid-cols-1 gap-4" :class="index === 'seller' ? 'md:grid-cols-3' : 'md:grid-cols-2'">
                     <!-- Cards -->
                     <div
                       class="relative flex flex-col items-start card-top grid-span-1 bg-white xs:rounded-md border-t border-b xs:border p-4 xs:p-5"

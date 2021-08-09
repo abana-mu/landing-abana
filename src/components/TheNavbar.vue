@@ -143,7 +143,7 @@
                 href="https://meetings.hubspot.com/abana"
                 target="_blank"
                 class="whitespace-nowrap text-base text-primary hover:text-primary-400 hover:underline mr-4"
-                >Get a Demo</a
+                >Book a Demo</a
               >
               <div class="pl-4 space-x-4">
                 <a href="https://app.abana.mu/login" class="whitespace-nowrap text-base font-regular text-body hover:text-title hover:underline"
@@ -156,7 +156,7 @@
             </div>
             <!-- Hamburger -->
             <div class="z-50 flex lg:hidden items-center space-x-4" @click="sideBar = !sideBar">
-              <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xs btn-ghost">Get a Demo</a>
+              <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xs btn-ghost">Book a Demo</a>
               <NavbarHamburger :isActive="sideBar" />
             </div>
           </div>
