@@ -2,7 +2,7 @@
   "header": {
     "title": "Fast Custom",
     "subtext": "Order essential knitwear styles directly from factories in low MOQs ready-to-ship",
-    "image": "/uploads/fast-custom-banner.jpg"
+    "image": "/uploads/img_9366.jpg"
   },
   "blocks": [
     {
@@ -13,12 +13,12 @@
     {
       "title": "You're in control",
       "content": "Build a low-MOQ order on-line using your size-curves and adding labelling and customization",
-      "image": "/uploads/value.png"
+      "image": "/uploads/fast-custom-1.jpg"
     },
     {
       "title": "Direct from factories and quick delivery",
       "content": "Deal directly with factories off-line and receive your delivery within 4 weeks",
-      "image": "/uploads/labels.png"
+      "image": "/uploads/delivery.jpg"
     }
   ]
 }
