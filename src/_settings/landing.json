@@ -115,6 +115,16 @@
       "name": "Celero Group",
       "link": "https://www.celerogroup.com/",
       "image": "/uploads/celero.png"
+    },
+    {
+      "name": "Kick Advisory",
+      "link": "https://www.kickadvisory.com/about-us/",
+      "image": "/uploads/kick-logo-high-resolution-.png"
+    },
+    {
+      "name": "Ariva",
+      "image": "/uploads/ariva-logo.png",
+      "link": "https://ariva-logistics.com"
     }
   ],
   "anaBlock": [
