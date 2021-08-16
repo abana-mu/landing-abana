@@ -62,6 +62,11 @@
       "image": "/uploads/dhl.png"
     },
     {
+      "name": "WRAP",
+      "link": "https://wrapcompliance.org",
+      "image": "/uploads/wrap-logo.png"
+    },
+    {
       "name": "QIMA",
       "link": "https://www.qima.com",
       "image": "/uploads/qima-2x.png"
@@ -102,16 +107,6 @@
       "image": "/uploads/horizontal-logos-cfl-charcoal-.png"
     },
     {
-      "name": "LOI Madagascar",
-      "image": "/uploads/loi-vf-newslogan-copy.png",
-      "link": " "
-    },
-    {
-      "name": "Ariva Logistics",
-      "link": "https://ariva-logistics.com/",
-      "image": "/uploads/ariva-logo.png"
-    },
-    {
       "name": "Somatrans Logistics",
       "link": "http://www.somatrans.mu/",
       "image": "/uploads/somatrans-logo-cmyk.png"
@@ -120,21 +115,6 @@
       "name": "Celero Group",
       "link": "https://www.celerogroup.com/",
       "image": "/uploads/celero.png"
-    },
-    {
-      "name": "Trans Universal Consolidators",
-      "image": "/uploads/tuc.png",
-      "link": " "
-    },
-    {
-      "name": "Kick Advisory",
-      "link": "https://www.kickadvisory.com/",
-      "image": "/uploads/kick-logo-high-resolution-.png"
-    },
-    {
-      "name": "Texpull",
-      "link": "http://www.texpull.com/preview",
-      "image": "/uploads/unknown.png"
     }
   ],
   "anaBlock": [
