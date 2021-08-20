@@ -1,6 +1,6 @@
 ---
 layout: blog
-filled: open
+filled: filled
 title: Business Development & Customer Success Executive
 department: Growth & Sales
 location: Goodlands, Mauritius
