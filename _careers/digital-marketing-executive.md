@@ -1,6 +1,6 @@
 ---
 layout: blog
-filled: open
+filled: filled
 title: Digital Marketing Executive
 department: Marketing & Visuals
 location: Goodlands
