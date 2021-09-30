@@ -20,5 +20,6 @@ name: Donovan Baney
 position: Managing Director
 color: '#fdf9e4'
 image: /uploads/donovan-baney-copy.jpg
+logo: /uploads/mr-price.png
 caseStudy: false
 ---

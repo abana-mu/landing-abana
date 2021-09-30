@@ -18,5 +18,6 @@ name: Geerish Bucktowonsing
 position: Director – Industry
 color: '#f6f9fc'
 image: /uploads/gb-pic.jpg
+logo: /uploads/logo-EDB.svg
 caseStudy: false
 ---

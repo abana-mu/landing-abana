@@ -63,6 +63,7 @@ module.exports = {
       translate: ['group-hover'],
       rotate: ['group-hover'],
       display: ['group-hover'],
+      ringWidth: ['hover']
     },
   },
   plugins: [require('@tailwindcss/forms')],

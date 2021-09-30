@@ -38,6 +38,24 @@
           <div v-show="activetab == 'b2b'">
             <TwoCol isGrey :data="Data.b2bblocks" />
             <div class="my-10 w-100 text-center flex flex-col space-y-10 justify-center items-center">
+              <a
+                href="https://meetings.hubspot.com/abana"
+                target="_blank"
+                class="px-16 py-6 text-3xl btn-primary"
+              >
+                <svg
+                  class="h-8 w-8 mr-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                  />
+                </svg>
+                Book a Demo
+              </a>
+              
               <button
                 class="btn btn-ghost"
                 @click="
@@ -47,7 +65,6 @@
               >
                 See our On-the-Ground Support
               </button>
-              <button class="btn-xl btn-primary">Book a demo</button>
             </div>
           </div>
         </transition>
@@ -60,6 +77,24 @@
           <div v-show="activetab == 'support'">
             <TwoCol isGrey :data="Data.supportblocks" />
             <div class="my-10 w-100 text-center flex flex-col space-y-10 justify-center items-center">
+              <a
+                href="https://meetings.hubspot.com/abana"
+                target="_blank"
+                class="px-16 py-6 text-3xl btn-primary"
+              >
+                <svg
+                  class="h-8 w-8 mr-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                  />
+                </svg>
+                Book a Demo
+              </a>
+              
               <button
                 class="btn btn-ghost"
                 @click="
@@ -69,7 +104,7 @@
               >
                 Get to know our B2B Platform
               </button>
-              <button class="btn-xl btn-primary">Book a free Assessment</button>
+              
             </div>
           </div>
         </transition>
