@@ -3,32 +3,14 @@
     <div class="contain mt-8 mb-10 md:mb-20">
       <div class="banner-container">
         <div class="product-banner overlay">
-          <h1
-            class="font-medium text-titleOnDark text-4xl md:text-5xl mb-4"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >{{ Data.header.title }}</h1>
-          <p
-            class="banner-subtitle"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >{{ Data.header.subtext }}</p>
+          <h1 class="font-medium text-titleOnDark text-4xl md:text-5xl mb-4" data-aos="fade-up" data-aos-duration="1000">{{ Data.header.title }}</h1>
+          <p class="banner-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">{{ Data.header.subtext }}</p>
         </div>
-        <g-image
-          :src="Data.header.image"
-          quality="100"
-          blur="40"
-          width="750"
-          class="object-cover w-full h-full"
-        />
+        <g-image :src="Data.header.image" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
       </div>
     </div>
     <div class="contain text-center">
-      <a
-        href="https://app.abana.mu/register-buyer"
-        class="btn-xl btn-primary"
-      >Register as a Free Buyer</a>
+      <g-link to="/registration/" class="btn-2xl btn-primary">Register as a free buyer</g-link>
     </div>
 
     <div class="mt-5 lg:mt-10">
@@ -36,37 +18,34 @@
     </div>
 
     <div class="contain text-center my-10">
-      <a
-        href="https://app.abana.mu/register-buyer"
-        class="btn-2xl btn-primary"
-      >Register as a Free Buyer</a>
+      <g-link to="/registration/" class="btn-2xl btn-primary my-10">Register as a free buyer</g-link>
     </div>
   </Layout>
 </template>
 
 <script>
-import Data from "~/_settings/app-sou-sol.json";
-import OneCol from "~/components/PageElementOneCol";
-import TwoCol from "~/components/PageElementTwoCol";
-import String1 from "~/components/icons/String1";
-import String2 from "~/components/icons/String2";
-import ICheck from "@/components/icons/ICheck";
+import Data from '~/_settings/app-sou-sol.json';
+import OneCol from '~/components/PageElementOneCol';
+import TwoCol from '~/components/PageElementTwoCol';
+import String1 from '~/components/icons/String1';
+import String2 from '~/components/icons/String2';
+import ICheck from '@/components/icons/ICheck';
 
 export default {
   components: {
     OneCol,
     TwoCol,
     String1,
-    String2
+    String2,
   },
   metaInfo: {
     title: Data.header.title,
     meta: [
       {
-        name: "description",
-        title: Data.header.subtext
-      }
-    ]
+        name: 'description',
+        title: Data.header.subtext,
+      },
+    ],
   },
   created() {
     //window.scrollTo(0, 0);
@@ -76,9 +55,9 @@ export default {
   },
   data() {
     return {
-      Data
+      Data,
     };
-  }
+  },
 };
 </script>
 <style scoped>
