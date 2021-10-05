@@ -744,6 +744,10 @@ export default {
   }
 }
 
+.drop-item-icon {
+  flex-shrink: 0;
+}
+
 .drop-item:hover,
 .drop-item.active {
   .drop-item-title {
