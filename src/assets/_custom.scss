@@ -129,6 +129,11 @@ body {
 //   white-space: pre-line !important;
 // }
 
+.markdown-body::after,
+.markdown-body::before {
+  display: none !important;
+}
+
 .colourful strong {
   font-weight: inherit !important;
   color: $primary;

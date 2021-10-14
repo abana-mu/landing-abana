@@ -88,6 +88,91 @@ collections:
                     widget: 'string'
                     hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu. Do not remove # in links'
 
+      - label: 'Landing Buyers'
+        name: 'promo-buyer'
+        file: 'src/_settings/promo-buyer.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+
+          - label: 'Who we are'
+            name: who
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'text' }
+              - { label: 'Box 1 text', name: 'box1', widget: 'text' }
+              - { label: 'Box 2 text', name: 'box2', widget: 'text' }
+              - { label: 'Box 3 text', name: 'box3', widget: 'text' }
+              - { label: 'Box 4 text', name: 'box4', widget: 'text' }
+
+          - label: 'Value-Added Services'
+            name: vad
+            widget: 'object'
+            fields:
+              - { label: 'Title text', name: 'title', widget: 'string' }
+              - { label: 'Item 1 title', name: 'title1', widget: 'string' }
+              - { label: 'Item 1 text', name: 'text1', widget: 'text' }
+              - { label: 'Item 1 Image', name: 'image1', widget: 'image' }
+              - { label: 'Item 2 title', name: 'title2', widget: 'string' }
+              - { label: 'Item 2 text', name: 'text2', widget: 'text' }
+              - { label: 'Item 2 Image', name: 'image2', widget: 'image' }
+              - { label: 'Item 3 title', name: 'title3', widget: 'string' }
+              - { label: 'Item 3 text', name: 'text3', widget: 'text' }
+              - { label: 'Item 3 Image', name: 'image3', widget: 'image' }
+
+          - label: 'Trusted Partner'
+            name: tp
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Text', name: 'text', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+
+      - label: 'Landing Sellers'
+        name: 'promo-seller'
+        file: 'src/_settings/promo-seller.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+              - { label: 'Subtext', name: 'subtext', widget: 'text' }
+
+          - label: 'Steps'
+            name: steps
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Step 1 text', name: 'box1', widget: 'string' }
+              - { label: 'Step 2 text', name: 'box2', widget: 'string' }
+              - { label: 'Step 3 text', name: 'box3', widget: 'string' }
+              - { label: 'Step 4 text', name: 'box4', widget: 'string' }
+
+          - label: 'Value-Added Services'
+            name: vad
+            widget: 'object'
+            fields:
+              - { label: 'Title text', name: 'title', widget: 'string' }
+              - { label: 'Item 1 title', name: 'title1', widget: 'string' }
+              - { label: 'Item 1 text', name: 'text1', widget: 'text' }
+              - { label: 'Item 1 Image', name: 'image1', widget: 'image' }
+              - { label: 'Item 2 title', name: 'title2', widget: 'string' }
+              - { label: 'Item 2 text', name: 'text2', widget: 'text' }
+              - { label: 'Item 2 Image', name: 'image2', widget: 'image' }
+              - { label: 'Item 3 title', name: 'title3', widget: 'string' }
+              - { label: 'Item 3 text', name: 'text3', widget: 'text' }
+              - { label: 'Item 3 Image', name: 'image3', widget: 'image' }
+
+          - label: 'Trusted Partner'
+            name: tp
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Text', name: 'text', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+
       - label: 'Announcement'
         name: 'announce'
         file: 'src/_settings/announce.json'
@@ -126,13 +211,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Digital Platform'
         name: 'digPla'
@@ -160,13 +239,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Drops'
         name: 'dro'
@@ -194,13 +267,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Fast Custom'
         name: 'fasCus'
@@ -228,13 +295,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Apparel Manufacturers'
         name: 'appMan'
@@ -262,13 +323,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -285,13 +340,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Yarn, Fabric, Trim Suppliers'
         name: 'yarSupp'
@@ -319,13 +368,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -342,13 +385,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Service Providers'
         name: 'serPro'
@@ -376,13 +413,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
           - label: 'One the Ground Support Elements'
             name: supportblocks
@@ -399,13 +430,7 @@ collections:
               - { label: 'Learn More', name: 'learnmore', required: false, widget: 'markdown', hint: 'Optional' }
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Link Text', name: 'linkText', required: false, widget: 'string', hint: 'What the link text should be' }
-              - {
-                  label: 'URL',
-                  name: 'url',
-                  required: false,
-                  widget: 'string',
-                  hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu',
-                }
+              - { label: 'URL', name: 'url', required: false, widget: 'string', hint: 'Format: /apparel-sourcing-solutions - ommit anything before it such as the https://www.abana.mu' }
 
       - label: 'Matching Marketplace'
         name: 'matching'
@@ -1575,12 +1600,7 @@ collections:
         options: ['filled', 'open']
         hint: 'filled = display that position has been filled'
       - { label: 'Title', name: 'title', widget: 'string' }
-      - {
-          label: 'Department',
-          name: 'department',
-          widget: 'select',
-          options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'],
-        }
+      - { label: 'Department', name: 'department', widget: 'select', options: ['Product', 'Growth & Sales', 'Textile & Apparel Design', 'Marketing & Visuals', 'Operations', 'Engineering'] }
       - { label: 'Location', name: 'location', widget: 'string' }
       - {
           label: 'Role',
