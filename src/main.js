@@ -54,6 +54,10 @@ export default function(Vue, { router, head, isClient }) {
     {
       name: 'keywords',
       content: 'textile, apparel, africa, ecommerce, b2b',
+    },
+    {
+      name: 'google-site-verification',
+      content: '4q1hsMo4vL51uybJMFbN29WcJSoj9un8kdo5LDDpGrg',
     }
   );
 }

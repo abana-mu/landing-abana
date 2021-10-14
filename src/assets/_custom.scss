@@ -134,6 +134,12 @@ body {
   color: $primary;
 }
 
+.marketing strong,
+.marketing b {
+  font-weight: 600 !important;
+  color: $primary;
+}
+
 // --- LINKING ---
 
 .a-keyline {

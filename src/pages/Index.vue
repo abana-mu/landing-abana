@@ -4,29 +4,11 @@
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain lg:h-full w-full flex flex-col justify-between z-10 mb-20">
           <div class="flex flex-col md:flex-row">
-            <div
-              class="w-full pt-24 pb-20 md:w-1/2 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start"
-            >
-              <vue-simple-markdown
-                :source="Data.header.title"
-                class="colourful text-5xl lg:text-6xl font-medium mb-6 text-title max-w-xl"
-              ></vue-simple-markdown>
-              <span
-                class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg"
-              >{{ Data.header.subtext }}</span>
-              <a
-                href="https://meetings.hubspot.com/abana"
-                target="_blank"
-                class="btn-xl btn-primary inline-flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="h-5 w-5 mr-4"
-                  viewBox="0 0 16 16"
-                >
+            <div class="w-full pt-24 pb-20 md:w-1/2 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
+              <vue-simple-markdown :source="Data.header.title" class="colourful text-5xl lg:text-6xl font-medium mb-6 text-title max-w-xl"></vue-simple-markdown>
+              <span class="text-lg sm:text-xl lg:text-2xl font-regular mb-12 text-subtitle max-w-lg">{{ Data.header.subtext }}</span>
+              <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-xl btn-primary inline-flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 mr-4" viewBox="0 0 16 16">
                   <path
                     d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
                   />
@@ -83,15 +65,8 @@
         <div class="contain">
           <div class="my-20 md:mt-32 md:mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div
-                class="col-span-1 flex flex-col justify-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <vue-simple-markdown
-                  :source="Data.digHeader.title"
-                  class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"
-                ></vue-simple-markdown>
+              <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
+                <vue-simple-markdown :source="Data.digHeader.title" class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"></vue-simple-markdown>
                 <div class="text-lg lg:text-xl max-w-xl leading-loose">{{ Data.digHeader.subtext }}</div>
               </div>
               <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
@@ -103,12 +78,7 @@
 
           <div class="flex-row items-start hidden lg:flex">
             <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3 w-2/5">
-              <div
-                :id="'block' + index"
-                class="block-item pt-44 pb-44 flex flex-col pr-6"
-                v-for="(block, index) in Data.digBlock"
-                :key="index"
-              >
+              <div :id="'block' + index" class="block-item pt-44 pb-44 flex flex-col pr-6" v-for="(block, index) in Data.digBlock" :key="index">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">{{ block.subtext }}</p>
               </div>
@@ -133,17 +103,11 @@
 
           <div class="flex-row items-start flex lg:hidden">
             <div class="flex justify-between flex-col pl-0 w-full">
-              <div
-                class="pb-20 flex flex-col"
-                v-for="(block, index) in Data.digBlock"
-                :key="index + 'mobile'"
-              >
+              <div class="pb-20 flex flex-col" v-for="(block, index) in Data.digBlock" :key="index + 'mobile'">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">{{ block.subtext }}</p>
 
-                <div
-                  class="mt-10 h-96 relative w-full flex items-center justify-center bg-white overflow-hidden rounded-lg"
-                >
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-white overflow-hidden rounded-lg">
                   <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
                 </div>
               </div>
@@ -156,15 +120,8 @@
         <div class="contain">
           <div class="my-20 md:mt-32 md:mb-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div
-                class="col-span-1 flex flex-col justify-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <vue-simple-markdown
-                  :source="Data.anaHeader.title"
-                  class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"
-                ></vue-simple-markdown>
+              <div class="col-span-1 flex flex-col justify-center" data-aos="fade-up" data-aos-duration="1200">
+                <vue-simple-markdown :source="Data.anaHeader.title" class="colourful text-5xl lg:text-6xl mb-4 font-bold text-title max-w-2xl"></vue-simple-markdown>
                 <div class="text-lg lg:text-xl max-w-xl leading-loose">{{ Data.anaHeader.subtext }}</div>
               </div>
               <div class="col-span-1 md:pl-6" data-aos="fade-up" data-aos-duration="1200">
@@ -176,34 +133,14 @@
 
           <div class="flex-row items-start hidden lg:flex">
             <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3 w-2/5">
-              <div
-                :id="'block1' + index"
-                class="block-item pt-44 pb-44 flex flex-col pr-6"
-                v-for="(block, index) in Data.anaBlock"
-                :key="index"
-              >
+              <div :id="'block1' + index" class="block-item pt-44 pb-44 flex flex-col pr-6" v-for="(block, index) in Data.anaBlock" :key="index">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">{{ block.subtext }}</p>
                 <div class="space-y-2">
-                  <g-link
-                    v-for="link in block.links"
-                    :key="link.linkText"
-                    class="group inline-flex items-center text-primary hover:underline text-lg"
-                    :to="link.url"
-                  >
+                  <g-link v-for="link in block.links" :key="link.linkText" class="group inline-flex items-center text-primary hover:underline text-lg" :to="link.url">
                     {{ link.linkText }}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-5 w-5 ml-2 transform transition group-hover:translate-x-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
                     </svg>
                   </g-link>
                 </div>
@@ -229,17 +166,11 @@
 
           <div class="flex-row items-start flex lg:hidden">
             <div class="flex justify-between flex-col pl-0 w-full">
-              <div
-                class="pb-20 flex flex-col"
-                v-for="(block, index) in Data.anaBlock"
-                :key="index + 'mobile'"
-              >
+              <div class="pb-20 flex flex-col" v-for="(block, index) in Data.anaBlock" :key="index + 'mobile'">
                 <h2 class="mb-4 text-4xl lg:text-5xl font-medium text-title">{{ block.title }}</h2>
                 <p class="mb-4 text-xl">{{ block.subtext }}</p>
 
-                <div
-                  class="mt-10 h-96 relative w-full flex items-center justify-center bg-white overflow-hidden rounded-lg"
-                >
+                <div class="mt-10 h-96 relative w-full flex items-center justify-center bg-white overflow-hidden rounded-lg">
                   <g-image :src="block.image" quality="100" class="object-cover w-full" immediate />
                 </div>
               </div>
@@ -251,18 +182,12 @@
     <div id="spacer" class="hidden md:flex"></div>
     <div id="parallax-under" class="overflow-hidden bg-primary md:h-full top-0 z-0 w-full">
       <div class="contain pt-28">
-        <h2
-          class="text-2xl lg:text-5xl font-medium mb-16 text-center text-primary-100"
-        >What industry leading voices are saying:</h2>
+        <h2 class="text-2xl lg:text-5xl font-medium mb-16 text-center text-primary-100">What industry leading voices are saying:</h2>
 
         <div class="py-4 mb-12">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-            <div
-              class="flex flex-col justify-around bg-white rounded-lg shadow-xl border px-8 py-16"
-              v-for="testi in $page.posts.edges"
-              :key="testi.id"
-            >
-              <div class="w-full px-16 mb-8">
+            <div class="flex flex-col justify-around bg-white rounded-lg shadow-xl border px-8 py-16" v-for="testi in $page.posts.edges" :key="testi.id">
+              <div class="w-full max-w-xs px-16 mb-8">
                 <g-image :src="testi.node.logo" class="w-full" />
               </div>
               <p class="text-body text-xl pb-16">"{{ testi.node.blurb }}"</p>
@@ -311,38 +236,37 @@ query{
 </page-query>
 
 <script>
-import IndexBanner from "~/components/IndexBanner";
-import Data from "~/_settings/landing.json";
-import Flow from "~/components/icons/Flow";
-import ITransf from "@/components/icons/ITransf";
-import IExpect from "@/components/icons/IExpect";
-import IGuar from "@/components/icons/IGuar";
-import ITax from "@/components/icons/ITax";
-import ITarget from "@/components/icons/ITarget";
-import Lottie from "vue-lottie";
-import supportAnimation from "@/assets/animation/support.json";
-import networkAnimation from "@/assets/animation/network.json";
+import IndexBanner from '~/components/IndexBanner';
+import Data from '~/_settings/landing.json';
+import Flow from '~/components/icons/Flow';
+import ITransf from '@/components/icons/ITransf';
+import IExpect from '@/components/icons/IExpect';
+import IGuar from '@/components/icons/IGuar';
+import ITax from '@/components/icons/ITax';
+import ITarget from '@/components/icons/ITarget';
+import Lottie from 'vue-lottie';
+import supportAnimation from '@/assets/animation/support.json';
+import networkAnimation from '@/assets/animation/network.json';
 
-import INew from "@/components/icons/INew";
-import IChina from "@/components/icons/IChina";
-import IEnv from "@/components/icons/IEnv";
-import ICheck from "@/components/icons/ICheck";
-import ICal from "@/components/icons/ICal";
-import IndexFlowGraph from "~/components/IndexFlowGraph";
-import IndexDropGraph from "~/components/IndexDropGraph";
-import IndexRepsGraph from "~/components/IndexRepsGraph";
-import IndexTrusted from "~/components/IndexTrusted";
+import INew from '@/components/icons/INew';
+import IChina from '@/components/icons/IChina';
+import IEnv from '@/components/icons/IEnv';
+import ICheck from '@/components/icons/ICheck';
+import ICal from '@/components/icons/ICal';
+import IndexFlowGraph from '~/components/IndexFlowGraph';
+import IndexDropGraph from '~/components/IndexDropGraph';
+import IndexRepsGraph from '~/components/IndexRepsGraph';
+import IndexTrusted from '~/components/IndexTrusted';
 
 export default {
   metaInfo: {
-    title: "ABANA | African Textile & Apparel Marketplace",
+    title: 'ABANA | African Textile & Apparel Marketplace',
     meta: [
       {
-        name: "description",
-        content:
-          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
-      }
-    ]
+        name: 'description',
+        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+      },
+    ],
   },
   components: {
     Lottie,
@@ -355,51 +279,48 @@ export default {
     IndexDropGraph,
     IndexRepsGraph,
     IndexTrusted,
-    Flow
+    Flow,
   },
   data() {
     return {
       Data,
       networkAnimationData: { animationData: networkAnimation },
-      supportAnimationData: { animationData: supportAnimation }
+      supportAnimationData: { animationData: supportAnimation },
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
     var width = window.innerWidth;
     if (width > 768) {
-      var footer = document.querySelector("footer");
-      var over = document.getElementById("parallax-over");
-      var spacer = document.getElementById("spacer");
-      var under = document.getElementById("parallax-under");
-      footer.classList.add("fixed");
-      under.classList.add("fixed");
-      under.classList.add("opacity-0");
-      spacer.style.height =
-        under.getBoundingClientRect().height +
-        footer.getBoundingClientRect().height +
-        "px";
-      window.addEventListener("scroll", function() {
+      var footer = document.querySelector('footer');
+      var over = document.getElementById('parallax-over');
+      var spacer = document.getElementById('spacer');
+      var under = document.getElementById('parallax-under');
+      footer.classList.add('fixed');
+      under.classList.add('fixed');
+      under.classList.add('opacity-0');
+      spacer.style.height = under.getBoundingClientRect().height + footer.getBoundingClientRect().height + 'px';
+      window.addEventListener('scroll', function() {
         if (window.scrollY > 40) {
-          under.classList.remove("opacity-0");
+          under.classList.remove('opacity-0');
         } else {
-          under.classList.add("opacity-0");
+          under.classList.add('opacity-0');
         }
         if (over.getBoundingClientRect().bottom > 1) {
-          spacer.classList.remove("fixed");
-          footer.classList.add("fixed");
-          under.classList.add("fixed");
+          spacer.classList.remove('fixed');
+          footer.classList.add('fixed');
+          under.classList.add('fixed');
         }
         if (over.getBoundingClientRect().bottom <= 1) {
-          spacer.classList.add("fixed");
-          footer.classList.remove("fixed");
-          under.classList.remove("fixed");
+          spacer.classList.add('fixed');
+          footer.classList.remove('fixed');
+          under.classList.remove('fixed');
         }
       });
     }
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     isBlockScrolled(el) {
@@ -407,23 +328,23 @@ export default {
       return block.top <= window.innerHeight * 0.5;
     },
     stickyElement() {
-      var blocks = document.querySelectorAll(".block-item");
+      var blocks = document.querySelectorAll('.block-item');
       blocks.forEach((block, index) => {
-        let imageBlock = document.getElementById(block.id + "-image");
+        let imageBlock = document.getElementById(block.id + '-image');
 
         if (index % 10 != 0) {
           if (this.isBlockScrolled(block)) {
-            imageBlock.classList.remove("opacity-0");
+            imageBlock.classList.remove('opacity-0');
           } else {
-            imageBlock.classList.add("opacity-0");
+            imageBlock.classList.add('opacity-0');
           }
         }
       });
     },
     handleScroll() {
       this.stickyElement();
-    }
-  }
+    },
+  },
 };
 </script>
 
