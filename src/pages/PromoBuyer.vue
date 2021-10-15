@@ -10,11 +10,9 @@
             <vue-simple-markdown
               :source="Data.header.title"
               class="marketing text-4xl lg:text-5xl lg:leading-normal font-light mb-6 max-w-5xl mx-auto text-title text-center mb-20"
-              data-aos="fade-up"
-              data-aos-duration="800"
             ></vue-simple-markdown>
 
-            <div class="contain text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="contain text-center">
               <g-link to="/registration/" class="btn-xl btn-primary">Register as a free buyer</g-link>
             </div>
           </div>

@@ -10,8 +10,6 @@
             <vue-simple-markdown
               :source="Data.header.title"
               class="marketing text-4xl lg:text-5xl lg:leading-normal font-light mb-6 max-w-5xl mx-auto text-title text-center mb-10"
-              data-aos="fade-up"
-              data-aos-duration="800"
             ></vue-simple-markdown>
 
             <div class="max-w-3xl mx-auto text-2xl mb-10 text-center">
