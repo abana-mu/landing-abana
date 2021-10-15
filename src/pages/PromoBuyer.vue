@@ -3,10 +3,10 @@
     <div id="parallax-over" class="relative z-1 bg-white">
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain relative lg:h-full w-full flex flex-col justify-between z-10 ">
-          <div class="absolute opacity-50 right-0 top-0 w-full">
+          <div class="z-0 absolute opacity-50 right-0 top-0 w-full lottie-banner">
             <Lottie :options="animationData" />
           </div>
-          <div class="w-full pt-24 pb-20 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
+          <div class="z-10 w-full pt-24 pb-20 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
             <vue-simple-markdown
               :source="Data.header.title"
               class="marketing text-4xl lg:text-5xl lg:leading-normal font-light mb-6 max-w-5xl mx-auto text-title text-center mb-20"
@@ -249,6 +249,11 @@ footer,
   @media (max-width: $break-md) {
     position: static !important;
   }
+}
+
+.lottie-banner {
+  min-width: 800px;
+  margin: 0 auto;
 }
 
 .home-links a {

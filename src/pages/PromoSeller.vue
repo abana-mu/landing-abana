@@ -3,7 +3,7 @@
     <div id="parallax-over" class="relative z-1 bg-white">
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain relative lg:h-full w-full flex flex-col justify-between z-10 ">
-          <div class="absolute opacity-30 right-0 top-0 w-full">
+          <div class="absolute opacity-30 right-0 top-0 w-full lottie-banner z-0">
             <Lottie :options="animationData" />
           </div>
           <div class="z-10 w-full pt-24 pb-20 h-full text-center md:text-left flex flex-col justify-center items-center md:items-start">
@@ -153,7 +153,7 @@
     </div>
 
     <div class="contain text-center my-20">
-      <g-link to="/registration/" class="btn-2xl btn-primary">Register as a free buyer</g-link>
+      <g-link to="/registration/" class="btn-2xl btn-primary">Book a Demo</g-link>
     </div>
   </Layout>
 </template>
@@ -247,5 +247,9 @@ footer,
   @media (max-width: $break-md) {
     position: static !important;
   }
+}
+.lottie-banner {
+  min-width: 800px;
+  margin: 0 auto;
 }
 </style>
