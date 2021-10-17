@@ -57,6 +57,14 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: '_insights/**/*.md',
+        typeName: 'Insights',
+        remark: {},
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: '_testimonials/**/*.md',
         typeName: 'Testimonials',
         remark: {},

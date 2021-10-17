@@ -1,5 +1,9 @@
 <template>
   <Layout class="index-layout">
+    <div v-if="modal">
+      <Modal :title="Data.popup.title" :description="Data.popup.text" :cta="Data.popup.cta" :warning="Data.popup.warning" :close="closeModal" />
+    </div>
+
     <div id="parallax-over" class="relative z-1 bg-white">
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain relative lg:h-full w-full flex flex-col justify-between z-10 ">
@@ -32,23 +36,23 @@
       <div class="bg-gray-50 relative z-10">
         <div class="contain py-24">
           <div class="text-3xl lg:text-4xl mb-4 font-bold text-title text-center mb-24">{{ Data.steps.title }}</div>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-            <div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 sm:gap-5 mb-10 mx-auto text-center justify-center items-center">
+            <div class="flex flex-col items-center">
               <g-image class="mb-2 h-10 w-10" src="~/assets/images/account.svg" />
               <div class="text-lg tracking-wider font-medium text-primary">Step 1</div>
               <div class="text-2xl">{{ Data.steps.box1 }}</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
               <g-image class="mb-2 h-10 w-10" src="~/assets/images/product.svg" />
               <div class="text-lg tracking-wider font-medium text-primary">Step 2</div>
               <div class="text-2xl">{{ Data.steps.box2 }}</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
               <g-image class="mb-2 h-10 w-10" src="~/assets/images/respond.svg" />
               <div class="text-lg tracking-wider font-medium text-primary">Step 3</div>
               <div class="text-2xl">{{ Data.steps.box3 }}</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
               <g-image class="mb-2 h-10 w-10" src="~/assets/images/partnerships.svg" />
               <div class="text-lg tracking-wider font-medium text-primary">Step 4</div>
               <div class="text-2xl">{{ Data.steps.box4 }}</div>
@@ -109,9 +113,13 @@
               <g-image :src="Data.vad.image3" quality="100" width="750" class="rounded-md w-full shadow-xl" />
             </div>
           </div>
+          <div class="contain text-center my-20">
+            <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-2xl btn-primary">Book a Demo</a>
+          </div>
         </div>
       </div>
     </div>
+
     <div id="spacer" class="hidden md:flex"></div>
     <div id="parallax-under" class="overflow-hidden bg-primary md:h-full top-0 z-0 w-full">
       <div class="contain pt-28">
@@ -153,7 +161,7 @@
     </div>
 
     <div class="contain text-center my-20">
-      <g-link to="/registration/" class="btn-2xl btn-primary">Book a Demo</g-link>
+      <a href="https://meetings.hubspot.com/abana" target="_blank" class="btn-2xl btn-primary">Book a Demo</a>
     </div>
   </Layout>
 </template>
@@ -183,6 +191,7 @@ import TrustedData from '~/_settings/landing.json';
 import Lottie from 'vue-lottie';
 import Animation from '@/assets/animation/landing.json';
 import IndexTrusted from '~/components/IndexTrusted';
+import Modal from '~/components/Modal';
 
 export default {
   metaInfo: {
@@ -197,17 +206,22 @@ export default {
   components: {
     Lottie,
     IndexTrusted,
+    Modal,
   },
   data() {
     return {
       Data,
       TrustedData,
       animationData: { animationData: Animation },
+      modal: false,
+      opened: false,
     };
   },
+
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
     var width = window.innerWidth;
+    var that = this;
+    var height = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
     if (width > 768) {
       var footer = document.querySelector('footer');
       var over = document.getElementById('parallax-over');
@@ -233,11 +247,24 @@ export default {
           footer.classList.remove('fixed');
           under.classList.remove('fixed');
         }
+
+        if (window.scrollY > height / 2 && !localStorage.opened) {
+          that.openModal();
+        }
       });
     }
   },
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    closeModal() {
+      this.modal = false;
+    },
+    openModal() {
+      this.modal = true;
+      localStorage.opened = true;
+    },
   },
 };
 </script>

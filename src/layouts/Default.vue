@@ -1,7 +1,7 @@
 <template>
   <div class="main text-body font-graphik">
     <TheNavbar class="relative z-20" />
-    <div class="relative z-10">
+    <div class="relative">
       <slot />
     </div>
     <TheFooter />

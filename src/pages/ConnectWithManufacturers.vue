@@ -1,5 +1,9 @@
 <template>
   <Layout class="index-layout">
+    <div v-if="modal">
+      <Modal :title="Data.popup.title" :description="Data.popup.text" :cta="Data.popup.cta" :warning="Data.popup.warning" :close="closeModal" />
+    </div>
+
     <div id="parallax-over" class="relative z-1 bg-white">
       <div id="banner" class="relative w-full flex flex-col md:flex-row justify-center bg-white">
         <div class="contain relative lg:h-full w-full flex flex-col justify-between z-10 ">
@@ -184,6 +188,7 @@ import TrustedData from '~/_settings/landing.json';
 import Lottie from 'vue-lottie';
 import Animation from '@/assets/animation/landing.json';
 import IndexTrusted from '~/components/IndexTrusted';
+import Modal from '~/components/Modal';
 
 export default {
   metaInfo: {
@@ -198,17 +203,22 @@ export default {
   components: {
     Lottie,
     IndexTrusted,
+    Modal,
   },
   data() {
     return {
       Data,
       TrustedData,
       animationData: { animationData: Animation },
+      modal: false,
+      opened: false,
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
     var width = window.innerWidth;
+    var that = this;
+    var height = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+
     if (width > 768) {
       var footer = document.querySelector('footer');
       var over = document.getElementById('parallax-over');
@@ -234,11 +244,25 @@ export default {
           footer.classList.remove('fixed');
           under.classList.remove('fixed');
         }
+
+        //if (window.scrollY > height / 2 && !localStorage.opened) {
+        if (window.scrollY > height / 2) {
+          that.openModal();
+        }
       });
     }
   },
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    closeModal() {
+      this.modal = false;
+    },
+    openModal() {
+      this.modal = true;
+      localStorage.opened = true;
+    },
   },
 };
 </script>

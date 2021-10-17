@@ -55,6 +55,7 @@ module.exports = {
       boxShadow: {
         glow: '0 3px 10px rgba(51, 62, 73, 0.18), 0 6px 17px rgba(51, 62, 73, 0.18)',
         nav: 'inset 0 -3px #ff6158',
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
     },
   },
@@ -63,7 +64,7 @@ module.exports = {
       translate: ['group-hover'],
       rotate: ['group-hover'],
       display: ['group-hover'],
-      ringWidth: ['hover']
+      ringWidth: ['hover'],
     },
   },
   plugins: [require('@tailwindcss/forms')],

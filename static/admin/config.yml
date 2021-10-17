@@ -130,6 +130,15 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'Text', name: 'text', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
 
+          - label: 'Popup'
+            name: popup
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Text', name: 'text', widget: 'string' }
+              - { label: 'Button text', name: 'cta', widget: 'string' }
+              - { label: 'Warning text', name: 'warning', widget: 'string' }
+
       - label: 'Landing Sellers'
         name: 'promo-seller'
         file: 'src/_settings/promo-seller.json'
@@ -172,6 +181,15 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'Text', name: 'text', widget: 'markdown', hint: 'Text in orange should be in BOLD' }
+
+          - label: 'Popup'
+            name: popup
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Text', name: 'text', widget: 'string' }
+              - { label: 'Button text', name: 'cta', widget: 'string' }
+              - { label: 'Warning text', name: 'warning', widget: 'string' }
 
       - label: 'Announcement'
         name: 'announce'
@@ -1630,6 +1648,24 @@ collections:
   - name: 'press'
     label: 'Press'
     folder: '_press/'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Banner', name: 'image', widget: 'image' }
+      - { label: 'Original Link', name: 'link', widget: 'string', required: false, hint: 'Optional' }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          hint: '! IMPORTANT: Before pasting from a word file: Toggle from "Rich Text" to "markdown" (top right) > Paste content > Toggle back to "Rich Text"',
+        }
+
+  - name: 'insights'
+    label: 'Insights'
+    folder: '_insights/'
     create: true
     slug: '{{slug}}'
     fields:
