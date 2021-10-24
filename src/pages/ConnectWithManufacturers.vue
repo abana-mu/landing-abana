@@ -245,8 +245,7 @@ export default {
           under.classList.remove('fixed');
         }
 
-        //if (window.scrollY > height / 2 && !localStorage.opened) {
-        if (window.scrollY > height / 2) {
+        if (window.scrollY > height / 2 && !localStorage.opened) {
           that.openModal();
         }
       });

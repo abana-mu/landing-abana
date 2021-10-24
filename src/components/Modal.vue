@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <div class="fixed z-40 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
       <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" @click="closeModal"></div>
       <!-- This element is to trick the browser into centering the modal contents. -->
       <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -16,7 +16,7 @@
             To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
         -->
       <div
-        class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden border shadow-3xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
+        class="inline-block w-full max-w-sm align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden border shadow-3xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
       >
         <div>
           <div class="flex-shrink-0 flex absolute top-4 right-4" @click="closeModal">
@@ -52,15 +52,42 @@
           </div>
         </div>
 
-        <form v-on:submit.prevent="onSubmit">
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <form @submit="onSubmit" method="POST" action="https://abana78924.activehosted.com/proc.php" id="_form_1_" novalidate>
+          <input type="hidden" name="u" value="1" />
+          <input type="hidden" name="f" value="1" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
+          <p class="my-8" v-if="errors.length">
+            <b>Please correct the following error(s):</b>
+            <ul>
+              <li v-for="error in errors" :key='error'>{{ error }}</li>
+            </ul>
+          </p>
+          <label for="email" class="block text-sm font-medium text-gray-700">Full Name</label>
           <div class="mt-1">
             <input
               type="text"
-              name="email"
-              id="email"
+              id="fullname"
+              v-model="fullname"
+              name="fullname"
               class="mb-5 shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-              placeholder="you@example.com"
+              placeholder="Type your name"
+            />
+          </div>
+
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <div class="mt-1">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              v-model="email"
+              placeholder="Type your email"
+              required
+              class="mb-5 shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
             />
           </div>
           <button
@@ -85,11 +112,34 @@
 export default {
   props: ['close', 'title', 'description', 'cta', 'warning'],
   data() {
-    return {};
+    return {
+      errors: [],
+      email: '',
+      fullname: '',
+    };
   },
   methods: {
     closeModal() {
       this.close();
+    },
+    onSubmit(e) {
+      this.errors =[];
+      if (!this.fullname) {
+        this.errors.push('Name required.');
+      }
+      if (!this.email) {
+        this.errors.push('Email required.');
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push('Valid email required.');
+      }
+      if (!this.errors.length) {
+        return true;
+      }
+      e.preventDefault();
+    },
+    validEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     },
   },
 };

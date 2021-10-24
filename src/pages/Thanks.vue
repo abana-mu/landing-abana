@@ -5,9 +5,7 @@
       <p class="text-subtitle">We will be in touch shortly. We look forward to starting a partnership together.</p>
     </div>
     <div class="mt-5 text-center mb-5">
-      <g-link to="/">
-        <a class="btn btn-primary">Back Home</a>
-      </g-link>
+      <div class="btn btn-primary cursor-pointer" @click="goBack()">Go Back</div>
     </div>
   </Layout>
 </template>
@@ -19,10 +17,14 @@ export default {
     meta: [
       {
         name: 'description',
-        content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
+        content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
     ],
+  },
+  methods: {
+    goBack() {
+      window.history.back();
+    },
   },
 };
 </script>

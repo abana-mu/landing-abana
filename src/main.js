@@ -6,6 +6,9 @@ require('~/assets/tailwindcss.scss');
 
 import DefaultLayout from '~/layouts/Default.vue';
 
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+
 import VueSimpleMarkdown from 'vue-simple-markdown';
 
 import GraphikRegular from '~/assets/fonts/GraphikRegular.otf';
@@ -16,6 +19,7 @@ import GraphikSemibold from '~/assets/fonts/GraphikSemibold.otf';
 export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.use(VueSimpleMarkdown);
+  Vue.use(VueAxios, axios);
 
   router.options.scrollBehavior = (to, from, savedPosition) => {
     if (to.hash) {
