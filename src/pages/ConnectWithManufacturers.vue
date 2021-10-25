@@ -1,7 +1,7 @@
 <template>
   <Layout class="index-layout">
     <div v-if="modal">
-      <Modal :title="Data.popup.title" :description="Data.popup.text" :cta="Data.popup.cta" :warning="Data.popup.warning" :close="closeModal" />
+      <Modal :title="Data.popup.title" :description="Data.popup.text" :cta="Data.popup.cta" :warning="Data.popup.warning" :close="closeModal" :id="1" />
     </div>
 
     <div id="parallax-over" class="relative z-1 bg-white">

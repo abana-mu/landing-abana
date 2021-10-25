@@ -53,8 +53,8 @@
         </div>
 
         <form @submit="onSubmit" method="POST" action="https://abana78924.activehosted.com/proc.php" id="_form_1_" novalidate>
-          <input type="hidden" name="u" value="1" />
-          <input type="hidden" name="f" value="1" />
+          <input type="hidden" name="u" :value="id" />
+          <input type="hidden" name="f" :value="id" />
           <input type="hidden" name="s" />
           <input type="hidden" name="c" value="0" />
           <input type="hidden" name="m" value="0" />
@@ -110,7 +110,7 @@
 <!-- SCRIPTS -->
 <script>
 export default {
-  props: ['close', 'title', 'description', 'cta', 'warning'],
+  props: ['close', 'title', 'description', 'cta', 'warning', 'id'],
   data() {
     return {
       errors: [],
