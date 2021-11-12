@@ -32,12 +32,12 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
     },
 
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-156587227-2',
-      },
-    },
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: 'UA-156587227-2',
+    //   },
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {
