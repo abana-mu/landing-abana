@@ -1699,7 +1699,6 @@ collections:
         }
       - { label: 'Name', name: 'name', widget: 'string', required: false, hint: 'author of the quote' }
       - { label: 'Position', name: 'position', widget: 'string', required: false }
-      - { label: 'Background Colour', name: 'color', widget: 'color' }
       - { label: 'Image', name: 'image', widget: 'image', hint: 'Make sure this image is less than 250kb in size!' }
       - { label: 'Logo', name: 'logo', widget: 'image', hint: 'Make sure this image is less than 250kb in size!' }
       - { label: 'Case Study?', name: 'caseStudy', widget: 'boolean', default: false, hint: 'does this have more content (ex. case study' }

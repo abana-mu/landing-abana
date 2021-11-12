@@ -9,7 +9,7 @@
       <div class="mb-5 testimonial-container" v-for="testi in $page.posts.edges" :key="testi.id">
         <div
           class="flex flex-col lg:flex-row p-10 rounded-xl border"
-          :style="`background-color:` + testi.node.color"
+          style="background-color:#f6f9fc;"
         >
           <div class="text-center flex flex-col items-center mb-5 lg:mb-0 lg:w-1/5">
             <div class="w-24 h-24 lg:h-32 lg:w-32 rounded-full overflow-hidden flex-shrink-0 mb-6">
@@ -51,7 +51,6 @@ query{
         quote
         name
         position
-        color
         image
         logo
         caseStudy
