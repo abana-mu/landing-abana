@@ -6,7 +6,6 @@ require('~/assets/tailwindcss.scss');
 
 import DefaultLayout from '~/layouts/Default.vue';
 import VueSimpleMarkdown from 'vue-simple-markdown';
-import VueGtm from '@gtm-support/vue2-gtm';
 
 import GraphikRegular from '~/assets/fonts/GraphikRegular.otf';
 import GraphikLight from '~/assets/fonts/GraphikLight.otf';
@@ -16,13 +15,7 @@ import GraphikSemibold from '~/assets/fonts/GraphikSemibold.otf';
 export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.use(VueSimpleMarkdown);
-  Vue.use(VueGtm, {
-    id: 'GTM-KKSWQSK',
-    defer: false, // Script can be set to `defer` to speed up page load at the cost of less accurate results (in case visitor leaves before script is loaded, which is unlikely but possible). Defaults to false, so the script is loaded `async` by default
-    compatibility: false, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
-    loadScript: true, // Whether or not to load the GTM Script (Helpful if you are including GTM manually, but need the dataLayer functionality in your components) (optional)
-    vueRouter: router, // Pass the router instance to automatically sync with router (optional)
-  });
+
 
   router.options.scrollBehavior = (to, from, savedPosition) => {
     if (to.hash) {
