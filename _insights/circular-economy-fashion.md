@@ -7,13 +7,11 @@ link: https://api.abana.mu/media/report-attachment/61a4772f1920e546705140.pdf
 ---
 According to the Ellen MacArthur Foundation (EMF), annually this USD 2.5 trillion clothing industry hires over 300 million people along the value chain. Textile and clothing are a fundamental part of our everyday life, and a crucial sector in the global economy that has drifted far beyond just meeting basic human needs but also creating a negative impact on our planet. This system consists of using non-renewable resources extracted from the ground to make garments beyond what is required, often used for a short period, after which consumers dispose of what they no longer require, is discarded to landfills and incinerators. The prevailing system for producing, distributing, and how clothing is used operates in an almost linear way.
 
+>
 
+![page3image7337168](/uploads/ce.jpg "Circular economy")
 
-
-
-![page3image7337168](blob:https://www.abana.mu/b358c856-bcfe-47c4-ae00-894da9ffe48b)
-
-
+>
 
 **ISSUES**
 
@@ -21,19 +19,31 @@ The fashion supply chain is one of the most globalized, intricated, and prolonge
 
 The resulting sustainability issues of this multi-billion-dollar industry relate to serious consequences on society and the environment caused by water and food crises due to high water usage, ecosystem pollution including eutrophication (responsible for 20% of global water pollution), and the dispersal of hazardous chemicals (about 3,500 substances used in textiles of which 750 are classified as hazardous to humans and 440 to the environment), landfills, air pollution, and energy. All these are exacerbated by the problem of climate change with massive effect on water resources and agriculture, among others. Moreover, fiber cultivation for textiles essentially competes with food production for arable land and leads to food scarcity, and malnutrition, as well as substantial deforestation. 
 
+>
+
 The fashion industry steers in a linear way, in a "cradle to grave" model whereby an expendable tradition spurs consumers to treat low-priced fast fashion items as throwaways. Furthermore, European consumers discard about a 5.8million tonnes of textiles each year which equates to an average of 11kg of textiles per person, with having worn garments only 7 or 8 times, although there has been a surge in apparel sales over the last two decades with a 40% rise in garments purchased per person. Each person spends around USD 1,050 annually on textile products representing 5.3% of their total expenditure on textile. 
 
+>
+
 Over a decade, production has nearly doubled, propelled by a growing working-class population across the globe. This is mainly due to the 'fast fashion' phenomenon, with the quicker turnaround of new styles, increased number of seasonal collections, ease of purchase, and payment through one simple click, compounded by lower prices. As such, fast fashion encourages overconsumption and enhances waste generation, as this drives the promotion of new items and the disposal of old ones, which are branded as obsolete simply because they are out of fashion. Accordingly, some of the online brands mainly targeting young people are releasing between 12, 16, and 24 new clothing collections annually. Consequently, the increase in online sales has a large impact on resource use and emissions in terms of packaging and transport.
+
+>
 
 **VISION**
 
 This overall concept consists of three design principles: a design for durability, design for long-lasting style, and design for disassembly (Circular Fashion, 2019). In this new vision, clothes are retained at their highest values during their usage and re-enter the economy after use by never-ending up as waste. To avoid that 15 million tons of clothes are sent to landfills, effective and appropriate solutions based on Systems Thinking should be seriously envisaged. If implemented, that might provide a driving force from a linear economy to a circular one, as otherwise, it would lead to a dystopian future. 
 
+>
+
 Then again, eight African countries grew over 4% of global organic cotton production in 2017/18 and experienced a 20% increase over 2016/17. Regeneratively produced cotton is increasingly sought after and governments as well as businesses have an opportunity to respond to market demand by incentivising and investing in growing material inputs in line with biodiversity protection. Using local raw materials in manufacturing can lower climate impacts from transport emissions, increase the traceability in the supply chain, and increase the embedded value of the products.
+
+>
 
 Consequently, [Systems Thinking](https://www.linkedin.com/pulse/circular-economy-systems-thinking-simon-seebaluck/) can provide a driving force for a quantum leap from a linear economy to a circular one and how appropriate knowledge and enabling infrastructure may assist in enhancing circularity. Below are some focus areas where such vision can be realized.
 
 ![](/uploads/circularity.jpg)
+
+>
 
 **Focus Areas:**
 
