@@ -259,6 +259,7 @@ import IFreelancers from '@/components/icons/IFreelancers';
 import ICountryRep from '@/components/icons/ICountryRep';
 import ITestimonial from '@/components/icons/ITestimonial';
 import IHow from '@/components/icons/IHow';
+import IPricing from '@/components/icons/IPricing';
 import IVideo from '@/components/icons/IVideo';
 import IInsights from '@/components/icons/IInsights';
 
@@ -280,6 +281,7 @@ export default {
     IDrops,
     ISupply,
     IProduct,
+    IPricing,
     INews,
     ISource,
     IGM,
@@ -362,6 +364,11 @@ export default {
                 link: '/testimonials',
                 icon: ITestimonial,
               },
+              {
+                title: 'Pricing',
+                link: '/pricing',
+                icon: IPricing,
+              },
             ],
           },
         },
@@ -405,6 +412,11 @@ export default {
                 title: 'Testimonials',
                 link: '/testimonials',
                 icon: ITestimonial,
+              },
+              {
+                title: 'Pricing',
+                link: '/pricing',
+                icon: IPricing,
               },
             ],
           },
