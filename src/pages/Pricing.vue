@@ -84,7 +84,7 @@
                       <div v-if="card.price === 'Free'" class="p-2 text-xl">🎉</div>
                       <!--REMOVE AFTER FAIR -->
                       <div v-else-if="index === 'seller' && card.name === 'basic'">
-                        <div class="p-2 bg-primary-300 font-medium text-white">OFFER ENDS FEB 28 2022</div>
+                        <div class="p-2 bg-primary-300 font-medium text-white">OFFER ENDS MARCH 31 2022</div>
                       </div>
                       <!---->
                       <div v-else class="p-2 border border-primary-200 text-primary">Save {{ Math.round((1 - card.price[currentPrice] / card.price[61]) * 100) }}% per month</div>
