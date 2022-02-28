@@ -70,7 +70,7 @@
                           <div>Free</div>
                         </div>
                         <!--REMOVE AFTER FAIR -->
-                        <div v-else-if="index === 'seller' && card.name === 'basic'">
+                        <div v-else-if="index === 'seller' && card.name === 'basic' && (currentPrice === '66' || currentPrice === '61')">
                           <div>
                             <span>Free </span><span class="text-base">(usually USD${{ card.price[currentPrice] }}/mo)</span>
                           </div>
@@ -83,7 +83,7 @@
                       </div>
                       <div v-if="card.price === 'Free'" class="p-2 text-xl">🎉</div>
                       <!--REMOVE AFTER FAIR -->
-                      <div v-else-if="index === 'seller' && card.name === 'basic'">
+                      <div v-else-if="index === 'seller' && card.name === 'basic' && (currentPrice === '66' || currentPrice === '61')">
                         <div class="p-2 bg-primary-300 font-medium text-white">OFFER ENDS MARCH 31 2022</div>
                       </div>
                       <!---->
