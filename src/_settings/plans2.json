@@ -177,7 +177,7 @@
       },
       {
         "name": "basic",
-        "desc": "Multiple User companies with more marketplace activities",
+        "desc": "Companies with more marketplace activities",
 
         "price": {
           "61": 129,
@@ -185,7 +185,7 @@
           "121": 119,
           "1212": 99
         },
-        "features": ["Multiple Users", "Marketing & Financial Services"]
+        "features": ["Marketing & Financial Services"]
       },
       {
         "name": "pro",
