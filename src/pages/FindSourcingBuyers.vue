@@ -52,7 +52,7 @@
             class="text-3xl lg:text-4xl mb-4 font-bold text-title text-center mb-12"
           >{{ Data.steps.title }}</div>
           <div class="max-w-3xl mx-auto mb-12">
-            <div class="video-container">
+            <div class="landing-video-container">
               <iframe
                 class="video-iframe"
                 src="https://www.youtube.com/embed/Nm61mhckdoc"
@@ -354,7 +354,7 @@ footer,
   }
 }
 
-.video-container {
+.landing-video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;

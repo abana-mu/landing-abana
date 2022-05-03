@@ -37,60 +37,64 @@
           <TwoCol :data="Data.elements" break="lg" />
         </section>
       </section>
-    </div> -->
+    </div>-->
   </Layout>
 </template>
 
 <script>
-import Data from '~/_settings/fastcustom.json';
-import TwoCol from '~/components/PageElementTwoColMd';
+import Data from "~/_settings/fastcustom.json";
+import TwoCol from "~/components/PageElementTwoColMd";
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */ &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    rect.bottom <=
+      (window.innerHeight ||
+        document.documentElement.clientHeight) /* or $(window).height() */ &&
+    rect.right <=
+      (window.innerWidth ||
+        document.documentElement.clientWidth) /* or $(window).width() */
   );
 }
 export default {
   components: {
-    TwoCol,
+    TwoCol
   },
   metaInfo: {
-    title: 'Drops',
+    title: "Drops",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
-      },
-    ],
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
+      }
+    ]
   },
   data() {
     return {
       Data,
-      activeBlock: 'block1',
+      activeBlock: "block1"
     };
   },
   mounted() {
-    document.addEventListener('scroll', this.handleScroll);
+    document.addEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
-      this.Data.elements.find((number) => {
+      this.Data.elements.find(number => {
         const el = document.getElementById(number.id);
         if (isElementInViewport(el)) {
           this.activeBlock = number.id;
         }
       });
       console.log(this.activeBlock);
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .height-restriction {
   min-height: calc(100vh - 390px);
 }

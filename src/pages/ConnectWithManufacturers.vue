@@ -51,7 +51,7 @@
             <div class="text-2xl font-medium mb-10 max-w-4xl">{{ Data.who.title }}</div>
           </div>
           <div class="max-w-3xl mx-auto mb-12">
-            <div class="video-container">
+            <div class="landing-video-container">
               <iframe
                 class="video-iframe"
                 src="https://www.youtube.com/embed/YfTbM_y8dYQ"
@@ -339,7 +339,7 @@ footer,
   }
 }
 
-.video-container {
+.landing-video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;

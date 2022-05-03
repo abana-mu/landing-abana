@@ -1,27 +1,32 @@
 <template>
-  <Layout class="">
+  <Layout class>
     <div>
       <div class="header pb-5">
         <h1 class="title">{{ Data.header.title }}</h1>
         <p class="subtitle">{{ Data.header.subtext }}</p>
       </div>
       <section class="pt-5">
-        <div class="px-12 mb-24 mx-auto  flex-row items-start hidden lg:flex">
+        <div class="px-12 mb-24 mx-auto flex-row items-start hidden lg:flex">
           <ul class="scroll-circle hidden">
             <li></li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3  w-1/2">
-            <div :id="'block' + index" class="block-item pt-44 pb-44 flex flex-col max-w-4/5 " v-for="(block, index) in Data.elements" :key="index">
+          <div class="flex justify-between flex-col pt-10 pb-10 pl-0 lg:px-3 w-1/2">
+            <div
+              :id="'block' + index"
+              class="block-item pt-44 pb-44 flex flex-col max-w-4/5"
+              v-for="(block, index) in Data.elements"
+              :key="index"
+            >
               <h2 class="mb-4 text-4xl font-medium">{{ block.title }}</h2>
               <vue-simple-markdown :source="block.content" class="mb-5 text-sm"></vue-simple-markdown>
             </div>
           </div>
           <div class="scrolll-image-container top-18 sticky block w-1/2 py-16">
             <div class="mask relative overflow-hidden rounded-lg">
-              <div id="block0-image" class="scroll-image1 ">
+              <div id="block0-image" class="scroll-image1">
                 <g-image src="../assets/images/supply.png" quality="100" class="w-full" />
               </div>
               <div id="block1-image" class="scroll-image scroll-image2 transition duration-300">
@@ -62,33 +67,33 @@
 </template>
 
 <script>
-import Data from '~/_settings/drops.json';
-import TwoCol from '~/components/PageElementTwoColMd';
+import Data from "~/_settings/drops.json";
+import TwoCol from "~/components/PageElementTwoColMd";
 
 export default {
   components: {
-    TwoCol,
+    TwoCol
   },
   metaInfo: {
-    title: 'Drops',
+    title: "Drops",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
-      },
-    ],
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
+      }
+    ]
   },
   data() {
     return {
-      Data,
+      Data
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     isBlockScrolled(el) {
@@ -97,21 +102,21 @@ export default {
     },
 
     handleScroll() {
-      var blocks = document.getElementsByClassName('block-item');
-      blocks.forEach((block) => {
-        let imageBlock = document.getElementById(block.id + '-image');
+      var blocks = document.getElementsByClassName("block-item");
+      blocks.forEach(block => {
+        let imageBlock = document.getElementById(block.id + "-image");
         if (this.isBlockScrolled(block)) {
-          imageBlock.classList.add('active');
+          imageBlock.classList.add("active");
         } else {
-          imageBlock.classList.remove('active');
+          imageBlock.classList.remove("active");
         }
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .video-container {
   width: 100%;
   @media (min-width: $break-lg) {

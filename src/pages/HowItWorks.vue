@@ -7,11 +7,22 @@
     <section class="section-content">
       <div v-for="category in Data.categories" :key="category.title" class="mb-10">
         <h3 class="text-2xl font-medium mb-3">{{ category.title }}</h3>
-        <div v-for="(tutorial, index) in category.tutorial" :key="tutorial.title" class="how-collapse">
+        <div
+          v-for="(tutorial, index) in category.tutorial"
+          :key="tutorial.title"
+          class="how-collapse"
+        >
           <span v-on:click="toggle(category.title + index)" class="cursor-pointer">
             {{ tutorial.title }}
             <!-- Chevron-Down -->
-            <svg class="h-5 w-5 ml-3 inline-flex" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <svg
+              class="h-5 w-5 ml-3 inline-flex"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
               <path
                 fill-rule="evenodd"
                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
@@ -41,33 +52,33 @@
 </template>
 
 <script>
-import Data from '~/_settings/tutorials.json';
+import Data from "~/_settings/tutorials.json";
 
 export default {
   metaInfo: {
-    title: 'How it Works',
+    title: "How it Works",
     meta: [
       {
-        name: 'description',
+        name: "description",
         content:
-          'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
-      },
-    ],
+          "Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers."
+      }
+    ]
   },
   data() {
     return {
-      Data,
+      Data
     };
   },
   methods: {
     toggle: function(target) {
-      document.getElementById(target).classList.toggle('hidden');
-    },
-  },
+      document.getElementById(target).classList.toggle("hidden");
+    }
+  }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .how-title {
   color: $subtitle-dark;
 }
