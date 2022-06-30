@@ -1,0 +1,84 @@
+{
+  "header": {
+    "title": "Creating the supply chain of the future",
+    "image": "/uploads/back10.jpg",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+  },
+  "services": [
+    {
+      "title": "Factory Compliance",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Raw Material Monitoring",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Product Development & Sampling",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Order Follow-up",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Quality Control",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Logistics & Distribution",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    }
+  ],
+  "africa": [
+    {
+      "title": "Capacity for small to large buyers",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Preferential trade agreements",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Speed to market",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Skilled labour",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Environmental & Compliance",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    },
+    {
+      "title": "Vertically Integrated Factories",
+      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+    }
+  ],
+  "about": {
+    "brands": "15",
+    "manu": "10",
+    "years": "30"
+  },
+  "products": {
+    "image1": "/uploads/picture2b.jpg",
+    "image2": "/uploads/picture2b.jpg",
+    "image3": "/uploads/picture2b.jpg",
+    "image4": "/uploads/picture2b.jpg",
+    "image5": "/uploads/picture2b.jpg"
+  },
+  "trusted": [
+    {
+      "name": "Matalan",
+      "image": "/uploads/matalan.jpg",
+      "link": "www.matalan.com"
+    }
+  ]
+}
