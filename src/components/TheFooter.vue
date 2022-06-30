@@ -12,25 +12,13 @@
             </div>
           </div>
           <div class="flex flex-row space-x-4 text-bodyOnDark">
-            <a
-              class="outline-none transition transform hover:scale-110 hover:text-white"
-              href="https://www.linkedin.com/company/abana-mauritius/"
-              target="_blank"
-            >
+            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.linkedin.com/company/abana-mauritius/" target="_blank">
               <Linkedin class="w-5 h-auto" />
             </a>
-            <a
-              class="outline-none transition transform hover:scale-110 hover:text-white"
-              href="https://www.instagram.com/abana.mauritius"
-              target="_blank"
-            >
+            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.instagram.com/abana.mauritius" target="_blank">
               <Insta class="w-5 h-auto" />
             </a>
-            <a
-              class="outline-none transition transform hover:scale-110 hover:text-white"
-              href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA"
-              target="_blank"
-            >
+            <a class="outline-none transition transform hover:scale-110 hover:text-white" href="https://www.youtube.com/channel/UC2x4KPES7lVZHF4WsgOGTHA" target="_blank">
               <Youtube class="w-5 h-auto" />
             </a>
           </div>
@@ -185,7 +173,7 @@
       </div>
       <div class="mt-8 border-t border-gray-500 pt-8 md:flex md:items-center md:justify-between">
         <p class="mt-8 text-base text-center text-bodyOnDark md:mt-0">
-          &copy; 2021 ABANA, All rights reserved.
+          &copy; 2022 ABANA, All rights reserved.
         </p>
       </div>
     </div>

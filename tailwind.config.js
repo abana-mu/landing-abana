@@ -22,6 +22,7 @@ module.exports = {
         caption: '#9CA3AF',
         bodyOnDark: '#a6a6ca',
         titleOnDark: 'white',
+        bgLight: '#FDFBF8',
         primary: {
           DEFAULT: '#FF6158',
           100: '#FFF4F3',

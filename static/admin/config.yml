@@ -191,6 +191,62 @@ collections:
               - { label: 'Button text', name: 'cta', widget: 'string' }
               - { label: 'Warning text', name: 'warning', widget: 'string' }
 
+      - label: 'Landing Agency'
+        name: 'promo-agency'
+        file: 'src/_settings/promo-agency.json'
+        fields:
+          - label: 'Header'
+            name: header
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Intro', name: 'intro', widget: 'text' }
+
+          - label: 'Services'
+            name: 'services'
+            widget: 'list'
+            hint: 'multiple of three for best layout'
+            fields:
+              - { label: Title, name: title, widget: 'string' }
+              - { label: Icon, name: icon, widget: 'image' }
+              - { label: Text, name: text, widget: 'text' }
+
+          - label: 'Why Africa'
+            name: 'africa'
+            widget: 'list'
+            hint: 'multiple of three for best layout'
+            fields:
+              - { label: Title, name: title, widget: 'string' }
+              - { label: Icon, name: icon, widget: 'image' }
+
+          - label: 'About us'
+            name: 'about'
+            widget: 'object'
+            fields:
+              - { label: 'Number of brands', name: 'brands', widget: 'string' }
+              - { label: 'Number of manufacturers', name: 'manu', widget: 'string' }
+              - { label: 'Number of years', name: 'years', widget: 'string' }
+
+          - label: 'Product lineup'
+            name: products
+            widget: 'object'
+            fields:
+              - { label: 'Image1', name: 'image1', widget: 'image' }
+              - { label: 'Image2', name: 'image2', widget: 'image' }
+              - { label: 'Image3', name: 'image3', widget: 'image' }
+              - { label: 'Image4', name: 'image4', widget: 'image' }
+              - { label: 'Image5', name: 'image5', widget: 'image' }
+
+          - label: 'Trusted By'
+            name: trusted
+            label_singular: 'trustee'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Link', name: 'link', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
+
       - label: 'Announcement'
         name: 'announce'
         file: 'src/_settings/announce.json'
