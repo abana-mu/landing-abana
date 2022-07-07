@@ -79,6 +79,11 @@
       "name": "Matalan",
       "image": "/uploads/matalan.jpg",
       "link": "www.matalan.com"
+    },
+    {
+      "name": "Zadig & Voltaire",
+      "image": "/uploads/logo_2.png",
+      "link": "https://zadig-et-voltaire.com/eu/en/"
     }
   ]
 }
