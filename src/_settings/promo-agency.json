@@ -7,33 +7,33 @@
   "services": [
     {
       "title": "Factory Compliance",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "text": "Lorem ipsum dolor",
+      "icon": "/uploads/knit.jpg"
     },
     {
       "title": "Raw Material Monitoring",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "text": "Lorem ipsum dolor sit ",
+      "icon": "/uploads/pexels-pixabay-259756.jpg"
     },
     {
       "title": "Product Development & Sampling",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "text": "Lorem ipsum dolor ",
+      "icon": "/uploads/support-services-2.jpg"
     },
     {
       "title": "Order Follow-up",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "text": "Lorem ipsum dolor ",
+      "icon": "/uploads/pexels-marcus-aurelius-4064230.jpg"
     },
     {
       "title": "Quality Control",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "text": "Lorem ipsum dolor",
+      "icon": "/uploads/pexels-liza-summer-6348047.jpg"
     },
     {
       "title": "Logistics & Distribution",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "icon": "https://cdn-icons.flaticon.com/png/512/1650/premium/1650486.png?token=exp=1656614058~hmac=6c584016125125fb13b67b8e86716ae5"
+      "icon": "/uploads/pexels-chanaka-906494.jpg"
     }
   ],
   "africa": [
