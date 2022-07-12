@@ -10,11 +10,13 @@
     </div>
     <div class="contain text-center my-20">
       <p class="max-w-4xl mx-auto text-lg">{{ Data.header.intro }}</p>
+      <a href="#form" class="flex btn-lg btn-primary my-10 max-w-xs mx-auto text-center ">Get a quote</a>
     </div>
     <div class="contain mb-10">
+      <h2 class="text-center text-titleOnDark text-3xl font-medium mb-8">End-to-End Sourcing Solutions</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="service in Data.services" :key="service.title">
-          <div class="col-span-1 flex flex-col py-8 px-8 bg-gray-50 rounded-lg">
+          <div class="col-span-1 h-full flex flex-col py-8 px-8 bg-gray-50 rounded-lg">
             <img class="w-16 mb-4" :src="service.icon" alt="Workcation" />
             <h3 class="font-medium text-xl mb-4">{{ service.title }}</h3>
             <p>
@@ -33,11 +35,11 @@
 
     <div class="bg-secondary-400 -mb-px -mt-px relative z-10">
       <div class="contain py-12">
-        <h2 class="text-center text-titleOnDark text-3xl font-medium mb-8">Why Africa?</h2>
+        <h2 class="text-center text-titleOnDark text-3xl font-medium mb-8">Africa, the next sourcing destination</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="why in Data.africa" :key="why.title">
             <div class="col-span-1 flex flex-col items-center py-4 px-4 bg-gray-50 rounded-lg text-center">
-              <img class="w-16 mb-4" :src="why.icon" alt="Workcation" />
+              <g-image class="w-16 mb-4" :src="why.icon" alt="Workcation" />
               <h3 class="font-medium text-xl mb-4">{{ why.title }}</h3>
             </div>
           </div>
@@ -49,6 +51,14 @@
       <svg class="w-full transform rotate-180" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 64" preserveAspectRatio="none">
         <path fill="currentColor" d="M1366,64H0V.0337c205,0,709,55.6648,1366,55.6648Z" />
       </svg>
+    </div>
+
+    <div class="bg-gray-50">
+      <div class="contain py-12 flex flex-wrap">
+        <a :href="logo.link" class="flex justify-center p-2" v-for="logo in Data.compliance" :key="logo.name">
+          <g-image class="compliance-image" :src="logo.image" :alt="logo.name" />
+        </a>
+      </div>
     </div>
 
     <div class="pt-16 text-center bg-gray-50">
@@ -81,9 +91,10 @@
       </div>
     </div>
 
-    <div class="mx-auto px-4 xs:px-5 sm:px-6 lg:px-10 xl:px-24 2xl:px-10 max-w-screen-3xl mb-10">
+    <div class="mx-auto px-4 xs:px-5 sm:px-6 lg:px-10 xl:px-24 2xl:px-10 max-w-screen-2xl mb-10">
       <h2 class="text-3xl font-medium text-center mb-10">Our product line</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-4 text-center mb-6">
+      <p class="max-w-4xl mx-auto text-lg">{{ Data.products.text }}</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 text-center mb-6">
         <div class="col-span-1">
           <g-image :src="Data.products.image1" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
         </div>
@@ -99,7 +110,36 @@
         <div class="col-span-1">
           <g-image :src="Data.products.image5" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
         </div>
+        <div class="col-span-1">
+          <g-image :src="Data.products.image6" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+        <div class="col-span-1">
+          <g-image :src="Data.products.image7" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+        <div class="col-span-1">
+          <g-image :src="Data.products.image8" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+        <div class="col-span-1">
+          <g-image :src="Data.products.image9" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
       </div>
+    </div>
+
+    <div class="contain my-12">
+      <IndexTrusted :data="Data.trusted" :read="false" title="Brands who trust us" class="w-full max-w-screen-lg mx-auto" />
+    </div>
+
+    <div class="contain my-12">
+      <h2 class="text-3xl font-medium text-center mb-10">Our factories</h2>
+
+      <VueSlickCarousel v-bind="settings" class="px-6 w-full mb-4">
+        <div class="company-image-container">
+          <g-image src="/uploads/back1.jpg" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+        <div class="company-image-container">
+          <g-image src="/uploads/back1.jpg" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+      </VueSlickCarousel>
     </div>
 
     <div id="form" class="bg-gray-50 border border-r-0 border-l-0 mb-10 py-24">
@@ -156,11 +196,10 @@
               </div>
 
               <div class="sm:col-span-3">
-                <label for="company-type" class="block text-sm font-medium text-gray-700"> Company type </label>
+                <label for="target-price" class="block text-sm font-medium text-gray-700"> Target Price </label>
                 <div class="mt-1">
-                  <input type="text" name="company-type" id="company-type" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="target-price" id="target-price" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-2 text-sm text-gray-500">Help text here</p>
               </div>
 
               <div class="sm:col-span-2">
@@ -211,14 +250,6 @@
         </div>
       </div>
     </div>
-
-    <div class="contain my-12">
-      <IndexTrusted :data="Data.trusted" :read="false" class="w-full max-w-screen-lg mx-auto" />
-    </div>
-
-    <div class="contain text-center my-10 hidden">
-      <g-link to="/registration/" class="btn-2xl btn-primary my-10">Register as a free buyer</g-link>
-    </div>
   </Layout>
 </template>
 
@@ -226,9 +257,15 @@
 import Data from '~/_settings/promo-agency.json';
 import IndexTrusted from '~/components/IndexTrusted';
 
+import VueSlickCarousel from 'vue-slick-carousel';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+
 export default {
   components: {
     IndexTrusted,
+    VueSlickCarousel,
   },
   metaInfo: {
     title: Data.header.title,
@@ -248,6 +285,17 @@ export default {
   data() {
     return {
       Data,
+      settings: {
+        arrows: true,
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+      },
     };
   },
 };
@@ -255,5 +303,18 @@ export default {
 <style scoped>
 .overlay {
   background-color: rgba(6, 7, 55, 0.53);
+}
+
+.company-image-container {
+  display: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.compliance-image {
+  max-height: 50px;
+  max-width: 80%;
+  width: auto;
 }
 </style>

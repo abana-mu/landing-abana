@@ -220,6 +220,15 @@ collections:
               - { label: Title, name: title, widget: 'string' }
               - { label: Icon, name: icon, widget: 'image' }
 
+          - label: 'Compliance logos'
+            name: compliance
+            label_singular: 'logo'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Link', name: 'link', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
+
           - label: 'About us'
             name: 'about'
             widget: 'object'
@@ -232,11 +241,16 @@ collections:
             name: products
             widget: 'object'
             fields:
+              - { label: 'Text', name: 'text', widget: 'text' }
               - { label: 'Image1', name: 'image1', widget: 'image' }
               - { label: 'Image2', name: 'image2', widget: 'image' }
               - { label: 'Image3', name: 'image3', widget: 'image' }
               - { label: 'Image4', name: 'image4', widget: 'image' }
               - { label: 'Image5', name: 'image5', widget: 'image' }
+              - { label: 'Image6', name: 'image6', widget: 'image' }
+              - { label: 'Image7', name: 'image7', widget: 'image' }
+              - { label: 'Image8', name: 'image8', widget: 'image' }
+              - { label: 'Image9', name: 'image9', widget: 'image' }
 
           - label: 'Trusted By'
             name: trusted
@@ -246,6 +260,13 @@ collections:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Link', name: 'link', widget: 'string' }
               - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
+
+          - label: 'Company pictures'
+            name: comPics
+            label_singular: 'Picture'
+            widget: list
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: Add names to the picture' }
 
       - label: 'Announcement'
         name: 'announce'

@@ -1,7 +1,7 @@
 <!-- HTML -->
 <template>
   <div class="my-4 py-4 pb-5 flex flex-col items-center justify-center w-full space-y-6 md:space-y-10">
-    <p class="text-lg font-medium text-title tracking-widest">Trusted by:</p>
+    <p class="text-3xl font-medium text-center mb-10">{{ title }}</p>
     <VueSlickCarousel v-bind="settings" class="px-6 w-full mb-4">
       <div v-for="n in Math.ceil(data.length / 4)" :key="n">
         <div class="grid grid-cols-2 sm:grid-cols-4 items-center">
@@ -35,6 +35,7 @@ export default {
   props: {
     data: Array,
     read: Boolean,
+    title: String,
   },
   data() {
     return {
