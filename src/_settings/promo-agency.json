@@ -68,11 +68,16 @@
     "years": "30+"
   },
   "products": {
+    "text": "test",
     "image1": "/uploads/polo-shirt.png",
     "image2": "/uploads/eva-shirt.jpg",
     "image3": "/uploads/screenshot-2022-07-06-at-12.07.47.png",
     "image4": "/uploads/harper.jpg",
-    "image5": "/uploads/tshirt.jpg"
+    "image5": "/uploads/tshirt.jpg",
+    "image6": "/uploads/one-people.png",
+    "image7": "/uploads/one-people.png",
+    "image8": "/uploads/one-people.png",
+    "image9": "/uploads/one-people.png"
   },
   "trusted": [
     {
@@ -89,7 +94,7 @@
   "compliance": [
     {
       "name": "Matalan",
-      "image": "/uploads/matalan.jpg",
+      "image": "/uploads/one-people.png",
       "link": "www.matalan.com"
     },
     {
