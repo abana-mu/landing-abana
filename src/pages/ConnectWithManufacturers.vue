@@ -212,7 +212,7 @@ export default {
       },
       {
         name: 'og:image',
-        content: '//www.abana.mu/connect-manu.png',
+        content: 'https://www.abana.mu/uploads/connect-manu.png',
       },
     ],
   },
