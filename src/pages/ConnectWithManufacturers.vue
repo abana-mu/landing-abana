@@ -199,18 +199,22 @@ export default {
     title: 'ABANA | African Textile & Apparel Marketplace',
     meta: [
       {
-        name: 'description',
+        key: 'description',
+        property: 'description',
         content: 'Welcome to the first B2B sourcing platform for Textile and Apparel Africa. We help Textile and Apparel buyers find an connect to suppliers.',
       },
       {
+        key: 'og:title',
         name: 'og:title',
         content: 'ABANA: Connecting you to African manufacturers.',
       },
       {
+        key: 'og:description',
         name: 'og:description',
         content: ' The first textile & apparel sourcing platform that connects worldwide buyers, manufacturers and suppliers of Africa, Madagascar and Mauritius. ',
       },
       {
+        key: 'og:image',
         name: 'og:image',
         content: 'https://www.abana.mu/uploads/connect-manu.png',
       },
