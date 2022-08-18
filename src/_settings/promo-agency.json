@@ -7,32 +7,32 @@
   "services": [
     {
       "title": "Factory Compliance",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "We offer support to finders to find a socially compliant factory.  We also help SMEs connect with relevant compliance companies.",
       "icon": "/uploads/knit.jpg"
     },
     {
       "title": "Raw Material Monitoring",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "Our team carefully tracks raw material from order to ensure timely production.",
       "icon": "/uploads/pexels-pixabay-259756.jpg"
     },
     {
       "title": "Product Development & Sampling",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "Provide your tech pack, target price and delivery date - we turn your concept to finished product with the best quality and fit.",
       "icon": "/uploads/support-services-2.jpg"
     },
     {
       "title": "Order Follow-up",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "As your virtual partner, we provide full transparency with  updates on the production timeline and different stages.",
       "icon": "/uploads/pexels-marcus-aurelius-4064230.jpg"
     },
     {
       "title": "Quality Control",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "Pre-production meetings, quality checks and final inspections are scheduled with our team of experts to ensure your products pass mandatory testings according to customers’ AQL.",
       "icon": "/uploads/pexels-liza-summer-6348047.jpg"
     },
     {
       "title": "Logistics & Distribution",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "We partner with the best forwarding companies and track your order until shipping destination. Or we  connect you directly with forwarders to find the best available shipping rates by sea and air.",
       "icon": "/uploads/pexels-chanaka-906494.jpg"
     }
   ],
