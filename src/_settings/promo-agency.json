@@ -76,7 +76,7 @@
     "image5": "/uploads/tshirt.jpg",
     "image6": "/uploads/shirt.jpg",
     "image7": "/uploads/one-people.png",
-    "image8": "/uploads/one-people.png",
+    "image8": "/uploads/matalan.jpg",
     "image9": "/uploads/one-people.png"
   },
   "trusted": [
@@ -89,6 +89,16 @@
       "name": "Zadig & Voltaire",
       "image": "/uploads/logo_2.png",
       "link": "https://zadig-et-voltaire.com/eu/en/"
+    },
+    {
+      "name": "Mr Price",
+      "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
+      "link": "https://abana.mu/"
+    },
+    {
+      "image": "/uploads/1-people-logo_2.png",
+      "name": "1 People",
+      "link": "https://abana.mu/"
     }
   ],
   "compliance": [
