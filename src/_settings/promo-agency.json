@@ -99,6 +99,21 @@
       "image": "/uploads/1-people-logo_2.png",
       "name": "1 People",
       "link": "https://abana.mu/"
+    },
+    {
+      "name": "Agnes B ",
+      "image": "/uploads/agnes-b-logo-black-and-white.png",
+      "link": "https://www.agnesb.eu/en/"
+    },
+    {
+      "name": "Urban Outfitters",
+      "image": "/uploads/urban-outfitters.png",
+      "link": "https://www.urbanoutfitters.com/"
+    },
+    {
+      "name": "Pro Idee",
+      "link": "https://www.proidee.co.uk/F=homepage",
+      "image": "/uploads/pro-idee-copy.png"
     }
   ],
   "compliance": [
