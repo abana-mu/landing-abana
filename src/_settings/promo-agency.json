@@ -93,12 +93,12 @@
     {
       "name": "Mr Price",
       "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
-      "link": "https://abana.mu/"
+      "link": "https://www.mrpricegroup.com/"
     },
     {
       "image": "/uploads/1-people-logo_2.png",
       "name": "1 People",
-      "link": "https://abana.mu/"
+      "link": "https://1people.com/en-us/"
     },
     {
       "name": "Agnes B ",
@@ -114,48 +114,53 @@
       "name": "Pro Idee",
       "link": "https://www.proidee.co.uk/F=homepage",
       "image": "/uploads/pro-idee-copy.png"
+    },
+    {
+      "link": "https://harcour.fr/en/",
+      "name": "Harcour",
+      "image": "/uploads/logo-1654243938.png"
     }
   ],
   "compliance": [
     {
-      "name": "One People",
+      "name": "GOTS",
       "image": "/uploads/got_600x600-2x.webp",
-      "link": "https://1people.com/"
+      "link": "https://global-standard.org/"
     },
     {
-      "name": "Zadig & Voltaire",
+      "name": "Global Recycled Standard",
       "image": "/uploads/grs-logo-white-bg.webp",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "link": "https://www.scsglobalservices.com/services/global-recycled-standard"
     },
     {
-      "name": "Mr Price",
+      "name": "BCI Cotton",
       "image": "/uploads/bci-logo-large-1.png",
-      "link": "https://www.mrpricegroup.com/"
+      "link": "https://bettercotton.org/who-we-are/"
     },
     {
-      "name": "Zadig & Voltaire",
+      "name": "Responsible Wool Standard",
       "image": "/uploads/rws_logo.png",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "link": "https://textileexchange.org/standards/responsible-wool/"
     },
     {
-      "name": "Matalan",
+      "name": "OEKO-TEX",
       "image": "/uploads/std100logo.jpg",
-      "link": "www.matalan.com"
+      "link": "https://www.oeko-tex.com/en/"
     },
     {
-      "name": "Zadig & Voltaire",
+      "name": "WRAP",
       "image": "/uploads/wraplogo2c.jpg",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "link": "https://wrapcompliance.org/certification/"
     },
     {
-      "name": "Matalan",
+      "name": "SMETA",
       "image": "/uploads/24eb0d44-a094-4d38-b118-75f8fec519bb.jpg",
-      "link": "www.matalan.com"
+      "link": "https://www.sedex.com/our-services/smeta-audit/"
     },
     {
-      "name": "Zadig & Voltaire",
+      "name": "BSCI",
       "image": "/uploads/bsci-logo.jpg",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "link": "https://www.amfori.org/content/amfori-bsci"
     }
   ],
   "comPics": [
