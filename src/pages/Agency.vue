@@ -152,28 +152,28 @@
             <input type="hidden" name="form-name" value="quote" />
             <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
               <div class="sm:col-span-2">
-                <label for="first-name" class="block text-sm font-medium text-gray-700"> First name </label>
+                <label for="name" class="block text-sm font-medium text-gray-700"> First name </label>
                 <div class="mt-1">
                   <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
-                    autocomplete="given-name"
-                    v-model="formData.firstName"
+                    name="name"
+                    id="name"
+                    autocomplete="name"
+                    v-model="formData.name"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
               </div>
 
               <div class="sm:col-span-2">
-                <label for="last-name" class="block text-sm font-medium text-gray-700"> Last name </label>
+                <label for="surname" class="block text-sm font-medium text-gray-700"> Last name </label>
                 <div class="mt-1">
                   <input
                     type="text"
-                    name="last-name"
-                    id="last-name"
-                    autocomplete="last-name"
-                    v-model="formData.lastName"
+                    name="surname"
+                    id="surname"
+                    autocomplete="surname"
+                    v-model="formData.surname"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -208,13 +208,13 @@
               </div>
 
               <div class="sm:col-span-3">
-                <label for="target-price" class="block text-sm font-medium text-gray-700"> Target Price </label>
+                <label for="price" class="block text-sm font-medium text-gray-700"> Target Price </label>
                 <div class="mt-1">
                   <input
                     type="text"
-                    name="target-price"
-                    v-model="formData.targetPrice"
-                    id="target-price"
+                    name="price"
+                    v-model="formData.price"
+                    id="price"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -278,11 +278,11 @@
               </div>
 
               <div class="sm:col-span-6">
-                <label for="other-info" class="block text-sm font-medium text-gray-700"> Other Info </label>
+                <label for="other" class="block text-sm font-medium text-gray-700"> Other Info </label>
                 <div class="mt-1">
                   <textarea
-                    id="other-info"
-                    name="other-info"
+                    id="other"
+                    name="other"
                     rows="4"
                     v-model="formData.other"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
