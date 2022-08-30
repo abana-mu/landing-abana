@@ -219,7 +219,7 @@
 
     <div class="bg-gray-50 border-t border-b">
       <div class="contain my-12">
-        <IndexTrusted :data="TrustedData.trusted" gray class="w-full max-w-screen-lg mx-auto" />
+        <IndexTrusted :data="TrustedData.trusted" class="w-full max-w-screen-lg mx-auto" />
       </div>
     </div>
 

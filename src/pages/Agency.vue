@@ -13,7 +13,7 @@
       <a href="#form" class="flex btn-lg btn-primary my-10 max-w-xs mx-auto text-center ">Get a quote</a>
     </div>
     <div class="contain mb-10">
-      <h2 class="text-center text-title text-3xl font-medium mb-8">End-to-End Sourcing Solutions</h2>
+      <h2 class="text-center text-titleOnDark text-3xl font-medium mb-8">End-to-End Sourcing Solutions</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="service in Data.services" :key="service.title">
           <div class="col-span-1 h-full flex flex-col py-8 px-8 bg-gray-50 rounded-lg">
@@ -25,10 +25,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="contain my-12">
-      <IndexTrusted :data="Data.partners" :read="false" title="Our partners" class="w-full max-w-screen-lg mx-auto" />
     </div>
 
     <div class="relative overflow-hidden text-center text-secondary-400 m-0 z-10">
@@ -43,7 +39,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="why in Data.africa" :key="why.title">
             <div class="col-span-1 flex flex-col items-center py-4 px-4 bg-gray-50 rounded-lg text-center">
-              <g-image class="w-16 mb-4" :src="why.icon" :alt="why.title" />
+              <g-image class="w-16 mb-4" :src="why.icon" alt="Workcation" />
               <h3 class="font-medium text-xl mb-4">{{ why.title }}</h3>
             </div>
           </div>
@@ -58,7 +54,7 @@
     </div>
 
     <div class="bg-gray-50">
-      <div class="contain py-12 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-4 flex-wrap justify-between">
+      <div class="contain py-12 flex flex-wrap">
         <a :href="logo.link" class="flex justify-center p-2" v-for="logo in Data.compliance" :key="logo.name">
           <g-image class="compliance-image" :src="logo.image" :alt="logo.name" />
         </a>
@@ -137,8 +133,11 @@
       <h2 class="text-3xl font-medium text-center mb-10">Our factories</h2>
 
       <VueSlickCarousel v-bind="settings" class="px-6 w-full mb-4">
-        <div class="company-image-container" v-for="image in Data.comPics" :key="image.image">
-          <g-image :src="image.image" :alt="image.image" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        <div class="company-image-container">
+          <g-image src="/uploads/back1.jpg" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
+        </div>
+        <div class="company-image-container">
+          <g-image src="/uploads/back1.jpg" quality="100" blur="40" width="750" class="object-cover w-full h-full" />
         </div>
       </VueSlickCarousel>
     </div>
@@ -148,8 +147,7 @@
         <div class="bg-white border border-r-0 border-l-0 sm:border-r sm:border-l sm:rounded-lg p-10 -mx-5 sm:m-0">
           <h2 class="text-3xl font-medium">Get a <span class="text-primary">quick</span> quote / estimate</h2>
           <p class="mt-1 max-w-2xl text-base text-gray-500">Use a permanent address where you can receive mail.</p>
-          <form name="quote" method="post" v-on:submit.prevent="handleSubmit" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="quote" />
+          <form name="quote" method="POST" data-netlify="true">
             <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
               <div class="sm:col-span-2">
                 <label for="first-name" class="block text-sm font-medium text-gray-700"> First name </label>
@@ -159,7 +157,6 @@
                     name="first-name"
                     id="first-name"
                     autocomplete="given-name"
-                    v-model="formData.firstName"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -172,8 +169,7 @@
                     type="text"
                     name="last-name"
                     id="last-name"
-                    autocomplete="last-name"
-                    v-model="formData.lastName"
+                    autocomplete="family-name"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -187,94 +183,51 @@
                     name="email"
                     type="email"
                     autocomplete="email"
-                    v-model="formData.email"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
               </div>
 
               <div class="sm:col-span-3">
-                <label for="company" class="block text-sm font-medium text-gray-700"> Your Company </label>
+                <label for="company" class="block text-sm font-medium text-gray-700"> Company </label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="company"
-                    id="company"
-                    v-model="formData.company"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="company" id="company" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-3">
                 <label for="target-price" class="block text-sm font-medium text-gray-700"> Target Price </label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="target-price"
-                    v-model="formData.targetPrice"
-                    id="target-price"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="target-price" id="target-price" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-2">
                 <label for="product" class="block text-sm font-medium text-gray-700"> Product</label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="product"
-                    id="product"
-                    v-model="formData.product"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="product" id="product" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-2">
                 <label for="material" class="block text-sm font-medium text-gray-700"> Material </label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="material"
-                    id="material"
-                    v-model="formData.material"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="material" id="material" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-2">
                 <label for="quantity" class="block text-sm font-medium text-gray-700"> Quantity</label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="quantity"
-                    id="quantity"
-                    v-model="formData.quantity"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="quatity" id="quatity" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-4">
                 <label for="destination" class="block text-sm font-medium text-gray-700">Destination </label>
                 <div class="mt-1">
-                  <input
-                    type="text"
-                    name="destination"
-                    id="destination"
-                    v-model="formData.destination"
-                    class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
+                  <input type="text" name="destination" id="destination" class="shadow-sm focus:ring-primary-300 focus:border-primary-300 block w-full sm:text-sm border-gray-300 rounded-md" />
                 </div>
-                <p class="mt-1 text-sm text-gray-500 italic">Optional</p>
               </div>
 
               <div class="sm:col-span-6">
@@ -284,7 +237,6 @@
                     id="other-info"
                     name="other-info"
                     rows="4"
-                    v-model="formData.other"
                     class="shadow-sm focus:ring-primary-300 focus:border-primary-300 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                   />
                 </div>
@@ -344,27 +296,7 @@ export default {
         autoplay: true,
         autoplaySpeed: 4000,
       },
-      formData: {},
     };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&');
-    },
-    handleSubmit(e) {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
-          'form-name': e.target.getAttribute('name'),
-          ...this.formData,
-        }),
-      })
-        .then(() => this.$router.push('/thanks'))
-        .catch((error) => alert(error));
-    },
   },
 };
 </script>
@@ -382,6 +314,7 @@ export default {
 
 .compliance-image {
   max-height: 50px;
+  max-width: 80%;
   width: auto;
 }
 </style>

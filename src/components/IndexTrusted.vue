@@ -7,7 +7,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 items-center">
           <div class="trusted-logos" v-for="logo in range(n)" :key="logo.name">
             <a :href="logo.link" target="_blank" class="flex justify-center">
-              <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" class="trusted-image" :class="{ grayed: gray }" />
+              <g-image :src="logo.image" blur="40" quality="75" :alt="logo.title" class="trusted-image" />
             </a>
           </div>
         </div>
@@ -36,7 +36,6 @@ export default {
     data: Array,
     read: Boolean,
     title: String,
-    gray: Boolean,
   },
   data() {
     return {
@@ -88,9 +87,6 @@ export default {
   max-height: 50px;
   max-width: 80%;
   width: auto;
-}
-
-.grayed {
   opacity: 0.6;
   filter: grayscale(200%) contrast(250%);
 }
