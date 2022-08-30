@@ -261,6 +261,15 @@ collections:
               - { label: 'Link', name: 'link', widget: 'string' }
               - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
 
+          - label: 'Partners'
+            name: partners
+            label_singular: 'partner'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Link', name: 'link', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image', hint: 'Format: PNG with transparent background' }
+
           - label: 'Company pictures'
             name: comPics
             label_singular: 'Picture'

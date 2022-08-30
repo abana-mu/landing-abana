@@ -12,9 +12,13 @@ import GraphikLight from '~/assets/fonts/GraphikLight.otf';
 import GraphikMedium from '~/assets/fonts/GraphikMedium.otf';
 import GraphikSemibold from '~/assets/fonts/GraphikSemibold.otf';
 
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+
 export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.use(VueSimpleMarkdown);
+  Vue.use(VueAxios, axios);
 
   router.options.scrollBehavior = (to, from, savedPosition) => {
     if (to.hash) {

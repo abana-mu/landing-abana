@@ -30,7 +30,7 @@
 
       <div class="bg-gray-50 border-t border-b">
         <div class="contain my-12">
-          <IndexTrusted :data="Data.trusted" read="true" title="Trusted by" class="w-full max-w-screen-lg mx-auto" />
+          <IndexTrusted :data="Data.trusted" gray read title="Trusted by" class="w-full max-w-screen-lg mx-auto" />
         </div>
       </div>
 
