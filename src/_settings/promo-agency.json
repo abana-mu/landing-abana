@@ -8,32 +8,32 @@
     {
       "title": "Factory Compliance",
       "text": "We offer support to finders to find a socially compliant factory.  We also help SMEs connect with relevant compliance companies.",
-      "icon": "/uploads/untitled-design-3-.png"
+      "icon": "/uploads/factories.png"
     },
     {
       "title": "Raw Material Monitoring",
       "text": "Our team carefully tracks raw material from order to ensure timely production.",
-      "icon": "/uploads/untitled-design-4-.png"
+      "icon": "/uploads/knit.png"
     },
     {
       "title": "Product Development & Sampling",
       "text": "Provide your tech pack, target price and delivery date - we turn your concept to finished product with the best quality and fit.",
-      "icon": "/uploads/untitled-design-6-.png"
+      "icon": "/uploads/tshirt.png"
     },
     {
       "title": "Order Follow-up",
       "text": "As your virtual partner, we provide full transparency with  updates on the production timeline and different stages.",
-      "icon": "/uploads/untitled-design-15-.png"
+      "icon": "/uploads/order-follow.png"
     },
     {
       "title": "Quality Control",
       "text": "Pre-production meetings, quality checks and final inspections are scheduled with our team of experts to ensure your products pass mandatory testings according to customers’ AQL.",
-      "icon": "/uploads/untitled-design-5-.png"
+      "icon": "/uploads/control.png"
     },
     {
       "title": "Logistics & Distribution",
       "text": "We partner with the best forwarding companies and track your order until shipping destination. Or we  connect you directly with forwarders to find the best available shipping rates by sea and air.",
-      "icon": "/uploads/untitled-design-14-.png"
+      "icon": "/uploads/logistics.png"
     }
   ],
   "africa": [
@@ -80,6 +80,48 @@
     "image9": "/uploads/whatsapp-image-2022-08-23-at-4.24.08-am.jpeg"
   },
   "trusted": [
+    {
+      "name": "Matalan",
+      "image": "/uploads/matalan.jpg",
+      "link": "www.matalan.com"
+    },
+    {
+      "name": "Zadig & Voltaire",
+      "image": "/uploads/logo_2.png",
+      "link": "https://zadig-et-voltaire.com/eu/en/"
+    },
+    {
+      "name": "Mr Price",
+      "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
+      "link": "https://www.mrpricegroup.com/"
+    },
+    {
+      "image": "/uploads/1-people-logo_2.png",
+      "name": "1 People",
+      "link": "https://1people.com/en-us/"
+    },
+    {
+      "name": "Agnes B ",
+      "image": "/uploads/agnes-b-logo-black-and-white.png",
+      "link": "https://www.agnesb.eu/en/"
+    },
+    {
+      "name": "Urban Outfitters",
+      "image": "/uploads/urban-outfitters.png",
+      "link": "https://www.urbanoutfitters.com/"
+    },
+    {
+      "name": "Pro Idee",
+      "link": "https://www.proidee.co.uk/F=homepage",
+      "image": "/uploads/pro-idee-copy.png"
+    },
+    {
+      "link": "https://harcour.fr/en/",
+      "name": "Harcour",
+      "image": "/uploads/logo-1654243938.png"
+    }
+  ],
+  "partners": [
     {
       "name": "Matalan",
       "image": "/uploads/matalan.jpg",
