@@ -155,6 +155,7 @@
                 <label for="name" class="block text-sm font-medium text-gray-700"> First name </label>
                 <div class="mt-1">
                   <input
+                    required
                     type="text"
                     name="name"
                     id="name"
@@ -169,6 +170,7 @@
                 <label for="surname" class="block text-sm font-medium text-gray-700"> Last name </label>
                 <div class="mt-1">
                   <input
+                    required
                     type="text"
                     name="surname"
                     id="surname"
@@ -183,6 +185,7 @@
                 <label for="email" class="block text-sm font-medium text-gray-700"> Email address </label>
                 <div class="mt-1">
                   <input
+                    required
                     id="email"
                     name="email"
                     type="email"
