@@ -1,72 +1,4 @@
 {
-  "header": {
-    "title": "A new apparel sourcing experience",
-    "image": "/uploads/agency-cover.jpg",
-    "intro": "With more than 30 years working with international brands, save time and let us build your supply chain in Africa. As your virtual partner, we offer an end-to-end solution that makes apparel sourcing fast and easy!\n"
-  },
-  "services": [
-    {
-      "title": "Factory Compliance",
-      "text": "We offer support to finders to find a socially compliant factory.  We also help SMEs connect with relevant compliance companies.",
-      "icon": "/uploads/factories.png"
-    },
-    {
-      "title": "Raw Material Monitoring",
-      "text": "Our team carefully tracks raw material from order to ensure timely production.",
-      "icon": "/uploads/knit.png"
-    },
-    {
-      "title": "Product Development & Sampling",
-      "text": "Provide your tech pack, target price and delivery date - we turn your concept to finished product with the best quality and fit.",
-      "icon": "/uploads/tshirt.png"
-    },
-    {
-      "title": "Order Follow-up",
-      "text": "As your virtual partner, we provide full transparency with  updates on the production timeline and different stages.",
-      "icon": "/uploads/order-follow.png"
-    },
-    {
-      "title": "Quality Control",
-      "text": "Pre-production meetings, quality checks and final inspections are scheduled with our team of experts to ensure your products pass mandatory testings according to customers’ AQL.",
-      "icon": "/uploads/control.png"
-    },
-    {
-      "title": "Logistics & Distribution",
-      "text": "We partner with the best forwarding companies and track your order until shipping destination. Or we  connect you directly with forwarders to find the best available shipping rates by sea and air.",
-      "icon": "/uploads/logistics.png"
-    }
-  ],
-  "africa": [
-    {
-      "title": "Capacity for small to large buyers",
-      "icon": "/uploads/tick.png"
-    },
-    {
-      "title": "Preferential trade agreements",
-      "icon": "/uploads/tick.png"
-    },
-    {
-      "title": "Speed to market",
-      "icon": "/uploads/tick.png"
-    },
-    {
-      "title": "Skilled labour",
-      "icon": "/uploads/tick.png"
-    },
-    {
-      "title": "Environmental & Social Compliance",
-      "icon": "/uploads/tick.png"
-    },
-    {
-      "title": "Vertically Integrated Factories",
-      "icon": "/uploads/tick.png"
-    }
-  ],
-  "about": {
-    "brands": "25+",
-    "manu": "15+",
-    "years": "30+"
-  },
   "products": {
     "text": "  ",
     "image1": "/uploads/whatsapp-image-2022-08-25-at-1.07.28-pm.jpeg",
@@ -79,46 +11,30 @@
     "image8": "/uploads/whatsapp-image-2022-08-24-at-7.44.39-am.jpeg",
     "image9": "/uploads/whatsapp-image-2022-08-23-at-4.24.08-am.jpeg"
   },
-  "trusted": [
+  "comPics": [
     {
-      "name": "Matalan",
-      "image": "/uploads/matalan.jpg",
-      "link": "www.matalan.com"
+      "image": "/uploads/img_2411.jpg"
     },
     {
-      "name": "Zadig & Voltaire",
-      "image": "/uploads/logo_2.png",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "image": "/uploads/img_2427.jpg"
     },
     {
-      "name": "Mr Price",
-      "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
-      "link": "https://www.mrpricegroup.com/"
+      "image": "/uploads/_mg_2869.jpg"
     },
     {
-      "image": "/uploads/1-people-logo_2.png",
-      "name": "1 People",
-      "link": "https://1people.com/en-us/"
+      "image": "/uploads/_mg_2997.jpg"
     },
     {
-      "name": "Agnes B ",
-      "image": "/uploads/agnes-b-logo-black-and-white.png",
-      "link": "https://www.agnesb.eu/en/"
+      "image": "/uploads/img_2154.jpg"
     },
     {
-      "name": "Urban Outfitters",
-      "image": "/uploads/urban-outfitters.png",
-      "link": "https://www.urbanoutfitters.com/"
+      "image": "/uploads/img_2241.jpg"
     },
     {
-      "name": "Pro Idee",
-      "link": "https://www.proidee.co.uk/F=homepage",
-      "image": "/uploads/pro-idee-copy.png"
+      "image": "/uploads/pic-for-d1.jpg"
     },
     {
-      "link": "https://harcour.fr/en/",
-      "name": "Harcour",
-      "image": "/uploads/logo-1654243938.png"
+      "image": "/uploads/screenshot-2022-09-04-at-14.18.00.jpg"
     }
   ],
   "partners": [
@@ -163,6 +79,84 @@
       "image": "/uploads/logo-1654243938.png"
     }
   ],
+  "header": {
+    "title": "A new apparel sourcing experience",
+    "image": "/uploads/agency-cover.jpg",
+    "intro": "With more than 30 years working with international brands, save time and let us build your supply chain in Africa. As your virtual partner, we offer an end-to-end solution that makes apparel sourcing fast and easy!\n"
+  },
+  "about": {
+    "brands": "25+",
+    "manu": "15+",
+    "years": "30+"
+  },
+  "trusted": [
+    {
+      "name": "Matalan",
+      "image": "/uploads/matalan.jpg",
+      "link": "www.matalan.com"
+    },
+    {
+      "name": "Zadig & Voltaire",
+      "image": "/uploads/logo_2.png",
+      "link": "https://zadig-et-voltaire.com/eu/en/"
+    },
+    {
+      "name": "Mr Price",
+      "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
+      "link": "https://www.mrpricegroup.com/"
+    },
+    {
+      "image": "/uploads/1-people-logo_2.png",
+      "name": "1 People",
+      "link": "https://1people.com/en-us/"
+    },
+    {
+      "name": "Agnes B ",
+      "image": "/uploads/agnes-b-logo-black-and-white.png",
+      "link": "https://www.agnesb.eu/en/"
+    },
+    {
+      "name": "Urban Outfitters",
+      "image": "/uploads/urban-outfitters.png",
+      "link": "https://www.urbanoutfitters.com/"
+    },
+    {
+      "name": "Pro Idee",
+      "link": "https://www.proidee.co.uk/F=homepage",
+      "image": "/uploads/pro-idee-copy.png"
+    },
+    {
+      "link": "https://harcour.fr/en/",
+      "name": "Harcour",
+      "image": "/uploads/logo-1654243938.png"
+    }
+  ],
+  "africa": [
+    {
+      "title": "Capacity for small to large buyers",
+      "icon": "/uploads/tick.png"
+    },
+    {
+      "title": "Preferential trade agreements",
+      "icon": "/uploads/tick.png"
+    },
+    {
+      "title": "Speed to market",
+      "icon": "/uploads/tick.png"
+    },
+    {
+      "title": "Skilled labour",
+      "icon": "/uploads/tick.png"
+    },
+    {
+      "title": "Environmental & Social Compliance",
+      "icon": "/uploads/tick.png"
+    },
+    {
+      "title": "Vertically Integrated Factories",
+      "icon": "/uploads/tick.png"
+    }
+  ],
   "compliance": [
     {
       "name": "GOTS",
@@ -205,15 +199,36 @@
       "link": "https://www.amfori.org/content/amfori-bsci"
     }
   ],
-  "comPics": [
+  "services": [
     {
-      "image": "/uploads/300451749_424927992789933_2812926963511928188_n.jpg"
+      "title": "Factory Compliance",
+      "text": "We offer support to finders to find a socially compliant factory.  We also help SMEs connect with relevant compliance companies.",
+      "icon": "/uploads/factories.png"
     },
     {
-      "image": "/uploads/img_2411.jpg"
+      "title": "Raw Material Monitoring",
+      "text": "Our team carefully tracks raw material from order to ensure timely production.",
+      "icon": "/uploads/knit.png"
     },
     {
-      "image": "/uploads/img_2427.jpg"
+      "title": "Product Development & Sampling",
+      "text": "Provide your tech pack, target price and delivery date - we turn your concept to finished product with the best quality and fit.",
+      "icon": "/uploads/tshirt.png"
+    },
+    {
+      "title": "Order Follow-up",
+      "text": "As your virtual partner, we provide full transparency with  updates on the production timeline and different stages.",
+      "icon": "/uploads/order-follow.png"
+    },
+    {
+      "title": "Quality Control",
+      "text": "Pre-production meetings, quality checks and final inspections are scheduled with our team of experts to ensure your products pass mandatory testings according to customers’ AQL.",
+      "icon": "/uploads/control.png"
+    },
+    {
+      "title": "Logistics & Distribution",
+      "text": "We partner with the best forwarding companies and track your order until shipping destination. Or we  connect you directly with forwarders to find the best available shipping rates by sea and air.",
+      "icon": "/uploads/logistics.png"
     }
   ]
 }
