@@ -50,11 +50,11 @@
     },
     {
       "name": "MEXA",
-      "image": "https://www.mexamauritius.org/wp-content/uploads/2021/06/MEXA-LOGO2-e1630480271521.png",
+      "image": "/uploads/mexa-logo.png",
       "link": "https://www.mexamauritius.org/"
     },
     {
-      "image": "https://ariva-logistics.com/wp-content/uploads/2018/11/ArivaLogo_228x158.png",
+      "image": "/uploads/ariva-logistic.jpg",
       "name": "Ariva",
       "link": "https://ariva-logistics.com"
     }
