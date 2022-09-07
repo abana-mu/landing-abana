@@ -39,44 +39,24 @@
   ],
   "partners": [
     {
-      "name": "Matalan",
-      "image": "/uploads/matalan.jpg",
-      "link": "www.matalan.com"
+      "name": "QIMA",
+      "image": "/uploads/qima-2x.png",
+      "link": "https://www.qima.com/"
     },
     {
-      "name": "Zadig & Voltaire",
-      "image": "/uploads/logo_2.png",
-      "link": "https://zadig-et-voltaire.com/eu/en/"
+      "name": "DHL",
+      "image": "/uploads/dhl.png",
+      "link": "https://www.dhl.com/"
     },
     {
-      "name": "Mr Price",
-      "image": "/uploads/store-_0016s_0001_mr-price-copy.jpg",
-      "link": "https://www.mrpricegroup.com/"
+      "name": "MEXA",
+      "image": "https://www.mexamauritius.org/wp-content/uploads/2021/06/MEXA-LOGO2-e1630480271521.png",
+      "link": "https://www.mexamauritius.org/"
     },
     {
-      "image": "/uploads/1-people-logo_2.png",
-      "name": "1 People",
-      "link": "https://1people.com/en-us/"
-    },
-    {
-      "name": "Agnes B ",
-      "image": "/uploads/agnes-b-logo-black-and-white.png",
-      "link": "https://www.agnesb.eu/en/"
-    },
-    {
-      "name": "Urban Outfitters",
-      "image": "/uploads/urban-outfitters.png",
-      "link": "https://www.urbanoutfitters.com/"
-    },
-    {
-      "name": "Pro Idee",
-      "link": "https://www.proidee.co.uk/F=homepage",
-      "image": "/uploads/pro-idee-copy.png"
-    },
-    {
-      "link": "https://harcour.fr/en/",
-      "name": "Harcour",
-      "image": "/uploads/logo-1654243938.png"
+      "image": "https://ariva-logistics.com/wp-content/uploads/2018/11/ArivaLogo_228x158.png",
+      "name": "Ariva",
+      "link": "https://ariva-logistics.com"
     }
   ],
   "header": {
