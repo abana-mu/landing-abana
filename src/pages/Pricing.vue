@@ -103,7 +103,7 @@
                       <div
                         v-else-if="index === 'seller' && card.name === 'basic' && (currentPrice === '66' || currentPrice === '61')"
                       >
-                        <div class="p-2 bg-primary-300 font-medium text-white">UNTIL DEC 2022</div>
+                        <div class="p-2 bg-primary-300 font-medium text-white">UNTIL JUNE 2023</div>
                       </div>
                       <!---->
                       <div
