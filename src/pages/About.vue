@@ -14,13 +14,13 @@
         <div>
           <h2 class="mb-3 text-4xl font-medium">
             Arif Currimjee -
-            <span class="text-primary">Founder</span>
+            <span class="text-primary">Chairman & CEO</span>
           </h2>
           <vue-simple-markdown :source="Data.arif" class="text-body text-lg"></vue-simple-markdown>
         </div>
       </div>
       <String1 />
-      <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div class="hidden my-12 grid grid-cols-1 md:grid-cols-2 gap-16">
         <div class="flex justify-center pb-12 md:order-2">
           <g-image class="w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96" immediate src="~/assets/images/dirk.png" quality="90" blur="40" />
         </div>
